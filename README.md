@@ -295,6 +295,30 @@ Incluir Stakeholders internos y externos.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+1. Estrategias para afrontar las fortalezas de la competencia
+<ul>
+    <li>Diferenciación tecnológica con IoT: SweetManager integrará termostatos inteligentes, control de entretenimiento desde una app y sensores IoT para la automatización hotelera.</li>
+    <li>Enfoque en la experiencia de usuario: Mientras que los otros competidores se centran en el desarrollo administrativo, SweetManager tendrá foco también en la interfaz de usuario moderna, intuitiva y adaptable.</li>
+</ul>
+
+2. Estrategias ante las debilidades de la competencia
+<ul>
+    <li>Planes escalables y flexibles: Aquellos competidores mantienen un precio fijo y poco accesible para hoteles de pequeño tamaño, SweetManager se encargará de tener suscripciones modulares, permitiendo que cada cliente pague por lo que usa según su tamaño de empresa</li>
+    <li>Mayor compatibilidad en diferentes dispositivos: Mientras los competidores tienen interfaces limitadas, SweetManager centrará esfuerzo en optimizar su aplicaciónn web y móvil para asegurar una experiencia fluida en cualquier dispositivo.</li>
+</ul>
+
+3. Estrategias para las oportunidades de la competencia
+<ul>
+    <li>Expansión en diferentes mercados: El ingreso a ciudades turísticas emergentes donde la digitalización y automatización hotelera aun es baja como Iquitos, Tarapoto y Huaraz.</li>
+    <li>Asociaciones estratégicas con proveedores de IoT: Para reducir costos y mejorar tecnología, se establecerán alianzas con partners de domótica y smart devices.</li>
+</ul>
+
+4. Estrategias frente a las amenazas
+<ul>
+    <li>Segurida y privacidad: Implementación de cifrado avanzado y estándares de protección de datos para evitar problemas de confianza con la digitalización..</li>
+    <li>Asociaciones estratégicas con marketing: Estrategia de marketing, publicidad digital y alianzas con influencers hoteleros para capturar mercado antes de la expansión de los rivales.</li>
+</ul>
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
