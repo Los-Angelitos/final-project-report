@@ -140,9 +140,10 @@ Nuestro objetivo es brindar a los hoteles una plataforma integral que centralice
 
 Para la monetización, utilizamos un modelo de negocio basado en suscripción escalable, el cual se adapta al tamaño y necesidades de cada hotel, e incorpora la gestión de dispositivos IoT como valor agregado. Es decir, cada nivel de suscripción incluye funcionalidades básicas del sistema (gestión de reservas, finanzas, etc.), además de una cantidad determinada de dispositivos IoT preconfigurados para su uso inmediato. Para el aprovisionamiento de hardware, pensamos usar un modelo de Partner Reseller: el partner instala y mantiene el hardware, y Sweet Manager comparte ingresos por suscripción.
 
-VISION: 
+Visión: 
 
-MISION: 
+MISION 
+
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -186,98 +187,131 @@ Siguiendo la estructura propuesta
 
 ### 1.2.2. Lean UX Process
 
-#### 1.2.2.1. Lean UX Problem Statements
-
-Siguiendo la estructura propuesta por Jeff Gothelf y Josh Seiden, en su libro "Lean Ux":
-
-- El estado actual de 
-
-Estos pain points incluyen 
-
-Lo que los productos existentes no logran abordar es l
-
-Nuestro producto/servicio abordará esta brecha al proporcionar 
-
-Nuestro enfoque inicial 
-
-Sabremos que hemos tenido éxito cuando veamos 
-
-
-
-**Problem Statement:**
-
-**Dominio:**
-
-**Segmentos de Clientes:**
-
-**Puntos de Dolor:**
-
-**Visión/Estrategia:**
-
-
-**Segmento Inicial:**
-
 #### 1.2.2.2. Lean UX Assumptions
-**Features:**
-**Business Outcomes:**
-Extraído de el libro Lean UX, 3rd Edition (Gothelf, 2021)
 
-**¿Como podremos solucionar nuestro problema de negocio? ¿Que vamos a medir?**
+##### Features
 
-Podremos solucionar nuestr problema, mediante:
+(Contenido por completar si lo necesitas)
 
-El ratio de exito y productividad de las granjas tras el uso de nuestra aplicación:
+##### Business Outcomes
 
+> ¿Cómo sabremos que resolvimos el problema de negocio? ¿Qué mediremos?
 
-El numero de reseñas positivas:
+Los siguientes indicadores nos permitirán evaluar si la solución propuesta está generando el impacto esperado en el negocio hotelero:
 
-El indice de uso de nuestra aplicación asi como su retención:
+- **Reducción de costos operativos**: al menos un 20% en los primeros 6 meses.
+- **Incremento en la eficiencia del personal administrativo**: 30% de reducción de tiempo en tareas administrativas.
+- **Aumento en la adopción del sistema**: 60% de uso diario del panel en los primeros 3 meses.
+- **Retención de clientes hoteleros**: tasa de retención del 85% o superior en el primer año.
+- **Crecimiento de ingresos recurrentes (MRR)**: incremento mensual del 10% en ingresos por suscripción.
 
+##### Users
 
-1. **Creemos que nuestros usuarios necesitan**: 
+> **Referencia metodológica:**  
+> Según *Lean UX, 3rd edition*, se recomienda crear proto-personas basadas en suposiciones iniciales del equipo, las cuales deben validarse y actualizarse continuamente mediante investigación y observación directa.
 
-2. **Estas necesidades se pueden satisfacer**:
+###### Proto-persona 1 – Carla, Administradora de Hotel
+- **Rol:** Responsable de la gestión operativa y financiera del hotel.
+- **Tecnología:** Usa una laptop y ocasionalmente el celular para trabajo. Tiene conocimientos básicos de software.
+- **Metas:** Optimizar el tiempo en tareas administrativas. Mejorar la ocupación del hotel.
+- **Necesidades:** Automatizar tareas repetitivas. Acceder fácilmente a reportes e indicadores clave.
+- **Frustraciones:** Demasiadas hojas de Excel, pérdida de tiempo con proveedores de tecnología poco claros.
+- **Comportamientos clave esperados:** Usa Sweet Manager diariamente, integra IoT para control de habitaciones, revisa reportes semanales.
 
-3. **Nuestros clientes iniciales serán**: 
+###### Proto-persona 2 – José, Técnico Instalador (Partner IoT)
+- **Rol:** Instala y mantiene los dispositivos IoT en los hoteles.
+- **Tecnología:** Maneja herramientas técnicas, software de configuración e instalación.
+- **Metas:** Realizar instalaciones rápidas y sin errores. Disminuir soporte postventa.
+- **Necesidades:** Plataforma clara y con documentación técnica. Acceso al historial de configuración.
+- **Frustraciones:** Poca estandarización entre dispositivos y herramientas lentas.
+- **Comportamientos clave esperados:** Configura dispositivos con la app, reporta incidentes, accede a manuales desde su cuenta.
 
-4. **El valor #1 que un cliente quiere de nuestro servicio es:** 
-   **Los clientes tambien pueden obtener:** 
+###### Proto-persona 3 – Silvia, Dueña del Hotel
+- **Rol:** Toma decisiones estratégicas, gestiona el presupuesto y evalúa nuevas soluciones.
+- **Tecnología:** Usa el celular para seguimiento y aprobación de decisiones. Nivel intermedio.
+- **Metas:** Rentabilizar el hotel, mantener la calidad del servicio.
+- **Necesidades:** Ver impacto de las soluciones en resultados concretos.
+- **Frustraciones:** Falta de claridad en el ROI de las herramientas tecnológicas.
+- **Comportamientos clave esperados:** Revisa indicadores de rentabilidad, aprueba renovaciones, consulta informes mensuales.
 
-5. **Vamos a obtener la mayoria de los clientes mediante** 
+##### User Outcomes & Benefits
 
-6. **Vamos a hacer dinero mediante** 
+> **Referencia metodológica:**  
+> Según *Lean UX, 3rd edition*, se identifican los resultados deseados y beneficios emocionales que nuestros usuarios buscan alcanzar con el uso del producto.
 
-7. **Nuestra competencia en el mercado serán**
-   **Vamos a tener ventaja frente a nuestra competencia debido a**
+###### Carla (Administradora del hotel)
+- **¿Qué quiere lograr?** Optimizar el tiempo dedicado a tareas operativas y administrativas del hotel.
+- **¿Cómo quiere sentirse?** Tranquila, organizada y en control.
+- **¿Cómo la ayuda Sweet Manager?** Centraliza información, automatiza flujos y muestra reportes en tiempo real.
+- **¿Por qué lo buscaría?** Necesita herramientas modernas que reemplacen las hojas de cálculo.
+- **¿Qué cambio observaríamos?** Disminuye el uso de Excel y usa el panel de control de Sweet Manager a diario.
 
-8. **El mayor riesgo de producción es** 
-   **Lo resolvemos realizando**
+###### Silvia (Dueña del hotel)
+- **¿Qué quiere lograr?** Aumentar la rentabilidad del hotel.
+- **¿Cómo quiere sentirse?** Segura y confiada de que sus inversiones tecnológicas dan frutos.
+- **¿Cómo la ayuda Sweet Manager?** Visualiza indicadores de eficiencia y retorno de inversión.
+- **¿Por qué lo buscaría?** Quiere resultados claros y medibles.
+- **¿Qué cambio observaríamos?** Usa informes periódicos para tomar decisiones estratégicas.
 
-9. **Que otros assumptions tenemos, que si son probados como falsos, podria ocasionar que nuestro proyecto fracase:**
+###### José (Técnico IoT - Partner)
+- **¿Qué quiere lograr?** Instalar dispositivos sin fricción y minimizar problemas postventa.
+- **¿Cómo quiere sentirse?** Competente, autónomo y respaldado.
+- **¿Cómo lo ayuda Sweet Manager?** Herramientas de configuración, soporte y documentación clara.
+- **¿Por qué lo buscaría?** Busca soluciones confiables para brindar mejor servicio.
+- **¿Qué cambio observaríamos?** Menos incidencias técnicas reportadas y más instalaciones exitosas.
 
-    
-**Users:**
+##### User Assumptions
 
-**User Outcomes & Benefits:**
-¿Que está intentando conseguir el usuario?
-¿Como se quiere sentir el usuario?
-¿Como nuestro producto lo acerca a su objetivo?
-¿Por que nuestros usuarios se interesarian por nuestro producto? ¿Que beneficio podrian obtener?
-¿Que cambio en su comportamiento veremos que nos dira que nuestro objetivo ha sido logrado?
+1. ¿Quién es el usuario?
+2. ¿Dónde entra nuestro producto en su trabajo o vida?
+3. ¿Cuál es el problema que nuestro producto soluciona?
+4. ¿Cómo y cuándo nuestro producto es usado?
+5. ¿Qué características son importantes?
+6. ¿Cómo debería nuestro producto verse o comportarse?
 
+##### Business Assumptions
 
-**User Assumptions:** 
-**1. ¿Quien es el usuario?**
-**2. ¿Donde entra nuestro producto en su trabajo o su vida?**
-**3. ¿Cual es el problema que nuestro producto soluciona?**
-**4. ¿Como y cuando nuestro producto es usado?**
-**5. ¿Que caracteristicas son importantes?**
-**6. ¿Como deberia nuestro producto verse o comportarse?**
+> *Extraído y adaptado del modelo propuesto en **Lean UX Sampler** de Jeff Gothelf*
 
-**Business Assumptions:**
+1. **Creo que mis clientes tienen la necesidad de:**  
+   Mejorar la eficiencia operativa de sus hoteles mediante automatización y control energético.
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
-Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escrito por Jeff Gothelf y Josh Seiden: "We believe that [business outcome] will be achieved if [user] attains [user benefit] with [feature]".
+2. **Estas necesidades pueden resolverse con:**  
+   Una plataforma integral que centralice gestión de reservas, finanzas y dispositivos IoT.
+
+3. **Mis clientes iniciales son (o serán):**  
+   Hoteles pequeños y medianos en Lima Metropolitana.
+
+4. **El valor principal que un cliente desea obtener de mi servicio es:**  
+   Reducción del tiempo y costo operativos.  
+   **También pueden obtener:**  
+   - Mejora en la satisfacción del huésped  
+   - Mejores decisiones con indicadores en tiempo real  
+   - Ahorro energético
+
+5. **Adquiriré a la mayoría de mis clientes a través de:**  
+   Partners tecnológicos, asociaciones hoteleras y marketing digital.
+
+6. **Ganaré dinero mediante:**  
+   Un modelo de suscripción escalable con funcionalidades básicas e IoT incluidos.
+
+7. **Mi competencia principal en el mercado será:**  
+   Sistemas tradicionales sin integración IoT.  
+   **Nos diferenciaremos por:**  
+   - Innovación tecnológica  
+   - Interfaz amigable  
+   - Soporte mediante partners
+
+8. **Mi mayor riesgo de producto es:**  
+   Poca adopción de funcionalidades IoT por desconocimiento.  
+   **Lo resolveremos mediante:**  
+   Capacitación, asistentes y soporte técnico.
+
+9. **Otros supuestos críticos:**  
+   - Que los hoteles pequeños estén dispuestos a pagar por tecnología.  
+   - Que la instalación IoT sea rentable y escalable.  
+   - Que los partners brinden soporte técnico confiable.
+
 
 #### 1.2.2.4. Lean UX Canvas
 
