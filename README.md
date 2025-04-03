@@ -534,100 +534,20 @@ AQUI VA UNA DESCRIPCION
 
 ## 2.4. Ubiquitous Language
 
-En esta sección, nos centraremos en definir el significado de ciertos términos utilizados en el ambiente de nuestra solución en la gestión hotelera.
+Esta sección contiene un glosario de términos y conceptos definidos sin ambigüedad utilizados en el dominio. Su propósito es garantizar una comunicación clara y consistente entre todos los miembros del equipo y los stakeholders, tal como lo establece Eric Evans en su libro Domain-Driven Design: Tackling Complexity in the Heart of Software.
 
-Check - In :
-Definition: Process by which a guest registers their arrival at the hotel, provides the necessary information and receives the key to their room.<br>
-
-Check - Out:
-Definition: Process by which a guest completes their stay at the hotel, makes final payment, and returns the room key.<br>
-
-Role:
-Definition: Worker role to a specific area.<br>
-
-Staff:
-Definition: They represent all hotel workers. They perform various tasks and responsibilities needed for the organization to operate.<br>
-
-Reservation:
-Definition: Booking of a room by a guest.<br>
-
-Occupancy:
-Definition: The percentage of rooms occupied in the hotel over a specified period of time.<br>
-
-Rate:
-Definition: The price per night for a room.<br>
-
-House Rules:
-Definition: Policies and regulations of the hotel that guests are required to follow.<br>
-
-Housekeeping:
-Definition: The department responsible for cleaning and maintaining the rooms.<br>
-
-Inventory management:
-Definition: The process of overseeing and controlling the hotel's supply of goods and materials, ensuring that adequate stock levels are maintained while minimizing costs and waste.<br>
-
-Asset tracking:
-Definition: The practice of monitoring and managing the hotel's physical assets, such as furniture, equipment, and fixtures, to ensure they are utilized efficiently and maintained properly.<br>
-
-Task management:
-Definition: The organization and tracking of tasks and responsibilities within the hotel, ensuring that deadlines are met and workflows are optimized.
-
-Check - Out:
-Definition: Process by which a guest completes their stay at the hotel, makes final payment, and returns the room key.<br>
-
-Role:
-Definition: Worker role to a specific area.<br>
-
-Staff:
-Definition: They represent all hotel workers. They perform various tasks and responsibilities needed for the organization to operate.<br>
-
-Reservation:
-Definition: Booking of a room by a guest.<br>
-
-Occupancy:
-Definition: The percentage of rooms occupied in the hotel over a specified period of time.<br>
-
-Rate:
-Definition: The price per night for a room.<br>
-
-House Rules:
-Definition: Policies and regulations of the hotel that guests are required to follow.<br>
-
-Type of Reservation:
-Definition: List of types of reservations.<br>
-
-Housekeeping:
-Definition: The department responsible for cleaning and maintaining the rooms.<br>
-
-Inventory management:
-Definition: The process of overseeing and controlling the hotel's supply of goods and materials, ensuring that adequate stock levels are maintained while minimizing costs and waste.<br>
-
-Asset tracking:
-Definition: The practice of monitoring and managing the hotel's physical assets, such as furniture, equipment, and fixtures, to ensure they are utilized efficiently and maintained properly.<br>
-
-Staff scheduling:
-Definition: The process of creating and managing work schedules for hotel employees, taking into account factors such as shift rotations, staffing levels, and employee availability.<br>
-
-Task management:
-Definition: The organization and tracking of tasks and responsibilities within the hotel, ensuring that deadlines are met and workflows are optimized.<br>
-
-Resource allocation:
-Definition: The allocation and distribution of resources, such as staff, equipment, and funds, to different areas of the hotel based on operational needs and priorities.<br>
-
-Vendor management:
-Definition: The coordination and oversight of relationships with external suppliers and vendors, including negotiating contracts, monitoring performance, and ensuring timely delivery of goods and services.<br>
-
-Quality control:
-Definition: The process of monitoring and evaluating the quality of products and services offered by the hotel, identifying areas for improvement, and implementing measures to maintain or enhance quality standards.<br>
-
-Cost management:
-Definition: The control and optimization of expenses within the hotel, including labor costs, operating expenses, and capital expenditures, to maximize profitability and efficiency.<br>
-
-Data analytics:
-Definition: The use of data analysis techniques to extract insights and patterns from hotel operations data, enabling informed decision-making and strategic planning.<br>
-
-Risk management:
-Definition: The identification, assessment, and mitigation of risks when resources are limited at any moment.
+| Término (Inglés)         | Término (Español)            | Definición |
+|--------------------------|------------------------------|------------|
+| **Check-In**             | (Registro de entrada)        | Proceso mediante el cual un huésped se registra al llegar al hotel, proporciona sus datos y recibe acceso a su habitación. |
+| **Check-Out**            | (Salida del huésped)         | Proceso mediante el cual el huésped finaliza su estadía, paga su cuenta y devuelve la llave o tarjeta. |
+| **Reservation**          | (Reserva)                    | Acción mediante la cual un huésped aparta una habitación para fechas específicas. |
+| **Reservation Status**   | (Estado de la reserva)       | Condición actual de una reserva, como confirmada, pendiente, cancelada o completada. |
+| **Reservation Type**     | (Tipo de reserva)            | Clasificación de la reserva según su fuente o condiciones, por ejemplo: directa, en línea, grupal o por agencia. |
+| **Availability**         | (Disponibilidad)             | Cantidad de habitaciones libres para reservar en un rango de fechas determinado. |
+| **No-show**              | (No presentación)            | Caso en el que un huésped con reserva confirmada no se presenta en el hotel. |
+| **House Rules**          | (Reglamento del hotel)       | Normas y políticas internas que deben seguir los huéspedes durante su estadía. |
+| **Housekeeping**         | (Limpieza)                   | Departamento encargado de la limpieza, arreglo y mantenimiento diario de las habitaciones. |
+| **Inventory Management** | (Gestión de inventario)      | Control del suministro de productos y materiales necesarios para el funcionamiento del hotel. |
 
 
 # Capítulo III: Requirements Specification
