@@ -487,6 +487,47 @@ Incluir Stakeholders internos y externos.
 
 ### 2.1.2. Estrategias y tácticas frente a competidores
 
+1. Estrategias para afrontar las fortalezas de la competencia  
+<ul>
+    <li>Diferenciación tecnológica con IoT:  
+        SweetManager integrará termostatos inteligentes, control de entretenimiento desde una app y sensores IoT para la automatización hotelera, ofreciendo una experiencia más innovadora y eficiente.
+    </li>
+    <li>Enfoque en la experiencia del usuario:  
+        Mientras que los competidores se centran en la gestión administrativa, SweetManager también priorizará una interfaz moderna, intuitiva y adaptable, garantizando una mejor experiencia para los usuarios.
+    </li>
+</ul>
+
+2. Estrategias ante las debilidades de la competencia  
+<ul>
+    <li>Planes escalables y flexibles:  
+        Los competidores ofrecen precios fijos poco accesibles para hoteles pequeños. SweetManager implementará suscripciones modulares, permitiendo que cada cliente pague únicamente por las funcionalidades que necesite según el tamaño de su negocio.
+    </li>
+    <li>Mayor compatibilidad con diferentes dispositivos:  
+        Mientras los competidores tienen interfaces limitadas, SweetManager optimizará su aplicación web y móvil para asegurar una experiencia fluida en cualquier dispositivo.
+    </li>
+</ul>
+
+3. Estrategias para las oportunidades de la competencia  
+<ul>
+    <li>Asociaciones estratégicas con proveedores de IoT:  
+        SweetManager establecerá alianzas con fabricantes de dispositivos IoT, como termostatos inteligentes, controles de entretenimiento y cerraduras electrónicas, para reducir costos de hardware, asegurar compatibilidad y mejorar la integración.
+    </li>
+    <li>Optimización del consumo energético:  
+        La integración de dispositivos IoT con el sistema de energía del hotel permitirá un mejor control del consumo eléctrico, reduciendo significativamente los costos operativos.
+    </li>
+</ul>
+
+4. Estrategias frente a las amenazas  
+<ul>
+    <li>Seguridad y privacidad:  
+        Implementación de cifrado avanzado y estándares de protección de datos para garantizar confianza en la digitalización y evitar vulnerabilidades de seguridad.
+    </li>
+    <li>Asociaciones estratégicas con marketing:  
+        Estrategia de marketing digital, publicidad y colaboraciones con influencers del sector hotelero para posicionar la marca y captar clientes antes de la expansión de los rivales.
+    </li>
+</ul>
+
+
 ## 2.2. Entrevistas
 
 ### 2.2.1. Diseño de entrevistas
