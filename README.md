@@ -595,6 +595,18 @@ Esta sección contiene un glosario de términos y conceptos definidos sin ambig�
 
 ## 3.1. To-Be Scenario Mapping
 
+En esta sección se presentan los Scenario Mapping de los segmentos objetivos, uno para el de huéspedes y otro para el de trabajadores, que describen cómo serán las interacciones, tareas y actividades de los usuarios una vez implementado y utilizado el sistema. De este modo, se proporciona una visión general de las características de la aplicación.
+
+#### To-be Scenario Mapping Huésped:
+
+![To-be Scenario Mapping Guest](assets/img/to-be-scenario-mapping/guest-to-be.png)
+
+#### To-be Scenario Mapping Gerente:
+
+![To-be Scenario Mapping Manager](assets/img/to-be-scenario-mapping/manager-to-be.png)
+
+El enlace de LucidChart en el que fueron desarrollados es el siguiente: https://lucid.app/lucidchart/8cc2ff7d-f132-4d27-b515-1662e7c51001/edit?viewport_loc=179%2C-140%2C2360%2C1270%2C0_0&invitationId=inv_7ae99d2c-7dba-4432-948a-2e6151bb969e
+
 ## 3.2. User Stories
 
 | Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
