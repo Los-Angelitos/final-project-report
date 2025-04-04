@@ -573,6 +573,18 @@ AQUI VA UNA DESCRIPCION
 
 ### 2.3.5. As-is Scenario Mapping
 
+En esta sección se presentan los Scenario Mapping de los segmentos objetivos, uno para el de huéspedes y otro para el de trabajadores, que describen las experiencias actuales de los usuarios potenciales en sus actividades diarias.
+
+#### As-is Scenario Mapping Huésped:
+
+![As-is Scenario Mapping Guest](/assets/img/as-is-scenario-maping/guest-as-is.png)
+
+#### As-is Scenario Mapping Gerente:
+
+![As-is Scenario Mapping Manager](/assets/img/as-is-scenario-maping/manager-as-is.png)
+
+El enlace de LucidChart en el que fueron desarrollados es el siguiente: https://lucid.app/lucidchart/429f68af-693f-4eb9-8468-fbe7483400c3/edit?viewport_loc=-124%2C40%2C2239%2C1205%2C0_0&invitationId=inv_b81ad239-80ca-44d9-b7d6-b91638411afb
+
 ## 2.4. Ubiquitous Language
 
 Esta sección contiene un glosario de términos y conceptos definidos sin ambigüedad utilizados en el dominio. Su propósito es garantizar una comunicación clara y consistente entre todos los miembros del equipo y los stakeholders, tal como lo establece Eric Evans en su libro Domain-Driven Design: Tackling Complexity in the Heart of Software.
