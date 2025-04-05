@@ -27,7 +27,7 @@
 | :---------------------------------: | :--------: |
 | Mauricio Abraham Rivo Rojas Sánchez | U202211572 |
 | Giacomo Zoppi Rodriguez | U202210029 |
-|   Integrante 3    | U202210192 |
+| Omar Andrew Morales Montalvo | U202212383 |
 |    Integrante 4    | u20221a322 |
 | Integrante 5 | U202211168 |
 | Integrante 6 | U202211168 |
@@ -568,6 +568,44 @@ AQUI VA UNA DESCRIPCION
 ### 2.3.2. User Task Matrix
 
 ### 2.3.3. User Journey Mapping
+
+Esta sección expone los User Journey Mapping correspondientes a cada perfil de usuario, destacando las etapas principales de interacción con SweetManager, los puntos de contacto implicados y las emociones y experiencias vividas en cada fase. El propósito es detectar áreas de mejora y perfeccionar la experiencia del usuario. A continuación, se detallan los recorridos de usuario para cada uno de los perfiles definidos.
+
+__User Journey Mapp - NOMBRE - Owner (As-Is)__
+
+__Inicio del día:__ El owner comienza el día revisando el dashboard general para tener una visión clara del estado del hotel. Se siente presionado por mantenerse al tanto de todo lo que ocurre y asegurarse de que no haya inconvenientes operativos.
+__Gestión de abastecimientos:__ Luego verifica los niveles de inventario y se encarga de solicitar lo necesario para mantener el hotel abastecido. Esta tarea le genera frustración debido a la falta de automatización y seguimiento eficiente en el sistema actual.
+__Comunicación general:__ Revisa los mensajes y notificaciones pendientes del equipo de trabajo. Aunque valora estar informado, se siente abrumado por tener que responder a múltiples temas sin una bandeja de entrada organizada.
+__Cierre del día:__ Finaliza el día con una revisión rápida del dashboard para asegurarse de que todo esté encaminado para el día siguiente. Experimenta una mezcla de tranquilidad y agotamiento, esperando mejoras en la gestión diaria.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/XEmHh7U.png" alt="Imagen del Journey Mapp Owner" width="70%" />
+</div>
+
+__User Journey Map - NOMBRE - Admin (As-Is)__
+
+__Inicio del turno:__ La administradora inicia su jornada revisando las reservas activas del día. Se siente presionada por garantizar una buena experiencia para cada huésped y por evitar errores en el check-in.
+__Gestión de reservas:__ Administra nuevas reservas, edita datos de huéspedes y responde consultas. Experimenta cierta ansiedad debido a la interfaz poco amigable del sistema actual, lo que le toma más tiempo del necesario.
+__Comunicación con el owner:__ Debe informar al owner sobre cambios importantes o incidencias. Aunque es parte de sus responsabilidades, se siente frustrada cuando no obtiene respuestas rápidas, lo que complica su capacidad de reacción.
+__Soporte al huésped:__ Atiende directamente a los huéspedes con solicitudes especiales o problemas durante su estancia. Esta parte le resulta gratificante, aunque también puede volverse estresante en horas pico.
+__Fin del turno:__ Revisa que las tareas estén completas y deja notas para el siguiente turno. Termina el día con una mezcla de satisfacción por el trabajo bien hecho y cansancio por la carga operativa.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/dlJetpy.png" alt="Imagen del Journey Mapp Admin" width="70%" />
+</div>
+
+
+__User Journey Map - NOMBRE - Huésped  (As-Is)__
+
+__Inicio de la experiencia:__ Sebastián encuentra el hotel a través de redes sociales o plataformas externas. Ingresa al sitio web o app para hacer una reserva. Se siente confundido al no encontrar un proceso claro y rápido para completar su reserva.
+__Proceso de reserva:__ Llena el formulario de reserva, selecciona fechas y tipo de habitación. Se siente impaciente si el sistema se demora o si no puede pagar de inmediato.
+__Pago:__ Intenta realizar el pago en línea, pero el sistema no siempre es intuitivo o confiable. Esto le genera inseguridad y dudas sobre la confirmación de su reserva.
+Estancia: Durante su estadía, valora la comodidad del hotel, pero siente que podría haber más comunicación proactiva desde el staff o vía mensajes automáticos para guiarlo mejor.
+__Fin de la experiencia:__ Al terminar su estancia, espera recibir un comprobante y tener la opción de dejar una reseña. Si el proceso es fluido, se va satisfecho; si no, puede irse con una percepción negativa del servicio digital.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/ApJq6TJ.png" alt="Imagen del Journey Mapp Huesped" width="70%" />
+</div>
 
 ### 2.3.4. Empathy Mapping
 
