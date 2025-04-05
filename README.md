@@ -573,15 +573,19 @@ AQUI VA UNA DESCRIPCION
 
 ### 2.3.5. As-is Scenario Mapping
 
-En esta sección se presentan los Scenario Mapping de los segmentos objetivos, uno para el de huéspedes y otro para el de trabajadores, que describen las experiencias actuales de los usuarios potenciales en sus actividades diarias.
+En esta sección se presentan los Scenario Mapping de los segmentos objetivos: Huésped, Administrador y Dueño, que describen las experiencias actuales de los usuarios potenciales en sus actividades diarias.
 
 #### As-is Scenario Mapping Huésped:
 
 ![As-is Scenario Mapping Guest](assets/img/as-is-scenario-mapping/guest-as-is.png)
 
-#### As-is Scenario Mapping Gerente:
+#### As-is Scenario Mapping Administrador:
 
 ![As-is Scenario Mapping Manager](assets/img/as-is-scenario-mapping/manager-as-is.png)
+
+#### As-is Scenario Mapping Dueño:
+
+![As-is Scenario Mapping Owner](assets/img/as-is-scenario-mapping/owner-as-is.png)
 
 El enlace de LucidChart en el que fueron desarrollados es el siguiente: https://lucid.app/lucidchart/429f68af-693f-4eb9-8468-fbe7483400c3/edit?viewport_loc=-124%2C40%2C2239%2C1205%2C0_0&invitationId=inv_b81ad239-80ca-44d9-b7d6-b91638411afb
 
