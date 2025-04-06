@@ -29,8 +29,8 @@
 | Giacomo Zoppi Rodriguez | U202210029 |
 | Omar Andrew Morales Montalvo | U202212383 |
 | Ramón Alejandro Jorge Arévalo | U20221D126 |
-| Integrante 5 | U202211168 |
-| Integrante 6 | U202211168 |
+| Fabia Alejandra Herrera Aguirre | U202219422 |
+| Arian Martín Rodriguez Vargas | U202212096 |
 
 </div>
 
@@ -41,8 +41,8 @@
     <tr>
         <th>Version</th>
         <th>Fecha</th>
-        <th>Participantes</th>
-        <th>Observaciones</th>
+        <th>Autor</th>
+        <th>Descripción de modificación</th>
     </tr>
     </thead>
     <tbody>
@@ -52,8 +52,8 @@
         <td>Mauricio Abraham Rivo Rojas Sánchez</td>
         <td>
         <ul>
-        <li> Software Configuration Management </li>
-        <li> Landing Page, Services & Applications Implementation  </li>
+        <li> Antecedentes y Problemática </li>
+        <li> User stories </li>
         </ul>
         </td>
     </tr>
@@ -63,10 +63,9 @@
         <td>Giacomo Zoppi Rodriguez</td>
         <td>
         <ul>
-        <li> Competidores</li>
-        <li> Entrevistas</li>
-        <li> Needfinding </li>
-        <li> Ubiquitous Language</li>
+        <li> Lean UX Process</li>
+        <li> Product Backlog</li>
+        <li> Ubiquitous Language </li>
         </ul>
         </td>
     </tr>
@@ -75,52 +74,47 @@
     <tr>
         <td>TB1</td>
         <td>29/03/2024</td>
-        <td>Integrante 3</td>
+        <td>Omar Andrew Morales Montalvo</td>
         <td>
         <ul>
-        <li> StartUp Profile</li>
-        <li> Solution Profile </li>
-        <li> Segmento Objetivo </li>
-        </ul>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="1">TB1</td>
-        <td rowspan="1">29/03/2024</td>
-        <td>Integrante 4</td>
-        <td>
-        <ul>
-        <li> Style Guidelines</li>
-        <li> Information Architecture </li>
-        <li> Landing Page UI Design </li>
-        <li> Web Applications UX/UI Design </li>
-        <li> Web Application Prototyping</li>
-        </ul>
-        </td>
-    </tr>
-    <tr>
-        <td rowspan="1">TB1</td>
-        <td rowspan="1">29/03/2024</td>
-        <td>Integrante 5</td>
-        <td>
-        <ul>
-        <li> To-be Scenario Mapping </li>
-        <li> User Stories </li>
+        <li> User Journey Mapping </li>
         <li> Impact Mapping </li>
-        <li> Product Backlog</li>
         </ul>
         </td>
     </tr>
     <tr>
-        <td rowspan="1">TB1</td>
-        <td rowspan="1">29/03/2024</td>
-        <td>Integrante 6</td>
+        <td>TB1</td>
+        <td>29/03/2024</td>
+        <td> Ramón Alejandro Jorge Arévalo </td>
         <td>
         <ul>
-        <li> To-be Scenario Mapping </li>
-        <li> User Stories </li>
-        <li> Impact Mapping </li>
-        <li> Product Backlog</li>
+        <li> As-is Scenario Mapping </li>
+        <li> To-Be Scenario Mapping </li>
+        <li> User Task Matrix </li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>TB1</td>
+        <td>29/03/2024</td>
+        <td> Fabia Alejandra Herrera Aguirre </td>
+        <td>
+        <ul>
+        <li> Segmentos Objetivos </li>
+        <li> User Persona </li>
+        <li> Analisis Entrevistas </li>
+        </ul>
+        </td>
+    </tr>
+    <tr>
+        <td>TB1</td>
+        <td>29/03/2024</td>
+        <td> Arian Martín Rodriguez Vargas </td>
+        <td>
+        <ul>
+        <li> Analisis Competitivo </li>
+        <li> Estrategias Frente a Competidores </li>
+        <li> Empathy Mapping </li>
         </ul>
         </td>
     </tr>
