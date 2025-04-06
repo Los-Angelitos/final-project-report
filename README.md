@@ -298,7 +298,7 @@ Incluir Stakeholders internos y externos.
         </tr>
         <tr>
             <td colspan="2">¿Por qué llevar a cabo este análisis?</td>
-            <td colspan="5">Porque de esta manera, se conoce a los potenciales competidores en el mercado, evaluamos y analizamos lo que ofrecen para aprovechar algunos puntos débiles encontrados.</td>
+            <td colspan="5">Porque de esta manera, se conoce a los potenciales competidores en el mercado, evaluamos y analizamos lo que ofrecen para aprovechar algunos puntos débiles encontrados y de esta manera diferenciarnos de ellos.</td>
         </tr>
     </thead>
     <tbody>
@@ -312,14 +312,14 @@ Incluir Stakeholders internos y externos.
         <tr>
             <td rowspan="2" style="writing-mode: vertical-lr; text-align: center;">Perfil</td>
             <td>Overview</td>
-            <td>Solución tecnológica peruana enfocada en la gestión eficiente de hoteles, diseñada para facilitar el trabajo administrativo y operativo, así como, modernizar los procesos administrativos, mejorando el confort, la seguridad y la eficiencia energética de los espacios.</td>
+            <td>Solución tecnológica peruana enfocada en la gestión eficiente de hoteles, diseñada para facilitar el trabajo administrativo y operativo, así como, modernizar los procesos administrativos, mejorando el confort, la seguridad y la eficiencia energética de los espacios utilizando dispositivos IoT como alternativa.</td>
             <td>Software peruano que administra la gestión de los hoteles a nivel administrativo y operativo, es multiplataforma pudiendo manejar el sistema desde cualquier dispositivo, permite el ahorro de tiempo en tareas repetitivas y manuales, cuenta con facturación electrónica con la SUNAT.</td>
-            <td>Sistema peruano que ofrece una solución completa para la gestión hoteleral, incluyendo funcionalidades como reservas, facturación electrónica integrada con SUNAT, gestión de housekeeping, optimizando operaciones y mejorando la satisfacción del huesped</td>
-            <td>Proporciona un software hecho en Perú para la gestión de hoteles el cual incluye administración de reservas, huéspedes, caja, almacén, entre otros. Cuenta con facturación electrónica integrada con SUNAT, automatizaciones de los flujos de trabajo indicando reportes mediante dashboards</td>
+            <td>Sistema peruano que ofrece una solución completa para la gestión hotelera, incluyendo funcionalidades como reservas, facturación electrónica integrada con SUNAT, gestión de housekeeping, optimizando operaciones y mejorando la satisfacción del huésped.</td>
+            <td>Proporciona un software hecho en Perú para la gestión de hoteles el cual incluye administración de reservas, huéspedes, caja, almacén, entre otros. Cuenta con facturación electrónica integrada con SUNAT, automatizaciones de los flujos de trabajo indicando reportes mediante dashboards.</td>
         </tr>
         <tr>
             <td>¿Qué valor ofrece a los clientes?</td>
-            <td>SweetManager está encargado de integrar un sistema hotelero para su fácil gestión colocando como punto innovador los dispositivos IoT con comunicación en tiempo real para el manejo de trámites administrativos, housekeeping y una configuración sencilla y adaptable hacia el cliente.</td>
+            <td>SweetManager está encargado de integrar un sistema hotelero para su fácil gestión colocando como punto innovador los dispositivos IoT con comunicación en tiempo real para el manejo de trámites administrativos y una configuración sencilla y adaptable hacia el cliente.</td>
             <td>Xafiro está encargado de digitalizar mediante un software, la planificación, facturación y administración de los hoteles con una fácil integración de reservas para los huéspedes, pudiendo utilizar el sistema en cualquier dispositivo o plataforma. Cuenta con planes de suscripción mensual.</td>
             <td>Samin PMS maneja un sistema completo para la gestión de cualquier hotel en el Perú, mediante la facturación electrónica, administración de reservas, check-in, check-out, housekeeping, caja, almacén y otros, impulsando sus resultados mediante reportes brindados en dashboards.</td>
             <td>Binz360 mantiene una solución ante la administración de hoteles mediante procesos automatizados que brinda con su herramienta, un software que promete no continuar con las gestiones repetitivas y manuales en cuadros Excel o cuadernos. Abarca y cumple con diferentes secciones importantes de un hotel como caja, almacén, facturación, entre otros.</td>
@@ -334,10 +334,10 @@ Incluir Stakeholders internos y externos.
         </tr>
         <tr>
             <td>Estrategias de marketing</td>
-            <td>Se introduce una propuesta innovadora con la <strong>integración de IoT</strong>, permitiendo a los huéspedes personalizar su experiencia mediante el control de iluminación, temperatura y entretenimiento desde una app móvil. Además, incorpora un <strong>programa de fidelización gamificado</strong>, donde los clientes ganan puntos por interacciones como compartir en redes sociales o dejar reseñas. Para mejorar la comunicación, implementa un <strong>asistente virtual como chatbot</strong>, capaz de proporcionar información en tiempo real sobre disponibilidad, promociones y asistencia personalizada.</td>
-            <td>Su principal estrategia es el <strong>motor de reservas directo</strong>, que ayuda a los hoteles a aumentar sus ingresos hasta un 38% al recibir reservas sin intermediarios ni comisiones. También destacan por su <strong>facturación electrónica integrada</strong> con la SUNAT, facilitando la gestión contable. Se enfocan en el <strong>ahorro de tiempo</strong>, asegurando que su sistema reduce hasta 970 minutos mensuales en tareas operativas, optimizando el trabajo del personal.</td>
-            <td>Se diferencian con <strong>integraciones adicionales</strong> como Motor de Reservas, Restaurante Smart y Housekeeping Smart, ampliando las funcionalidades del software. Además, ofrecen <strong>marketing digital para hoteles</strong>, incluyendo gestión de redes sociales y publicidad en Facebook Ads. Para generar confianza, permiten <strong>demostraciones gratuitas</strong> del sistema antes de la compra.</td>
-            <td>Ofrecen una <strong>prueba gratuita</strong> de 14 días para que los clientes experimenten el sistema antes de comprometerse. Cuentan con <strong>planes de precios escalables</strong> desde S/7.50 por habitación, lo que permite flexibilidad según el tamaño del hotel. Se enfocan en la <strong>automatización</strong>, eliminando procesos manuales como cuadernos y hojas de Excel, mejorando la eficiencia operativa.</td>
+            <td>Se introduce una propuesta innovadora con la integración de IoT, permitiendo a los huéspedes personalizar su experiencia mediante el control de iluminación, temperatura y entretenimiento desde una app móvil, como también la implementación de funciones ya conocidas en el mercado (facturación electrónica, automatizaciones, administración y monitoreo, etc). Además, se incorpora un equipo estrátegico de publicidad para compartir en redes sociales y permitir reseñas, teniendo énfasis en ciudades altamente turísticos. Para reducir preguntas y dudas, se incorpora una landing page con "Preguntas y respuestas" capaz de proporcionar información verídica sobre disponibilidad, promociones y posible asistencia personalizada.</td>
+            <td>Su principal estrategia es el motor de reservas directo, que ayuda a los hoteles a aumentar sus ingresos hasta un 38% al recibir reservas sin intermediarios ni comisiones. También destacan por su facturación electrónica integrada con la SUNAT, facilitando la gestión contable. Se enfocan en el ahorro de tiempo, asegurando que su sistema reduce hasta 970 minutos mensuales en tareas operativas, optimizando el trabajo del personal.</td>
+            <td>Se diferencian con integraciones adicionales como Motor de Reservas, Restaurante Smart y Housekeeping Smart, ampliando las funcionalidades del software. Además, ofrecen marketing digital para hoteles, incluyendo gestión de redes sociales y publicidad en Facebook Ads. Para generar confianza, permiten demostraciones gratuitas del sistema antes de la compra.</td>
+            <td>Ofrecen una prueba gratuita de 14 días para que los clientes experimenten el sistema antes de comprometerse. Cuentan con planes de precios escalables desde S/7.50 por habitación, lo que permite flexibilidad según el tamaño del hotel. Se enfocan en la automatización, eliminando procesos manuales como cuadernos y hojas de Excel, mejorando la eficiencia operativa.</td>
         </tr>
         <tr>
             <td rowspan="3" style="writing-mode: vertical-lr; text-align: center;">Perfil de Producto</td>
@@ -436,7 +436,7 @@ Incluir Stakeholders internos y externos.
         <tr>
             <td>Oportunidades</td>
             <td>
-                Expansión en mercados internacionales con turismo en crecimiento. <br>
+                Expansión en mercados latinoamericanos con turismo en crecimiento. <br>
                 Implementación de más dispositivos IoT para mayor automatización. <br>
                 Asociación con cadenas hoteleras para integración exclusiva.
             </td>
