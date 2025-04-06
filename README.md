@@ -28,7 +28,7 @@
 | Mauricio Abraham Rivo Rojas Sánchez | U202211572 |
 | Giacomo Zoppi Rodriguez | U202210029 |
 | Omar Andrew Morales Montalvo | U202212383 |
-|    Integrante 4    | u20221a322 |
+| Ramón Alejandro Jorge Arévalo | U20221D126 |
 | Integrante 5 | U202211168 |
 | Integrante 6 | U202211168 |
 
@@ -566,6 +566,23 @@ AQUI VA UNA DESCRIPCION
 ### 2.3.1. User Personas
 
 ### 2.3.2. User Task Matrix
+
+En esta parte se expone la User Task Matrix, una herramienta clave para reconocer cuáles son las tareas más relevantes y frecuentes que llevan a cabo los User Personas dentro de su ambiente laboral. Esta matriz nos permite observar y comparar las actividades de huéspedes, administradores y dueños; resaltando tanto sus diferencias como similitudes en cuanto a frecuencia e importancia. Gracias a este análisis, logramos entender mejor sus necesidades y retos, lo que nos permite enfocar el diseño del producto en las funcionalidades que realmente importan para su día a día.
+
+| Task                         | Huésped (Frecuencia/Importancia) | Administrador (Frecuencia/Importancia) | Dueño (Frecuencia/Importancia) |
+| ---------------------------- | -------------------------------- | -------------------------------------- | ------------------------------ |
+| Reserva de habitaciones | Alta/Alta | Baja/Baja | Baja/Baja  |
+| Gestión de reservas | Baja/Baja | Alta/alta | Media/Media  |
+| Solicitud de servicio a las habitaciones | Alta/Alta | Baja/Baja | Baja/Baja  |
+| Programación de limpieza de habitaciones | Baja/Baja | Alta/Alta | Baja/Media  |
+| Registro de preferencias de temperatura e iluminación | Alta/Alta | Baja/Baja | Baja/Baja  |
+| Negociación con proveedores | Baja/Baja | Media/Media | Alta/Alta |
+| Gestión de las habitaciones | Baja/Baja | Alta/Alta | Alta/Alta |
+| Gestión de las finanzas | Baja/Baja | Media/Media | Alta/Alta  |
+| Administración de recursos | Baja/Baja | Alta/Alta | Alta/Alta |
+| Comunicación y organización constante | Baja/Baja | Alta/Alta | Alta/Alta |
+| Solicitud de abastecimiento | Baja/Baja | Media/Alta | Alta/Alta |
+| Control de entradas y salidas | Baja/Baja | Alta/Alta | Media/Alta |
 
 ### 2.3.3. User Journey Mapping
 
