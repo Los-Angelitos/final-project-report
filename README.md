@@ -283,7 +283,41 @@ Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escri
 
 ## 1.3. Segmentos objetivo
 
-Incluir Stakeholders internos y externos. 
+<u>Stakeholders externos:</u>
+
+**Propietario de hotel**
+
+Descripción: Usuario responsable de la administración integral del hotel, incluyendo la gestión de ingresos y egresos, contratos con proveedores y control de suministros.
+
+Ubicación geográfica: Mayormente ubicados en zonas urbanas y destinos turísticos clave del Perú, como Lima, Cusco, Arequipa, Piura, entre otros.
+
+Características demográficas: Personas entre 35 y 60 años, en su mayoría de género masculino. La gran mayoría cuenta con estudios superiores en carreras como Hotelería y Turismo, Administración de Empresas o Gestión Hotelera. Tienen un nivel socioeconómico medio a medio-alto y experiencia en el sector servicios.
+
+**Huésped de hotel**
+
+Descripción: Usuario que realiza reservas de habitaciones a través de la plataforma, motivado por viajes de ocio, aventura o negocios.
+
+Ubicación geográfica: Principalmente residentes en diversas regiones del Perú, aunque con potencial de expansión hacia otros países de Latinoamérica.
+
+Características demográficas: Rango de edad entre 20 y 50 años. Se trata de viajeros con intereses turísticos o profesionales, con estudios universitarios completos o en curso, familiarizados con el uso de plataformas digitales para la planificación de viajes.
+
+**Proveedor de dispositivos IoT**
+
+Descripción: Empresa o profesional que fabrica, comercializa e instala dispositivos inteligentes compatibles con sistemas de automatización hotelera, como termostatos, válvulas de agua inteligentes, sensores de presencia o controladores de iluminación.
+
+Ubicación geográfica: Principalmente ubicados en zonas urbanas del Perú.
+
+Características demográficas: Son empresas lideradas por equipos multidisciplinarios que suelen tener experiencia previa en el rubro hotelero o industrial y un enfoque en innovación y eficiencia energética.
+
+<u>Stakeholders internos:</u>
+
+- **Equipo de Desarrollo de SweetManager:** Encargado del diseño, desarrollo y mejora continua de la plataforma SweetManager, asegurando su alineación con las necesidades reales de los usuarios.
+
+- **Equipo de Marketing:** Responsable de definir e implementar estrategias de comunicación y posicionamiento para alcanzar eficazmente a los segmentos objetivo, incluyendo propietarios y gerentes de hoteles.
+
+- **Equipo de Soporte Técnico:** Brinda asistencia constante a los usuarios, resolviendo incidencias técnicas de forma ágil para garantizar una experiencia de uso satisfactoria.
+
+
 
 # Capítulo II: Requirements Elicitation & Analysis
 
