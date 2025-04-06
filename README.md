@@ -658,6 +658,9 @@ Esta sección contiene un glosario de términos y conceptos definidos sin ambig�
 
 ## 3.3. Impact Mapping
 
+Impact Mapping es una metodología visual que facilita la identificación clara de los objetivos que realmente queremos alcanzar para conectar efectivamente con nuestros usuarios. Utilizamos esta herramienta para mantener el enfoque y asegurar que trabajamos en función de nuestras metas principales. Así, al finalizar el mapa mental, logramos definir las acciones y funcionalidades necesarias para desarrollar el proyecto de forma eficiente.
+
+
 ## 3.4. Product Backlog
 
 | Orden | User Story ID | Título                                                        | Descripción                                                                                                                                     | Story Points (1/2/3/5/8) |
