@@ -609,6 +609,18 @@ __Fin de la experiencia:__ Al terminar su estancia, espera recibir un comprobant
 
 ### 2.3.4. Empathy Mapping
 
+<h2>Empathy Map del Dueño de hotel</h2>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <img src="./assets/img/empathy-mapping/owner.png" alt="Empathy Map Huesped">
+</div><br>
+<p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.</p>
+<br><br>
+<h2>Empathy Map del Huésped</h2>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <img src="./assets/img/empathy-mapping/client.png" alt="Empathy Map Huesped">
+</div><br>
+<p>En este mapa de empatía, se ha representado al huésped como el usuario principal de la aplicación. El usuario busca una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.</p>
+
 ### 2.3.5. As-is Scenario Mapping
 
 En esta sección se presentan los Scenario Mapping de los segmentos objetivos: Huésped, Administrador y Dueño, que describen las experiencias actuales de los usuarios potenciales en sus actividades diarias.
