@@ -185,101 +185,343 @@ Siguiendo la estructura propuesta
     ¿Cuanto dinero están implicando?
 
 ### 1.2.2. Lean UX Process
-
+---
 #### 1.2.2.1. Lean UX Problem Statements
-
-Siguiendo la estructura propuesta por Jeff Gothelf y Josh Seiden, en su libro "Lean Ux":
-
-- El estado actual de 
-
-Estos pain points incluyen 
-
-Lo que los productos existentes no logran abordar es l
-
-Nuestro producto/servicio abordará esta brecha al proporcionar 
-
-Nuestro enfoque inicial 
-
-Sabremos que hemos tenido éxito cuando veamos 
-
-
-
+---
 **Problem Statement:**
+
+Siguiendo la estructura propuesta por Jeff Gothelf y Josh Seiden, en su libro "Lean Ux 3rd Edition":
+
+**El estado actual de** la gestión hotelera en hoteles pequeños y medianos se ha centrado principalmente en procesos manuales, soluciones de software fragmentadas y una adopción limitada de tecnologías innovadoras. La mayoría de los sistemas existentes solo abordan funciones básicas como las reservas y la facturación, sin ofrecer una integración integral e inteligente en toda la operación del hotel.
+
+**Los productos y servicios actuales no abordan adecuadamente** la necesidad de integrar tecnologías IoT que mejoren el confort y la experiencia de los huéspedes, ni brindan una plataforma administrativa centralizada, fácil de usar y escalable según el tamaño y las necesidades del hotel.
+
+Sweet Manager **busca cerrar esta brecha mediante** el desarrollo de una solución tecnológica, que integre dispositivos IoT para el control inteligente de habitaciones, al mismo tiempo que simplifica la gestión administrativa y agiliza los procesos de reseva de habitaciones a los huéspedes. 
+
+**Nuestro enfoque inicial estará dirigido** a hoteles pequeños y medianos ubicados en zonas urbanas de América Latina, que buscan modernizar sus operaciones y reducir costos a través de la transformación digital, así como, futuros huespedes interesados en hacer una reserva personalizada rapidamente. 
+
+**Sabremos que hemos tenido éxito cuando observemos** una mayor tasa de adopción de la plataforma, una reducción comprobada de los costos operativos en los hoteles clientes y un aumento en los índices de satisfacción de los huéspedes.
 
 **Dominio:**
 
+La solución se encuentra en el dominio de la gestión hotelera inteligente, donde convergen operaciones administrativas, experiencia del huésped y tecnologías emergentes como el Internet de las Cosas (IoT). Apunta a digitalizar y optimizar la operación diaria de hoteles, combinando eficiencia operativa, automatización y personalización de servicios.
+
 **Segmentos de Clientes:**
+
+Nos dirigimos a los propietarios y administradores de hoteles de tamaños pequeño y mediano, así como a clientes interesados en una agil gestión de reservas. 
 
 **Puntos de Dolor:**
 
+Administradores: uso excesivo de hojas de cálculo, falta de visibilidad en tiempo real, herramientas desconectadas y procesos manuales que consumen tiempo.
+
+Dueños: dificultad para monitorear operaciones desde fuera del hotel, falta de indicadores claros sobre rentabilidad y ocupación.
+
+Huéspedes: procesos de reserva tediosos, comunicación poco eficiente, escasa personalización del servicio.
+
 **Visión/Estrategia:**
 
+Nuestra visión es proporcionar una solución integral y fácil de usar que aborde todas las necesidades de gestión de un hotel, así como mejorar la experiencia del cliente al ofrecer una plataforma dinamica y sencilla para poder gestionar y realizar sus reservas. 
 
 **Segmento Inicial:**
 
+Nos enfocamos inicialmente en hoteles independientes y pequeñas cadenas hoteleras que buscan soluciones accesibles y eficientes para optimizar sus operaciones. Este segmento ofrece la oportunidad de validar rápidamente el producto en contextos reales, generar casos de éxito locales y escalar hacia otras regiones.
+
+---
+
 #### 1.2.2.2. Lean UX Assumptions
-**Features:**
-**Business Outcomes:**
-Extraído de el libro Lean UX, 3rd Edition (Gothelf, 2021)
+---
+#### Features
+---
+**Para el administrador del hotel:**
 
-**¿Como podremos solucionar nuestro problema de negocio? ¿Que vamos a medir?**
+- Gestión de habitaciones, incluyendo un control de ocupación en tiempo real.
 
-Podremos solucionar nuestr problema, mediante:
+- Visualización de  reservas hechas por huéspedes. También puede registrar manualmente la llegada (check-in) y salida (check-out),
 
-El ratio de exito y productividad de las granjas tras el uso de nuestra aplicación:
+- Integración con dispositivos IoT, que permitan automaticamente adecuarse a las necesidades de sus Huéspedes. 
+  
+- Comunicación directa por correo dentro del sistema entre personal del hotel
 
+- Gestión de proveedores y suministros necesarios dentro de la aplicación. 
 
-El numero de reseñas positivas:
+**Para el Huésped del hotel (huésped):**
 
-El indice de uso de nuestra aplicación asi como su retención:
+- Interfaz intuitiva para que el huésped pueda seleccionar fechas, tipo de habitación, servicios adicionales
 
+- Personalización de la habitación, pudiendo determinar valores como la temperatura de la misma. 
 
-1. **Creemos que nuestros usuarios necesitan**: 
+- El usuario puede consultar sus estadías anteriores.
 
-2. **Estas necesidades se pueden satisfacer**:
+**Para el dueño del hotel (owner):**
 
-3. **Nuestros clientes iniciales serán**: 
+- Posibilidad de monitorear los indicadores clave del hotel en tiempo real.
 
-4. **El valor #1 que un cliente quiere de nuestro servicio es:** 
-   **Los clientes tambien pueden obtener:** 
+- Indicadores clave de rentabilidad y ocupación.
 
-5. **Vamos a obtener la mayoria de los clientes mediante** 
+- En caso de que el dueño tenga más de un hotel, podrá ver datos agrupados y comparativos entre ellos.
 
-6. **Vamos a hacer dinero mediante** 
+- El propietario puede gestionar los servicios contratados con Sweet Manager, actualizar su plan, etc. 
 
-7. **Nuestra competencia en el mercado serán**
-   **Vamos a tener ventaja frente a nuestra competencia debido a**
+---
+#### Business Outcomes
+---
+ ¿Cómo sabremos que resolvimos el problema de negocio? ¿Qué mediremos?
 
-8. **El mayor riesgo de producción es** 
-   **Lo resolvemos realizando**
+Los siguientes indicadores nos permitirán evaluar si la solución propuesta está generando el impacto esperado en el negocio hotelero:
 
-9. **Que otros assumptions tenemos, que si son probados como falsos, podria ocasionar que nuestro proyecto fracase:**
+- **Reducción de costos operativos**: Esperamos que al implementar Sweet Manager, se reduzca al menos un 20% en los primeros 6 meses, gracias a una gestión más efectiva de ingresos y recursos que optimiza los costos operativos y maximiza los ingresos.
+- **Incremento en la eficiencia del personal administrativo**: 30% de reducción de tiempo en el tiempo dedicado a tareas administrativas como la gestión de reservas o de habitaciones, lo que se traducirá en una mejora tangible en la eficiencia operativa del hotel.
+- **Retención de los Huéspedes**: Mediante el uso de Sweet Manager, esperamos un aumento del 20% en el número de Huéspedes que realizan reservas repetidas dentro de un año, lo que indica una mayor fidelización gracias a una gestión más efectiva y una experiencia de calidad para los huéspedes.
+- **Aumento en la adopción del sistema**: Con Sweet Manager, esperamos un 60% de uso diario del sistema en los primeros 3 meses, con tanto los administradores como los Huéspedes estando al tanto de sus reservas y de datos importantes en la aplicación. 
+- **Mayor Satisfacción del Huésped**: Gracias a Sweet Manager, esperamos ver un aumento de 0.5 puntos en la calificación promedio de satisfacción del Huésped en las reseñas en línea (fuera de Sweet Manager, refiriendose a servicios externos como las calificaciones de Google Maps, etc) , lo que reflejaría la mejora en la experiencia del Huésped, gracias a una gestión más eficiente y una atención más personalizada.
 
+---
+#### Users
+---
+> **Referencia metodológica:**  
+> Según *Lean UX, 3rd edition*, se recomienda crear proto-personas basadas en suposiciones iniciales del equipo, las cuales deben validarse y actualizarse continuamente mediante investigación y observación directa.
+
+Administradores: Los administradores son responsables de garantizar el correcto funcionamiento del hotel en el día a día. Entre sus principales responsabilidades se encuentran la gestión de reservas, control financiero, coordinación del personal, supervisión del inventario y análisis de indicadores clave
+
+Huéspedes: Los Huéspedes representan a los usuarios externos que buscan alojamiento por motivos turísticos, laborales o personales. Este perfil incluye tanto a familias como a viajeros individuales o de negocios.
+
+Dueños: Los dueños de hotel representan a los creadores de la organización y jefes de los administradores. Se encargan de monitorear la correcta gestión del hotel asi como del rendimiento financiero y operativo del mismo. 
+
+##### Proto-persona 1 – Carla, Administradora de Hotel
+
+- **Behavioral demographic information**  
+  Administradora de un hotel. Mujer de jornada completa (9:00 a.m. - 5:00 p.m.) encargada de la gestión operativa y financiera del establecimiento. Coordina con un equipo administrativo para mantener el funcionamiento del hotel.
+
+- **Pain points and needs**  
+    - **Metas**  
+      - Optimizar el tiempo invertido en tareas administrativas.  
+      - Aumentar la ocupación del hotel mediante una mejor gestión.  
+
+    - **Necesidades**  
+      - Automatizar tareas repetitivas y procesos manuales.  
+      - Acceder fácilmente a datos e indicadores clave para la toma de decisiones.  
+
+    - **Frustraciones**  
+      - Uso excesivo de hojas de cálculo.  
+      - Pérdida de tiempo con proveedores de tecnología poco claros o soluciones poco intuitivas.
+        
+- **Potential Solutions**
+    - Una herramienta que permita gestionar mejor los procesos administrativos y operativos a su cargo.
+  
+---
+
+##### Proto-persona 2 – José, Huésped del Hotel
+
+- **Behavioral demographic information**  
+  Hombre casado que viaja temporalmente con su familia por motivos turísticos. Representa al Huésped típico que busca hospedaje cómodo y sin complicaciones para disfrutar de su viaje familiar.
+
+- **Pain points and needs**  
+    - **Metas**   
+      - Disfrutar tiempo de calidad con su familia.  
+      - Garantizar bienestar y educación a sus hijos.  
+      - Aprovechar sus vacaciones sin estrés ni contratiempos.  
+
+    - **Necesidades**  
+      - Reservar habitaciones de forma sencilla y rápida.  
+      - Contar con servicios que le permitan relajarse y enfocarse en su familia.  
+
+    - **Frustraciones**  
+      - Exceso de trámites y procesos al elegir y reservar alojamiento, lo que vuelve mas tediosas sus vacaciones.
+     
+  - **Potential Solutions**
+          - Una herramienta que permita agilizar los tramites y procesos tediosos al reserver alojamiento
+---
+
+##### Proto-persona 3 – Lucía, Dueña del Hotel
+
+- **Behavioral demographic information**
+- Dueña de dos hoteles en Lima. Supervisa KPIs y busca inversiones rentables. Tiene conocimientos financieros y experiencia en administración.
+
+- **Pain points and needs**
+
+    - **Metas:**
+        -  Rentabilizar la operación y asegurar crecimiento sostenible.
+
+    - **Necesidades:**
+        - Gestionar un correcto funcionamiento del hotel, asi como su generación de ingresos. 
+
+    - **Frustraciones:**
+        - Falta de visibilidad consolidada y herramientas de análisis.
+
+- **Potential Solutions**
+    - Dashboard financiero con indicadores de ROI y performance general.
+---
+##### User Outcomes & Benefits
+---
+> **Referencia metodológica:**  
+> Según *Lean UX, 3rd edition*, usando los proto personas como base , podemos hacernos esta serie de preguntas: What is the user trying to accomplish?, How does the user want to feel during and after this process?, How does our product or service get the user closer to a life goal or dream?, Why would your user seek out your product? y What behavior change can we observe that tells they’ve achieved their goal?
+
+###### Carla, Administradora de Hotel
+- **¿Qué quiere lograr?** Mayor control y organización sobre los procesos operativos con el panel de control centralizado. 
+- **¿Cómo quiere sentirse?** Tranquila, organizada y en control.
+- **¿Cómo la ayuda Sweet Manager?** Centraliza información, automatiza flujos y muestra reportes en tiempo real.
+- **¿Por qué lo buscaría?** Necesita herramientas modernas que reemplacen las hojas de cálculo.
+- **¿Qué cambio observaríamos?** Disminuye el uso de Excel y usa el panel de control de Sweet Manager a diario.
+
+###### José, Huésped del Hotel
+- **¿Qué quiere lograr?** Alcanzar una experiencia de reserva sencilla, rapida y personalizada. 
+- **¿Cómo quiere sentirse?** Relajado y satisfecho. 
+- **¿Cómo la ayuda Sweet Manager?** Visualiza habitaciones de hotel, hace la reserva y las personaliza. 
+- **¿Por qué lo buscaría?** Quiere reservar habitaciones de forma sencilla y agil. 
+- **¿Qué cambio observaríamos?** Usaria Sweet Manager para personalizar y escoger la mejor experiencia hotelera.
+
+###### Lucía, CEO del Hotel
+
+- **¿Qué quiere lograr?** Mayor control y organización sobre el rendimiento financiero y operativo de un hotel.  
+- **¿Cómo quiere sentirse?** Segura de sus decisiones de inversión.
+- **¿Cómo la ayuda Sweet Manager?** Le entrega insights estratégicos y le permite controlar la gestión hotelera. 
+- **¿Por qué lo buscaría?** Para supervisar operaciones sin depender de terceros.
+- **¿Qué cambio observaríamos?** Toma de decisiones mas rapidas y una mejor gestión. 
+---
+#### User Assumptions
+---
+1. ¿Quién es el usuario?
+
+Administrador: Responsable de la operación y administración del hotel.
+
+Huésped: Persona que desea hospedarse con comodidad y sin complicaciones en un hotel.
+
+Dueño: Supervisa la rentabilidad del hotel.
+
+2. ¿Dónde entra nuestro producto en su trabajo o vida?
+   
+Administrador: En su rutina diaria laboral. Le permitirá agilizar procesos.
+
+Huésped: En la planificación y reserva de su estadía.
+
+Dueño: Al revisar resultados del negocio.
+
+3. ¿Cuál es el problema que nuestro producto soluciona?
+   
+Administrador: Procesos manuales, desorden y problemas de organización. 
+
+Huésped: Reservas complejas y procesos tediosos.
+
+Dueño: Falta de visibilidad financiera.
+
+4. ¿Cómo y cuándo nuestro producto es usado?
+Administrador: A diario, desde el trabajo, para gestionar el hotel.
+
+Huésped: Antes y durante su viaje, para reservar y consultar servicios.
+
+Dueño: Semanalmente o en momentos clave.
+
+5. ¿Qué características son importantes?
+Administrador: Automatización, una buena administración y una interfaz intuitiva.
+
+Huésped: Reservas rápidas, interfaz clara, confirmaciones inmediatas.
+
+Dueño: Indicadores estratégicos. 
+
+6. ¿Cómo debería nuestro producto verse o comportarse?
     
-**Users:**
+Administrador: Profesional, organizado y confiable.
 
-**User Outcomes & Benefits:**
-¿Que está intentando conseguir el usuario?
-¿Como se quiere sentir el usuario?
-¿Como nuestro producto lo acerca a su objetivo?
-¿Por que nuestros usuarios se interesarian por nuestro producto? ¿Que beneficio podrian obtener?
-¿Que cambio en su comportamiento veremos que nos dira que nuestro objetivo ha sido logrado?
+Huésped: Simple, amigable y rápido.
 
+Dueño: Profesional, confiable y accesible.
 
-**User Assumptions:** 
-**1. ¿Quien es el usuario?**
-**2. ¿Donde entra nuestro producto en su trabajo o su vida?**
-**3. ¿Cual es el problema que nuestro producto soluciona?**
-**4. ¿Como y cuando nuestro producto es usado?**
-**5. ¿Que caracteristicas son importantes?**
-**6. ¿Como deberia nuestro producto verse o comportarse?**
+---
+#### Business Assumptions
+---
+> *Extraído y adaptado del modelo propuesto en **Lean UX Sampler** de Jeff Gothelf*
 
-**Business Assumptions:**
+1. **Creo que mis Huéspedes tienen la necesidad de:**  
+   Administrador: Mejorar la eficiencia operativa de sus hoteles mediante automatización y control energético.
+   Huésped: Tener una experiencia mas satisfactoria y sencilla a la hora de hacer y gestionar sus reservas de habitaciones en un hotel. 
 
-#### 1.2.2.3. Lean UX Hypothesis Statements
-Siguiendo el siguiente formato, extraido del libro "Lean Ux, 3rd edition", escrito por Jeff Gothelf y Josh Seiden: "We believe that [business outcome] will be achieved if [user] attains [user benefit] with [feature]".
+2. **Estas necesidades pueden resolverse con:**  
+   Administrador: Una plataforma integral que centralice gestión de reservas, finanzas y dispositivos IoT.
+   Huéspedes: Una plataforma digital de gestión de reservas, con opciones de personalización.
+   Dueño: Una plataforma que le permita visualizar la gestión de reservas y habitaciones de su hotel. 
+
+4. **Mis Huéspedes iniciales son (o serán):**  
+   Hoteles pequeños y medianos en Lima y sus Huéspedes.
+
+5. **El valor principal que un Huésped desea obtener de mi servicio es:**  
+   Administracion y Dueños: Reducción del tiempo y costo operativos y administrativos.
+   Huésped: Reducción del tiempo y de cantida de tramites para efectuar una reserva en un hotel. Así como, una mejor experiencia en su reserva. 
+
+6. **Adquiriré a la mayoría de mis Huéspedes a través de:**  
+   Administradores y Dueños: Partners tecnológicos, asociaciones hoteleras y marketing digital.
+   Huéspedes: Marketing digital. 
+
+7. **Ganaré dinero mediante:**  
+   Un modelo de suscripción escalable con funcionalidades básicas e IoT incluidos.
+
+8. **Mi competencia principal en el mercado será:**  
+   Sistemas tradicionales de gestión hotelera, gestión empresarial o CRMs
+   **Nos diferenciaremos por:**  
+   - Innovación tecnológica  
+   - Interfaz amigable  
+   - Soporte mediante partners
+
+9. **Mi mayor riesgo de producto es:**  
+   Poca adopción de funcionalidades IoT por desconocimiento, 
+   **Lo resolveremos mediante:**  
+   Capacitación, asistentes y soporte técnico.
+
+10. **Que otros supuestos tenemos, que si probados falsos, pueden causar que nuestro proyecto falle**  
+   - Que los hoteles pequeños estén dispuestos a pagar por tecnología.
+   - Que los administradores esten dispuestos a acelarar sus procesos con nuestro software y no otras herramientas como la IA.   
+   - Que la instalación IoT sea rentable y escalable.  
+   - Que los partners brinden soporte técnico confiable.
+
+---
+
+#### 1.2.2.3. Lean UX Hypothesis Statements.
+
+---
+
+Usando la información recolectada en los Business Outcomes, Usuarios, Beneficios y Features. Podemos formular nuestras hipótesis, cada una centrada en un Feature a desarrollar.
+
+Hipótesis 1:
+
+Creemos que se logrará una reducción del 30% en el tiempo dedicado a tareas administrativas
+si los administradores del hotel
+alcanzan mayor control y organización sobre los procesos operativos
+con el panel de control centralizado.
+
+Hipótesis 2:
+
+Creemos que se logrará un aumento del 20% en la cantidad de huéspedes que realizan reservas repetidas en un año
+si los huéspedes del hotel
+alcanzan una experiencia de reserva personalizada y sin complicaciones
+con la funcionalidad de personalización de habitación en línea.
+
+Hipótesis 3:
+
+Creemos que se logrará una reducción del 20% en los costos operativos en los primeros 6 meses
+si los dueños del hotel
+alcanzan una mayor visibilidad sobre el rendimiento financiero y operativo
+con el acceso móvil a reportes financieros y operativos.
+
+Hipótesis 4:
+
+Creemos que se logrará un 60% de uso diario del sistema durante los primeros 3 meses
+si los administradores del hotel
+alcanzan una comunicación y gestión más rápida
+con la función de mensajería integrada en la aplicación.
+
+Hipótesis 5:
+
+Creemos que se logrará un aumento de 0.5 puntos en la calificación promedio de satisfacción del huésped en reseñas en línea
+si los huéspedes del hotel
+alcanzan una estadía más cómoda y adaptada a sus preferencias
+con las opciones de personalización de la habitación, como la temperatura.
+
+---
 
 #### 1.2.2.4. Lean UX Canvas
+
+---
+
+![canva](https://github.com/user-attachments/assets/028d6d2b-6b9e-4f62-8912-53c598248914)
 
 ## 1.3. Segmentos objetivo
 
