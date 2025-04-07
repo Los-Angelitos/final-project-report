@@ -1273,8 +1273,27 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
 
 ## 3.4. Product Backlog
 
-| Orden | User Story ID | Título                                                        | Descripción                                                                                                                                     | Story Points (1/2/3/5/8) |
-|-------|---------------|---------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
+| Orden | User Story ID | Título                                                    | Descripción                                                                                                  | Story Points (1/2/3/5/8) |
+|-------|---------------|------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|--------------------------|
+| 1     | HU01          | Gestionar las reservas en la organización                  | Como administrador del hotel quiero gestionar las reservas de los huéspedes para asegurar la correcta gestión de las mismas. | 5                        |
+| 2     | HU03          | Reservar una habitación                                    | Como huésped quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.         | 5                        |
+| 3     | HU01          | Revisar ingresos y egresos de la organización              | Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3                        |
+| 4     | HU02          | Revisar stock de recursos del hotel                        | Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3                        |
+| 5     | HU06          | Agregar proveedores a su lista de contactos                | Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite. | 3                        |
+| 6     | HU02          | Gestionar la comunicación en la organización               | Como administrador del hotel quiero comunicarme con el dueño mediante mensajes internos de la aplicación para algún caso lo requiera. | 3                        |
+| 7     | HU02          | Informarse sobre los beneficios del producto               | Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.                  | 2                        |
+| 8     | HU04          | Informarse sobre los diferentes planes de subscripción     | Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades. | 2                        |
+| 9     | HU03          | Comunicarse con sus administradores                        | Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna. | 2                        |
+| 10    | HU04          | Mejorar la subscripción de la organización                 | Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2                        |
+| 11    | HU05          | Invitar administradores a su organización                  | Como dueño, quiero añadir administradores a mi organización para delegar tareas.                             | 2                        |
+| 12    | HU02          | Buscar y filtrar hoteles de Sweet Manager                  | Como huésped quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.       | 2                        |
+| 13    | HU01          | Obtener información de la empresa                          | Como visitante del sitio web, quiero obtener información adicional sobre la empresa a cargo del producto.   | 1                        |
+| 14    | HU03          | Conocer los testimonios de los clientes pasados            | Como visitante, quiero acceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente. | 1                        |
+| 15    | HU01          | Crear perfil global en SweetManager                        | Como huésped quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.     | 1                        |
+| 16    | HU01          | Crear cuenta                                               | Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 1                        |
+
+
+
 
 # Capítulo IV: Solution Software Design
 
