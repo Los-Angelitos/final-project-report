@@ -690,10 +690,438 @@ El enlace de LucidChart en el que fueron desarrollados es el siguiente: https://
 
 ## 3.2. User Stories
 
-| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
-|-----------------|--------|-------------|--------------------------|----------------------------|
-|                 |        |             |                          |                            |
+Redactamos las historias de usuario para el sistema de gestión hotelera basándonos en las necesidades y desafíos identificados en las entrevistas y el análisis de los segmentos de gerentes, administradores y huéspedes. Las historias de usuario describen las funcionalidades y características que los usuarios finales esperan del sistema, y se utilizan para guiar el diseño y desarrollo del producto.
 
+<table>
+  <thead>
+    <tr>
+      <th>Epic / Story ID</th>
+      <th>Título</th>
+      <th>Descripción</th>
+      <th>Criterios de Aceptación</th>
+      <th>Relacionado con (Epic ID)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td> EP1 </td>
+      <td> Información del producto </td>
+      <td> Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece. </td>
+      <td><b>Given</b> el visitante está en la landing page. <br/><b>When</b> observa la información relevante sobre la empresa. <br><b>Then</b> se interesa en saber más sobre el producto <br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Obtener información de la empresa</td>
+      <td>Como visitante del sitio web, quiero obtener información adicional sobre la empresa a cargo del producto.</td>
+      <td><b>Given</b> el visitante se encuentra en la sección de nosotros.<br/><b>When</b> observa la información relevante sobre la empresa. <br><b>Then</b> se interesa en saber más sobre el producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Informarse sobre los beneficios del producto</td>
+      <td>Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.</td>
+      <td><b>Given</b> el visitante se encuentra en la sección de beneficios. <br><b>When</b> observa los beneficios que se ofrecen al usar una solución.<br><b>Then</b> se interesa en saber más del producto.<br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Conocer los testimonios de los clientes pasados</td>
+      <td>Como visitante, quiero accceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente.</td>
+      <td><b>Given</b> el visitante se encuentra en la sección de testimonios.<br><b>When</b> observa los diferentes testimonios. <br><b>Then</b> evalúa la experiencia y desempeño del personal basado en los comentarios de clientes previos. <br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>HU04</td>
+      <td>Informarse sobre los diferentes planes de subscripción</td>
+      <td>Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades.</td>
+      <td><b>Given</b> el visitante se encuentra en la sección de planes de subscripción disponibles. <br><b>When</b> visualiza los diferentes planes<br><b>Then</b> puede determinar su plan de subscripción ideal.</td>
+      <td>EP01</td>
+    </tr>
+    <tr>
+      <td>EP02</td>
+      <td>Crear organización</td>
+      <td>Como usuario quiero crear una organización para pertenecer a ella y utilizar los servicios de Sweet Manager.</td>
+      <td><b>Given</b> el usuario se encuentra en el Login. <b>When</b> presiona en el botón "SignUp" e ingresa sus datos. <br><b>Then</b> empezará con un flujo de páginas en donde inicializará las reglas de su organización y su plan de subscripción.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Crear cuenta</td>
+      <td>Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+      <td>
+        <b>GERENTE</b>
+        <br>
+        <b>Given</b> el usuario ingrese sus datos de hotel y gerente. 
+        <br>
+        <b>When</b> se paga el plan y se inicializa correctamente la organización.
+        <br>
+        <b>Then</b> se muestra un mensaje de bienvenida.
+        <br><b>Y</b> se redirecciona al dashboard.
+        <br>
+        <b>ADMINISTRADOR</b>
+        <br>
+        <b>Given</b> el gerente lo invitó a su organización.
+        <br>
+        <b>When</b> acepta la invitación y se redirecciona a la aplicación.
+        <br>
+        <b>Then</b> se muestra un mensaje de bienvenida.
+        <br><b>Y</b> se redirecciona al perfil de su cuenta.
+        <br>
+        <b>HUÉSPED</b>
+        <br>
+        <b>Given</b> el huésped está por reservar una habitación.
+        <br>
+        <b>When</b> el sistema le pide registrar una cuenta personal.
+        <br>
+        <b>Then</b> registra su cuenta personal.
+        <br><b>Y</b> registra su reserva correctamente.
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>EP03</td>
+      <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
+      <td>Como gerente del hotel quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
+      <td><b>Given</b> el gerente está conectado.<br><b>When</b> revisa las finanzas y recursos.<br><b>Then</b> crea peticiones de abastecimiento y/o comunica con sus administradores.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Revisar ingresos y egresos de la organización</td>
+      <td>Como gerente del hotel quiero revisar las finanzas en términos de ingresos y egresos de mi hotel para mantener un constante seguimiento de estos.</td>
+      <td><b>Given</b> el gerente está conectado a su cuenta.<br><b>When</b> se encuentra en el dashboard.<br><b>Then</b> revisa los ingresos y egresos<br><b>Y</b> escoge el plazo semanal o mensual de finanzas.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Revisar stock de recursos del hotel</td>
+      <td>Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
+      <td><b>Given</b> el gerente está en la página de recursos.<br><b>When</b> nota que uno de sus recursos está por agotar el stock.<br><b>Then</b> contacta a su proveedor y crea una solicitud de abastecimiento.</td>
+      <td>EP03</td>
+    </tr>
+    <!-- Row 11 -->
+    <tr>
+      <td>HU03</td>
+      <td>Comunicarse con sus administradores.</td>
+      <td>Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.</td>
+      <td><b>Given</b> el gerente está en la página de mensajería.<br><b>When</b> quiere enviar mensaje a sus administradores.<br><b>Then</b> redacta el asunto y cuerpo del mensaje.<br><b>Y</b> lo envía a todos los administradores.</td>
+      <td>EP03</td>
+    </tr>
+    <!-- Row 12 -->
+    <tr>
+      <td>HU04</td>
+      <td>Mejorar la subscripción de la organización.</td>
+      <td>Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
+      <td><b>Given</b> el gerente está en la página de subscripciones.<br><b>When</b> quiere mejorar o degradar la subscripción actual. <b>Then</b> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones.</td>
+      <td>EP03</td>
+    </tr>
+    <!-- Row 13 -->
+    <tr>
+      <td>HU05</td>
+      <td>Invitar administradores a su organización.</td>
+      <td>Como gerente del hotel quiero invitar administradores a mi organización para que tengan acceso al servicio.</td>
+      <td><b>Given</b> el gerente está en la página de administradores<br><b>When</b> quiere invitar a un nuevo administrador a la organización.<br><b>Then</b> Invita mediante su correo electrónico a la organización.</td>
+      <td>EP03</td>
+    </tr>
+    <!-- Row 14 -->
+    <tr>
+      <td>HU06</td>
+      <td>Agregar proveedores a su lista de contactos.</td>
+      <td>Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.</td>
+      <td><b>Given</b> el gerente está en la página de proveedores<br><b>When</b> quiere registrar un nuevo proveedor a la lista de contacto.<br><b>Then</b> Registra su información de contacto.</td>
+      <td>EP03</td>
+    </tr>
+    <!-- Row 15 -->
+    <tr>
+      <td>EP04</td>
+      <td>Gestionar las reservas y comunicación en la organización.</td>
+      <td>Como administrador del hotel quiero administrar las reservas de los huéspedes y comunicación adecuada con el dueño para potenciar el desempeño del hotel.</td>
+      <td><b>Given</b> el administrador está en la página de reservas<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
+      <td></td>
+    </tr>
+    <!-- Row 16 -->
+    <tr>
+      <td>HU01</td>
+      <td>Gestionar las reservas en la organización.</td>
+      <td>Como administrador del hotel quiero gestionar las reservas de los huéspedes para asegurar la correcta gestión de las mismas.</td>
+      <td><b>Given</b> el administrador está en la página de reservas.<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
+      <td>EP04</td>
+    </tr>
+    <!-- Row 17 -->
+    <tr>
+      <td>HU02</td>
+      <td>Gestionar la comunicación en la organización.</td>
+      <td>Como administrador del hotel quiero comunicarme con el dueño mediante mensajes internos de la aplicación para algún caso lo requiera.</td>
+      <td><b>Given</b> el administrador está en la página de mensajería.<br><b>When</b> quiere enviar un mensaje al owner.<br><b>Then</b> redacta el asunto y cuerpo del mensaje<br><b>Y</b> envía el mensaje.</td>
+      <td>EP04</td>
+    </tr>
+    <!-- Row 18 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 19 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 20 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 21 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 22 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 23 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 24 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 25 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 26 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 27 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 28 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 29 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 30 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 31 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 32 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 33 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 34 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 35 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 36 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 37 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 38 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 39 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 40 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 41 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 42 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 43 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 44 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 45 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 46 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 47 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 48 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 49 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <!-- Row 50 -->
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 ## 3.3. Impact Mapping
 
