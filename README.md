@@ -152,31 +152,47 @@ MISION:
 Siguiendo la estructura propuesta
 
 -   **What?**
+    Sweet Manager es una solución integral diseñada para abordar las complejidades de la gestión hotelera, proporcionando una plataforma única para gestionar todos los aspectos de un hotel, desde las finanzas hasta los recursos humanos.
 
 -   **When?**
     ¿Cuando estamos viendo el problema?
+    El problema puede surgir en cualquier momento, ya sea diariamente con la gestión del personal o administración de inventarios, o de manera imprevista con problemas de recursos esenciales como comida, agua, o luz.
 
     ¿En que momento del día y/o del proceso en cuestión?
+    El problema puede presentarse en distintos momentos del día, por ejemplo cuando el personal necesite herramientas adecuadas para atender las reservas y/o comunicarse con su superior.
 
 -   **Where?**
-    ¿Donde estamos viendo los problemas?¿En que parte/lugar del producto/proceso estamos viendo el problema?
+    ¿Donde estamos viendo los problemas?
+    Estamos viendo los problemas en hoteles y establecimientos de alojamiento en todas partes, desde pequeñas posadas hasta grandes cadenas hoteleras.
+
+    ¿En que parte/lugar del producto/proceso estamos viendo el problema?
+    Los problemas se presentan en la gestión de operaciones diarias, como el seguimiento de ingresos, administración de inventarios, y coordinación del personal.
 
 -   **Who?**
-    ¿A quien le sucede? ¿El problema está relacionado con las habilitades de las personas?
+    ¿A quien le sucede?
+    Los problemas afectan a propietarios, gerentes de hoteles y personal de trabajo en establecimientos de alojamiento.
 
+    ¿El problema está relacionado con las habilitades de las personas?
+    El problema no solo está relacionado con las habilidades, sino también con la complejidad y carga de trabajo asociada a la gestión hotelera, lo que puede ser abrumador sin herramientas adecuadas.
 
 -  **Why?**
-  ¿Por qué sucede el problema? ¿Cual es la causa?
+    ¿Por qué sucede el problema? ¿Cual es la causa?
+
+    El problema surge debido a la gestión ineficiente, que puede resultar en pérdidas financieras, escasez de inventario, falta de coordinación del personal, y en última instancia, una experiencia insatisfactoria para los huéspedes. Esto afecta tanto la reputación como la rentabilidad del hotel.
 
 -   **How?**
     ¿Como se diferencia el problema del estado normal(optimo)? ¿La tendencia en la que aparece el problema es aleatoria o sigue un patrón?
+    El estado óptimo se caracteriza por una operación hotelera fluida y bien coordinada. El problema se diferencia del estado óptimo en que causa interrupciones en la operación, con un impacto negativo en la eficiencia y la satisfacción del cliente. La aparición del problema puede seguir un patrón debido a la falta de automatización o puede ser aleatoria por la falta de previsión.
 
     ¿Como se utilizará el producto?
+    Sweet Manager se utilizará como una plataforma centralizada y fácil de usar que permite a los hoteles gestionar los aspectos principales de su negocio de manera eficiente y efectiva, mejorando la coordinación, el control y la toma de decisiones.
 
 -   **How much?**
     ¿Cuantos problemas se dan en un dia? ¿En una semana? ¿En un mes?
+    La frecuencia de los problemas puede variar según la eficiencia del hotel antes de implementar Sweet Manager. Sin embargo, sin una solución adecuada, problemas como la falta de coordinación del personal o la escasez de inventario pueden ocurrir a diario, semanalmente o mensualmente.
 
     ¿Cuanto dinero están implicando?
+    Los problemas de gestión ineficiente pueden implicar pérdidas financieras significativas debido a la mala gestión de inventarios, la insatisfacción de los huéspedes y la disminución de la rentabilidad, lo que puede traducirse en miles de dólares perdidos al mes.
 
 ### 1.2.2. Lean UX Process
 ---
