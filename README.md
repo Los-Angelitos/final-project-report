@@ -858,34 +858,65 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <!-- Row 18 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>EP05</td>
+      <td>Crear perfil global para SweetManager y realizar reservas fácilmente.</td>
+      <td>Como huésped de Sweet Manager</td>
       <td></td>
       <td></td>
     </tr>
     <!-- Row 19 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU01</td>
+      <td>Crear perfil global en SweetManager</td>
+      <td>Como huésped quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
+      <td>
+        <strong>Escenario 1:</strong> Registro de huésped.<br>
+        <em>Given</em> que el huésped no tiene una cuenta<br>
+        <em>When</em> completa el formulario de registro con su información personal<br>
+        <em>Then</em> el sistema debe crear un perfil asociado y almacenar sus datos de forma segura.<br><br>
+        <strong>Escenario 2:</strong> Configuración de preferencias.<br>
+        <em>Given</em> que el huésped tiene una cuenta activa<br>
+        <em>When</em> accede a la sección de preferencias y establece opciones como temperatura o tipo de habitación<br>
+        <em>Then</em> el sistema debe guardar esas preferencias para usarlas automáticamente en futuras reservas.
+      </td>
       <td></td>
     </tr>
     <!-- Row 20 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU02</td>
+      <td>Buscar y filtrar hoteles de Sweet Manager</td>
+      <td>Como huésped quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
+      <td>
+        <b>Escenario 1:</b> Buscar hoteles por nombre o ciudad.<br>
+        <em>Given</em> que el huésped está en la página de búsqueda de hoteles<br>
+        <em>When</em> escribe un nombre de hotel o ciudad en el campo de búsqueda<br>
+        <em>Then</em> el sistema debe mostrar una lista de hoteles que coincidan con los criterios.<br><br>
+        <b>Escenario 2:</b> Aplicar filtros de preferencia.<br>
+        <em>Given</em> que el huésped está visualizando la lista de hoteles<br>
+        <em>When</em> selecciona filtros como tipo de habitación<br>
+        <em>Then</em> el sistema debe actualizar la lista mostrando solo los hoteles que cumplan con esas condiciones.
+      </td>
+      <td>EP05</td>
     </tr>
     <!-- Row 21 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU03</td>
+      <td>Reservar una habitación</td>
+      <td>Como huésped quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
+      <td>
+        <b>Escenario 1:</b> Selección de fechas.<br>
+        <em>Given</em> que el huésped está en la página de reservas del hotel<br>
+        <em>When</em> selecciona una fecha de entrada y una de salida válidas<br>
+        <em>Then</em> el sistema debe mostrar las habitaciones disponibles para ese rango de fechas.<br><br>
+        <b>Escenario 2:</b> Cálculo de precio.<br>
+        <em>Given</em> que el huésped ha seleccionado una habitación y un rango de fechas<br>
+        <em>When</em> el sistema calcula el precio<br>
+        <em>Then</em> debe mostrar el precio total basado en el número de noches y el precio por noche.<br><br>
+        <b>Escenario 3:</b> Confirmación de reserva.<br>
+        <em>Given</em> que el huésped ha revisado los detalles de la reserva<br>
+        <em>When</em> confirma la reserva y realiza el pago<br>
+        <em>Then</em> el sistema debe guardar la reserva y mostrar una confirmación al huésped.
+      </td>
       <td></td>
     </tr>
     <!-- Row 22 -->
@@ -953,166 +984,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
     </tr>
     <!-- Row 30 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 31 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 32 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 33 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 34 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 35 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 36 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 37 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 38 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 39 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 40 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 41 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 42 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 43 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 44 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 45 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 46 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 47 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 48 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 49 -->
-    <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-    </tr>
-    <!-- Row 50 -->
     <tr>
       <td></td>
       <td></td>
