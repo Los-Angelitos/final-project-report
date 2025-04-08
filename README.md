@@ -1124,17 +1124,85 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <!-- Row 16 -->
     <tr>
       <td>HU01</td>
-      <td>Gestionar las reservas en la organización.</td>
-      <td>Como administrador del hotel quiero gestionar las reservas de los huéspedes para asegurar la correcta gestión de las mismas.</td>
-      <td><b>Given</b> el administrador está en la página de reservas.<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
+      <td>Gestionar reservas de huéspedes</td>
+      <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes para verificar disponibilidad, realizar check-in y check-out, y asegurar una correcta administración.</td>
+      <td>
+        <b>Escenario 1:</b> Ver listado de reservas<br>
+        <em>Given</em> que el administrador accede a la página de reservas<br>
+        <em>When</em> se cargan las reservas activas<br>
+        <em>Then</em> el sistema muestra una lista con nombre del huésped, fechas y estado.<br><br>
+        <b>Escenario 2:</b> Check-in<br>
+        <em>Given</em> que el huésped ha llegado al hotel<br>
+        <em>When</em> el administrador actualiza la reserva<br>
+        <em>Then</em> el sistema marca la reserva como "En curso".<br><br>
+        <b>Escenario 3:</b> Check-out<br>
+        <em>Given</em> que el huésped ha finalizado su estadía<br>
+        <em>When</em> el administrador registra la salida<br>
+        <em>Then</em> el sistema marca la reserva como "Completada".
+      </td>
       <td>EP04</td>
     </tr>
     <!-- Row 17 -->
     <tr>
       <td>HU02</td>
-      <td>Gestionar la comunicación en la organización.</td>
-      <td>Como administrador del hotel quiero comunicarme con el dueño mediante mensajes internos de la aplicación para algún caso lo requiera.</td>
-      <td><b>Given</b> el administrador está en la página de mensajería.<br><b>When</b> quiere enviar un mensaje al owner.<br><b>Then</b> redacta el asunto y cuerpo del mensaje<br><b>Y</b> envía el mensaje.</td>
+      <td>Enviar mensajes al dueño</td>
+      <td>Como administrador del hotel, quiero comunicarme con el dueño mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+      <td>
+        <strong>Escenario:</strong> Envío de mensaje<br>
+        <em>Given</em> que el administrador está en la sección de mensajería<br>
+        <em>When</em> desea enviar un mensaje al dueño<br>
+        <em>Then</em> redacta el asunto y contenido<br>
+        <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Ver huéspedes alojados actualmente</td>
+      <td>Como administrador del hotel, quiero ver una lista de los huéspedes que están actualmente alojados para tener un control en tiempo real de la ocupación.</td>
+      <td>
+        <b>Escenario:</b> Ver huéspedes alojados<br>
+        <em>Given</em> que el administrador está en la sección de reservas activas<br>
+        <em>When</em> accede a la pestaña de huéspedes actuales<br>
+        <em>Then</em> el sistema muestra una lista con nombre del huésped, habitación asignada y fechas de estadía.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU04</td>
+      <td>Consultar disponibilidad de habitaciones</td>
+      <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
+      <td>
+        <b>Escenario:</b> Consultar disponibilidad<br>
+        <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
+        <em>When</em> filtra por tipo y fecha<br>
+        <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU05</td>
+      <td>Generar reporte de reservas del día</td>
+      <td>Como administrador del hotel, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.</td>
+      <td>
+        <b>Escenario:</b> Descargar reporte diario<br>
+        <em>Given</em> el administrador desea generar reporte diario<br>
+        <em>When</em> hace clic en "Generar reporte"<br>
+        <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU06</td>
+      <td>Registrar reserva presencial</td>
+      <td>Como administrador del hotel, quiero crear una reserva manualmente cuando un huésped llega sin haber hecho una reserva previa, para registrarlo en el sistema.</td>
+      <td>
+        <b>Escenario:</b> Registrar nueva reserva desde recepción<br>
+        <em>Given</em> que el huésped llega al hotel sin reserva<br>
+        <em>When</em> el administrador accede al formulario de nueva reserva<br>
+        <em>Then</em> completa los datos del huésped, habitación y fechas<br>
+        <em>Y</em> el sistema crea la reserva como "En curso".
+      </td>
       <td>EP04</td>
     </tr>
     <!-- Row 18 -->
@@ -1198,31 +1266,54 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> confirma la reserva y realiza el pago<br>
         <em>Then</em> el sistema debe guardar la reserva y mostrar una confirmación al huésped.
       </td>
-      <td></td>
+      <td>EP05</td>
     </tr>
     <!-- Row 22 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU04</td>
+      <td>Visualizar reservas activas</td>
+      <td>Como huésped quiero visualizar mis reservas activas para saber cúando y dónde me hospedaré</td>
+      <td>
+        <b>Escenario 1:</b> Visualización de reservas.<br>
+        <em>Given</em> que el huésped ha iniciado sesión.
+        <em>When</em> accede a la vista de reservas activas.
+        <em>Then</em> el sistema muestra sus reservas activas con fechas, hotel y tipo de habitación (detalle de reserva).
+      </td>
+      <td>EP05</td>
     </tr>
     <!-- Row 23 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU05</td>
+      <td>Cancelar reserva</td>
+      <td>Como huésped quiero cancelar una de mis reservas para evitar costos innecesarios si mis planes cambian.</td>
+      <td>
+        <b>Escenario 1:</b> Cancelación dentro del plazo permitido<br>
+        <em>Given</em> que el huésped tiene una reserva activa y aún está dentro del plazo de cancelación gratuita.<br>
+        <em>When</em> accede a su lista de reservas activas y selecciona la opción de cancelar la reserva.<br>
+        <em>Then</em> el sistema debe cancelar la reserva y mostrar un mensaje de confirmación.<br><br>
+        <b>Escenario 2:</b> Registro de cancelación<br>
+        <em>Given</em> que una reserva ha sido cancelada<br>
+        <em>When</em> el huésped consulta su historial<br>
+        <em>Then</em> debe ver la reserva como cancelada con la fecha y motivo (si se solicita).
+      </td>
+      <td>EP05</td>
     </tr>
     <!-- Row 24 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HU06</td>
+      <td>Ver historial de reservas</td>
+      <td>Como huésped quiero ver mi historial de reservas para revisar mis viajes pasados y tener un registro de mis estadías.</td>
+      <td>
+        <b>Escenario 1:</b> Visualizar historial completo<br>
+        <em>Given</em> que el huésped ha iniciado sesión en la aplicación<br>
+        <em>When</em> accede a la sección "Historial de reservas"<br>
+        <em>Then</em> el sistema debe mostrar una lista con todas las reservas anteriores, incluyendo fecha, hotel y estado (completada o cancelada).<br><br>
+        <b>Escenario 2:</b> Visualizar detalles de una reserva específica<br>
+        <em>Given</em> que el huésped está viendo su historial<br>
+        <em>When</em> selecciona una reserva de la lista<br>
+        <em>Then</em> el sistema debe mostrar los detalles: hotel, habitación, fechas, monto pagado y todo el detalle.
+      </td>
+      <td>EP05</td>
     </tr>
     <!-- Row 25 -->
     <tr>
