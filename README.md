@@ -340,9 +340,15 @@ AQUI VA UNA DESCRIPCION
 
 <h2>Empathy Map del Dueño de hotel</h2>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-    <img src="./assets/img/empathy-mapping/owner.png" alt="Empathy Map Huesped">
+    <img src="./assets/img/empathy-mapping/owner.png" alt="Empathy Map Dueño">
 </div><br>
 <p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.</p>
+<br><br>
+<h2>Empathy Map del Administrador</h2>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+    <img src="./assets/img/empathy-mapping/admin.png" alt="Empathy Map Administrador">
+</div><br>
+<p>En este mapa de empatía, se ha representado al administrador como usuario que recibiría ayuda por parte de la aplicación. El administrador busca una experiencia de gestión cómoda y sin complicaciones para el cliente principal, y la aplicación tiene como objetivo facilitar esos procesos.</p>
 <br><br>
 <h2>Empathy Map del Huésped</h2>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
