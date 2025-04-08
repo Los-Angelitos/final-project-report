@@ -152,11 +152,11 @@ MISION:
 Siguiendo la estructura propuesta
 
 -   **What?**
-    Sweet Manager es una solución integral diseñada para abordar las complejidades de la gestión hotelera, proporcionando una plataforma única para gestionar todos los aspectos de un hotel, desde las finanzas hasta los recursos humanos.
+    Sweet Manager es una solución integral diseñada para abordar las complejidades de la gestión hotelera, proporcionando una plataforma única para gestionar los aspectos más importantes de un hotel.
 
 -   **When?**
     ¿Cuando estamos viendo el problema?
-    El problema puede surgir en cualquier momento, ya sea diariamente con la gestión del personal o administración de inventarios, o de manera imprevista con problemas de recursos esenciales como comida, agua, o luz.
+    El problema puede surgir en cualquier momento, ya sea diariamente con la gestión de reservas o de manera imprevista con problemas de recursos esenciales como comida, agua, o luz.
 
     ¿En que momento del día y/o del proceso en cuestión?
     El problema puede presentarse en distintos momentos del día, por ejemplo cuando el personal necesite herramientas adecuadas para atender las reservas y/o comunicarse con su superior.
