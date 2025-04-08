@@ -1293,6 +1293,28 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
 
 ## 3.3. Impact Mapping
 
+Impact Mapping es una metodología visual que facilita la identificación clara de los objetivos que realmente queremos alcanzar para conectar efectivamente con nuestros usuarios. Utilizamos esta herramienta para mantener el enfoque y asegurar que trabajamos en función de nuestras metas principales. Así, al finalizar el mapa mental, logramos definir las acciones y funcionalidades necesarias para desarrollar el proyecto de forma eficiente.
+
+__Business goal:__
+
+Alcanzar 50 organizaciones creadas en Sweet Manager en un plazo de 3 meses.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/s6SZV6g.png" alt="Imagen del impact map del Owner" width="90%" />
+</div>
+
+__Business goal:__
+Reducir el tiempo promedio de reserva de habitaciones en un 40% durante los próximos 3 meses
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/sVpHaE0.png" alt="Imagen del impact map del Owner" width="90%" />
+</div>
+
+__Business goal:__
+Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 meses.
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/iiLV6BD.png" alt="Imagen del impact map del Owner" width="90%" />
+</div>
+
 ## 3.4. Product Backlog
 
 | Orden | User Story ID | Título                                                    | Descripción                                                                                                  | Story Points (1/2/3/5/8) |
