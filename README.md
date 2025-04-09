@@ -566,17 +566,17 @@ AQUI VA UNA DESCRIPCION
 ### 2.3.1. User Personas
 <h2>User Persona Owner de Hotel</h2>
 <div style="text-align: center;">
-  <img src="../final-project-report/assets/img/user-persona/owner.jpeg" alt="User persona Owner" width="100%" />
+  <img src="./assets/img/user-persona/owner.jpeg" alt="User persona Owner" width="100%" />
 </div>
 <br><br>
 <h2>User Persona Administrador de Hotel</h2>
 <div style="text-align: center;">
-  <img src="../final-project-report/assets/img/user-persona/admin.jpeg" alt="User persona Admin" width="100%" />
+  <img src="./assets/img/user-persona/admin.jpeg" alt="User persona Admin" width="100%" />
 </div>
 <br><br>
 <h2>User Persona Huésped</h2>
 <div style="text-align: center;">
-  <img src="../final-project-report/assets/img/user-persona/huesped.jpeg" alt="User persona Huesped" width="100%" />
+  <img src="./assets/img/user-persona/huesped.jpeg" alt="User persona Huesped" width="100%" />
 </div>
 
 
