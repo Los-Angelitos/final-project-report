@@ -871,8 +871,6 @@ En esta sección se documentarán las preguntas que se utilizaron en nuestras en
 
 - ¿Te gustaría que la app te hiciera sugerencias de hoteles según tu historial o perfil?
 
-- ¿Qué te gustaría que hicieran mejor?
-
 - ¿Te gustaría tener acceso a un historial de todas tus reservas anteriores?
 
 - ¿Te gustaría poder comunicarte con el personal del hotel directamente desde la app antes o durante tu estadía?
