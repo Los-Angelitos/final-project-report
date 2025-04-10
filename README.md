@@ -799,38 +799,140 @@ Características demográficas: Rango de edad entre 20 y 50 años. Se trata de v
 
 ## 2.2. Entrevistas
 
+Las entrevistas son una herramienta fundamental para comprender las necesidades, deseos y desafíos de los usuarios, así como para validar las hipótesis y suposiciones del negocio. A través de las entrevistas, se pueden obtener valiosos conocimientos sobre las expectativas de los clientes, sus experiencias actuales y sus preferencias en cuanto a productos y servicios. En el caso de Sweet Manager, las entrevistas con propietarios, administradores y huéspedes serán fundamentales para diseñar una solución que se adapte a las necesidades del mercado y ofrezca un valor significativo a los usuarios.
+
 ### 2.2.1. Diseño de entrevistas
 
+En esta sección se documentarán las preguntas que se utilizaron en nuestras entrevistas, conteniendo las preguntas generales que se comparten entre los segmentos objetivos, y las preguntas que fueron creadas específicamente para cada una.
+
+**Preguntas complementarias generales**
+
+- ¿Qué navegador usas con más frecuencia?
+
+- ¿Qué dispositivo tecnológico usas con más frecuencia?
+
+- ¿Cómo describes tu personalidad?
+
+- ¿Presentas alguna frustración en el trabajo?
+
+- ¿Cuáles son los canales de interacción que usas?
+
+- ¿Qué tipo de ambiente de trabajo te resulta más motivador y productivo?
+
+- ¿Cómo se llama el distrito o lugar de tu residencia?
+
+- ¿Qué objetivos tienes tanto laboralmente como personalmente?
+
+**Preguntas Segmento 1: Gerentes**
+
+- ¿Cuáles son los principales desafíos que enfrentan en la gestión diaria de su hotel?
+
+- ¿Qué caracteristicas o funcionalidades consideraría más utiles para mejorar la eficiencia de su hotel?
+
+- ¿Cómo gestiona actualmente las reservas de habitaciones y el seguimiento de ingresos y gastos en su hotel?
+
+- ¿Qué herramientas o software utilizan actualmente para la gestión hotelera y qué aspectos les gustaría mejorar de esas herramientas?
+
+- ¿Qué aspectos valoran más al evaluar nuevas soluciones de software para su hotel?
+
+- ¿Cómo crees que podríamos mejorar la comunicación y la colaboración del equipo?
+
+- ¿Qué desafíos enfrentan al gestionar proveedores y controlar los inventarios en su hotel?
+
+- ¿Cómo gestionan actualmente la satisfacción y las preferencias de los clientes en su hotel?
+
+- ¿Cómo ve conveniente un sistema hotelero dedicado a la gestión de recursos, comunicación con proveedores, seguimiento de ganancias, etc?
+
+**Preguntas Segmento 2: Administradores**
+
+- ¿Qué herramientas o sistemas utilizan actualmente para realizar su trabajo y qué aspectos les resultan más difíciles o menos eficientes?
+
+- ¿Qué características adicionales le gustaría ver en un sistema de gestión hotelera para facilitar su trabajo diario?
+
+- ¿Cómo se sienten acerca de la adopción de nuevas tecnologías en el lugar de trabajo y cómo creen que podría mejorar su experiencia laboral?
+
+- ¿Qué desafíos enfrenta al gestionar las solicitudes de los huéspedes y asegurarse de que se cumplan sus expectativas durante su estancia?
+
+- ¿Cómo creen que podríamos simplificar los procesos de registro de huéspedes y check-in/check-out en su hotel?
+
+- ¿Qué herramientas o recursos adicionales les ayudarán a ofrecer un mejor servicio a los huéspedes y mejorar su experiencia general en el hotel?
+
+**Preguntas Segmento 3: Huéspedes**
+
+- ¿Cómo sueles buscar y reservar un hotel cuando planeas un viaje?
+
+- ¿Qué filtros o criterios son más importantes para ti al elegir un hotel? (precio, ubicación, servicios, etc.)
+
+- ¿Alguna vez te has sentido frustrado al reservar una habitación en línea? ¿Qué sucedió?
+
+- ¿Qué tanto valoras que una aplicación recuerde tus preferencias para futuras reservas?
+
+- ¿Qué tipo de información o servicios te gustaría tener guardados en un perfil de usuario?
+
+- ¿Te gustaría que la app te hiciera sugerencias de hoteles según tu historial o perfil?
+
+- ¿Qué te gustaría que hicieran mejor?
+
+- ¿Te gustaría tener acceso a un historial de todas tus reservas anteriores?
+
+- ¿Te gustaría poder comunicarte con el personal del hotel directamente desde la app antes o durante tu estadía?
+
+- ¿Qué tan importante es para ti tener la opción de cancelar una reserva de manera rápida y sencilla?
+
+- ¿Has tenido la necesidad de reservar directamente al llegar a un hotel sin haberlo hecho en línea?
+
 ### 2.2.2. Registro de entrevistas
+
+A continuación, se registraron todas las entrevistas realizadas para nuestra solución, categorizadas según su segmento objetivo, y con un resumen que destaca las características y críticas realizadas sobre nuestro proyecto.
 
 Inicio: 0:00 <br><br>
 Fin: 36:51
 
-**Entrevista 01**
+**Entrevista 01 (Gerentes)**
 
-**Nombres:** 
+URL del Vídeo: 
 
-**Apellidos:** 
+Nombres: 
 
-**Edad:** 
+Apellidos:
 
-**Distrito/Ciudad** 
+Edad:
+
+Sexo:
+
+Ocupación:
+
+Lugar donde vive: 
+
+Duración de la entrevista: 
+
+Personalidad: 
 
 IMAGEN VA AQUI
 
-**Inicia:** 0:00
+En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
 
-**Duración:** X minutos
+**Entrevista 02 (Gerentes)**
 
+**Entrevista 03 (Gerentes)**
 
-**Enlace de entrevista:** 
+**Entrevista 01 (Administradores)**
 
-AQUI VA UNA DESCRIPCION
+**Entrevista 02 (Administradores)**
 
+**Entrevista 03 (Administradores)**
+
+**Entrevista 01 (Huéspedes)**
+
+**Entrevista 02 (Huéspedes)**
+
+**Entrevista 03 (Huéspedes)**
 
 ### 2.2.3. Análisis de entrevistas
 
 ## 2.3. Needfinding
+
+Para tener una mejor idea de cómo será la experiencia del usuario con nuestro producto, utilizaremos las herramientas de User Persona, User Task Matrix, User Journey Mapping, Empathy Mapping y As-is Scenario Mapping.
 
 ### 2.3.1. User Personas
 
