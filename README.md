@@ -1116,10 +1116,10 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
   </thead>
   <tbody>
     <tr>
-      <td> EP1 </td>
-      <td> Información del producto </td>
-      <td> Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece. </td>
-      <td><b>Given</b> el visitante está en la landing page. <br/><b>When</b> observa la información relevante sobre la empresa. <br><b>Then</b> se interesa en saber más sobre el producto <br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td>EP1</td>
+      <td>Información del producto</td>
+      <td>Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece.</td>
+      <td>Los visitantes del sitio web pueden ver toda la información relevante acerca del producto, ayudándolos a entender los beneficios y características de la oferta. Al acceder a la landing page, los visitantes podrán conocer más sobre el producto y, si están interesados, se les redirigirá a la aplicación web o móvil para que puedan explorar más a fondo o realizar alguna acción.</td>
       <td></td>
     </tr>
     <tr>
@@ -1154,11 +1154,11 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP02</td>
       <td>Crear organización</td>
       <td>Como usuario quiero crear una organización para pertenecer a ella y utilizar los servicios de Sweet Manager.</td>
-      <td><b>Given</b> el usuario se encuentra en el Login. <b>When</b> presiona en el botón "SignUp" e ingresa sus datos. <br><b>Then</b> empezará con un flujo de páginas en donde inicializará las reglas de su organización y su plan de subscripción.</td>
+      <td>Este epic permite a los usuarios crear y configurar una organización en Sweet Manager para acceder a sus servicios y gestionar sus operaciones. El flujo comienza con el registro de la organización, donde el gerente debe ingresar los datos del hotel, su información personal y seleccionar un plan de suscripción. Después de realizar el pago, la organización se inicializa correctamente y el gerente recibe un mensaje de bienvenida y es redirigido al dashboard principal. Los administradores invitados reciben una invitación por correo para unirse a la organización, y al aceptar, también serán redirigidos a la página principal de la organización. Los huéspedes podrán registrar su cuenta y aclarar sus preferencias de habitaciones u hoteles para buscar y reservar hoteles cómodos.</td>
       <td></td>
     </tr>
     <tr>
-    <td>HU01</td>
+      <td>HU01</td>
       <td>Crear organización</td>
       <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
       <td>
@@ -1193,7 +1193,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
       <td>Como gerente del hotel quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
-      <td><b>Given</b> el gerente está conectado.<br><b>When</b> revisa las finanzas y recursos.<br><b>Then</b> crea peticiones de abastecimiento y/o comunica con sus administradores.</td>
+      <td>El gerente puede gestionar todos los aspectos operativos del hotel, incluyendo el control de las finanzas, el seguimiento de los recursos y la comunicación con los administradores. El gerente podrá revisar los ingresos y egresos, gestionar el stock de recursos, enviar mensajes a los administradores, y manejar la subscripción de la organización. También puede administrar las habitaciones, agregar nuevos proveedores, e invitar nuevos administradores a la organización, garantizando un control completo de las operaciones del hotel.</td>
       <td></td>
     </tr>
     <tr>
@@ -1302,9 +1302,9 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>EP04</td>
-      <td>Gestionar las reservas, dormitorios, ingresos, salidas y comunicación en la organización.</td>
-      <td>Como administrador del hotel quiero administrar las reservas de los huéspedes y comunicación adecuada con el dueño para potenciar el desempeño del hotel.</td>
-      <td><b>Given</b> el administrador está en la página de reservas<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
+      <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
+      <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
+      <td>El administrador tiene la capacidad de gestionar todas las operaciones clave relacionadas con las reservas, desde el registro hasta la modificación de fechas, así como de comunicarse con el gerente en caso de incidencias o solicitudes. Además, puede generar reportes y gestionar la disponibilidad de habitaciones de manera eficiente.</td>
       <td></td>
     </tr>
     <tr>
@@ -1411,10 +1411,28 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP04</td>
     </tr>
     <tr>
+      <td>HU09</td>
+      <td>Solicitar unirse a una organización</td>
+      <td>
+        Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente, de modo que el dueño pueda considerar mi incorporación.
+      </td>
+      <td>
+        <b>ADMINISTRADOR</b>
+        <br>
+        <b>Given</b> el administrador ha accedido a la página de solicitud de acceso,
+        <br>
+        <b>When</b> completa el formulario con su información y selecciona la organización a la que desea unirse,
+        <br>
+        <b>Then</b> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.
+        <br><b>And</b> se muestra un mensaje de confirmación de que la solicitud fue enviada.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
       <td>EP05</td>
-      <td>Crear perfil global para SweetManager y realizar reservas fácilmente.</td>
-      <td>Como huésped de Sweet Manager</td>
-      <td></td>
+      <td>Crear un perfil global para los huéspedes de SweetManager, facilitando la búsqueda de hoteles, la personalización de preferencias y la realización de reservas de manera rápida y sencilla.</td>
+      <td>Como huésped de Sweet Manager, quiero crear un perfil global, personalizar mis preferencias de búsqueda y realizar reservas de manera eficiente para mejorar mi experiencia en la plataforma.</td>
+      <td>Los huéspedes puededn crear un perfil único y global en la plataforma, donde pueden almacenar sus preferencias de búsqueda, gestionar sus reservas y facilitar la experiencia de reservar hoteles de manera personalizada. A través de este perfil, los huéspedes podrán acceder a opciones de búsqueda avanzadas y gestionar todas sus reservas en un solo lugar.</td>
       <td></td>
     </tr>
     <tr>
@@ -1514,46 +1532,98 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP05</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>EP06</td>
+      <td>API RESTful para gestión de habitaciones, reservas y administración</td>
+      <td>
+        Como Developer quiero implementar endpoints en una API RESTful que permita a los distintos usuarios del sistema (gerente, administrador y huésped) interactuar con las entidades clave del negocio como habitaciones, reservas y miembros de la organización, para garantizar una integración eficiente entre frontend y backend.
+      </td>
+      <td>
+        <ul>
+          <li>HTU01 - Exponer endpoint para registrar habitación</li>
+          <li>HTU02 - Consultar habitaciones filtradas por estado</li>
+          <li>HTU03 - Exponer endpoint para desvincular administrador</li>
+          <li>HTU04 - Exponer endpoint para registrar reserva</li>
+          <li>HTU05 - Exponer endpoint para ver huéspedes alojados</li>
+        </ul>
+      </td>
+      <td>BACKEND</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU01</td>
+      <td>Exponer endpoint para registrar habitación</td>
+      <td>Como Developer quiero exponer un endpoint POST /api/rooms para permitir registrar una nueva habitación a un hotel por medio de una API RESTful.</td>
+      <td>
+        <b>Scenario:</b> Registro exitoso de una habitación<br>
+        <em>Given</em> un payload válido con datos de tipo, estado y hotel asociado<br>
+        <em>When</em> se realiza un POST a /api/rooms<br>
+        <em>Then</em> la API responde con 201 Created y retorna el objeto creado<br><br>
+        <b>Scenario:</b> Registro fallido por datos incompletos<br>
+        <em>Given</em> un payload sin el campo hotelId<br>
+        <em>When</em> se hace un POST a /api/rooms<br>
+        <em>Then</em> la API responde con 400 Bad Request
+      </td>
+      <td>EP06</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU02</td>
+      <td>Consultar habitaciones filtradas por estado</td>
+      <td>Como Developer quiero exponer un endpoint GET /api/rooms?status=activo|inactivo para permitir filtrar habitaciones por su estado.</td>
+      <td>
+        <b>Scenario:</b> Consulta con filtro activo<br>
+        <em>Given</em> habitaciones activas e inactivas registradas<br>
+        <em>When</em> se llama GET /api/rooms?status=activo<br>
+        <em>Then</em> retorna solo habitaciones activas<br><br>
+        <b>Scenario:</b> Consulta sin filtros<br>
+        <em>When</em> se llama GET /api/rooms sin parámetros<br>
+        <em>Then</em> retorna todas las habitaciones
+      </td>
+      <td>EP06</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU03</td>
+      <td>Exponer endpoint para desvincular administrador</td>
+      <td>Como Developer quiero crear un endpoint DELETE /api/admins/{adminId} para permitir al owner remover un administrador de su organización.</td>
+      <td>
+        <b>Scenario:</b> Desvinculación exitosa<br>
+        <em>Given</em> admin pertenece a la organización<br>
+        <em>When</em> DELETE /api/admins/123<br>
+        <em>Then</em> responde 204 No Content<br><br>
+        <b>Scenario:</b> Admin no pertenece a la organización<br>
+        <em>When</em> DELETE /api/admins/999<br>
+        <em>Then</em> responde 403 Forbidden
+      </td>
+      <td>EP06</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU04</td>
+      <td>Exponer endpoint para registrar reserva</td>
+      <td>Como Developer quiero exponer un endpoint POST /api/bookings para permitir que un huésped registre su reserva desde la web.</td>
+      <td>
+        <b>Scenario:</b> Reserva exitosa<br>
+        <em>Given</em> datos válidos de fechas, huésped y habitación<br>
+        <em>When</em> POST /api/bookings<br>
+        <em>Then</em> responde 201 Created y devuelve la reserva<br><br>
+        <b>Scenario:</b> Fechas inválidas<br>
+        <em>When</em> POST con fecha fin anterior a inicio<br>
+        <em>Then</em> responde 400 Bad Request
+      </td>
+      <td>EP06</td>
     </tr>
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU05</td>
+      <td>Exponer endpoint para ver huéspedes alojados</td>
+      <td>Como Developer quiero exponer un endpoint GET /api/bookings/active para listar huéspedes actualmente alojados con habitación y fechas.</td>
+      <td>
+        <b>Scenario:</b> Lista huéspedes alojados<br>
+        <em>Given</em> existen reservas activas<br>
+        <em>When</em> GET /api/bookings/active<br>
+        <em>Then</em> retorna lista con nombre, habitación y fechas<br><br>
+        <b>Scenario:</b> Sin huéspedes alojados<br>
+        <em>Given</em> no hay reservas activas<br>
+        <em>When</em> GET /api/bookings/active<br>
+        <em>Then</em> retorna un array vacío
+      </td>
+      <td>EP06</td>
     </tr>
   </tbody>
 </table>
