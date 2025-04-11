@@ -906,21 +906,21 @@ Fin: 36:51
 
 URL del Vídeo: 
 
-Nombres: 
+Nombres: Carlo
 
-Apellidos:
+Apellidos: Rebagliati
 
-Edad:
+Edad: 45
 
-Sexo:
+Sexo: Masculino
 
-Ocupación:
+Ocupación: Gerente Hotelero
 
-Lugar donde vive: 
+Lugar donde vive: Pueblo Libre
 
 Duración de la entrevista: 
 
-Personalidad: 
+Personalidad: Análitica
 
 IMAGEN VA AQUI
 
