@@ -1158,36 +1158,34 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
     </tr>
     <tr>
-      <td>HU01</td>
-      <td>Crear cuenta</td>
-      <td>Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+    <td>HU01</td>
+      <td>Crear organización</td>
+      <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
       <td>
         <b>GERENTE</b>
         <br>
-        <b>Given</b> el usuario ingrese sus datos de hotel y gerente. 
+        <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
         <br>
-        <b>When</b> se paga el plan y se inicializa correctamente la organización.
+        <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
         <br>
-        <b>Then</b> se muestra un mensaje de bienvenida.
-        <br><b>Y</b> se redirecciona al dashboard.
+        <b>Then</b> se muestra un mensaje de bienvenida
+        <br><b>And</b> se redirecciona al dashboard principal.
+        <br><br><b>ADMINISTRADOR</b>
         <br>
-        <b>ADMINISTRADOR</b>
+        <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
         <br>
-        <b>Given</b> el gerente lo invitó a su organización.
+        <b>When</b> acepta la invitación y accede al sistema,
         <br>
-        <b>When</b> acepta la invitación y se redirecciona a la aplicación.
+        <b>Then</b> se muestra un mensaje de bienvenida
+        <br><b>And</b> se redirecciona a la página principal o portal de la organización .
+        <br><br><b>HUÉSPED</b>
         <br>
-        <b>Then</b> se muestra un mensaje de bienvenida.
-        <br><b>Y</b> se redirecciona al perfil de su cuenta.
+        <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
         <br>
-        <b>HUÉSPED</b>
+        <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
         <br>
-        <b>Given</b> el huésped está por reservar una habitación.
-        <br>
-        <b>When</b> el sistema le pide registrar una cuenta personal.
-        <br>
-        <b>Then</b> registra su cuenta personal.
-        <br><b>Y</b> registra su reserva correctamente.
+        <b>Then</b> completa el registro de su cuenta
+        <br><b>And</b> finaliza el proceso de reserva exitosamente.
       </td>
       <td>EP02</td>
     </tr>
@@ -1212,7 +1210,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de recursos.<br><b>When</b> nota que uno de sus recursos está por agotar el stock.<br><b>Then</b> contacta a su proveedor y crea una solicitud de abastecimiento.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 11 -->
     <tr>
       <td>HU03</td>
       <td>Comunicarse con sus administradores.</td>
@@ -1220,7 +1217,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de mensajería.<br><b>When</b> quiere enviar mensaje a sus administradores.<br><b>Then</b> redacta el asunto y cuerpo del mensaje.<br><b>Y</b> lo envía a todos los administradores.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 12 -->
     <tr>
       <td>HU04</td>
       <td>Mejorar la subscripción de la organización.</td>
@@ -1228,7 +1224,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de subscripciones.<br><b>When</b> quiere mejorar o degradar la subscripción actual. <b>Then</b> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 13 -->
     <tr>
       <td>HU05</td>
       <td>Invitar administradores a su organización.</td>
@@ -1236,7 +1231,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de administradores<br><b>When</b> quiere invitar a un nuevo administrador a la organización.<br><b>Then</b> Invita mediante su correo electrónico a la organización.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 14 -->
     <tr>
       <td>HU06</td>
       <td>Agregar proveedores a su lista de contactos.</td>
@@ -1244,15 +1238,75 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de proveedores<br><b>When</b> quiere registrar un nuevo proveedor a la lista de contacto.<br><b>Then</b> Registra su información de contacto.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 15 -->
+    <tr>
+      <td>HU07</td>
+      <td>Registrar nueva habitación en el hotel.</td>
+      <td>Como gerente del hotel quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere agregar una nueva habitación.<br><b>Then</b> ingresa la información correspondiente y la habitación queda registrada.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Editar el estado de una habitación.</td>
+      <td>Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere actualizar el estado de una habitación.<br><b>Then</b> selecciona la habitación y cambia su estado a activa o inactiva.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU09</td>
+      <td>Actualizar información de una habitación.</td>
+      <td>Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> selecciona una habitación existente.<br><b>Then</b> puede modificar su información como tipo, precio o descripción y guardar los cambios.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU10</td>
+      <td>Buscar y filtrar habitaciones por estado.</td>
+      <td>Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> utiliza la barra de búsqueda o selecciona un filtro de estado.<br><b>Then</b> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU11</td>
+      <td>Listar administradores de la organización.</td>
+      <td>Como gerente del hotel quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando el hotel.</td>
+      <td>
+        <b>Given</b> el propietario ha iniciado sesión y accede a la sección de administración de usuarios.<br>
+        <b>When</b> selecciona la opción para ver los administradores registrados en su organización.<br>
+        <b>Then</b> se muestra una lista con la información relevante de cada administrador (nombre, correo, teléfono, estado).
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>HU12</td>
+      <td>Ver huéspedes actuales en el hotel</td>
+      <td>Como gerente del hotel, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada, para monitorear la ocupación en tiempo real.</td>
+      <td>
+        <b>Escenario:</b> Visualizar huéspedes actuales<br>
+        <em>Given</em> que el propietario ha accedido al panel de control de ocupación<br>
+        <em>When</em> consulta la sección de huéspedes actualmente alojados<br>
+        <em>Then</em> el sistema muestra una lista con el nombre del huésped, la habitación que ocupa, y los detalles de su reserva (fecha de entrada, fecha de salida, estado de la reserva).
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU13</td>
+      <td>Desvincular administrador de la organización.</td>
+      <td>Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.</td>
+      <td>
+        <b>Given</b> el propietario está en la lista de administradores asociados a su organización,<br>
+        <b>When</b> selecciona un administrador y confirma la acción de desvinculación,<br>
+        <b>Then</b> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.
+      </td>
+      <td>EP03</td>
+    </tr>
     <tr>
       <td>EP04</td>
-      <td>Gestionar las reservas y comunicación en la organización.</td>
+      <td>Gestionar las reservas, dormitorios, ingresos, salidas y comunicación en la organización.</td>
       <td>Como administrador del hotel quiero administrar las reservas de los huéspedes y comunicación adecuada con el dueño para potenciar el desempeño del hotel.</td>
       <td><b>Given</b> el administrador está en la página de reservas<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
       <td></td>
     </tr>
-    <!-- Row 16 -->
     <tr>
       <td>HU01</td>
       <td>Gestionar reservas de huéspedes</td>
@@ -1273,11 +1327,10 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP04</td>
     </tr>
-    <!-- Row 17 -->
     <tr>
       <td>HU02</td>
-      <td>Enviar mensajes al dueño</td>
-      <td>Como administrador del hotel, quiero comunicarme con el dueño mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+      <td>Enviar mensajes al gerente</td>
+      <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
       <td>
         <strong>Escenario:</strong> Envío de mensaje<br>
         <em>Given</em> que el administrador está en la sección de mensajería<br>
@@ -1289,13 +1342,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>HU03</td>
-      <td>Ver huéspedes alojados actualmente</td>
-      <td>Como administrador del hotel, quiero ver una lista de los huéspedes que están actualmente alojados para tener un control en tiempo real de la ocupación.</td>
+      <td>Ver detalles de la reserva del huésped.</td>
+      <td>Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.</td>
       <td>
-        <b>Escenario:</b> Ver huéspedes alojados<br>
-        <em>Given</em> que el administrador está en la sección de reservas activas<br>
-        <em>When</em> accede a la pestaña de huéspedes actuales<br>
-        <em>Then</em> el sistema muestra una lista con nombre del huésped, habitación asignada y fechas de estadía.
+        <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+        <b>When</b> selecciona un huésped de la lista,<br>
+        <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.
       </td>
       <td>EP04</td>
     </tr>
@@ -1336,7 +1388,28 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP04</td>
     </tr>
-    <!-- Row 18 -->
+    <tr>
+      <td>HU07</td>
+      <td>Modificar fechas de una reserva.</td>
+      <td>Como administrador del hotel, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.</td>
+      <td>
+        <b>Given</b> que el administrador accede a los detalles de la reserva,<br>
+        <b>When</b> edita las fechas de la reserva,<br>
+        <b>Then</b> el sistema actualiza la información y recalcula el monto si es necesario.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Cambiar asignación de habitación.</td>
+      <td>Como administrador del hotel, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.</td>
+      <td>
+        <b>Given</b> que el administrador visualiza los detalles de la reserva,<br>
+        <b>When</b> selecciona una nueva habitación disponible para el huésped,<br>
+        <b>Then</b> el sistema actualiza la reserva con la nueva asignación de habitación.
+      </td>
+      <td>EP04</td>
+    </tr>
     <tr>
       <td>EP05</td>
       <td>Crear perfil global para SweetManager y realizar reservas fácilmente.</td>
@@ -1344,7 +1417,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 19 -->
     <tr>
       <td>HU01</td>
       <td>Crear perfil global en SweetManager</td>
@@ -1361,7 +1433,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td></td>
     </tr>
-    <!-- Row 20 -->
     <tr>
       <td>HU02</td>
       <td>Buscar y filtrar hoteles de Sweet Manager</td>
@@ -1378,7 +1449,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 21 -->
     <tr>
       <td>HU03</td>
       <td>Reservar una habitación</td>
@@ -1399,7 +1469,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 22 -->
     <tr>
       <td>HU04</td>
       <td>Visualizar reservas activas</td>
@@ -1412,7 +1481,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 23 -->
     <tr>
       <td>HU05</td>
       <td>Cancelar reserva</td>
@@ -1429,7 +1497,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 24 -->
     <tr>
       <td>HU06</td>
       <td>Ver historial de reservas</td>
@@ -1446,7 +1513,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 25 -->
     <tr>
       <td></td>
       <td></td>
@@ -1454,7 +1520,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 26 -->
     <tr>
       <td></td>
       <td></td>
@@ -1462,7 +1527,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 27 -->
     <tr>
       <td></td>
       <td></td>
@@ -1470,7 +1534,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 28 -->
     <tr>
       <td></td>
       <td></td>
@@ -1478,7 +1541,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 29 -->
     <tr>
       <td></td>
       <td></td>
@@ -1486,7 +1548,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
       <td></td>
     </tr>
-    <!-- Row 30 -->
     <tr>
       <td></td>
       <td></td>
