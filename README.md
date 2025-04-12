@@ -906,21 +906,21 @@ Fin: 36:51
 
 URL del Vídeo: 
 
-Nombres: 
+Nombres: Carlo
 
-Apellidos:
+Apellidos: Rebagliati
 
-Edad:
+Edad: 45
 
-Sexo:
+Sexo: Masculino
 
-Ocupación:
+Ocupación: Gerente Hotelero
 
-Lugar donde vive: 
+Lugar donde vive: Pueblo Libre
 
 Duración de la entrevista: 
 
-Personalidad: 
+Personalidad: Análitica
 
 IMAGEN VA AQUI
 
@@ -1116,10 +1116,10 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
   </thead>
   <tbody>
     <tr>
-      <td> EP1 </td>
-      <td> Información del producto </td>
-      <td> Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece. </td>
-      <td><b>Given</b> el visitante está en la landing page. <br/><b>When</b> observa la información relevante sobre la empresa. <br><b>Then</b> se interesa en saber más sobre el producto <br><b>Y</b> se redirecciona a la aplicación web/móvil.</td>
+      <td>EP1</td>
+      <td>Información del producto</td>
+      <td>Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece.</td>
+      <td>Los visitantes del sitio web pueden ver toda la información relevante acerca del producto, ayudándolos a entender los beneficios y características de la oferta. Al acceder a la landing page, los visitantes podrán conocer más sobre el producto y, si están interesados, se les redirigirá a la aplicación web o móvil para que puedan explorar más a fondo o realizar alguna acción.</td>
       <td></td>
     </tr>
     <tr>
@@ -1154,40 +1154,38 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP02</td>
       <td>Crear organización</td>
       <td>Como usuario quiero crear una organización para pertenecer a ella y utilizar los servicios de Sweet Manager.</td>
-      <td><b>Given</b> el usuario se encuentra en el Login. <b>When</b> presiona en el botón "SignUp" e ingresa sus datos. <br><b>Then</b> empezará con un flujo de páginas en donde inicializará las reglas de su organización y su plan de subscripción.</td>
+      <td>Este epic permite a los usuarios crear y configurar una organización en Sweet Manager para acceder a sus servicios y gestionar sus operaciones. El flujo comienza con el registro de la organización, donde el gerente debe ingresar los datos del hotel, su información personal y seleccionar un plan de suscripción. Después de realizar el pago, la organización se inicializa correctamente y el gerente recibe un mensaje de bienvenida y es redirigido al dashboard principal. Los administradores invitados reciben una invitación por correo para unirse a la organización, y al aceptar, también serán redirigidos a la página principal de la organización. Los huéspedes podrán registrar su cuenta y aclarar sus preferencias de habitaciones u hoteles para buscar y reservar hoteles cómodos.</td>
       <td></td>
     </tr>
     <tr>
       <td>HU01</td>
-      <td>Crear cuenta</td>
-      <td>Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+      <td>Crear organización</td>
+      <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
       <td>
         <b>GERENTE</b>
         <br>
-        <b>Given</b> el usuario ingrese sus datos de hotel y gerente. 
+        <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
         <br>
-        <b>When</b> se paga el plan y se inicializa correctamente la organización.
+        <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
         <br>
-        <b>Then</b> se muestra un mensaje de bienvenida.
-        <br><b>Y</b> se redirecciona al dashboard.
+        <b>Then</b> se muestra un mensaje de bienvenida
+        <br><b>And</b> se redirecciona al dashboard principal.
+        <br><br><b>ADMINISTRADOR</b>
         <br>
-        <b>ADMINISTRADOR</b>
+        <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
         <br>
-        <b>Given</b> el gerente lo invitó a su organización.
+        <b>When</b> acepta la invitación y accede al sistema,
         <br>
-        <b>When</b> acepta la invitación y se redirecciona a la aplicación.
+        <b>Then</b> se muestra un mensaje de bienvenida
+        <br><b>And</b> se redirecciona a la página principal o portal de la organización .
+        <br><br><b>HUÉSPED</b>
         <br>
-        <b>Then</b> se muestra un mensaje de bienvenida.
-        <br><b>Y</b> se redirecciona al perfil de su cuenta.
+        <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
         <br>
-        <b>HUÉSPED</b>
+        <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
         <br>
-        <b>Given</b> el huésped está por reservar una habitación.
-        <br>
-        <b>When</b> el sistema le pide registrar una cuenta personal.
-        <br>
-        <b>Then</b> registra su cuenta personal.
-        <br><b>Y</b> registra su reserva correctamente.
+        <b>Then</b> completa el registro de su cuenta
+        <br><b>And</b> finaliza el proceso de reserva exitosamente.
       </td>
       <td>EP02</td>
     </tr>
@@ -1195,7 +1193,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
       <td>Como gerente del hotel quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
-      <td><b>Given</b> el gerente está conectado.<br><b>When</b> revisa las finanzas y recursos.<br><b>Then</b> crea peticiones de abastecimiento y/o comunica con sus administradores.</td>
+      <td>El gerente puede gestionar todos los aspectos operativos del hotel, incluyendo el control de las finanzas, el seguimiento de los recursos y la comunicación con los administradores. El gerente podrá revisar los ingresos y egresos, gestionar el stock de recursos, enviar mensajes a los administradores, y manejar la subscripción de la organización. También puede administrar las habitaciones, agregar nuevos proveedores, e invitar nuevos administradores a la organización, garantizando un control completo de las operaciones del hotel.</td>
       <td></td>
     </tr>
     <tr>
@@ -1212,7 +1210,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de recursos.<br><b>When</b> nota que uno de sus recursos está por agotar el stock.<br><b>Then</b> contacta a su proveedor y crea una solicitud de abastecimiento.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 11 -->
     <tr>
       <td>HU03</td>
       <td>Comunicarse con sus administradores.</td>
@@ -1220,7 +1217,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de mensajería.<br><b>When</b> quiere enviar mensaje a sus administradores.<br><b>Then</b> redacta el asunto y cuerpo del mensaje.<br><b>Y</b> lo envía a todos los administradores.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 12 -->
     <tr>
       <td>HU04</td>
       <td>Mejorar la subscripción de la organización.</td>
@@ -1228,7 +1224,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de subscripciones.<br><b>When</b> quiere mejorar o degradar la subscripción actual. <b>Then</b> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 13 -->
     <tr>
       <td>HU05</td>
       <td>Invitar administradores a su organización.</td>
@@ -1236,7 +1231,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de administradores<br><b>When</b> quiere invitar a un nuevo administrador a la organización.<br><b>Then</b> Invita mediante su correo electrónico a la organización.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 14 -->
     <tr>
       <td>HU06</td>
       <td>Agregar proveedores a su lista de contactos.</td>
@@ -1244,15 +1238,75 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td><b>Given</b> el gerente está en la página de proveedores<br><b>When</b> quiere registrar un nuevo proveedor a la lista de contacto.<br><b>Then</b> Registra su información de contacto.</td>
       <td>EP03</td>
     </tr>
-    <!-- Row 15 -->
+    <tr>
+      <td>HU07</td>
+      <td>Registrar nueva habitación en el hotel.</td>
+      <td>Como gerente del hotel quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere agregar una nueva habitación.<br><b>Then</b> ingresa la información correspondiente y la habitación queda registrada.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Editar el estado de una habitación.</td>
+      <td>Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere actualizar el estado de una habitación.<br><b>Then</b> selecciona la habitación y cambia su estado a activa o inactiva.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU09</td>
+      <td>Actualizar información de una habitación.</td>
+      <td>Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> selecciona una habitación existente.<br><b>Then</b> puede modificar su información como tipo, precio o descripción y guardar los cambios.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU10</td>
+      <td>Buscar y filtrar habitaciones por estado.</td>
+      <td>Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
+      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> utiliza la barra de búsqueda o selecciona un filtro de estado.<br><b>Then</b> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.</td>
+      <td>EP03</td>
+    </tr>
+    <tr>
+      <td>HU11</td>
+      <td>Listar administradores de la organización.</td>
+      <td>Como gerente del hotel quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando el hotel.</td>
+      <td>
+        <b>Given</b> el propietario ha iniciado sesión y accede a la sección de administración de usuarios.<br>
+        <b>When</b> selecciona la opción para ver los administradores registrados en su organización.<br>
+        <b>Then</b> se muestra una lista con la información relevante de cada administrador (nombre, correo, teléfono, estado).
+      </td>
+      <td>EP02</td>
+    </tr>
+    <tr>
+      <td>HU12</td>
+      <td>Ver huéspedes actuales en el hotel</td>
+      <td>Como gerente del hotel, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada, para monitorear la ocupación en tiempo real.</td>
+      <td>
+        <b>Escenario:</b> Visualizar huéspedes actuales<br>
+        <em>Given</em> que el propietario ha accedido al panel de control de ocupación<br>
+        <em>When</em> consulta la sección de huéspedes actualmente alojados<br>
+        <em>Then</em> el sistema muestra una lista con el nombre del huésped, la habitación que ocupa, y los detalles de su reserva (fecha de entrada, fecha de salida, estado de la reserva).
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU13</td>
+      <td>Desvincular administrador de la organización.</td>
+      <td>Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.</td>
+      <td>
+        <b>Given</b> el propietario está en la lista de administradores asociados a su organización,<br>
+        <b>When</b> selecciona un administrador y confirma la acción de desvinculación,<br>
+        <b>Then</b> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.
+      </td>
+      <td>EP03</td>
+    </tr>
     <tr>
       <td>EP04</td>
-      <td>Gestionar las reservas y comunicación en la organización.</td>
-      <td>Como administrador del hotel quiero administrar las reservas de los huéspedes y comunicación adecuada con el dueño para potenciar el desempeño del hotel.</td>
-      <td><b>Given</b> el administrador está en la página de reservas<br><b>When</b> está atendiendo a un huésped.<br><b>Then</b> Actualiza el estado de la reserva.</td>
+      <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
+      <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
+      <td>El administrador tiene la capacidad de gestionar todas las operaciones clave relacionadas con las reservas, desde el registro hasta la modificación de fechas, así como de comunicarse con el gerente en caso de incidencias o solicitudes. Además, puede generar reportes y gestionar la disponibilidad de habitaciones de manera eficiente.</td>
       <td></td>
     </tr>
-    <!-- Row 16 -->
     <tr>
       <td>HU01</td>
       <td>Gestionar reservas de huéspedes</td>
@@ -1273,11 +1327,10 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP04</td>
     </tr>
-    <!-- Row 17 -->
     <tr>
       <td>HU02</td>
-      <td>Enviar mensajes al dueño</td>
-      <td>Como administrador del hotel, quiero comunicarme con el dueño mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+      <td>Enviar mensajes al gerente</td>
+      <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
       <td>
         <strong>Escenario:</strong> Envío de mensaje<br>
         <em>Given</em> que el administrador está en la sección de mensajería<br>
@@ -1289,13 +1342,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>HU03</td>
-      <td>Ver huéspedes alojados actualmente</td>
-      <td>Como administrador del hotel, quiero ver una lista de los huéspedes que están actualmente alojados para tener un control en tiempo real de la ocupación.</td>
+      <td>Ver detalles de la reserva del huésped.</td>
+      <td>Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.</td>
       <td>
-        <b>Escenario:</b> Ver huéspedes alojados<br>
-        <em>Given</em> que el administrador está en la sección de reservas activas<br>
-        <em>When</em> accede a la pestaña de huéspedes actuales<br>
-        <em>Then</em> el sistema muestra una lista con nombre del huésped, habitación asignada y fechas de estadía.
+        <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+        <b>When</b> selecciona un huésped de la lista,<br>
+        <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.
       </td>
       <td>EP04</td>
     </tr>
@@ -1336,15 +1388,53 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP04</td>
     </tr>
-    <!-- Row 18 -->
+    <tr>
+      <td>HU07</td>
+      <td>Modificar fechas de una reserva.</td>
+      <td>Como administrador del hotel, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.</td>
+      <td>
+        <b>Given</b> que el administrador accede a los detalles de la reserva,<br>
+        <b>When</b> edita las fechas de la reserva,<br>
+        <b>Then</b> el sistema actualiza la información y recalcula el monto si es necesario.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Cambiar asignación de habitación.</td>
+      <td>Como administrador del hotel, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.</td>
+      <td>
+        <b>Given</b> que el administrador visualiza los detalles de la reserva,<br>
+        <b>When</b> selecciona una nueva habitación disponible para el huésped,<br>
+        <b>Then</b> el sistema actualiza la reserva con la nueva asignación de habitación.
+      </td>
+      <td>EP04</td>
+    </tr>
+    <tr>
+      <td>HU09</td>
+      <td>Solicitar unirse a una organización</td>
+      <td>
+        Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente, de modo que el dueño pueda considerar mi incorporación.
+      </td>
+      <td>
+        <b>ADMINISTRADOR</b>
+        <br>
+        <b>Given</b> el administrador ha accedido a la página de solicitud de acceso,
+        <br>
+        <b>When</b> completa el formulario con su información y selecciona la organización a la que desea unirse,
+        <br>
+        <b>Then</b> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.
+        <br><b>And</b> se muestra un mensaje de confirmación de que la solicitud fue enviada.
+      </td>
+      <td>EP04</td>
+    </tr>
     <tr>
       <td>EP05</td>
-      <td>Crear perfil global para SweetManager y realizar reservas fácilmente.</td>
-      <td>Como huésped de Sweet Manager</td>
-      <td></td>
+      <td>Crear un perfil global para los huéspedes de SweetManager, facilitando la búsqueda de hoteles, la personalización de preferencias y la realización de reservas de manera rápida y sencilla.</td>
+      <td>Como huésped de Sweet Manager, quiero crear un perfil global, personalizar mis preferencias de búsqueda y realizar reservas de manera eficiente para mejorar mi experiencia en la plataforma.</td>
+      <td>Los huéspedes puededn crear un perfil único y global en la plataforma, donde pueden almacenar sus preferencias de búsqueda, gestionar sus reservas y facilitar la experiencia de reservar hoteles de manera personalizada. A través de este perfil, los huéspedes podrán acceder a opciones de búsqueda avanzadas y gestionar todas sus reservas en un solo lugar.</td>
       <td></td>
     </tr>
-    <!-- Row 19 -->
     <tr>
       <td>HU01</td>
       <td>Crear perfil global en SweetManager</td>
@@ -1361,7 +1451,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td></td>
     </tr>
-    <!-- Row 20 -->
     <tr>
       <td>HU02</td>
       <td>Buscar y filtrar hoteles de Sweet Manager</td>
@@ -1378,7 +1467,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 21 -->
     <tr>
       <td>HU03</td>
       <td>Reservar una habitación</td>
@@ -1399,7 +1487,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 22 -->
     <tr>
       <td>HU04</td>
       <td>Visualizar reservas activas</td>
@@ -1412,7 +1499,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 23 -->
     <tr>
       <td>HU05</td>
       <td>Cancelar reserva</td>
@@ -1429,7 +1515,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 24 -->
     <tr>
       <td>HU06</td>
       <td>Ver historial de reservas</td>
@@ -1446,53 +1531,99 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    <!-- Row 25 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>EP06</td>
+      <td>API RESTful para gestión de habitaciones, reservas y administración</td>
+      <td>
+        Como Developer quiero implementar endpoints en una API RESTful que permita a los distintos usuarios del sistema (gerente, administrador y huésped) interactuar con las entidades clave del negocio como habitaciones, reservas y miembros de la organización, para garantizar una integración eficiente entre frontend y backend.
+      </td>
+      <td>
+        <ul>
+          <li>HTU01 - Exponer endpoint para registrar habitación</li>
+          <li>HTU02 - Consultar habitaciones filtradas por estado</li>
+          <li>HTU03 - Exponer endpoint para desvincular administrador</li>
+          <li>HTU04 - Exponer endpoint para registrar reserva</li>
+          <li>HTU05 - Exponer endpoint para ver huéspedes alojados</li>
+        </ul>
+      </td>
+      <td>BACKEND</td>
     </tr>
-    <!-- Row 26 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU01</td>
+      <td>Exponer endpoint para registrar habitación</td>
+      <td>Como Developer quiero exponer un endpoint POST /api/rooms para permitir registrar una nueva habitación a un hotel por medio de una API RESTful.</td>
+      <td>
+        <b>Scenario:</b> Registro exitoso de una habitación<br>
+        <em>Given</em> un payload válido con datos de tipo, estado y hotel asociado<br>
+        <em>When</em> se realiza un POST a /api/rooms<br>
+        <em>Then</em> la API responde con 201 Created y retorna el objeto creado<br><br>
+        <b>Scenario:</b> Registro fallido por datos incompletos<br>
+        <em>Given</em> un payload sin el campo hotelId<br>
+        <em>When</em> se hace un POST a /api/rooms<br>
+        <em>Then</em> la API responde con 400 Bad Request
+      </td>
+      <td>EP06</td>
     </tr>
-    <!-- Row 27 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU02</td>
+      <td>Consultar habitaciones filtradas por estado</td>
+      <td>Como Developer quiero exponer un endpoint GET /api/rooms?status=activo|inactivo para permitir filtrar habitaciones por su estado.</td>
+      <td>
+        <b>Scenario:</b> Consulta con filtro activo<br>
+        <em>Given</em> habitaciones activas e inactivas registradas<br>
+        <em>When</em> se llama GET /api/rooms?status=activo<br>
+        <em>Then</em> retorna solo habitaciones activas<br><br>
+        <b>Scenario:</b> Consulta sin filtros<br>
+        <em>When</em> se llama GET /api/rooms sin parámetros<br>
+        <em>Then</em> retorna todas las habitaciones
+      </td>
+      <td>EP06</td>
     </tr>
-    <!-- Row 28 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU03</td>
+      <td>Exponer endpoint para desvincular administrador</td>
+      <td>Como Developer quiero crear un endpoint DELETE /api/admins/{adminId} para permitir al owner remover un administrador de su organización.</td>
+      <td>
+        <b>Scenario:</b> Desvinculación exitosa<br>
+        <em>Given</em> admin pertenece a la organización<br>
+        <em>When</em> DELETE /api/admins/123<br>
+        <em>Then</em> responde 204 No Content<br><br>
+        <b>Scenario:</b> Admin no pertenece a la organización<br>
+        <em>When</em> DELETE /api/admins/999<br>
+        <em>Then</em> responde 403 Forbidden
+      </td>
+      <td>EP06</td>
     </tr>
-    <!-- Row 29 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU04</td>
+      <td>Exponer endpoint para registrar reserva</td>
+      <td>Como Developer quiero exponer un endpoint POST /api/bookings para permitir que un huésped registre su reserva desde la web.</td>
+      <td>
+        <b>Scenario:</b> Reserva exitosa<br>
+        <em>Given</em> datos válidos de fechas, huésped y habitación<br>
+        <em>When</em> POST /api/bookings<br>
+        <em>Then</em> responde 201 Created y devuelve la reserva<br><br>
+        <b>Scenario:</b> Fechas inválidas<br>
+        <em>When</em> POST con fecha fin anterior a inicio<br>
+        <em>Then</em> responde 400 Bad Request
+      </td>
+      <td>EP06</td>
     </tr>
-    <!-- Row 30 -->
     <tr>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td></td>
+      <td>HTU05</td>
+      <td>Exponer endpoint para ver huéspedes alojados</td>
+      <td>Como Developer quiero exponer un endpoint GET /api/bookings/active para listar huéspedes actualmente alojados con habitación y fechas.</td>
+      <td>
+        <b>Scenario:</b> Lista huéspedes alojados<br>
+        <em>Given</em> existen reservas activas<br>
+        <em>When</em> GET /api/bookings/active<br>
+        <em>Then</em> retorna lista con nombre, habitación y fechas<br><br>
+        <b>Scenario:</b> Sin huéspedes alojados<br>
+        <em>Given</em> no hay reservas activas<br>
+        <em>When</em> GET /api/bookings/active<br>
+        <em>Then</em> retorna un array vacío
+      </td>
+      <td>EP06</td>
     </tr>
   </tbody>
 </table>
