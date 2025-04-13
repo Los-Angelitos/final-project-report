@@ -1695,6 +1695,44 @@ negocio para los usuarios del sistema. Para ello debe aplicar la técnica de
 visualización Domain Storytelling. Complemente la explicación con capturas en
 imágenes de los diagramas de Domain Storytelling elaborados.
 https://domainstorytelling.org/#dst-requirements
+<h2>Organizational Management Bounded Context</h2>
+<h3>Escenario: El dueño del hotel añade a un nuevo contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda crear y brindar los datos necesarios para un nuevo proveedor de manera que lo guarde en su contacto de proveedores. Este formulario es enviado a Organizational Management Bounded Context y además consulta con el Inventory Bounded Context, para conocer los recursos restantes en el hotel.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow1.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel lista a los contactos de proveedores</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda ver y listar a los contactos de proveedores que ha creado, de esta manera el usuario se conecta mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow2.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel edita a un contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda editar a un contacto de proveedor ya creado anteriormente conectándose mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow3.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel elimina a un contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda eliminar a un contacto de proveedor ya creado anteriormente conectándose mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow4.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel crea y personaliza el perfil de su hotel</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda editar y configurar el perfil de su hotel para que pueda estar público hacia los futuros clientes conectándose mediante el Organizational Management Bounded Context y además al Inventory Bounded Context para que pueda brindar los recursos restantes en el negocio.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow5.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: Usuario filtra y se suscribe a un hotel</h3>
+<p>Para este escenario, se espera que un usuario sea capaz de visualizar la lista de hoteles disponibles en SweetManager System mediante el Organizational Management Bounded Context, para que pueda suscribirse a él y comience su reserva de cuartos.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow6.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+
 
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
