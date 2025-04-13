@@ -1779,9 +1779,9 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Reservations Bounded Context
+### 4.2.2. Bounded Context: Reservations Bounded Context
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.2.1. Domain Layer
 ### Agregados y Entidades del Dominio `Reservations`
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
@@ -1960,7 +1960,7 @@ Representa un tipo de habitación.
 
 ---
 
-#### 4.2.X.2. Interface Layer
+#### 4.2.2.2. Interface Layer
 ### Interface Layer – Presentación de la Aplicación
 
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
@@ -2011,7 +2011,7 @@ Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Con
 
 
 
-#### 4.2.X.3. Application Layer
+#### 4.2.2.3. Application Layer
 ### Servicios de Aplicación – Gestión de Flujos de Negocio
 ---
 
@@ -2053,7 +2053,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | ✅ **Cancel Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `CANCELLED`. |
 
 
-#### 4.2.X.4. Infrastructure Layer
+#### 4.2.2.4. Infrastructure Layer
 
 ### Implementación de Repositories
 
@@ -2066,7 +2066,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
 caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
@@ -2081,20 +2081,11 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+![image](https://github.com/user-attachments/assets/bbebfc85-9f04-4bbb-a651-3271a1c96033)
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
 En esta sección el equipo presenta y explica el Database Diagram que incluye los
 objetos de base de datos que permitirán la persistencia de información para los
 objetos del bounded context. Para el caso de un almacenamiento en base de datos
