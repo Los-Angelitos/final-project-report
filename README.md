@@ -1681,20 +1681,19 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
-recomiendo echarle un ojo a estos: 
-https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/ch12.html
-https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/part03.xhtml
-https://domainstorytelling.org/#dst-requirements
-https://openpracticelibrary.com/practice/event-storming/ 
 #### 4.1.1.1. Candidate Context Discovery
 
 #### 4.1.1.2. Domain Message Flows Modeling
-En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo
-deben colaborar los bounded contexts para resolver los casos que se presentan en el
-negocio para los usuarios del sistema. Para ello debe aplicar la técnica de
-visualización Domain Storytelling. Complemente la explicación con capturas en
-imágenes de los diagramas de Domain Storytelling elaborados.
-https://domainstorytelling.org/#dst-requirements
+
+## Reservations Bounded Context
+![image](https://github.com/user-attachments/assets/6abdf48a-588b-4353-b962-418864251642)
+![image](https://github.com/user-attachments/assets/6c10b73b-8ca0-4015-80d1-89b3c8b5caf4)
+![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
+![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
+![image](https://github.com/user-attachments/assets/83642508-3aae-44ba-87a9-84658b3da11e)
+![image](https://github.com/user-attachments/assets/4fa79bc1-7f70-49dd-8c84-c8c207de35ad)
+![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
+
 
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
@@ -2086,14 +2085,52 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 ![image](https://github.com/user-attachments/assets/bbebfc85-9f04-4bbb-a651-3271a1c96033)
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+![image](https://github.com/user-attachments/assets/e1ae1cab-6aed-431f-a367-25597395c4a0)
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Las tablas principales y unicas del Bounded Context son: 
+
+### `Room` 
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la habitación |
+| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
+| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
+| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
+| `Bookings`   | `ICollection<Booking>`| Reservas asociadas (propiedad de navegación) |
+| `TypeRoom`   | `TypeRoom?`           | Tipo de habitación asignado |
+| `Hotel`      | `Hotel?`              | Hotel al que pertenece la habitación |
+
+###  `Booking` 
+
+#### Atributos principales:
+
+| Atributo            | Tipo                   | Descripción |
+|---------------------|------------------------|-------------|
+| `Id`                | `int`                  | Identificador único |
+| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
+| `RoomId`            | `int?`                 | Habitación reservada |
+| `Description`       | `string?`              | Información adicional |
+| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
+| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
+| `PriceRoom`         | `decimal?`             | Costo por noche |
+| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
+| `Amount`            | `decimal?`             | Monto total pagado |
+| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
+| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
+| `Preference`        | `GuestPreference?`     | Relación con preferencias del huésped |
+| `Room`              | `Room?`                | Relación con la habitación |
+| `PaymentCustomer`   | `PaymentCustomer?`     | Pago del cliente |
+
+###  `TypeRoom` (Entidad)
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | ID único del tipo |
+| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
+| `Price`      | `decimal`             | Precio base asignado a este tipo |
+| `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
+
 ### 4.2.X. Bounded Context: Organizational Management Bounded Context
 
 #### 4.2.X.1. Domain Layer
