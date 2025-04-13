@@ -1742,6 +1742,11 @@ Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context
 Overview Definition, Business Rules Distillation & Ubiquitous Language Capture,
 Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design
 Critique.
+<h2>Organizational Management Bounded Context</h2>
+<p>Responsable de la gestión de hoteles y proveedores dentro de la aplicación. Facilita la creación, vista, edición de la lista de hoteles disponibles como también de los proveedores de recursos para esta.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ### 4.1.2. Context Mapping
 
