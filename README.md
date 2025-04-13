@@ -1685,7 +1685,7 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
-## Reservations Bounded Context
+#### Reservations Bounded Context
 ![image](https://github.com/user-attachments/assets/6abdf48a-588b-4353-b962-418864251642)
 ![image](https://github.com/user-attachments/assets/6c10b73b-8ca0-4015-80d1-89b3c8b5caf4)
 ![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
