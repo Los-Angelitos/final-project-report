@@ -1705,6 +1705,14 @@ Overview Definition, Business Rules Distillation & Ubiquitous Language Capture,
 Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design
 Critique.
 
+**Communication Bounded Context Canvas**
+
+Responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
+
+<div style="text-align: center;">
+  <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
+</div>
+
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
