@@ -1899,29 +1899,342 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Commerce Bounded Context
+### 4.2.4. Bounded Context: Commerce Bounded Context
 
-#### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+#### 4.2.4.1. Domain Layer
+### Aggregates, Entities y Value Objects del Dominio `Commerce`
 
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
+Se han identificado los siguientes **Aggregates**, **Entities** y **Value Objects** que representan los conceptos más importantes del contexto de comercio.
+
+---
+
+### `PaymentCustomer` 
+
+Representa un pago realizado por un huésped. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del pago |
+| `GuestId`    | `int?`                | Relación con el huésped (`Guest`) |
+|`FinalAmount` | `decimal?`            | Monto asociado al pago |
+| `Bookings`   | `ICollection<Booking>`| Reservas asociadas al pago |
+| `Guest`      | `Guest?`              | Huésped al cual corresponde el pago |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreatePaymentCustomerCommand` y `UpdatePaymentCustomerCommand`
+
+---
+
+###  `PaymentOwner` 
+
+Representa un pago realizado por un dueño de hotel. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del pago |
+| `OwnerId`    | `int?`                | Relación con el dueño (`Owner`) |
+| `Description`| `string?`             | Información adicional |
+|`FinalAmount` | `decimal?`            | Monto asociado al pago |
+| `Bookings`   | `ICollection<SupplyRequest>`| Solicitudes de abastecimiento asociadas al pago |
+| `Owner`      | `Owner?`              | Dueño de hotel al cual corresponde el pago |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreatePaymentOwnerCommand` y `UpdatePaymentOwnerCommand`
+
+---
+
+###  `Subscription`
+
+Representa la suscripción asociada a un hotel.
+
+| Atributo               | Tipo         | Descripción |
+|------------------------|--------------|-------------|
+| `Id`                   | `int`                   | Identificador único de la suscripción |
+| `Name`                 | `ESubscriptionTypes`    | Nombre de la suscripción (Basic, Regular, Premium) |
+| `Content`              | `string?`               | Descripción de lo que ofrece la suscripción |
+| `Price`                | `decimal?`              | Precio de la suscripción |
+| `Status`               | `EStates`               | Estado de la suscripción (Active, Inactive) |
+| `ContractOwners`       |`ICollection<ContractOwner>?`| Contratos de los dueños asociados a la suscripción |
+
+- Por parámetros individuales
+- A partir de `CreateSubscriptionCommand` y `UpdateSubscriptionCommand`
+
+---
+
+###  `Contract Owner` (Entity)
+
+Representa la relación entre un dueño de hotel y una suscripción.
+
+#### Atributos principales:
+
+| Atributo         | Tipo                  | Descripción |
+|------------------|-----------------------|-------------|
+| `Id`             | `int`                 | Identificador único del pago |
+| `OwnerId`        | `int?`                | Relación con el dueño (`Owner`) |
+| `StartDate`      | `DateTime`            | Fecha de inicio del contrato |
+| `FinalDate`      | `DateTime`            | Fecha de fin del contrato |
+| `SubscriptionId` | `int?`                | Relación con la suscripción (`Subscription`) |
+| `Status`         | `EStates`             | Estado del contrato (Active, Inactive) |
+| `Owner`          | `Owner?`              | Dueño de hotel al cual corresponde el contrato |
+| `Subscription`   | `Subscription?`       | Suscripción a la cual corresponde el contrato |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreateContractOwnerCommand` y `UpdateContractOwnerCommand`
+
+---
+
+###  `ESubscriptionTypes` (Value Object)
+
+Representa los tipos de suscripción que puede elegir un dueño de hotel.
+
+#### Atributos principales:
+
+| Valores          | Descripción |
+|------------------|-------------|
+| `Basic`          | Suscripción más básica para hoteles pequeños |
+| `Regular`        | Suscripción regular o estándar |
+| `Premium`        | Suscripción mejorada para hoteles más grandes |
+
+---
+
+###  `EStates` (Value Object)
+
+Representa los estados en los que puede estar una suscripción o un contrato.
+
+#### Atributos principales:
+
+| Valores          | Descripción |
+|------------------|-------------|
+| `Active`         | Estado activo y vigente |
+| `Inactive`       | Estado inactivo e inválido |
+
+---
+
+## Comandos
+
+---
+
+### PaymentCustomer
+
+| Comando                            | Descripción |
+|------------------------------------|-------------|
+| `CreatePaymentCustomerCommand.cs`  | Permite crear un nuevo pago asociado a un huésped, con los atributos necesarios. |
+| `UpdatePaymentCustomerCommand.cs`  | Permite modificar los datos de un pago existente. |
+
+---
+
+### PaymentOwner
+
+| Comando                          | Descripción |
+|------------------------------------|-------------|
+| `CreatePaymentOwnerCommand.cs`  | Permite crear un nuevo pago asociado a un dueño de hotel, con los atributos necesarios. |
+| `UpdatePaymentOwnerCommand.cs`  | Permite modificar los datos de un pago existente. |
+
+---
+
+### Subscription
+
+| Comando                         | Descripción |
+|------------------------------------|-------------|
+| `CreateSubscriptionCommand.cs`  | Permite crear una nueva suscripción, con los atributos necesarios. |
+| `UpdateSubscriptionCommand.cs`  | Permite modificar los datos de una suscripción existente. |
+
+---
+
+### ContractOwner
+
+| Comando                         | Descripción |
+|------------------------------------|-------------|
+| `CreateContractOwnerCommand.cs`  | Permite crear un nuevo contrato, con los atributos necesarios. |
+| `UpdateContractOwnerCommand.cs`  | Permite modificar los datos de un contrato existente. |
+
+---
+
+### Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllPaymentCustomersQuery.cs` | Obtener todos los pagos de huéspedes. |
+| `GetPaymentCustomerByIdQuery.cs` | Obtener el pago de huésped asociado a un identificador. |
+| `GetAllPaymentCustomersByCustomerIdQuery.cs` | Obtener todos los pagos asociados a un CustomerId. |
+| `GetAllPaymentOwnersQuery.cs` | Obtener todos los pagos de dueños de hoteles. |
+| `GetPaymentOwnerByIdQuery.cs` | Obtener el pago de dueño de hotel asociado a un identificador. |
+| `GetAllPaymentOwnersByOwnerIdQuery.cs` | Obtener todos los pagos asociados a un OwnerId. |
+| `GetAllSubscriptionsQuery.cs` | Obtener todas las suscripciones. |
+| `GetSubscriptionByIdQuery.cs` | Obtener la suscripción asociada a un identificador. |
+| `GetAllSubscriptionsByNameQuery.cs` | Obtener todas las suscripciones con el nombre indicado. |
+| `GetAllSubscriptionsByStatusQuery.cs` | Obtener todas las suscripciones con el estado indicado. |
+| `GetAllContractOwnersQuery.cs` | Obtener todos los contratos de dueños. |
+| `GetContractOwnerByIdQuery.cs` | Obtener el contrato asociado a un identificador. |
+| `GetAllContractOwnersByOwnerIdQuery.cs` | Obtener todos los contratos asociados a un OwnerId. |
+| `GetAllContractOwnersBySubscriptionIdQuery.cs` | Obtener todos los contratos asociados a un SubscriptionId. |
+
+---
+
+### Repositories (Interfaces)
+
+| Archivo                   | Descripción breve |
+|--------------------------|--------------------|
+| `IPaymentCustomerRepository.cs`  | Define operaciones sobre los pagos de huéspedes: FindByCustomerIdAsync. |
+| `IPaymentOwnerRepository.cs`     | Define operaciones sobre los pagos de dueños de hoteles: FindByOwnerIdAsync. |
+| `ISubscriptionRepository.cs` | Define operaciones sobre las suscripciones: FindByNameAsync, FindByStatusAsync. |
+| `IContractOwnerRepository.cs` | Define operaciones sobre los contratos: FindByOwnerIdAsync, FindBySubscriptionIdAsync. |
+
+---
+
+###  Services
+
+####  Booking
+
+### PaymentCustomer
+
+| Servicio                            | Descripción |
+|------------------------------------|-------------|
+| `IPaymentCustomerCommandService.cs`  | Define comandos para crear y modificar un pago de huésped. |
+| `IPaymentCustomerQueryService.cs`  | Define comandos para obtener pagos. |
+
+---
+
+### PaymentOwner
+
+| Servicio                          | Descripción |
+|------------------------------------|-------------|
+| `IPaymentOwnerCommandService.cs`  | Define comandos para crear y modificar un pago de dueño. |
+| `IPaymentOwnerQueryService.cs`  | Define comandos para obtener pagos. |
+
+---
+
+### Subscription
+
+| Servicio                         | Descripción |
+|------------------------------------|-------------|
+| `ISubscriptionCommandService.cs`  | Define comandos para crear y modificar una suscripción. |
+| `ISubscriptionQueryService.cs`  | Define comandos para obtener suscripciones. |
+
+---
+
+### ContractOwner
+
+| Servicio                         | Descripción |
+|------------------------------------|-------------|
+| `IContractOwnerCommandService.cs`  | Define comandos para crear y modificar un contrato. |
+| `IContractOwnerQueryService.cs`  | Define comandos para obtener contratos. |
+
+---
+
+#### 4.2.4.2. Interface Layer
+
+### Capa de Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, la cual va a interactuar con otros Bounded Context y con el exterior. Recibe solicitudes HTTP, las transforma en comandos o queries y devuelve respuestas adecuadas al cliente.
+
+---
+
+### Resources
+
+Las clases `Resource` funcionan como objetos de transferencia entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `PaymentCustomerResource.cs`      | Recibe datos para crear un pago de huésped desde el cliente. |
+| `CreatePaymentCustomerResource.cs`| Permite crear un pago de huésped desde el cliente. |
+| `UpdatePaymentCustomerResource.cs`| Permite modificar un pago de huésped desde el cliente. |
+| `PaymentOwnerResource.cs`      | Recibe datos para crear un pago de dueño de hotel desde el cliente. |
+| `CreatePaymentOwnerResource.cs`| Permite crear un pago de dueño de hotel desde el cliente. |
+| `UpdatePaymentOwnerResource.cs`| Permite modificar un pago de dueño de hotel desde el cliente. |
+| `SubscriptionResource.cs`      | Recibe datos para crear una suscripción desde el cliente. |
+| `CreateSubscriptionResource.cs`| Permite crear una suscripción desde el cliente. |
+| `UpdateSubscriptionResource.cs`| Permite modificar una suscripción desde el cliente. |
+| `ContractOwnerResource.cs`      | Recibe datos para crear un contrato de dueño de hotel desde el cliente. |
+| `CreateContractOwnerResource.cs`| Permite crear un contrato de dueño de hotel desde el cliente. |
+| `UpdateContractOwnerResource.cs`| Permite modificar un contrato de dueño de hotel desde el cliente. |
+
+---
+
+### Transform
+
+Las clases `Transform` son responsables de:
+
+- Convertir `Resources` en **Commands** para que los maneje la capa de aplicación.
+- Convertir `Entities` del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `PaymentCustomerResourceFromEntityAssembler.cs`      | Convierte una entidad `PaymentCustomer` en un `PaymentCustomerResource`. |
+| `CreatePaymentCustomerCommandFromResourceAssembler.cs`| Convierte un `PaymentCustomerResource` en un `CreatePaymentCustomerCommand`. |
+| `UpdatePaymentCustomerCommandFromResourceAssembler.cs`| Convierte un `PaymentCustomerResource` en un `UpdatePaymentCustomerCommand`. |
+| `PaymentOwnerResourceFromEntityAssembler.cs`      | Convierte una entidad `PaymentOwner` en un `PaymentOwnerResource`. |
+| `CreatePaymentOwnerCommandFromResourceAssembler.cs`| Convierte un `PaymentOwnerResource` en un `CreatePaymentOwnerCommand`. |
+| `UpdatePaymentOwnerCommandFromResourceAssembler.cs`| Convierte un `PaymentOwnerResource` en un `UpdatePaymentOwnerCommand`. |
+| `SubscriptionResourceFromEntityAssembler.cs`      | Convierte una entidad `Subscription` en un `SubscriptionResource`. |
+| `CreateSubscriptionCommandFromResourceAssembler.cs`| Convierte un `SubscriptionResource` en un `CreateSubscriptionCommand`. |
+| `UpdateSubscriptionCommandFromResourceAssembler.cs`| Convierte un `SubscriptionResource` en un `UpdateSubscriptionCommand`. |
+
+### Controllers
+
+Cada Aggregate del Bounded Context cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `PaymentCustomerController.cs` | `/api/payment-customer`  | Gestiona la creación, modificación y consulta de pagos de huéspedes. |
+| `PaymentOwnerController.cs`    | `/api/payment-owner`     | Gestiona la creación, modificación y consulta de pagos de dueños de hoteles. |
+|   `SubscriptionController.cs`  | `/api/subscription`      | Gestiona la creación, modificación y consulta de suscripciones. |
+
+
+
+#### 4.2.4.3. Application Layer
+
+### Gestión de Flujos de Negocio
+
+La carpeta `Application/Internal` representa la capa de aplicación de la arquitectura, el cual gestiona los servicios que definen el flujo de negocio de la aplicación.
+
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `PaymentCustomerCommandService.cs`       | Maneja comandos para registrar un pago de huésped y modificarlo. |
+| `PaymentOwnerCommandService.cs`          | Maneja comandos para registrar un pago de dueño de hotel y modificarlo. |
+| `SubscriptionCommandService.cs`     | Maneja comandos para registrar una nueva suscripción. |
+| `ContractOwnerCommandService.cs`     | Maneja comandos para crear un nuevo contrato de dueño de hotel. |
+
+---
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `PaymentCustomerQueryService.cs`          | Devuelve pagos de huéspedes filtrados por ID o CustomerID. |
+| `PaymentOwnerQueryService.cs`             | Devuelve pagos de dueños de hoteles filtrados por ID o OwnerID. |
+| `SubscriptionQueryService.cs`             | Devuelve suscripciones filtradas por ID, nombre o estado. |
+| `PaymentCustomerQueryService.cs`          | Devuelve contratos de dueños de hotel filtradas por ID, OwnerID o SuscriptionID. |
+
+---
+
+#### 4.2.4.4. Infrastructure Layer
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `PaymentCustomerRepository.cs`    | `IPaymentCustomerRepository.cs`  | Implementa operaciones de persistencia y consulta sobre los pagos de huéspedes. |
+| `PaymentOwnerRepository.cs`       | `IPaymentOwnerRepository`    | Implementa operaciones de persistencia y consulta sobre los pagos de dueños de hoteles. |
+| `SubscriptionRepository.cs`       | `ISubscriptionRepository`        | Implementa operaciones de persistencia y consulta sobre las suscripciones. |
+| `ContractOwnerRepository.cs`       | `IContractOwnerRepository`        | Implementa operaciones de persistencia y consulta sobre los contratos de dueños de hoteles. |
+
+---
+
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
