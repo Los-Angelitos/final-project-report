@@ -2122,25 +2122,16 @@ diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/uml-class.PNG" alt="Class Diagram Organizational Management" width="90%" />
+</div><br>
+
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
+</div><br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.X. Bounded Context: Commerce Bounded Context
