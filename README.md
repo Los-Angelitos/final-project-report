@@ -1683,6 +1683,9 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ### 4.1.1. EventStorming
 #### 4.1.1.1. Candidate Context Discovery
 
+
+
+
 #### 4.1.1.2. Domain Message Flows Modeling
 
 #### Reservations Bounded Context
@@ -1696,13 +1699,8 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 
 
 #### 4.1.1.3. Bounded Context Canvases
-En esta sección el equipo diseña sus candidate bounded contexts, detallando los
-criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
-orden de importancia, para elaborar su Bounded Context Canvas. La elaboración del
-Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context
-Overview Definition, Business Rules Distillation & Ubiquitous Language Capture,
-Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design
-Critique.
+#### Reservations Bounded Context
+![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
 
 ### 4.1.2. Context Mapping
 
