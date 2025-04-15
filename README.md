@@ -269,7 +269,7 @@ Nos enfocamos inicialmente en hoteles independientes y pequeñas cadenas hoteler
 
 **Para el Huésped del hotel (huésped):**
 
-- Interfaz intuitiva para que el huésped pueda seleccionar fechas, tipo de habitación, servicios adicionales
+- Reservación de habitaciones, con la posibilidad de escoger fechas de inicio y salida, tipo de habitación, entre otras características. 
 
 - Personalización de la habitación, pudiendo determinar valores como la temperatura de la misma. 
 
@@ -288,15 +288,16 @@ Nos enfocamos inicialmente en hoteles independientes y pequeñas cadenas hoteler
 ---
 #### Business Outcomes
 ---
- ¿Cómo sabremos que resolvimos el problema de negocio? ¿Qué mediremos?
 
-Los siguientes indicadores nos permitirán evaluar si la solución propuesta está generando el impacto esperado en el negocio hotelero:
+**Aumento en la adopción del sistema**: Alcanzar una tasa de adopción diaria del 60% por parte de los usuarios registrados dentro de los tres primeros meses, lo que evidenciará un uso constante y relevante del sistema.
 
-- **Reducción de costos operativos**: Esperamos que al implementar Sweet Manager, se reduzca al menos un 20% en los primeros 6 meses, gracias a una gestión más efectiva de ingresos y recursos que optimiza los costos operativos y maximiza los ingresos.
-- **Incremento en la eficiencia del personal administrativo**: 30% de reducción de tiempo en el tiempo dedicado a tareas administrativas como la gestión de reservas o de habitaciones, lo que se traducirá en una mejora tangible en la eficiencia operativa del hotel.
-- **Retención de los Huéspedes**: Mediante el uso de Sweet Manager, esperamos un aumento del 20% en el número de Huéspedes que realizan reservas repetidas dentro de un año, lo que indica una mayor fidelización gracias a una gestión más efectiva y una experiencia de calidad para los huéspedes.
-- **Aumento en la adopción del sistema**: Con Sweet Manager, esperamos un 60% de uso diario del sistema en los primeros 3 meses, con tanto los administradores como los Huéspedes estando al tanto de sus reservas y de datos importantes en la aplicación. 
-- **Mayor Satisfacción del Huésped**: Gracias a Sweet Manager, esperamos ver un aumento de 0.5 puntos en la calificación promedio de satisfacción del Huésped en las reseñas en línea (fuera de Sweet Manager, refiriendose a servicios externos como las calificaciones de Google Maps, etc) , lo que reflejaría la mejora en la experiencia del Huésped, gracias a una gestión más eficiente y una atención más personalizada.
+**Crecimiento del portafolio de clientes**: Lograr un crecimiento mensual sostenido del 10% en nuevos registros de hoteles y alojamientos en Sweet Manager durante el primer año de operación comercial activa.
+
+**Conversión a planes pagos**: Lograr que al menos el 50% de los hoteles que inician con un plan básico se conviertan en usuarios de planes pagos dentro de los 30 días posteriores al lanzamiento.
+
+**Retención de clientes suscriptores**: Mantener una tasa de retención del 60% de los hoteles suscritos a planes pagos durante el primer año, asegurando ingresos estables y satisfacción con la plataforma.
+
+**Reconocimiento como solución integral de gestión hotelera**: Posicionar a Sweet Manager como una de las tres plataformas líderes en soluciones tecnológicas para hoteles en Latinoamérica en un periodo de 2 años, consolidando la marca y aumentando su valor en el mercado.
 
 ---
 #### Users
@@ -379,82 +380,41 @@ Dueños: Los dueños de hotel representan a los creadores de la organización y 
 > **Referencia metodológica:**  
 > Según *Lean UX, 3rd edition*, usando los proto personas como base , podemos hacernos esta serie de preguntas: What is the user trying to accomplish?, How does the user want to feel during and after this process?, How does our product or service get the user closer to a life goal or dream?, Why would your user seek out your product? y What behavior change can we observe that tells they’ve achieved their goal?
 
-###### Carla, Administradora de Hotel
-- **¿Qué quiere lograr?** Mayor control y organización sobre los procesos operativos con el panel de control centralizado. 
-- **¿Cómo quiere sentirse?** Tranquila, organizada y en control.
-- **¿Cómo la ayuda Sweet Manager?** Centraliza información, automatiza flujos y muestra reportes en tiempo real.
-- **¿Por qué lo buscaría?** Necesita herramientas modernas que reemplacen las hojas de cálculo.
-- **¿Qué cambio observaríamos?** Disminuye el uso de Excel y usa el panel de control de Sweet Manager a diario.
+###### **Carla, Administradora de Hotel**
 
-###### José, Huésped del Hotel
-- **¿Qué quiere lograr?** Alcanzar una experiencia de reserva sencilla, rapida y personalizada. 
-- **¿Cómo quiere sentirse?** Relajado y satisfecho. 
-- **¿Cómo la ayuda Sweet Manager?** Visualiza habitaciones de hotel, hace la reserva y las personaliza. 
-- **¿Por qué lo buscaría?** Quiere reservar habitaciones de forma sencilla y agil. 
-- **¿Qué cambio observaríamos?** Usaria Sweet Manager para personalizar y escoger la mejor experiencia hotelera.
+Carla busca tener mayor control y organización sobre los procesos operativos del hotel. Su objetivo principal es optimizar las tareas administrativas mediante herramientas digitales que le permitan centralizar la información y reducir su dependencia de hojas de cálculo. Desea sentirse tranquila, organizada y en control de sus responsabilidades diarias. Sweet Manager la ayuda mediante un panel de control centralizado que automatiza flujos de trabajo y presenta reportes en tiempo real, permitiéndole tomar decisiones informadas rápidamente. Gracias a ello, observamos una disminución en el uso de Excel y una adopción diaria del sistema para gestionar el hotel de forma más eficiente.
 
-###### Lucía, CEO del Hotel
 
-- **¿Qué quiere lograr?** Mayor control y organización sobre el rendimiento financiero y operativo de un hotel.  
-- **¿Cómo quiere sentirse?** Segura de sus decisiones de inversión.
-- **¿Cómo la ayuda Sweet Manager?** Le entrega insights estratégicos y le permite controlar la gestión hotelera. 
-- **¿Por qué lo buscaría?** Para supervisar operaciones sin depender de terceros.
-- **¿Qué cambio observaríamos?** Toma de decisiones mas rapidas y una mejor gestión. 
+###### **José, Huésped del Hotel**
+
+José valora profundamente una experiencia de reserva que sea sencilla, rápida y personalizable, especialmente cuando viaja con su familia. Quiere sentirse relajado y satisfecho desde el primer contacto con el hotel hasta el final de su reserva. Sweet Manager le permite visualizar opciones de habitación, realizar su reserva con facilidad y configurar elementos como la temperatura ambiente para hacer su experiencia más cómoda. Busca esta herramienta porque reduce los trámites y mejora la planificación de sus vacaciones. El cambio observable es un uso activo del sistema para personalizar su estadía y garantizar una experiencia hotelera ideal.
+
+
+###### **Lucía, CEO del Hotel**
+
+Lucía desea tener un control total sobre el rendimiento financiero y operativo de sus hoteles, sin depender exclusivamente de intermediarios o reportes demorados. Quiere sentirse segura de que sus decisiones de inversión están respaldadas por datos concretos y accesibles. Sweet Manager le proporciona insights estratégicos clave y un acceso ágil a información consolidada sobre ingresos, egresos, ocupación y desempeño. Lo busca como una herramienta que le permite supervisar de forma proactiva toda la operación desde su móvil. Como resultado, se observa una toma de decisiones más rápida y una gestión más precisa y orientada a resultados.
+
 ---
 #### User Assumptions
----
-1. ¿Quién es el usuario?
 
-Administrador: Responsable de la operación y administración del hotel.
+###### **Administrador del Hotel**
 
-Huésped: Persona que desea hospedarse con comodidad y sin complicaciones en un hotel.
+El administrador es responsable de la operación y administración diaria del hotel. Sweet Manager forma parte de su rutina laboral diaria, facilitando la gestión de habitaciones, reservas y comunicaciones internas. El principal problema que enfrentaba eran los procesos manuales, la desorganización y la falta de herramientas centralizadas. Utiliza el sistema todos los días desde su espacio de trabajo, encontrando valor en funciones como la automatización de tareas, la administración integral y una interfaz intuitiva. Para él, Sweet Manager debe verse profesional, organizado y confiable, acompañándolo en su labor operativa constante.
 
-Dueño: Supervisa la rentabilidad del hotel.
+###### **Huésped del Hotel**
 
-2. ¿Dónde entra nuestro producto en su trabajo o vida?
-   
-Administrador: En su rutina diaria laboral. Le permitirá agilizar procesos.
+El huésped es una persona que busca hospedarse con comodidad y sin complicaciones. Sweet Manager entra en su vida durante la planificación de sus viajes y su experiencia de estadía, simplificando el proceso de reserva y personalización de su habitación. Anteriormente, enfrentaba reservas tediosas y poco intuitivas. Utiliza la plataforma antes y durante el viaje para asegurar una experiencia ágil y cómoda. Valora especialmente la posibilidad de realizar reservas rápidas, contar con una interfaz clara y recibir confirmaciones inmediatas. Para él, el sistema debe comportarse de manera simple, amigable y rápida.
 
-Huésped: En la planificación y reserva de su estadía.
 
-Dueño: Al revisar resultados del negocio.
+###### **Dueño del Hotel**
 
-3. ¿Cuál es el problema que nuestro producto soluciona?
-   
-Administrador: Procesos manuales, desorden y problemas de organización. 
+El dueño del hotel supervisa la rentabilidad y el rendimiento general del negocio. Sweet Manager es una herramienta clave para él al momento de revisar los resultados financieros y operativos de su establecimiento. Su mayor desafío es la falta de visibilidad clara sobre el estado del negocio. Usa el sistema semanalmente o en momentos clave para tomar decisiones estratégicas informadas. Busca funciones que le brinden acceso a indicadores estratégicos y financieros de manera consolidada. Para él, el sistema debe representar y mostrarle aquellos datos relevantes y esenciales para su negocio. 
 
-Huésped: Reservas complejas y procesos tediosos.
-
-Dueño: Falta de visibilidad financiera.
-
-4. ¿Cómo y cuándo nuestro producto es usado?
-Administrador: A diario, desde el trabajo, para gestionar el hotel.
-
-Huésped: Antes y durante su viaje, para reservar y consultar servicios.
-
-Dueño: Semanalmente o en momentos clave.
-
-5. ¿Qué características son importantes?
-Administrador: Automatización, una buena administración y una interfaz intuitiva.
-
-Huésped: Reservas rápidas, interfaz clara, confirmaciones inmediatas.
-
-Dueño: Indicadores estratégicos. 
-
-6. ¿Cómo debería nuestro producto verse o comportarse?
-    
-Administrador: Profesional, organizado y confiable.
-
-Huésped: Simple, amigable y rápido.
-
-Dueño: Profesional, confiable y accesible.
-
----
 #### Business Assumptions
 ---
 > *Extraído y adaptado del modelo propuesto en **Lean UX Sampler** de Jeff Gothelf*
 
-1. **Creo que mis Huéspedes tienen la necesidad de:**  
+1. **Creemos que mis Huéspedes tienen la necesidad de:**  
    Administrador: Mejorar la eficiencia operativa de sus hoteles mediante automatización y control energético.
    Huésped: Tener una experiencia mas satisfactoria y sencilla a la hora de hacer y gestionar sus reservas de habitaciones en un hotel. 
 
@@ -499,52 +459,50 @@ Dueño: Profesional, confiable y accesible.
 
 #### 1.2.2.3. Lean UX Hypothesis Statements.
 
----
-
 Usando la información recolectada en los Business Outcomes, Usuarios, Beneficios y Features. Podemos formular nuestras hipótesis, cada una centrada en un Feature a desarrollar.
 
 Hipótesis 1:
 
-Creemos que se logrará una reducción del 30% en el tiempo dedicado a tareas administrativas
+Creemos que se logrará una tasa de adopción diaria del 60% por parte de los usuarios registrados en los tres primeros meses 
 si los administradores del hotel
 alcanzan mayor control y organización sobre los procesos operativos
 con el panel de control centralizado.
 
 Hipótesis 2:
 
-Creemos que se logrará un aumento del 20% en la cantidad de huéspedes que realizan reservas repetidas en un año
+Creemos que lograremos que el 50% de los hoteles que inician con un plan gratuito se conviertan en usuarios pagos en los primeros 30 días
 si los huéspedes del hotel
 alcanzan una experiencia de reserva personalizada y sin complicaciones
 con la funcionalidad de personalización de habitación en línea.
 
 Hipótesis 3:
 
-Creemos que se logrará una reducción del 20% en los costos operativos en los primeros 6 meses
+Creemos que se logrará mantener una tasa de retención del 60% de los hoteles suscriptores durante el primer año
 si los dueños del hotel
 alcanzan una mayor visibilidad sobre el rendimiento financiero y operativo
 con el acceso móvil a reportes financieros y operativos.
 
 Hipótesis 4:
 
-Creemos que se logrará un 60% de uso diario del sistema durante los primeros 3 meses
+Creemos que se logrará un crecimiento mensual del 10% en nuevos registros de hoteles durante el primer año de operación comercial activa
 si los administradores del hotel
 alcanzan una comunicación y gestión más rápida
-con la función de mensajería integrada en la aplicación.
+a través de la función de mensajería integrada en la aplicación.
 
 Hipótesis 5:
 
-Creemos que se logrará un aumento de 0.5 puntos en la calificación promedio de satisfacción del huésped en reseñas en línea
+Creemos que lograremos posicionar a Sweet Manager como una de las tres plataformas líderes en Latinoamérica en dos años
 si los huéspedes del hotel
 alcanzan una estadía más cómoda y adaptada a sus preferencias
 con las opciones de personalización de la habitación, como la temperatura.
 
----
 
 #### 1.2.2.4. Lean UX Canvas
 
 ---
 
-![canva](https://github.com/user-attachments/assets/028d6d2b-6b9e-4f62-8912-53c598248914)
+![canva](https://github.com/user-attachments/assets/862270c6-921d-41a9-9121-7da189452f65)
+
 
 ## 1.3. Segmentos objetivo
 
