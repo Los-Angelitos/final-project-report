@@ -1708,6 +1708,44 @@ negocio para los usuarios del sistema. Para ello debe aplicar la técnica de
 visualización Domain Storytelling. Complemente la explicación con capturas en
 imágenes de los diagramas de Domain Storytelling elaborados.
 https://domainstorytelling.org/#dst-requirements
+<h2>Organizational Management Bounded Context</h2>
+<h3>Escenario: El dueño del hotel añade a un nuevo contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda crear y brindar los datos necesarios para un nuevo proveedor de manera que lo guarde en su contacto de proveedores. Este formulario es enviado a Organizational Management Bounded Context y además consulta con el Inventory Bounded Context, para conocer los recursos restantes en el hotel.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow1.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel lista a los contactos de proveedores</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda ver y listar a los contactos de proveedores que ha creado, de esta manera el usuario se conecta mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow2.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel edita a un contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda editar a un contacto de proveedor ya creado anteriormente conectándose mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow3.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel elimina a un contacto de proveedor</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda eliminar a un contacto de proveedor ya creado anteriormente conectándose mediante el Organizational Management Bounded Context</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow4.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: El dueño de hotel crea y personaliza el perfil de su hotel</h3>
+<p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda editar y configurar el perfil de su hotel para que pueda estar público hacia los futuros clientes conectándose mediante el Organizational Management Bounded Context y además al Inventory Bounded Context para que pueda brindar los recursos restantes en el negocio.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow5.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<h3>Escenario: Usuario filtra y se suscribe a un hotel</h3>
+<p>Para este escenario, se espera que un usuario sea capaz de visualizar la lista de hoteles disponibles en SweetManager System mediante el Organizational Management Bounded Context, para que pueda suscribirse a él y comience su reserva de cuartos.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/flow6.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+
 
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
@@ -1717,6 +1755,11 @@ Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context
 Overview Definition, Business Rules Distillation & Ubiquitous Language Capture,
 Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design
 Critique.
+<h2>Organizational Management Bounded Context</h2>
+<p>Responsable de la gestión de hoteles y proveedores dentro de la aplicación. Facilita la creación, vista, edición de la lista de hoteles disponibles como también de los proveedores de recursos para esta.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ### 4.1.2. Context Mapping
 
@@ -1852,30 +1895,231 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Organizational Management Bounded Context
+### 4.2.3. Bounded Context: Organizational Management Bounded Context
 
-#### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+#### 4.2.3.1. Domain Layer
+### Agregados y Entidades del Dominio `Organizational Management`
 
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+
+---
+
+### `Hotel`
+
+Representa un hotel registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del hotel |
+| `OwnerId`    | `int?`                | Relación con el dueño del hotel mediante su identificador único (`Owner`) |
+| `Name`       | `string?`             | Nombre específico del hotel |
+| `Description`| `string?`             | Breve resumen o descripción del hotel que será pública para los huéspedes. |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el hotel para información de contacto. |
+| `Address`    | `string?`             | Dirección de calle única donde se encuentra el hotel. |
+| `Phone`      | `string?`             | Número telefónico único del hotel para información de contacto |
+| `Owner`      | `Owner?`              | Dueño asociado al hotel. |
+| `Rooms`      | `ICollection<Room>`   | Relación con los cuartos que mantiene el hotel. |
+| `Supplies`      | `ICollection<Supply>`             | Relación con los suministros disponibles del hotel. |
+
+#### Constructores:
+- Vacío `Hotel()`
+- Por parámetros individuales: `Id`, `OwnerId`, `Name`, `Description`, `Email`, `Address`, `Phone`.
+- A partir de `CreateHotelCommand`.
+
+### `Provider`
+
+Representa un proveedor que abastece de suministros al hotel, contactado mediante el dueño de hotel.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del proveedor |
+| `Name`       | `string?`             | Nombre específico del proveedor |
+| `Email`      | `string?`             | Correo electrónico único del proveedor |
+| `Phone`      | `string?`             | Número telefónico del proveedor. |
+| `State`      | `State?`              | Estado en el que se encuentra el proveedor con relación al hotel (`ACTIVE`, `INACTIVE`) |
+| `Supplies`   | `ICollection<Supply>` | Suministros que puede contener un proveedor. |
+
+#### Constructores:
+- Vacío `Provider()`
+- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
+- A partir de `CreateProviderCommand`.
+
+### `HotelAudit`
+
+Representa la extensión al agregado `Hotel` que permite manejar la fecha de creación y modificación del hotel.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `CreatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se creó el hotel. |
+| `UpdatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se modificó el hotel. |
+
+#### Constructores:
+- Vacío `Provider()`
+- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
+- A partir de `CreateProviderCommand`.
+
+---
+
+## Comandos
+
+### Hotel
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateHotelCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo hotel (`Hotel`) incluyendo nombre, descripción, email, dirección y teléfono. |
+| `UpdateHotelCommand.cs`  | Permite actualizar los datos requeridos para un hotel como descripción, email, dirección, teléfono asociandolo al hotel. |
+
+### Provider
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateProviderCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo proveedor (`Provider`) incluyendo nombre, email, teléfono y estado en el que se encuentra. |
+| `UpdateProviderCommand.cs`  | Permite actualizar los datos requeridos para un proveedor como nombre, email, teléfono. |
+| `DeleteProviderCommand.cs`  | Permite desvincular un proveedor de un hotel mediante su estado de actividad. |
+
+--- 
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllHotelsQuery.cs`               | Obtener todas los hoteles registrados en el sistema. |
+| `GetAllProvidersQuery.cs` | Obtener todos los proveedores según un hotel. |
+| `GetHotelByIdQuery.cs`                  | Obtiene el hotel asociado a su id asignada. |
+| `GetHotelByOwnerId.cs`             | Obtiene el hotel asociado a un dueño de hotel mediante su identificador único. |
+| `GetProviderByIdQuery.cs`      | Devuelve a un proveedor en específico dado su identificador único. |
+
+--- 
+
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IHotelRepository.cs`               | Define operaciones sobre los hoteles: FindByNameAndEmailAsync, GetAllHotelsAsync, FindByOwnerIdAsync. |
+| `IProviderRepository.cs` | Define operaciones sobres los proveedores: GetAllProvidersAsync. |
+
+--- 
+##  Services
+
+###  Hotel
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IHotelCommandService.cs`     | Define comandos como crear, actualizar un hotel. |
+| `IHotelQueryService.cs`       | Define consultas para obtener hoteles mediante su identificador único, identificador único del dueño o a todos los registrados. |
+
+####  Room
+
+| Archivo                        | Descripción breve |
+|--------------------------------|--------------------|
+| `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
+| `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
+
+---- 
+
+#### 4.2.3.2. Interface Layer
+### Interface Layer – Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateHotelResource.cs`        | Recibe datos para crear un nuevo hotel. |
+| `HotelResource.cs` | Devuelve datos del hotel al cliente (GET). |
+| `UpdateHotelResource.cs`   | Devuelve datos actualizados del hotel al cliente (GET). |
+| `CreateProviderResource.cs`              | Recibe datos para crear un nuevo proveedor. |
+| `ProviderResource.cs`           | Devuelve datos del proveedor al cliente. |
+| `UpdateProviderResource.cs`      | Permite devolver los datos actualizados del proveedor. |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateHotelCommandFromResourceAssembler.cs`         | Transforma `CreateHotelResource` en `CreateHotelCommand`. |
+| `UpdateHotelCommandFromResourceAssembler.cs`    | Transforma `UpdateHotelResource` en `UpdateHotelCommand`. |
+| `HotelResourceFromEntityAssembler.cs`                | Convierte una entidad `Hotel` en un `HotelResource` limpio (sin ciclos). |
+| `CreateProviderCommandFromResourceAssembler.cs`         | Transforma `CreateProviderResource` en `CreateProviderCommand`. |
+| `UpdateProviderCommandFromResourceAssembler.cs`    | Transforma `UpdateProviderResource` en `UpdateProviderCommand`. |
+| `ProviderResourceFromEntityAssembler.cs`                | Convierte una entidad `Provider` en un `ProviderResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `HotelsController.cs` | `/api/v1/hotels`           | Gestiona la creación, actualización de hoteles. |
+| `ProvidersController.cs`    | `/api/v1/providers`              | Maneja la creación, actualización y desvinculación de un proveedor. |
+
+---
+
+#### 4.2.3.3. Application Layer
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `HotelCommandService.cs`       | Maneja comandos para crear, actualizar un hotel. Utiliza el agregado `Hotel`. |
+| `ProviderCommandService.cs`          | Procesa la creación, actualización desvinculación con estado (`ACTIVE, INACTIVE`) de un proveedor. Interactúa con el agregado `Provider`. |
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `HotelQueryService.cs`           | Devuelve y lista los hoteles disponibles. |
+| `ProviderQueryService.cs`              | Lista los proveedores actuales y para un hotel. |
+
+## Capabilities del Bounded Context `Organizational Management`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Add provider to contact list**    | Command         | `ProviderCommandService.Handle(CreateProviderCommand)`          | Registra a un nuevo proveedor en el sistema. |
+| ✅ **List providers**                         | Query       | `ProviderQueryService.Handle(GetAllProvidersQuery)` | Obtiene una lista de todos los proveedores registrados |
+| ✅ **Select provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Selecciona a un nuevo hotel cambiando su estado. |
+| ✅ **Edit provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Permite la actualización de datos a un proveedor. |
+| ✅ **Delete provider**                             | Command         | `ProviderCommandService.Handle(DeleteProviderCommand)` | Permite la desvinculación de un proveedor con un hotel. |
+| ✅ **Submit hotel form**                            | Command         | `HotelCommandService.Handle(CreateHotelCommand)` | Crea un nuevo hotel a partir de sus atributos asignados. |
+| ✅ **List Owner's hotel**                | Query         | `HotelQueryService.Handle(GetHotelByOwnerId)` | Revisa y lista todos los hoteles relacionados a un owner.  |
+| ✅ **Filter hotel list**                          | Query         | `HotelQueryService.Handle(GetAllHotelsQuery)`         | Devuelve todas los hoteles disponibles. |
+| ✅ **Select Hotel**                  | Query         | `HotelQueryService.Handle(GetHotelByIdQuery)` | Se selecciona un hotel a partir de su identificador único. |
+| ✅ **Edit hotel**              | Command       | `HotelCommandService.Handle(UpdateHotelCommand)` | Permite actualizar atributos de un hotel. |
+
+---
+
+#### 4.2.3.4. Infrastructure Layer
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `HotelRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre los hoteles (`Hotel`), incluyendo la creación, actualización de un hotel |
+| `ProviderRepository.cs`       | `IProviderRepository`            | Implementa consultas y modificaciones sobre proveedores (`Provider`) asignado a un hotel. Son gestionados por el hotel mediante su estado (`ACTIVE`, `INACTIVE`). |
+
+---
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
 caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
@@ -1890,26 +2134,17 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/uml-class.PNG" alt="Class Diagram Organizational Management" width="90%" />
+</div><br>
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
+</div><br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.X. Bounded Context: Commerce Bounded Context
