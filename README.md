@@ -908,15 +908,16 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 **Entrevista 03 (Administradores)**
 
 **Entrevista 01 (Huéspedes)**
-URL del vídeo: 
-Nombre: Anatoly Noriega
-Edad: 22
-Sexo: Masculino
-Lugar donde vive: Breña - Lima
-Ocupación: Jefe de start up
-Duración de la entrevista: 0:22 - 7:22
-Personalidad: Analítica
-![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)
+<br>
+URL del vídeo: <br>
+Nombre: Anatoly Noriega <br>
+Edad: 22 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Breña - Lima <br>
+Ocupación: Jefe de start up <br>
+Duración de la entrevista: 0:22 - 7:22 <br>
+Personalidad: Analítica <br>
+![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
 En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
 
 **Entrevista 02 (Huéspedes)**
@@ -1851,7 +1852,7 @@ Representa el conjunto de preferencias de un huésped dentro del sistema de Swee
 
 | Atributo     | Tipo                  | Descripción |
 |--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de las preferencias |
+| `Id`         | `int`                 | Identificador único de las preferencias del huésped |
 | `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
 | `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
 
@@ -1870,15 +1871,12 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 
 | Atributo     | Tipo                  | Descripción |
 |--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de las preferencias |
-| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
-| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+| `OwnerId`       | `int?`             | Relación con el gerente mediante su identificador único (`Owner`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
 
 #### Constructores:
-- Vacío `GuestPreference()`
-- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
-- A partir de `CreateGuestPreferenceCommand`
-- A partir de `UpdateGuestPreferenceCommand`
+- Vacío `OwnerCredential()`
+- Por parámetros individuales: `UserId`, `Code`
 
 ### `AdminCredential` *(Entidad)*
 
@@ -1888,15 +1886,12 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 
 | Atributo     | Tipo                  | Descripción |
 |--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de las preferencias |
-| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
-| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+| `AdminId`       | `int?`             | Relación con el administrador mediante su identificador único (`Admin`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
 
 #### Constructores:
-- Vacío `GuestPreference()`
-- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
-- A partir de `CreateGuestPreferenceCommand`
-- A partir de `UpdateGuestPreferenceCommand`
+- Vacío `AdminCredential()`
+- Por parámetros individuales: `UserId`, `Code`
 
 ### `GuestCredential` *(Entidad)*
 
@@ -1906,90 +1901,367 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 
 | Atributo     | Tipo                  | Descripción |
 |--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de las preferencias |
-| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
-| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+| `GuestId`       | `int?`             | Relación con el huésped mediante su identificador único (`Guest`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
 
 #### Constructores:
-- Vacío `GuestPreference()`
-- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
-- A partir de `CreateGuestPreferenceCommand`
-- A partir de `UpdateGuestPreferenceCommand`
+- Vacío `GuestCredential()`
+- Por parámetros individuales: `UserId`, `Code`
+
 ---
 
 ## Comandos
 
-### Hotel
+### Users (Owner, Admin y Guest)
 
 | Comando                            | Descripción |
 |-----------------------------------|-------------|
-| `CreateHotelCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo hotel (`Hotel`) incluyendo nombre, descripción, email, dirección y teléfono. |
-| `UpdateHotelCommand.cs`  | Permite actualizar los datos requeridos para un hotel como descripción, email, dirección, teléfono asociandolo al hotel. |
+| `SignInUserCommand.cs`         | Contiene todos los datos necesarios para iniciar sesión de (`Admin`, `Owner`, `Guest`) incluye email, contraseña y rol. |
+| `SignUpUserCommand.cs`  | Contiene todos los datos necesarios para crear cuenta de los usuarios (`Admin`, `Owner`, `Guest`), incluye id, nombre, apellido, celular, email, rol, estado y contraseña. |
+| `UpdateUserCommand.cs`  | Contiene todos los datos necesarios para actualizar la información personal de los usuarios (`Admin`, `Owner`, `Guest`), incluye id, nombre, apellido, celular, email, rol, estado y contraseña. |
 
-### Provider
+### Credentials (OwnerCredential, AdminCredential y GuestCredential)
 
 | Comando                            | Descripción |
 |-----------------------------------|-------------|
-| `CreateProviderCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo proveedor (`Provider`) incluyendo nombre, email, teléfono y estado en el que se encuentra. |
-| `UpdateProviderCommand.cs`  | Permite actualizar los datos requeridos para un proveedor como nombre, email, teléfono. |
-| `DeleteProviderCommand.cs`  | Permite desvincular un proveedor de un hotel mediante su estado de actividad. |
+| `CreateUserCredentialCommand.cs`         | Contiene todos los datos necesarios para crear una credencial (`AdminCredential`, `OwnerCredential`, `GuestCredential`) incluye userId y código. |
+| `UpdateUserCredentialCommand.cs`  | Contiene todos los datos necesarios para actualizar una credencial (`AdminCredential`, `OwnerCredential`, `GuestCredential`), userId y código. |
+
+### GuestPreference
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateGuestPreferenceCommand.cs`         | Contiene todos los datos necesarios para crear una preferencia (`GuestPreference`) incluye guestId y temperatura. |
+| `UpdateGuestPreferenceCommand.cs`  | Contiene todos los datos necesarios para actualizar una credencial (`GuestPreference`) incluye id, guestId y temperatura. |
+
+### Role
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `SeedRolesCommand.cs`         | No contiene campos, tiene el propósito de usarse de referencia al momento de generar todos los roles de usuario en el sistema (`Role`). |
 
 --- 
 
 ## Queries
 
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+
 | Archivo                                 | Descripción breve |
 |----------------------------------------|--------------------|
-| `GetAllHotelsQuery.cs`               | Obtener todas los hoteles registrados en el sistema. |
-| `GetAllProvidersQuery.cs` | Obtener todos los proveedores según un hotel. |
-| `GetHotelByIdQuery.cs`                  | Obtiene el hotel asociado a su id asignada. |
-| `GetHotelByOwnerId.cs`             | Obtiene el hotel asociado a un dueño de hotel mediante su identificador único. |
-| `GetProviderByIdQuery.cs`      | Devuelve a un proveedor en específico dado su identificador único. |
+| `GetUserCredentialByIdQuery.cs`               | Obtener la credencial encriptada asociada a un usuario. |
+
+### GuestPreference
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetGuestPreferenceByGuestIdQuery.cs`               | Obtener las preferencias de un huésped asociado. |
+| `GetGuestPreferenceByIdQuery.cs` | Obtener las preferencias dado un identificador asociado. |
+
+### Role
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllRolesQuery.cs`               | Obtener todas los roles del sistema. |
+| `GetRoleByNameQuery.cs` | Obtener un rol dado un nombre asociado. |
+| `GetRoleIdByNameQuery.cs`                  | Obtiene el rol ID dado un nombre asociado. |
+
+### Users (Owner, Admin y Guest)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllFilteredUsersQuery.cs`               | Obtener todas los usuarios dado unos filtros específicos (email, phone, state). |
+| `GetAllUsersFromOrganizationQuery.cs` | Obtener todos los usuarios dada una organización (hotel). |
+| `GetOwnerFromAnOrganizationQuery.cs`                  | Obtiene el dueño dada una organización asociada. |
+| `GetUserByIdQuery.cs`             | Obtiene un usuario dado un identificador. |
 
 --- 
 
-## Repositories (Interfaces)
+## ValueObjects
 
 | Archivo                                 | Descripción breve |
 |----------------------------------------|--------------------|
-| `IHotelRepository.cs`               | Define operaciones sobre los hoteles: FindByNameAndEmailAsync, GetAllHotelsAsync, FindByOwnerIdAsync. |
-| `IProviderRepository.cs` | Define operaciones sobres los proveedores: GetAllProvidersAsync. |
+| `ERoles.cs`               | Obtener todas los hoteles registrados en el sistema. |
+
+--
+
+## Exceptions
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `EmailAlreadyExistException.cs`               | Mensaje de error: *The given email already exist in the system.* |
+| `EmailDoesntExistException.cs`               | Mensaje de error: *Email doesn't exist in the system.* |
+| `InvalidPasswordException.cs`               | Mensaje de error: *Invalid Password!* |
+
+--
+
+## Repositories (Interfaces)
+
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IAdminCredentialRepository.cs`               | Define operaciones sobre las credenciales de administradores: CRUD. |
+| `IGuestCredentialRepository.cs` | Define operaciones sobres las credenciales de huéspedes: CRUD. |
+| `IOwnerCredentialRepository.cs` | Define operaciones sobres las credenciales de gerentes: CRUD. |
+
+### GuestPreference
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IGuestPreferenceRepository.cs`               | Define operaciones sobre las preferencias de huéspedes: CRUD, FindByGuestIdAsync. |
+
+### Role 
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IRoleRepository.cs`               | Define operaciones sobre los roles: CRUD, FindByNameAsync, FindIdByNameAsync. |
+
+### Users (Owner, Admin y Guest)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IAdminRepository.cs`               | Define operaciones sobre los administradores: CRUD, FindAllByFiltersAsync, FindAllByHotelIdAsync, FindHotelIdByIdAsync. |
+| `IGuestRepository.cs` | Define operaciones sobres los huéspedes: CRUD, FindAllByFiltersAsync, FindAllByHotelIdAsync, FindHotelIdByIdAsync. |
+| `IOwnerRepository.cs` | Define operaciones sobres los gerentes: CRUD, FindAllByFiltersAsync, FindByHotelIdAsync, FindHotelIdByIdAsync. |
 
 --- 
 ##  Services
 
-###  Hotel
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
-| `IHotelCommandService.cs`     | Define comandos como crear, actualizar un hotel. |
-| `IHotelQueryService.cs`       | Define consultas para obtener hoteles mediante su identificador único, identificador único del dueño o a todos los registrados. |
+| `IAdminCredentialCommandService.cs`     | Define comandos como crear, actualizar una credencial de administrador. |
+| `IAdminCredentialQueryService.cs`       | Define consultas para obtener credenciales de administrador mediante su identificador único. |
+| `IGuestCredentialCommandService.cs`       | Define comandos como crear, actualizar una credencial de huésped. |
+| `IGuestCredentialQueryService.cs`       | Define consultas para obtener credenciales de huéspedes mediante su identificador único. |
+| `IOwnerCredentialCommandService.cs`       | Define comandos como crear, actualizar una credencial de gerente. |
+| `IOwnerCredentialQueryService.cs`       | Define consultas para obtener credenciales de gerentes mediante su identificador único. |
 
-####  Room
+### GuestPreference
 
-| Archivo                        | Descripción breve |
-|--------------------------------|--------------------|
-| `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
-| `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IGuestPreferenceCommandService.cs`     | Define comandos como crear, actualizar preferencias de un huésped. |
+| `IGuestPreferenceQueryService.cs`       | Define consultas para obtener preferencias de huésped mediante su identificador único o identificador del huésped. |
 
----- 
+### Role
 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IRoleCommandService.cs`     | Define comandos como crear todos los roles. |
+| `IRoleQueryService.cs`       | Define consultas para obtener roles mediante su nombre, obtener todos los roles u obtener su identificador único por nombre |
 
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+### Users (Owner, Admin y Guest)
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IAdminCommandService.cs`     | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IAdminQueryService.cs`       | Define consultas para obtener administradores mediante su organización, filtros (email, phone, status) o por identificador único. |
+| `IGuestCommandService.cs`       | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IGuestQueryService.cs`       | Define consultas para obtener huéspedes mediante su organización, filtros (email, phone, status) o por identificador único. |
+| `IOwnerCommandService.cs`       | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IOwnerQueryService.cs`       | Define consultas para obtener gerentes mediante filtros (email, phone, status), identificador único o por una organización. |
+
+#### 4.2.1.2. Interface Layer
+
+### Interface Layer – Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateGuestPreferenceResource.cs`        | Recibe datos para crear nueva preferencia de huésped. |
+| `GuestPreferenceResource.cs` | Devuelve datos del preferencias de huésped al cliente (GET). |
+| `UpdateGuestPreferenceResource.cs`   | Recibe datos para actualizar una preferencia de huésped. |
+| `AuthenticatedUserResource.cs`              | Devuelve datos del usuario autenticado de sesión al cliente (POST). |
+| `SignInResource.cs`           | Recibe datos para iniciar sesión. |
+| `SignUpUserResource.cs`      | Recibe datos para crear cuenta de usuario.  |
+| `UpdateUserResource.cs`      | Recibe datos para actualizar cuenta de usuario. |
+| `UserResource.cs`      | Devuelve datos de un usuario registrado al cliente (GET). |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateGuestPreferenceCommandFromResourceAssembler.cs`         | Transforma `CreateGuestPreferenceResource` en `CreateGuestPreferenceCommand`. |
+| `UpdateGuestPreferenceCommandFromResourceAssembler.cs`    | Transforma `UpdateHotelResource` en `UpdateHotelCommand`. |
+| `GuestPreferenceResourceFromEntityAssembler.cs`                | Convierte una entidad `GuestPreference` en un `GuestPreferenceResource` limpio (sin ciclos). |
+| `AuthenticatedUserResourceFromEntityAssembler.cs`         | Transforma `AuthenticatedUser` en `AuthenticatedUserResource`. |
+| `SignInCommandFromResourceAssembler.cs`    | Transforma `SignInResource` en `SignInUserCommand`. |
+| `SignUpUserCommandFromResourceAssembler.cs`                | Convierte una entidad `SignUpUserResource` en un `SignUpUserCommand` limpio (sin ciclos). |
+| `UpdateUserCommandFromResourceAssembler.cs`                | Convierte una entidad `UpdateUserResource` en un `UpdateUserCommand` limpio (sin ciclos). |
+| `UserResourceFromEntityAssembler.cs`                | Convierte una entidad dinámica `User` en un `UserResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada conjunto clave en el Bounded Context `IAM` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `AuthenticationController.cs` | `/api/v1/authentication`           | Gestiona la autenticación de usuarios. |
+| `UserController.cs`    | `/api/v1/user`              | Maneja la creación, actualización y desvinculación de usuarios y preferencias. |
+
+#### 4.2.1.3. Application Layer
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+#### Credentials
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCredentialCommandService.cs`       | Maneja comandos para crear y actualizar una credencial de administrador. Utiliza la *entidad* `AdminCredential`. |
+| `GuestCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de huésped. Utiliza la *entidad* `GuestCredential`. |
+| `OwnerCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de gerente. Utiliza la *entidad* `OwnerCredential`. |
+
+#### GuestPreference
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `GuestPreferenceCommandService.cs`       | Maneja comandos para crear y actualizar preferencias de un huésped. Utiliza la *entidad* `GuestPreference`. |
+
+
+#### Role
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `RoleCommandService.cs`       | Maneja comandos para crear todos los roles. Utiliza la *entidad* `Role`. |
+
+#### Users (Owner, Admin y Guest)
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCommandService.cs`       | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza el *agregado* `Admin`. |
+| `GuestCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Guest`. |
+| `OwnerCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Owner`. |
+
+### QueryServices
+
+#### Credentials
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminCredentialQueryService.cs`           | Devuelve credencial de administrador por su identificador. |
+| `GuestCredentialQueryService.cs`              | Devuelve credencial de huésped por su identificador. |
+| `OwnerCredentialQueryService.cs`              | Devuelve credencial de gerente por su identificador. |
+
+#### GuestPreference
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `GuestPreferenceQueryService.cs`           | Devuelve y lista las preferencias de huéspedes por el identificador único del huésped asociado o por identificador único de la preferencia. |
+
+#### Role
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `RoleQueryService.cs`           | Devuelve y lista los roles sin parametros, por nombre o el identificador por nombre. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminQueryService.cs`           | Devuelve y lista los administradores de una organización, por filtros (email, phone, status) o por identificador único. |
+| `GuestQueryService.cs`              | Devuelve y lista los huéspedes de una organización, por filtros (email, phone, status) o por identificador único. |
+| `OwnerQueryService.cs`              | Devuelve y lista los gerentes por filtros (email, phone, status), por identificador único o de una organización (hotel). |
+
+### OutboundServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `IHashingService.cs`           | Encripta y configura los saltos de las credenciales. |
+| `ITokenService.cs`              | Genera y valida el token. |
+
+
+## Capabilities del Bounded Context `IAM`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Registrar cuenta de administrador**    | Command         | `AdminCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo administrador en el sistema. |
+| ✅ **Registrar cuenta de huésped**    | Command         | `GuestCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo huésped en el sistema. |
+| ✅ **Registrar cuenta de gerente**    | Command         | `OwnerCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo gerente en el sistema. |
+| ✅ **Iniciar sesión como administrador**                         | Command       | `AdminCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el administrador. |
+| ✅ **Iniciar sesión como huésped**                         | Command       | `GuestCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el huésped. |
+| ✅ **Iniciar sesión como gerente**                         | Command       | `OwnerCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el gerente. |
+| ✅ **Listar huespedes de un hotel**                            | Query       | `GuestQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los huéspedes de un determinado hotel. |
+| ✅ **Ver perfil de huesped seleccionado**                            | Query       | `GuestQueryService.Handle(GetUserByIdQuery)` | Devuelve la información de un determinado huésped. |
+| ✅ **Listar administradores de un hotel**                             | Query         | `AdminQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los administradores de un determinado hotel. |
+| ✅ **Actualizar información de cuenta de administrador**                            | Command         | `AdminCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de huésped**                            | Command         | `GuestCommandService.Handle(UpdateUserCommand)` | CActualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de gerente**                            | Command         | `OwnerCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar preferencias**                          | Command         | `GuestPreferenceCommandService.Handle(UpdateGuestPreferenceCommand)`         | Actualiza las preferencias de un huésped asociado. |
+
+#### 4.2.1.4. Infrastructure Layer
+
+### Hashing
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `HashingService.cs`    | `IHashingService`         | Implementa operaciones de hashing sobre un `code` recibido y maneja las operaciones correspondientes. |
+
+---
+
+### Persistence
+
+#### Credentials
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminCredentialRepository.cs`    | `IAdminCredentialRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de administradores (`AdminCredential`), incluyendo la creación, actualización del mismo. |
+| `GuestCredentialRepository.cs`       | `IGuestCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de huéspedes (`GuestCredential`), incluyendo la creación, actualización del mismo. |
+| `OwnerCredentialRepository.cs`       | `IOwnerCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de gerentes (`OwnerCredential`), incluyendo la creación, actualización del mismo. |
+
+#### GuestPreference
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `GuestPreferenceRepository.cs`    | `IGuestPreferenceRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las preferencias de huéspedes (`GuestPreference`), incluyendo la creación, actualización del mismo. |
+
+#### Role
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RoleRepository.cs`    | `IRoleRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los roles de sistema (`Role`), incluyendo la creación, actualización del mismo. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminRepository.cs`    | `IAdminRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los administradores (`Admin`), incluyendo la creación, actualización del mismo. |
+| `GuestRepository.cs`    | `IGuestRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los huéspedes (`Guest`), incluyendo la creación, actualización del mismo. |
+| `OwnerRepository.cs`    | `IOwnerRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los gerentes (`Owner`), incluyendo la creación, actualización del mismo. |
+
+---
+### Pipeline
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AllowAnonymousAttribute.cs`    | `None`         | Crea un atributo allow anonymous para los `no-authenticated endpoints`.  |
+| `AuthorizeAttribute.cs`    | `None`         | ICrea un atributo allow anonymous para los `authenticated endpoints`. |
+| `RequestAuthorizationMiddleware.cs`    | `None`         | Crea middleware para validar la autenticación de usuarios para permitir las `requests` sobre `authenticated endpoints`. |
+| `ApplicationBuilderExtensions.cs`    | `None`         | Crea una extensión para utilizar `RequestAuthorizationMiddleware`. |
+
+---
+### Population
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RolesInitializer.cs`    | `None`         | Inicializa los roles, al momento de crear la base de datos (en caso no exista).  |
+
+---
+### Tokens
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `TokenSettings.cs`    | `None`         | Entidad que contiene los campos de configuración de un token (aud, iss, exp, secret key)  |
+| `TokenService.cs`    | `ITokenService`         | Implementa las funciones de generar y validar token.  |
+| `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
 caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
@@ -2004,20 +2276,16 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 En esta sección el equipo presenta el Class Diagram de UML para las clases del
 Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
 clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
 incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
 Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
 y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
 En esta sección el equipo presenta y explica el Database Diagram que incluye los
 objetos de base de datos que permitirán la persistencia de información para los
 objetos del bounded context. Para el caso de un almacenamiento en base de datos
