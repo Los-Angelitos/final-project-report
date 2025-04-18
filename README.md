@@ -1724,12 +1724,24 @@ Critique.
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/context-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/container-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
