@@ -2200,11 +2200,66 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | ✅ **Actualizar preferencias**                          | Command         | `GuestPreferenceCommandService.Handle(UpdateGuestPreferenceCommand)`         | Actualiza las preferencias de un huésped asociado. |
 
 #### 4.2.1.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
 
+### Hashing
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `HashingService.cs`    | `IHashingService`         | Implementa operaciones de hashing sobre un `code` recibido y maneja las operaciones correspondientes. |
+
+---
+
+### Persistence
+
+#### Credentials
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminCredentialRepository.cs`    | `IAdminCredentialRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de administradores (`AdminCredential`), incluyendo la creación, actualización del mismo. |
+| `GuestCredentialRepository.cs`       | `IGuestCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de huéspedes (`GuestCredential`), incluyendo la creación, actualización del mismo. |
+| `OwnerCredentialRepository.cs`       | `IOwnerCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de gerentes (`OwnerCredential`), incluyendo la creación, actualización del mismo. |
+
+#### GuestPreference
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `GuestPreferenceRepository.cs`    | `IGuestPreferenceRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las preferencias de huéspedes (`GuestPreference`), incluyendo la creación, actualización del mismo. |
+
+#### Role
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RoleRepository.cs`    | `IRoleRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los roles de sistema (`Role`), incluyendo la creación, actualización del mismo. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminRepository.cs`    | `IAdminRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los administradores (`Admin`), incluyendo la creación, actualización del mismo. |
+| `GuestRepository.cs`    | `IGuestRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los huéspedes (`Guest`), incluyendo la creación, actualización del mismo. |
+| `OwnerRepository.cs`    | `IOwnerRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los gerentes (`Owner`), incluyendo la creación, actualización del mismo. |
+
+---
+### Pipeline
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AllowAnonymousAttribute.cs`    | `None`         | Crea un atributo allow anonymous para los `no-authenticated endpoints`.  |
+| `AuthorizeAttribute.cs`    | `None`         | ICrea un atributo allow anonymous para los `authenticated endpoints`. |
+| `RequestAuthorizationMiddleware.cs`    | `None`         | Crea middleware para validar la autenticación de usuarios para permitir las `requests` sobre `authenticated endpoints`. |
+| `ApplicationBuilderExtensions.cs`    | `None`         | Crea una extensión para utilizar `RequestAuthorizationMiddleware`. |
+
+---
+### Population
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RolesInitializer.cs`    | `None`         | Inicializa los roles, al momento de crear la base de datos (en caso no exista).  |
+
+---
+### Tokens
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `TokenSettings.cs`    | `None`         | Entidad que contiene los campos de configuración de un token (aud, iss, exp, secret key)  |
+| `TokenService.cs`    | `ITokenService`         | Implementa las funciones de generar y validar token.  |
+| `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
