@@ -908,15 +908,16 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 **Entrevista 03 (Administradores)**
 
 **Entrevista 01 (Huéspedes)**
-URL del vídeo: 
-Nombre: Anatoly Noriega
-Edad: 22
-Sexo: Masculino
-Lugar donde vive: Breña - Lima
-Ocupación: Jefe de start up
-Duración de la entrevista: 0:22 - 7:22
-Personalidad: Analítica
-![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)
+<br>
+URL del vídeo: <br>
+Nombre: Anatoly Noriega <br>
+Edad: 22 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Breña - Lima <br>
+Ocupación: Jefe de start up <br>
+Duración de la entrevista: 0:22 - 7:22 <br>
+Personalidad: Analítica <br>
+![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
 En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
 
 **Entrevista 02 (Huéspedes)**
