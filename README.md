@@ -2112,16 +2112,100 @@ Cada conjunto clave en el Bounded Context `IAM` cuenta con un **REST Controller*
 | `UserController.cs`    | `/api/v1/user`              | Maneja la creación, actualización y desvinculación de usuarios y preferencias. |
 
 #### 4.2.1.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+#### Credentials
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCredentialCommandService.cs`       | Maneja comandos para crear y actualizar una credencial de administrador. Utiliza la *entidad* `AdminCredential`. |
+| `GuestCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de huésped. Utiliza la *entidad* `GuestCredential`. |
+| `OwnerCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de gerente. Utiliza la *entidad* `OwnerCredential`. |
+
+#### GuestPreference
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `GuestPreferenceCommandService.cs`       | Maneja comandos para crear y actualizar preferencias de un huésped. Utiliza la *entidad* `GuestPreference`. |
+
+
+#### Role
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `RoleCommandService.cs`       | Maneja comandos para crear todos los roles. Utiliza la *entidad* `Role`. |
+
+#### Users (Owner, Admin y Guest)
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCommandService.cs`       | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza el *agregado* `Admin`. |
+| `GuestCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Guest`. |
+| `OwnerCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Owner`. |
+
+### QueryServices
+
+#### Credentials
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminCredentialQueryService.cs`           | Devuelve credencial de administrador por su identificador. |
+| `GuestCredentialQueryService.cs`              | Devuelve credencial de huésped por su identificador. |
+| `OwnerCredentialQueryService.cs`              | Devuelve credencial de gerente por su identificador. |
+
+#### GuestPreference
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `GuestPreferenceQueryService.cs`           | Devuelve y lista las preferencias de huéspedes por el identificador único del huésped asociado o por identificador único de la preferencia. |
+
+#### Role
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `RoleQueryService.cs`           | Devuelve y lista los roles sin parametros, por nombre o el identificador por nombre. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminQueryService.cs`           | Devuelve y lista los administradores de una organización, por filtros (email, phone, status) o por identificador único. |
+| `GuestQueryService.cs`              | Devuelve y lista los huéspedes de una organización, por filtros (email, phone, status) o por identificador único. |
+| `OwnerQueryService.cs`              | Devuelve y lista los gerentes por filtros (email, phone, status), por identificador único o de una organización (hotel). |
+
+### OutboundServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `IHashingService.cs`           | Encripta y configura los saltos de las credenciales. |
+| `ITokenService.cs`              | Genera y valida el token. |
+
+
+## Capabilities del Bounded Context `IAM`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Registrar cuenta de administrador**    | Command         | `AdminCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo administrador en el sistema. |
+| ✅ **Registrar cuenta de huésped**    | Command         | `GuestCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo huésped en el sistema. |
+| ✅ **Registrar cuenta de gerente**    | Command         | `OwnerCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo gerente en el sistema. |
+| ✅ **Iniciar sesión como administrador**                         | Command       | `AdminCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el administrador. |
+| ✅ **Iniciar sesión como huésped**                         | Command       | `GuestCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el huésped. |
+| ✅ **Iniciar sesión como gerente**                         | Command       | `OwnerCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el gerente. |
+| ✅ **Listar huespedes de un hotel**                            | Query       | `GuestQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los huéspedes de un determinado hotel. |
+| ✅ **Ver perfil de huesped seleccionado**                            | Query       | `GuestQueryService.Handle(GetUserByIdQuery)` | Devuelve la información de un determinado huésped. |
+| ✅ **Listar administradores de un hotel**                             | Query         | `AdminQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los administradores de un determinado hotel. |
+| ✅ **Actualizar información de cuenta de administrador**                            | Command         | `AdminCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de huésped**                            | Command         | `GuestCommandService.Handle(UpdateUserCommand)` | CActualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de gerente**                            | Command         | `OwnerCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar preferencias**                          | Command         | `GuestPreferenceCommandService.Handle(UpdateGuestPreferenceCommand)`         | Actualiza las preferencias de un huésped asociado. |
+
 #### 4.2.1.4. Infrastructure Layer
 En esta capa el equipo presenta aquellas clases que acceden a servicios externos
 como databases, messaging systems o email services. Es en esta capa que se ubica la
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
+
+
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
@@ -2138,11 +2222,7 @@ diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 En esta sección el equipo presenta el Class Diagram de UML para las clases del
 Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
