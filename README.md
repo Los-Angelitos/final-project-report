@@ -908,6 +908,16 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 **Entrevista 03 (Administradores)**
 
 **Entrevista 01 (Huéspedes)**
+URL del vídeo: 
+Nombre: Anatoly Noriega
+Edad: 22
+Sexo: Masculino
+Lugar donde vive: Breña - Lima
+Ocupación: Jefe de start up
+Duración de la entrevista: 0:22 - 7:22
+Personalidad: Analítica
+![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)
+En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
 
 **Entrevista 02 (Huéspedes)**
 
@@ -1748,11 +1758,222 @@ Critique.
 ### 4.2.X. Bounded Context: IAM Bounded Context
 
 #### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
+
+### Agregados y Entidades del Dominio `IAM`
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+
+---
+### `Owner` *(Agregado)*
+
+Representa un gerente/dueño de un hotel registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del gerente |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del gerente |
+| `Surname`       | `string?`             | Apellidos del gerente |
+| `Phone`| `string?`             | Número de telefono del gerente |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el gerente |
+| `State`    | `string?`             | Estado de cuenta del gerente |
+
+#### Constructores:
+- Vacío `Owner()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- A partir de `SignUpUserCommand`.
+
+### `Admin` *(Agregado)*
+
+Representa un administrador de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del administrador |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del administrador |
+| `Surname`       | `string?`             | Apellidos del adminitrador |
+| `Phone`| `string?`             | Número de telefono del administrador |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el administrador |
+| `State`    | `string?`             | Estado de cuenta del administrador |
+| `HotelId`    | `int?`             | Relación con el hotel en que trabaja (`Hotel`) |
+
+#### Constructores:
+- Vacío `Admin()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`, `HotelId`.
+- A partir de `SignUpUserCommand`
+
+### `Guest` *(Agregado)*
+
+Representa un huésped de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del huésped |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del huésped |
+| `Surname`       | `string?`             | Apellidos del huésped |
+| `Phone`| `string?`             | Número de telefono del huésped |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el huésped |
+| `State`    | `string?`             | Estado de cuenta del huésped |
+
+#### Constructores:
+- Vacío `Guest()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- A partir de `SignUpUserCommand`
+
+### `Role` *(Entidad)*
+
+Representa un rol de usuario dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del rol |
+| `Name`       | `string?`             | Nombre del rol |
+
+#### Constructores:
+- Vacío `Role()`
+- Por parámetros individuales: `Name`.
+
+### `GuestPreference` *(Entidad)*
+
+Representa el conjunto de preferencias de un huésped dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+- A partir de `CreateGuestPreferenceCommand`
+- A partir de `UpdateGuestPreferenceCommand`
+
+### `OwnerCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Owners` con el objetivo de dividir responsabilidades: mientras `Owners` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+- A partir de `CreateGuestPreferenceCommand`
+- A partir de `UpdateGuestPreferenceCommand`
+
+### `AdminCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Admins` con el objetivo de dividir responsabilidades: mientras `Admins` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+- A partir de `CreateGuestPreferenceCommand`
+- A partir de `UpdateGuestPreferenceCommand`
+
+### `GuestCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Guests` con el objetivo de dividir responsabilidades: mientras `Guests` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+- A partir de `CreateGuestPreferenceCommand`
+- A partir de `UpdateGuestPreferenceCommand`
+---
+
+## Comandos
+
+### Hotel
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateHotelCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo hotel (`Hotel`) incluyendo nombre, descripción, email, dirección y teléfono. |
+| `UpdateHotelCommand.cs`  | Permite actualizar los datos requeridos para un hotel como descripción, email, dirección, teléfono asociandolo al hotel. |
+
+### Provider
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateProviderCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo proveedor (`Provider`) incluyendo nombre, email, teléfono y estado en el que se encuentra. |
+| `UpdateProviderCommand.cs`  | Permite actualizar los datos requeridos para un proveedor como nombre, email, teléfono. |
+| `DeleteProviderCommand.cs`  | Permite desvincular un proveedor de un hotel mediante su estado de actividad. |
+
+--- 
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllHotelsQuery.cs`               | Obtener todas los hoteles registrados en el sistema. |
+| `GetAllProvidersQuery.cs` | Obtener todos los proveedores según un hotel. |
+| `GetHotelByIdQuery.cs`                  | Obtiene el hotel asociado a su id asignada. |
+| `GetHotelByOwnerId.cs`             | Obtiene el hotel asociado a un dueño de hotel mediante su identificador único. |
+| `GetProviderByIdQuery.cs`      | Devuelve a un proveedor en específico dado su identificador único. |
+
+--- 
+
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IHotelRepository.cs`               | Define operaciones sobre los hoteles: FindByNameAndEmailAsync, GetAllHotelsAsync, FindByOwnerIdAsync. |
+| `IProviderRepository.cs` | Define operaciones sobres los proveedores: GetAllProvidersAsync. |
+
+--- 
+##  Services
+
+###  Hotel
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IHotelCommandService.cs`     | Define comandos como crear, actualizar un hotel. |
+| `IHotelQueryService.cs`       | Define consultas para obtener hoteles mediante su identificador único, identificador único del dueño o a todos los registrados. |
+
+####  Room
+
+| Archivo                        | Descripción breve |
+|--------------------------------|--------------------|
+| `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
+| `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
+
+---- 
+
 #### 4.2.X.2. Interface Layer
 En esta sección el equipo introduce, presenta y explica las clases que forman parte
 de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
