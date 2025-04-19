@@ -2222,6 +2222,29 @@ La carpeta `Application/Internal` representa la capa de aplicación de la arquit
 
 ---
 
+## Capabilities del Bounded Context `IAM`
+
+A partir del Bounded Context Canvas y el Event Storming elaborado, podemos identificar: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Listar todos los pagos de huésped**    | Query         | `PaymentCustomerQueryService.Handle(GetAllPaymentCustomersQuery)`          | Lista todos los pagos realizados por todos los huéspedes. |
+| ✅ **Ver pago de huésped seleccionado**    | Query         | `PaymentCustomerQueryService.Handle(GetPaymentCustomerByIdQuery)`          | Muestra la información de un determinado pago de huésped. |
+| ✅ **Listar todos los pagos realizados por un huésped**    | Query         | `PaymentCustomerQueryService.Handle(GetAllPaymentCustomersByCustomerIdQuery)`          | Lista todos los pagos asociados a un determinado identificador de huésped. |
+| ✅ **Registrar un nuevo pago de huésped**                         | Command       | `PaymentCustomerCommandService.Handle(CreatePaymentCustomerCommand)` | Crea un nuevo registro de pago de huésped con sus respectivos datos. |
+| ✅ **Actualizar un pago de huésped existente**                           | Command       | `PaymentCustomerCommandService.Handle(UpdatePaymentCustomerCommand)` | Actualiza los datos de un pago de huésped creado anteriormente. |
+| ✅ **Listar todos los pagos de dueños**                         | Query       | `PaymentOwnerQueryService.Handle(GetAllPaymentOwnersQuery)` | Lista todos los pagos realizados por todos los dueños. |
+| ✅ **Ver pago de dueño seleccionado**                            | Query       | `PaymentOwnerQueryService.Handle(GetPaymentOwnerByIdQuery)` | Muestra la información de un determinado pago de dueño. |
+| ✅ **Listar todos los pagos realizados por un dueño**                      | Query       | `PaymentOwnerQueryService.Handle(GetAllPaymentOwnersByOwnerIdQuery)` | Lista todos los pagos asociados a un determinado identificador de dueño. |
+| ✅ **Registrar un nuevo pago de dueño**                      | Command         | `PaymentOwnerCommandService.Handle(CreatePaymentOwnerCommand)` | Crea un nuevo registro de pago de dueño con sus respectivos datos. |
+| ✅ **Actualizar un pago de dueño existente**                | Command         | `PaymentOwnerCommandService.Handle(UpdatePaymentOwnerCommand)` | Actualiza los datos de un pago de dueño creado anteriormente. |
+| ✅ **Listar todas las suscripciones**                         | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsQuery)` | Lista todas las suscripciones registradas. |
+| ✅ **Ver suscripción seleccionada**                            | Query       | `SubscriptionQueryService.Handle(GetSubscriptionByIdQuery)` | Muestra la información de una determinada suscripción. |
+| ✅ **Listar todas las suscripciones del mismo nombre**                      | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsByNameQuery)` | Lista todas las suscripciones del mismo tipo (básica, regular o premium). |
+| ✅ **Listar todas las suscripciones del mismo estado**                      | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsByStatusQuery)` | Lista todas las suscripciones del mismo estado (activo o inactivo). |
+| ✅ **Registrar una nueva suscripción**                      | Command         | `SubscriptionCommandService.Handle(CreateSubscriptionCommand)` | Crea un nuevo registro de suscripción con sus respectivos datos. |
+| ✅ **Actualizar una suscripción existente**                | Command         | `SubscriptionCommandService.Handle(UpdateSubscriptionCommand)` | Actualiza los datos de una suscripción creada anteriormente. |
+
 #### 4.2.4.4. Infrastructure Layer
 
 ### Implementación de Repositories
@@ -2251,25 +2274,14 @@ diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+
+![Commerce Bounded Context Domain Layer Class Diagram](assets/img/commerce-bounded-context/commerce-class-diagram.png)
+
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+
+![Commerce Bounded Context Database Design Diagram](assets/img/commerce-bounded-context/commerce-database-diagram.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.X. Bounded Context: Inventory Bounded Context
