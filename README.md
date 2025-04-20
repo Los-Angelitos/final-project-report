@@ -1719,6 +1719,13 @@ Critique.
   <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
+<h2>Inventory Bounded Context</h2>
+<p>Es principalmente responsable de la gestión integral de suministros y solicitudes de materiales dentro de la plataforma.</p>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
+</div><br>
+
+
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
