@@ -2186,10 +2186,15 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `NotificationRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre las notificaciones (`Notification`), incluyendo la creación de una notificación |
+
+---
+
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
