@@ -1733,7 +1733,7 @@ Critique.
 
 **Communication Bounded Context Canvas**
 
-Responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
+Es principalmente responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
 
 <div style="text-align: center;">
   <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
