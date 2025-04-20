@@ -931,7 +931,10 @@ Lugar donde vive: Jesús María - Lima <br>
 Ocupación: Ingeniero Civil <br>
 Duración de la entrevista: 0:30 - 8:52 <br>
 Personalidad: Tranquilo <br>
-![Entrevista° 2 - Huespedes](assets/img/interview-analysis/customer-2.png)<br>
+<br>
+
+![Entrevista° 2 - Huespedes](assets/img/interview-analysis/customer-2.png)
+
 En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
 
 **Entrevista 03 (Huéspedes)**
