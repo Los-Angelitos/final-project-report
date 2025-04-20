@@ -2435,21 +2435,21 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 | Capability (Funcionalidad) | Tipo    | Handler Responsable    | Descripción    |
 |---------------------------|---------|------------------------|---------------|
-| Add new supply            | Command | `SupplyCommandService.Handle(CreateSupplyCommand)` | Registra un nuevo suministro en el inventario del hotel |
-| Update supply details     | Command | `SupplyCommandService.Handle(UpdateSupplyCommand)` | Actualiza los datos de un suministro existente |
-| View supply inventory     | Query   | `SupplyQueryService.Handle(GetAllSuppliesQuery)` | Obtiene la lista completa de suministros |
-| Filter supplies by hotel  | Query   | `SupplyQueryService.Handle(GetSupplyByProviderIdQuery)` | Lista suministros filtrados por hotel específico |
-| Check supply details      | Query   | `SupplyQueryService.Handle(GetSupplyByIdQuery)` | Muestra los detalles completos de un suministro específico |
+| ✅Add new supply            | Command | `SupplyCommandService.Handle(CreateSupplyCommand)` | Registra un nuevo suministro en el inventario del hotel |
+| ✅Update supply details     | Command | `SupplyCommandService.Handle(UpdateSupplyCommand)` | Actualiza los datos de un suministro existente |
+| ✅View supply inventory     | Query   | `SupplyQueryService.Handle(GetAllSuppliesQuery)` | Obtiene la lista completa de suministros |
+| ✅Filter supplies by hotel  | Query   | `SupplyQueryService.Handle(GetSupplyByProviderIdQuery)` | Lista suministros filtrados por hotel específico |
+| ✅Check supply details      | Query   | `SupplyQueryService.Handle(GetSupplyByIdQuery)` | Muestra los detalles completos de un suministro específico |
 
 ## Supply Request Management
 
 | Capability (Funcionalidad) | Tipo    | Handler Responsable    | Descripción    |
 |---------------------------|---------|------------------------|---------------|
-| Create supply request     | Command | `SupplyRequestCommandService.Handle(CreateSupplyRequestCommand)` | Genera una nueva solicitud de suministros |
-| List all requests        | Query   | `SupplyRequestQueryService.Handle(GetAllSupplyRequestQuery)` | Muestra todas las solicitudes de suministros |
-| View request details     | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByIdQuery)` | Detalla una solicitud específica |
-| Filter requests by supply| Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestBySupplyIdQuery)` | Lista solicitudes por tipo de suministro |
-| Check requester history  | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByPaymentOwnerIdQuery)` | Muestra historial de solicitudes por pagador |
+| ✅Create supply request     | Command | `SupplyRequestCommandService.Handle(CreateSupplyRequestCommand)` | Genera una nueva solicitud de suministros |
+| ✅List all requests        | Query   | `SupplyRequestQueryService.Handle(GetAllSupplyRequestQuery)` | Muestra todas las solicitudes de suministros |
+| ✅View request details     | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByIdQuery)` | Detalla una solicitud específica |
+| ✅Filter requests by supply| Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestBySupplyIdQuery)` | Lista solicitudes por tipo de suministro |
+| ✅Check requester history  | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByPaymentOwnerIdQuery)` | Muestra historial de solicitudes por pagador |
 
 #### 4.2.5.4. Infrastructure Layer
 
@@ -2484,19 +2484,16 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/LaDWjQF.png" alt="Class Diagram Inventory" width="90%" />
+</div><br>
+
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
+</div><br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.X. Bounded Context: Commmunication Bounded Context
@@ -2568,6 +2565,7 @@ elaboración del diagrama la herramienta indicada.
 - Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 - UX Planet. (2017). Information Architecture. Basics for Designers. - UX Planet. Medium; UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
 - Gothelf, J. (2024). Leanux Sampler. https://es.scribd.com/document/655516553/Leanux-Sampler
-#Anexos
+
+# Anexos
 
 
