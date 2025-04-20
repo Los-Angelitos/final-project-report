@@ -1696,6 +1696,32 @@ visualización Domain Storytelling. Complemente la explicación con capturas en
 imágenes de los diagramas de Domain Storytelling elaborados.
 https://domainstorytelling.org/#dst-requirements
 
+
+<h2>Communication Bounded Context</h2>
+<h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
+<p>Para este escenario, se espera que el dueño del hotel, habiendo ingresado a la aplicación web o móvil de SweetManager, genera una invitación para unirse a la organización que es enviada al Communication Bounded Context que se encargará de generar la notificación que llegará al administrador o administradores que el dueño precise. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow1.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Usuario actualiza su contraseña</h3>
+<p>Para este escenario, el usuario que desea actualizar su contraseña ingresa a la aplicación web móvil de SweetManager, en la sección de Perfil este será capaz de consultar y modificar su contraseña. Una vez esta sea cambiada pasa por el IAM Bounded Context para actualizar las credenciales del usuario y finalmente se le notifica por medio del Communication Bounded Context sobre el cambio realizado. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow2.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Administrador envía mensaje a dueño de organización</h3>
+<p>Para este escenario, uno de los administradores de un hotel desea enviar mensaje al dueño de su organización. Para ello redacta el mensaje y este pasa por el Communication Bounded Context para notificar a la persona correspondiente.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow3.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Dueño de hotel envía mensaje a todos sus administradores</h3>
+<p>Para este escenario, el dueño del hotel desea enviar mensaje a un administrador perteneciente a su organización. Para ello selecciona los administradores a los que se dirigirá el mensaje, redacta el mismo y este pasa por el Communication Bounded Context para notificar a las personas correspondientes.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
