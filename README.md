@@ -2156,11 +2156,35 @@ Cada entidad clave en el Bounded Context `Communication` cuenta con un **REST Co
 
 
 #### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `NotificationCommandService.cs`       | Maneja comandos para crear notificaciones. Utiliza el agregado `Notification`. |
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `NotificationQueryService.cs`           | Devuelve la notificación disponible. |
+
+## Capabilities del Bounded Context `Communication`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Create new notification**    | Command         | `NotificationCommandService.Handle(CreateNotificationCommand)`          | Registra una nueva notificación. |
+| ✅ **Notificar usuario**                         | Query       | `NotificationQueryService.Handle(GetNotificationByIdQuery)` | Obtiene notificación según su Id |
+| ✅ **Listar notificaciones**                            | Query       | `NotificationQueryService.Handle(GetNotificationByHotelIdQuery)` | Obtiene una lista de notificaciones filtrada según el identificador único de un hotel. |
+
+---
+
+
 #### 4.2.X.4. Infrastructure Layer
 En esta capa el equipo presenta aquellas clases que acceden a servicios externos
 como databases, messaging systems o email services. Es en esta capa que se ubica la
