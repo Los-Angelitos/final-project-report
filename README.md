@@ -1716,6 +1716,32 @@ https://domainstorytelling.org/#dst-requirements
 
 
 
+
+<h2>Communication Bounded Context</h2>
+<h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
+<p>Para este escenario, se espera que el dueño del hotel, habiendo ingresado a la aplicación web o móvil de SweetManager, genera una invitación para unirse a la organización que es enviada al Communication Bounded Context que se encargará de generar la notificación que llegará al administrador o administradores que el dueño precise. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow1.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Usuario actualiza su contraseña</h3>
+<p>Para este escenario, el usuario que desea actualizar su contraseña ingresa a la aplicación web móvil de SweetManager, en la sección de Perfil este será capaz de consultar y modificar su contraseña. Una vez esta sea cambiada pasa por el IAM Bounded Context para actualizar las credenciales del usuario y finalmente se le notifica por medio del Communication Bounded Context sobre el cambio realizado. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow2.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Administrador envía mensaje a dueño de organización</h3>
+<p>Para este escenario, uno de los administradores de un hotel desea enviar mensaje al dueño de su organización. Para ello redacta el mensaje y este pasa por el Communication Bounded Context para notificar a la persona correspondiente.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow3.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Dueño de hotel envía mensaje a todos sus administradores</h3>
+<p>Para este escenario, el dueño del hotel desea enviar mensaje a un administrador perteneciente a su organización. Para ello selecciona los administradores a los que se dirigirá el mensaje, redacta el mismo y este pasa por el Communication Bounded Context para notificar a las personas correspondientes.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
@@ -1729,6 +1755,14 @@ Critique.
 <div style="text-align: center;">
   <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
+
+**Communication Bounded Context Canvas**
+
+Es principalmente responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
+
+<div style="text-align: center;">
+  <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
+</div>
 
 ### 4.1.2. Context Mapping
 
@@ -2729,26 +2763,145 @@ elaboración del diagrama la herramienta indicada.
 ### 4.2.X. Bounded Context: Commmunication Bounded Context
 
 #### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
+
+---
+
+### `Notification`
+Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
+
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string?`                | Título de la notificación |
+| `Content`       | `string?`             | Contenido de la notificación |
+| `SenderType`| `string?`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
+| `Status`      | `string?`             | Estado de la notificación: "Seen", "Not Seen" |
+
+
+#### Constructores:
+- Vacío `Notification()`
+- A partir de `CreateNotificationCommand`.
+
+## Comandos
+
+### Notification
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateNotificationCommand.cs`         | Contiene todos los datos necesarios para crear una nueva Notificación (`Notification`) incluyendo Title, Content, SenderType, SenderId, ReceiverId y Satus. |
+
+
+---
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetNotificationByIdQuery.cs`  | Obtiene la notificación asociada al identificador único de la misma. |
+--- 
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `INotificationRepository.cs`               | Define operaciones relacionadas conlas notificaciones |
+
+--- 
+##  Services
+
+###  Notification
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `INotificationCommandService.cs`     | Define comandos como crear una notificación. |
+| `INotificationQueryService.cs`       | Define consultas para obtener notificaciones mediante su identificador único. |
+
+
 #### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateNotificationResource.cs`        | Recibe datos para crear una nueva notificación. |
+| `NotificationResource.cs` | Devuelve datos de la notificación al cliente (GET). |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateNotificationCommandFromResourceAssembler.cs`         | Transforma `CreateNotificationResource` en `CreateNotificationCommand`. 
+| `NotificationResourceFromEntityAssembler.cs`                | Convierte una entidad `Notification` en un `NotificationResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada entidad clave en el Bounded Context `Communication` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `NotificationsController.cs` | `/api/v1/notifications`           | Gestiona la creación y la consulta de notificaciones. |
+
+---
+
 
 #### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `NotificationCommandService.cs`       | Maneja comandos para crear notificaciones. Utiliza el agregado `Notification`. |
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `NotificationQueryService.cs`           | Devuelve la notificación disponible. |
+
+## Capabilities del Bounded Context `Communication`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Create new notification**    | Command         | `NotificationCommandService.Handle(CreateNotificationCommand)`          | Registra una nueva notificación. |
+| ✅ **Notificar usuario**                         | Query       | `NotificationQueryService.Handle(GetNotificationByIdQuery)` | Obtiene notificación según su Id |
+| ✅ **Listar notificaciones**                            | Query       | `NotificationQueryService.Handle(GetNotificationByHotelIdQuery)` | Obtiene una lista de notificaciones filtrada según el identificador único de un hotel. |
+
+---
+
+
 #### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `NotificationRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre las notificaciones (`Notification`), incluyendo la creación de una notificación |
+
+---
+
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
