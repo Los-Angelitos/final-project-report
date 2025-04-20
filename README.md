@@ -2276,6 +2276,10 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
@@ -2285,6 +2289,9 @@ clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase
 incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
 Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
 y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+
+
+
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 En esta sección el equipo presenta y explica el Database Diagram que incluye los
 objetos de base de datos que permitirán la persistencia de información para los
