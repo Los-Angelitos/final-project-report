@@ -2189,6 +2189,7 @@ Cada Aggregate del Bounded Context cuenta con un **REST Controller**. Estos cont
 | `PaymentCustomerController.cs` | `/api/payment-customer`  | Gestiona la creación, modificación y consulta de pagos de huéspedes. |
 | `PaymentOwnerController.cs`    | `/api/payment-owner`     | Gestiona la creación, modificación y consulta de pagos de dueños de hoteles. |
 |   `SubscriptionController.cs`  | `/api/subscription`      | Gestiona la creación, modificación y consulta de suscripciones. |
+|  `ContractOwnerController.cs`  | `/api/contract-owner`    | Gestiona la creación, modificación y consulta de contratos de dueños de hoteles. |
 
 
 
@@ -2218,7 +2219,7 @@ La carpeta `Application/Internal` representa la capa de aplicación de la arquit
 | `PaymentCustomerQueryService.cs`          | Devuelve pagos de huéspedes filtrados por ID o CustomerID. |
 | `PaymentOwnerQueryService.cs`             | Devuelve pagos de dueños de hoteles filtrados por ID o OwnerID. |
 | `SubscriptionQueryService.cs`             | Devuelve suscripciones filtradas por ID, nombre o estado. |
-| `PaymentCustomerQueryService.cs`          | Devuelve contratos de dueños de hotel filtradas por ID, OwnerID o SuscriptionID. |
+| `ContractOwnerQueryService.cs`            | Devuelve contratos de dueños de hotel filtradas por ID, OwnerID o SuscriptionID. |
 
 ---
 
@@ -2244,6 +2245,12 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 | ✅ **Listar todas las suscripciones del mismo estado**                      | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsByStatusQuery)` | Lista todas las suscripciones del mismo estado (activo o inactivo). |
 | ✅ **Registrar una nueva suscripción**                      | Command         | `SubscriptionCommandService.Handle(CreateSubscriptionCommand)` | Crea un nuevo registro de suscripción con sus respectivos datos. |
 | ✅ **Actualizar una suscripción existente**                | Command         | `SubscriptionCommandService.Handle(UpdateSubscriptionCommand)` | Actualiza los datos de una suscripción creada anteriormente. |
+| ✅ **Listar todos los contratos de dueños**                         | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersQuery)` | Lista todos los contratos de dueños registrados. |
+| ✅ **Ver contrato de dueño seleccionado**                           | Query       | `ContractOwnerQueryService.Handle(GetContractOwnerByIdQuery)` | Muestra la información de un determinado contrato de dueño. |
+| ✅ **Listar todos los contratos de dueños realizados por un dueño**          | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersByOwnerIdQuery)` | Lista todos los contratos de dueño asociados a un determinado identificador de dueño. |
+| ✅ **Listar todos los contratos de dueños realizados por tipo de suscripción**        | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersBySubscriptionIdQuery)` | Lista todos los contratos de dueño asociados a un determinado tipo de suscripción. |
+| ✅ **Registrar un nuevo contrato de dueño**                      | Command         | `ContractOwnerCommandService.Handle(CreateContractOwnerCommand)` | Crea un nuevo registro de contrato de dueño con sus respectivos datos. |
+| ✅ **Actualizar un contrato de dueño existente**                | Command         | `ContractOwnerCommandService.Handle(UpdateContractOwnerCommand)` | Actualiza los datos de un contrato de dueño creado anteriormente. |
 
 #### 4.2.4.4. Infrastructure Layer
 
