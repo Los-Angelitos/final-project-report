@@ -2056,14 +2056,69 @@ elaboración del diagrama la herramienta indicada.
 ### 4.2.X. Bounded Context: Commmunication Bounded Context
 
 #### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
+
+---
+
+### `Notification`
+Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
+
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string?`                | Título de la notificación |
+| `Content`       | `string?`             | Contenido de la notificación |
+| `SenderType`| `string?`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
+| `Status`      | `string?`             | Estado de la notificación: "Seen", "Not Seen" |
+
+
+#### Constructores:
+- Vacío `Notification()`
+- A partir de `CreateNotificationCommand`.
+
+## Comandos
+
+### Notification
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateNotificationCommand.cs`         | Contiene todos los datos necesarios para crear una nueva Notificación (`Notification`) incluyendo Title, Content, SenderType, SenderId, ReceiverId y Satus. |
+
+
+---
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetNotificationByIdQuery.cs`  | Obtiene la notificación asociada al identificador único de la misma. |
+--- 
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `INotificationRepository.cs`               | Define operaciones relacionadas conlas notificaciones |
+
+--- 
+##  Services
+
+###  Notification
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `INotificationCommandService.cs`     | Define comandos como crear una notificación. |
+| `INotificationQueryService.cs`       | Define consultas para obtener notificaciones mediante su identificador único. |
+
+
 #### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+
+
 
 #### 4.2.X.3. Application Layer
 En esta sección el equipo explica a través de qué clases se maneja los flujos de
