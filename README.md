@@ -1,5 +1,3 @@
-![Captura de pantalla 2025-04-08 205839](https://github.com/user-attachments/assets/19cf0250-dc4e-4e84-9808-7867e97de279)![Captura de pantalla 2025-04-08 204654](https://github.com/user-attachments/assets/818514b2-a382-479c-b0e6-2b93dba0e2fb)<hr>
-
 # <center>Informe del Trabajo Final</center>
 
 <p align="center">
