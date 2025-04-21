@@ -134,7 +134,129 @@ Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando
 Se completaron los siguientes puntos: capitulos I-IV, conclusiones y video exposición, en colaboración del equipo. 
 Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo. 
 
-(IMAGENES)
+![image](https://github.com/user-attachments/assets/fa3d4175-c603-4bb3-b582-5980284581f0)
+
+![image](https://github.com/user-attachments/assets/154cf9e0-6276-4d65-83f9-55d7c4759cdf)
+
+![image](https://github.com/user-attachments/assets/df947a4f-1357-46f9-b40f-b986c7145aac)
+
+![image](https://github.com/user-attachments/assets/b2afbc77-613e-4edb-96a4-60289f187457)
+
+
+# Contenido
+
+- [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
+- [Project Report Collaboration Insights](#project-report-collaboration-insights)
+- [Capítulo I: Introducción](#capítulo-i-introducción)
+   * [1.1. Startup Profile](#11-startup-profile)
+      + [1.1.1. Descripción de la Startup](#111-descripción-de-la-startup)
+      + [1.1.2. Perfiles de integrantes del equipo](#112-perfiles-de-integrantes-del-equipo)
+   * [1.2. Solution Profile](#12-solution-profile)
+      + [1.2.1. Antecedentes y problemática](#121-antecedentes-y-problemática)
+      + [1.2.2. Lean UX Process](#122-lean-ux-process)
+         - [1.2.2.1. Lean UX Problem Statements](#1221-lean-ux-problem-statements)
+         - [1.2.2.2. Lean UX Assumptions](#1222-lean-ux-assumptions)
+         - [1.2.2.3. Lean UX Hypothesis Statements.](#1223-lean-ux-hypothesis-statements)
+         - [1.2.2.4. Lean UX Canvas](#1224-lean-ux-canvas)
+   * [1.3. Segmentos objetivo](#13-segmentos-objetivo)
+- [Capítulo II: Requirements Elicitation & Analysis](#capítulo-ii-requirements-elicitation-analysis)
+   * [2.1. Competidores](#21-competidores)
+      + [2.1.1. Análisis competitivo](#211-análisis-competitivo)
+      + [2.1.2. Estrategias y tácticas frente a competidores](#212-estrategias-y-tácticas-frente-a-competidores)
+   * [2.2. Entrevistas](#22-entrevistas)
+      + [2.2.1. Diseño de entrevistas](#221-diseño-de-entrevistas)
+      + [2.2.2. Registro de entrevistas](#222-registro-de-entrevistas)
+      + [2.2.3. Análisis de entrevistas](#223-análisis-de-entrevistas)
+   * [2.3. Needfinding](#23-needfinding)
+      + [2.3.1. User Personas](#231-user-personas)
+      + [2.3.2. User Task Matrix](#232-user-task-matrix)
+      + [2.3.3. User Journey Mapping](#233-user-journey-mapping)
+      + [2.3.4. Empathy Mapping](#234-empathy-mapping)
+      + [2.3.5. As-is Scenario Mapping](#235-as-is-scenario-mapping)
+         - [As-is Scenario Mapping Huésped:](#as-is-scenario-mapping-huésped)
+         - [As-is Scenario Mapping Administrador:](#as-is-scenario-mapping-administrador)
+         - [As-is Scenario Mapping Dueño:](#as-is-scenario-mapping-dueño)
+   * [2.4. Ubiquitous Language](#24-ubiquitous-language)
+- [Capítulo III: Requirements Specification](#capítulo-iii-requirements-specification)
+   * [3.1. To-Be Scenario Mapping](#31-to-be-scenario-mapping)
+         - [To-be Scenario Mapping Huésped:](#to-be-scenario-mapping-huésped)
+         - [To-be Scenario Mapping Administrador:](#to-be-scenario-mapping-administrador)
+         - [To-be Scenario Mapping Dueño:](#to-be-scenario-mapping-dueño)
+   * [3.2. User Stories](#32-user-stories)
+   * [3.3. Impact Mapping](#33-impact-mapping)
+   * [3.4. Product Backlog](#34-product-backlog)
+- [Capítulo IV: Solution Software Design](#capítulo-iv-solution-software-design)
+   * [4.1. Strategic-Level Domain-Driven Design](#41-strategic-level-domain-driven-design)
+      + [4.1.1. EventStorming](#411-eventstorming)
+         - [4.1.1.1. Candidate Context Discovery](#4111-candidate-context-discovery)
+         - [4.1.1.2. Domain Message Flows Modeling](#4112-domain-message-flows-modeling)
+         - [4.1.1.3. Bounded Context Canvases](#4113-bounded-context-canvases)
+      + [4.1.2. Context Mapping](#412-context-mapping)
+      + [4.1.3. Software Architecture](#413-software-architecture)
+         - [4.1.3.1. Software Architecture System Landscape Diagram](#4131-software-architecture-system-landscape-diagram)
+         - [4.1.3.2. Software Architecture Context Level Diagrams](#4132-software-architecture-context-level-diagrams)
+         - [4.1.3.3. Software Architecture Container Level Diagrams](#4133-software-architecture-container-level-diagrams)
+         - [4.1.3.4. Software Architecture Deployment Diagrams](#4134-software-architecture-deployment-diagrams)
+   * [4.2. Tactical-Level Domain-Driven Design](#42-tactical-level-domain-driven-design)
+      + [4.2.1. Bounded Context: IAM Bounded Context](#42x-bounded-context-iam-bounded-context)
+         - [4.2.1.1. Domain Layer](#42x1-domain-layer)
+         - [4.2.1.2. Interface Layer](#4212-interface-layer)
+         - [4.2.1.3. Application Layer](#4213-application-layer)
+         - [4.2.1.4. Infrastructure Layer](#4214-infrastructure-layer)
+         - [4.2.1.5. Bounded Context Software Architecture Component Level Diagrams](#4215-bounded-context-software-architecture-component-level-diagrams)
+         - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
+            * [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
+            * [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
+      + [4.2.2.1 Bounded Context: Reservations Bounded Context](#42x-bounded-context-reservations-bounded-context)
+         - [4.2.2.1. Domain Layer](#42x1-domain-layer-1)
+         - [4.2.2.2. Interface Layer](#42x2-interface-layer)
+         - [4.2.2.3. Application Layer](#42x3-application-layer)
+         - [4.2.2.4. Infrastructure Layer](#42x4-infrastructure-layer)
+         - [4.2.2.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams)
+         - [4.2.2.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams)
+            * [4.2.2.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams)
+            * [4.2.2.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram)
+      + [4.2.3. Bounded Context: Organizational Management Bounded Context](#423-bounded-context-organizational-management-bounded-context)
+         - [4.2.3.1. Domain Layer](#4231-domain-layer)    
+         - [4.2.3.2. Interface Layer](#4232-interface-layer)
+         - [4.2.3.3. Application Layer](#4233-application-layer)
+         - [4.2.3.4. Infrastructure Layer](#4234-infrastructure-layer)
+         - [4.2.3.5. Bounded Context Software Architecture Component Level Diagrams](#4235-bounded-context-software-architecture-component-level-diagrams)
+         - [4.2.3.6. Bounded Context Software Architecture Code Level Diagrams](#4236-bounded-context-software-architecture-code-level-diagrams)
+            * [4.2.3.6.1. Bounded Context Domain Layer Class Diagrams](#42361-bounded-context-domain-layer-class-diagrams)
+            * [4.2.3.6.2. Bounded Context Database Design Diagram](#42362-bounded-context-database-design-diagram)
+      + [4.2.4. Bounded Context: Commerce Bounded Context](#424-bounded-context-commerce-bounded-context)
+         - [4.2.4.1. Domain Layer](#4241-domain-layer)
+         - [4.2.4.2. Interface Layer](#4242-interface-layer)
+         - [4.2.4.3. Application Layer](#4243-application-layer)
+         - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
+         - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-1)
+         - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-1)
+            * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-1)
+            * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-1)
+      + [4.2.5. Bounded Context: Inventory Bounded Context](#42x-bounded-context-inventory-bounded-context)
+         - [4.2.5.1. Domain Layer](#42x1-domain-layer-2)
+         - [4.2.5.2. Interface Layer](#42x2-interface-layer-1)
+         - [4.2.5.3. Application Layer](#42x3-application-layer-1)
+         - [4.2.5.4. Infrastructure Layer](#42x4-infrastructure-layer-1)
+         - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-2)
+         - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-2)
+            * [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-2)
+            * [4.2.5.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-2)
+      + [4.2.6. Bounded Context: Commmunication Bounded Context](#42x-bounded-context-commmunication-bounded-context)
+         - [4.2.X.1. Domain Layer](#42x1-domain-layer-3)
+         - [4.2.X.2. Interface Layer](#42x2-interface-layer-2)
+         - [4.2.X.3. Application Layer](#42x3-application-layer-2)
+         - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer-2)
+      + [Implementación de Repositories](#implementación-de-repositories-2)
+         - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-3)
+         - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-3)
+            * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-3)
+            * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-3)
+- [Conclusiones](#conclusiones)
+   * [Recomendaciones](#recomendaciones)
+- [Video About-the-Team](#video-about-the-team)
+- [Bibliografía](#bibliografía)
 
 # Capítulo I: Introducción
 
@@ -153,10 +275,30 @@ MISION:
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
-| ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
-| Mauricio Abraham Rivo Rojas Sánchez	![Imagen del compañero](https://i.imgur.com/qQ6neUi.png) | U202211572            | Ingenieria de software | C++, C#, javascript y java            |
 
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/mauricio.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/ramon.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/omar.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/fabia.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/giacomo.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ## 1.2. Solution Profile
 
@@ -908,8 +1050,34 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 **Entrevista 03 (Administradores)**
 
 **Entrevista 01 (Huéspedes)**
+<br>
+URL del vídeo: <br>
+Nombre: Anatoly Noriega <br>
+Edad: 22 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Breña - Lima <br>
+Ocupación: Jefe de start up <br>
+Duración de la entrevista: 0:22 - 7:22 <br>
+Personalidad: Analítica <br>
+![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
+En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
 
 **Entrevista 02 (Huéspedes)**
+
+<br>
+URL del vídeo: <br>
+Nombre: Ramón Jorge <br>
+Edad: 51 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Jesús María - Lima <br>
+Ocupación: Ingeniero Civil <br>
+Duración de la entrevista: 0:30 - 8:52 <br>
+Personalidad: Tranquilo <br>
+<br>
+
+![Entrevista° 2 - Huespedes](assets/img/interview-analysis/customer-2.png)
+
+En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
 
 **Entrevista 03 (Huéspedes)**
 
@@ -1705,6 +1873,32 @@ https://domainstorytelling.org/#dst-requirements
 
 
 
+
+<h2>Communication Bounded Context</h2>
+<h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
+<p>Para este escenario, se espera que el dueño del hotel, habiendo ingresado a la aplicación web o móvil de SweetManager, genera una invitación para unirse a la organización que es enviada al Communication Bounded Context que se encargará de generar la notificación que llegará al administrador o administradores que el dueño precise. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow1.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Usuario actualiza su contraseña</h3>
+<p>Para este escenario, el usuario que desea actualizar su contraseña ingresa a la aplicación web móvil de SweetManager, en la sección de Perfil este será capaz de consultar y modificar su contraseña. Una vez esta sea cambiada pasa por el IAM Bounded Context para actualizar las credenciales del usuario y finalmente se le notifica por medio del Communication Bounded Context sobre el cambio realizado. </p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow2.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Administrador envía mensaje a dueño de organización</h3>
+<p>Para este escenario, uno de los administradores de un hotel desea enviar mensaje al dueño de su organización. Para ello redacta el mensaje y este pasa por el Communication Bounded Context para notificar a la persona correspondiente.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow3.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
+<h3>Escenario: Dueño de hotel envía mensaje a todos sus administradores</h3>
+<p>Para este escenario, el dueño del hotel desea enviar mensaje a un administrador perteneciente a su organización. Para ello selecciona los administradores a los que se dirigirá el mensaje, redacta el mismo y este pasa por el Communication Bounded Context para notificar a las personas correspondientes.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
@@ -1724,46 +1918,546 @@ Critique.
 <div style="text-align: center;">
   <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
 </div><br>
+**Communication Bounded Context Canvas**
 
+Es principalmente responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
+
+<div style="text-align: center;">
+  <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
+</div>
 
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/context-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/container-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
 ### 4.2.X. Bounded Context: IAM Bounded Context
 
 #### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
 
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+### Agregados y Entidades del Dominio `IAM`
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+
+---
+### `Owner` *(Agregado)*
+
+Representa un gerente/dueño de un hotel registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del gerente |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del gerente |
+| `Surname`       | `string?`             | Apellidos del gerente |
+| `Phone`| `string?`             | Número de telefono del gerente |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el gerente |
+| `State`    | `string?`             | Estado de cuenta del gerente |
+
+#### Constructores:
+- Vacío `Owner()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- A partir de `SignUpUserCommand`.
+
+### `Admin` *(Agregado)*
+
+Representa un administrador de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del administrador |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del administrador |
+| `Surname`       | `string?`             | Apellidos del adminitrador |
+| `Phone`| `string?`             | Número de telefono del administrador |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el administrador |
+| `State`    | `string?`             | Estado de cuenta del administrador |
+| `HotelId`    | `int?`             | Relación con el hotel en que trabaja (`Hotel`) |
+
+#### Constructores:
+- Vacío `Admin()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`, `HotelId`.
+- A partir de `SignUpUserCommand`
+
+### `Guest` *(Agregado)*
+
+Representa un huésped de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del huésped |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del huésped |
+| `Surname`       | `string?`             | Apellidos del huésped |
+| `Phone`| `string?`             | Número de telefono del huésped |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el huésped |
+| `State`    | `string?`             | Estado de cuenta del huésped |
+
+#### Constructores:
+- Vacío `Guest()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- A partir de `SignUpUserCommand`
+
+### `Role` *(Entidad)*
+
+Representa un rol de usuario dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del rol |
+| `Name`       | `string?`             | Nombre del rol |
+
+#### Constructores:
+- Vacío `Role()`
+- Por parámetros individuales: `Name`.
+
+### `GuestPreference` *(Entidad)*
+
+Representa el conjunto de preferencias de un huésped dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias del huésped |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+- A partir de `CreateGuestPreferenceCommand`
+- A partir de `UpdateGuestPreferenceCommand`
+
+### `OwnerCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Owners` con el objetivo de dividir responsabilidades: mientras `Owners` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `OwnerId`       | `int?`             | Relación con el gerente mediante su identificador único (`Owner`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
+
+#### Constructores:
+- Vacío `OwnerCredential()`
+- Por parámetros individuales: `UserId`, `Code`
+
+### `AdminCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Admins` con el objetivo de dividir responsabilidades: mientras `Admins` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `AdminId`       | `int?`             | Relación con el administrador mediante su identificador único (`Admin`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
+
+#### Constructores:
+- Vacío `AdminCredential()`
+- Por parámetros individuales: `UserId`, `Code`
+
+### `GuestCredential` *(Entidad)*
+
+Representa la contraseña y el valor de *salt* de la credencial, encriptados utilizando el algoritmo **Argon2id**. Esta información se mantiene separada de la tabla física `Guests` con el objetivo de dividir responsabilidades: mientras `Guests` almacena los datos personales del propietario, su credencial asociada gestiona de forma segura los detalles encriptados de su sesión.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `GuestId`       | `int?`             | Relación con el huésped mediante su identificador único (`Guest`) |
+| `Code`    | `int?`                | Contraseña encriptada junto con el valor de *salt* de la credencial |
+
+#### Constructores:
+- Vacío `GuestCredential()`
+- Por parámetros individuales: `UserId`, `Code`
+
+---
+
+## Comandos
+
+### Users (Owner, Admin y Guest)
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `SignInUserCommand.cs`         | Contiene todos los datos necesarios para iniciar sesión de (`Admin`, `Owner`, `Guest`) incluye email, contraseña y rol. |
+| `SignUpUserCommand.cs`  | Contiene todos los datos necesarios para crear cuenta de los usuarios (`Admin`, `Owner`, `Guest`), incluye id, nombre, apellido, celular, email, rol, estado y contraseña. |
+| `UpdateUserCommand.cs`  | Contiene todos los datos necesarios para actualizar la información personal de los usuarios (`Admin`, `Owner`, `Guest`), incluye id, nombre, apellido, celular, email, rol, estado y contraseña. |
+
+### Credentials (OwnerCredential, AdminCredential y GuestCredential)
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateUserCredentialCommand.cs`         | Contiene todos los datos necesarios para crear una credencial (`AdminCredential`, `OwnerCredential`, `GuestCredential`) incluye userId y código. |
+| `UpdateUserCredentialCommand.cs`  | Contiene todos los datos necesarios para actualizar una credencial (`AdminCredential`, `OwnerCredential`, `GuestCredential`), userId y código. |
+
+### GuestPreference
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateGuestPreferenceCommand.cs`         | Contiene todos los datos necesarios para crear una preferencia (`GuestPreference`) incluye guestId y temperatura. |
+| `UpdateGuestPreferenceCommand.cs`  | Contiene todos los datos necesarios para actualizar una credencial (`GuestPreference`) incluye id, guestId y temperatura. |
+
+### Role
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `SeedRolesCommand.cs`         | No contiene campos, tiene el propósito de usarse de referencia al momento de generar todos los roles de usuario en el sistema (`Role`). |
+
+--- 
+
+## Queries
+
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetUserCredentialByIdQuery.cs`               | Obtener la credencial encriptada asociada a un usuario. |
+
+### GuestPreference
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetGuestPreferenceByGuestIdQuery.cs`               | Obtener las preferencias de un huésped asociado. |
+| `GetGuestPreferenceByIdQuery.cs` | Obtener las preferencias dado un identificador asociado. |
+
+### Role
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllRolesQuery.cs`               | Obtener todas los roles del sistema. |
+| `GetRoleByNameQuery.cs` | Obtener un rol dado un nombre asociado. |
+| `GetRoleIdByNameQuery.cs`                  | Obtiene el rol ID dado un nombre asociado. |
+
+### Users (Owner, Admin y Guest)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllFilteredUsersQuery.cs`               | Obtener todas los usuarios dado unos filtros específicos (email, phone, state). |
+| `GetAllUsersFromOrganizationQuery.cs` | Obtener todos los usuarios dada una organización (hotel). |
+| `GetOwnerFromAnOrganizationQuery.cs`                  | Obtiene el dueño dada una organización asociada. |
+| `GetUserByIdQuery.cs`             | Obtiene un usuario dado un identificador. |
+
+--- 
+
+## ValueObjects
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `ERoles.cs`               | Obtener todas los hoteles registrados en el sistema. |
+
+--
+
+## Exceptions
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `EmailAlreadyExistException.cs`               | Mensaje de error: *The given email already exist in the system.* |
+| `EmailDoesntExistException.cs`               | Mensaje de error: *Email doesn't exist in the system.* |
+| `InvalidPasswordException.cs`               | Mensaje de error: *Invalid Password!* |
+
+--
+
+## Repositories (Interfaces)
+
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IAdminCredentialRepository.cs`               | Define operaciones sobre las credenciales de administradores: CRUD. |
+| `IGuestCredentialRepository.cs` | Define operaciones sobres las credenciales de huéspedes: CRUD. |
+| `IOwnerCredentialRepository.cs` | Define operaciones sobres las credenciales de gerentes: CRUD. |
+
+### GuestPreference
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IGuestPreferenceRepository.cs`               | Define operaciones sobre las preferencias de huéspedes: CRUD, FindByGuestIdAsync. |
+
+### Role 
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IRoleRepository.cs`               | Define operaciones sobre los roles: CRUD, FindByNameAsync, FindIdByNameAsync. |
+
+### Users (Owner, Admin y Guest)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IAdminRepository.cs`               | Define operaciones sobre los administradores: CRUD, FindAllByFiltersAsync, FindAllByHotelIdAsync, FindHotelIdByIdAsync. |
+| `IGuestRepository.cs` | Define operaciones sobres los huéspedes: CRUD, FindAllByFiltersAsync, FindAllByHotelIdAsync, FindHotelIdByIdAsync. |
+| `IOwnerRepository.cs` | Define operaciones sobres los gerentes: CRUD, FindAllByFiltersAsync, FindByHotelIdAsync, FindHotelIdByIdAsync. |
+
+--- 
+##  Services
+
+### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IAdminCredentialCommandService.cs`     | Define comandos como crear, actualizar una credencial de administrador. |
+| `IAdminCredentialQueryService.cs`       | Define consultas para obtener credenciales de administrador mediante su identificador único. |
+| `IGuestCredentialCommandService.cs`       | Define comandos como crear, actualizar una credencial de huésped. |
+| `IGuestCredentialQueryService.cs`       | Define consultas para obtener credenciales de huéspedes mediante su identificador único. |
+| `IOwnerCredentialCommandService.cs`       | Define comandos como crear, actualizar una credencial de gerente. |
+| `IOwnerCredentialQueryService.cs`       | Define consultas para obtener credenciales de gerentes mediante su identificador único. |
+
+### GuestPreference
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IGuestPreferenceCommandService.cs`     | Define comandos como crear, actualizar preferencias de un huésped. |
+| `IGuestPreferenceQueryService.cs`       | Define consultas para obtener preferencias de huésped mediante su identificador único o identificador del huésped. |
+
+### Role
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IRoleCommandService.cs`     | Define comandos como crear todos los roles. |
+| `IRoleQueryService.cs`       | Define consultas para obtener roles mediante su nombre, obtener todos los roles u obtener su identificador único por nombre |
+
+### Users (Owner, Admin y Guest)
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IAdminCommandService.cs`     | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IAdminQueryService.cs`       | Define consultas para obtener administradores mediante su organización, filtros (email, phone, status) o por identificador único. |
+| `IGuestCommandService.cs`       | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IGuestQueryService.cs`       | Define consultas para obtener huéspedes mediante su organización, filtros (email, phone, status) o por identificador único. |
+| `IOwnerCommandService.cs`       | Define comandos como iniciar sesión, actualizar información personal y crear cuenta. |
+| `IOwnerQueryService.cs`       | Define consultas para obtener gerentes mediante filtros (email, phone, status), identificador único o por una organización. |
+
+#### 4.2.1.2. Interface Layer
+
+### Interface Layer – Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateGuestPreferenceResource.cs`        | Recibe datos para crear nueva preferencia de huésped. |
+| `GuestPreferenceResource.cs` | Devuelve datos del preferencias de huésped al cliente (GET). |
+| `UpdateGuestPreferenceResource.cs`   | Recibe datos para actualizar una preferencia de huésped. |
+| `AuthenticatedUserResource.cs`              | Devuelve datos del usuario autenticado de sesión al cliente (POST). |
+| `SignInResource.cs`           | Recibe datos para iniciar sesión. |
+| `SignUpUserResource.cs`      | Recibe datos para crear cuenta de usuario.  |
+| `UpdateUserResource.cs`      | Recibe datos para actualizar cuenta de usuario. |
+| `UserResource.cs`      | Devuelve datos de un usuario registrado al cliente (GET). |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateGuestPreferenceCommandFromResourceAssembler.cs`         | Transforma `CreateGuestPreferenceResource` en `CreateGuestPreferenceCommand`. |
+| `UpdateGuestPreferenceCommandFromResourceAssembler.cs`    | Transforma `UpdateHotelResource` en `UpdateHotelCommand`. |
+| `GuestPreferenceResourceFromEntityAssembler.cs`                | Convierte una entidad `GuestPreference` en un `GuestPreferenceResource` limpio (sin ciclos). |
+| `AuthenticatedUserResourceFromEntityAssembler.cs`         | Transforma `AuthenticatedUser` en `AuthenticatedUserResource`. |
+| `SignInCommandFromResourceAssembler.cs`    | Transforma `SignInResource` en `SignInUserCommand`. |
+| `SignUpUserCommandFromResourceAssembler.cs`                | Convierte una entidad `SignUpUserResource` en un `SignUpUserCommand` limpio (sin ciclos). |
+| `UpdateUserCommandFromResourceAssembler.cs`                | Convierte una entidad `UpdateUserResource` en un `UpdateUserCommand` limpio (sin ciclos). |
+| `UserResourceFromEntityAssembler.cs`                | Convierte una entidad dinámica `User` en un `UserResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada conjunto clave en el Bounded Context `IAM` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `AuthenticationController.cs` | `/api/v1/authentication`           | Gestiona la autenticación de usuarios. |
+| `UserController.cs`    | `/api/v1/user`              | Maneja la creación, actualización y desvinculación de usuarios y preferencias. |
+
+#### 4.2.1.3. Application Layer
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+#### Credentials
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCredentialCommandService.cs`       | Maneja comandos para crear y actualizar una credencial de administrador. Utiliza la *entidad* `AdminCredential`. |
+| `GuestCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de huésped. Utiliza la *entidad* `GuestCredential`. |
+| `OwnerCredentialCommandService.cs`          | Maneja comandos para crear y actualizar una credencial de gerente. Utiliza la *entidad* `OwnerCredential`. |
+
+#### GuestPreference
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `GuestPreferenceCommandService.cs`       | Maneja comandos para crear y actualizar preferencias de un huésped. Utiliza la *entidad* `GuestPreference`. |
+
+
+#### Role
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `RoleCommandService.cs`       | Maneja comandos para crear todos los roles. Utiliza la *entidad* `Role`. |
+
+#### Users (Owner, Admin y Guest)
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `AdminCommandService.cs`       | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza el *agregado* `Admin`. |
+| `GuestCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Guest`. |
+| `OwnerCommandService.cs`          | Maneja comandos para iniciar sesión, crear cuenta y actualizar información personal. Utiliza la *agregado* `Owner`. |
+
+### QueryServices
+
+#### Credentials
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminCredentialQueryService.cs`           | Devuelve credencial de administrador por su identificador. |
+| `GuestCredentialQueryService.cs`              | Devuelve credencial de huésped por su identificador. |
+| `OwnerCredentialQueryService.cs`              | Devuelve credencial de gerente por su identificador. |
+
+#### GuestPreference
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `GuestPreferenceQueryService.cs`           | Devuelve y lista las preferencias de huéspedes por el identificador único del huésped asociado o por identificador único de la preferencia. |
+
+#### Role
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `RoleQueryService.cs`           | Devuelve y lista los roles sin parametros, por nombre o el identificador por nombre. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `AdminQueryService.cs`           | Devuelve y lista los administradores de una organización, por filtros (email, phone, status) o por identificador único. |
+| `GuestQueryService.cs`              | Devuelve y lista los huéspedes de una organización, por filtros (email, phone, status) o por identificador único. |
+| `OwnerQueryService.cs`              | Devuelve y lista los gerentes por filtros (email, phone, status), por identificador único o de una organización (hotel). |
+
+### OutboundServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `IHashingService.cs`           | Encripta y configura los saltos de las credenciales. |
+| `ITokenService.cs`              | Genera y valida el token. |
+
+
+## Capabilities del Bounded Context `IAM`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Registrar cuenta de administrador**    | Command         | `AdminCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo administrador en el sistema. |
+| ✅ **Registrar cuenta de huésped**    | Command         | `GuestCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo huésped en el sistema. |
+| ✅ **Registrar cuenta de gerente**    | Command         | `OwnerCommandService.Handle(SignUpUserCommand)`          | Registra a un nuevo gerente en el sistema. |
+| ✅ **Iniciar sesión como administrador**                         | Command       | `AdminCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el administrador. |
+| ✅ **Iniciar sesión como huésped**                         | Command       | `GuestCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el huésped. |
+| ✅ **Iniciar sesión como gerente**                         | Command       | `OwnerCommandService.Handle(SignInUserCommand)` | Crea una sesión activa para el gerente. |
+| ✅ **Listar huespedes de un hotel**                            | Query       | `GuestQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los huéspedes de un determinado hotel. |
+| ✅ **Ver perfil de huesped seleccionado**                            | Query       | `GuestQueryService.Handle(GetUserByIdQuery)` | Devuelve la información de un determinado huésped. |
+| ✅ **Listar administradores de un hotel**                             | Query         | `AdminQueryService.Handle(GetAllUsersFromOrganizationQuery)` | Lista los administradores de un determinado hotel. |
+| ✅ **Actualizar información de cuenta de administrador**                            | Command         | `AdminCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de huésped**                            | Command         | `GuestCommandService.Handle(UpdateUserCommand)` | CActualizar información personal de un administrador. |
+| ✅ **Actualizar información de cuenta de gerente**                            | Command         | `OwnerCommandService.Handle(UpdateUserCommand)` | Actualizar información personal de un administrador. |
+| ✅ **Actualizar preferencias**                          | Command         | `GuestPreferenceCommandService.Handle(UpdateGuestPreferenceCommand)`         | Actualiza las preferencias de un huésped asociado. |
+
+#### 4.2.1.4. Infrastructure Layer
+
+### Hashing
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `HashingService.cs`    | `IHashingService`         | Implementa operaciones de hashing sobre un `code` recibido y maneja las operaciones correspondientes. |
+
+---
+
+### Persistence
+
+#### Credentials
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminCredentialRepository.cs`    | `IAdminCredentialRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de administradores (`AdminCredential`), incluyendo la creación, actualización del mismo. |
+| `GuestCredentialRepository.cs`       | `IGuestCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de huéspedes (`GuestCredential`), incluyendo la creación, actualización del mismo. |
+| `OwnerCredentialRepository.cs`       | `IOwnerCredentialRepository`            | Implementa operaciones de persistencia, escritura y lectura sobre las credenciales de gerentes (`OwnerCredential`), incluyendo la creación, actualización del mismo. |
+
+#### GuestPreference
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `GuestPreferenceRepository.cs`    | `IGuestPreferenceRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre las preferencias de huéspedes (`GuestPreference`), incluyendo la creación, actualización del mismo. |
+
+#### Role
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RoleRepository.cs`    | `IRoleRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los roles de sistema (`Role`), incluyendo la creación, actualización del mismo. |
+
+#### Users (Owner, Admin y Guest)
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AdminRepository.cs`    | `IAdminRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los administradores (`Admin`), incluyendo la creación, actualización del mismo. |
+| `GuestRepository.cs`    | `IGuestRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los huéspedes (`Guest`), incluyendo la creación, actualización del mismo. |
+| `OwnerRepository.cs`    | `IOwnerRepository`         | Implementa operaciones de persistencia, escritura y lectura sobre los gerentes (`Owner`), incluyendo la creación, actualización del mismo. |
+
+---
+### Pipeline
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `AllowAnonymousAttribute.cs`    | `None`         | Crea un atributo allow anonymous para los `no-authenticated endpoints`.  |
+| `AuthorizeAttribute.cs`    | `None`         | ICrea un atributo allow anonymous para los `authenticated endpoints`. |
+| `RequestAuthorizationMiddleware.cs`    | `None`         | Crea middleware para validar la autenticación de usuarios para permitir las `requests` sobre `authenticated endpoints`. |
+| `ApplicationBuilderExtensions.cs`    | `None`         | Crea una extensión para utilizar `RequestAuthorizationMiddleware`. |
+
+---
+### Population
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `RolesInitializer.cs`    | `None`         | Inicializa los roles, al momento de crear la base de datos (en caso no exista).  |
+
+---
+### Tokens
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `TokenSettings.cs`    | `None`         | Entidad que contiene los campos de configuración de un token (aud, iss, exp, secret key)  |
+| `TokenService.cs`    | `ITokenService`         | Implementa las funciones de generar y validar token.  |
+| `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
+
+#### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
 caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
@@ -1778,28 +2472,28 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/uml.png" alt="ERD IAM" width="90%" />
+</div><br>
+
+Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?viewport_loc=426%2C-1339%2C8386%2C2866%2C0_0&invitationId=inv_f0bef7c5-6e84-4e61-9298-6777d0880fb6
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/erd.png" alt="ERD IAM" width="90%" />
+</div><br>
+
+Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
+
 ### 4.2.X. Bounded Context: Reservations Bounded Context
 
 #### 4.2.X.1. Domain Layer
@@ -1860,319 +2554,6 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.3. Bounded Context: Organizational Management Bounded Context
-
-#### 4.2.3.1. Domain Layer
-### Agregados y Entidades del Dominio `Organizational Management`
-
-En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
-
----
-
-### `Hotel`
-
-Representa un hotel registrado dentro del sistema de SweetManager.
-
-#### Atributos principales:
-
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único del hotel |
-| `OwnerId`    | `int?`                | Relación con el dueño del hotel mediante su identificador único (`Owner`) |
-| `Name`       | `string?`             | Nombre específico del hotel |
-| `Description`| `string?`             | Breve resumen o descripción del hotel que será pública para los huéspedes. |
-| `Email`      | `string?`             | Correo electrónico único que tendrá el hotel para información de contacto. |
-| `Address`    | `string?`             | Dirección de calle única donde se encuentra el hotel. |
-| `Phone`      | `string?`             | Número telefónico único del hotel para información de contacto |
-| `Owner`      | `Owner?`              | Dueño asociado al hotel. |
-| `Rooms`      | `ICollection<Room>`   | Relación con los cuartos que mantiene el hotel. |
-| `Supplies`      | `ICollection<Supply>`             | Relación con los suministros disponibles del hotel. |
-
-#### Constructores:
-- Vacío `Hotel()`
-- Por parámetros individuales: `Id`, `OwnerId`, `Name`, `Description`, `Email`, `Address`, `Phone`.
-- A partir de `CreateHotelCommand`.
-
-### `Provider`
-
-Representa un proveedor que abastece de suministros al hotel, contactado mediante el dueño de hotel.
-
-#### Atributos principales:
-
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único del proveedor |
-| `Name`       | `string?`             | Nombre específico del proveedor |
-| `Email`      | `string?`             | Correo electrónico único del proveedor |
-| `Phone`      | `string?`             | Número telefónico del proveedor. |
-| `State`      | `State?`              | Estado en el que se encuentra el proveedor con relación al hotel (`ACTIVE`, `INACTIVE`) |
-| `Supplies`   | `ICollection<Supply>` | Suministros que puede contener un proveedor. |
-
-#### Constructores:
-- Vacío `Provider()`
-- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
-- A partir de `CreateProviderCommand`.
-
-### `HotelAudit`
-
-Representa la extensión al agregado `Hotel` que permite manejar la fecha de creación y modificación del hotel.
-
-#### Atributos principales:
-
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `CreatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se creó el hotel. |
-| `UpdatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se modificó el hotel. |
-
-#### Constructores:
-- Vacío `Provider()`
-- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
-- A partir de `CreateProviderCommand`.
-
----
-
-## Comandos
-
-### Hotel
-
-| Comando                            | Descripción |
-|-----------------------------------|-------------|
-| `CreateHotelCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo hotel (`Hotel`) incluyendo nombre, descripción, email, dirección y teléfono. |
-| `UpdateHotelCommand.cs`  | Permite actualizar los datos requeridos para un hotel como descripción, email, dirección, teléfono asociandolo al hotel. |
-
-### Provider
-
-| Comando                            | Descripción |
-|-----------------------------------|-------------|
-| `CreateProviderCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo proveedor (`Provider`) incluyendo nombre, email, teléfono y estado en el que se encuentra. |
-| `UpdateProviderCommand.cs`  | Permite actualizar los datos requeridos para un proveedor como nombre, email, teléfono. |
-| `DeleteProviderCommand.cs`  | Permite desvincular un proveedor de un hotel mediante su estado de actividad. |
-
---- 
-
-## Queries
-
-| Archivo                                 | Descripción breve |
-|----------------------------------------|--------------------|
-| `GetAllHotelsQuery.cs`               | Obtener todas los hoteles registrados en el sistema. |
-| `GetAllProvidersQuery.cs` | Obtener todos los proveedores según un hotel. |
-| `GetHotelByIdQuery.cs`                  | Obtiene el hotel asociado a su id asignada. |
-| `GetHotelByOwnerId.cs`             | Obtiene el hotel asociado a un dueño de hotel mediante su identificador único. |
-| `GetProviderByIdQuery.cs`      | Devuelve a un proveedor en específico dado su identificador único. |
-
---- 
-
-## Repositories (Interfaces)
-
-| Archivo                                 | Descripción breve |
-|----------------------------------------|--------------------|
-| `IHotelRepository.cs`               | Define operaciones sobre los hoteles: FindByNameAndEmailAsync, GetAllHotelsAsync, FindByOwnerIdAsync. |
-| `IProviderRepository.cs` | Define operaciones sobres los proveedores: GetAllProvidersAsync. |
-
---- 
-##  Services
-
-###  Hotel
-
-| Archivo                          | Descripción breve |
-|----------------------------------|--------------------|
-| `IHotelCommandService.cs`     | Define comandos como crear, actualizar un hotel. |
-| `IHotelQueryService.cs`       | Define consultas para obtener hoteles mediante su identificador único, identificador único del dueño o a todos los registrados. |
-
-####  Room
-
-| Archivo                        | Descripción breve |
-|--------------------------------|--------------------|
-| `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
-| `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
-
----- 
-
-#### 4.2.3.2. Interface Layer
-### Interface Layer – Presentación de la Aplicación
-
-La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
-
----
-
-### Resources
-
-Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
-
-| Archivo                           | Función |
-|-----------------------------------|---------|
-| `CreateHotelResource.cs`        | Recibe datos para crear un nuevo hotel. |
-| `HotelResource.cs` | Devuelve datos del hotel al cliente (GET). |
-| `UpdateHotelResource.cs`   | Devuelve datos actualizados del hotel al cliente (GET). |
-| `CreateProviderResource.cs`              | Recibe datos para crear un nuevo proveedor. |
-| `ProviderResource.cs`           | Devuelve datos del proveedor al cliente. |
-| `UpdateProviderResource.cs`      | Permite devolver los datos actualizados del proveedor. |
-
-### Transform/Assemblers
-
-Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
-
-- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
-- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
-
-| Archivo                                               | Función |
-|--------------------------------------------------------|---------|
-| `CreateHotelCommandFromResourceAssembler.cs`         | Transforma `CreateHotelResource` en `CreateHotelCommand`. |
-| `UpdateHotelCommandFromResourceAssembler.cs`    | Transforma `UpdateHotelResource` en `UpdateHotelCommand`. |
-| `HotelResourceFromEntityAssembler.cs`                | Convierte una entidad `Hotel` en un `HotelResource` limpio (sin ciclos). |
-| `CreateProviderCommandFromResourceAssembler.cs`         | Transforma `CreateProviderResource` en `CreateProviderCommand`. |
-| `UpdateProviderCommandFromResourceAssembler.cs`    | Transforma `UpdateProviderResource` en `UpdateProviderCommand`. |
-| `ProviderResourceFromEntityAssembler.cs`                | Convierte una entidad `Provider` en un `ProviderResource` limpio (sin ciclos). |
-
----
-
-### Controllers
-
-Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
-
-| Controlador           | Ruta base típica        | Responsabilidad principal |
-|------------------------|--------------------------|----------------------------|
-| `HotelsController.cs` | `/api/v1/hotels`           | Gestiona la creación, actualización de hoteles. |
-| `ProvidersController.cs`    | `/api/v1/providers`              | Maneja la creación, actualización y desvinculación de un proveedor. |
-
----
-
-#### 4.2.3.3. Application Layer
-### Servicios de Aplicación – Gestión de Flujos de Negocio
----
-
-### CommandServices
-
-| Clase                            | Descripción |
-|----------------------------------|-------------|
-| `HotelCommandService.cs`       | Maneja comandos para crear, actualizar un hotel. Utiliza el agregado `Hotel`. |
-| `ProviderCommandService.cs`          | Procesa la creación, actualización desvinculación con estado (`ACTIVE, INACTIVE`) de un proveedor. Interactúa con el agregado `Provider`. |
-
-### QueryServices
-
-| Clase                              | Descripción |
-|------------------------------------|-------------|
-| `HotelQueryService.cs`           | Devuelve y lista los hoteles disponibles. |
-| `ProviderQueryService.cs`              | Lista los proveedores actuales y para un hotel. |
-
-## Capabilities del Bounded Context `Organizational Management`
-
-Extraído del Bounded Context Canvas y el Event Storming elaborado: 
-
-| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
-|----------------------------------------------|---------------|----------------------------------------------|-------------|
-| ✅ **Add provider to contact list**    | Command         | `ProviderCommandService.Handle(CreateProviderCommand)`          | Registra a un nuevo proveedor en el sistema. |
-| ✅ **List providers**                         | Query       | `ProviderQueryService.Handle(GetAllProvidersQuery)` | Obtiene una lista de todos los proveedores registrados |
-| ✅ **Select provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Selecciona a un nuevo hotel cambiando su estado. |
-| ✅ **Edit provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Permite la actualización de datos a un proveedor. |
-| ✅ **Delete provider**                             | Command         | `ProviderCommandService.Handle(DeleteProviderCommand)` | Permite la desvinculación de un proveedor con un hotel. |
-| ✅ **Submit hotel form**                            | Command         | `HotelCommandService.Handle(CreateHotelCommand)` | Crea un nuevo hotel a partir de sus atributos asignados. |
-| ✅ **List Owner's hotel**                | Query         | `HotelQueryService.Handle(GetHotelByOwnerId)` | Revisa y lista todos los hoteles relacionados a un owner.  |
-| ✅ **Filter hotel list**                          | Query         | `HotelQueryService.Handle(GetAllHotelsQuery)`         | Devuelve todas los hoteles disponibles. |
-| ✅ **Select Hotel**                  | Query         | `HotelQueryService.Handle(GetHotelByIdQuery)` | Se selecciona un hotel a partir de su identificador único. |
-| ✅ **Edit hotel**              | Command       | `HotelCommandService.Handle(UpdateHotelCommand)` | Permite actualizar atributos de un hotel. |
-
----
-
-#### 4.2.3.4. Infrastructure Layer
-### Implementación de Repositories
-
-| Clase                     | Interfaz implementada       | Función principal |
-|---------------------------|------------------------------|-------------------|
-| `HotelRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre los hoteles (`Hotel`), incluyendo la creación, actualización de un hotel |
-| `ProviderRepository.cs`       | `IProviderRepository`            | Implementa consultas y modificaciones sobre proveedores (`Provider`) asignado a un hotel. Son gestionados por el hotel mediante su estado (`ACTIVE`, `INACTIVE`). |
-
----
-
-#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-
-#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
-
-##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
-<div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/uml-class.PNG" alt="Class Diagram Organizational Management" width="90%" />
-</div><br>
-
-##### 4.2.3.6.2. Bounded Context Database Design Diagram
-<div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
-</div><br>
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Commerce Bounded Context
-
-#### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
-
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
@@ -2499,8 +2880,648 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
   <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
+### 4.2.3. Bounded Context: Organizational Management Bounded Context
+
+#### 4.2.3.1. Domain Layer
+### Agregados y Entidades del Dominio `Organizational Management`
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+
+---
+
+### `Hotel`
+
+Representa un hotel registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del hotel |
+| `OwnerId`    | `int?`                | Relación con el dueño del hotel mediante su identificador único (`Owner`) |
+| `Name`       | `string?`             | Nombre específico del hotel |
+| `Description`| `string?`             | Breve resumen o descripción del hotel que será pública para los huéspedes. |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el hotel para información de contacto. |
+| `Address`    | `string?`             | Dirección de calle única donde se encuentra el hotel. |
+| `Phone`      | `string?`             | Número telefónico único del hotel para información de contacto |
+| `Owner`      | `Owner?`              | Dueño asociado al hotel. |
+| `Rooms`      | `ICollection<Room>`   | Relación con los cuartos que mantiene el hotel. |
+| `Supplies`      | `ICollection<Supply>`             | Relación con los suministros disponibles del hotel. |
+
+#### Constructores:
+- Vacío `Hotel()`
+- Por parámetros individuales: `Id`, `OwnerId`, `Name`, `Description`, `Email`, `Address`, `Phone`.
+- A partir de `CreateHotelCommand`.
+
+### `Provider`
+
+Representa un proveedor que abastece de suministros al hotel, contactado mediante el dueño de hotel.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del proveedor |
+| `Name`       | `string?`             | Nombre específico del proveedor |
+| `Email`      | `string?`             | Correo electrónico único del proveedor |
+| `Phone`      | `string?`             | Número telefónico del proveedor. |
+| `State`      | `State?`              | Estado en el que se encuentra el proveedor con relación al hotel (`ACTIVE`, `INACTIVE`) |
+| `Supplies`   | `ICollection<Supply>` | Suministros que puede contener un proveedor. |
+
+#### Constructores:
+- Vacío `Provider()`
+- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
+- A partir de `CreateProviderCommand`.
+
+### `HotelAudit`
+
+Representa la extensión al agregado `Hotel` que permite manejar la fecha de creación y modificación del hotel.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `CreatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se creó el hotel. |
+| `UpdatedDate`| `DateTimeOffset?`     | Fecha y hora exactas en el que se modificó el hotel. |
+
+#### Constructores:
+- Vacío `Provider()`
+- Por parámetros individuales: `Id`, `Name`, `Email`, `Phone`, `State`.
+- A partir de `CreateProviderCommand`.
+
+---
+
+## Comandos
+
+### Hotel
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateHotelCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo hotel (`Hotel`) incluyendo nombre, descripción, email, dirección y teléfono. |
+| `UpdateHotelCommand.cs`  | Permite actualizar los datos requeridos para un hotel como descripción, email, dirección, teléfono asociandolo al hotel. |
+
+### Provider
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateProviderCommand.cs`         | Contiene todos los datos necesarios para crear un nuevo proveedor (`Provider`) incluyendo nombre, email, teléfono y estado en el que se encuentra. |
+| `UpdateProviderCommand.cs`  | Permite actualizar los datos requeridos para un proveedor como nombre, email, teléfono. |
+| `DeleteProviderCommand.cs`  | Permite desvincular un proveedor de un hotel mediante su estado de actividad. |
+
+--- 
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllHotelsQuery.cs`               | Obtener todas los hoteles registrados en el sistema. |
+| `GetAllProvidersQuery.cs` | Obtener todos los proveedores según un hotel. |
+| `GetHotelByIdQuery.cs`                  | Obtiene el hotel asociado a su id asignada. |
+| `GetHotelByOwnerId.cs`             | Obtiene el hotel asociado a un dueño de hotel mediante su identificador único. |
+| `GetProviderByIdQuery.cs`      | Devuelve a un proveedor en específico dado su identificador único. |
+
+--- 
+
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `IHotelRepository.cs`               | Define operaciones sobre los hoteles: FindByNameAndEmailAsync, GetAllHotelsAsync, FindByOwnerIdAsync. |
+| `IProviderRepository.cs` | Define operaciones sobres los proveedores: GetAllProvidersAsync. |
+
+--- 
+##  Services
+
+###  Hotel
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IHotelCommandService.cs`     | Define comandos como crear, actualizar un hotel. |
+| `IHotelQueryService.cs`       | Define consultas para obtener hoteles mediante su identificador único, identificador único del dueño o a todos los registrados. |
+
+####  Room
+
+| Archivo                        | Descripción breve |
+|--------------------------------|--------------------|
+| `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
+| `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
+
+---- 
+
+#### 4.2.3.2. Interface Layer
+### Interface Layer – Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateHotelResource.cs`        | Recibe datos para crear un nuevo hotel. |
+| `HotelResource.cs` | Devuelve datos del hotel al cliente (GET). |
+| `UpdateHotelResource.cs`   | Devuelve datos actualizados del hotel al cliente (GET). |
+| `CreateProviderResource.cs`              | Recibe datos para crear un nuevo proveedor. |
+| `ProviderResource.cs`           | Devuelve datos del proveedor al cliente. |
+| `UpdateProviderResource.cs`      | Permite devolver los datos actualizados del proveedor. |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateHotelCommandFromResourceAssembler.cs`         | Transforma `CreateHotelResource` en `CreateHotelCommand`. |
+| `UpdateHotelCommandFromResourceAssembler.cs`    | Transforma `UpdateHotelResource` en `UpdateHotelCommand`. |
+| `HotelResourceFromEntityAssembler.cs`                | Convierte una entidad `Hotel` en un `HotelResource` limpio (sin ciclos). |
+| `CreateProviderCommandFromResourceAssembler.cs`         | Transforma `CreateProviderResource` en `CreateProviderCommand`. |
+| `UpdateProviderCommandFromResourceAssembler.cs`    | Transforma `UpdateProviderResource` en `UpdateProviderCommand`. |
+| `ProviderResourceFromEntityAssembler.cs`                | Convierte una entidad `Provider` en un `ProviderResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada entidad clave en el Bounded Context `Organizational Management` cuenta con dos **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `HotelsController.cs` | `/api/v1/hotels`           | Gestiona la creación, actualización de hoteles. |
+| `ProvidersController.cs`    | `/api/v1/providers`              | Maneja la creación, actualización y desvinculación de un proveedor. |
+
+---
+
+#### 4.2.3.3. Application Layer
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `HotelCommandService.cs`       | Maneja comandos para crear, actualizar un hotel. Utiliza el agregado `Hotel`. |
+| `ProviderCommandService.cs`          | Procesa la creación, actualización desvinculación con estado (`ACTIVE, INACTIVE`) de un proveedor. Interactúa con el agregado `Provider`. |
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `HotelQueryService.cs`           | Devuelve y lista los hoteles disponibles. |
+| `ProviderQueryService.cs`              | Lista los proveedores actuales y para un hotel. |
+
+## Capabilities del Bounded Context `Organizational Management`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Add provider to contact list**    | Command         | `ProviderCommandService.Handle(CreateProviderCommand)`          | Registra a un nuevo proveedor en el sistema. |
+| ✅ **List providers**                         | Query       | `ProviderQueryService.Handle(GetAllProvidersQuery)` | Obtiene una lista de todos los proveedores registrados |
+| ✅ **Select provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Selecciona a un nuevo hotel cambiando su estado. |
+| ✅ **Edit provider**                            | Command       | `ProviderCommandService.Handle(UpdateProviderCommand)` | Permite la actualización de datos a un proveedor. |
+| ✅ **Delete provider**                             | Command         | `ProviderCommandService.Handle(DeleteProviderCommand)` | Permite la desvinculación de un proveedor con un hotel. |
+| ✅ **Submit hotel form**                            | Command         | `HotelCommandService.Handle(CreateHotelCommand)` | Crea un nuevo hotel a partir de sus atributos asignados. |
+| ✅ **List Owner's hotel**                | Query         | `HotelQueryService.Handle(GetHotelByOwnerId)` | Revisa y lista todos los hoteles relacionados a un owner.  |
+| ✅ **Filter hotel list**                          | Query         | `HotelQueryService.Handle(GetAllHotelsQuery)`         | Devuelve todas los hoteles disponibles. |
+| ✅ **Select Hotel**                  | Query         | `HotelQueryService.Handle(GetHotelByIdQuery)` | Se selecciona un hotel a partir de su identificador único. |
+| ✅ **Edit hotel**              | Command       | `HotelCommandService.Handle(UpdateHotelCommand)` | Permite actualizar atributos de un hotel. |
+
+---
+
+#### 4.2.3.4. Infrastructure Layer
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `HotelRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre los hoteles (`Hotel`), incluyendo la creación, actualización de un hotel |
+| `ProviderRepository.cs`       | `IProviderRepository`            | Implementa consultas y modificaciones sobre proveedores (`Provider`) asignado a un hotel. Son gestionados por el hotel mediante su estado (`ACTIVE`, `INACTIVE`). |
+
+---
+
+#### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
+
+A continuación, el equipo presenta los diagramas de componentes del Bounded Context `Organizational Management` utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.
+
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/org-management-components-hotel.png" alt="C4 Diagram Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/org-management-components-provider.png" alt="C4 Diagram Organizational Management" width="90%" />
+</div><br>
+
+#### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/uml-class.PNG" alt="Class Diagram Organizational Management" width="90%" />
+</div><br>
+
+##### 4.2.3.6.2. Bounded Context Database Design Diagram
+<div style="text-align: center;">
+  <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
+</div><br>
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Commmunication Bounded Context
+### 4.2.4. Bounded Context: Commerce Bounded Context
+
+#### 4.2.4.1. Domain Layer
+### Aggregates, Entities y Value Objects del Dominio `Commerce`
+
+Se han identificado los siguientes **Aggregates**, **Entities** y **Value Objects** que representan los conceptos más importantes del contexto de comercio.
+
+---
+
+### `PaymentCustomer` 
+
+Representa un pago realizado por un huésped. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del pago |
+| `GuestId`    | `int?`                | Relación con el huésped (`Guest`) |
+|`FinalAmount` | `decimal?`            | Monto asociado al pago |
+| `Bookings`   | `ICollection<Booking>`| Reservas asociadas al pago |
+| `Guest`      | `Guest?`              | Huésped al cual corresponde el pago |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreatePaymentCustomerCommand` y `UpdatePaymentCustomerCommand`
+
+---
+
+###  `PaymentOwner` 
+
+Representa un pago realizado por un dueño de hotel. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del pago |
+| `OwnerId`    | `int?`                | Relación con el dueño (`Owner`) |
+| `Description`| `string?`             | Información adicional |
+|`FinalAmount` | `decimal?`            | Monto asociado al pago |
+| `Bookings`   | `ICollection<SupplyRequest>`| Solicitudes de abastecimiento asociadas al pago |
+| `Owner`      | `Owner?`              | Dueño de hotel al cual corresponde el pago |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreatePaymentOwnerCommand` y `UpdatePaymentOwnerCommand`
+
+---
+
+###  `Subscription`
+
+Representa la suscripción asociada a un hotel.
+
+| Atributo               | Tipo         | Descripción |
+|------------------------|--------------|-------------|
+| `Id`                   | `int`                   | Identificador único de la suscripción |
+| `Name`                 | `ESubscriptionTypes`    | Nombre de la suscripción (Basic, Regular, Premium) |
+| `Content`              | `string?`               | Descripción de lo que ofrece la suscripción |
+| `Price`                | `decimal?`              | Precio de la suscripción |
+| `Status`               | `EStates`               | Estado de la suscripción (Active, Inactive) |
+| `ContractOwners`       |`ICollection<ContractOwner>?`| Contratos de los dueños asociados a la suscripción |
+
+- Por parámetros individuales
+- A partir de `CreateSubscriptionCommand` y `UpdateSubscriptionCommand`
+
+---
+
+###  `Contract Owner` (Entity)
+
+Representa la relación entre un dueño de hotel y una suscripción.
+
+#### Atributos principales:
+
+| Atributo         | Tipo                  | Descripción |
+|------------------|-----------------------|-------------|
+| `Id`             | `int`                 | Identificador único del pago |
+| `OwnerId`        | `int?`                | Relación con el dueño (`Owner`) |
+| `StartDate`      | `DateTime`            | Fecha de inicio del contrato |
+| `FinalDate`      | `DateTime`            | Fecha de fin del contrato |
+| `SubscriptionId` | `int?`                | Relación con la suscripción (`Subscription`) |
+| `Status`         | `EStates`             | Estado del contrato (Active, Inactive) |
+| `Owner`          | `Owner?`              | Dueño de hotel al cual corresponde el contrato |
+| `Subscription`   | `Subscription?`       | Suscripción a la cual corresponde el contrato |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreateContractOwnerCommand` y `UpdateContractOwnerCommand`
+
+---
+
+###  `ESubscriptionTypes` (Value Object)
+
+Representa los tipos de suscripción que puede elegir un dueño de hotel.
+
+#### Atributos principales:
+
+| Valores          | Descripción |
+|------------------|-------------|
+| `Basic`          | Suscripción más básica para hoteles pequeños |
+| `Regular`        | Suscripción regular o estándar |
+| `Premium`        | Suscripción mejorada para hoteles más grandes |
+
+---
+
+###  `EStates` (Value Object)
+
+Representa los estados en los que puede estar una suscripción o un contrato.
+
+#### Atributos principales:
+
+| Valores          | Descripción |
+|------------------|-------------|
+| `Active`         | Estado activo y vigente |
+| `Inactive`       | Estado inactivo e inválido |
+
+---
+
+## Comandos
+
+---
+
+### PaymentCustomer
+
+| Comando                            | Descripción |
+|------------------------------------|-------------|
+| `CreatePaymentCustomerCommand.cs`  | Permite crear un nuevo pago asociado a un huésped, con los atributos necesarios. |
+| `UpdatePaymentCustomerCommand.cs`  | Permite modificar los datos de un pago existente. |
+
+---
+
+### PaymentOwner
+
+| Comando                          | Descripción |
+|------------------------------------|-------------|
+| `CreatePaymentOwnerCommand.cs`  | Permite crear un nuevo pago asociado a un dueño de hotel, con los atributos necesarios. |
+| `UpdatePaymentOwnerCommand.cs`  | Permite modificar los datos de un pago existente. |
+
+---
+
+### Subscription
+
+| Comando                         | Descripción |
+|------------------------------------|-------------|
+| `CreateSubscriptionCommand.cs`  | Permite crear una nueva suscripción, con los atributos necesarios. |
+| `UpdateSubscriptionCommand.cs`  | Permite modificar los datos de una suscripción existente. |
+
+---
+
+### ContractOwner
+
+| Comando                         | Descripción |
+|------------------------------------|-------------|
+| `CreateContractOwnerCommand.cs`  | Permite crear un nuevo contrato, con los atributos necesarios. |
+| `UpdateContractOwnerCommand.cs`  | Permite modificar los datos de un contrato existente. |
+
+---
+
+### Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllPaymentCustomersQuery.cs` | Obtener todos los pagos de huéspedes. |
+| `GetPaymentCustomerByIdQuery.cs` | Obtener el pago de huésped asociado a un identificador. |
+| `GetAllPaymentCustomersByCustomerIdQuery.cs` | Obtener todos los pagos asociados a un CustomerId. |
+| `GetAllPaymentOwnersQuery.cs` | Obtener todos los pagos de dueños de hoteles. |
+| `GetPaymentOwnerByIdQuery.cs` | Obtener el pago de dueño de hotel asociado a un identificador. |
+| `GetAllPaymentOwnersByOwnerIdQuery.cs` | Obtener todos los pagos asociados a un OwnerId. |
+| `GetAllSubscriptionsQuery.cs` | Obtener todas las suscripciones. |
+| `GetSubscriptionByIdQuery.cs` | Obtener la suscripción asociada a un identificador. |
+| `GetAllSubscriptionsByNameQuery.cs` | Obtener todas las suscripciones con el nombre indicado. |
+| `GetAllSubscriptionsByStatusQuery.cs` | Obtener todas las suscripciones con el estado indicado. |
+| `GetAllContractOwnersQuery.cs` | Obtener todos los contratos de dueños. |
+| `GetContractOwnerByIdQuery.cs` | Obtener el contrato asociado a un identificador. |
+| `GetAllContractOwnersByOwnerIdQuery.cs` | Obtener todos los contratos asociados a un OwnerId. |
+| `GetAllContractOwnersBySubscriptionIdQuery.cs` | Obtener todos los contratos asociados a un SubscriptionId. |
+
+---
+
+### Repositories (Interfaces)
+
+| Archivo                   | Descripción breve |
+|--------------------------|--------------------|
+| `IPaymentCustomerRepository.cs`  | Define operaciones sobre los pagos de huéspedes: FindByCustomerIdAsync. |
+| `IPaymentOwnerRepository.cs`     | Define operaciones sobre los pagos de dueños de hoteles: FindByOwnerIdAsync. |
+| `ISubscriptionRepository.cs` | Define operaciones sobre las suscripciones: FindByNameAsync, FindByStatusAsync. |
+| `IContractOwnerRepository.cs` | Define operaciones sobre los contratos: FindByOwnerIdAsync, FindBySubscriptionIdAsync. |
+
+---
+
+###  Services
+
+####  Booking
+
+### PaymentCustomer
+
+| Servicio                            | Descripción |
+|------------------------------------|-------------|
+| `IPaymentCustomerCommandService.cs`  | Define comandos para crear y modificar un pago de huésped. |
+| `IPaymentCustomerQueryService.cs`  | Define comandos para obtener pagos. |
+
+---
+
+### PaymentOwner
+
+| Servicio                          | Descripción |
+|------------------------------------|-------------|
+| `IPaymentOwnerCommandService.cs`  | Define comandos para crear y modificar un pago de dueño. |
+| `IPaymentOwnerQueryService.cs`  | Define comandos para obtener pagos. |
+
+---
+
+### Subscription
+
+| Servicio                         | Descripción |
+|------------------------------------|-------------|
+| `ISubscriptionCommandService.cs`  | Define comandos para crear y modificar una suscripción. |
+| `ISubscriptionQueryService.cs`  | Define comandos para obtener suscripciones. |
+
+---
+
+### ContractOwner
+
+| Servicio                         | Descripción |
+|------------------------------------|-------------|
+| `IContractOwnerCommandService.cs`  | Define comandos para crear y modificar un contrato. |
+| `IContractOwnerQueryService.cs`  | Define comandos para obtener contratos. |
+
+---
+
+#### 4.2.4.2. Interface Layer
+
+### Capa de Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, la cual va a interactuar con otros Bounded Context y con el exterior. Recibe solicitudes HTTP, las transforma en comandos o queries y devuelve respuestas adecuadas al cliente.
+
+---
+
+### Resources
+
+Las clases `Resource` funcionan como objetos de transferencia entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `PaymentCustomerResource.cs`      | Recibe datos para crear un pago de huésped desde el cliente. |
+| `CreatePaymentCustomerResource.cs`| Permite crear un pago de huésped desde el cliente. |
+| `UpdatePaymentCustomerResource.cs`| Permite modificar un pago de huésped desde el cliente. |
+| `PaymentOwnerResource.cs`      | Recibe datos para crear un pago de dueño de hotel desde el cliente. |
+| `CreatePaymentOwnerResource.cs`| Permite crear un pago de dueño de hotel desde el cliente. |
+| `UpdatePaymentOwnerResource.cs`| Permite modificar un pago de dueño de hotel desde el cliente. |
+| `SubscriptionResource.cs`      | Recibe datos para crear una suscripción desde el cliente. |
+| `CreateSubscriptionResource.cs`| Permite crear una suscripción desde el cliente. |
+| `UpdateSubscriptionResource.cs`| Permite modificar una suscripción desde el cliente. |
+| `ContractOwnerResource.cs`      | Recibe datos para crear un contrato de dueño de hotel desde el cliente. |
+| `CreateContractOwnerResource.cs`| Permite crear un contrato de dueño de hotel desde el cliente. |
+| `UpdateContractOwnerResource.cs`| Permite modificar un contrato de dueño de hotel desde el cliente. |
+
+---
+
+### Transform
+
+Las clases `Transform` son responsables de:
+
+- Convertir `Resources` en **Commands** para que los maneje la capa de aplicación.
+- Convertir `Entities` del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `PaymentCustomerResourceFromEntityAssembler.cs`      | Convierte una entidad `PaymentCustomer` en un `PaymentCustomerResource`. |
+| `CreatePaymentCustomerCommandFromResourceAssembler.cs`| Convierte un `PaymentCustomerResource` en un `CreatePaymentCustomerCommand`. |
+| `UpdatePaymentCustomerCommandFromResourceAssembler.cs`| Convierte un `PaymentCustomerResource` en un `UpdatePaymentCustomerCommand`. |
+| `PaymentOwnerResourceFromEntityAssembler.cs`      | Convierte una entidad `PaymentOwner` en un `PaymentOwnerResource`. |
+| `CreatePaymentOwnerCommandFromResourceAssembler.cs`| Convierte un `PaymentOwnerResource` en un `CreatePaymentOwnerCommand`. |
+| `UpdatePaymentOwnerCommandFromResourceAssembler.cs`| Convierte un `PaymentOwnerResource` en un `UpdatePaymentOwnerCommand`. |
+| `SubscriptionResourceFromEntityAssembler.cs`      | Convierte una entidad `Subscription` en un `SubscriptionResource`. |
+| `CreateSubscriptionCommandFromResourceAssembler.cs`| Convierte un `SubscriptionResource` en un `CreateSubscriptionCommand`. |
+| `UpdateSubscriptionCommandFromResourceAssembler.cs`| Convierte un `SubscriptionResource` en un `UpdateSubscriptionCommand`. |
+
+### Controllers
+
+Cada Aggregate del Bounded Context cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `PaymentCustomerController.cs` | `/api/payment-customer`  | Gestiona la creación, modificación y consulta de pagos de huéspedes. |
+| `PaymentOwnerController.cs`    | `/api/payment-owner`     | Gestiona la creación, modificación y consulta de pagos de dueños de hoteles. |
+|   `SubscriptionController.cs`  | `/api/subscription`      | Gestiona la creación, modificación y consulta de suscripciones. |
+|  `ContractOwnerController.cs`  | `/api/contract-owner`    | Gestiona la creación, modificación y consulta de contratos de dueños de hoteles. |
+
+
+
+#### 4.2.4.3. Application Layer
+
+### Gestión de Flujos de Negocio
+
+La carpeta `Application/Internal` representa la capa de aplicación de la arquitectura, el cual gestiona los servicios que definen el flujo de negocio de la aplicación.
+
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `PaymentCustomerCommandService.cs`       | Maneja comandos para registrar un pago de huésped y modificarlo. |
+| `PaymentOwnerCommandService.cs`          | Maneja comandos para registrar un pago de dueño de hotel y modificarlo. |
+| `SubscriptionCommandService.cs`     | Maneja comandos para registrar una nueva suscripción. |
+| `ContractOwnerCommandService.cs`     | Maneja comandos para crear un nuevo contrato de dueño de hotel. |
+
+---
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `PaymentCustomerQueryService.cs`          | Devuelve pagos de huéspedes filtrados por ID o CustomerID. |
+| `PaymentOwnerQueryService.cs`             | Devuelve pagos de dueños de hoteles filtrados por ID o OwnerID. |
+| `SubscriptionQueryService.cs`             | Devuelve suscripciones filtradas por ID, nombre o estado. |
+| `ContractOwnerQueryService.cs`            | Devuelve contratos de dueños de hotel filtradas por ID, OwnerID o SuscriptionID. |
+
+---
+
+## Capabilities del Bounded Context `IAM`
+
+A partir del Bounded Context Canvas y el Event Storming elaborado, podemos identificar: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Listar todos los pagos de huésped**    | Query         | `PaymentCustomerQueryService.Handle(GetAllPaymentCustomersQuery)`          | Lista todos los pagos realizados por todos los huéspedes. |
+| ✅ **Ver pago de huésped seleccionado**    | Query         | `PaymentCustomerQueryService.Handle(GetPaymentCustomerByIdQuery)`          | Muestra la información de un determinado pago de huésped. |
+| ✅ **Listar todos los pagos realizados por un huésped**    | Query         | `PaymentCustomerQueryService.Handle(GetAllPaymentCustomersByCustomerIdQuery)`          | Lista todos los pagos asociados a un determinado identificador de huésped. |
+| ✅ **Registrar un nuevo pago de huésped**                         | Command       | `PaymentCustomerCommandService.Handle(CreatePaymentCustomerCommand)` | Crea un nuevo registro de pago de huésped con sus respectivos datos. |
+| ✅ **Actualizar un pago de huésped existente**                           | Command       | `PaymentCustomerCommandService.Handle(UpdatePaymentCustomerCommand)` | Actualiza los datos de un pago de huésped creado anteriormente. |
+| ✅ **Listar todos los pagos de dueños**                         | Query       | `PaymentOwnerQueryService.Handle(GetAllPaymentOwnersQuery)` | Lista todos los pagos realizados por todos los dueños. |
+| ✅ **Ver pago de dueño seleccionado**                            | Query       | `PaymentOwnerQueryService.Handle(GetPaymentOwnerByIdQuery)` | Muestra la información de un determinado pago de dueño. |
+| ✅ **Listar todos los pagos realizados por un dueño**                      | Query       | `PaymentOwnerQueryService.Handle(GetAllPaymentOwnersByOwnerIdQuery)` | Lista todos los pagos asociados a un determinado identificador de dueño. |
+| ✅ **Registrar un nuevo pago de dueño**                      | Command         | `PaymentOwnerCommandService.Handle(CreatePaymentOwnerCommand)` | Crea un nuevo registro de pago de dueño con sus respectivos datos. |
+| ✅ **Actualizar un pago de dueño existente**                | Command         | `PaymentOwnerCommandService.Handle(UpdatePaymentOwnerCommand)` | Actualiza los datos de un pago de dueño creado anteriormente. |
+| ✅ **Listar todas las suscripciones**                         | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsQuery)` | Lista todas las suscripciones registradas. |
+| ✅ **Ver suscripción seleccionada**                            | Query       | `SubscriptionQueryService.Handle(GetSubscriptionByIdQuery)` | Muestra la información de una determinada suscripción. |
+| ✅ **Listar todas las suscripciones del mismo nombre**                      | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsByNameQuery)` | Lista todas las suscripciones del mismo tipo (básica, regular o premium). |
+| ✅ **Listar todas las suscripciones del mismo estado**                      | Query       | `SubscriptionQueryService.Handle(GetAllSubscriptionsByStatusQuery)` | Lista todas las suscripciones del mismo estado (activo o inactivo). |
+| ✅ **Registrar una nueva suscripción**                      | Command         | `SubscriptionCommandService.Handle(CreateSubscriptionCommand)` | Crea un nuevo registro de suscripción con sus respectivos datos. |
+| ✅ **Actualizar una suscripción existente**                | Command         | `SubscriptionCommandService.Handle(UpdateSubscriptionCommand)` | Actualiza los datos de una suscripción creada anteriormente. |
+| ✅ **Listar todos los contratos de dueños**                         | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersQuery)` | Lista todos los contratos de dueños registrados. |
+| ✅ **Ver contrato de dueño seleccionado**                           | Query       | `ContractOwnerQueryService.Handle(GetContractOwnerByIdQuery)` | Muestra la información de un determinado contrato de dueño. |
+| ✅ **Listar todos los contratos de dueños realizados por un dueño**          | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersByOwnerIdQuery)` | Lista todos los contratos de dueño asociados a un determinado identificador de dueño. |
+| ✅ **Listar todos los contratos de dueños realizados por tipo de suscripción**        | Query       | `ContractOwnerQueryService.Handle(GetAllContractOwnersBySubscriptionIdQuery)` | Lista todos los contratos de dueño asociados a un determinado tipo de suscripción. |
+| ✅ **Registrar un nuevo contrato de dueño**                      | Command         | `ContractOwnerCommandService.Handle(CreateContractOwnerCommand)` | Crea un nuevo registro de contrato de dueño con sus respectivos datos. |
+| ✅ **Actualizar un contrato de dueño existente**                | Command         | `ContractOwnerCommandService.Handle(UpdateContractOwnerCommand)` | Actualiza los datos de un contrato de dueño creado anteriormente. |
+
+#### 4.2.4.4. Infrastructure Layer
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `PaymentCustomerRepository.cs`    | `IPaymentCustomerRepository.cs`  | Implementa operaciones de persistencia y consulta sobre los pagos de huéspedes. |
+| `PaymentOwnerRepository.cs`       | `IPaymentOwnerRepository`    | Implementa operaciones de persistencia y consulta sobre los pagos de dueños de hoteles. |
+| `SubscriptionRepository.cs`       | `ISubscriptionRepository`        | Implementa operaciones de persistencia y consulta sobre las suscripciones. |
+| `ContractOwnerRepository.cs`       | `IContractOwnerRepository`        | Implementa operaciones de persistencia y consulta sobre los contratos de dueños de hoteles. |
+
+---
+
+#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
+Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
+caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
+PlantUML para UML y C4 Model.
+En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
+para cada uno de los Containers considerados para el bounded context. En estos
+diagramas el equipo busca reflejar la descomposición de cada Container para
+identificar los bloques estructurales principales y sus interacciones. Un Component
+Diagram debe mostrar cómo un container está conformado por components, qué
+son cada uno de dichos components, sus responsabilidades y los detalles de
+implementación/tecnología. Utilice la herramienta indicada para la elaboración del
+diagrama.
+https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
+#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+
+![Commerce Bounded Context Domain Layer Class Diagram](assets/img/commerce-bounded-context/commerce-class-diagram.png)
+
+##### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+![Commerce Bounded Context Database Design Diagram](assets/img/commerce-bounded-context/commerce-database-diagram.png)
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 4.2.X. Bounded Context: Inventory Bounded Context
 
 #### 4.2.X.1. Domain Layer
 En esta capa el equipo explica por medio de qué clases representará el core de la
@@ -2523,6 +3544,185 @@ En esta capa el equipo presenta aquellas clases que acceden a servicios externos
 como databases, messaging systems o email services. Es en esta capa que se ubica la
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
+#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
+Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
+caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
+PlantUML para UML y C4 Model.
+En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
+para cada uno de los Containers considerados para el bounded context. En estos
+diagramas el equipo busca reflejar la descomposición de cada Container para
+identificar los bloques estructurales principales y sus interacciones. Un Component
+Diagram debe mostrar cómo un container está conformado por components, qué
+son cada uno de dichos components, sus responsabilidades y los detalles de
+implementación/tecnología. Utilice la herramienta indicada para la elaboración del
+diagrama.
+https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
+#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
+detalle sobre la implementación de componentes en el bounded context. Aquí se
+incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
+Bounded Context Database Diagram.
+https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+En esta sección el equipo presenta el Class Diagram de UML para las clases del
+Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
+clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
+incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
+Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
+y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+##### 4.2.X.6.2. Bounded Context Database Design Diagram
+En esta sección el equipo presenta y explica el Database Diagram que incluye los
+objetos de base de datos que permitirán la persistencia de información para los
+objetos del bounded context. Para el caso de un almacenamiento en base de datos
+relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
+primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
+elaboración del diagrama la herramienta indicada.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 4.2.X. Bounded Context: Commmunication Bounded Context
+
+#### 4.2.X.1. Domain Layer
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
+
+---
+
+### `Notification`
+Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
+
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string?`                | Título de la notificación |
+| `Content`       | `string?`             | Contenido de la notificación |
+| `SenderType`| `string?`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
+| `Status`      | `string?`             | Estado de la notificación: "Seen", "Not Seen" |
+
+
+#### Constructores:
+- Vacío `Notification()`
+- A partir de `CreateNotificationCommand`.
+
+## Comandos
+
+### Notification
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateNotificationCommand.cs`         | Contiene todos los datos necesarios para crear una nueva Notificación (`Notification`) incluyendo Title, Content, SenderType, SenderId, ReceiverId y Satus. |
+
+
+---
+
+## Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetNotificationByIdQuery.cs`  | Obtiene la notificación asociada al identificador único de la misma. |
+--- 
+## Repositories (Interfaces)
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `INotificationRepository.cs`               | Define operaciones relacionadas conlas notificaciones |
+
+--- 
+##  Services
+
+###  Notification
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `INotificationCommandService.cs`     | Define comandos como crear una notificación. |
+| `INotificationQueryService.cs`       | Define consultas para obtener notificaciones mediante su identificador único. |
+
+
+#### 4.2.X.2. Interface Layer
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateNotificationResource.cs`        | Recibe datos para crear una nueva notificación. |
+| `NotificationResource.cs` | Devuelve datos de la notificación al cliente (GET). |
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateNotificationCommandFromResourceAssembler.cs`         | Transforma `CreateNotificationResource` en `CreateNotificationCommand`. 
+| `NotificationResourceFromEntityAssembler.cs`                | Convierte una entidad `Notification` en un `NotificationResource` limpio (sin ciclos). |
+
+---
+
+### Controllers
+
+Cada entidad clave en el Bounded Context `Communication` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `NotificationsController.cs` | `/api/v1/notifications`           | Gestiona la creación y la consulta de notificaciones. |
+
+---
+
+
+#### 4.2.X.3. Application Layer
+
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `NotificationCommandService.cs`       | Maneja comandos para crear notificaciones. Utiliza el agregado `Notification`. |
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `NotificationQueryService.cs`           | Devuelve la notificación disponible. |
+
+## Capabilities del Bounded Context `Communication`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Create new notification**    | Command         | `NotificationCommandService.Handle(CreateNotificationCommand)`          | Registra una nueva notificación. |
+| ✅ **Notificar usuario**                         | Query       | `NotificationQueryService.Handle(GetNotificationByIdQuery)` | Obtiene notificación según su Id |
+| ✅ **Listar notificaciones**                            | Query       | `NotificationQueryService.Handle(GetNotificationByHotelIdQuery)` | Obtiene una lista de notificaciones filtrada según el identificador único de un hotel. |
+
+---
+
+
+#### 4.2.X.4. Infrastructure Layer
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `NotificationRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre las notificaciones (`Notification`), incluyendo la creación de una notificación |
+
+---
+
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
 Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
 Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
