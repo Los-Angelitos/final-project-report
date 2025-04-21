@@ -175,10 +175,6 @@ MISION:
 </div><br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
-
-<div style="text-align: center;">
   <img src="./assets/img/presentation/giacomo.jpg" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
