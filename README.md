@@ -279,7 +279,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compas.
         <p/>
-        Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, logré
+        Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, colaboré con algunas estrategias y dinamicas grupales, como dirigiendo el proceso de Event Storming en cada uno de sus pasos. Tambien colaboré con la asignación de algunas tareas y el desarrollo de nuestro tablero Kanban grupal. 
         <p/>
         Ramon Jorge
         <p/>
@@ -299,7 +299,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Mauricio Rojas: 
         <p/>
-        Giacomo Zoppi: 
+        Giacomo Zoppi: En este entegable, colaboré en formar un ambiente colaborativo en el grupo, ayudé a establecer algunas tareas y objetivos en nuestro tablero Kanban. Tambien, a la hora de cumplir a tiempo con mis tareas, genero un ambiente responsable en el que todos estamos seguros que cada uno cumple su parte. 
         <p/>
         Ramon Jorge
         <p/>
