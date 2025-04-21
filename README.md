@@ -1913,6 +1913,11 @@ Critique.
   <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
+<h2>Inventory Bounded Context</h2>
+<p>Es principalmente responsable de la gestión integral de suministros y solicitudes de materiales dentro de la plataforma.</p>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
+</div><br>
 **Communication Bounded Context Canvas**
 
 Es principalmente responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
@@ -2549,6 +2554,332 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 4.2.5. Bounded Context: Inventory Bounded Context
+
+#### 4.2.5.1. Domain Layer
+### Agregados y Entidades del Dominio `Inventory`
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+
+---
+
+
+Representa un suministro de inventario registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo          | Tipo                     | Descripción |
+|-------------------|--------------------------|-------------|
+| `Id`             | `int`                    | Identificador único del suministro |
+| `ProviderId`     | `int`                    | Relación con el proveedor mediante su identificador único (`Provider`) |
+| `HotelId`       | `int`                    | Relación con el hotel mediante su identificador único (`Hotel`) |
+| `Name`          | `string`                 | Nombre del suministro (en mayúsculas) |
+| `Price`         | `decimal`                | Precio unitario del suministro |
+| `Stock`         | `int`                    | Cantidad disponible en inventario |
+| `State`         | `string`                 | Estado actual del suministro (en mayúsculas) |
+| `Hotel`         | `Hotel?`                 | Hotel asociado al suministro |
+| `Provider`      | `Provider?`              | Proveedor asociado al suministro |
+| `SupplyRequests`| `ICollection<SupplyRequest>` | Relación con las solicitudes de suministro asociadas |
+
+#### Constructores:
+- Por parámetros individuales: `Id`, `HotelId`, `ProviderId`, `Name`, `Price`, `Stock`, `State`
+- A partir de `CreateSupplyCommand`
+
+#### Métodos:
+- `Update(UpdateSupplyCommand command)`: Actualiza todos los campos del suministro con los valores proporcionados
+
+Representa una solicitud de suministro registrada dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo          | Tipo               | Descripción |
+|-------------------|--------------------|-------------|
+| `Id`             | `int`              | Identificador único de la solicitud |
+| `PaymentOwnerId`  | `int`              | ID del propietario del pago asociado (`PaymentOwner`) |
+| `SupplyId`       | `int`              | ID del suministro solicitado (`Supply`) |
+| `Count`          | `int`              | Cantidad de unidades solicitadas |
+| `Amount`         | `decimal`          | Monto total de la solicitud |
+| `PaymentOwner`   | `PaymentOwner?`    | Propietario del pago asociado a la solicitud |
+| `Supply`         | `Supply?`          | Suministro asociado a la solicitud |
+
+#### Constructores:
+- Por parámetros individuales: `Id`, `PaymentOwnerId`, `SupplyId`, `Count`, `Amount`
+- A partir de `CreateSupplyRequestCommand`
+
+### SupplyAudit
+
+Representa la extensión al agregado Supply que permite manejar la fecha de creación y modificación del suministro.
+
+## Atributos principales:
+
+| Atributo       | Tipo               | Descripción |
+|----------------|--------------------|-------------|
+| `CreatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se creó el suministro |
+| `UpdatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se modificó el suministro |
+
+### SupplyRequestAudit
+
+Representa la extensión al agregado SupplyRequest que permite manejar la fecha de creación y modificación de la solicitud.
+
+## Atributos principales:
+
+| Atributo       | Tipo               | Descripción |
+|----------------|--------------------|-------------|
+| `CreatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se creó la solicitud |
+| `UpdatedDate`   | `DateTimeOffset?`    | Fecha y hora exactas en que se modificó la solicitud |
+
+## Comandos
+
+### Supply
+
+| Comando               | Descripción |
+|-----------------------|-------------|
+| `CreateSupplyCommand` | Contiene todos los datos necesarios para crear un nuevo suministro (Supply) incluyendo proveedor, hotel, nombre, precio, stock y estado. |
+| `UpdateSupplyCommand` | Permite actualizar los datos requeridos para un suministro como proveedor, hotel, nombre, precio, stock y estado. |
+
+### SupplyRequest
+
+| Comando                    | Descripción |
+|----------------------------|-------------|
+| `CreateSupplyRequestCommand` | Contiene todos los datos necesarios para crear una nueva solicitud de suministro (SupplyRequest) incluyendo pagador, suministro, cantidad y monto total. |
+
+## Queries
+
+### Supply
+
+| Archivo                          | Descripción breve |
+|----------------------------------|-------------------|
+| `GetAllSuppliesQuery.cs`         | Obtener todos los suministros registrados en el sistema. |
+| `GetSupplyByIdQuery.cs`          | Obtiene un suministro específico asociado a su ID único. |
+| `GetSupplyByProviderIdQuery.cs`  | Obtiene los suministros asociados a un proveedor mediante su identificador único. |
+
+### SupplyRequest
+
+| Archivo                                  | Descripción breve |
+|------------------------------------------|-------------------|
+| `GetAllSupplyRequestQuery.cs`            | Obtener todas las solicitudes de suministro registradas. |
+| `GetSupplyRequestByIdQuery.cs`           | Obtiene una solicitud de suministro específica por su ID único. |
+| `GetSupplyRequestByPaymentOwnerIdQuery.cs` | Obtiene las solicitudes asociadas a un pagador mediante su ID único. |
+| `GetSupplyRequestBySupplyIdQuery.cs`     | Obtiene las solicitudes asociadas a un suministro específico mediante su ID. |
+
+
+## Repositories(Interfaces)
+
+### Supply
+
+| Archivo                     | Descripción breve |
+|-----------------------------|-------------------|
+| `ISupplyRepository.cs`      | Define operaciones sobre los suministros: `FindByProviderId`, `FindSuppliesByHotelIdAsync` y hereda operaciones base de `IBaseRepository<Supply>`. |
+
+### SupplyRequest
+
+| Archivo                          | Descripción breve |
+|----------------------------------|-------------------|
+| `ISupplyRequestRepository.cs`    | Define operaciones sobre solicitudes de suministro: `FindBySupplyId`, `FindByPaymentOwnerId`, `FindAllSuppliesRequestsAsync` y hereda operaciones base de `IBaseRepository<SupplyRequest>`. |
+
+
+## Services
+
+### Supply
+
+| Archivo                     | Descripción breve |
+|-----------------------------|-------------------|
+| `ISupplyCommandService.cs`  | Define comandos para crear y actualizar suministros. |
+| `ISupplyQueryService.cs`    | Define consultas para obtener suministros por ID, por proveedor o por hotel. |
+
+---
+
+### SupplyRequest
+
+| Archivo                          | Descripción breve |
+|----------------------------------|-------------------|
+| `ISupplyRequestCommandService.cs` | Define comandos para crear solicitudes de suministro. |
+| `ISupplyRequestQueryService.cs`   | Define consultas para obtener solicitudes por ID, por pagador, por suministro o por hotel. |
+
+## Exceptions
+
+### Supply
+
+| Archivo                                | Descripción breve |
+|----------------------------------------|-------------------|
+| `InvalidSupplyNameException.cs`        | Excepción lanzada cuando el nombre del suministro no es válido. |
+| `InvalidSupplyPriceException.cs`       | Excepción lanzada cuando el precio del suministro no es válido. |
+| `InvalidSupplyStockException.cs`       | Excepción lanzada cuando el stock del suministro no es válido. |
+| `SupplyNotFoundException.cs`          | Excepción lanzada cuando no se encuentra un suministro específico. |
+
+
+### SupplyRequest
+
+| Archivo                                      | Descripción breve |
+|----------------------------------------------|-------------------|
+| `InvalidSupplyRequestAmountException.cs`     | Excepción lanzada cuando el monto de la solicitud no es válido. |
+| `InvalidSupplyRequestCountException.cs`      | Excepción lanzada cuando la cantidad solicitada no es válida. |
+
+
+#### 4.2.5.2. Interface Layer
+La carpeta Interfaces/REST representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+## Resources
+
+Las clases *Resource* funcionan como objetos de transferencia entre el mundo externo (API REST) y la capa de aplicación.
+
+### Supply
+
+| Archivo                        | Función |
+|--------------------------------|---------|
+| `CreateSupplyResource.cs`      | Recibe datos para crear un nuevo suministro. |
+| `SupplyResource.cs`            | Devuelve datos del suministro al cliente (GET). |
+| `UpdateSupplyResource.cs`      | Devuelve datos actualizados del suministro al cliente (GET). |
+
+### SupplyRequest
+
+| Archivo                          | Función |
+|----------------------------------|---------|
+| `CreateSupplyRequestResource.cs` | Recibe datos para crear una nueva solicitud de suministro. |
+| `SupplyRequestResource.cs`       | Devuelve datos de la solicitud al cliente (GET). |
+
+
+## Transform/Assemblers
+
+Las clases de la carpeta *Transform* (también llamadas Assemblers) son responsables de:
+- Convertir *Resources* en Command Objects para que los maneje la capa de aplicación
+- Convertir entidades del dominio en Resources para que sean devueltos en la respuesta de la API
+
+### Supply
+
+| Archivo                                      | Función |
+|----------------------------------------------|---------|
+| `CreateSupplyCommandFromResourceAssembler.cs` | Transforma CreateSupplyResource en CreateSupplyCommand. |
+| `UpdateSupplyCommandFromResource.cs`         | Transforma UpdateSupplyResource en UpdateSupplyCommand. |
+| `SupplyResourceFromEntityAssembler.cs`       | Convierte una entidad Supply en un SupplyResource limpio (sin ciclos). |
+
+### SupplyRequest
+
+| Archivo                                           | Función |
+|---------------------------------------------------|---------|
+| `CreateSupplyRequestFromResourceAssembler.cs`     | Transforma CreateSupplyRequestResource en CreateSupplyRequestCommand. |
+| `SupplyRequestResourceFromEntityAssembler.cs`     | Convierte una entidad SupplyRequest en un SupplyRequestResource limpio (sin ciclos). |
+
+
+## Controllers
+
+Cada conjunto clave en el Bounded Context de Inventory cuenta con un REST Controller. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+### Supply
+
+| Controlador               | Ruta base típica           | Responsabilidad principal |
+|---------------------------|----------------------------|---------------------------|
+| `SupplyController.cs`      | `/api/v1/supply`         | Maneja la creación, actualización y consulta de suministros. |
+
+### SupplyRequest
+
+| Controlador                     | Ruta base típica               | Responsabilidad principal |
+|---------------------------------|--------------------------------|---------------------------|
+| `SupplyRequestController.cs`    | `/api/v1/supply-request`      | Administra el ciclo de vida de solicitudes de suministros. |
+
+
+#### 4.2.5.3. Application Layer
+
+## Servicios de Aplicación – Gestión de Flujos de Negocio
+
+---
+
+## CommandServices
+
+### Supply
+
+| **Clase**                 | **Descripción** |
+|---------------------------|----------------|
+| `SupplyCommandService.cs` | Maneja comandos para crear y actualizar suministros. Valida: nombre no vacío, precio > 0, stock no negativo. Utiliza el agregado `Supply` y maneja excepciones específicas del dominio. |
+
+### SupplyRequest
+
+| **Clase**                      | **Descripción** |
+|--------------------------------|----------------|
+| `SupplyRequestCommandService.cs` | Procesa la creación de solicitudes de suministro. Valida: cantidad > 0, monto > 0 y existencia del suministro. Interactúa con los agregados `SupplyRequest` y `Supply`. |
+
+---
+
+## QueryServices
+
+### Supply
+
+| **Clase**             | **Descripción** |
+|-----------------------|----------------|
+| `SupplyQueryService.cs` | Proporciona consultas para: obtener suministro por ID, listar todos los suministros de un hotel, y buscar suministros por proveedor. Utiliza el repositorio `ISupplyRepository`. |
+
+### SupplyRequest
+
+| **Clase**                   | **Descripción** |
+|-----------------------------|----------------|
+| `SupplyRequestQueryService.cs` | Ofrece consultas para: obtener solicitud por ID, listar todas las solicitudes de un hotel, buscar por pagador o por suministro. Utiliza `ISupplyRequestRepository`. |
+
+
+## Capabilities del Bounded Context Organizational Management
+---
+Extraído del Bounded Context Canvas y el Event Storming elaborado:
+
+## Supply Management
+
+| Capability (Funcionalidad) | Tipo    | Handler Responsable    | Descripción    |
+|---------------------------|---------|------------------------|---------------|
+| ✅Add new supply            | Command | `SupplyCommandService.Handle(CreateSupplyCommand)` | Registra un nuevo suministro en el inventario del hotel |
+| ✅Update supply details     | Command | `SupplyCommandService.Handle(UpdateSupplyCommand)` | Actualiza los datos de un suministro existente |
+| ✅View supply inventory     | Query   | `SupplyQueryService.Handle(GetAllSuppliesQuery)` | Obtiene la lista completa de suministros |
+| ✅Filter supplies by hotel  | Query   | `SupplyQueryService.Handle(GetSupplyByProviderIdQuery)` | Lista suministros filtrados por hotel específico |
+| ✅Check supply details      | Query   | `SupplyQueryService.Handle(GetSupplyByIdQuery)` | Muestra los detalles completos de un suministro específico |
+
+## Supply Request Management
+
+| Capability (Funcionalidad) | Tipo    | Handler Responsable    | Descripción    |
+|---------------------------|---------|------------------------|---------------|
+| ✅Create supply request     | Command | `SupplyRequestCommandService.Handle(CreateSupplyRequestCommand)` | Genera una nueva solicitud de suministros |
+| ✅List all requests        | Query   | `SupplyRequestQueryService.Handle(GetAllSupplyRequestQuery)` | Muestra todas las solicitudes de suministros |
+| ✅View request details     | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByIdQuery)` | Detalla una solicitud específica |
+| ✅Filter requests by supply| Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestBySupplyIdQuery)` | Lista solicitudes por tipo de suministro |
+| ✅Check requester history  | Query   | `SupplyRequestQueryService.Handle(GetSupplyRequestByPaymentOwnerIdQuery)` | Muestra historial de solicitudes por pagador |
+
+#### 4.2.5.4. Infrastructure Layer
+
+## Supply
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|-----------------------------|-------------------|
+| `SupplyRepository.cs`     | `ISupplyRepository`         | Implementa operaciones de persistencia para suministros (`Supply`), incluyendo creación, actualización y cambio de estado (ACTIVE/INACTIVE). Gestiona las relaciones con proveedores y hoteles. |
+
+## SupplyRequest
+
+| Clase                          | Interfaz implementada            | Función principal |
+|--------------------------------|----------------------------------|-------------------|
+| `SupplyRequestRepository.cs`   | `ISupplyRequestRepository`       | Implementa operaciones para solicitudes de suministro (`SupplyRequest`), incluyendo creación y consultas por pagador, suministro o hotel. |
+
+
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
+<p >A continuación, el equipo presenta los diagramas de componentes del Bounded Context Inventory utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.</p>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/DZkhfiE.png" alt="Class Diagram Inventory" width="70%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/s90C8zf.png" alt="Class Diagram Inventory" width="70%" />
+</div><br>
+
+
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/LaDWjQF.png" alt="Class Diagram Inventory" width="90%" />
+</div><br>
+
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
+</div><br>
+
 ### 4.2.3. Bounded Context: Organizational Management Bounded Context
 
 #### 4.2.3.1. Domain Layer
@@ -3438,6 +3769,7 @@ elaboración del diagrama la herramienta indicada.
 - Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 - UX Planet. (2017). Information Architecture. Basics for Designers. - UX Planet. Medium; UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
 - Gothelf, J. (2024). Leanux Sampler. https://es.scribd.com/document/655516553/Leanux-Sampler
-#Anexos
+
+# Anexos
 
 
