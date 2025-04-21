@@ -134,7 +134,14 @@ Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando
 Se completaron los siguientes puntos: capitulos I-IV, conclusiones y video exposición, en colaboración del equipo. 
 Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo. 
 
-(IMAGENES)
+![image](https://github.com/user-attachments/assets/fa3d4175-c603-4bb3-b582-5980284581f0)
+
+![image](https://github.com/user-attachments/assets/154cf9e0-6276-4d65-83f9-55d7c4759cdf)
+
+![image](https://github.com/user-attachments/assets/df947a4f-1357-46f9-b40f-b986c7145aac)
+
+![image](https://github.com/user-attachments/assets/b2afbc77-613e-4edb-96a4-60289f187457)
+
 
 # Contenido
 
