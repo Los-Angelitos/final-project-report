@@ -2073,7 +2073,8 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ![image](https://github.com/user-attachments/assets/bbebfc85-9f04-4bbb-a651-3271a1c96033)
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
-![image](https://github.com/user-attachments/assets/e1ae1cab-6aed-431f-a367-25597395c4a0)
+![image](https://github.com/user-attachments/assets/8c242d51-1399-4d88-b830-2c8ec1e21b18)
+
 
 Las tablas principales y unicas del Bounded Context son: 
 
