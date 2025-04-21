@@ -1040,6 +1040,15 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 
 **Entrevista 02 (Administradores)**
 
+<br>
+URL del vídeo: <br>
+Nombre: Sergio Renard <br>
+Edad: 21 <br>
+Sexo: Masculino <br>
+Lugar donde vive: La Plata - Argentina <br>
+Ocupación: Administrador de hotel <br>
+Duración de la entrevista: 00:00 - 00:00 <br>
+Personalidad: Alegre <br>
 
 <div style="text-align: center;">
   <img src="https://i.imgur.com/sKGvt61.png" alt="Sergio Renard Interview" width="80%" />
