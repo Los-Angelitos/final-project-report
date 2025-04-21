@@ -153,10 +153,34 @@ MISION:
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
-| ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
-| Mauricio Abraham Rivo Rojas Sánchez	![Imagen del compañero](https://i.imgur.com/qQ6neUi.png) | U202211572            | Ingenieria de software | C++, C#, javascript y java            |
 
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/mauricio.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/ramon.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/omar.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/fabia.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/giacomo.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ## 1.2. Solution Profile
 
