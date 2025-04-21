@@ -153,10 +153,34 @@ MISION:
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
-| Miembros del equipo                             | Codigo Estudiante | Carrera                | Conocimientos / Habilidades |
-| ----------------------------------------------- | ----------------- | ---------------------- | --------------------------- |
-| Mauricio Abraham Rivo Rojas Sánchez	![Imagen del compañero](https://i.imgur.com/qQ6neUi.png) | U202211572            | Ingenieria de software | C++, C#, javascript y java            |
 
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/mauricio.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/ramon.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/omar.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/fabia.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/arian.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/presentation/giacomo.jpg" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
 
 ## 1.2. Solution Profile
 
@@ -2325,24 +2349,28 @@ implementación/tecnología. Utilice la herramienta indicada para la elaboració
 diagrama.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
+</div><br>
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.1.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/uml.png" alt="ERD IAM" width="90%" />
+</div><br>
+
+Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?viewport_loc=426%2C-1339%2C8386%2C2866%2C0_0&invitationId=inv_f0bef7c5-6e84-4e61-9298-6777d0880fb6
+
+##### 4.2.1.6.2. Bounded Context Database Design Diagram
+
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/erd.png" alt="ERD IAM" width="90%" />
+</div><br>
+
+Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
+
 ### 4.2.X. Bounded Context: Reservations Bounded Context
 
 #### 4.2.X.1. Domain Layer
