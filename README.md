@@ -2474,19 +2474,16 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+<p >A continuación, el equipo presenta los diagramas de componentes del Bounded Context Inventory utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.</p>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/DZkhfiE.png" alt="Class Diagram Inventory" width="70%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/s90C8zf.png" alt="Class Diagram Inventory" width="70%" />
+</div><br>
+
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
