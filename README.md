@@ -1876,39 +1876,50 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 
 #### 4.1.1.1. Candidate Context Discovery
 
-Paso 1: Unestructured Exploration: En el primer paso del EventStorming, se inicia con una sesión de lluvia de ideas enfocada en definir eventos o "cosas interesantes que sucedieron en el negocio". Es importante destacar que los eventos siempre son escritos en pasado. Para lograrlo, nos reunimos en grupo y empezamos a hacer una lluvia de ideas en la herramienta de Miro, con ayuda de post-its, los cuales reflejan un mapeo inicial de todos los posibles eventos que el sistema debería manejar para brindar una solución integral. 
-Imagen de la Reunión: ![Captura de pantalla 2025-04-08 202939](https://github.com/user-attachments/assets/094d7d96-808f-4de9-91fd-25f0bb3261c2)
-Imagen ejemplo: ![image](https://github.com/user-attachments/assets/0b722e13-49b3-42ed-bc04-473079ab5863)
+**Paso 1: Unstructured Exploration:** En el primer paso del EventStorming, se inicia con una sesión de lluvia de ideas enfocada en definir eventos o "cosas interesantes que sucedieron en el negocio". Es importante destacar que los eventos siempre son escritos en pasado. Para lograrlo, nos reunimos en grupo y empezamos a hacer una lluvia de ideas en la herramienta de Miro, con ayuda de post-its, los cuales reflejan un mapeo inicial de todos los posibles eventos que el sistema debería manejar para brindar una solución integral.  
+**Imagen de la Reunión:**  
+![Captura de pantalla 2025-04-08 202939](https://github.com/user-attachments/assets/094d7d96-808f-4de9-91fd-25f0bb3261c2)  
+**Imagen ejemplo:**  
+![image](https://github.com/user-attachments/assets/0b722e13-49b3-42ed-bc04-473079ab5863)
 
+**Paso 2: Timelines:** En este segundo paso, organizamos los eventos en el orden en el que ocurren dentro del dominio. En algunos casos, se dividen los eventos en ramificaciones, dependiendo de si se pueden generar diferentes resultados vinculados a un mismo evento. Para elaborarlas, primero debemos empezar con un happy path, o sea un escenario en el que todo resultó de forma exitosa. Después de ello, se pueden crear otras alternativas, que abarquen tanto fallos como otros resultados alternativos. Para conseguirlo, cada miembro seleccionó ciertos eventos y empezó a desarrollar una sucesión entre ellos. En este proceso, también definimos más eventos, así como happy paths. Este paso permite visualizar todas las posibles trayectorias que seguiría el sistema en respuesta a cada evento, estableciendo la base para desarrollar un flujo de trabajo eficiente y cohesivo que garantice una respuesta rápida y adecuada a cada situación monitorizada.  
+**Imagen de la Reunión:**  
+![Captura de pantalla 2025-04-08 203747](https://github.com/user-attachments/assets/841c9c77-fc3f-45bc-8f3b-d2f78c4df9fb)  
+**Imagen ejemplo:**  
+![image](https://github.com/user-attachments/assets/c06d909f-2324-46c0-b449-d78410e8cd15)
 
-Paso 2: Timelines: En este segundo paso, organizamos los eventos en el orden en el que ocurren dentro del dominio. En algunos casos, se dividen los eventos en ramificaciones, dependiendo de si se pueden generar diferentes resultados vinculados a un mismo evento. Para elaborarlas, primero debemos empezar con un happy path, o sea un escenario en el que todo resulto de forma exitosa. Después de ello, se pueden crear otras alternativas, que abarquen tanto fallos como otros resultados alternativos. Para conseguirlo, cada miembro seleccionó ciertos eventos y empezó a desarrollar una sucesión entre ellos. En este proceso, tambien definimos mas eventos, así como happy paths. Este paso permite visualizar todas las posibles trayectorias que seguiría el sistema en respuesta a cada evento, estableciendo la base para desarrollar un flujo de trabajo eficiente y cohesivo que garantice una respuesta rápida y adecuada a cada situación monitorizada.
-Imagen de la Reunión: ![Captura de pantalla 2025-04-08 203747](https://github.com/user-attachments/assets/841c9c77-fc3f-45bc-8f3b-d2f78c4df9fb)
-Imagen ejemplo: ![image](https://github.com/user-attachments/assets/c06d909f-2324-46c0-b449-d78410e8cd15)
+**Paso 3: Pain Points:** Aprovechamos este paso para establecer algunos puntos de interés, incluidos cuellos de botella, falta de documentación y carencias de conocimiento.
 
+**Paso 4: Pivotal Points:** Una vez que tenemos nuestras líneas de eventos al completo e incluimos los pain points, debemos definir eventos que marquen un cambio, ya sea en el contexto o en el proceso. Estos eventos se denominan eventos principales.  
+**Imagen de la Reunión:**  
+![Captura de pantalla 2025-04-08 205839](https://github.com/user-attachments/assets/c66a0c5e-948c-4904-b35c-35a7da48837a)
 
-Paso 3: Pain Points: Aprovechamos este paso para establecer algunos puntos de interés, incluidos cuellos de botella, falta de documentación y carencias de conocimiento. 
-Paso 4: Pivotal Points: Una vez que tenemos nuestras lineas de eventos al completo, incluimos los pain points, debemos definir eventos que marquen un cambio, ya sea en el contexto o en el proceso. Estos eventos se denominan eventos principales. 
-Imagen de la Reunión: ![Captura de pantalla 2025-04-08 205839](https://github.com/user-attachments/assets/c66a0c5e-948c-4904-b35c-35a7da48837a)
+**Paso 5: Commands:** En este paso introducimos los comandos, los cuales describen las acciones o causas que desencadenan eventos. Estos son escritos en imperativo y describen las operaciones que se ejecutan en el sistema. También asignamos aquellas funcionalidades importantes para la gestión hotelera y la reserva de habitaciones. Detallamos un flujo que, eventualmente, nos ayudaría a definir aquellos comandos que formarán parte de nuestra aplicación. Por último, definimos a los actores involucrados y los comandos que desencadenan.  
+**Imagen de la Reunión:**  
+![Captura de pantalla 2025-04-08 211944](https://github.com/user-attachments/assets/befb813c-7f3b-4d41-886c-0e6cfdbeb53b)  
+**Imagen ejemplo:**  
+![Captura de pantalla 2025-04-08 212427](https://github.com/user-attachments/assets/7693502e-eb1f-469c-afdb-3f6bb1803147)
 
-Paso 5: Commands: En este paso introducimos los comandos, los cuales describen las acciones o causas que desencadenan eventos. Estos son escritos en imperativo y describen las operaciones que se ejecutan en el sistema. También asignamos aquellas funcionalidades importantes para la gestión hotelera y la reserva de habitaciones. Detallamos un flujo y lo que eventualmente, nos ayudaría a definir aquellos comandos que formaran parte de nuestra aplicación. Por ultimo, definimos a los actores involucrados y los comandos que desencadena. 
-Imagen de la Reunión: ![Captura de pantalla 2025-04-08 211944](https://github.com/user-attachments/assets/befb813c-7f3b-4d41-886c-0e6cfdbeb53b)
-Imagen Ejemplo: ![Captura de pantalla 2025-04-08 212427](https://github.com/user-attachments/assets/7693502e-eb1f-469c-afdb-3f6bb1803147)
+**Paso 6: Policies:** En este sexto paso, aquellos comandos no vinculados con ningún usuario pueden ser vinculados con políticas de automatización que los ejecutan. Básicamente, hace que un comando se ejecute automáticamente cuando ciertos eventos ocurren.  
+**Imagen de la reunión:**  
+![Captura de pantalla 2025-04-08 215300](https://github.com/user-attachments/assets/29faa56e-a32b-4099-bd25-07e2885f6f03)
 
+**Paso 7: Read Models:** Introducimos los modelos de lectura, que abarcan desde reportes, vistas del frontend y queries. Permite definir una vista de datos para cada comando.  
+**Imagen de la Reunión:**  
+![Captura de pantalla 2025-04-08 213433](https://github.com/user-attachments/assets/6a6d8425-bb20-4f87-98e2-dc3a77e6653f)
 
-Paso 6: Policies: En este sexto paso, aquellos comandos no vinculados con ningun usuario, pueden ser vinculadas con politicas de automatización que los ejecutan.Básicamente, hace que un comando se ejecute automaticamente cuando ciertos eventos ocurren. 
-Imagen de la reunión: ![Captura de pantalla 2025-04-08 215300](https://github.com/user-attachments/assets/29faa56e-a32b-4099-bd25-07e2885f6f03)
+**Paso 8: External Systems:** Incluimos los sistemas externos que no pertenecen al dominio en el que estamos trabajando. Estos sistemas pueden recibir eventos o ejecutar comandos.  
+**Imagen ejemplo:**  
+![image](https://github.com/user-attachments/assets/e831978e-2dc2-499e-9eed-aecb97223679)
 
-Paso 7: Read Models: Introducimos los modelos de lectura, que abarcan desde reportes, vistas del frontend y queries. Permite definir una vista de datos para cada comando. 
-Imagen de la Reunión: ![Captura de pantalla 2025-04-08 213433](https://github.com/user-attachments/assets/6a6d8425-bb20-4f87-98e2-dc3a77e6653f)
+**Paso 9: Aggregates:** Organizamos conceptos relacionados en Aggregates, encargados de recibir comandos y producir eventos.  
+**Imagen ejemplo:**  
+![image](https://github.com/user-attachments/assets/040b8e80-13ce-408c-bb78-bc2181c0e723)
 
-Paso 8: External Systems: Incluimos los sistemas externos que no pertenecen al dominio en el que estamos trabajando. Estos sistemas pueden recibir eventos o ejecutar comandos. 
-Imagen Ejemplo: ![image](https://github.com/user-attachments/assets/e831978e-2dc2-499e-9eed-aecb97223679)
+**Paso 10: Bounded Context:** Identificamos los aggregates relacionados entre sí y agrupamos aquellos que representen funciones estrechamente relacionadas. Estos grupos de agregados sirven como unidades de funcionalidad coherente dentro del sistema.  
+**Imagen ejemplo:**  
+![image](https://github.com/user-attachments/assets/b3890baa-dc95-48cf-aab0-062aeb9c01e6)
 
-Paso 9: Aggregates: Organizamos conceptos relacionados en Aggregates, encargada de recibir comandos y producir eventos
-Imagen Ejemplo: ![image](https://github.com/user-attachments/assets/040b8e80-13ce-408c-bb78-bc2181c0e723)
-
-Paso 10: Bounded Context: Identificamos los aggregates relacionados entre si y agrupamos aquellos que representen funciones estrechamente relacionadas. Estos grupos de x agregados sirven como simple 
-Imagen ejemplo: ![image](https://github.com/user-attachments/assets/b3890baa-dc95-48cf-aab0-062aeb9c01e6)
 
 
 
