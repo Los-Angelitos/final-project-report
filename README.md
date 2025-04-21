@@ -258,6 +258,61 @@ Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado 
 - [Video About-the-Team](#video-about-the-team)
 - [Bibliografía](#bibliografía)
 
+# Student Outcome
+En Ingeniería de Software, el logro de curso contribuye a alcanzar el:
+
+ABET – EAC - Student Outcome 5: La capacidad de funcionar efectivamente en un
+equipo cuyos miembros juntos proporcionan liderazgo, crean un entorno de
+colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen objetivos.
+
+<table>
+  <tr>
+    <th>Criterio Especifico</th>
+    <th>Acciones Realizadas</th>
+    <th>Conclusiones</th>
+  </tr>
+  <tr>
+    <td>Trabaja en equipo para proporcionar liderazgo en forma conjunta</td>
+    <td>
+        <p>
+        TB1:
+        <p/>
+        Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compas.
+        <p/>
+        Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, logré
+        <p/>
+        Ramon Jorge
+        <p/>
+        Arian Rodriguez
+        <p/>
+        Fabia Herrera
+        <p/>
+        Omar Morales: 
+        </p>
+    </td>
+    <td>TB1:</td>
+  </tr>
+  <tr>
+    <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
+    <td><p>
+        TB1:
+        <p/>
+        Mauricio Rojas: 
+        <p/>
+        Giacomo Zoppi: 
+        <p/>
+        Ramon Jorge
+        <p/>
+        Arian Rodriguez
+        <p/>
+        Fabia Herrera
+        <p/>
+        Omar Morales: 
+        </p></td>
+    <td>TB1: </td>
+  </tr>
+</table>
+
 # Capítulo I: Introducción
 
 ## 1.1. Startup Profile
