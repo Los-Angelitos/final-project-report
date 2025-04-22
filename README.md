@@ -2061,6 +2061,98 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.2. Context Mapping
 
+#### Proceso para Crear el Context Mapping y Análisis de Alternativas
+
+##### 1. Pasos para Crear el Context Mapping
+
+###### 1.1. Identificación de los Bounded Contexts
+- **Identity and Access Management (IAM)**
+- **Organizational Management**
+- **Inventory**
+- **Communication**
+- **Commerce**
+- **Reservations**
+
+###### 1.2. Identificación de Relaciones Iniciales
+1. **Commerce** ⟷ **IAM**: Relación de **Customer/Supplier**.
+   - *Commerce* provee los cambios en las suscripciones de los usuarios, mientras *IAM* consume y ajusta la información.
+2. **Reservations** ⟷ **IAM**: Relación de **Customer/Supplier**.
+   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *IAM* actualiza la información en el perfil del huésped.
+3. **Reservations** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
+   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *Organizational Management* actualiza la información de las reservas realizadas.
+4. **IAM** ⟷ **Organizational Management**: Relación de **Open/Host Service**.
+   - *IAM* proporciona un servicio público al cual accede *Organizational Management*, el cual utiliza sus métodos para modificar la información de los usuarios.
+5. **Organizational Management** ⟷ **Communication**: Relación de **Customer/Supplier**.
+   - *Organizational Management* provee información acerca de la gestión de la organización, la cual *Communication* utiliza para enviar notificaciones respectivas.
+6. **Inventory** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
+   - *Inventory* provee información acerca del inventario, el cual es utilizado por *Organizational Management*, que actualiza dicha información en el registro.
+
+##### 2. Análisis de Alternativas y Preguntas Clave
+
+###### 2.1. ¿Qué pasaría si movemos este capability a otro bounded context?
+- **Caso Considerado:** Mover la capacidad de gestión de check-in y check-out desde *Reservations* hacia *Communication*.
+- **Impacto:**
+  - *Communication* tendría la responsabilidad de administrar las notificaciones enviadas a los huéspedes y administradores en relación a las entradas y salidas.
+  - Incrementaría el acoplamiento de *Communication*.
+- **Discusión:**
+  - Es recomendable mantener la separación, ya que, aunque *Communication* es el encargado de administrar notificaciones, es *Reservations* el que administra todo lo relacionado a las reservas. Puede interactuar con un ACL de *Communication* luego para mandar la notificación.
+
+###### 2.2. ¿Qué pasaría si descomponemos este capability y movemos uno de los sub-capabilities a otro bounded context?
+- **Caso Considerado:** Descomponer *Reservations* en sub-capabilities como *ReservationsManagement* y *ReservationsNotifications* y mover *ReservationsNotifications* a *Communication*.
+- **Impacto:**
+  - Implicaría que *Communication* pueda gestionar las notificaciones de las reservas, liberando responsabilidades de *Reservations*.
+  - *ReservationsManagement* seguirá gestionando las entradas y salidas de los usuarios.
+- **Discusión:**
+  - Esta descomposición permitiría dividir las responsabilidades de forma más acorde al alcance de cada Bounded Context, sin embargo, incrementaría el acoplamiento y ambos contextos dependerían demasiado el uno del otro.
+
+###### 2.3. ¿Qué pasaría si partimos el bounded context en múltiples bounded contexts?
+- **Caso Considerado:** Partir *Commerce* en *Payments* y *SubcriptionsManagement*.
+- **Impacto:**
+  - Separar dos funcionalidades distintas en dos distintos Bounded Contexts, organizando de mejor manera las capas de la aplicación y dividiendo la carga entre los dos contextos resultantes.
+- **Discusión:**
+  - Aunque puedan ser funcionalidades distintas, siguen estando referidas a procesos de pagos y a la asignación de dichos pagos a los usuarios. Además, se intercambian información constantemente, por lo cual dividirlas no sería lo más óptimo.
+
+###### 2.4. ¿Qué pasaría si tomamos este capability de estos 3 contexts y lo usamos para formar un nuevo context?
+- **Caso Considerado:** Crear un nuevo Bounded Context llamado *SubscriptionManagement* que combine capacidades de *IAM*, *Commerce* y *Communication* relacionadas con la gestión de suscripciones de los dueños.
+- **Impacto:**
+  - Unificaría la lógica de gestión de las suscripciones de los dueños en un solo contexto.
+  - Reduciría la duplicación de código e integraría las funcionalidades.
+- **Discusión:**
+  - La creación de un único contexto para gestionar las suscripciones supondría quitarle gran parte de sus funcionalidades a *Commerce*, además, dicho contexto cuenta con funcionalidades las cuales son constantemente utilizadas por la lógica de las suscripciones, por lo cual sería difícil moverlo de contexto.
+
+###### 2.5. ¿Qué pasaría si duplicamos una funcionalidad para romper la dependencia?
+- **Caso Considerado:** Duplicar la funcionalidad de notificaciones en funcionalidades específicas para cada notificación, tales como *CheckInNotificacion*, *CheckOutNotification*, *PaymentNotification*, etc.
+- **Impacto:**
+  - Las funcionalidades de la aplicación estarían mejor desacopladas, pero se repetiría mucho código y podría generar confusiones e inconsistencias.
+- **Discusión:**
+  - No se recomienda, pues aumentaría la complejidad y la dificultad en caso se requiera realizar cambios. Es mejor utilizar servicios compartidos o ACLs.
+
+###### 2.6. ¿Qué pasaría si creamos un shared service para reducir la duplicación entre múltiples bounded contexts?
+- **Caso Considerado:** Crear un servicio compartido de notificaciones al que puedan acceder todos los demás Bounded Contexts.
+- **Impacto:**
+  - Reduciría el acoplamiento y permitiría que cada contexto pueda enviar notificaciones de manera más rápida y sencilla.
+- **Discusión:**
+  - Al implementar este servicio, se duplicaría el código de *Communication*, volviéndolo obsoleto.
+
+###### 2.7. ¿Qué pasaría si aislamos los core capabilities y movemos los otros a un context aparte?
+- **Caso Considerado:** Aislar las capacidades core de la gestión de las habitaciones en *Organizational Management* y moverlas a un contexto a parte llamado *Rooms Management*.
+- **Impacto:**
+  - Se reduciría la sobrecarga de trabajo en *Organizational Management*.
+- **Discusión:**
+  - Aislar capacidades core supondría duplicar una gran cantidad de código, pues la gestión de las habitaciones y del resto del hotel comparten muchas funcionalidades similares.
+
+##### 3. Alternativa Recomendada de Context Mapping
+
+1. **Crear un ACL para que *Reservations* pueda utilizar funciones de *Communication*** que maneje las notificaciones enviadas en relación a los check-in y check-out.
+2. **Desacoplar adecuadamente las funcionalidades de *Communication* y *Commerce*** para reducir la complejidad del código de cada Bounded Context.
+
+##### 4. Patrones de Relaciones Sugeridos
+
+- **Anti-corruption Layer (ACL):** Para proteger el contexto *Communication* y *Commerce* de cambios en *IAM*.
+- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Reservations* y mande notificaciones.
+
+![Context Mapping](/assets/img/context-mapping/context-mapping.png)
+
 ### 4.1.3. Software Architecture
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
