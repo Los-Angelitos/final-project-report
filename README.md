@@ -1350,37 +1350,61 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
     </tr>
     <tr>
-      <td>HU01</td>
-      <td>Crear organización</td>
-      <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
-      <td>
-        <b>GERENTE</b>
-        <br>
-        <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
-        <br>
-        <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
-        <br>
-        <b>Then</b> se muestra un mensaje de bienvenida
-        <br><b>And</b> se redirecciona al dashboard principal.
-        <br><br><b>ADMINISTRADOR</b>
-        <br>
-        <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
-        <br>
-        <b>When</b> acepta la invitación y accede al sistema,
-        <br>
-        <b>Then</b> se muestra un mensaje de bienvenida
-        <br><b>And</b> se redirecciona a la página principal o portal de la organización .
-        <br><br><b>HUÉSPED</b>
-        <br>
-        <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
-        <br>
-        <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
-        <br>
-        <b>Then</b> completa el registro de su cuenta
-        <br><b>And</b> finaliza el proceso de reserva exitosamente.
-      </td>
-      <td>EP02</td>
-    </tr>
+  <td>HU01</td>
+  <td>Crear organización</td>
+  <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+  <td>
+    <b>GERENTE</b>
+    <br>
+    <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
+    <br>
+    <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
+    <br>
+    <b>Then</b> se muestra un mensaje de bienvenida
+    <br><b>And</b> se redirecciona al dashboard principal.
+    <br><br><b>ADMINISTRADOR</b>
+    <br>
+    <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
+    <br>
+    <b>When</b> acepta la invitación y accede al sistema,
+    <br>
+    <b>Then</b> se muestra un mensaje de bienvenida
+    <br><b>And</b> se redirecciona a la página principal o portal de la organización.
+    <br><br><b>HUÉSPED</b>
+    <br>
+    <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
+    <br>
+    <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
+    <br>
+    <b>Then</b> completa el registro de su cuenta
+    <br><b>And</b> finaliza el proceso de reserva exitosamente.
+    <br><br><b>GERENTE</b>
+    <br>
+    <b>Given</b> que el gerente ha ingresado los datos del hotel y su información personal,
+    <br>
+    <b>When</b> realiza el intento de pago del plan pero ocurre un error (tarjeta inválida, red, etc.),
+    <br>
+    <b>Then</b> se muestra un mensaje de error indicando el motivo
+    <br><b>And</b> se le da la opción de reintentar el pago.
+    <br><br><b>ADMINISTRADOR</b>
+    <br>
+    <b>Given</b> que el administrador ha recibido una invitación para unirse a la organización,
+    <br>
+    <b>When</b> decide rechazar la invitación,
+    <br>
+    <b>Then</b> el estado de la invitación se actualiza a "rechazada"
+    <br><b>And</b> el gerente es notificado del rechazo.
+    <br><br><b>GERENTE</b>
+    <br>
+    <b>Given</b> que una invitación previa fue rechazada o no respondida por el administrador,
+    <br>
+    <b>When</b> el gerente decide reenviar o crear una nueva invitación,
+    <br>
+    <b>Then</b> se genera un nuevo enlace de invitación
+    <br><b>And</b> el administrador recibe una nueva notificación por correo.
+  </td>
+  <td>EP02</td>
+</tr>
     <tr>
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
