@@ -2011,6 +2011,21 @@ https://domainstorytelling.org/#dst-requirements
   <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
 </div><br>
 
+
+
+<h2>Commerce Bounded Context</h2>
+<h3>Escenario: El dueño del hotel elige o cambia una suscripción</h3>
+<p>El dueño del hotel, en este escenario, desde su cuenta creada en SweetManager busca los tipos de suscripción disponibles y escoge uno, ya sea para suscribirse por primera vez o para cambiar la suscripción que tiene actualmente. Una vez se realiza el pago, se actualiza la información de la suscripción asociada a su perfil.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/flow1.png" alt="Suscription Flow Commerce" width="90%" />
+</div><br>
+
+<h3>Escenario: El huésped del hotel realiza un pago</h3>
+<p>En este escenario, el huésped visualiza la información del pago que va a realizas y elige un medio de pago. La aplicación utiliza un sistema externo para procesar el pago y luego dicha transacción se registra en la base de datos de la aplicación.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/flow2.png" alt="Customer Payment Flow Commerce" width="90%" />
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
@@ -2037,6 +2052,12 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
 </div>
+
+<h2>Commerce Bounded Context</h2>
+<p>Es principalmente responsable de la gestión de pagos realizados, tanto por huéspedes como por dueños de hoteles, y de la gestión de suscripciones dentro de la plataforma.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
+</div><br>
 
 ### 4.1.2. Context Mapping
 
@@ -3953,19 +3974,10 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+
+<p>A continuación, se presenta el diagrama de componentes del C4 model del Bounded Context Commerce para el cual se utilizó la herramienta Structurizr. Este diagram muestra la descomposición de cada contenedor y sus interacciones: </p>
+
+![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 
