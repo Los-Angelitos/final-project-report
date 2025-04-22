@@ -1873,6 +1873,15 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
+![image](https://github.com/user-attachments/assets/005860e9-9ce5-4be0-872f-616b0db75f29)
+![image](https://github.com/user-attachments/assets/c53afb21-2cd5-40d5-a5ca-3e0ad2678195)
+![image](https://github.com/user-attachments/assets/6ff291f1-4659-45db-9ece-5bbf3879500c)
+![image](https://github.com/user-attachments/assets/d9a90a98-556b-4e89-a1e9-de7c123706a4)
+![image](https://github.com/user-attachments/assets/532bc1af-f435-46c1-bca3-04367cf34bcd)
+![image](https://github.com/user-attachments/assets/bc39a22a-78d9-4fe1-8769-bd37ab0d7b31)
+![image](https://github.com/user-attachments/assets/9c2af623-c8b1-4bb2-9de0-ca2def6f4b6d)
+
+
 
 #### 4.1.1.1. Candidate Context Discovery
 
@@ -2085,9 +2094,9 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: IAM Bounded Context
+### 4.2.1. Bounded Context: IAM Bounded Context
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.1.1. Domain Layer
 
 ### Agregados y Entidades del Dominio `IAM`
 
@@ -2591,20 +2600,6 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-
 <div style="text-align: center;">
   <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
@@ -2627,66 +2622,6 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 
 Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
 
-### 4.2.X. Bounded Context: Reservations Bounded Context
-
-#### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
-
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
