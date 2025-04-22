@@ -1093,6 +1093,20 @@ IMAGEN VA AQUI
 En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
 
 **Entrevista 02 (Gerentes)**
+<br>
+URL del vídeo: <br>
+Nombre: Sergio Alberto Cadillo Nuñez <br>
+Edad: 30 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Pueblo Libre-Lima <br>
+Ocupación: Dueño de un emprendimeinto hotelero <br>
+Duración de la entrevista: no nos jale profesor <br>
+Personalidad: Analítica <br>
+
+![image](https://github.com/user-attachments/assets/9d53ee36-9745-4052-ad76-0df61544e3f3)
+
+
+En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años con una personalidad analítica y enfoque práctico. Vive en Pueblo Libre, Lima, y actualmente lidera su propio emprendimiento hotelero. Durante la entrevista, nos compartió que uno de los principales desafíos en la gestión diaria de su hotel es el control de inventario y la gestión eficiente de proveedores. Actualmente, el seguimiento de ingresos y reservas lo realiza mediante herramientas básicas como Excel, complementadas por procesos manuales. A pesar de ello, valora la organización y procura mantener un orden estructurado con apoyo de su equipo contable y administrativo. Entre las funcionalidades que considera más útiles para mejorar la eficiencia de su hotel destacan la automatización de reportes, una gestión centralizada de reservas y una plataforma integrada para coordinar con proveedores. 
 
 **Entrevista 03 (Gerentes)**
 
@@ -1133,6 +1147,21 @@ Personalidad: Tranquilo <br>
 En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
 
 **Entrevista 03 (Huéspedes)**
+<br>
+URL del vídeo: <br>
+Nombre: Enzo Céspedes <br>
+Edad: 23 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Los Olivos <br>
+Ocupación: Ingeniero Industrial <br>
+Duración de la entrevista: A <br>
+Personalidad: Responsable y Trabajador <br>
+<br>
+
+![image](https://github.com/user-attachments/assets/b0abcd99-1456-49ff-93e1-8063f986f7fa)
+
+En resumen, Enzo Céspedes es un joven ingeniero industrial, práctico y sociable, que acostumbra viajar con sus padres o con amigos. Valora sobre todo la ubicación y el precio al momento de elegir un hotel, aunque también presta atención a las comodidades ofrecidas. Es un usuario con presencia digital moderada, usa frecuentemente Google como buscador y sus principales dispositivos tecnológicos son su celular y su laptop, que lleva siempre consigo en sus viajes. Cuando se le presentó la idea de una aplicación que le permita buscar y reservar hoteles, gestionar sus preferencias, cancelar con facilidad y comunicarse directamente con el personal, Enzo se mostró muy entusiasta. Comentó que una solución así le facilitaría mucho la vida, especialmente si pudiera filtrar hoteles según ubicación, comparar precios rápidamente y tener todo centralizado en su teléfono.
+
 
 ### 2.2.3. Análisis de entrevistas
 
