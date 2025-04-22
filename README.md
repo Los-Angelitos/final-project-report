@@ -281,7 +281,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Ramon Jorge
         <p/>
-        Arian Rodriguez
+        Arian Rodriguez: Durante esta primera entrega, me desenvolví de manera eficiente dentro de mi equipo de trabajo, colaborando en la creación de un ambiente de confianza, donde cada uno de los integrantes se sintiera cómodo para expresar sus ideas y opiniones. De la misma manera, me aseguré de fomentar la comunicación y ayuda mutua entre algunos compañeros que tenían dudas sobre el trabajo a realizar.
         <p/>
         Fabia Herrera
         <p/>
@@ -301,7 +301,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Ramon Jorge
         <p/>
-        Arian Rodriguez
+        Arian Rodriguez: Durante este entregable, me aseguré de tener claro el objetivo a cumplir mediante la comunicación y en la resolución de dudas, así como también las tareas que debía realizar. Para ello, utilicé el tablero Kanban, donde se asignaron las tareas a cada uno de los integrantes y se establecieron fechas de entrega. De esta manera, proporcioné apoyo en la edición de User Stories, elaboración de entrevista, creación del Software Architecture System Diagrams, Bounded Context Canvases y documentación.
         <p/>
         Fabia Herrera
         <p/>
