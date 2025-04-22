@@ -1996,6 +1996,12 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
   <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
 </div>
 
+<h2>Commerce Bounded Context</h2>
+<p>Es principalmente responsable de la gestión de pagos realizados, tanto por huéspedes como por dueños de hoteles, y de la gestión de suscripciones dentro de la plataforma.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
+</div><br>
+
 ### 4.1.2. Context Mapping
 
 ### 4.1.3. Software Architecture
