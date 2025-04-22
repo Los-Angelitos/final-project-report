@@ -4233,10 +4233,18 @@ Esta parte tiene 2 secciones: Conclusiones y Recomendaciones y Video Aout-the-te
 
 En conclusiones y recomendaciones resumiremos los avances que hemos tenido hasta el momento y como esta siendo nuestra experiencia en ello. Adicionalmente, explicando las fases de desarrollo que hemos implementado y como hemos abstraido la informacion recibida de los requisitos como entrevistas, Historias de Usuario; etc. Finalmente, evaluar los resultados en relacion con el Lean UX, validaciones y RoadMap.
 
-En Video About-the-Team, presentaremos un video en donde el equipo se introduce y narraremos la recopilaciuon del trabajo realizado durante todo el proceso de desarrollo del proyecto, narrando con voz de fondo y mostrando el trabajo en equipo que hemos mantenido durante todo el proceso. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
+En Video About-the-Team, presentaremos un video en donde el equipo se introduce. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
 
-## Recomendaciones
+## Conclusiones y Recomendaciones
+Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
 
+Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
+
+Durante el proceso, se establecieron Hipótesis como que los administradores necesitan una vista consolidada de los huéspedes actuales (HU12), que los propietarios requieren trazabilidad financiera clara (EP02), y que los huéspedes prefieren experiencias fluidas y simples al momento de reservar y hospedarse (EP05). Las validaciones realizadas hasta el momento, mediante el diseño de entrevistas e historias de usuario, han respaldado estas hipótesis.
+
+Para continuar con el desarrollo estratégico de SweetManager, recomendamos:
+
+Validar mediante prototipos de alta fidelidad las funcionalidades priorizadas para cada segmento, enfocándonos especialmente en las vistas operativas de administración y control de huéspedes activos.
 
 # Video About-the-Team
 
@@ -4272,6 +4280,6 @@ https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 | Contenido | URL del Vídeo |
 |--------------|--------------|
 | Vídeo de Exposición TB1      | Link del Vídeo: |  
-| VÍdeo de Exposición TP1      | Link del Vídeo: |
-| Vídeo de Exposición TB2    | Link del Vídeo: | 
-| Vídeo de Exposición TF1    | Link del Vídeo: | 
+| VÍdeo de Exposición TP1      | Link del Vídeo: - |
+| Vídeo de Exposición TB2    | Link del Vídeo: - | 
+| Vídeo de Exposición TF1    | Link del Vídeo: - | 
