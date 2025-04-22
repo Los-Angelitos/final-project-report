@@ -1954,6 +1954,21 @@ https://domainstorytelling.org/#dst-requirements
   <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
 </div><br>
 
+
+
+<h2>Commerce Bounded Context</h2>
+<h3>Escenario: El dueño del hotel elige o cambia una suscripción</h3>
+<p>El dueño del hotel, en este escenario, desde su cuenta creada en SweetManager busca los tipos de suscripción disponibles y escoge uno, ya sea para suscribirse por primera vez o para cambiar la suscripción que tiene actualmente. Una vez se realiza el pago, se actualiza la información de la suscripción asociada a su perfil.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/flow1.png" alt="Suscription Flow Commerce" width="90%" />
+</div><br>
+
+<h3>Escenario: El huésped del hotel realiza un pago</h3>
+<p>En este escenario, el huésped visualiza la información del pago que va a realizas y elige un medio de pago. La aplicación utiliza un sistema externo para procesar el pago y luego dicha transacción se registra en la base de datos de la aplicación.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/flow2.png" alt="Customer Payment Flow Commerce" width="90%" />
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
