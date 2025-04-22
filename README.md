@@ -1875,14 +1875,26 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
-recomiendo echarle un ojo a estos: 
-https://learning.oreilly.com/library/view/learning-domain-driven-design/9781098100124/ch12.html
-https://learning.oreilly.com/library/view/patterns-principles-and/9781118714706/part03.xhtml
-https://domainstorytelling.org/#dst-requirements
-https://openpracticelibrary.com/practice/event-storming/ 
 #### 4.1.1.1. Candidate Context Discovery
 
+
+
+
 #### 4.1.1.2. Domain Message Flows Modeling
+
+#### Reservations Bounded Context
+![image](https://github.com/user-attachments/assets/6abdf48a-588b-4353-b962-418864251642)
+![image](https://github.com/user-attachments/assets/6c10b73b-8ca0-4015-80d1-89b3c8b5caf4)
+![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
+![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
+![image](https://github.com/user-attachments/assets/83642508-3aae-44ba-87a9-84658b3da11e)
+![image](https://github.com/user-attachments/assets/4fa79bc1-7f70-49dd-8c84-c8c207de35ad)
+![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
+
+
+#### 4.1.1.3. Bounded Context Canvases
+#### Reservations Bounded Context
+![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
 En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo
 deben colaborar los bounded contexts para resolver los casos que se presentan en el
 negocio para los usuarios del sistema. Para ello debe aplicar la técnica de
@@ -2609,6 +2621,351 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+### 4.2.2. Bounded Context: Reservations Bounded Context
+
+#### 4.2.2.1. Domain Layer
+### Agregados y Entidades del Dominio `Reservations`
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
+
+---
+
+### `Room` 
+
+Representa una habitación en un hotel. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la habitación |
+| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
+| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
+| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
+| `Bookings`   | `ICollection<Booking>`| Reservas asociadas (propiedad de navegación) |
+| `TypeRoom`   | `TypeRoom?`           | Tipo de habitación asignado |
+| `Hotel`      | `Hotel?`              | Hotel al que pertenece la habitación |
+
+#### Constructores:
+
+- Por parámetros individuales
+- A partir de `CreateRoomCommand` y `UpdateRoomStateCommand`
+
+---
+
+###  `Booking` 
+
+Representa una reserva realizada por un cliente.
+
+#### Atributos principales:
+
+| Atributo            | Tipo                   | Descripción |
+|---------------------|------------------------|-------------|
+| `Id`                | `int`                  | Identificador único |
+| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
+| `RoomId`            | `int?`                 | Habitación reservada |
+| `Description`       | `string?`              | Información adicional |
+| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
+| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
+| `PriceRoom`         | `decimal?`             | Costo por noche |
+| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
+| `Amount`            | `decimal?`             | Monto total pagado |
+| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
+| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
+| `Preference`        | `GuestPreference?`     | Relación con preferencias del huésped |
+| `Room`              | `Room?`                | Relación con la habitación |
+| `PaymentCustomer`   | `PaymentCustomer?`     | Pago del cliente |
+
+#### Constructores:
+
+- A partir de `CreateBookingCommand`, `UpdateBookingStateCommand`, y `UpdateBookingEndDateCommand`
+
+---
+
+###  `BookingDto` (Objeto de Transferencia de Datos)
+
+Objeto diseñado para exponer reservas al cliente sin crear ciclos de referencia.
+
+| Atributo               | Tipo         | Descripción |
+|------------------------|--------------|-------------|
+| `Id`                   | `int`        | ID de la reserva |
+| `Description`          | `string?`    | Descripción opcional |
+| `StartDate`            | `DateTime?`  | Fecha de entrada |
+| `FinalDate`            | `DateTime?`  | Fecha de salida |
+| `PriceRoom`            | `decimal?`   | Precio por noche |
+| `Amount`               | `decimal?`   | Monto total |
+| `State`                | `string?`    | Estado actual |
+| `PreferenceTemperature`| `int?`       | Temperatura preferida del huésped |
+
+---
+
+###  `TypeRoom` (Entidad)
+
+Representa un tipo de habitación. 
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | ID único del tipo |
+| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
+| `Price`      | `decimal`             | Precio base asignado a este tipo |
+| `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
+
+#### Constructores:
+
+- Por valores individuales
+- A partir de `CreateTypeRoomCommand`
+
+---
+## Comandos
+
+---
+
+### Booking
+
+| Comando                            | Descripción |
+|-----------------------------------|-------------|
+| `CreateBookingCommand.cs`         | Contiene todos los datos necesarios para crear una reserva (`Booking`) incluyendo fechas, habitación, cliente y preferencias. |
+| `UpdateBookingEndDateCommand.cs`  | Permite actualizar la fecha de término (`FinalDate`) de una reserva existente, en caso se extienda la fecha. |
+| `UpdateBookingStateCommand.cs`    | Cambia el estado (`State`) de una reserva (`CONFIRMED`, `CANCELLED`, etc). |
+
+---
+
+### Room
+
+| Comando                          | Descripción |
+|----------------------------------|-------------|
+| `CreateRoomCommand.cs`           | Permite registrar una nueva habitación, especificando su tipo, hotel y estado inicial. |
+| `UpdateRoomStateCommand.cs`      | Modifica el estado de una habitación existente (`AVAILABLE`, `MAINTENANCE`, etc). |
+
+---
+
+### TypeRoom
+
+| Comando                         | Descripción |
+|---------------------------------|-------------|
+| `CreateTypeRoomCommand.cs`      | Encapsula los datos para registrar un nuevo tipo de habitación (`Description`, `Price`). |
+
+---
+
+### Queries
+
+| Archivo                                 | Descripción breve |
+|----------------------------------------|--------------------|
+| `GetAllBookingsQuery.cs`               | Obtener todas las reservas del sistema en relación a un hotel. |
+| `GetAllRoomsByBookingAvailabilityInRangeQuery.cs` | Buscar habitaciones sin reseva entre dos fechas. |
+| `GetAllRoomsQuery.cs`                  | Trae todas las habitaciones en relación a un hotel. |
+| `GetAllTypeRoomsQuery.cs`             | Trae todos los tipos de habitación disponibles en relación a un hotel. |
+| `GetBookingByCustomerIdQuery.cs`      | Devuelve todas las reservas hechas por un cliente específico. |
+| `GetBookingByHotelIdAndState.cs`      | Busca reservas por hotel y estado. |
+| `GetBookingByIdQuery.cs`              | Trae una reserva según su ID. |
+| `GetRoomsByIdQuery.cs`                | Trae una habitación específica según su ID. |
+| `GetRoomsByStateQuery.cs`             | Lista habitaciones según su estado (`AVAILABLE`, `OCCUPIED`, etc). |
+| `GetRoomsByTypeRoomIdQuery.cs`        | Lista habitaciones según el tipo. |
+| `GetTypeRoomByIdQuery.cs`             | Trae información de un tipo de habitación por ID. |
+
+---
+
+### Repositories (Interfaces)
+
+| Archivo                   | Descripción breve |
+|--------------------------|--------------------|
+| `IBookingRepository.cs`  | Define operaciones sobre reservas: FindByHotelIdAndStateAsync, FindByCustomerIdAsync, FindAllByHotelIdAsync, UpdateBookingEndDateAsync . |
+| `IRoomRepository.cs`     | Define operaciones sobre habitaciones: FindAllByHotelIdAsync, FindByStateAsync,FindByTypeRoomIdAsync, FindByRange. |
+| `ITypeRoomRepository.cs` | Define operaciones sobre tipos de habitación: FindAllByHotelIdAsync |
+
+---
+
+###  Services
+
+####  Booking
+
+| Archivo                          | Descripción breve |
+|----------------------------------|--------------------|
+| `IBookingCommandServices.cs`     | Define comandos como crear, actualizar estado o actualizar fecha final. |
+| `IBookingQueryServices.cs`       | Define consultas para obtener reservas (por cliente, por hotel, por hotel y estado, por id). |
+
+####  Room
+
+| Archivo                        | Descripción breve |
+|--------------------------------|--------------------|
+| `IRoomCommandService.cs`       | Comandos para modificar habitaciones (crear, cambiar estado). |
+| `IRoomQueryService.cs`         | Consultas sobre habitaciones (por disponibilidad en un rango de fechas, por estado, por tipo, por id, por hotel). |
+
+####  TypeRoom
+
+| Archivo                            | Descripción breve |
+|------------------------------------|--------------------|
+| `ITypeRoomCommandService.cs`       | Comandos sobre tipos de habitación, unicamente la creación. |
+| `ITypeRoomQueryService.cs`         | Consultas sobre los tipos de habitación disponibles por hotel y por id. |
+
+---
+
+#### 4.2.2.2. Interface Layer
+### Interface Layer – Presentación de la Aplicación
+
+La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
+
+---
+
+
+### Resources
+
+Las clases *Resource* funcionan como objetos de transferencia  entre el mundo externo (API REST) y la capa de aplicación. 
+
+| Archivo                           | Función |
+|-----------------------------------|---------|
+| `CreateBookingResource.cs`        | Recibe datos para crear una reserva desde el cliente. |
+| `UpdateBookingEndDateResource.cs` | Recibe datos para modificar la fecha final de una reserva. |
+| `UpdateBookingStateResource.cs`   | Cambia el estado de la reserva (`CANCELLED`, `FINISHED`, etc.). |
+| `BookingResource.cs`              | Devuelve datos de reserva al cliente (GET). |
+| `CreateRoomResource.cs`           | Permite crear una habitación desde el cliente. |
+| `UpdateRoomStateResource.cs`      | Permite cambiar el estado de una habitación. |
+| `RoomResource.cs`                 | Devuelve información de una habitación. |
+| `CreateTypeRoomResource.cs`       | Recibe datos para crear un tipo de habitación. |
+| `TypeRoomResource.cs`             | Expone la información de un tipo de habitación (GET). |
+
+---
+
+### Transform/Assemblers
+
+Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son responsables de:
+
+- Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
+- Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
+
+| Archivo                                               | Función |
+|--------------------------------------------------------|---------|
+| `CreateBookingCommandFromResourceAssembler.cs`         | Transforma `CreateBookingResource` en `CreateBookingCommand`. |
+| `UpdateBookingStateCommandFromResourceAssembler.cs`    | Transforma `UpdateBookingStateResource` en `UpdateBookingStateCommand`. |
+| `BookingResourceFromEntityAssembler.cs`                | Convierte una entidad `Booking` en un `BookingResource` limpio (sin ciclos). |
+
+### Controllers
+
+Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+
+| Controlador           | Ruta base típica        | Responsabilidad principal |
+|------------------------|--------------------------|----------------------------|
+| `BookingController.cs` | `/api/booking`           | Gestiona la creación, actualización, consulta y cancelación de reservas. |
+| `RoomController.cs`    | `/api/room`              | Maneja operaciones sobre habitaciones: crear, actualizar estado, consultar disponibilidad. |
+| `TypeRoomController.cs`| `/api/typeroom`          | Expone endpoints para crear y consultar tipos de habitación (`Single`, `Double`, etc). |
+
+
+
+#### 4.2.2.3. Application Layer
+### Servicios de Aplicación – Gestión de Flujos de Negocio
+---
+
+### CommandServices
+
+| Clase                            | Descripción |
+|----------------------------------|-------------|
+| `BookingCommandService.cs`       | Maneja comandos para crear una reserva, actualizar su estado o su fecha final. Utiliza el agregado `Booking`. |
+| `RoomCommandService.cs`          | Procesa la creación de habitaciones y el cambio de estado (`Room`). Interactúa con el agregado `Room`. |
+| `TypeRoomCommandServices.cs`     | Administra la creación de tipos de habitación (`TypeRoom`). Valida descripciones y precios.
+
+---
+
+### QueryServices
+
+| Clase                              | Descripción |
+|------------------------------------|-------------|
+| `BookingQueryService.cs`           | Devuelve reservas filtradas por cliente, ID, hotel, estado o disponibilidad. Utiliza `BookingDto` para evitar ciclos. |
+| `RoomQueryService.cs`              | Lista habitaciones por ID, estado, tipo, hotel o fechas disponibles. |
+| `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados.
+
+## Capabilities del Bounded Context `Reservations`
+
+Extraído del Bounded Context Canvas y el Event Storming elaborado: 
+
+| Capability (Funcionalidad)                    | Tipo          | Handler Responsable                          | Descripción |
+|----------------------------------------------|---------------|----------------------------------------------|-------------|
+| ✅ **Check Room Availability in a Period**    | Query         | `RoomQueryService.FindByRange(...)`          | Devuelve habitaciones disponibles entre fechas. |
+| ✅ **Submit Booking**                         | Command       | `BookingCommandService.Handle(CreateBookingCommand)` | Registra una nueva reserva. |
+| ✅ **Create Room**                            | Command       | `RoomCommandService.Handle(CreateRoomCommand)` | Crea una nueva habitación en un hotel. |
+| ✅ **Modify Room**                            | Command       | `RoomCommandService.Handle(UpdateRoomStateCommand)` | Cambia el estado de una habitación (`available`, `occupied`, etc.). |
+| ✅ **List Rooms**                             | Query         | `RoomQueryService.GetAllRoomsQuery(...)` | Devuelve habitaciones. |
+| ✅ **Filter Room**                            | Query         | `RoomQueryService.GetRoomsById`, `GetRoomsByTypeRoomId` | Filtra habitaciones por estado o tipo. |
+| ✅ **Check Room Availability**                | Query         | `RoomQueryService.GetRoomsByState`, `` | Revisa si una habitación específica está libre. |
+| ✅ **List Bookings**                          | Query         | `BookingQueryService.GetAllBookings`         | Devuelve todas las reservas registradas. |
+| ✅ **List Guest's Bookings**                  | Query         | `BookingQueryService.Handle(GetBookingByCustomerIdQuery)` | Lista reservas hechas por un huésped. |
+| ✅ **Modify Booking's End Date**              | Command       | `BookingCommandService.Handle(UpdateBookingEndDateCommand)` | Permite modificar la fecha final de una reserva. |
+| ✅ **Finish Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `FINISHED` o `COMPLETED`. |
+| ✅ **Cancel Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `CANCELLED`. |
+
+
+#### 4.2.2.4. Infrastructure Layer
+
+### Implementación de Repositories
+
+| Clase                     | Interfaz implementada       | Función principal |
+|---------------------------|------------------------------|-------------------|
+| `BookingRepository.cs`    | `IBookingRepository`         | Implementa operaciones de persistencia y consultas sobre las reservas (`Booking`), incluyendo búsqueda por cliente, por hotel, por estado y por rango de fechas. |
+| `RoomRepository.cs`       | `IRoomRepository`            | Implementa consultas y modificaciones sobre habitaciones (`Room`). Gestiona la disponibilidad por fechas y el cambio de estado (`AVAILABLE`, `OCCUPIED`, etc.). |
+| `TypeRoomRepository.cs`   | `ITypeRoomRepository`        | Se encarga del acceso y persistencia de los tipos de habitación (`TypeRoom`), incluyendo la relación con las habitaciones (`Room`). |
+
+---
+
+
+#### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
+![structurizr-101410-Container-001](https://github.com/user-attachments/assets/61878c86-913b-4fc9-b213-08085d38c057)
+
+
+#### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
+
+##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+![image](https://github.com/user-attachments/assets/bbebfc85-9f04-4bbb-a651-3271a1c96033)
+
+##### 4.2.2.6.2. Bounded Context Database Design Diagram
+![image](https://github.com/user-attachments/assets/8c242d51-1399-4d88-b830-2c8ec1e21b18)
+
+
+Las tablas principales y unicas del Bounded Context son: 
+
+### `Room` 
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la habitación |
+| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
+| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
+| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
+| `Bookings`   | `ICollection<Booking>`| Reservas asociadas (propiedad de navegación) |
+| `TypeRoom`   | `TypeRoom?`           | Tipo de habitación asignado |
+| `Hotel`      | `Hotel?`              | Hotel al que pertenece la habitación |
+
+###  `Booking` 
+
+#### Atributos principales:
+
+| Atributo            | Tipo                   | Descripción |
+|---------------------|------------------------|-------------|
+| `Id`                | `int`                  | Identificador único |
+| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
+| `RoomId`            | `int?`                 | Habitación reservada |
+| `Description`       | `string?`              | Información adicional |
+| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
+| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
+| `PriceRoom`         | `decimal?`             | Costo por noche |
+| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
+| `Amount`            | `decimal?`             | Monto total pagado |
+| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
+| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
+| `Preference`        | `GuestPreference?`     | Relación con preferencias del huésped |
+| `Room`              | `Room?`                | Relación con la habitación |
+| `PaymentCustomer`   | `PaymentCustomer?`     | Pago del cliente |
+
+###  `TypeRoom` (Entidad)
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | ID único del tipo |
+| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
+| `Price`      | `decimal`             | Precio base asignado a este tipo |
+| `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
+
+### 4.2.X. Bounded Context: Organizational Management Bounded Context
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
