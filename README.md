@@ -2707,11 +2707,11 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.3. Software Architecture
 
-URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>.
+URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>
 <br><br>
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos.<br>
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes módulos: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Reservations**.<br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
 </div><br><br>
@@ -3242,7 +3242,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/iam-component.png" alt="Component Diagram" width="90%" />
@@ -3554,7 +3554,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
@@ -3917,7 +3917,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
@@ -4165,7 +4165,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
@@ -4552,7 +4552,7 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
@@ -4594,7 +4594,7 @@ implementación de Repositories para las interfaces definidas en Domain Layer. A
 similar ocurre con interfaces definidas para MessageBrokers.
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del Owner Usuario para gestionar los recursos disponibles dentro de su hotel.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
@@ -4766,7 +4766,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/communication-component.png" alt="Component Diagram" width="90%" />
