@@ -1508,70 +1508,197 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>HU01</td>
       <td>Revisar ingresos y egresos de la organización</td>
       <td>Como gerente del hotel quiero revisar las finanzas en términos de ingresos y egresos de mi hotel para mantener un constante seguimiento de estos.</td>
-      <td><b>Given</b> el gerente está conectado a su cuenta.<br><b>When</b> se encuentra en el dashboard.<br><b>Then</b> revisa los ingresos y egresos<br><b>Y</b> escoge el plazo semanal o mensual de finanzas.</td>
+      <td>
+        <b>Escenario 1:</b> Revisión de las finanzas semanales<br>
+        <em>Given</em> el gerente está conectado a su cuenta<br>
+        <em>When</em> se encuentra en el dashboard<br>
+        <em>And</em> escoge el plazo semanal de finanzas<br>
+        <em>Then</em> revisa los ingresos y egresos semanales.<br><br>
+        <b>Escenario 2:</b> Revisión de las finanzas mensuales<br>
+        <em>Given</em> el gerente está conectado a su cuenta<br>
+        <em>When</em> se encuentra en el dashboard<br>
+        <em>And</em> escoge el plazo mensual de finanzas<br>
+        <em>Then</em> revisa los ingresos y egresos mensuales.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU02</td>
       <td>Revisar stock de recursos del hotel</td>
       <td>Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
-      <td><b>Given</b> el gerente está en la página de recursos.<br><b>When</b> nota que uno de sus recursos está por agotar el stock.<br><b>Then</b> contacta a su proveedor y crea una solicitud de abastecimiento.</td>
+      <td>
+        <b>Escenario 1:</b> Solicitud de abastecimiento<br>
+        <em>Given</em> el gerente está en la página de recursos<br>
+        <em>When</em> nota que uno de sus recursos está por agotar el stock<br>
+        <em>Then</em> contacta a su proveedor y crea una solicitud de abastecimiento.<br><br>
+        <b>Escenario 2:</b> Revisión del stock de recursos<br>
+        <em>Given</em> el gerente está en la página de recursos<br>
+        <em>When</em> revisa el stock de los productos y observa que ninguno está cerca de agotarse<br>
+        <em>Then</em> decide que no es necesario crear una solicitud de abastecimiento aún.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU03</td>
       <td>Comunicarse con sus administradores.</td>
       <td>Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.</td>
-      <td><b>Given</b> el gerente está en la página de mensajería.<br><b>When</b> quiere enviar mensaje a sus administradores.<br><b>Then</b> redacta el asunto y cuerpo del mensaje.<br><b>Y</b> lo envía a todos los administradores.</td>
+      <td>
+        <b>Escenario 1:</b> Envío de mensaje a un administrador<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje a uno de sus administradores<br>
+        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía al administrador seleccionado.<br><br>
+        <b>Escenario 2:</b> Envío de mensaje a sus administradores<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje a todos sus administradores<br>
+        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía a todos los administradores.<br><br>
+        <b>Escenario 3:</b> Envío de mensaje sin cuerpo y/o asunto<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje<br>
+        <em>Then</em> intenta enviarlo sin redactar el asunto y/o el cuerpo del mensaje<br>
+        <em>And</em> recibe un mensaje que le indica que debe redactar un asunto y cuerpo en el mensaje.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU04</td>
       <td>Mejorar la subscripción de la organización.</td>
       <td>Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
-      <td><b>Given</b> el gerente está en la página de subscripciones.<br><b>When</b> quiere mejorar o degradar la subscripción actual. <b>Then</b> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones.</td>
+      <td>
+        <b>Escenario 1:</b> Cambio de suscripción<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones<br>
+        <em>Then</em> su suscripción es actualizada.<br><br>
+        <b>Escenario 2:</b> Cancelación de cambio<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual pero presiona el botón cancelar<br>
+        <em>Then</em> el cambio se cancela y regresa a la página anterior.<br><br>
+        <b>Escenario 3:</b> Cambio de suscripción sin aceptar términos y condiciones<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual y presiona continuar sin aceptar los términos y condiciones<br>
+        <em>And</em> recibe un mensaje que le indica que debe aceptar los términos y condiciones antes de continuar.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU05</td>
       <td>Invitar administradores a su organización.</td>
       <td>Como gerente del hotel quiero invitar administradores a mi organización para que tengan acceso al servicio.</td>
-      <td><b>Given</b> el gerente está en la página de administradores<br><b>When</b> quiere invitar a un nuevo administrador a la organización.<br><b>Then</b> Invita mediante su correo electrónico a la organización.</td>
+      <td>
+        <b>Escenario 1:</b> Invitación a un nuevo administrador<br>
+        <em>Given</em> el gerente está en la página de administradores<br>
+        <em>When</em> quiere invitar a un nuevo administrador a la organización<br>
+        <em>Then</em> invita mediante su correo electrónico a la organización.<br><br>
+        <b>Escenario 2:</b> Invitación a múltiples administradores<br>
+        <em>Given</em> el gerente está en la página de administradores<br>
+        <em>When</em> quiere invitar a varios administradores a la organización<br>
+        <em>Then</em> invita mediante un correo electrónico enviado a todos los administradores a la organización.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU06</td>
       <td>Agregar proveedores a su lista de contactos.</td>
       <td>Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.</td>
-      <td><b>Given</b> el gerente está en la página de proveedores<br><b>When</b> quiere registrar un nuevo proveedor a la lista de contacto.<br><b>Then</b> Registra su información de contacto.</td>
+      <td>
+        <b>Escenario 1:</b> Agregar a un proveedor<br>
+        <em>Given</em> el gerente está en la página de proveedores<br>
+        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
+        <em>Then</em> registra su información de contacto.<br><br>
+        <b>Escenario 2:</b> Agregar a un proveedor que ya existe<br>
+        <em>Given</em> el gerente está en la página de proveedores<br>
+        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
+        <em>And</em> registra su información de contacto<br>
+        <em>But</em> la información personal está duplicada o ya existe<br>
+        <em>Then</em> recibe un mensaje indicándole que el proveedor ya está registrado.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU07</td>
       <td>Registrar nueva habitación en el hotel.</td>
       <td>Como gerente del hotel quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere agregar una nueva habitación.<br><b>Then</b> ingresa la información correspondiente y la habitación queda registrada.</td>
+      <td>
+        <b>Escenario 1:</b> Agregar una habitación<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>Then</em> ingresa la información correspondiente y la habitación queda registrada.<br><br>
+        <b>Escenario 2:</b> Agregar una habitación que ya existe<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>And</em> ingresa la información correspondiente<br>
+        <em>But</em> la información de la habitación está duplicada o ya existe<br>
+        <em>Then</em> recibe un mensaje indicándole que la habitación ya está registrada.<br><br>
+        <b>Escenario 3:</b> Agregar una habitación con datos incompletos<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>But</em> presiona la opción de registrar habitación sin completar los datos<br>
+        <em>Then</em> recibe un mensaje indicándole que debe completar la información solicitada.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU08</td>
       <td>Editar el estado de una habitación.</td>
       <td>Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere actualizar el estado de una habitación.<br><b>Then</b> selecciona la habitación y cambia su estado a activa o inactiva.</td>
+      <td>
+        <b>Escenario 1:</b> Cambiar una habitación a inactiva<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere actualizar el estado de una habitación<br>
+        <em>And</em> selecciona la habitación<br>
+        <em>And</em> su estado es activa<br>
+        <em>Then</em> cambia su estado a inactiva.<br><br>
+        <b>Escenario 2:</b> Cambiar una habitación a activa<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere actualizar el estado de una habitación<br>
+        <em>And</em> selecciona la habitación<br>
+        <em>And</em> su estado es inactiva<br>
+        <em>Then</em> cambia su estado a activa.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU09</td>
       <td>Actualizar información de una habitación.</td>
       <td>Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> selecciona una habitación existente.<br><b>Then</b> puede modificar su información como tipo, precio o descripción y guardar los cambios.</td>
+      <td>
+        <b>Escenario 1:</b> Modificar una habitación<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona una habitación existente<br>
+        <em>Then</em> puede modificar su información como tipo, precio o descripción y guardar los cambios.<br><br>
+        <b>Escenario 2:</b> Modificar una habitación inexistente<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona la opción de modificar<br>
+        <em>But</em> no ha seleccionado ninguna habitación existente<br>
+        <em>Then</em> recibe un mensaje indicándole que debe seleccionar una habitación existente.<br><br>
+        <b>Escenario 3:</b> Modificar una habitación sin guardar los cambios<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona una habitación existente<br>
+        <em>And</em> modifica su información como tipo, precio o descripción<br>
+        <em>But</em> no guarda los cambios realizados<br>
+        <em>Then</em> regresa a la pantalla anterior sin guardar los cambios.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU10</td>
       <td>Buscar y filtrar habitaciones por estado.</td>
       <td>Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> utiliza la barra de búsqueda o selecciona un filtro de estado.<br><b>Then</b> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.</td>
+      <td>
+        <b>Escenario 1:</b> Buscar habitaciones<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
+        <em>Then</em> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.<br><br>
+        <b>Escenario 2:</b> Buscar habitaciones inexistentes<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
+        <em>But</em> la búsqueda no coincide con la información de ninguna habitación existente<br>
+        <em>Then</em> se muestra un mensaje que indica que no hubieron coincidencias en la búsqueda.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
@@ -1602,9 +1729,19 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Desvincular administrador de la organización.</td>
       <td>Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.</td>
       <td>
-        <b>Given</b> el propietario está en la lista de administradores asociados a su organización,<br>
-        <b>When</b> selecciona un administrador y confirma la acción de desvinculación,<br>
-        <b>Then</b> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.
+        <b>Escenario 1:</b> Desvincular a un administrador<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> selecciona un administrador y confirma la acción de desvinculación<br>
+        <em>Then</em> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.<br><br>
+        <b>Escenario 2:</b> Desvincular a un administrador inexistente<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> confirma la acción de desvinculación sin haber elegido algún administrador de la lista<br>
+        <em>Then</em> recibe un mensaje indicándole que debe elegir al menos un administrador.<br><br>
+        <b>Escenario 3:</b> Desvincular al último administrador<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> selecciona un administrador y confirma la acción de desvinculación<br>
+        <em>But</em> el equipo de trabajo quedaría vacío si se eliminan a los administradores seleccionados<br>
+        <em>Then</em> recibe un mensaje indicándole que el equipo de trabajo activo debe tener al menos un administrador.<br><br>
       </td>
       <td>EP03</td>
     </tr>
