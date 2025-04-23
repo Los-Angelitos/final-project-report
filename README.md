@@ -228,10 +228,10 @@ Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado 
          - [4.2.4.2. Interface Layer](#4242-interface-layer)
          - [4.2.4.3. Application Layer](#4243-application-layer)
          - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-         - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-1)
-         - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-1)
-            * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-1)
-            * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-1)
+         - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-1)
+         - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-1)
+            * [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-1)
+            * [4.2.4.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-1)
       + [4.2.5. Bounded Context: Inventory Bounded Context](#42x-bounded-context-inventory-bounded-context)
          - [4.2.5.1. Domain Layer](#42x1-domain-layer-2)
          - [4.2.5.2. Interface Layer](#42x2-interface-layer-1)
@@ -242,15 +242,15 @@ Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado 
             * [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-2)
             * [4.2.5.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-2)
       + [4.2.6. Bounded Context: Commmunication Bounded Context](#42x-bounded-context-commmunication-bounded-context)
-         - [4.2.X.1. Domain Layer](#42x1-domain-layer-3)
-         - [4.2.X.2. Interface Layer](#42x2-interface-layer-2)
-         - [4.2.X.3. Application Layer](#42x3-application-layer-2)
-         - [4.2.X.4. Infrastructure Layer](#42x4-infrastructure-layer-2)
+         - [4.2.6.1. Domain Layer](#42x1-domain-layer-3)
+         - [4.2.6.2. Interface Layer](#42x2-interface-layer-2)
+         - [4.2.6.3. Application Layer](#42x3-application-layer-2)
+         - [4.2.6.4. Infrastructure Layer](#42x4-infrastructure-layer-2)
       + [Implementación de Repositories](#implementación-de-repositories-2)
-         - [4.2.X.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-3)
-         - [4.2.X.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-3)
-            * [4.2.X.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-3)
-            * [4.2.X.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-3)
+         - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-3)
+         - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-3)
+            * [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-3)
+            * [4.2.6.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-3)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -2818,60 +2818,6 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 </div><br>
 
 Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
-
-### 4.2.X. Bounded Context: Reservations Bounded Context
-
-#### 4.2.X.1. Domain Layer
-En esta capa el equipo explica por medio de qué clases representará el core de la
-aplicación y las reglas de negocio que pertenecen al dominio para el bounded
-context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
-Aggregates, Factories, Domain Services, o abstracciones representadas por
-interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
-En esta sección el equipo introduce, presenta y explica las clases que forman parte
-de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
-
-#### 4.2.X.3. Application Layer
-En esta sección el equipo explica a través de qué clases se maneja los flujos de
-procesos del negocio. En esta sección debe evidenciarse que se considera los
-17/41
-capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
-clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
-En esta capa el equipo presenta aquellas clases que acceden a servicios externos
-como databases, messaging systems o email services. Es en esta capa que se ubica la
-implementación de Repositories para las interfaces definidas en Domain Layer. Algo
-similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
-<br><br>
-<div style="text-align: center;">
-  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
-</div><br><br>
-
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
-En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
-detalle sobre la implementación de componentes en el bounded context. Aquí se
-incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
-Bounded Context Database Diagram.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
-
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
@@ -3172,7 +3118,7 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
-![image](https://github.com/user-attachments/assets/bbebfc85-9f04-4bbb-a651-3271a1c96033)
+![diagrama de clase](https://github.com/user-attachments/assets/6b076738-98c0-440c-8975-26229005f50a)
 
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
 ![image](https://github.com/user-attachments/assets/8c242d51-1399-4d88-b830-2c8ec1e21b18)
@@ -4156,7 +4102,7 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 
 ---
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
 ![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
 
 <br><br>
@@ -4167,41 +4113,41 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
   <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
 
 ![Commerce Bounded Context Domain Layer Class Diagram](assets/img/commerce-bounded-context/commerce-class-diagram.png)
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.4.6.2. Bounded Context Database Design Diagram
 
 ![Commerce Bounded Context Database Design Diagram](assets/img/commerce-bounded-context/commerce-database-diagram.png)
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Inventory Bounded Context
+### 4.2.5. Bounded Context: Inventory Bounded Context
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.5.1. Domain Layer
 En esta capa el equipo explica por medio de qué clases representará el core de la
 aplicación y las reglas de negocio que pertenecen al dominio para el bounded
 context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
 Aggregates, Factories, Domain Services, o abstracciones representadas por
 interfaces como en el caso de Repositories. 
-#### 4.2.X.2. Interface Layer
+#### 4.2.5.2. Interface Layer
 En esta sección el equipo introduce, presenta y explica las clases que forman parte
 de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
 
-#### 4.2.X.3. Application Layer
+#### 4.2.5.3. Application Layer
 En esta sección el equipo explica a través de qué clases se maneja los flujos de
 procesos del negocio. En esta sección debe evidenciarse que se considera los
 17/41
 capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
 clases del tipo Command Handlers e Event Handlers. 
-#### 4.2.X.4. Infrastructure Layer
+#### 4.2.5.4. Infrastructure Layer
 En esta capa el equipo presenta aquellas clases que acceden a servicios externos
 como databases, messaging systems o email services. Es en esta capa que se ubica la
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del Owner Usuario para gestionar los recursos disponibles dentro de su hotel.<br>
 URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
 <br><br>
@@ -4210,20 +4156,20 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 </div><br><br>
 
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
 detalle sobre la implementación de componentes en el bounded context. Aquí se
 incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 En esta sección el equipo presenta el Class Diagram de UML para las clases del
 Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
 clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
 incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
 Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
 y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.5.6.2. Bounded Context Database Design Diagram
 En esta sección el equipo presenta y explica el Database Diagram que incluye los
 objetos de base de datos que permitirán la persistencia de información para los
 objetos del bounded context. Para el caso de un almacenamiento en base de datos
@@ -4232,9 +4178,9 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-### 4.2.X. Bounded Context: Commmunication Bounded Context
+### 4.2.6. Bounded Context: Commmunication Bounded Context
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.6.1. Domain Layer
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
 
@@ -4295,7 +4241,7 @@ Representa una notificación que se envía a los usuarios de la aplicación. Est
 | `INotificationQueryService.cs`       | Define consultas para obtener notificaciones mediante su identificador único. |
 
 
-#### 4.2.X.2. Interface Layer
+#### 4.2.6.2. Interface Layer
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
 
 ---
@@ -4334,7 +4280,7 @@ Cada entidad clave en el Bounded Context `Communication` cuenta con un **REST Co
 ---
 
 
-#### 4.2.X.3. Application Layer
+#### 4.2.6.3. Application Layer
 
 ### Servicios de Aplicación – Gestión de Flujos de Negocio
 ---
@@ -4364,7 +4310,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 
-#### 4.2.X.4. Infrastructure Layer
+#### 4.2.6.4. Infrastructure Layer
 
 ### Implementación de Repositories
 
@@ -4374,7 +4320,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 ---
 
-#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+#### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
 URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
 <br><br>
@@ -4383,20 +4329,20 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 </div><br><br>
 
 
-#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+#### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
 detalle sobre la implementación de componentes en el bounded context. Aquí se
 incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 En esta sección el equipo presenta el Class Diagram de UML para las clases del
 Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
 clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
 incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
 Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
 y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.6.6.2. Bounded Context Database Design Diagram
 En esta sección el equipo presenta y explica el Database Diagram que incluye los
 objetos de base de datos que permitirán la persistencia de información para los
 objetos del bounded context. Para el caso de un almacenamiento en base de datos
