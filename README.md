@@ -1725,7 +1725,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> consulta la sección de huéspedes actualmente alojados<br>
         <em>Then</em> el sistema muestra una lista con el nombre del huésped, la habitación que ocupa, y los detalles de su reserva (fecha de entrada, fecha de salida, estado de la reserva).
       </td>
-      <td>EP04</td>
+      <td>EP03</td>
     </tr>
     <tr>
       <td>HU13</td>
@@ -1751,17 +1751,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>EP04</td>
       <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
-      <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
-      <td> 
-      <li>HU01 - Gestionar reservas de huéspedes</li>
-      <li>HU02 - Enviar mensajes al gerente</li>
-      <li>HU03 - Ver detalles de la reserva del huésped</li>
-      <li>HU04 - Consultar disponibilidad de habitaciones</li>
-      <li>HU05 - Generar reporte de reservas del día</li>
-      <li>HU06 - Registrar reserva presencial</li>
-      <li>HU07 - Modificar fechas de una reserva</li>
-      <li>HU08 - Cambiar asignación de habitación</li>
-      <li>HU09 - Solicitar unirse a una organización</li>
+      <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td><td> 
        </td>
       <td></td>
     </tr>
