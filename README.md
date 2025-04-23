@@ -3762,6 +3762,7 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.3.6.1. Bounded Context Domain Layer Class Diagrams
+URL del diagrama de clases: <a href="https://lucid.app/lucidchart/aed64c50-821a-4c1b-967b-1e8e517fbf04/edit?viewport_loc=-1738%2C-716%2C5116%2C2288%2C0_0&invitationId=inv_1c5eb323-ed9e-49ab-8f1f-9103209bdec7">https://lucid.app/lucidchart/aed64c50-821a-4c1b-967b-1e8e517fbf04/edit?viewport_loc=-1738%2C-716%2C5116%2C2288%2C0_0&invitationId=inv_1c5eb323-ed9e-49ab-8f1f-9103209bdec7</a>
 <div style="text-align: center;">
   <img src="./assets/img/organizational-management-bounded-context/uml-class.PNG" alt="Class Diagram Organizational Management" width="90%" />
 </div><br>
