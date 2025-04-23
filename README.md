@@ -281,7 +281,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Ramon Jorge
         <p/>
-        Arian Rodriguez
+        Arian Rodriguez: Durante esta primera entrega, me desenvolví de manera eficiente dentro de mi equipo de trabajo, colaborando en la creación de un ambiente de confianza, donde cada uno de los integrantes se sintiera cómodo para expresar sus ideas y opiniones. De la misma manera, me aseguré de fomentar la comunicación y ayuda mutua entre algunos compañeros que tenían dudas sobre el trabajo a realizar.
         <p/>
         Fabia Herrera
         <p/>
@@ -301,7 +301,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Ramon Jorge
         <p/>
-        Arian Rodriguez
+        Arian Rodriguez: Durante este entregable, me aseguré de tener claro el objetivo a cumplir mediante la comunicación y en la resolución de dudas, así como también las tareas que debía realizar. Para ello, utilicé el tablero Kanban, donde se asignaron las tareas a cada uno de los integrantes y se establecieron fechas de entrega. De esta manera, proporcioné apoyo en la edición de User Stories, elaboración de entrevista, creación del Software Architecture System Diagrams, Bounded Context Canvases y documentación.
         <p/>
         Fabia Herrera
         <p/>
@@ -1646,104 +1646,128 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>EP05</td>
-      <td>Crear un perfil global para los huéspedes de SweetManager, facilitando la búsqueda de hoteles, la personalización de preferencias y la realización de reservas de manera rápida y sencilla.</td>
-      <td>Como huésped de Sweet Manager, quiero crear un perfil global, personalizar mis preferencias de búsqueda y realizar reservas de manera eficiente para mejorar mi experiencia en la plataforma.</td>
-      <td>Los huéspedes puededn crear un perfil único y global en la plataforma, donde pueden almacenar sus preferencias de búsqueda, gestionar sus reservas y facilitar la experiencia de reservar hoteles de manera personalizada. A través de este perfil, los huéspedes podrán acceder a opciones de búsqueda avanzadas y gestionar todas sus reservas en un solo lugar.</td>
+      <td>Crear un perfil global para los huéspedes de SweetManager que permita personalizar preferencias de búsqueda, gestionar reservas y configurar opciones personales que podrán sincronizarse con los dispositivos IoT del hotel para una experiencia personalizada durante su estadía.</td>
+      <td>Como huésped, quiero crear un perfil único en la plataforma donde pueda registrar mis preferencias (como tipo de habitación, temperatura, iluminación), realizar reservas rápidamente y asegurarme de que mi experiencia en el hotel este personalizada según mis elecciones.</td>
+      <td>Los huéspedes pueden crear un perfil único en la plataforma, donde pueden almacenar su historial de búsqueda, gestionar sus reservas y facilitar su experiencia de reservar hoteles de manera personalizada con sus preferencias de cliente. A través de este perfil, los hoteles podrán gestionar la personalización y trámite de reserva a disposición de su cliente, de esta manera el huésped se mantiene cómodo y confiado en el servicio de hotel que se le ofrece.</td>
       <td></td>
     </tr>
     <tr>
       <td>HU01</td>
-      <td>Crear perfil global en SweetManager</td>
-      <td>Como huésped quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
+      <td>Crear perfil único y público en SweetManager</td>
+      <td>Como huésped quiero crear un perfil global para guardar mis preferencias como cliente y reutilizarlos en futuras reservas.</td>
       <td>
-        <strong>Escenario 1:</strong> Registro de huésped.<br>
+        <strong>Escenario 1:</strong> Registro de huésped<br>
         <em>Given</em> que el huésped no tiene una cuenta<br>
         <em>When</em> completa el formulario de registro con su información personal<br>
         <em>Then</em> el sistema debe crear un perfil asociado y almacenar sus datos de forma segura.<br><br>
-        <strong>Escenario 2:</strong> Configuración de preferencias.<br>
+        <strong>Escenario 2:</strong> Configuración de preferencias<br>
         <em>Given</em> que el huésped tiene una cuenta activa<br>
         <em>When</em> accede a la sección de preferencias y establece opciones como temperatura o tipo de habitación<br>
-        <em>Then</em> el sistema debe guardar esas preferencias para usarlas automáticamente en futuras reservas.
+        <em>Then</em> el sistema debe guardar esas preferencias para usarlas automáticamente en futuras reservas.<br><br>
+        <strong>Escenario 3:</strong> Aplicación automática de preferencias al reservar<br>
+        <em>Given</em> que el huésped tiene un perfil con preferencias guardadas (como temperatura, tipo de cama, iluminación)<br>
+        <em>When</em> realiza una reserva en cualquier hotel de la red SweetManager<br>
+        <em>Then</em> el sistema debe sugerir o aplicar automáticamente esas preferencias disponibles según la disponibilidad del hotel.
       </td>
-      <td></td>
+      <td>EP05</td>
     </tr>
     <tr>
       <td>HU02</td>
       <td>Buscar y filtrar hoteles de Sweet Manager</td>
-      <td>Como huésped quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
+      <td>Como huésped quiero filtrar y buscar hoteles de la red de SweetManager según mis preferencias para encontrar un hotel adecuado.</td>
       <td>
         <b>Escenario 1:</b> Buscar hoteles por nombre o ciudad.<br>
         <em>Given</em> que el huésped está en la página de búsqueda de hoteles<br>
         <em>When</em> escribe un nombre de hotel o ciudad en el campo de búsqueda<br>
-        <em>Then</em> el sistema debe mostrar una lista de hoteles que coincidan con los criterios.<br><br>
+        <em>Then</em> una lista de hoteles es mostrada al huésped los cuales coinciden con los criterios establecidos.<br><br>
         <b>Escenario 2:</b> Aplicar filtros de preferencia.<br>
         <em>Given</em> que el huésped está visualizando la lista de hoteles<br>
         <em>When</em> selecciona filtros como tipo de habitación<br>
-        <em>Then</em> el sistema debe actualizar la lista mostrando solo los hoteles que cumplan con esas condiciones.
+        <em>Then</em> el sistema debe actualizar la lista mostrando solo los hoteles que cumplan con esas condiciones.<br><br>
+        <b>Escenario 3:</b> Buscar hoteles según mis preferencias guardadas.<br>
+        <em>Given</em> que el huésped ya tiene preferencias guardadas en su perfil global (tipo de habitación, temperatura preferida, entre otros.)<br>
+        <em>When</em> accede a la página de búsqueda sin seleccionar filtros manualmente.<br>
+        <em>Then</em> el sistema debe sugerir hoteles que se ajusten automáticamente a sus preferencias y mostrarlos destacados.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU03</td>
-      <td>Reservar una habitación</td>
-      <td>Como huésped quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
+      <td>Reservar una habitación personalizada</td>
+      <td>Como huésped quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda y acorde a mis necesidades.</td>
       <td>
         <b>Escenario 1:</b> Selección de fechas.<br>
         <em>Given</em> que el huésped está en la página de reservas del hotel<br>
-        <em>When</em> selecciona una fecha de entrada y una de salida válidas<br>
-        <em>Then</em> el sistema debe mostrar las habitaciones disponibles para ese rango de fechas.<br><br>
-        <b>Escenario 2:</b> Cálculo de precio.<br>
-        <em>Given</em> que el huésped ha seleccionado una habitación y un rango de fechas<br>
+        <em>When</em> selecciona una fecha de entrada y salida válidas<br>
+        <em>Then</em> el sistema debe mostrar las habitaciones disponibles para ese rango de fechas, priorizando aquellas que coincidan con sus preferencias guardadas.<br><br>
+        <b>Escenario 2:</b> Cálculo de precio personalizado.<br>
+        <em>Given</em> que el huésped ha seleccionado una habitación y fechas específicas.<br>
         <em>When</em> el sistema calcula el precio<br>
-        <em>Then</em> debe mostrar el precio total basado en el número de noches y el precio por noche.<br><br>
+        <em>Then</em> debe mostrar el precio total considerando número de noches, tarifa base por noche y cualquier servicio adicional.<br><br>
         <b>Escenario 3:</b> Confirmación de reserva.<br>
-        <em>Given</em> que el huésped ha revisado los detalles de la reserva<br>
+        <em>Given</em> que el huésped ha revisado los detalles de la habitación, fechas y precio<br>
         <em>When</em> confirma la reserva y realiza el pago<br>
-        <em>Then</em> el sistema debe guardar la reserva y mostrar una confirmación al huésped.
+        <em>Then</em> el sistema debe guardar la reserva, asociarla al perfil del huésped y mostrar una confirmación con los datos y código de reserva.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU04</td>
-      <td>Visualizar reservas activas</td>
-      <td>Como huésped quiero visualizar mis reservas activas para saber cúando y dónde me hospedaré</td>
+      <td>Visualizar y gestionar reservas activas</td>
+      <td>Como huésped, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré, y asegurarme de que la habitación se ajuste a mis preferencias.</td>
       <td>
-        <b>Escenario 1:</b> Visualización de reservas.<br>
-        <em>Given</em> que el huésped ha iniciado sesión.
-        <em>When</em> accede a la vista de reservas activas.
-        <em>Then</em> el sistema muestra sus reservas activas con fechas, hotel y tipo de habitación (detalle de reserva).
+        <b>Escenario 1:</b> Visualización de reservas activas<br>
+        <em>Given</em> que el huésped se encuentra activo con su perfil
+        <em>When</em> accede a la vista de reservas activas
+        <em>Then</em> el sistema debe mostrar una lista de reservas vigentes con fecha de entrada, salida, nombre del hotel, tipo de habitación y estado actual de la reserva.<br><br>
+        <b>Escenario 2:</b> Detalle de una reserva activa<br>
+        <em>Given</em> que el huésped está visualizando sus reservas activas
+        <em>When</em> selecciona una reserva específica
+        <em>Then</em> el sistema debe mostrar los detalles completos: dirección del hotel, servicios incluidos, preferencias aplicadas (como temperatura, iluminación) y política de cancelación.<br><br>
+        <b>Escenario 3:</b> Modificación de preferencias antes del check-in<br>
+        <em>Given</em> que la reserva aún no ha comenzado
+        <em>When</em> el huésped accede a la reserva y desea actualizar sus preferencias (ej. temperatura, nivel de iluminación)
+        <em>Then</em> el sistema debe permitir modificar las preferencias y sincronizarlas con los dispositivos IoT del hotel para que estén listas al momento del check-in.<br><br>
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU05</td>
-      <td>Cancelar reserva</td>
-      <td>Como huésped quiero cancelar una de mis reservas para evitar costos innecesarios si mis planes cambian.</td>
+      <td>Cancelar reservas activas</td>
+      <td>Como huésped, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
       <td>
         <b>Escenario 1:</b> Cancelación dentro del plazo permitido<br>
-        <em>Given</em> que el huésped tiene una reserva activa y aún está dentro del plazo de cancelación gratuita.<br>
-        <em>When</em> accede a su lista de reservas activas y selecciona la opción de cancelar la reserva.<br>
-        <em>Then</em> el sistema debe cancelar la reserva y mostrar un mensaje de confirmación.<br><br>
-        <b>Escenario 2:</b> Registro de cancelación<br>
-        <em>Given</em> que una reserva ha sido cancelada<br>
-        <em>When</em> el huésped consulta su historial<br>
-        <em>Then</em> debe ver la reserva como cancelada con la fecha y motivo (si se solicita).
+        <em>Given</em> que el huésped tiene una reserva activa y la política de cancelación gratuita aún aplica.<br>
+        <em>When</em> accede a la sección de reservas activas y selecciona la opción de cancelar.<br>
+        <em>Then</em> el sistema debe confirmar la cancelación sin penalidad, actualizar el estado de la reserva y mostrar un mensaje de confirmación.<br><br>
+        <b>Escenario 2:</b> Registro en historial de reservas<br>
+        <em>Given</em> que una reserva fue cancelada previamente<br>
+        <em>When</em> el huésped consulta su historial de reservas<br>
+        <em>Then</em> el sistema debe mostrar esa reserva como "cancelada", incluyendo la fecha de cancelación y el motivo si fue ingresado.<br><br>
+        <b>Escenario 3:</b> Cancelación fuera del plazo permitido<br>
+        <em>Given</em> que el huésped desea cancelar una reserva fuera del periodo de cancelación gratuita<br>
+        <em>When</em> selecciona la opción de cancelar<br>
+        <em>Then</em> el sistema debe mostrar las condiciones de penalización, pedir confirmación y, si el huésped acepta, proceder con la cancelación registrando el cargo correspondiente.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU06</td>
-      <td>Ver historial de reservas</td>
-      <td>Como huésped quiero ver mi historial de reservas para revisar mis viajes pasados y tener un registro de mis estadías.</td>
+      <td>Consultar historial de reservas anteriores</td>
+      <td>Como huésped, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
       <td>
-        <b>Escenario 1:</b> Visualizar historial completo<br>
-        <em>Given</em> que el huésped ha iniciado sesión en la aplicación<br>
-        <em>When</em> accede a la sección "Historial de reservas"<br>
-        <em>Then</em> el sistema debe mostrar una lista con todas las reservas anteriores, incluyendo fecha, hotel y estado (completada o cancelada).<br><br>
+        <b>Escenario 1:</b> Visualización del historial completo<br>
+        <em>Given</em> que el huésped se encuentra activo con su perfil público.<br>
+        <em>When</em> accede a la sección de reservas desde su perfil o menú principal<br>
+        <em>Then</em> el sistema debe mostrar una lista cronológica de todas sus reservas anteriores, incluyendo: nombre del hotel, fechas, tipo de habitación y estado (completada o cancelada)<br><br>
         <b>Escenario 2:</b> Visualizar detalles de una reserva específica<br>
-        <em>Given</em> que el huésped está viendo su historial<br>
+        <em>Given</em> que el huésped está viendo su historial de reservas<br>
         <em>When</em> selecciona una reserva de la lista<br>
-        <em>Then</em> el sistema debe mostrar los detalles: hotel, habitación, fechas, monto pagado y todo el detalle.
+        <em>Then</em> el sistema debe mostrar todos los detalles de esa reserva: nombre del hotel, tipo de habitación, fechas de entrada y salida, servicios incluidos, monto total pagado.<br><br>
+        <b>Escenario 3:</b> Filtro por estado o fecha<br>
+        <em>Given</em> que el huésped desea buscar una reserva específica en su historial<br>
+        <em>When</em> aplica filtros por estado (completada o cancelada) o por rango de fechas<br>
+        <em>Then</em> el sistema debe mostrar únicamente las reservas que cumplan con esos criterios, facilitando la navegación
       </td>
       <td>EP05</td>
     </tr>
@@ -2188,25 +2212,32 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.3. Software Architecture
 
+URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>.
+<br><br>
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos.<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+El diagrama de contexto del sistema ilustra la interacción entre el sistema de gestión hotelera y los actores externos que interactúan con él. Este diagrama proporciona una visión general de cómo el sistema se integra con otros sistemas y servicios, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se conecta con un sistema externo de pagos, un sistema de mensajería (email)<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/context-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/context-diagram.png" alt="Context Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios módulos, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/container-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/container-diagram.png" alt="Container Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes módulos y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="90%" />
+</div><br><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
@@ -2716,9 +2747,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
+En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/iam-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2738,6 +2772,59 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 
 Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
 
+### 4.2.X. Bounded Context: Reservations Bounded Context
+
+#### 4.2.X.1. Domain Layer
+En esta capa el equipo explica por medio de qué clases representará el core de la
+aplicación y las reglas de negocio que pertenecen al dominio para el bounded
+context. Aquí el equipo presenta clases de categorías como Entities, Value Objects,
+Aggregates, Factories, Domain Services, o abstracciones representadas por
+interfaces como en el caso de Repositories. 
+#### 4.2.X.2. Interface Layer
+En esta sección el equipo introduce, presenta y explica las clases que forman parte
+de Interface/Presentation Layer, como clases del tipo Controllers o Consumers
+
+#### 4.2.X.3. Application Layer
+En esta sección el equipo explica a través de qué clases se maneja los flujos de
+procesos del negocio. En esta sección debe evidenciarse que se considera los
+17/41
+capabilities de la aplicación en relación al bounded context. Aquí debe considerarse
+clases del tipo Command Handlers e Event Handlers. 
+#### 4.2.X.4. Infrastructure Layer
+En esta capa el equipo presenta aquellas clases que acceden a servicios externos
+como databases, messaging systems o email services. Es en esta capa que se ubica la
+implementación de Repositories para las interfaces definidas en Domain Layer. Algo
+similar ocurre con interfaces definidas para MessageBrokers.
+#### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
+En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+#### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
+En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
+detalle sobre la implementación de componentes en el bounded context. Aquí se
+incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
+Bounded Context Database Diagram.
+https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+En esta sección el equipo presenta el Class Diagram de UML para las clases del
+Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
+clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
+incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
+Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
+y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+##### 4.2.X.6.2. Bounded Context Database Design Diagram
+En esta sección el equipo presenta y explica el Database Diagram que incluye los
+objetos de base de datos que permitirán la persistencia de información para los
+objetos del bounded context. Para el caso de un almacenamiento en base de datos
+relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
+primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
+elaboración del diagrama la herramienta indicada.
+
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
@@ -3027,6 +3114,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 ![structurizr-101410-Container-001](https://github.com/user-attachments/assets/61878c86-913b-4fc9-b213-08085d38c057)
+En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
@@ -3082,7 +3175,6 @@ Las tablas principales y unicas del Bounded Context son:
 | `Price`      | `decimal`             | Precio base asignado a este tipo |
 | `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
 
-### 4.2.X. Bounded Context: Organizational Management Bounded Context
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
@@ -3384,15 +3476,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-<p >A continuación, el equipo presenta los diagramas de componentes del Bounded Context Inventory utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.</p>
-
+En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="https://i.imgur.com/DZkhfiE.png" alt="Class Diagram Inventory" width="70%" />
-</div><br>
-
-<div style="text-align: center;">
-  <img src="https://i.imgur.com/s90C8zf.png" alt="Class Diagram Inventory" width="70%" />
-</div><br>
+  <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
@@ -3634,16 +3723,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-A continuación, el equipo presenta los diagramas de componentes del Bounded Context `Organizational Management` utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.
-
+En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/org-management-components-hotel.png" alt="C4 Diagram Organizational Management" width="90%" />
-</div><br>
-
-<div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/org-management-components-provider.png" alt="C4 Diagram Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4025,10 +4110,15 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-<p>A continuación, se presenta el diagrama de componentes del C4 model del Bounded Context Commerce para el cual se utilizó la herramienta Structurizr. Este diagram muestra la descomposición de cada contenedor y sus interacciones: </p>
-
 ![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
+
+<br><br>
+En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4065,19 +4155,13 @@ como databases, messaging systems o email services. Es en esta capa que se ubica
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del Owner Usuario para gestionar los recursos disponibles dentro de su hotel.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
@@ -4244,19 +4328,13 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/communication-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
