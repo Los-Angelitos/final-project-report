@@ -228,29 +228,28 @@ Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado 
          - [4.2.4.2. Interface Layer](#4242-interface-layer)
          - [4.2.4.3. Application Layer](#4243-application-layer)
          - [4.2.4.4. Infrastructure Layer](#4244-infrastructure-layer)
-         - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-1)
-         - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-1)
-            * [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-1)
-            * [4.2.4.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-1)
-      + [4.2.5. Bounded Context: Inventory Bounded Context](#42x-bounded-context-inventory-bounded-context)
-         - [4.2.5.1. Domain Layer](#42x1-domain-layer-2)
-         - [4.2.5.2. Interface Layer](#42x2-interface-layer-1)
-         - [4.2.5.3. Application Layer](#42x3-application-layer-1)
-         - [4.2.5.4. Infrastructure Layer](#42x4-infrastructure-layer-1)
-         - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-2)
-         - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-2)
-            * [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-2)
-            * [4.2.5.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-2)
-      + [4.2.6. Bounded Context: Commmunication Bounded Context](#42x-bounded-context-commmunication-bounded-context)
-         - [4.2.6.1. Domain Layer](#42x1-domain-layer-3)
-         - [4.2.6.2. Interface Layer](#42x2-interface-layer-2)
-         - [4.2.6.3. Application Layer](#42x3-application-layer-2)
-         - [4.2.6.4. Infrastructure Layer](#42x4-infrastructure-layer-2)
-      + [Implementación de Repositories](#implementación-de-repositories-2)
-         - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#42x5-bounded-context-software-architecture-component-level-diagrams-3)
-         - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#42x6-bounded-context-software-architecture-code-level-diagrams-3)
-            * [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42x61-bounded-context-domain-layer-class-diagrams-3)
-            * [4.2.6.6.2. Bounded Context Database Design Diagram](#42x62-bounded-context-database-design-diagram-3)
+         - [4.2.4.5. Bounded Context Software Architecture Component Level Diagrams](#4245-bounded-context-software-architecture-component-level-diagrams-1)
+         - [4.2.4.6. Bounded Context Software Architecture Code Level Diagrams](#4246-bounded-context-software-architecture-code-level-diagrams-1)
+            * [4.2.4.6.1. Bounded Context Domain Layer Class Diagrams](#42461-bounded-context-domain-layer-class-diagrams-1)
+            * [4.2.4.6.2. Bounded Context Database Design Diagram](#42462-bounded-context-database-design-diagram-1)
+      + [4.2.5. Bounded Context: Inventory Bounded Context](#425-bounded-context-inventory-bounded-context)
+         - [4.2.5.1. Domain Layer](#4251-domain-layer-2)
+         - [4.2.5.2. Interface Layer](#4252-interface-layer-1)
+         - [4.2.5.3. Application Layer](#4253-application-layer-1)
+         - [4.2.5.4. Infrastructure Layer](#4254-infrastructure-layer-1)
+         - [4.2.5.5. Bounded Context Software Architecture Component Level Diagrams](#4255-bounded-context-software-architecture-component-level-diagrams-2)
+         - [4.2.5.6. Bounded Context Software Architecture Code Level Diagrams](#4256-bounded-context-software-architecture-code-level-diagrams-2)
+            * [4.2.5.6.1. Bounded Context Domain Layer Class Diagrams](#42561-bounded-context-domain-layer-class-diagrams-2)
+            * [4.2.5.6.2. Bounded Context Database Design Diagram](#42562-bounded-context-database-design-diagram-2)
+      + [4.2.6. Bounded Context: Commmunication Bounded Context](#426-bounded-context-commmunication-bounded-context)
+         - [4.2.6.1. Domain Layer](#4261-domain-layer-3)
+         - [4.2.6.2. Interface Layer](#4262-interface-layer-2)
+         - [4.2.6.3. Application Layer](#4263-application-layer-2)
+         - [4.2.6.4. Infrastructure Layer](#4264-infrastructure-layer-2)
+         - [4.2.6.5. Bounded Context Software Architecture Component Level Diagrams](#4265-bounded-context-software-architecture-component-level-diagrams-3)
+         - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams-3)
+            * [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams-3)
+            * [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram-3)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -275,17 +274,18 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p>
         TB1:
         <p/>
-        Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compas.
+        Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compañeros en cada momento que ellos lo requerían. Adicionalmente, apoyé en el proceso de desarrollo de distintos requisitos y organización del equipo.
         <p/>
         Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, colaboré con algunas estrategias y dinamicas grupales, como dirigiendo el proceso de Event Storming en cada uno de sus pasos. Tambien colaboré con la asignación de algunas tareas y el desarrollo de nuestro tablero Kanban grupal. 
         <p/>
-        Ramon Jorge
+        Ramon Jorge: Para esta entrega, participé activamente aportando ideas y contribuyendo al desarrollo conjunto del informe junto con mis compañeros. Fui proactivo al realizar las secciones del informe que me correspondían y comunicando mis progresos, mis dudas y mis opiniones al resto de integrantes.
         <p/>
         Arian Rodriguez: Durante esta primera entrega, me desenvolví de manera eficiente dentro de mi equipo de trabajo, colaborando en la creación de un ambiente de confianza, donde cada uno de los integrantes se sintiera cómodo para expresar sus ideas y opiniones. De la misma manera, me aseguré de fomentar la comunicación y ayuda mutua entre algunos compañeros que tenían dudas sobre el trabajo a realizar.
         <p/>
-        Fabia Herrera
+        Fabia Herrera:
+        Para esta primera entrega, el equipo adoptó un enfoque de trabajo iterativo, organizando reuniones semanales en las que compartimos avances, identificamos dificultades y propusimos mejoras de manera colaborativa. Durante este proceso, mantuve una comunicación efectiva con mis compañeros, expresando dudas y sugerencias. 
         <p/>
-        Omar Morales: 
+        Omar Morales: En esta primera entrega, participé activamente en las actividades del equipo, aportando ideas durante las sesiones colaborativas y apoyando en la redacción y organización de las historias de usuario. También fomenté la comunicación y el trabajo en equipo, contribuyendo a un ambiente inclusivo en el que todos pudieran participar y enfocados en cumplir con los objetivos establecidos.
         </p>
     </td>
     <td>TB1:</td>
@@ -295,17 +295,18 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
     <td><p>
         TB1:
         <p/>
-        Mauricio Rojas: 
+        Mauricio Rojas: En este entregable, he fomentado en todo momento el trabajo en equipo y la comunicación constante. Adicionalmente, escuchando e intercambiando ideas con mis compañeros de equipo. De esta manera, planificamos tareas y cumplimos objetivos de una mejor manera.
         <p/>
         Giacomo Zoppi: En este entegable, colaboré en formar un ambiente colaborativo en el grupo, ayudé a establecer algunas tareas y objetivos en nuestro tablero Kanban. Tambien, a la hora de cumplir a tiempo con mis tareas, genero un ambiente responsable en el que todos estamos seguros que cada uno cumple su parte. 
         <p/>
-        Ramon Jorge
+        Ramon Jorge: Para esta entrega, establecí junto con mis compañeros una serie de objetivos semanalmente que íbamos cumpliendo y revisando entre todos a lo largo del plazo establecido. Para ello, nos guiamos del tablero Kanban donde estaban establecidas las responsabilidades para cada uno de los integrantes. Participé en la elaboración de los As-Is y To-Be Scenarios, en el User Task Matrix, los Software Architecture System Diagrams, Bounded Context Canvas y la documentación del Bounded Context Commerce.
         <p/>
         Arian Rodriguez: Durante este entregable, me aseguré de tener claro el objetivo a cumplir mediante la comunicación y en la resolución de dudas, así como también las tareas que debía realizar. Para ello, utilicé el tablero Kanban, donde se asignaron las tareas a cada uno de los integrantes y se establecieron fechas de entrega. De esta manera, proporcioné apoyo en la edición de User Stories, elaboración de entrevista, creación del Software Architecture System Diagrams, Bounded Context Canvases y documentación.
         <p/>
-        Fabia Herrera
+        Fabia Herrera:
+        Junto con el equipo, establecimos metas claras, distribuimos tareas de manera equitativa y planificamos nuestras actividades para cumplir con los plazos establecidos por el mismo. Para esta entrega contribuí con los segmentos objetivo, la creación de los user persona, el análisis de las entrevistas, así como la documentación del Communication Bounded Context.
         <p/>
-        Omar Morales: 
+        Omar Morales: Durante este entregable, participé activamente en la definición de metas y tareas del equipo, colaborando en la redacción de historias de usuario y apoyando en la elaboración de la documentación del proyecto. Utilicé el tablero Kanban para organizar y dar seguimiento a mis responsabilidades, lo cual ayudó a mantener una visión clara del progreso del equipo. Además, fomenté un ambiente colaborativo mediante una comunicación constante y abierta, promoviendo la participación de todos los integrantes.
         </p></td>
     <td>TB1: </td>
   </tr>
@@ -322,9 +323,11 @@ Nuestro objetivo es brindar a los hoteles una plataforma integral que centralice
 
 Para la monetización, utilizamos un modelo de negocio basado en suscripción escalable, el cual se adapta al tamaño y necesidades de cada hotel, e incorpora la gestión de dispositivos IoT como valor agregado. Es decir, cada nivel de suscripción incluye funcionalidades básicas del sistema (gestión de reservas, finanzas, etc.), además de una cantidad determinada de dispositivos IoT preconfigurados para su uso inmediato. Para el aprovisionamiento de hardware, pensamos usar un modelo de Partner Reseller: el partner instala y mantiene el hardware, y Sweet Manager comparte ingresos por suscripción.
 
-VISION: 
+Visión:
+Ser la plataforma líder en Latinoamérica en la transformación digital del sector hotelero, integrando tecnologías inteligentes que eleven la eficiencia operativa, la experiencia del huésped y la sostenibilidad de los establecimientos.
 
-MISION: 
+Misión:
+Brindar a los hoteles una solución integral de gestión administrativa y operativa que, a través de herramientas digitales e integración con dispositivos IoT, optimice procesos, modernice la operación diaria y mejore la calidad del servicio, adaptándose a las necesidades de cada establecimiento mediante un modelo de suscripción flexible y escalable.
 
 ### 1.1.2. Perfiles de integrantes del equipo
 
@@ -1088,7 +1091,9 @@ Duración de la entrevista:
 
 Personalidad: Análitica
 
-IMAGEN VA AQUI
+<div style="text-align: center;">
+  <img src="assets/img/interview-analysis/owner1.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+</div><br>
 
 En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
 
@@ -1508,70 +1513,197 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>HU01</td>
       <td>Revisar ingresos y egresos de la organización</td>
       <td>Como gerente del hotel quiero revisar las finanzas en términos de ingresos y egresos de mi hotel para mantener un constante seguimiento de estos.</td>
-      <td><b>Given</b> el gerente está conectado a su cuenta.<br><b>When</b> se encuentra en el dashboard.<br><b>Then</b> revisa los ingresos y egresos<br><b>Y</b> escoge el plazo semanal o mensual de finanzas.</td>
+      <td>
+        <b>Escenario 1:</b> Revisión de las finanzas semanales<br>
+        <em>Given</em> el gerente está conectado a su cuenta<br>
+        <em>When</em> se encuentra en el dashboard<br>
+        <em>And</em> escoge el plazo semanal de finanzas<br>
+        <em>Then</em> revisa los ingresos y egresos semanales.<br><br>
+        <b>Escenario 2:</b> Revisión de las finanzas mensuales<br>
+        <em>Given</em> el gerente está conectado a su cuenta<br>
+        <em>When</em> se encuentra en el dashboard<br>
+        <em>And</em> escoge el plazo mensual de finanzas<br>
+        <em>Then</em> revisa los ingresos y egresos mensuales.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU02</td>
       <td>Revisar stock de recursos del hotel</td>
       <td>Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
-      <td><b>Given</b> el gerente está en la página de recursos.<br><b>When</b> nota que uno de sus recursos está por agotar el stock.<br><b>Then</b> contacta a su proveedor y crea una solicitud de abastecimiento.</td>
+      <td>
+        <b>Escenario 1:</b> Solicitud de abastecimiento<br>
+        <em>Given</em> el gerente está en la página de recursos<br>
+        <em>When</em> nota que uno de sus recursos está por agotar el stock<br>
+        <em>Then</em> contacta a su proveedor y crea una solicitud de abastecimiento.<br><br>
+        <b>Escenario 2:</b> Revisión del stock de recursos<br>
+        <em>Given</em> el gerente está en la página de recursos<br>
+        <em>When</em> revisa el stock de los productos y observa que ninguno está cerca de agotarse<br>
+        <em>Then</em> decide que no es necesario crear una solicitud de abastecimiento aún.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU03</td>
       <td>Comunicarse con sus administradores.</td>
       <td>Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.</td>
-      <td><b>Given</b> el gerente está en la página de mensajería.<br><b>When</b> quiere enviar mensaje a sus administradores.<br><b>Then</b> redacta el asunto y cuerpo del mensaje.<br><b>Y</b> lo envía a todos los administradores.</td>
+      <td>
+        <b>Escenario 1:</b> Envío de mensaje a un administrador<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje a uno de sus administradores<br>
+        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía al administrador seleccionado.<br><br>
+        <b>Escenario 2:</b> Envío de mensaje a sus administradores<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje a todos sus administradores<br>
+        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía a todos los administradores.<br><br>
+        <b>Escenario 3:</b> Envío de mensaje sin cuerpo y/o asunto<br>
+        <em>Given</em> el gerente está en la página de mensajería<br>
+        <em>When</em> quiere enviar un mensaje<br>
+        <em>Then</em> intenta enviarlo sin redactar el asunto y/o el cuerpo del mensaje<br>
+        <em>And</em> recibe un mensaje que le indica que debe redactar un asunto y cuerpo en el mensaje.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU04</td>
       <td>Mejorar la subscripción de la organización.</td>
       <td>Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
-      <td><b>Given</b> el gerente está en la página de subscripciones.<br><b>When</b> quiere mejorar o degradar la subscripción actual. <b>Then</b> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones.</td>
+      <td>
+        <b>Escenario 1:</b> Cambio de suscripción<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual y aceptar los términos y condiciones<br>
+        <em>Then</em> su suscripción es actualizada.<br><br>
+        <b>Escenario 2:</b> Cancelación de cambio<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual pero presiona el botón cancelar<br>
+        <em>Then</em> el cambio se cancela y regresa a la página anterior.<br><br>
+        <b>Escenario 3:</b> Cambio de suscripción sin aceptar términos y condiciones<br>
+        <em>Given</em> el gerente está en la página de subscripciones<br>
+        <em>When</em> quiere mejorar o degradar la subscripción actual<br>
+        <em>And</em> entra a la página para cambiar la subscripción actual y presiona continuar sin aceptar los términos y condiciones<br>
+        <em>And</em> recibe un mensaje que le indica que debe aceptar los términos y condiciones antes de continuar.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU05</td>
       <td>Invitar administradores a su organización.</td>
       <td>Como gerente del hotel quiero invitar administradores a mi organización para que tengan acceso al servicio.</td>
-      <td><b>Given</b> el gerente está en la página de administradores<br><b>When</b> quiere invitar a un nuevo administrador a la organización.<br><b>Then</b> Invita mediante su correo electrónico a la organización.</td>
+      <td>
+        <b>Escenario 1:</b> Invitación a un nuevo administrador<br>
+        <em>Given</em> el gerente está en la página de administradores<br>
+        <em>When</em> quiere invitar a un nuevo administrador a la organización<br>
+        <em>Then</em> invita mediante su correo electrónico a la organización.<br><br>
+        <b>Escenario 2:</b> Invitación a múltiples administradores<br>
+        <em>Given</em> el gerente está en la página de administradores<br>
+        <em>When</em> quiere invitar a varios administradores a la organización<br>
+        <em>Then</em> invita mediante un correo electrónico enviado a todos los administradores a la organización.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU06</td>
       <td>Agregar proveedores a su lista de contactos.</td>
       <td>Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.</td>
-      <td><b>Given</b> el gerente está en la página de proveedores<br><b>When</b> quiere registrar un nuevo proveedor a la lista de contacto.<br><b>Then</b> Registra su información de contacto.</td>
+      <td>
+        <b>Escenario 1:</b> Agregar a un proveedor<br>
+        <em>Given</em> el gerente está en la página de proveedores<br>
+        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
+        <em>Then</em> registra su información de contacto.<br><br>
+        <b>Escenario 2:</b> Agregar a un proveedor que ya existe<br>
+        <em>Given</em> el gerente está en la página de proveedores<br>
+        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
+        <em>And</em> registra su información de contacto<br>
+        <em>But</em> la información personal está duplicada o ya existe<br>
+        <em>Then</em> recibe un mensaje indicándole que el proveedor ya está registrado.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU07</td>
       <td>Registrar nueva habitación en el hotel.</td>
       <td>Como gerente del hotel quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere agregar una nueva habitación.<br><b>Then</b> ingresa la información correspondiente y la habitación queda registrada.</td>
+      <td>
+        <b>Escenario 1:</b> Agregar una habitación<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>Then</em> ingresa la información correspondiente y la habitación queda registrada.<br><br>
+        <b>Escenario 2:</b> Agregar una habitación que ya existe<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>And</em> ingresa la información correspondiente<br>
+        <em>But</em> la información de la habitación está duplicada o ya existe<br>
+        <em>Then</em> recibe un mensaje indicándole que la habitación ya está registrada.<br><br>
+        <b>Escenario 3:</b> Agregar una habitación con datos incompletos<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>But</em> presiona la opción de registrar habitación sin completar los datos<br>
+        <em>Then</em> recibe un mensaje indicándole que debe completar la información solicitada.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU08</td>
       <td>Editar el estado de una habitación.</td>
       <td>Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> quiere actualizar el estado de una habitación.<br><b>Then</b> selecciona la habitación y cambia su estado a activa o inactiva.</td>
+      <td>
+        <b>Escenario 1:</b> Cambiar una habitación a inactiva<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere actualizar el estado de una habitación<br>
+        <em>And</em> selecciona la habitación<br>
+        <em>And</em> su estado es activa<br>
+        <em>Then</em> cambia su estado a inactiva.<br><br>
+        <b>Escenario 2:</b> Cambiar una habitación a activa<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> quiere actualizar el estado de una habitación<br>
+        <em>And</em> selecciona la habitación<br>
+        <em>And</em> su estado es inactiva<br>
+        <em>Then</em> cambia su estado a activa.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU09</td>
       <td>Actualizar información de una habitación.</td>
       <td>Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> selecciona una habitación existente.<br><b>Then</b> puede modificar su información como tipo, precio o descripción y guardar los cambios.</td>
+      <td>
+        <b>Escenario 1:</b> Modificar una habitación<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona una habitación existente<br>
+        <em>Then</em> puede modificar su información como tipo, precio o descripción y guardar los cambios.<br><br>
+        <b>Escenario 2:</b> Modificar una habitación inexistente<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona la opción de modificar<br>
+        <em>But</em> no ha seleccionado ninguna habitación existente<br>
+        <em>Then</em> recibe un mensaje indicándole que debe seleccionar una habitación existente.<br><br>
+        <b>Escenario 3:</b> Modificar una habitación sin guardar los cambios<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> selecciona una habitación existente<br>
+        <em>And</em> modifica su información como tipo, precio o descripción<br>
+        <em>But</em> no guarda los cambios realizados<br>
+        <em>Then</em> regresa a la pantalla anterior sin guardar los cambios.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
       <td>HU10</td>
       <td>Buscar y filtrar habitaciones por estado.</td>
       <td>Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
-      <td><b>Given</b> el gerente está en la página de administración de habitaciones.<br><b>When</b> utiliza la barra de búsqueda o selecciona un filtro de estado.<br><b>Then</b> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.</td>
+      <td>
+        <b>Escenario 1:</b> Buscar habitaciones<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
+        <em>Then</em> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.<br><br>
+        <b>Escenario 2:</b> Buscar habitaciones inexistentes<br>
+        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
+        <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
+        <em>But</em> la búsqueda no coincide con la información de ninguna habitación existente<br>
+        <em>Then</em> se muestra un mensaje que indica que no hubieron coincidencias en la búsqueda.<br><br>
+      </td>
       <td>EP03</td>
     </tr>
     <tr>
@@ -1595,16 +1727,26 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> consulta la sección de huéspedes actualmente alojados<br>
         <em>Then</em> el sistema muestra una lista con el nombre del huésped, la habitación que ocupa, y los detalles de su reserva (fecha de entrada, fecha de salida, estado de la reserva).
       </td>
-      <td>EP04</td>
+      <td>EP03</td>
     </tr>
     <tr>
       <td>HU13</td>
       <td>Desvincular administrador de la organización.</td>
       <td>Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.</td>
       <td>
-        <b>Given</b> el propietario está en la lista de administradores asociados a su organización,<br>
-        <b>When</b> selecciona un administrador y confirma la acción de desvinculación,<br>
-        <b>Then</b> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.
+        <b>Escenario 1:</b> Desvincular a un administrador<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> selecciona un administrador y confirma la acción de desvinculación<br>
+        <em>Then</em> el sistema lo desvincula de la organización y actualiza la lista de administradores disponibles.<br><br>
+        <b>Escenario 2:</b> Desvincular a un administrador inexistente<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> confirma la acción de desvinculación sin haber elegido algún administrador de la lista<br>
+        <em>Then</em> recibe un mensaje indicándole que debe elegir al menos un administrador.<br><br>
+        <b>Escenario 3:</b> Desvincular al último administrador<br>
+        <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
+        <em>When</em> selecciona un administrador y confirma la acción de desvinculación<br>
+        <em>But</em> el equipo de trabajo quedaría vacío si se eliminan a los administradores seleccionados<br>
+        <em>Then</em> recibe un mensaje indicándole que el equipo de trabajo activo debe tener al menos un administrador.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1636,50 +1778,81 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP04</td>
     </tr>
     <tr>
-      <td>HU02</td>
-      <td>Enviar mensajes al gerente</td>
-      <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
-      <td>
-        <strong>Escenario:</strong> Envío de mensaje<br>
-        <em>Given</em> que el administrador está en la sección de mensajería<br>
-        <em>When</em> desea enviar un mensaje al dueño<br>
-        <em>Then</em> redacta el asunto y contenido<br>
-        <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.
-      </td>
-      <td>EP04</td>
-    </tr>
+  <td>HU02</td>
+  <td>Enviar mensajes al gerente</td>
+  <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+  <td>
+    <strong>Escenario 1:</strong> Envío de mensaje<br>
+    <em>Given</em> que el administrador está en la sección de mensajería<br>
+    <em>When</em> desea enviar un mensaje al dueño<br>
+    <em>Then</em> redacta el asunto y contenido<br>
+    <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.<br><br>
+    <strong>Escenario 2:</strong> Mensaje sin asunto<br>
+    <em>Given</em> que el administrador está en la sección de mensajería<br>
+    <em>When</em> intenta enviar un mensaje sin ingresar un asunto<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que el asunto es obligatorio<br>
+    <em>Y</em> el mensaje no se envía hasta que se complete el campo.<br><br>
+    <strong>Escenario 3:</strong> Error de conexión al enviar mensaje<br>
+    <em>Given</em> que el administrador ha redactado un mensaje completo<br>
+    <em>When</em> presiona el botón de enviar y hay una falla en la conexión a internet<br>
+    <em>Then</em> el sistema muestra una notificación de error de envío<br>
+    <em>Y</em> el mensaje se guarda temporalmente como borrador para reenviarlo más tarde.
+  </td>
+  <td>EP04</td>
+</tr>
     <tr>
       <td>HU03</td>
       <td>Ver detalles de la reserva del huésped.</td>
       <td>Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.</td>
       <td>
-        <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
-        <b>When</b> selecciona un huésped de la lista,<br>
-        <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.
-      </td>
+    <strong>Escenario 1:</strong> Consulta de reserva exitosa<br>
+    <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+    <b>When</b> selecciona un huésped de la lista,<br>
+    <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.<br><br>
+    <strong>Escenario 2:</strong> Huésped desactivado<br>
+    <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+    <b>When</b> selecciona un huésped que ha sido desactivado del sistema,<br>
+    <b>Then</b> el sistema muestra un mensaje indicando que la información no está disponible<br>
+    <b>Y</b> su ficha de reserva permanece oculta.<br><br>
+  </td>
       <td>EP04</td>
     </tr>
-    <tr>
-      <td>HU04</td>
-      <td>Consultar disponibilidad de habitaciones</td>
-      <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
-      <td>
-        <b>Escenario:</b> Consultar disponibilidad<br>
-        <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
-        <em>When</em> filtra por tipo y fecha<br>
-        <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.
-      </td>
-      <td>EP04</td>
-    </tr>
+   <tr>
+  <td>HU04</td>
+  <td>Consultar disponibilidad de habitaciones</td>
+  <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
+  <td>
+    <strong>Escenario 1:</strong> Consultar disponibilidad<br>
+    <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
+    <em>When</em> filtra por tipo y fecha<br>
+    <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.<br><br>
+    <strong>Escenario 2:</strong> Sin disponibilidad para la fecha<br>
+    <em>Given</em> que el administrador desea verificar habitaciones para una fecha específica<br>
+    <em>When</em> no hay habitaciones disponibles que cumplan con los filtros<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que no hay habitaciones libres para ese rango de fechas<br>
+    <em>Y</em> sugiere fechas cercanas con disponibilidad.<br><br>
+    <strong>Escenario 3:</strong> Error en los filtros de búsqueda<br>
+    <em>Given</em> que el administrador desea buscar disponibilidad<br>
+    <em>When</em> ingresa un formato incorrecto de fecha o deja campos obligatorios vacíos<br>
+    <em>Then</em> el sistema muestra un mensaje de validación<br>
+    <em>Y</em> no ejecuta la búsqueda hasta corregir los datos.
+  </td>
+  <td>EP04</td>
+</tr>
     <tr>
       <td>HU05</td>
       <td>Generar reporte de reservas del día</td>
       <td>Como administrador del hotel, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.</td>
       <td>
-        <b>Escenario:</b> Descargar reporte diario<br>
-        <em>Given</em> el administrador desea generar reporte diario<br>
-        <em>When</em> hace clic en "Generar reporte"<br>
-        <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.
+        <strong>Escenario 1:</strong> Descargar reporte diario<br>
+    <em>Given</em> el administrador desea generar reporte diario<br>
+    <em>When</em> hace clic en "Generar reporte"<br>
+    <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.<br><br>
+    <strong>Escenario 2:</strong> Día sin reservas<br>
+    <em>Given</em> que el administrador intenta generar el reporte del día<br>
+    <em>When</em> no existen reservas registradas para esa fecha<br>
+    <em>Then</em> el sistema genera un archivo indicando que no hubo movimientos<br>
+    <em>Y</em> muestra un mensaje de "No hay reservas para el día seleccionado".<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1688,11 +1861,16 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Registrar reserva presencial</td>
       <td>Como administrador del hotel, quiero crear una reserva manualmente cuando un huésped llega sin haber hecho una reserva previa, para registrarlo en el sistema.</td>
       <td>
-        <b>Escenario:</b> Registrar nueva reserva desde recepción<br>
-        <em>Given</em> que el huésped llega al hotel sin reserva<br>
-        <em>When</em> el administrador accede al formulario de nueva reserva<br>
-        <em>Then</em> completa los datos del huésped, habitación y fechas<br>
-        <em>Y</em> el sistema crea la reserva como "En curso".
+        <strong>Escenario 1:</strong> Registrar nueva reserva desde recepción<br>
+    <em>Given</em> que el huésped llega al hotel sin reserva<br>
+    <em>When</em> el administrador accede al formulario de nueva reserva<br>
+    <em>Then</em> completa los datos del huésped, habitación y fechas<br>
+    <em>Y</em> el sistema crea la reserva como "En curso".<br><br>
+    <strong>Escenario 2:</strong> No hay habitaciones disponibles<br>
+    <em>Given</em> que el administrador intenta registrar una reserva manual<br>
+    <em>When</em> no hay habitaciones disponibles para las fechas seleccionadas<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que no hay disponibilidad<br>
+    <em>Y</em> no permite completar la reserva.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1701,9 +1879,18 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Modificar fechas de una reserva.</td>
       <td>Como administrador del hotel, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.</td>
       <td>
-        <b>Given</b> que el administrador accede a los detalles de la reserva,<br>
-        <b>When</b> edita las fechas de la reserva,<br>
-        <b>Then</b> el sistema actualiza la información y recalcula el monto si es necesario.
+         <strong>Escenario 1:</strong> Modificar fechas estándar<br>
+    <em>Given</em> que el administrador accede a los detalles de la reserva,<br>
+    <em>When</em> edita las fechas de entrada y salida,<br>
+    <em>Then</em> el sistema actualiza la información y recalcula el monto si es necesario.<br><br>
+    <strong>Escenario 2:</strong> Extensión de estancia<br>
+    <em>Given</em> que el huésped desea quedarse más tiempo,<br>
+    <em>When</em> el administrador amplía las fechas de la reserva desde el sistema,<br>
+    <em>Then</em> el sistema actualiza el total de noches y muestra el nuevo monto con el desglose correspondiente.<br><br>
+    <strong>Escenario 3:</strong> Reserva anticipada<br>
+    <em>Given</em> que el huésped desea adelantar su llegada,<br>
+    <em>When</em> el administrador modifica la fecha de entrada a un día anterior,<br>
+    <em>Then</em> el sistema confirma la disponibilidad y ajusta el calendario de la reserva sin inconvenientes.
       </td>
       <td>EP04</td>
     </tr>
@@ -1712,9 +1899,14 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Cambiar asignación de habitación.</td>
       <td>Como administrador del hotel, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.</td>
       <td>
-        <b>Given</b> que el administrador visualiza los detalles de la reserva,<br>
-        <b>When</b> selecciona una nueva habitación disponible para el huésped,<br>
-        <b>Then</b> el sistema actualiza la reserva con la nueva asignación de habitación.
+        <strong>Escenario 1:</strong> Cambio de habitación estándar<br>
+    <em>Given</em> que el administrador visualiza los detalles de la reserva,<br>
+    <em>When</em> selecciona una nueva habitación disponible para el huésped,<br>
+    <em>Then</em> el sistema actualiza la reserva con la nueva asignación de habitación.<br><br>
+    <strong>Escenario 2:</strong> Cambio por mantenimiento o imprevisto<br>
+    <em>Given</em> que una habitación asignada al huésped debe ser retirada del servicio por mantenimiento de última hora,<br>
+    <em>When</em> el administrador asigna una nueva habitación disponible,<br>
+    <em>Then</em> el sistema actualiza la reserva con la nueva asignación y notifica al huésped sobre el cambio debido al mantenimiento.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1725,14 +1917,26 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente, de modo que el dueño pueda considerar mi incorporación.
       </td>
       <td>
-        <b>ADMINISTRADOR</b>
-        <br>
-        <b>Given</b> el administrador ha accedido a la página de solicitud de acceso,
-        <br>
-        <b>When</b> completa el formulario con su información y selecciona la organización a la que desea unirse,
-        <br>
-        <b>Then</b> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.
-        <br><b>And</b> se muestra un mensaje de confirmación de que la solicitud fue enviada.
+       <strong>Escenario 1:</strong> Envío de solicitud estándar<br>
+    <em>Given</em> el administrador ha accedido a la página de solicitud de acceso,<br>
+    <em>When</em> completa el formulario con su información y selecciona la organización a la que desea unirse,<br>
+    <em>Then</em> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.<br>
+    <em>And</em> se muestra un mensaje de confirmación de que la solicitud fue enviada.<br><br>
+    <strong>Escenario 2:</strong> Organización no existe<br>
+    <em>Given</em> que el administrador ha intentado unirse a una organización que no existe en el sistema,<br>
+    <em>When</em> el administrador envía la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que la organización no existe,<br>
+    <em>And</em> se solicita al administrador verificar el nombre de la organización e intentar nuevamente.<br><br>
+    <strong>Escenario 3:</strong> Datos incorrectos ingresados<br>
+    <em>Given</em> que el administrador ha ingresado datos incorrectos o incompletos en el formulario (como un correo electrónico mal escrito),<br>
+    <em>When</em> intenta enviar la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que los datos proporcionados son incorrectos,<br>
+    <em>And</em> el administrador debe corregir los campos antes de poder enviar la solicitud.<br><br>
+    <strong>Escenario 4:</strong> No hay abasto para más personal<br>
+    <em>Given</em> que el administrador ha solicitado unirse a una organización con un número máximo de miembros,<br>
+    <em>When</em> el administrador envía la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que la organización no tiene más espacio disponible para nuevos miembros,<br>
+    <em>And</em> el administrador es informado de que la solicitud no puede ser procesada en este momento debido a la capacidad alcanzada.
       </td>
       <td>EP04</td>
     </tr>
@@ -1956,6 +2160,126 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Then</em> retorna un array vacío
       </td>
       <td>EP06</td>
+    </tr>
+    <tr>
+      <td>EP07</td>
+      <td>Control de temperatura y acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para controlar la temperatura de mi habitación y una tarjeta para acceder a mis habitaciones.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Tarjeta para acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Abrir puerta<br>
+        <em>Given</em> la habitación reservada esta bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida los datos del Device User y desbloquea la puerta.<br>
+        <b>Scenario 2:</b> Fallo al abrir puerta por habitación equivocada<br>
+        <em>Given</em> la habitación está bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida que el Device User no tiene reservada la habitación.<br>
+        <em>And</em> la habitación se mantiene bloqueada.
+        <b>Scenario 3:</b> Fallo al abrir puerta por habitación inactiva<br>
+        <em>Given</em> la habitación está bloqueada e inactiva<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> la habitación rechaza la tarjeta<br>
+        <em>And</em> se mantiene bloqueada.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Control de temperatura en habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.
+      </td>
+      <td>
+        <b>Scenario:</b> Bajar Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> baja la temperatura en 1°.<br>
+        <b>Scenario:</b> Subir Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura en 1°.<br>
+        <em>Then</em> sube la temperatura.
+        <b>Scenario:</b>Error al bajar temperatura<br>
+        <em>Given</em> el dispositivo está apagado o desconectado<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+        <b>Scenario:</b>Error al subir temperatura<br>
+        <em>Given</em> el dispositivo está apagado<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Visualizar la temperatura específicada en la Web Application</td>
+      <td>
+        Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.
+      </td>
+      <td>
+        <b>Scenario:</b> Ver temperatura en el dispositivo<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User se encuentra en la habitación<br>
+        <em>Then</em> visualiza en la pantalla del dispositivo la temperatura específicada.<br>
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>EP08</td>
+      <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
+      <td>
+        Como Device Maker, quiero utilizar framework de código a bajo nivel y distintos approaches para maximinar mis recursos y facilitar el debugging del producto.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Uso de Interrupt-Driven Detection</td>
+      <td>
+        Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responde eficientemente sin sobrecargar el main loop.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Botón presionado<br>
+        <em>Given</em> el dispositivo tiene mecánica de interrupciones<br>
+        <em>When</em> el Device User presiona un botón<br>
+        <em>Then</em> el dispositivo cambia el valor de temperatura<br>
+        <b>Scenario 2:</b> Ningun botón presionado<br>
+        <em>Given</em> ningún botón es presionado<br>
+        <em>When</em> el Device Maker inspecciona la función loop()<br>
+        <em>Then</em> lo encuentra sin ejecuciones.<br>
+      </td>
+      <td>EP08</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Monitorear el cambio de temperatura</td>
+      <td>
+        Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Mostrar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia<br>
+        <em>Then</em> muestra la temperatura actual<br>
+        <b>Scenario 2:</b> Cambiar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia y el Device Maker cambia el valor de temperatura<br>
+        <em>Then</em> muestra la nueva temperatura<br>
+      </td>
+      <td>EP08</td>
     </tr>
   </tbody>
 </table>
@@ -4454,16 +4778,57 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 # Conclusiones
 
-## Recomendaciones
+Esta parte tiene 2 secciones: Conclusiones y Recomendaciones y Video Aout-the-team.
+
+En conclusiones y recomendaciones resumiremos los avances que hemos tenido hasta el momento y como esta siendo nuestra experiencia en ello. Adicionalmente, explicando las fases de desarrollo que hemos implementado y como hemos abstraido la informacion recibida de los requisitos como entrevistas, Historias de Usuario; etc. Finalmente, evaluar los resultados en relacion con el Lean UX, validaciones y RoadMap.
+
+En Video About-the-Team, presentaremos un video en donde el equipo se introduce. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
+
+## Conclusiones y Recomendaciones
+Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
+
+Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
+
+Durante el proceso, se establecieron Hipótesis como que los administradores necesitan una vista consolidada de los huéspedes actuales (HU12), que los propietarios requieren trazabilidad financiera clara (EP02), y que los huéspedes prefieren experiencias fluidas y simples al momento de reservar y hospedarse (EP05). Las validaciones realizadas hasta el momento, mediante el diseño de entrevistas e historias de usuario, han respaldado estas hipótesis.
+
+Para continuar con el desarrollo estratégico de SweetManager, recomendamos:
+
+Validar mediante prototipos de alta fidelidad las funcionalidades priorizadas para cada segmento, enfocándonos especialmente en las vistas operativas de administración y control de huéspedes activos.
 
 # Video About-the-Team
 
 # Bibliografía
 - Gothelf, J., & Seiden, J. (2021). Lean UX, 3rd Edition. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
-- Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
+
+- Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/
+5w2h-tecnica-de-analisis-de-problemas/
+
 - UX Planet. (2017). Information Architecture. Basics for Designers. - UX Planet. Medium; UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
+
 - Gothelf, J. (2024). Leanux Sampler. https://es.scribd.com/document/655516553/Leanux-Sampler
+
+- ¿Qué es la gestión hotelera y cuál es su importancia en el sector hotelero? (2021, febrero 10). Ostelea.com.
+https://www.ostelea.com/actualidad/blog-turismo/direccion-hotelera/que-es-la-gestion-hotelera-y-cual-es-su-importancia-en-el-sector-hotelero
+
+- Buenas prácticas para el desarrollo de grandes proyectos con Vue.js. (s/f). Solucionex. Recuperado el 29 de abril de 2024.
+https://www.solucionex.com/blog/buenas-practicas-para-el-desarrollo-de-grandes-proyectos-con-vuejs
+
+- Eseme, S. (2021, agosto 12). 10 cosas que debes saber sobre Vue.js Frontend Framework. Kinsta®; Kinsta.
+https://kinsta.com/es/blog/vue-js/
+
+- de Javier, V. M. C. (s/f). DDD y arquitectura Onion, todo lo que necesitas saber. Paradigmadigital.com. Recuperado el 29 de abril de 2024 de
+https://www.paradigmadigital.com/techbiz/domain-driven-design-y-arquitectura-onion/
+
+- Arquitectura DDD(Domain Driven Design). (2021, junio 21). Sergio Tapia.
+https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 
 # Anexos
 
+### Vídeos de Exposición (Anexo 1)
 
+| Contenido | URL del Vídeo |
+|--------------|--------------|
+| Vídeo de Exposición TB1      | Link del Vídeo: |  
+| VÍdeo de Exposición TP1      | Link del Vídeo: - |
+| Vídeo de Exposición TB2    | Link del Vídeo: - | 
+| Vídeo de Exposición TF1    | Link del Vídeo: - | 
