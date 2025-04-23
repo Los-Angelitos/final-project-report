@@ -1148,7 +1148,7 @@ Para tener una mejor idea de cómo será la experiencia del usuario con nuestro 
 <br><br>
 <h2>User Persona Administrador de Hotel</h2>
 <div style="text-align: center;">
-  <img src="./assets/img/user-persona/admin.jpeg" alt="User persona Admin" width="100%" />
+  <img src="./assets/img/user-persona/admin.png" alt="User persona Admin" width="100%" />
 </div>
 <br><br>
 <h2>User Persona Huésped</h2>
