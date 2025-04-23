@@ -1786,50 +1786,81 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP04</td>
     </tr>
     <tr>
-      <td>HU02</td>
-      <td>Enviar mensajes al gerente</td>
-      <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
-      <td>
-        <strong>Escenario:</strong> Envío de mensaje<br>
-        <em>Given</em> que el administrador está en la sección de mensajería<br>
-        <em>When</em> desea enviar un mensaje al dueño<br>
-        <em>Then</em> redacta el asunto y contenido<br>
-        <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.
-      </td>
-      <td>EP04</td>
-    </tr>
+  <td>HU02</td>
+  <td>Enviar mensajes al gerente</td>
+  <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+  <td>
+    <strong>Escenario 1:</strong> Envío de mensaje<br>
+    <em>Given</em> que el administrador está en la sección de mensajería<br>
+    <em>When</em> desea enviar un mensaje al dueño<br>
+    <em>Then</em> redacta el asunto y contenido<br>
+    <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.<br><br>
+    <strong>Escenario 2:</strong> Mensaje sin asunto<br>
+    <em>Given</em> que el administrador está en la sección de mensajería<br>
+    <em>When</em> intenta enviar un mensaje sin ingresar un asunto<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que el asunto es obligatorio<br>
+    <em>Y</em> el mensaje no se envía hasta que se complete el campo.<br><br>
+    <strong>Escenario 3:</strong> Error de conexión al enviar mensaje<br>
+    <em>Given</em> que el administrador ha redactado un mensaje completo<br>
+    <em>When</em> presiona el botón de enviar y hay una falla en la conexión a internet<br>
+    <em>Then</em> el sistema muestra una notificación de error de envío<br>
+    <em>Y</em> el mensaje se guarda temporalmente como borrador para reenviarlo más tarde.
+  </td>
+  <td>EP04</td>
+</tr>
     <tr>
       <td>HU03</td>
       <td>Ver detalles de la reserva del huésped.</td>
       <td>Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.</td>
       <td>
-        <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
-        <b>When</b> selecciona un huésped de la lista,<br>
-        <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.
-      </td>
+    <strong>Escenario 1:</strong> Consulta de reserva exitosa<br>
+    <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+    <b>When</b> selecciona un huésped de la lista,<br>
+    <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.<br><br>
+    <strong>Escenario 2:</strong> Huésped desactivado<br>
+    <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
+    <b>When</b> selecciona un huésped que ha sido desactivado del sistema,<br>
+    <b>Then</b> el sistema muestra un mensaje indicando que la información no está disponible<br>
+    <b>Y</b> su ficha de reserva permanece oculta.<br><br>
+  </td>
       <td>EP04</td>
     </tr>
-    <tr>
-      <td>HU04</td>
-      <td>Consultar disponibilidad de habitaciones</td>
-      <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
-      <td>
-        <b>Escenario:</b> Consultar disponibilidad<br>
-        <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
-        <em>When</em> filtra por tipo y fecha<br>
-        <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.
-      </td>
-      <td>EP04</td>
-    </tr>
+   <tr>
+  <td>HU04</td>
+  <td>Consultar disponibilidad de habitaciones</td>
+  <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
+  <td>
+    <strong>Escenario 1:</strong> Consultar disponibilidad<br>
+    <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
+    <em>When</em> filtra por tipo y fecha<br>
+    <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.<br><br>
+    <strong>Escenario 2:</strong> Sin disponibilidad para la fecha<br>
+    <em>Given</em> que el administrador desea verificar habitaciones para una fecha específica<br>
+    <em>When</em> no hay habitaciones disponibles que cumplan con los filtros<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que no hay habitaciones libres para ese rango de fechas<br>
+    <em>Y</em> sugiere fechas cercanas con disponibilidad.<br><br>
+    <strong>Escenario 3:</strong> Error en los filtros de búsqueda<br>
+    <em>Given</em> que el administrador desea buscar disponibilidad<br>
+    <em>When</em> ingresa un formato incorrecto de fecha o deja campos obligatorios vacíos<br>
+    <em>Then</em> el sistema muestra un mensaje de validación<br>
+    <em>Y</em> no ejecuta la búsqueda hasta corregir los datos.
+  </td>
+  <td>EP04</td>
+</tr>
     <tr>
       <td>HU05</td>
       <td>Generar reporte de reservas del día</td>
       <td>Como administrador del hotel, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.</td>
       <td>
-        <b>Escenario:</b> Descargar reporte diario<br>
-        <em>Given</em> el administrador desea generar reporte diario<br>
-        <em>When</em> hace clic en "Generar reporte"<br>
-        <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.
+        <strong>Escenario 1:</strong> Descargar reporte diario<br>
+    <em>Given</em> el administrador desea generar reporte diario<br>
+    <em>When</em> hace clic en "Generar reporte"<br>
+    <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.<br><br>
+    <strong>Escenario 2:</strong> Día sin reservas<br>
+    <em>Given</em> que el administrador intenta generar el reporte del día<br>
+    <em>When</em> no existen reservas registradas para esa fecha<br>
+    <em>Then</em> el sistema genera un archivo indicando que no hubo movimientos<br>
+    <em>Y</em> muestra un mensaje de "No hay reservas para el día seleccionado".<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1838,11 +1869,16 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Registrar reserva presencial</td>
       <td>Como administrador del hotel, quiero crear una reserva manualmente cuando un huésped llega sin haber hecho una reserva previa, para registrarlo en el sistema.</td>
       <td>
-        <b>Escenario:</b> Registrar nueva reserva desde recepción<br>
-        <em>Given</em> que el huésped llega al hotel sin reserva<br>
-        <em>When</em> el administrador accede al formulario de nueva reserva<br>
-        <em>Then</em> completa los datos del huésped, habitación y fechas<br>
-        <em>Y</em> el sistema crea la reserva como "En curso".
+        <strong>Escenario 1:</strong> Registrar nueva reserva desde recepción<br>
+    <em>Given</em> que el huésped llega al hotel sin reserva<br>
+    <em>When</em> el administrador accede al formulario de nueva reserva<br>
+    <em>Then</em> completa los datos del huésped, habitación y fechas<br>
+    <em>Y</em> el sistema crea la reserva como "En curso".<br><br>
+    <strong>Escenario 2:</strong> No hay habitaciones disponibles<br>
+    <em>Given</em> que el administrador intenta registrar una reserva manual<br>
+    <em>When</em> no hay habitaciones disponibles para las fechas seleccionadas<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que no hay disponibilidad<br>
+    <em>Y</em> no permite completar la reserva.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1851,9 +1887,18 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Modificar fechas de una reserva.</td>
       <td>Como administrador del hotel, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.</td>
       <td>
-        <b>Given</b> que el administrador accede a los detalles de la reserva,<br>
-        <b>When</b> edita las fechas de la reserva,<br>
-        <b>Then</b> el sistema actualiza la información y recalcula el monto si es necesario.
+         <strong>Escenario 1:</strong> Modificar fechas estándar<br>
+    <em>Given</em> que el administrador accede a los detalles de la reserva,<br>
+    <em>When</em> edita las fechas de entrada y salida,<br>
+    <em>Then</em> el sistema actualiza la información y recalcula el monto si es necesario.<br><br>
+    <strong>Escenario 2:</strong> Extensión de estancia<br>
+    <em>Given</em> que el huésped desea quedarse más tiempo,<br>
+    <em>When</em> el administrador amplía las fechas de la reserva desde el sistema,<br>
+    <em>Then</em> el sistema actualiza el total de noches y muestra el nuevo monto con el desglose correspondiente.<br><br>
+    <strong>Escenario 3:</strong> Reserva anticipada<br>
+    <em>Given</em> que el huésped desea adelantar su llegada,<br>
+    <em>When</em> el administrador modifica la fecha de entrada a un día anterior,<br>
+    <em>Then</em> el sistema confirma la disponibilidad y ajusta el calendario de la reserva sin inconvenientes.
       </td>
       <td>EP04</td>
     </tr>
@@ -1862,9 +1907,14 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Cambiar asignación de habitación.</td>
       <td>Como administrador del hotel, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.</td>
       <td>
-        <b>Given</b> que el administrador visualiza los detalles de la reserva,<br>
-        <b>When</b> selecciona una nueva habitación disponible para el huésped,<br>
-        <b>Then</b> el sistema actualiza la reserva con la nueva asignación de habitación.
+        <strong>Escenario 1:</strong> Cambio de habitación estándar<br>
+    <em>Given</em> que el administrador visualiza los detalles de la reserva,<br>
+    <em>When</em> selecciona una nueva habitación disponible para el huésped,<br>
+    <em>Then</em> el sistema actualiza la reserva con la nueva asignación de habitación.<br><br>
+    <strong>Escenario 2:</strong> Cambio por mantenimiento o imprevisto<br>
+    <em>Given</em> que una habitación asignada al huésped debe ser retirada del servicio por mantenimiento de última hora,<br>
+    <em>When</em> el administrador asigna una nueva habitación disponible,<br>
+    <em>Then</em> el sistema actualiza la reserva con la nueva asignación y notifica al huésped sobre el cambio debido al mantenimiento.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -1875,14 +1925,26 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente, de modo que el dueño pueda considerar mi incorporación.
       </td>
       <td>
-        <b>ADMINISTRADOR</b>
-        <br>
-        <b>Given</b> el administrador ha accedido a la página de solicitud de acceso,
-        <br>
-        <b>When</b> completa el formulario con su información y selecciona la organización a la que desea unirse,
-        <br>
-        <b>Then</b> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.
-        <br><b>And</b> se muestra un mensaje de confirmación de que la solicitud fue enviada.
+       <strong>Escenario 1:</strong> Envío de solicitud estándar<br>
+    <em>Given</em> el administrador ha accedido a la página de solicitud de acceso,<br>
+    <em>When</em> completa el formulario con su información y selecciona la organización a la que desea unirse,<br>
+    <em>Then</em> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.<br>
+    <em>And</em> se muestra un mensaje de confirmación de que la solicitud fue enviada.<br><br>
+    <strong>Escenario 2:</strong> Organización no existe<br>
+    <em>Given</em> que el administrador ha intentado unirse a una organización que no existe en el sistema,<br>
+    <em>When</em> el administrador envía la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que la organización no existe,<br>
+    <em>And</em> se solicita al administrador verificar el nombre de la organización e intentar nuevamente.<br><br>
+    <strong>Escenario 3:</strong> Datos incorrectos ingresados<br>
+    <em>Given</em> que el administrador ha ingresado datos incorrectos o incompletos en el formulario (como un correo electrónico mal escrito),<br>
+    <em>When</em> intenta enviar la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que los datos proporcionados son incorrectos,<br>
+    <em>And</em> el administrador debe corregir los campos antes de poder enviar la solicitud.<br><br>
+    <strong>Escenario 4:</strong> No hay abasto para más personal<br>
+    <em>Given</em> que el administrador ha solicitado unirse a una organización con un número máximo de miembros,<br>
+    <em>When</em> el administrador envía la solicitud,<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que la organización no tiene más espacio disponible para nuevos miembros,<br>
+    <em>And</em> el administrador es informado de que la solicitud no puede ser procesada en este momento debido a la capacidad alcanzada.
       </td>
       <td>EP04</td>
     </tr>
