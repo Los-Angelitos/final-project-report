@@ -1880,6 +1880,20 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP07</td>
     </tr>
     <tr>
+      <td>HU03</td>
+      <td>Visualizar la temperatura específicada en la Web Application</td>
+      <td>
+        Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.
+      </td>
+      <td>
+        <b>Scenario:</b> Ver temperatura en el dispositivo<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User se encuentra en la habitación<br>
+        <em>Then</em> visualiza en la pantalla del dispositivo la temperatura específicada.<br>
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
       <td>EP08</td>
       <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
       <td>
