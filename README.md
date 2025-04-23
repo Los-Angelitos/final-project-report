@@ -1350,37 +1350,61 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
     </tr>
     <tr>
-      <td>HU01</td>
-      <td>Crear organización</td>
-      <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
-      <td>
-        <b>GERENTE</b>
-        <br>
-        <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
-        <br>
-        <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
-        <br>
-        <b>Then</b> se muestra un mensaje de bienvenida
-        <br><b>And</b> se redirecciona al dashboard principal.
-        <br><br><b>ADMINISTRADOR</b>
-        <br>
-        <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
-        <br>
-        <b>When</b> acepta la invitación y accede al sistema,
-        <br>
-        <b>Then</b> se muestra un mensaje de bienvenida
-        <br><b>And</b> se redirecciona a la página principal o portal de la organización .
-        <br><br><b>HUÉSPED</b>
-        <br>
-        <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
-        <br>
-        <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
-        <br>
-        <b>Then</b> completa el registro de su cuenta
-        <br><b>And</b> finaliza el proceso de reserva exitosamente.
-      </td>
-      <td>EP02</td>
-    </tr>
+  <td>HU01</td>
+  <td>Crear organización</td>
+  <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+  <td>
+    <b>GERENTE</b>
+    <br>
+    <b>Given</b> el gerente ha ingresado los datos del hotel y su información personal,
+    <br>
+    <b>When</b> realiza el pago del plan y se inicializa la organización correctamente,
+    <br>
+    <b>Then</b> se muestra un mensaje de bienvenida
+    <br><b>And</b> se redirecciona al dashboard principal.
+    <br><br><b>ADMINISTRADOR</b>
+    <br>
+    <b>Given</b> el administrador ha recibido una invitación para unirse a la organización,
+    <br>
+    <b>When</b> acepta la invitación y accede al sistema,
+    <br>
+    <b>Then</b> se muestra un mensaje de bienvenida
+    <br><b>And</b> se redirecciona a la página principal o portal de la organización.
+    <br><br><b>HUÉSPED</b>
+    <br>
+    <b>Given</b> que el huésped no ha iniciado sesión y se encuentra en la página de reservas,
+    <br>
+    <b>When</b> selecciona una habitación para reservar y el sistema le solicita crear una cuenta personal,
+    <br>
+    <b>Then</b> completa el registro de su cuenta
+    <br><b>And</b> finaliza el proceso de reserva exitosamente.
+    <br><br><b>GERENTE</b>
+    <br>
+    <b>Given</b> que el gerente ha ingresado los datos del hotel y su información personal,
+    <br>
+    <b>When</b> realiza el intento de pago del plan pero ocurre un error (tarjeta inválida, red, etc.),
+    <br>
+    <b>Then</b> se muestra un mensaje de error indicando el motivo
+    <br><b>And</b> se le da la opción de reintentar el pago.
+    <br><br><b>ADMINISTRADOR</b>
+    <br>
+    <b>Given</b> que el administrador ha recibido una invitación para unirse a la organización,
+    <br>
+    <b>When</b> decide rechazar la invitación,
+    <br>
+    <b>Then</b> el estado de la invitación se actualiza a "rechazada"
+    <br><b>And</b> el gerente es notificado del rechazo.
+    <br><br><b>GERENTE</b>
+    <br>
+    <b>Given</b> que una invitación previa fue rechazada o no respondida por el administrador,
+    <br>
+    <b>When</b> el gerente decide reenviar o crear una nueva invitación,
+    <br>
+    <b>Then</b> se genera un nuevo enlace de invitación
+    <br><b>And</b> el administrador recibe una nueva notificación por correo.
+  </td>
+  <td>EP02</td>
+</tr>
     <tr>
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
@@ -1897,6 +1921,15 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
+![image](https://github.com/user-attachments/assets/005860e9-9ce5-4be0-872f-616b0db75f29)
+![image](https://github.com/user-attachments/assets/c53afb21-2cd5-40d5-a5ca-3e0ad2678195)
+![image](https://github.com/user-attachments/assets/6ff291f1-4659-45db-9ece-5bbf3879500c)
+![image](https://github.com/user-attachments/assets/d9a90a98-556b-4e89-a1e9-de7c123706a4)
+![image](https://github.com/user-attachments/assets/532bc1af-f435-46c1-bca3-04367cf34bcd)
+![image](https://github.com/user-attachments/assets/bc39a22a-78d9-4fe1-8769-bd37ab0d7b31)
+![image](https://github.com/user-attachments/assets/9c2af623-c8b1-4bb2-9de0-ca2def6f4b6d)
+
+
 
 #### 4.1.1.1. Candidate Context Discovery
 
@@ -2014,25 +2047,25 @@ https://domainstorytelling.org/#dst-requirements
 <h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
 <p>Para este escenario, se espera que el dueño del hotel, habiendo ingresado a la aplicación web o móvil de SweetManager, genera una invitación para unirse a la organización que es enviada al Communication Bounded Context que se encargará de generar la notificación que llegará al administrador o administradores que el dueño precise. </p>
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/flow1.PNG" alt="Message Flow Communication" width="90%" />
+  <img src="./assets/img/communication-bounded-context/flow1.png" alt="Message Flow Communication" width="90%" />
 </div><br>
 
 <h3>Escenario: Usuario actualiza su contraseña</h3>
 <p>Para este escenario, el usuario que desea actualizar su contraseña ingresa a la aplicación web móvil de SweetManager, en la sección de Perfil este será capaz de consultar y modificar su contraseña. Una vez esta sea cambiada pasa por el IAM Bounded Context para actualizar las credenciales del usuario y finalmente se le notifica por medio del Communication Bounded Context sobre el cambio realizado. </p>
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/flow2.PNG" alt="Message Flow Communication" width="90%" />
+  <img src="./assets/img/communication-bounded-context/flow2.png" alt="Message Flow Communication" width="90%" />
 </div><br>
 
 <h3>Escenario: Administrador envía mensaje a dueño de organización</h3>
 <p>Para este escenario, uno de los administradores de un hotel desea enviar mensaje al dueño de su organización. Para ello redacta el mensaje y este pasa por el Communication Bounded Context para notificar a la persona correspondiente.</p>
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/flow3.PNG" alt="Message Flow Communication" width="90%" />
+  <img src="./assets/img/communication-bounded-context/flow3.png" alt="Message Flow Communication" width="90%" />
 </div><br>
 
 <h3>Escenario: Dueño de hotel envía mensaje a todos sus administradores</h3>
 <p>Para este escenario, el dueño del hotel desea enviar mensaje a un administrador perteneciente a su organización. Para ello selecciona los administradores a los que se dirigirá el mensaje, redacta el mismo y este pasa por el Communication Bounded Context para notificar a las personas correspondientes.</p>
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
+  <img src="./assets/img/communication-bounded-context/flow4.png" alt="Message Flow Communication" width="90%" />
 </div><br>
 
 
@@ -2085,6 +2118,98 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.2. Context Mapping
 
+#### Proceso para Crear el Context Mapping y Análisis de Alternativas
+
+##### 1. Pasos para Crear el Context Mapping
+
+###### 1.1. Identificación de los Bounded Contexts
+- **Identity and Access Management (IAM)**
+- **Organizational Management**
+- **Inventory**
+- **Communication**
+- **Commerce**
+- **Reservations**
+
+###### 1.2. Identificación de Relaciones Iniciales
+1. **Commerce** ⟷ **IAM**: Relación de **Customer/Supplier**.
+   - *Commerce* provee los cambios en las suscripciones de los usuarios, mientras *IAM* consume y ajusta la información.
+2. **Reservations** ⟷ **IAM**: Relación de **Customer/Supplier**.
+   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *IAM* actualiza la información en el perfil del huésped.
+3. **Reservations** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
+   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *Organizational Management* actualiza la información de las reservas realizadas.
+4. **IAM** ⟷ **Organizational Management**: Relación de **Open/Host Service**.
+   - *IAM* proporciona un servicio público al cual accede *Organizational Management*, el cual utiliza sus métodos para modificar la información de los usuarios.
+5. **Organizational Management** ⟷ **Communication**: Relación de **Customer/Supplier**.
+   - *Organizational Management* provee información acerca de la gestión de la organización, la cual *Communication* utiliza para enviar notificaciones respectivas.
+6. **Inventory** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
+   - *Inventory* provee información acerca del inventario, el cual es utilizado por *Organizational Management*, que actualiza dicha información en el registro.
+
+##### 2. Análisis de Alternativas y Preguntas Clave
+
+###### 2.1. ¿Qué pasaría si movemos este capability a otro bounded context?
+- **Caso Considerado:** Mover la capacidad de gestión de check-in y check-out desde *Reservations* hacia *Communication*.
+- **Impacto:**
+  - *Communication* tendría la responsabilidad de administrar las notificaciones enviadas a los huéspedes y administradores en relación a las entradas y salidas.
+  - Incrementaría el acoplamiento de *Communication*.
+- **Discusión:**
+  - Es recomendable mantener la separación, ya que, aunque *Communication* es el encargado de administrar notificaciones, es *Reservations* el que administra todo lo relacionado a las reservas. Puede interactuar con un ACL de *Communication* luego para mandar la notificación.
+
+###### 2.2. ¿Qué pasaría si descomponemos este capability y movemos uno de los sub-capabilities a otro bounded context?
+- **Caso Considerado:** Descomponer *Reservations* en sub-capabilities como *ReservationsManagement* y *ReservationsNotifications* y mover *ReservationsNotifications* a *Communication*.
+- **Impacto:**
+  - Implicaría que *Communication* pueda gestionar las notificaciones de las reservas, liberando responsabilidades de *Reservations*.
+  - *ReservationsManagement* seguirá gestionando las entradas y salidas de los usuarios.
+- **Discusión:**
+  - Esta descomposición permitiría dividir las responsabilidades de forma más acorde al alcance de cada Bounded Context, sin embargo, incrementaría el acoplamiento y ambos contextos dependerían demasiado el uno del otro.
+
+###### 2.3. ¿Qué pasaría si partimos el bounded context en múltiples bounded contexts?
+- **Caso Considerado:** Partir *Commerce* en *Payments* y *SubcriptionsManagement*.
+- **Impacto:**
+  - Separar dos funcionalidades distintas en dos distintos Bounded Contexts, organizando de mejor manera las capas de la aplicación y dividiendo la carga entre los dos contextos resultantes.
+- **Discusión:**
+  - Aunque puedan ser funcionalidades distintas, siguen estando referidas a procesos de pagos y a la asignación de dichos pagos a los usuarios. Además, se intercambian información constantemente, por lo cual dividirlas no sería lo más óptimo.
+
+###### 2.4. ¿Qué pasaría si tomamos este capability de estos 3 contexts y lo usamos para formar un nuevo context?
+- **Caso Considerado:** Crear un nuevo Bounded Context llamado *SubscriptionManagement* que combine capacidades de *IAM*, *Commerce* y *Communication* relacionadas con la gestión de suscripciones de los dueños.
+- **Impacto:**
+  - Unificaría la lógica de gestión de las suscripciones de los dueños en un solo contexto.
+  - Reduciría la duplicación de código e integraría las funcionalidades.
+- **Discusión:**
+  - La creación de un único contexto para gestionar las suscripciones supondría quitarle gran parte de sus funcionalidades a *Commerce*, además, dicho contexto cuenta con funcionalidades las cuales son constantemente utilizadas por la lógica de las suscripciones, por lo cual sería difícil moverlo de contexto.
+
+###### 2.5. ¿Qué pasaría si duplicamos una funcionalidad para romper la dependencia?
+- **Caso Considerado:** Duplicar la funcionalidad de notificaciones en funcionalidades específicas para cada notificación, tales como *CheckInNotificacion*, *CheckOutNotification*, *PaymentNotification*, etc.
+- **Impacto:**
+  - Las funcionalidades de la aplicación estarían mejor desacopladas, pero se repetiría mucho código y podría generar confusiones e inconsistencias.
+- **Discusión:**
+  - No se recomienda, pues aumentaría la complejidad y la dificultad en caso se requiera realizar cambios. Es mejor utilizar servicios compartidos o ACLs.
+
+###### 2.6. ¿Qué pasaría si creamos un shared service para reducir la duplicación entre múltiples bounded contexts?
+- **Caso Considerado:** Crear un servicio compartido de notificaciones al que puedan acceder todos los demás Bounded Contexts.
+- **Impacto:**
+  - Reduciría el acoplamiento y permitiría que cada contexto pueda enviar notificaciones de manera más rápida y sencilla.
+- **Discusión:**
+  - Al implementar este servicio, se duplicaría el código de *Communication*, volviéndolo obsoleto.
+
+###### 2.7. ¿Qué pasaría si aislamos los core capabilities y movemos los otros a un context aparte?
+- **Caso Considerado:** Aislar las capacidades core de la gestión de las habitaciones en *Organizational Management* y moverlas a un contexto a parte llamado *Rooms Management*.
+- **Impacto:**
+  - Se reduciría la sobrecarga de trabajo en *Organizational Management*.
+- **Discusión:**
+  - Aislar capacidades core supondría duplicar una gran cantidad de código, pues la gestión de las habitaciones y del resto del hotel comparten muchas funcionalidades similares.
+
+##### 3. Alternativa Recomendada de Context Mapping
+
+1. **Crear un ACL para que *Reservations* pueda utilizar funciones de *Communication*** que maneje las notificaciones enviadas en relación a los check-in y check-out.
+2. **Desacoplar adecuadamente las funcionalidades de *Communication* y *Commerce*** para reducir la complejidad del código de cada Bounded Context.
+
+##### 4. Patrones de Relaciones Sugeridos
+
+- **Anti-corruption Layer (ACL):** Para proteger el contexto *Communication* y *Commerce* de cambios en *IAM*.
+- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Reservations* y mande notificaciones.
+
+![Context Mapping](/assets/img/context-mapping/context-mapping.png)
+
 ### 4.1.3. Software Architecture
 
 URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>.
@@ -2116,9 +2241,9 @@ En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistem
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
-### 4.2.X. Bounded Context: IAM Bounded Context
+### 4.2.1. Bounded Context: IAM Bounded Context
 
-#### 4.2.X.1. Domain Layer
+#### 4.2.1.1. Domain Layer
 
 ### Agregados y Entidades del Dominio `IAM`
 
