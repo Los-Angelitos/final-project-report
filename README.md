@@ -1156,6 +1156,27 @@ Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, 
 
 
 
+<br>
+URL del vídeo: <br>
+Nombre: Sergio Renard <br>
+Edad: 21 <br>
+Sexo: Masculino <br>
+Lugar donde vive: La Plata - Argentina <br>
+Ocupación: Administrador de hotel <br>
+Duración de la entrevista: 00:00 - 00:00 <br>
+Personalidad: Alegre <br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/sKGvt61.png" alt="Sergio Renard Interview" width="80%" />
+</div><br>
+
+Sergio Renard es un administrador hotelero radicado en La Plata, Argentina, quien gestiona un hospedaje familiar orientado tanto al turismo local como internacional. Sergio nos comparte su experiencia enfrentando los retos de la administración diaria, especialmente en lo relacionado a la gestión de reservas y preferencias de los clientes. A diferencia de otros establecimientos más grandes, actualmente no cuenta con un sistema automatizado, por lo que lleva el control de las reservas, pagos y asignaciones de forma manual, lo que implica una gran carga operativa y posibles errores humanos.
+
+Sergio se define como una persona práctica, comprometida y atenta a las necesidades del cliente, y por ello está en la búsqueda de una solución tecnológica que le permita modernizar su gestión hotelera. Uno de sus principales objetivos es brindar mayor comodidad a sus huéspedes, permitiéndoles guardar sus preferencias de estadía dentro de una plataforma digital, de modo que en futuras visitas se les pueda ofrecer una experiencia más personalizada.
+
+Además, considera clave que la herramienta no solo sirva para facilitar las reservas, sino que también integre funciones para el control administrativo, el seguimiento de recursos y la comunicación interna, todo en un mismo entorno. Sergio está convencido de que una buena gestión digital no solo beneficia al administrador, sino que enriquece la experiencia del cliente y fortalece la imagen del hotel frente a la competencia.
+
+
 **Entrevista 03 (Administradores)**
 
 **Entrevista 01 (Huéspedes)**
