@@ -1612,6 +1612,8 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP04</td>
       <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
       <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
+      <td></td>
+      <td></td>
     </tr>
     <tr>
       <td>HU01</td>
