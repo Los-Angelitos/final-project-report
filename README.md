@@ -285,7 +285,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Fabia Herrera
         <p/>
-        Omar Morales: 
+        Omar Morales: En esta primera entrega, participé activamente en las actividades del equipo, aportando ideas durante las sesiones colaborativas y apoyando en la redacción y organización de las historias de usuario. También fomenté la comunicación y el trabajo en equipo, contribuyendo a un ambiente inclusivo en el que todos pudieran participar y enfocados en cumplir con los objetivos establecidos.
         </p>
     </td>
     <td>TB1:</td>
@@ -305,7 +305,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Fabia Herrera
         <p/>
-        Omar Morales: 
+        Omar Morales: Durante este entregable, participé activamente en la definición de metas y tareas del equipo, colaborando en la redacción de historias de usuario y apoyando en la elaboración de la documentación del proyecto. Utilicé el tablero Kanban para organizar y dar seguimiento a mis responsabilidades, lo cual ayudó a mantener una visión clara del progreso del equipo. Además, fomenté un ambiente colaborativo mediante una comunicación constante y abierta, promoviendo la participación de todos los integrantes.
         </p></td>
     <td>TB1: </td>
   </tr>
