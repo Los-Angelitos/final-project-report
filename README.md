@@ -283,7 +283,8 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Arian Rodriguez: Durante esta primera entrega, me desenvolví de manera eficiente dentro de mi equipo de trabajo, colaborando en la creación de un ambiente de confianza, donde cada uno de los integrantes se sintiera cómodo para expresar sus ideas y opiniones. De la misma manera, me aseguré de fomentar la comunicación y ayuda mutua entre algunos compañeros que tenían dudas sobre el trabajo a realizar.
         <p/>
-        Fabia Herrera
+        Fabia Herrera:
+        Para esta primera entrega, el equipo adoptó un enfoque de trabajo iterativo, organizando reuniones semanales en las que compartimos avances, identificamos dificultades y propusimos mejoras de manera colaborativa. Durante este proceso, mantuve una comunicación efectiva con mis compañeros, expresando dudas y sugerencias. 
         <p/>
         Omar Morales: 
         </p>
@@ -303,7 +304,8 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Arian Rodriguez: Durante este entregable, me aseguré de tener claro el objetivo a cumplir mediante la comunicación y en la resolución de dudas, así como también las tareas que debía realizar. Para ello, utilicé el tablero Kanban, donde se asignaron las tareas a cada uno de los integrantes y se establecieron fechas de entrega. De esta manera, proporcioné apoyo en la edición de User Stories, elaboración de entrevista, creación del Software Architecture System Diagrams, Bounded Context Canvases y documentación.
         <p/>
-        Fabia Herrera
+        Fabia Herrera:
+        Junto con el equipo, establecimos metas claras, distribuimos tareas de manera equitativa y planificamos nuestras actividades para cumplir con los plazos establecidos por el mismo. Para esta entrega contribuí con los segmentos objetivo, la creación de los user persona, el análisis de las entrevistas, así como la documentación del Communication Bounded Context.
         <p/>
         Omar Morales: 
         </p></td>
