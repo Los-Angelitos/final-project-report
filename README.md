@@ -1112,6 +1112,30 @@ En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años co
 
 **Entrevista 01 (Administradores)**
 
+URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/Eb9pMOxu-tJFi7dSTcfvnmMB966AbVIsymur1zjkBltizQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1wkszq
+
+Nombres: Gianella
+
+Apellidos: Francia
+
+Edad: 25
+
+Sexo: Femenino
+
+Ocupación: Administradora de RRHH en la gestión de hoteles
+
+Lugar donde vive: Santa Anita, Perú
+
+Duración de la entrevista: 09:50 minutos.
+
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="./assets/img/interview-analysis/admin-1.PNG" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
+Gianella Francia es una joven administradora de uno de la cadena de hoteles más importantes para el turismo extranjero Decameron Resort. Gianella nos cuenta su experiencia como administradora de recursos humanos en la gestión de hoteles. Ella es una persona analítica, empática y profesional que busca siempre salir beneficiada de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial. Ella menciona que actualmente utiliza softwares como Opera PMS para disminuir la carga laboral mediante procesos automatizados, sin embargo, no llega a ser completoy no brinda herramientas innovadoras que beneficie administración y cliente. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
+<br>
+
 **Entrevista 02 (Administradores)**
 <br>
 URL del vídeo: <br>
