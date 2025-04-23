@@ -1113,6 +1113,24 @@ En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años co
 **Entrevista 01 (Administradores)**
 
 **Entrevista 02 (Administradores)**
+<br>
+URL del vídeo: <br>
+Nombre: Fabricio Gabriel Chavez Morales <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Magdalena del Mar-Lima <br>
+Ocupación: Administrador del hotel Los Lirios <br>
+Duración de la entrevista: 9:52 minutos <br>
+Personalidad: Enfocado, orientado al servicio al cliente <br>
+
+![Entrevista° 2 - Administradores](./assets/img/interview-analysis/admin-2.png)
+
+
+Fabricio señala que actualmente utiliza un software de gestión para el control de habitaciones (ocupadas, desocupadas, con o sin personal de housekeeping, etc.) y para el seguimiento de los alimentos servidos. Considera que sería útil incorporar a la aplicación de gestión de housekeeping un módulo que permita registrar y monitorear la cantidad de artículos de limpieza disponibles y utilizados, con el fin de optimizar la administración de estos recursos. Durante la conversación, menciona que una de las principales dificultades que ha enfrentado en la gestión de su negocio es que algunos usuarios encuentran el proceso de reserva confuso o demasiado extenso.
+
+Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, destaca el uso de plataformas como Sweet Manager y otras aplicaciones orientadas a hacer de la administración hotelera una experiencia más eficiente y personalizada.
+
+
 
 **Entrevista 03 (Administradores)**
 
