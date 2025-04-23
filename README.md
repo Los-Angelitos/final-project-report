@@ -3045,7 +3045,6 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
 
----
 
 ### Resources
 
@@ -3266,14 +3265,15 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 </div><br>
 
 Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
+
+---
+
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
 ### Agregados y Entidades del Dominio `Reservations`
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
-
----
 
 ### `Room` 
 
@@ -3554,8 +3554,6 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-![structurizr-101410-Container-001](https://github.com/user-attachments/assets/61878c86-913b-4fc9-b213-08085d38c057)
-En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
 URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
 <br><br>
 <div style="text-align: center;">
@@ -3616,14 +3614,15 @@ Las tablas principales y unicas del Bounded Context son:
 | `Price`      | `decimal`             | Precio base asignado a este tipo |
 | `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
 
+
+---
+
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
 ### Agregados y Entidades del Dominio `Inventory`
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
-
----
 
 
 Representa un suministro de inventario registrado dentro del sistema de SweetManager.
@@ -3939,6 +3938,8 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
   <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
+---
+
 ### 4.2.3. Bounded Context: Organizational Management Bounded Context
 
 #### 4.2.3.1. Domain Layer
@@ -3946,7 +3947,6 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
 
----
 
 ### `Hotel`
 
@@ -4184,15 +4184,14 @@ URL del diagrama de clases: <a href="https://lucid.app/lucidchart/aed64c50-821a-
   <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
 </div><br>
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
 ### 4.2.4. Bounded Context: Commerce Bounded Context
 
 #### 4.2.4.1. Domain Layer
 ### Aggregates, Entities y Value Objects del Dominio `Commerce`
 
 Se han identificado los siguientes **Aggregates**, **Entities** y **Value Objects** que representan los conceptos más importantes del contexto de comercio.
-
----
 
 ### `PaymentCustomer` 
 
@@ -4552,9 +4551,6 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
-
-<br><br>
 En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
 URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
 <br><br>
@@ -4626,14 +4622,13 @@ relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
 primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
 elaboración del diagrama la herramienta indicada.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
 ### 4.2.6. Bounded Context: Commmunication Bounded Context
 
 #### 4.2.6.1. Domain Layer
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
-
----
 
 ### `Notification`
 Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
@@ -4798,15 +4793,8 @@ objetos del bounded context. Para el caso de un almacenamiento en base de datos
 relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
 primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
 elaboración del diagrama la herramienta indicada.
-# Conclusiones
 
-Esta parte tiene 2 secciones: Conclusiones y Recomendaciones y Video Aout-the-team.
-
-En conclusiones y recomendaciones resumiremos los avances que hemos tenido hasta el momento y como esta siendo nuestra experiencia en ello. Adicionalmente, explicando las fases de desarrollo que hemos implementado y como hemos abstraido la informacion recibida de los requisitos como entrevistas, Historias de Usuario; etc. Finalmente, evaluar los resultados en relacion con el Lean UX, validaciones y RoadMap.
-
-En Video About-the-Team, presentaremos un video en donde el equipo se introduce. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
-
-## Conclusiones y Recomendaciones
+# Conclusiones y Recomendaciones
 Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
 
 Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
