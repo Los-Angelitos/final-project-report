@@ -2087,25 +2087,32 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.3. Software Architecture
 
+URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>.
+<br><br>
+
 #### 4.1.3.1. Software Architecture System Landscape Diagram
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos.<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.2. Software Architecture Context Level Diagrams
+El diagrama de contexto del sistema ilustra la interacción entre el sistema de gestión hotelera y los actores externos que interactúan con él. Este diagrama proporciona una visión general de cómo el sistema se integra con otros sistemas y servicios, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se conecta con un sistema externo de pagos, un sistema de mensajería (email)<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/context-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/context-diagram.png" alt="Context Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
+A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios módulos, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/container-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/container-diagram.png" alt="Container Diagram" width="90%" />
+</div><br><br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
+En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes módulos y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="90%" />
+</div><br><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
 
@@ -2615,23 +2622,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-
+En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="./assets/img/iam-bounded-context/component-diagram.png" alt="Message Flow Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/iam-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -2675,19 +2671,12 @@ como databases, messaging systems o email services. Es en esta capa que se ubica
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
@@ -3000,6 +2989,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
 ![structurizr-101410-Container-001](https://github.com/user-attachments/assets/61878c86-913b-4fc9-b213-08085d38c057)
+En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
@@ -3055,7 +3050,6 @@ Las tablas principales y unicas del Bounded Context son:
 | `Price`      | `decimal`             | Precio base asignado a este tipo |
 | `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
 
-### 4.2.X. Bounded Context: Organizational Management Bounded Context
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
@@ -3357,15 +3351,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
-<p >A continuación, el equipo presenta los diagramas de componentes del Bounded Context Inventory utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.</p>
-
+En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="https://i.imgur.com/DZkhfiE.png" alt="Class Diagram Inventory" width="70%" />
-</div><br>
-
-<div style="text-align: center;">
-  <img src="https://i.imgur.com/s90C8zf.png" alt="Class Diagram Inventory" width="70%" />
-</div><br>
+  <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
@@ -3607,16 +3598,12 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-
-A continuación, el equipo presenta los diagramas de componentes del Bounded Context `Organizational Management` utilizando la herramienta Structurizr para C4 Model. Estos diagramas muestran la descomposición de cada contenedor y sus interacciones.
-
+En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
 <div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/org-management-components-hotel.png" alt="C4 Diagram Organizational Management" width="90%" />
-</div><br>
-
-<div style="text-align: center;">
-  <img src="./assets/img/organizational-management-bounded-context/org-management-components-provider.png" alt="C4 Diagram Organizational Management" width="90%" />
-</div><br>
+  <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -3998,10 +3985,15 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-
-<p>A continuación, se presenta el diagrama de componentes del C4 model del Bounded Context Commerce para el cual se utilizó la herramienta Structurizr. Este diagram muestra la descomposición de cada contenedor y sus interacciones: </p>
-
 ![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
+
+<br><br>
+En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -4038,19 +4030,13 @@ como databases, messaging systems o email services. Es en esta capa que se ubica
 implementación de Repositories para las interfaces definidas en Domain Layer. Algo
 similar ocurre con interfaces definidas para MessageBrokers.
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del Owner Usuario para gestionar los recursos disponibles dentro de su hotel.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
@@ -4217,19 +4203,13 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 ---
 
 #### 4.2.X.5. Bounded Context Software Architecture Component Level Diagrams
-Para la elaboración de diagramas de Software Architecture se utilizará Structurizr para C4
-Model, LucidChart para UML y para Database Design se utilizará LucidChart / Vertabelo. En
-caso de aplicar Diagram-as-Code se puede utilizar Structurizr DSL para C4 Model y/o
-PlantUML para UML y C4 Model.
-En esta sección, el equipo explica y presenta los Component Diagrams de C4 Model
-para cada uno de los Containers considerados para el bounded context. En estos
-diagramas el equipo busca reflejar la descomposición de cada Container para
-identificar los bloques estructurales principales y sus interacciones. Un Component
-Diagram debe mostrar cómo un container está conformado por components, qué
-son cada uno de dichos components, sus responsabilidades y los detalles de
-implementación/tecnología. Utilice la herramienta indicada para la elaboración del
-diagrama.
-https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
+URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/communication-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
 
 #### 4.2.X.6. Bounded Context Software Architecture Code Level Diagrams
 En esta sección, el equipo presenta y explica los diagramas que presentan un mayor
