@@ -275,7 +275,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p>
         TB1:
         <p/>
-        Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compas.
+        Mauricio Rojas: En este entregable, he participado de forma continua, apoyando a mis compañeros en cada momento que ellos lo requerían. Adicionalmente, apoyé en el proceso de desarrollo de distintos requisitos y organización del equipo.
         <p/>
         Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, colaboré con algunas estrategias y dinamicas grupales, como dirigiendo el proceso de Event Storming en cada uno de sus pasos. Tambien colaboré con la asignación de algunas tareas y el desarrollo de nuestro tablero Kanban grupal. 
         <p/>
@@ -296,7 +296,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
     <td><p>
         TB1:
         <p/>
-        Mauricio Rojas: 
+        Mauricio Rojas: En este entregable, he fomentado en todo momento el trabajo en equipo y la comunicación constante. Adicionalmente, escuchando e intercambiando ideas con mis compañeros de equipo. De esta manera, planificamos tareas y cumplimos objetivos de una mejor manera.
         <p/>
         Giacomo Zoppi: En este entegable, colaboré en formar un ambiente colaborativo en el grupo, ayudé a establecer algunas tareas y objetivos en nuestro tablero Kanban. Tambien, a la hora de cumplir a tiempo con mis tareas, genero un ambiente responsable en el que todos estamos seguros que cada uno cumple su parte. 
         <p/>
@@ -1090,7 +1090,9 @@ Duración de la entrevista:
 
 Personalidad: Análitica
 
-IMAGEN VA AQUI
+<div style="text-align: center;">
+  <img src="assets/img/interview-analysis/owner1.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+</div><br>
 
 En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
 
@@ -2105,6 +2107,126 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Then</em> retorna un array vacío
       </td>
       <td>EP06</td>
+    </tr>
+    <tr>
+      <td>EP07</td>
+      <td>Control de temperatura y acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para controlar la temperatura de mi habitación y una tarjeta para acceder a mis habitaciones.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Tarjeta para acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Abrir puerta<br>
+        <em>Given</em> la habitación reservada esta bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida los datos del Device User y desbloquea la puerta.<br>
+        <b>Scenario 2:</b> Fallo al abrir puerta por habitación equivocada<br>
+        <em>Given</em> la habitación está bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida que el Device User no tiene reservada la habitación.<br>
+        <em>And</em> la habitación se mantiene bloqueada.
+        <b>Scenario 3:</b> Fallo al abrir puerta por habitación inactiva<br>
+        <em>Given</em> la habitación está bloqueada e inactiva<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> la habitación rechaza la tarjeta<br>
+        <em>And</em> se mantiene bloqueada.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Control de temperatura en habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.
+      </td>
+      <td>
+        <b>Scenario:</b> Bajar Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> baja la temperatura en 1°.<br>
+        <b>Scenario:</b> Subir Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura en 1°.<br>
+        <em>Then</em> sube la temperatura.
+        <b>Scenario:</b>Error al bajar temperatura<br>
+        <em>Given</em> el dispositivo está apagado o desconectado<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+        <b>Scenario:</b>Error al subir temperatura<br>
+        <em>Given</em> el dispositivo está apagado<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Visualizar la temperatura específicada en la Web Application</td>
+      <td>
+        Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.
+      </td>
+      <td>
+        <b>Scenario:</b> Ver temperatura en el dispositivo<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User se encuentra en la habitación<br>
+        <em>Then</em> visualiza en la pantalla del dispositivo la temperatura específicada.<br>
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>EP08</td>
+      <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
+      <td>
+        Como Device Maker, quiero utilizar framework de código a bajo nivel y distintos approaches para maximinar mis recursos y facilitar el debugging del producto.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Uso de Interrupt-Driven Detection</td>
+      <td>
+        Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responde eficientemente sin sobrecargar el main loop.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Botón presionado<br>
+        <em>Given</em> el dispositivo tiene mecánica de interrupciones<br>
+        <em>When</em> el Device User presiona un botón<br>
+        <em>Then</em> el dispositivo cambia el valor de temperatura<br>
+        <b>Scenario 2:</b> Ningun botón presionado<br>
+        <em>Given</em> ningún botón es presionado<br>
+        <em>When</em> el Device Maker inspecciona la función loop()<br>
+        <em>Then</em> lo encuentra sin ejecuciones.<br>
+      </td>
+      <td>EP08</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Monitorear el cambio de temperatura</td>
+      <td>
+        Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Mostrar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia<br>
+        <em>Then</em> muestra la temperatura actual<br>
+        <b>Scenario 2:</b> Cambiar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia y el Device Maker cambia el valor de temperatura<br>
+        <em>Then</em> muestra la nueva temperatura<br>
+      </td>
+      <td>EP08</td>
     </tr>
   </tbody>
 </table>
@@ -4572,16 +4694,57 @@ primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para l
 elaboración del diagrama la herramienta indicada.
 # Conclusiones
 
-## Recomendaciones
+Esta parte tiene 2 secciones: Conclusiones y Recomendaciones y Video Aout-the-team.
+
+En conclusiones y recomendaciones resumiremos los avances que hemos tenido hasta el momento y como esta siendo nuestra experiencia en ello. Adicionalmente, explicando las fases de desarrollo que hemos implementado y como hemos abstraido la informacion recibida de los requisitos como entrevistas, Historias de Usuario; etc. Finalmente, evaluar los resultados en relacion con el Lean UX, validaciones y RoadMap.
+
+En Video About-the-Team, presentaremos un video en donde el equipo se introduce. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
+
+## Conclusiones y Recomendaciones
+Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
+
+Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
+
+Durante el proceso, se establecieron Hipótesis como que los administradores necesitan una vista consolidada de los huéspedes actuales (HU12), que los propietarios requieren trazabilidad financiera clara (EP02), y que los huéspedes prefieren experiencias fluidas y simples al momento de reservar y hospedarse (EP05). Las validaciones realizadas hasta el momento, mediante el diseño de entrevistas e historias de usuario, han respaldado estas hipótesis.
+
+Para continuar con el desarrollo estratégico de SweetManager, recomendamos:
+
+Validar mediante prototipos de alta fidelidad las funcionalidades priorizadas para cada segmento, enfocándonos especialmente en las vistas operativas de administración y control de huéspedes activos.
 
 # Video About-the-Team
 
 # Bibliografía
 - Gothelf, J., & Seiden, J. (2021). Lean UX, 3rd Edition. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
-- Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
+
+- Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/
+5w2h-tecnica-de-analisis-de-problemas/
+
 - UX Planet. (2017). Information Architecture. Basics for Designers. - UX Planet. Medium; UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
+
 - Gothelf, J. (2024). Leanux Sampler. https://es.scribd.com/document/655516553/Leanux-Sampler
+
+- ¿Qué es la gestión hotelera y cuál es su importancia en el sector hotelero? (2021, febrero 10). Ostelea.com.
+https://www.ostelea.com/actualidad/blog-turismo/direccion-hotelera/que-es-la-gestion-hotelera-y-cual-es-su-importancia-en-el-sector-hotelero
+
+- Buenas prácticas para el desarrollo de grandes proyectos con Vue.js. (s/f). Solucionex. Recuperado el 29 de abril de 2024.
+https://www.solucionex.com/blog/buenas-practicas-para-el-desarrollo-de-grandes-proyectos-con-vuejs
+
+- Eseme, S. (2021, agosto 12). 10 cosas que debes saber sobre Vue.js Frontend Framework. Kinsta®; Kinsta.
+https://kinsta.com/es/blog/vue-js/
+
+- de Javier, V. M. C. (s/f). DDD y arquitectura Onion, todo lo que necesitas saber. Paradigmadigital.com. Recuperado el 29 de abril de 2024 de
+https://www.paradigmadigital.com/techbiz/domain-driven-design-y-arquitectura-onion/
+
+- Arquitectura DDD(Domain Driven Design). (2021, junio 21). Sergio Tapia.
+https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 
 # Anexos
 
+### Vídeos de Exposición (Anexo 1)
 
+| Contenido | URL del Vídeo |
+|--------------|--------------|
+| Vídeo de Exposición TB1      | Link del Vídeo: |  
+| VÍdeo de Exposición TP1      | Link del Vídeo: - |
+| Vídeo de Exposición TB2    | Link del Vídeo: - | 
+| Vídeo de Exposición TF1    | Link del Vídeo: - | 
