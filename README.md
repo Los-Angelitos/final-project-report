@@ -1819,6 +1819,112 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP06</td>
     </tr>
+    <tr>
+      <td>EP07</td>
+      <td>Control de temperatura y acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para controlar la temperatura de mi habitación y una tarjeta para acceder a mis habitaciones.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Tarjeta para acceso a habitaciones</td>
+      <td>
+        Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Abrir puerta<br>
+        <em>Given</em> la habitación reservada esta bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida los datos del Device User y desbloquea la puerta.<br>
+        <b>Scenario 2:</b> Fallo al abrir puerta por habitación equivocada<br>
+        <em>Given</em> la habitación está bloqueada<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> el sensor valida que el Device User no tiene reservada la habitación.<br>
+        <em>And</em> la habitación se mantiene bloqueada.
+        <b>Scenario 3:</b> Fallo al abrir puerta por habitación inactiva<br>
+        <em>Given</em> la habitación está bloqueada e inactiva<br>
+        <em>When</em> el Device User acerca la tarjeta al sensor<br>
+        <em>Then</em> la habitación rechaza la tarjeta<br>
+        <em>And</em> se mantiene bloqueada.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Control de temperatura en habitaciones</td>
+      <td>
+        Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.
+      </td>
+      <td>
+        <b>Scenario:</b> Bajar Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> baja la temperatura en 1°.<br>
+        <b>Scenario:</b> Subir Temperatura<br>
+        <em>Given</em> el dispositivo está encendido<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura en 1°.<br>
+        <em>Then</em> sube la temperatura.
+        <b>Scenario:</b>Error al bajar temperatura<br>
+        <em>Given</em> el dispositivo está apagado o desconectado<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+        <b>Scenario:</b>Error al subir temperatura<br>
+        <em>Given</em> el dispositivo está apagado<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura<br>
+        <em>Then</em> el dispositivo no responde.
+      </td>
+      <td>EP07</td>
+    </tr>
+    <tr>
+      <td>EP08</td>
+      <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
+      <td>
+        Como Device Maker, quiero utilizar framework de código a bajo nivel y distintos approaches para maximinar mis recursos y facilitar el debugging del producto.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+    <tr>
+      <td>HU01</td>
+      <td>Uso de Interrupt-Driven Detection</td>
+      <td>
+        Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responde eficientemente sin sobrecargar el main loop.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Botón presionado<br>
+        <em>Given</em> el dispositivo tiene mecánica de interrupciones<br>
+        <em>When</em> el Device User presiona un botón<br>
+        <em>Then</em> el dispositivo cambia el valor de temperatura<br>
+        <b>Scenario 2:</b> Ningun botón presionado<br>
+        <em>Given</em> ningún botón es presionado<br>
+        <em>When</em> el Device Maker inspecciona la función loop()<br>
+        <em>Then</em> lo encuentra sin ejecuciones.<br>
+      </td>
+      <td>EP08</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Monitorear el cambio de temperatura</td>
+      <td>
+        Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing.
+      </td>
+      <td>
+        <b>Scenario 1:</b> Mostrar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia<br>
+        <em>Then</em> muestra la temperatura actual<br>
+        <b>Scenario 2:</b> Cambiar temperatura actual<br>
+        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
+        <em>When</em> el dispositivo inicia y el Device Maker cambia el valor de temperatura<br>
+        <em>Then</em> muestra la nueva temperatura<br>
+      </td>
+      <td>EP08</td>
+    </tr>
   </tbody>
 </table>
 
