@@ -279,7 +279,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Giacomo Zoppi: Personalmente, creo que logré trabajar en equipo eficazmente, colaboré con algunas estrategias y dinamicas grupales, como dirigiendo el proceso de Event Storming en cada uno de sus pasos. Tambien colaboré con la asignación de algunas tareas y el desarrollo de nuestro tablero Kanban grupal. 
         <p/>
-        Ramon Jorge
+        Ramon Jorge: Para esta entrega, participé activamente aportando ideas y contribuyendo al desarrollo conjunto del informe junto con mis compañeros. Fui proactivo al realizar las secciones del informe que me correspondían y comunicando mis progresos, mis dudas y mis opiniones al resto de integrantes.
         <p/>
         Arian Rodriguez: Durante esta primera entrega, me desenvolví de manera eficiente dentro de mi equipo de trabajo, colaborando en la creación de un ambiente de confianza, donde cada uno de los integrantes se sintiera cómodo para expresar sus ideas y opiniones. De la misma manera, me aseguré de fomentar la comunicación y ayuda mutua entre algunos compañeros que tenían dudas sobre el trabajo a realizar.
         <p/>
@@ -299,7 +299,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Giacomo Zoppi: En este entegable, colaboré en formar un ambiente colaborativo en el grupo, ayudé a establecer algunas tareas y objetivos en nuestro tablero Kanban. Tambien, a la hora de cumplir a tiempo con mis tareas, genero un ambiente responsable en el que todos estamos seguros que cada uno cumple su parte. 
         <p/>
-        Ramon Jorge
+        Ramon Jorge: Para esta entrega, establecí junto con mis compañeros una serie de objetivos semanalmente que íbamos cumpliendo y revisando entre todos a lo largo del plazo establecido. Para ello, nos guiamos del tablero Kanban donde estaban establecidas las responsabilidades para cada uno de los integrantes. Participé en la elaboración de los As-Is y To-Be Scenarios, en el User Task Matrix, los Software Architecture System Diagrams, Bounded Context Canvas y la documentación del Bounded Context Commerce.
         <p/>
         Arian Rodriguez: Durante este entregable, me aseguré de tener claro el objetivo a cumplir mediante la comunicación y en la resolución de dudas, así como también las tareas que debía realizar. Para ello, utilicé el tablero Kanban, donde se asignaron las tareas a cada uno de los integrantes y se establecieron fechas de entrega. De esta manera, proporcioné apoyo en la edición de User Stories, elaboración de entrevista, creación del Software Architecture System Diagrams, Bounded Context Canvases y documentación.
         <p/>
