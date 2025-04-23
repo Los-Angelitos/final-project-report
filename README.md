@@ -1963,11 +1963,6 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 **Imagen ejemplo:**  
 ![image](https://github.com/user-attachments/assets/b3890baa-dc95-48cf-aab0-062aeb9c01e6)
 
-
-#### 4.1.1.1. Candidate Context Discovery
-
-
-
 #### 4.1.1.2. Domain Message Flows Modeling
 
 <h2> Reservations Bounded Context </h2>
