@@ -1622,104 +1622,128 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>EP05</td>
-      <td>Crear un perfil global para los huéspedes de SweetManager, facilitando la búsqueda de hoteles, la personalización de preferencias y la realización de reservas de manera rápida y sencilla.</td>
-      <td>Como huésped de Sweet Manager, quiero crear un perfil global, personalizar mis preferencias de búsqueda y realizar reservas de manera eficiente para mejorar mi experiencia en la plataforma.</td>
-      <td>Los huéspedes puededn crear un perfil único y global en la plataforma, donde pueden almacenar sus preferencias de búsqueda, gestionar sus reservas y facilitar la experiencia de reservar hoteles de manera personalizada. A través de este perfil, los huéspedes podrán acceder a opciones de búsqueda avanzadas y gestionar todas sus reservas en un solo lugar.</td>
+      <td>Crear un perfil global para los huéspedes de SweetManager que permita personalizar preferencias de búsqueda, gestionar reservas y configurar opciones personales que podrán sincronizarse con los dispositivos IoT del hotel para una experiencia personalizada durante su estadía.</td>
+      <td>Como huésped, quiero crear un perfil único en la plataforma donde pueda registrar mis preferencias (como tipo de habitación, temperatura, iluminación), realizar reservas rápidamente y asegurarme de que mi experiencia en el hotel este personalizada según mis elecciones.</td>
+      <td>Los huéspedes pueden crear un perfil único en la plataforma, donde pueden almacenar su historial de búsqueda, gestionar sus reservas y facilitar su experiencia de reservar hoteles de manera personalizada con sus preferencias de cliente. A través de este perfil, los hoteles podrán gestionar la personalización y trámite de reserva a disposición de su cliente, de esta manera el huésped se mantiene cómodo y confiado en el servicio de hotel que se le ofrece.</td>
       <td></td>
     </tr>
     <tr>
       <td>HU01</td>
-      <td>Crear perfil global en SweetManager</td>
-      <td>Como huésped quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
+      <td>Crear perfil único y público en SweetManager</td>
+      <td>Como huésped quiero crear un perfil global para guardar mis preferencias como cliente y reutilizarlos en futuras reservas.</td>
       <td>
-        <strong>Escenario 1:</strong> Registro de huésped.<br>
+        <strong>Escenario 1:</strong> Registro de huésped<br>
         <em>Given</em> que el huésped no tiene una cuenta<br>
         <em>When</em> completa el formulario de registro con su información personal<br>
         <em>Then</em> el sistema debe crear un perfil asociado y almacenar sus datos de forma segura.<br><br>
-        <strong>Escenario 2:</strong> Configuración de preferencias.<br>
+        <strong>Escenario 2:</strong> Configuración de preferencias<br>
         <em>Given</em> que el huésped tiene una cuenta activa<br>
         <em>When</em> accede a la sección de preferencias y establece opciones como temperatura o tipo de habitación<br>
-        <em>Then</em> el sistema debe guardar esas preferencias para usarlas automáticamente en futuras reservas.
+        <em>Then</em> el sistema debe guardar esas preferencias para usarlas automáticamente en futuras reservas.<br><br>
+        <strong>Escenario 3:</strong> Aplicación automática de preferencias al reservar<br>
+        <em>Given</em> que el huésped tiene un perfil con preferencias guardadas (como temperatura, tipo de cama, iluminación)<br>
+        <em>When</em> realiza una reserva en cualquier hotel de la red SweetManager<br>
+        <em>Then</em> el sistema debe sugerir o aplicar automáticamente esas preferencias disponibles según la disponibilidad del hotel.
       </td>
-      <td></td>
+      <td>EP05</td>
     </tr>
     <tr>
       <td>HU02</td>
       <td>Buscar y filtrar hoteles de Sweet Manager</td>
-      <td>Como huésped quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
+      <td>Como huésped quiero filtrar y buscar hoteles de la red de SweetManager según mis preferencias para encontrar un hotel adecuado.</td>
       <td>
         <b>Escenario 1:</b> Buscar hoteles por nombre o ciudad.<br>
         <em>Given</em> que el huésped está en la página de búsqueda de hoteles<br>
         <em>When</em> escribe un nombre de hotel o ciudad en el campo de búsqueda<br>
-        <em>Then</em> el sistema debe mostrar una lista de hoteles que coincidan con los criterios.<br><br>
+        <em>Then</em> una lista de hoteles es mostrada al huésped los cuales coinciden con los criterios establecidos.<br><br>
         <b>Escenario 2:</b> Aplicar filtros de preferencia.<br>
         <em>Given</em> que el huésped está visualizando la lista de hoteles<br>
         <em>When</em> selecciona filtros como tipo de habitación<br>
-        <em>Then</em> el sistema debe actualizar la lista mostrando solo los hoteles que cumplan con esas condiciones.
+        <em>Then</em> el sistema debe actualizar la lista mostrando solo los hoteles que cumplan con esas condiciones.<br><br>
+        <b>Escenario 3:</b> Buscar hoteles según mis preferencias guardadas.<br>
+        <em>Given</em> que el huésped ya tiene preferencias guardadas en su perfil global (tipo de habitación, temperatura preferida, entre otros.)<br>
+        <em>When</em> accede a la página de búsqueda sin seleccionar filtros manualmente.<br>
+        <em>Then</em> el sistema debe sugerir hoteles que se ajusten automáticamente a sus preferencias y mostrarlos destacados.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU03</td>
-      <td>Reservar una habitación</td>
-      <td>Como huésped quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
+      <td>Reservar una habitación personalizada</td>
+      <td>Como huésped quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda y acorde a mis necesidades.</td>
       <td>
         <b>Escenario 1:</b> Selección de fechas.<br>
         <em>Given</em> que el huésped está en la página de reservas del hotel<br>
-        <em>When</em> selecciona una fecha de entrada y una de salida válidas<br>
-        <em>Then</em> el sistema debe mostrar las habitaciones disponibles para ese rango de fechas.<br><br>
-        <b>Escenario 2:</b> Cálculo de precio.<br>
-        <em>Given</em> que el huésped ha seleccionado una habitación y un rango de fechas<br>
+        <em>When</em> selecciona una fecha de entrada y salida válidas<br>
+        <em>Then</em> el sistema debe mostrar las habitaciones disponibles para ese rango de fechas, priorizando aquellas que coincidan con sus preferencias guardadas.<br><br>
+        <b>Escenario 2:</b> Cálculo de precio personalizado.<br>
+        <em>Given</em> que el huésped ha seleccionado una habitación y fechas específicas.<br>
         <em>When</em> el sistema calcula el precio<br>
-        <em>Then</em> debe mostrar el precio total basado en el número de noches y el precio por noche.<br><br>
+        <em>Then</em> debe mostrar el precio total considerando número de noches, tarifa base por noche y cualquier servicio adicional.<br><br>
         <b>Escenario 3:</b> Confirmación de reserva.<br>
-        <em>Given</em> que el huésped ha revisado los detalles de la reserva<br>
+        <em>Given</em> que el huésped ha revisado los detalles de la habitación, fechas y precio<br>
         <em>When</em> confirma la reserva y realiza el pago<br>
-        <em>Then</em> el sistema debe guardar la reserva y mostrar una confirmación al huésped.
+        <em>Then</em> el sistema debe guardar la reserva, asociarla al perfil del huésped y mostrar una confirmación con los datos y código de reserva.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU04</td>
-      <td>Visualizar reservas activas</td>
-      <td>Como huésped quiero visualizar mis reservas activas para saber cúando y dónde me hospedaré</td>
+      <td>Visualizar y gestionar reservas activas</td>
+      <td>Como huésped, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré, y asegurarme de que la habitación se ajuste a mis preferencias.</td>
       <td>
-        <b>Escenario 1:</b> Visualización de reservas.<br>
-        <em>Given</em> que el huésped ha iniciado sesión.
-        <em>When</em> accede a la vista de reservas activas.
-        <em>Then</em> el sistema muestra sus reservas activas con fechas, hotel y tipo de habitación (detalle de reserva).
+        <b>Escenario 1:</b> Visualización de reservas activas<br>
+        <em>Given</em> que el huésped se encuentra activo con su perfil
+        <em>When</em> accede a la vista de reservas activas
+        <em>Then</em> el sistema debe mostrar una lista de reservas vigentes con fecha de entrada, salida, nombre del hotel, tipo de habitación y estado actual de la reserva.<br><br>
+        <b>Escenario 2:</b> Detalle de una reserva activa<br>
+        <em>Given</em> que el huésped está visualizando sus reservas activas
+        <em>When</em> selecciona una reserva específica
+        <em>Then</em> el sistema debe mostrar los detalles completos: dirección del hotel, servicios incluidos, preferencias aplicadas (como temperatura, iluminación) y política de cancelación.<br><br>
+        <b>Escenario 3:</b> Modificación de preferencias antes del check-in<br>
+        <em>Given</em> que la reserva aún no ha comenzado
+        <em>When</em> el huésped accede a la reserva y desea actualizar sus preferencias (ej. temperatura, nivel de iluminación)
+        <em>Then</em> el sistema debe permitir modificar las preferencias y sincronizarlas con los dispositivos IoT del hotel para que estén listas al momento del check-in.<br><br>
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU05</td>
-      <td>Cancelar reserva</td>
-      <td>Como huésped quiero cancelar una de mis reservas para evitar costos innecesarios si mis planes cambian.</td>
+      <td>Cancelar reservas activas</td>
+      <td>Como huésped, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
       <td>
         <b>Escenario 1:</b> Cancelación dentro del plazo permitido<br>
-        <em>Given</em> que el huésped tiene una reserva activa y aún está dentro del plazo de cancelación gratuita.<br>
-        <em>When</em> accede a su lista de reservas activas y selecciona la opción de cancelar la reserva.<br>
-        <em>Then</em> el sistema debe cancelar la reserva y mostrar un mensaje de confirmación.<br><br>
-        <b>Escenario 2:</b> Registro de cancelación<br>
-        <em>Given</em> que una reserva ha sido cancelada<br>
-        <em>When</em> el huésped consulta su historial<br>
-        <em>Then</em> debe ver la reserva como cancelada con la fecha y motivo (si se solicita).
+        <em>Given</em> que el huésped tiene una reserva activa y la política de cancelación gratuita aún aplica.<br>
+        <em>When</em> accede a la sección de reservas activas y selecciona la opción de cancelar.<br>
+        <em>Then</em> el sistema debe confirmar la cancelación sin penalidad, actualizar el estado de la reserva y mostrar un mensaje de confirmación.<br><br>
+        <b>Escenario 2:</b> Registro en historial de reservas<br>
+        <em>Given</em> que una reserva fue cancelada previamente<br>
+        <em>When</em> el huésped consulta su historial de reservas<br>
+        <em>Then</em> el sistema debe mostrar esa reserva como "cancelada", incluyendo la fecha de cancelación y el motivo si fue ingresado.<br><br>
+        <b>Escenario 3:</b> Cancelación fuera del plazo permitido<br>
+        <em>Given</em> que el huésped desea cancelar una reserva fuera del periodo de cancelación gratuita<br>
+        <em>When</em> selecciona la opción de cancelar<br>
+        <em>Then</em> el sistema debe mostrar las condiciones de penalización, pedir confirmación y, si el huésped acepta, proceder con la cancelación registrando el cargo correspondiente.
       </td>
       <td>EP05</td>
     </tr>
     <tr>
       <td>HU06</td>
-      <td>Ver historial de reservas</td>
-      <td>Como huésped quiero ver mi historial de reservas para revisar mis viajes pasados y tener un registro de mis estadías.</td>
+      <td>Consultar historial de reservas anteriores</td>
+      <td>Como huésped, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
       <td>
-        <b>Escenario 1:</b> Visualizar historial completo<br>
-        <em>Given</em> que el huésped ha iniciado sesión en la aplicación<br>
-        <em>When</em> accede a la sección "Historial de reservas"<br>
-        <em>Then</em> el sistema debe mostrar una lista con todas las reservas anteriores, incluyendo fecha, hotel y estado (completada o cancelada).<br><br>
+        <b>Escenario 1:</b> Visualización del historial completo<br>
+        <em>Given</em> que el huésped se encuentra activo con su perfil público.<br>
+        <em>When</em> accede a la sección de reservas desde su perfil o menú principal<br>
+        <em>Then</em> el sistema debe mostrar una lista cronológica de todas sus reservas anteriores, incluyendo: nombre del hotel, fechas, tipo de habitación y estado (completada o cancelada)<br><br>
         <b>Escenario 2:</b> Visualizar detalles de una reserva específica<br>
-        <em>Given</em> que el huésped está viendo su historial<br>
+        <em>Given</em> que el huésped está viendo su historial de reservas<br>
         <em>When</em> selecciona una reserva de la lista<br>
-        <em>Then</em> el sistema debe mostrar los detalles: hotel, habitación, fechas, monto pagado y todo el detalle.
+        <em>Then</em> el sistema debe mostrar todos los detalles de esa reserva: nombre del hotel, tipo de habitación, fechas de entrada y salida, servicios incluidos, monto total pagado.<br><br>
+        <b>Escenario 3:</b> Filtro por estado o fecha<br>
+        <em>Given</em> que el huésped desea buscar una reserva específica en su historial<br>
+        <em>When</em> aplica filtros por estado (completada o cancelada) o por rango de fechas<br>
+        <em>Then</em> el sistema debe mostrar únicamente las reservas que cumplan con esos criterios, facilitando la navegación
       </td>
       <td>EP05</td>
     </tr>
