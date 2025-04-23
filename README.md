@@ -1520,7 +1520,17 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP04</td>
       <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
       <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
-      <td>El administrador tiene la capacidad de gestionar todas las operaciones clave relacionadas con las reservas, desde el registro hasta la modificación de fechas, así como de comunicarse con el gerente en caso de incidencias o solicitudes. Además, puede generar reportes y gestionar la disponibilidad de habitaciones de manera eficiente.</td>
+      <td> 
+      <li>HU01 - Gestionar reservas de huéspedes</li>
+      <li>HU02 - Enviar mensajes al gerente</li>
+      <li>HU03 - Ver detalles de la reserva del huésped</li>
+      <li>HU04 - Consultar disponibilidad de habitaciones</li>
+      <li>HU05 - Generar reporte de reservas del día</li>
+      <li>HU06 - Registrar reserva presencial</li>
+      <li>HU07 - Modificar fechas de una reserva</li>
+      <li>HU08 - Cambiar asignación de habitación</li>
+      <li>HU09 - Solicitar unirse a una organización</li>
+       </td>
       <td></td>
     </tr>
     <tr>
@@ -1960,7 +1970,8 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
-#### Reservations Bounded Context
+<h2> Reservations Bounded Context </h2>
+
 ![image](https://github.com/user-attachments/assets/6abdf48a-588b-4353-b962-418864251642)
 ![image](https://github.com/user-attachments/assets/6c10b73b-8ca0-4015-80d1-89b3c8b5caf4)
 ![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
@@ -1969,16 +1980,6 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ![image](https://github.com/user-attachments/assets/4fa79bc1-7f70-49dd-8c84-c8c207de35ad)
 ![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
 
-
-#### 4.1.1.3. Bounded Context Canvases
-#### Reservations Bounded Context
-![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
-En esta sección, el equipo explica y evidencia el proceso seguido para visualizar cómo
-deben colaborar los bounded contexts para resolver los casos que se presentan en el
-negocio para los usuarios del sistema. Para ello debe aplicar la técnica de
-visualización Domain Storytelling. Complemente la explicación con capturas en
-imágenes de los diagramas de Domain Storytelling elaborados.
-https://domainstorytelling.org/#dst-requirements
 <h2>Organizational Management Bounded Context</h2>
 <h3>Escenario: El dueño del hotel añade a un nuevo contacto de proveedor</h3>
 <p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda crear y brindar los datos necesarios para un nuevo proveedor de manera que lo guarde en su contacto de proveedores. Este formulario es enviado a Organizational Management Bounded Context y además consulta con el Inventory Bounded Context, para conocer los recursos restantes en el hotel.</p>
@@ -2016,9 +2017,6 @@ https://domainstorytelling.org/#dst-requirements
   <img src="./assets/img/organizational-management-bounded-context/flow6.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
-
-
-
 <h2>Communication Bounded Context</h2>
 <h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
 <p>Para este escenario, se espera que el dueño del hotel, habiendo ingresado a la aplicación web o móvil de SweetManager, genera una invitación para unirse a la organización que es enviada al Communication Bounded Context que se encargará de generar la notificación que llegará al administrador o administradores que el dueño precise. </p>
@@ -2044,8 +2042,6 @@ https://domainstorytelling.org/#dst-requirements
   <img src="./assets/img/communication-bounded-context/flow4.PNG" alt="Message Flow Communication" width="90%" />
 </div><br>
 
-
-
 <h2>Commerce Bounded Context</h2>
 <h3>Escenario: El dueño del hotel elige o cambia una suscripción</h3>
 <p>El dueño del hotel, en este escenario, desde su cuenta creada en SweetManager busca los tipos de suscripción disponibles y escoge uno, ya sea para suscribirse por primera vez o para cambiar la suscripción que tiene actualmente. Una vez se realiza el pago, se actualiza la información de la suscripción asociada a su perfil.</p>
@@ -2059,6 +2055,44 @@ https://domainstorytelling.org/#dst-requirements
   <img src="./assets/img/commerce-bounded-context/flow2.png" alt="Customer Payment Flow Commerce" width="90%" />
 </div><br>
 
+<h2>Inventory Bounded Context</h2>
+
+<h3>Escenario: El admin del hotel crea un supply</h3>
+<p>En este escenario, el admin del hotel interactúa con el sistema SweetManager para registrar un nuevo suministro. Primero, el admin consulta cuál es el hotel que tiene asignado. El sistema responde con los datos correspondientes. Luego, el admin procede a crear un supply, ingresando los campos requeridos: nombre, precio, stock y estado. Finalmente, el contexto de inventario confirma la creación del suministro mediante un evento.</p>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/RnSoVt6.png" alt="Supply Creation Flow" width="90%" />
+</div><br>
+
+<h3>Escenario: El admin del hotel lista los supplies</h3>
+<p>En este escenario, el admin del hotel desea visualizar los suministros disponibles. Primero, busca los hoteles asignados a su cuenta. El sistema SweetManager consulta el contexto de gestión organizacional y devuelve la lista de hoteles. Luego, el admin selecciona un hotel, lo cual permite al sistema consultar el contexto de inventario. Finalmente, se listan los suministros correspondientes al hotel seleccionado.</p>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/dVVpnAw.png" alt="List Supplies Flow" width="90%" />
+</div><br>
+
+<h3>Escenario: El admin del hotel selecciona un supply</h3>
+<p>En este escenario, el admin del hotel necesita seleccionar un suministro específico. Primero, busca los hoteles disponibles. El sistema SweetManager consulta el contexto organizacional para listar los hoteles. Tras seleccionar un hotel, se realiza una nueva consulta al contexto de inventario para listar los suministros del hotel. Finalmente, el admin selecciona un supply de la lista y el sistema registra esta selección.</p>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/7PheEuR.png" alt="Select Supply Flow" width="90%" />
+</div><br>
+
+<h3>Escenario: El admin del hotel edita un supply</h3> 
+<p>En este escenario, el admin del hotel accede a la opción de editar un suministro existente. Primero, selecciona el modo de edición en los detalles de un supply dentro del sistema SweetManager. El sistema consulta el contexto de inventario para obtener la información actual del suministro. Una vez obtenida, el admin edita los campos necesarios . El sistema actualiza la información del supply en el contexto correspondiente y registra la edición.</p> 
+<div style="text-align: center;"> 
+  <img src="https://i.imgur.com/BdIvLO3.png" alt="Edit Supply Flow" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El admin del hotel elimina un supply</h3> 
+<p>En este escenario, el admin del hotel quiere eliminar un suministro. Para ello, selecciona el modo de edición en los detalles de un supply. El sistema SweetManager consulta el contexto de inventario para obtener los datos actuales del supply. Con la información recuperada, el admin solicita eliminar el supply. El sistema realiza el comando de eliminación en el contexto de Gestión Organizacional y registra que el suministro fue eliminado correctamente.</p>
+<div style="text-align: center;"> 
+  <img src="https://i.imgur.com/2KOdVNp.png" alt="Delete Supply Flow" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El admin del hotel crea un supply request</h3> 
+<p>En este escenario, el admin del hotel necesita generar una solicitud de suministro. Comienza buscando los suministros disponibles del hotel a través del sistema SweetManager. Este consulta el contexto de inventario y lista los supplies disponibles. El admin selecciona uno y define los valores necesarios. Posteriormente, el sistema envía un comando al contexto de inventario para crear la solicitud de supply, la cual es registrada como creada.</p> 
+<div style="text-align: center;"> 
+  <img src="https://i.imgur.com/2DZc4Z5.png" alt="Create Supply Request Flow" width="90%" /> 
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
@@ -2067,6 +2101,7 @@ Bounded Context Canvas debe seguir un proceso iterativo con los pasos de Context
 Overview Definition, Business Rules Distillation & Ubiquitous Language Capture,
 Capability Analysis, Capability Layering (si aplica), Dependencies Capture, y Design
 Critique.
+
 <h2>Organizational Management Bounded Context</h2>
 <p>Responsable de la gestión de hoteles y proveedores dentro de la aplicación. Facilita la creación, vista, edición de la lista de hoteles disponibles como también de los proveedores de recursos para esta.</p>
 <div style="text-align: center;">
@@ -2078,7 +2113,8 @@ Critique.
 <div style="text-align: center;">
   <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
 </div><br>
-**Communication Bounded Context Canvas**
+
+<h2>Communication Bounded Context Canvas</h2>
 
 Es principalmente responsable de la gestión de mensajes entre el staff del hotel dentro de la plataforma. Facilita la creación, envío y recepción de mensajes concernientes a la comunicación interna.
 
@@ -2091,6 +2127,11 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
 </div><br>
+
+<h2>Reservations Bounded Context</h2>
+
+![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
+
 
 ### 4.1.2. Context Mapping
 
