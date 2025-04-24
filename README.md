@@ -2426,16 +2426,6 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 
 #### 4.1.1.2. Domain Message Flows Modeling
 
-<h2> Reservations Bounded Context </h2>
-
-![image](https://github.com/user-attachments/assets/6abdf48a-588b-4353-b962-418864251642)
-![image](https://github.com/user-attachments/assets/6c10b73b-8ca0-4015-80d1-89b3c8b5caf4)
-![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
-![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
-![image](https://github.com/user-attachments/assets/83642508-3aae-44ba-87a9-84658b3da11e)
-![image](https://github.com/user-attachments/assets/4fa79bc1-7f70-49dd-8c84-c8c207de35ad)
-![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
-
 <h2>Organizational Management Bounded Context</h2>
 <h3>Escenario: El dueño del hotel añade a un nuevo contacto de proveedor</h3>
 <p>Para este escenario, se espera que el dueño del hotel desde su cuenta creada en SweetManager pueda crear y brindar los datos necesarios para un nuevo proveedor de manera que lo guarde en su contacto de proveedores. Este formulario es enviado a Organizational Management Bounded Context y además consulta con el Inventory Bounded Context, para conocer los recursos restantes en el hotel.</p>
@@ -2472,6 +2462,33 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 <div style="text-align: center;">
   <img src="./assets/img/organizational-management-bounded-context/flow6.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
+
+<h2> Reservations Bounded Context </h2>
+
+<h3>Escenario: El dueño crea las habitaciones del hotel/h3>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda registrar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la selección y creación del hotel, y luego, envia un formulario al Reservations Bounded Context, para la creación y personalización de las habitaciones dentro de dicho hotel. </p>
+
+![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
+
+<h3>Escenario: El dueño lista las habitacionesl/h3>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Reservations Bounded Context, para listar las habitaciones pertenecientes a dicho hotel. </p>
+    
+![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
+
+<h3>Escenario: El dueño lista las reservas/h3>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar las reservas actuales en un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Reservations Bounded Context, para listar las reservas actuales en dicho hotel. </p>
+    
+![image](https://github.com/user-attachments/assets/83642508-3aae-44ba-87a9-84658b3da11e)
+
+<h3>Escenario: El cliente paga por la habitacion personalizada/h3>
+<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda hacer una reserva personalizada y pagar por ella. Se hace una consulta al IAM Bounded Context para solicitar las preferencias del huésped, segun ello, el formulario de la reserva es confirmada en el Reservations Bounded Context, y se procesa el pago, para lo cual se hace una consulta al Commerce Bounded Context y determinar si el pago fue hecho correctamente. </p>
+    
+![image](https://github.com/user-attachments/assets/aba46a4f-02e7-49eb-b352-9d20f8430fb2)
+
+<h3>Escenario: El cliente selecciona una habitación para reservar/h3>
+<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda consultar hoteles y hacer una reserva de una de sus habitaciones. Se hace una consulta al Organizational Managemente Bounded Context para obtener todos los hoteles, segun ello, se hace una consulta al Reservations Bounded Context para visualizar todas las habitaciones disponibles de dicho hotel, de la cual, el usuario escoge una de ellas y empieza el proceso de reserva. </p>
+
+![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
 
 <h2>Communication Bounded Context</h2>
 <h3>Escenario: Dueño de hotel envía solicitdes de unión a la organización</h3>
