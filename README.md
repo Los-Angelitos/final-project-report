@@ -1070,7 +1070,7 @@ A continuación, se registraron todas las entrevistas realizadas para nuestra so
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: 
+URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 Nombres: Carlo
 
@@ -1084,7 +1084,7 @@ Ocupación: Gerente Hotelero
 
 Lugar donde vive: Pueblo Libre
 
-Duración de la entrevista: 
+Duración de la entrevista: 00:00 - 12:20 
 
 Personalidad: Análitica
 
@@ -1096,13 +1096,13 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 <br><br>
 **Entrevista 02 (Gerentes)**
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Pueblo Libre-Lima <br>
 Ocupación: Dueño de un emprendimeinto hotelero <br>
-Duración de la entrevista: no nos jale profesor <br>
+Duración de la entrevista: 21:24 - 27:00 <br>
 Personalidad: Analítica <br>
 
 ![image](https://github.com/user-attachments/assets/9d53ee36-9745-4052-ad76-0df61544e3f3)
@@ -1115,13 +1115,13 @@ En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años co
 **Entrevista 03 (Gerentes)**
 
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Luis Fernández <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Surquillo - Lima <br>
 Ocupación: Dueño y manager de un hotel <br>
-Duración de la entrevista: 9:03 <br>
+Duración de la entrevista: 12:20 - 21:24 <br>
 Personalidad: Extrovertido <br>
 <br>
 
@@ -1132,7 +1132,7 @@ Luis se presenta como una persona extrovertida, cuyo buscador de Internet más u
 <br><br>
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: 
+URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  
 
 Nombres: Gianella
 
@@ -1146,7 +1146,7 @@ Ocupación: Administradora de RRHH en la gestión de hoteles
 
 Lugar donde vive: Santa Anita, Perú
 
-Duración de la entrevista: 09:50 minutos.
+Duración de la entrevista: 27:00 - 36:50.
 
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
@@ -1158,13 +1158,13 @@ Gianella Francia es una joven administradora de uno de la cadena de hoteles más
 
 **Entrevista 02 (Administradores)**
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Fabricio Gabriel Chavez Morales <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Magdalena del Mar-Lima <br>
 Ocupación: Administrador del hotel Los Lirios <br>
-Duración de la entrevista: 9:52 minutos <br>
+Duración de la entrevista: 36:50 - 46:45 <br>
 Personalidad: Enfocado, orientado al servicio al cliente <br>
 
 ![Entrevista° 2 - Administradores](./assets/img/interview-analysis/admin-2.png)
@@ -1179,13 +1179,13 @@ Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, 
 
 **Entrevista 03 (Administradores)**
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Sergio Renard <br>
 Edad: 21 <br>
 Sexo: Masculino <br>
 Lugar donde vive: La Plata - Argentina <br>
 Ocupación: Administrador de hotel <br>
-Duración de la entrevista: 00:00 - 00:00 <br>
+Duración de la entrevista: : 46:45 - 51:04 <br>
 Personalidad: Alegre <br>
 
 <div style="text-align: center;">
@@ -1201,13 +1201,13 @@ Además, considera clave que la herramienta no solo sirva para facilitar las res
 
 **Entrevista 01 (Huéspedes)**
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Breña - Lima <br>
 Ocupación: Jefe de start up <br>
-Duración de la entrevista: 0:22 - 7:22 <br>
+Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
 Personalidad: Analítica <br>
 ![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
 En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
@@ -1217,13 +1217,13 @@ En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se pres
 **Entrevista 02 (Huéspedes)**
 
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Jesús María - Lima <br>
 Ocupación: Ingeniero Civil <br>
-Duración de la entrevista: 0:30 - 8:52 <br>
+Duración de la entrevista: 51:04 - 59:57 <br> 
 Personalidad: Tranquilo <br>
 <br>
 
@@ -1235,13 +1235,13 @@ En resumen, Ramón se presenta como una persona tranquila, relajada y con poca p
 
 **Entrevista 03 (Huéspedes)**
 <br>
-URL del vídeo: <br>
+URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Los Olivos <br>
 Ocupación: Ingeniero Industrial <br>
-Duración de la entrevista: 0:00 - 9:00 <br>
+Duración de la entrevista: 59:57 - 01: 08: 24  <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
