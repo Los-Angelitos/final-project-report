@@ -1114,6 +1114,25 @@ En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años co
 
 **Entrevista 03 (Gerentes)**
 
+<br>
+URL del vídeo: <br>
+Nombre: Luis Fernández <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Surquillo - Lima <br>
+Ocupación: Dueño y manager de un hotel <br>
+Duración de la entrevista: 9:03 <br>
+Personalidad: Extrovertido <br>
+<br>
+
+![Entrevista° 3 - Dueños](assets/img/interview-analysis/owner3.png)
+
+En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
+
+Luis se presenta como una persona extrovertida, cuyo buscador de Internet más utilizado es Google y el dispositivo que más utiliza es su celular IPhone. Él, junto con sus hermanos, es propietario de un hotel pequeño en la ciudad de Huaraz. Explica que los principales retos que enfrenta son la gestión de las habitaciones y el inventario y la falta de personal que enfrentan en temporadas altas. También nos indica que actualmente realiza la gestión con herramientas como Excel y se comunican con los clientes por medio de WhatsApp. Al comentarle la idea de una aplicación mediante la cual pueda administrar las habitaciones, huéspedes, reservas y trabajadores del hotel además de comunicarse con sus administradores, se mostró muy interesado y aseguró que, de existir, seguramente decidiría utilizarla.
+
+<br><br>
+
 <br><br>
 **Entrevista 01 (Administradores)**
 
