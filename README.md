@@ -288,7 +288,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         Omar Morales: En esta primera entrega, participé activamente en las actividades del equipo, aportando ideas durante las sesiones colaborativas y apoyando en la redacción y organización de las historias de usuario. También fomenté la comunicación y el trabajo en equipo, contribuyendo a un ambiente inclusivo en el que todos pudieran participar y enfocados en cumplir con los objetivos establecidos.
         </p>
     </td>
-    <td>TB1:</td>
+    <td>TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega. </p></td>
   </tr>
   <tr>
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
@@ -308,7 +308,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Omar Morales: Durante este entregable, participé activamente en la definición de metas y tareas del equipo, colaborando en la redacción de historias de usuario y apoyando en la elaboración de la documentación del proyecto. Utilicé el tablero Kanban para organizar y dar seguimiento a mis responsabilidades, lo cual ayudó a mantener una visión clara del progreso del equipo. Además, fomenté un ambiente colaborativo mediante una comunicación constante y abierta, promoviendo la participación de todos los integrantes.
         </p></td>
-    <td>TB1: </td>
+    <td>TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p></td>
   </tr>
 </table>
 
@@ -1068,9 +1068,6 @@ En esta sección se documentarán las preguntas que se utilizaron en nuestras en
 
 A continuación, se registraron todas las entrevistas realizadas para nuestra solución, categorizadas según su segmento objetivo, y con un resumen que destaca las características y críticas realizadas sobre nuestro proyecto.
 
-Inicio: 0:00 <br><br>
-Fin: 36:51
-
 **Entrevista 01 (Gerentes)**
 
 URL del Vídeo: 
@@ -1096,7 +1093,7 @@ Personalidad: Análitica
 </div><br>
 
 En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
-
+<br><br>
 **Entrevista 02 (Gerentes)**
 <br>
 URL del vídeo: <br>
@@ -1113,11 +1110,14 @@ Personalidad: Analítica <br>
 
 En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años con una personalidad analítica y enfoque práctico. Vive en Pueblo Libre, Lima, y actualmente lidera su propio emprendimiento hotelero. Durante la entrevista, nos compartió que uno de los principales desafíos en la gestión diaria de su hotel es el control de inventario y la gestión eficiente de proveedores. Actualmente, el seguimiento de ingresos y reservas lo realiza mediante herramientas básicas como Excel, complementadas por procesos manuales. A pesar de ello, valora la organización y procura mantener un orden estructurado con apoyo de su equipo contable y administrativo. Entre las funcionalidades que considera más útiles para mejorar la eficiencia de su hotel destacan la automatización de reportes, una gestión centralizada de reservas y una plataforma integrada para coordinar con proveedores. 
 
+<br><br>
+
 **Entrevista 03 (Gerentes)**
 
+<br><br>
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/Eb9pMOxu-tJFi7dSTcfvnmMB966AbVIsymur1zjkBltizQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=1wkszq
+URL del Vídeo: 
 
 Nombres: Gianella
 
@@ -1139,7 +1139,7 @@ Duración de la entrevista: 09:50 minutos.
 </div>
 <br>
 Gianella Francia es una joven administradora de uno de la cadena de hoteles más importantes para el turismo extranjero Decameron Resort. Gianella nos cuenta su experiencia como administradora de recursos humanos en la gestión de hoteles. Ella es una persona analítica, empática y profesional que busca siempre salir beneficiada de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial. Ella menciona que actualmente utiliza softwares como Opera PMS para disminuir la carga laboral mediante procesos automatizados, sin embargo, no llega a ser completoy no brinda herramientas innovadoras que beneficie administración y cliente. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
-<br>
+<br><br>
 
 **Entrevista 02 (Administradores)**
 <br>
@@ -1160,7 +1160,9 @@ Fabricio señala que actualmente utiliza un software de gestión para el control
 Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, destaca el uso de plataformas como Sweet Manager y otras aplicaciones orientadas a hacer de la administración hotelera una experiencia más eficiente y personalizada.
 
 
+<br><br>
 
+**Entrevista 03 (Administradores)**
 <br>
 URL del vídeo: <br>
 Nombre: Sergio Renard <br>
@@ -1182,8 +1184,6 @@ Sergio se define como una persona práctica, comprometida y atenta a las necesid
 Además, considera clave que la herramienta no solo sirva para facilitar las reservas, sino que también integre funciones para el control administrativo, el seguimiento de recursos y la comunicación interna, todo en un mismo entorno. Sergio está convencido de que una buena gestión digital no solo beneficia al administrador, sino que enriquece la experiencia del cliente y fortalece la imagen del hotel frente a la competencia.
 
 
-**Entrevista 03 (Administradores)**
-
 **Entrevista 01 (Huéspedes)**
 <br>
 URL del vídeo: <br>
@@ -1196,6 +1196,8 @@ Duración de la entrevista: 0:22 - 7:22 <br>
 Personalidad: Analítica <br>
 ![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
 En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
+
+<br><br>
 
 **Entrevista 02 (Huéspedes)**
 
@@ -1214,6 +1216,8 @@ Personalidad: Tranquilo <br>
 
 En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
 
+<br><br>
+
 **Entrevista 03 (Huéspedes)**
 <br>
 URL del vídeo: <br>
@@ -1222,7 +1226,7 @@ Edad: 23 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Los Olivos <br>
 Ocupación: Ingeniero Industrial <br>
-Duración de la entrevista: A <br>
+Duración de la entrevista: 0:00 - 9:00 <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
@@ -1277,7 +1281,7 @@ En esta parte se expone la User Task Matrix, una herramienta clave para reconoce
 
 Esta sección expone los User Journey Mapping correspondientes a cada perfil de usuario, destacando las etapas principales de interacción con SweetManager, los puntos de contacto implicados y las emociones y experiencias vividas en cada fase. El propósito es detectar áreas de mejora y perfeccionar la experiencia del usuario. A continuación, se detallan los recorridos de usuario para cada uno de los perfiles definidos.
 
-__User Journey Mapp - NOMBRE - Owner (As-Is)__
+__User Journey Mapp - Carlo Rebagliati - Owner (As-Is)__
 
 __Inicio del día:__ El owner comienza el día revisando el dashboard general para tener una visión clara del estado del hotel. Se siente presionado por mantenerse al tanto de todo lo que ocurre y asegurarse de que no haya inconvenientes operativos.
 __Gestión de abastecimientos:__ Luego verifica los niveles de inventario y se encarga de solicitar lo necesario para mantener el hotel abastecido. Esta tarea le genera frustración debido a la falta de automatización y seguimiento eficiente en el sistema actual.
@@ -1288,7 +1292,7 @@ __Cierre del día:__ Finaliza el día con una revisión rápida del dashboard pa
   <img src="https://i.imgur.com/XEmHh7U.png" alt="Imagen del Journey Mapp Owner" width="70%" />
 </div>
 
-__User Journey Map - NOMBRE - Admin (As-Is)__
+__User Journey Map - Gianella Francia - Admin (As-Is)__
 
 __Inicio del turno:__ La administradora inicia su jornada revisando las reservas activas del día. Se siente presionada por garantizar una buena experiencia para cada huésped y por evitar errores en el check-in.
 __Gestión de reservas:__ Administra nuevas reservas, edita datos de huéspedes y responde consultas. Experimenta cierta ansiedad debido a la interfaz poco amigable del sistema actual, lo que le toma más tiempo del necesario.
@@ -1301,7 +1305,7 @@ __Fin del turno:__ Revisa que las tareas estén completas y deja notas para el s
 </div>
 
 
-__User Journey Map - NOMBRE - Huésped  (As-Is)__
+__User Journey Map - Anatoly Noriega - Huésped  (As-Is)__
 
 __Inicio de la experiencia:__ Sebastián encuentra el hotel a través de redes sociales o plataformas externas. Ingresa al sitio web o app para hacer una reserva. Se siente confundido al no encontrar un proceso claro y rápido para completar su reserva.
 __Proceso de reserva:__ Llena el formulario de reserva, selecciona fechas y tipo de habitación. Se siente impaciente si el sistema se demora o si no puede pagar de inmediato.
@@ -2173,65 +2177,80 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>HU01</td>
-      <td>Tarjeta para acceso a habitaciones</td>
+      <td>Acceso a habitación mediante tarjeta RFID</td>
       <td>
-        Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.
+        Como Device User, quiero utilizar una tarjeta de proximidad para desbloquear la puerta de mi habitación, para poder acceder fácilmente sin depender de llaves físicas.
       </td>
       <td>
-        <b>Scenario 1:</b> Abrir puerta<br>
-        <em>Given</em> la habitación reservada esta bloqueada<br>
-        <em>When</em> el Device User acerca la tarjeta al sensor<br>
-        <em>Then</em> el sensor valida los datos del Device User y desbloquea la puerta.<br>
-        <b>Scenario 2:</b> Fallo al abrir puerta por habitación equivocada<br>
+        <b>Escenario 1:</b> Acceso exitoso a la habitación<br>
+        <em>Given</em> la habitación asignada al usuario está bloqueada<br>
+        <em>And</em> el dispositivo lector de tarjetas está encendido y operativo<br>
+        <em>When</em> el Device User acerca su tarjeta al lector RFID<br>
+        <em>Then</em> el sistema valida la reserva y los datos del usuario<br>
+        <em>And</em> la puerta se desbloquea automáticamente<br>
+        <b>Escenario 2:</b> Intento de acceso a habitación no reservada<br>
         <em>Given</em> la habitación está bloqueada<br>
-        <em>When</em> el Device User acerca la tarjeta al sensor<br>
-        <em>Then</em> el sensor valida que el Device User no tiene reservada la habitación.<br>
-        <em>And</em> la habitación se mantiene bloqueada.
-        <b>Scenario 3:</b> Fallo al abrir puerta por habitación inactiva<br>
-        <em>Given</em> la habitación está bloqueada e inactiva<br>
-        <em>When</em> el Device User acerca la tarjeta al sensor<br>
-        <em>Then</em> la habitación rechaza la tarjeta<br>
-        <em>And</em> se mantiene bloqueada.
+        <em>And</em> el usuario no tiene una reserva activa para esa habitación<br>
+        <em>When</em> el Device User acerca su tarjeta al lector<br>
+        <em>Then</em> el sistema rechaza la tarjeta.<br>
+        <em>And</em> la puerta permanece bloqueada.<br>
+        <b>Escenario 3:</b> Habitación inactiva o fuera de servicio<br>
+        <em>Given</em> la habitación está bloqueada y marcada como inactiva o fuera de servicio<br>
+        <em>When</em> el Device User acerca su tarjeta al lector<br>
+        <em>Then</em> el sistema rechaza la tarjeta<br>
+        <em>And</em> la puerta permanece bloqueada<br>
+        <em>And</em> se notifica que la habitación está inactiva.<br>
       </td>
       <td>EP07</td>
     </tr>
     <tr>
       <td>HU02</td>
-      <td>Control de temperatura en habitaciones</td>
+      <td>Control de temperatura con termostato IoT</td>
       <td>
-        Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.
+        Como Device User, quiero controlar la temperatura de mi habitación mediante un botón de un termostato inteligente, para mantener un ambiente cómodo sin complicaciones.
       </td>
       <td>
-        <b>Scenario:</b> Bajar Temperatura<br>
-        <em>Given</em> el dispositivo está encendido<br>
+        <b>Escenario 1:</b> Bajar la temperatura<br>
+        <em>Given</em> el termostato IoT está encendido y conectado<br>
         <em>When</em> el Device User presiona el botón de bajar temperatura<br>
-        <em>Then</em> baja la temperatura en 1°.<br>
-        <b>Scenario:</b> Subir Temperatura<br>
-        <em>Given</em> el dispositivo está encendido<br>
-        <em>When</em> el Device User presiona el botón de subir temperatura en 1°.<br>
-        <em>Then</em> sube la temperatura.
-        <b>Scenario:</b>Error al bajar temperatura<br>
-        <em>Given</em> el dispositivo está apagado o desconectado<br>
-        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
-        <em>Then</em> el dispositivo no responde.
-        <b>Scenario:</b>Error al subir temperatura<br>
-        <em>Given</em> el dispositivo está apagado<br>
+        <em>Then</em> la temperatura de la habitación disminuye en 1 grado Celsius<br>
+        <em>And</em> el cambio se refleja en la pantalla del dispositivo.<br>
+        <b>Escenario 2:</b> Subir la temperatura<br>
+        <em>Given</em> el termostato IoT está encendido y conectado<br>
         <em>When</em> el Device User presiona el botón de subir temperatura<br>
-        <em>Then</em> el dispositivo no responde.
+        <em>Then</em> la temperatura de la habitación aumenta 1 grado Celsius<br>
+        <em>And</em> el cambio se refleja en la pantalla del dispositivo.<br>
+        <b>Escenario 3:</b>Intentar bajar la temperatura con el termostato apagado<br>
+        <em>Given</em> el termostato IoT está apagado o desconectado<br>
+        <em>When</em> el Device User presiona el botón de bajar temperatura<br>
+        <em>Then</em> el dispositivo no responde<br>
+        <em>And</em> se muestra un mensaje de error en la pantalla del dispositivo indicando que no se encuentra disponible.<br>
+        <b>Escenario 4:</b>Intentar subir la temperatura con el termostato apagado<br>
+        <em>Given</em> el termostato IoT está apagado o desconectado<br>
+        <em>When</em> el Device User presiona el botón de subir temperatura<br>
+        <em>Then</em> el dispositivo no responde<br>
+        <em>And</em> se muestra un mensaje de error en la pantalla del dispositivo indicando que no se encuentra disponible.<br>
       </td>
       <td>EP07</td>
     </tr>
     <tr>
       <td>HU03</td>
-      <td>Visualizar la temperatura específicada en la Web Application</td>
+      <td>Visualizar temperatura configurada desde Web Application</td>
       <td>
-        Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.
+        Como Device User, quiero visualizar la temperatura establecida en mi perfil a través de la Web Application, para asegurarme de que el dispositivo mantiene las condiciones que configuré previamente.
       </td>
       <td>
-        <b>Scenario:</b> Ver temperatura en el dispositivo<br>
-        <em>Given</em> el dispositivo está encendido<br>
-        <em>When</em> el Device User se encuentra en la habitación<br>
-        <em>Then</em> visualiza en la pantalla del dispositivo la temperatura específicada.<br>
+        <b>Escenario 1:</b> Ver temperatura configurada desde la Web Application<br>
+        <em>Given</em> el termostato está encendido y sincronizado con el perfil del usuario<br>
+        <em>And</em> el usuario ha accedido a su cuenta en la Web Application<br>
+        <em>When</em> el Device User ingresa a la sección de control de temperatura<br>
+        <em>Then</em> visualiza la temperatura actualmente establecida en su perfil<br>
+        <em>And</em> la temperatura coincide con la mostrada en el dispositivo físico.<br>
+        <b>Escenario 2:</b> Error de visualización por dispositivo conectado<br>
+        <em>Given</em> el termostato está desconectado o no responde<br>
+        <em>And</em> el usuario ha accedido a su cuenta en la Web Application<br>
+        <em>When</em> el Device User ingresa a la sección de control de temperatura<br>
+        <em>Then</em> se muestra un mensaje de error indicando que el dispositivo no está disponible para consulta<br>
       </td>
       <td>EP07</td>
     </tr>
@@ -2249,35 +2268,38 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>HU01</td>
       <td>Uso de Interrupt-Driven Detection</td>
       <td>
-        Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responde eficientemente sin sobrecargar el main loop.
+        Como Device Maker, quiero implementar detección mediante interrupciones (interrupt-driven) cuando se presiona un botón físico, para que el dispositivo reaccione de forma eficiente sin sobrecargar el ciclo principal de ejecución (main loop).
       </td>
       <td>
-        <b>Scenario 1:</b> Botón presionado<br>
-        <em>Given</em> el dispositivo tiene mecánica de interrupciones<br>
-        <em>When</em> el Device User presiona un botón<br>
-        <em>Then</em> el dispositivo cambia el valor de temperatura<br>
-        <b>Scenario 2:</b> Ningun botón presionado<br>
-        <em>Given</em> ningún botón es presionado<br>
-        <em>When</em> el Device Maker inspecciona la función loop()<br>
-        <em>Then</em> lo encuentra sin ejecuciones.<br>
+        <b>Escenario 1:</b> Detectar presión del botón con interrupción<br>
+        <em>Given</em> el microcontrolador tiene configurada la interrupción externa para el botón<br>
+        <em>And</em> el dispositivo está encedido<br>
+        <em>When</em> el Device User presiona el botón<br>
+        <em>Then</em> la interrupción se activa<br>
+        <em>And</em> la función de interrupción modifica el valor de temperatura<br>
+        <b>Escenario 2:</b> No se presiona ningún botón<br>
+        <em>Given</em> ningún botón ha sido presionado<br>
+        <em>When</em> el Device Maker observa la ejecución de loop()<br>
+        <em>Then</em> la función loop() no ejecuta código innecesario relacionado al botón.<br>
       </td>
       <td>EP08</td>
     </tr>
     <tr>
       <td>HU02</td>
-      <td>Monitorear el cambio de temperatura</td>
+      <td>Monitorear el cambio de temperatura vía Serial Monitor</td>
       <td>
-        Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing.
+        Como Device Maker, quiero que el dispositivo imprima el valor actual de la temperatura en el Serial Monitor, para poder verificar visualmente el comportamiento del termostato durante desarrollo y pruebas.
       </td>
       <td>
-        <b>Scenario 1:</b> Mostrar temperatura actual<br>
-        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
-        <em>When</em> el dispositivo inicia<br>
-        <em>Then</em> muestra la temperatura actual<br>
-        <b>Scenario 2:</b> Cambiar temperatura actual<br>
-        <em>Given</em> el dispositivo está encendido y conectado al Serial Monitor<br>
-        <em>When</em> el dispositivo inicia y el Device Maker cambia el valor de temperatura<br>
-        <em>Then</em> muestra la nueva temperatura<br>
+        <b>Escenario 1:</b> Mostrar temperatura al iniciar<br>
+        <em>Given</em> el dispositivo está conectado al puerto Serial<br>
+        <em>And</em> el Serial Monitor está abierto
+        <em>When</em> el dispositivo se inicializa<br>
+        <em>Then</em> imprime la temperatura actual en el monitor serial<br>
+        <b>Escenario 2:</b> Mostrar cambio de temperatura<br>
+        <em>Given</em> el dispositivo está operativo y monitoreado por Serial Monitor<br>
+        <em>When</em> se produce un cambio en el valor de temperatura (por botón u otra entrada)<br>
+        <em>Then</em> el nuevo valor de temperatura se imprime en el monitor serial<br>
       </td>
       <td>EP08</td>
     </tr>
@@ -2702,11 +2724,11 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ### 4.1.3. Software Architecture
 
-URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>.
+URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structurizr.com/share/83942">https://structurizr.com/share/83942</a>
 <br><br>
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos.<br>
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes módulos: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Reservations**.<br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
 </div><br><br>
@@ -3040,7 +3062,6 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
 
----
 
 ### Resources
 
@@ -3238,7 +3259,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/iam-component.png" alt="Component Diagram" width="90%" />
@@ -3261,14 +3282,15 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 </div><br>
 
 Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?viewport_loc=-2455%2C-276%2C3071%2C1049%2C0_0&invitationId=inv_2faa8e08-1e15-41e6-b2fc-8ed75c875a2f
+
+---
+
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
 ### Agregados y Entidades del Dominio `Reservations`
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
-
----
 
 ### `Room` 
 
@@ -3549,9 +3571,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-![structurizr-101410-Container-001](https://github.com/user-attachments/assets/61878c86-913b-4fc9-b213-08085d38c057)
-En el siguiente diagrama de componentes para Reservations Context se puede observar la interacción del usuario al realizar una reserva en el sistema. El diagrama muestra los componentes principales y sus interacciones, incluyendo la creación de reservas, la gestión de habitaciones.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
@@ -3611,14 +3631,15 @@ Las tablas principales y unicas del Bounded Context son:
 | `Price`      | `decimal`             | Precio base asignado a este tipo |
 | `Rooms`      | `ICollection<Room>`   | Habitaciones asociadas con este tipo |
 
+
+---
+
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
 ### Agregados y Entidades del Dominio `Inventory`
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
-
----
 
 
 Representa un suministro de inventario registrado dentro del sistema de SweetManager.
@@ -3913,7 +3934,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
@@ -3934,6 +3955,8 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
   <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
+---
+
 ### 4.2.3. Bounded Context: Organizational Management Bounded Context
 
 #### 4.2.3.1. Domain Layer
@@ -3941,7 +3964,6 @@ URL Structurizr: <a href="https://structurizr.com/share/116205">https://structur
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
 
----
 
 ### `Hotel`
 
@@ -4160,7 +4182,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
@@ -4179,15 +4201,14 @@ URL del diagrama de clases: <a href="https://lucid.app/lucidchart/aed64c50-821a-
   <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
 </div><br>
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
 ### 4.2.4. Bounded Context: Commerce Bounded Context
 
 #### 4.2.4.1. Domain Layer
 ### Aggregates, Entities y Value Objects del Dominio `Commerce`
 
 Se han identificado los siguientes **Aggregates**, **Entities** y **Value Objects** que representan los conceptos más importantes del contexto de comercio.
-
----
 
 ### `PaymentCustomer` 
 
@@ -4547,11 +4568,8 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-![Commerce Bounded Context Component Diagram](assets/img/commerce-bounded-context/commerce-component-diagram.png)
-
-<br><br>
 En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
@@ -4593,7 +4611,7 @@ implementación de Repositories para las interfaces definidas en Domain Layer. A
 similar ocurre con interfaces definidas para MessageBrokers.
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del Owner Usuario para gestionar los recursos disponibles dentro de su hotel.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
@@ -4621,14 +4639,13 @@ relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
 primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
 elaboración del diagrama la herramienta indicada.
 
----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+---
+
 ### 4.2.6. Bounded Context: Commmunication Bounded Context
 
 #### 4.2.6.1. Domain Layer
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
-
----
 
 ### `Notification`
 Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
@@ -4766,7 +4783,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/116205">https://structurizr.com/share/116205</a>
+URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/communication-component.png" alt="Component Diagram" width="90%" />
@@ -4793,15 +4810,8 @@ objetos del bounded context. Para el caso de un almacenamiento en base de datos
 relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
 primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
 elaboración del diagrama la herramienta indicada.
-# Conclusiones
 
-Esta parte tiene 2 secciones: Conclusiones y Recomendaciones y Video Aout-the-team.
-
-En conclusiones y recomendaciones resumiremos los avances que hemos tenido hasta el momento y como esta siendo nuestra experiencia en ello. Adicionalmente, explicando las fases de desarrollo que hemos implementado y como hemos abstraido la informacion recibida de los requisitos como entrevistas, Historias de Usuario; etc. Finalmente, evaluar los resultados en relacion con el Lean UX, validaciones y RoadMap.
-
-En Video About-the-Team, presentaremos un video en donde el equipo se introduce. Adicionalmente, hablaremos de los Outcomes logrados en el proyecto, las actividades realizadas y el desarrollo de competencias alcanzados.
-
-## Conclusiones y Recomendaciones
+# Conclusiones y Recomendaciones
 Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
 
 Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
