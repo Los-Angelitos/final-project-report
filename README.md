@@ -2288,6 +2288,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>And</em> el usuario ha accedido a su cuenta en la Web Application<br>
         <em>When</em> el Device User ingresa a la sección de control de temperatura<br>
         <em>Then</em> se muestra un mensaje de error indicando que el dispositivo no está disponible para consulta<br>
+        <b>Escenario 3:</b> Usuario sin temperatura configurada<br>
+        <em>Given</em> el usuario ha iniciado sesión correctamente en la Web Application<br>
+        <em>And</em> no tiene una temperatura previamente configurada en su perfil<br>
+        <em>When</em> accede a la sección de control de temperatura<br>
+        <em>Then</em> se muestra un mensaje indicando que no hay una configuración previa<br>
+        <em>And</em> se le ofrece un botón para establecer la temperatura inicial<br>
       </td>
       <td>EP07</td>
     </tr>
@@ -2318,6 +2324,11 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Given</em> ningún botón ha sido presionado<br>
         <em>When</em> el Device Maker observa la ejecución de loop()<br>
         <em>Then</em> la función loop() no ejecuta código innecesario relacionado al botón.<br>
+        <b>Escenario 3:</b> Rebote de botón sin manejo adecuado<br>
+        <em>Given</em> el botón físico no tiene protección contra rebote<br>
+        <em>And</em> se presiona brevemente<br>
+        <em>When</em> se activa la interrupción varias veces por rebote eléctrico<br>
+        <em>Then</em> la función de interrupción se ejecuta múltiples veces incorrectamente<br><br>
       </td>
       <td>EP08</td>
     </tr>
@@ -2337,6 +2348,11 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Given</em> el dispositivo está operativo y monitoreado por Serial Monitor<br>
         <em>When</em> se produce un cambio en el valor de temperatura (por botón u otra entrada)<br>
         <em>Then</em> el nuevo valor de temperatura se imprime en el monitor serial<br>
+        <b>Escenario 3:</b> El monitor serial no está abierto<br>
+        <em>Given</em> el dispositivo está funcionando<br>
+        <em>And</em> el Serial Monitor no está abierto<br>
+        <em>When</em> se realiza un cambio de temperatura<br>
+        <em>Then</em> el dispositivo continúa funcionando sin error, pero no se visualiza salida<br><br>
       </td>
       <td>EP08</td>
     </tr>
