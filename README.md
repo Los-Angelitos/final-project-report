@@ -2670,6 +2670,71 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
   <img src="https://i.imgur.com/2DZc4Z5.png" alt="Create Supply Request Flow" width="90%" /> 
 </div><br>
 
+<h2>IAM Bounded Context</h2>
+
+<h3>Escenario: Un usuario registra nueva cuenta.</h3> 
+<p>
+En este escenario, el usuario de la aplicación requiere crearse una cuenta para tener un perfil global en SweetManager, el cual le permitirá buscar hoteles, realizar reservas, y gestionar sus datos personales desde cualquier dispositivo.
+El flujo inicia cuando el usuario accede a la pantalla de registro e ingresa sus datos personales: nombre, correo electrónico, y una contraseña segura. El sistema valida los datos ingresados (formato del correo, fortaleza de la contraseña, campos obligatorios, etc.).
+Una vez validados los datos, el sistema crea una nueva cuenta de usuario en el contexto IAM, asignándole un rol predeterminado (por ejemplo, "Guest") y generando un perfil básico con estado inicial activo. Si el proceso es exitoso, el usuario recibe un correo de bienvenida y es redirigido automáticamente a la pantalla principal de la aplicación o a una vista de onboarding.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-1.jpg" alt="Sign Up User" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El administrador inicia sesión.</h3> 
+<p>
+En este escenario, el administrador del hotel inicia sesión en la aplicación para gestionar las operaciones diarias, como el check-in y check-out de huéspedes, y la comunicación con el propietario del hotel. 
+El flujo comienza cuando el administrador accede a la pantalla de inicio de sesión e introduce sus credenciales (correo electrónico y contraseña).
+El sistema verifica las credenciales en el contexto de gestión de identidad (IAM). Si las credenciales son válidas, el sistema genera un token de sesión y otorga acceso según los permisos asociados al rol de administrador.
+Una vez autenticado, el administrador es redirigido al panel principal, donde puede ver el estado de las habitaciones, reservas activas, notificaciones, y puede acceder a funcionalidades específicas asignadas a su rol.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-2.jpg" alt="Sign In Admin" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El gerente inicia sesión.</h3> 
+<p>
+En este escenario, el gerente del hotel inicia sesión en la aplicación para gestionar las finanzas, recursos y contactos. 
+El flujo comienza cuando el gerente accede a la pantalla de inicio de sesión e introduce sus credenciales (correo electrónico y contraseña).
+El sistema verifica las credenciales en el contexto de gestión de identidad (IAM). Si las credenciales son válidas, el sistema genera un token de sesión y otorga acceso según los permisos asociados al rol de administrador.
+Una vez autenticado, el gerente es redirigido al panel principal, donde puede ver el estado de las habitaciones, reservas activas, notificaciones, y puede acceder a funcionalidades específicas asignadas a su rol.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-3.jpg" alt="Sign In Owner" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El huésped inicia sesión.</h3> 
+<p>
+En este escenario, el huésped accede a la aplicación SweetManager para consultar o gestionar sus reservas, ver el historial de estancias o actualizar su información personal. 
+El flujo comienza cuando el huésped abre la aplicación e ingresa sus credenciales (correo electrónico y contraseña) en la pantalla de inicio de sesión.
+El sistema valida las credenciales ingresadas contra el módulo de gestión de identidad (IAM). Si son correctas, se autentica al huésped, se genera un token de sesión y se cargan los datos asociados a su perfil.
+Una vez autenticado, el huésped es redirigido a su panel principal, donde puede visualizar sus próximas reservas, realizar nuevas búsquedas de hoteles, acceder a promociones personalizadas y gestionar sus preferencias de usuario.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-4.jpg" alt="Sign In Guest" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El huésped actualiza sus preferencias.</h3> 
+<p>
+En este escenario, el huésped accede a su perfil dentro de la aplicación SweetManager para personalizar su experiencia de estadía en los hoteles, ya que de acuerdo a sus preferencias de temperatura, sus habitaciones se adaptarán.
+El flujo comienza cuando el huésped, ya autenticado, navega a la sección de configuración de su cuenta. Desde allí, puede visualizar y modificar sus preferencias actuales. Al confirmar los cambios, el sistema valida los datos ingresados y actualiza la información en el contexto correspondiente del perfil del huésped.
+Una vez completada la operación, el sistema confirma que las preferencias han sido actualizadas correctamente.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-5.jpg" alt="Update Guest's preferences" width="90%" /> 
+</div><br>
+
+<h3>Escenario: El IAM user actualiza su cuenta personal.</h3> 
+<p>
+En este escenario, el IAM User —que puede ser un administrador, huésped o gerente con acceso al sistema interno, accede a su cuenta para actualizar su información personal. Esto puede incluir cambios como nombre, número de contacto, correo electrónico corporativo, o preferencias del entorno de trabajo dentro de la plataforma.
+El flujo comienza cuando el IAM User, ya autenticado, accede a la sección de perfil desde el panel administrativo. Desde allí, puede editar sus datos personales. El sistema valida los cambios y, si todo está correcto, actualiza los datos en el contexto IAM, garantizando que la integridad y trazabilidad de los usuarios con permisos se mantenga.
+Al finalizar, el sistema confirma la actualización con un mensaje y, si los cambios afectan al modo de autenticación o contacto (como un nuevo correo), puede requerirse una verificación adicional o reautenticación para aplicar dichos cambios.
+</p>
+<div style="text-align: center;"> 
+  <img src="assets/img/iam-bounded-context/flow-modeling-6.jpg" alt="Update Guest's preferences" width="90%" /> 
+</div><br>
+
 #### 4.1.1.3. Bounded Context Canvases
 En esta sección el equipo diseña sus candidate bounded contexts, detallando los
 criterios de diseño. El equipo debe ir seleccionando cada bounded context, por
@@ -2706,9 +2771,16 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 </div><br>
 
 <h2>Reservations Bounded Context</h2>
+<p>Es principalmente responsable de la gestión de habitaciones y reservas, dedicada al negocio de administradores y gerentes.
+</p>
 
 ![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
 
+<h2>IAM Bounded Context</h2>
+<p>Es principalmente responsable de la gestión de sesiones y permisosde navegación, para todos los IAM Users.</p>
+<div style="text-align: center;">
+  <img src="./assets/img/iam-bounded-context/bounded-context-canvas.jpg" alt="IAM Bounded Context Canvas " width="90%" />
+</div><br>
 
 ### 4.1.2. Context Mapping
 
