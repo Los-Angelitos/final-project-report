@@ -1252,6 +1252,35 @@ En resumen, Enzo Céspedes es un joven ingeniero industrial, práctico y sociabl
 
 ### 2.2.3. Análisis de entrevistas
 
+A fin de poder realizar un mejor análisis de las entrevistas, se registraron las respuestas en un formulario de Google que permite visualizar las respuestas de cada una de las entrevistas realizadas. A continuación, se presenta un resumen de los resultados obtenidos en las entrevistas.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analisis-1.jpeg" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analisis-2.jpeg" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analisis-3.jpeg" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analisis-4.jpeg" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Hallazgos Clave de las Entrevistas:
+- Los huéspedes valoran ubicación, precio, comodidades y servicios del hotel.
+- Desean poder comparar opciones fácilmente y filtrar según sus necesidades.
+- Todos los huéspedes entrevistados usan Google como principal buscador y dispositivos móviles (celular y laptop).
+- Se mostraron muy receptivos ante la idea de una aplicación para registrar reservas, cancelarlas, administrar preferencias y comunicarse con el personal del hotel.
+- El staff del hotel aún usa herramientas manuales como Excel. Mientras que otros tienen software limitado que no cubre toda la operación.
+- El staff del hotel busca soluciones que reduzcan la carga operativa, eviten errores humanos y permitan una gestión integral de reservas, housekeeping, inventario, comunicación interna y reportes.
+
+Los tres segmentos objetivo coinciden en la necesidad de una plataforma centralizada, intuitiva y automatizada que mejore la gestión hotelera y la experiencia del huésped. El staff del hotel concuerda en que la comunicación interna y la gestión de recursos son aspectos clave para el éxito de la operación hotelera. Además, los huéspedes buscan una experiencia personalizada y fluida al interactuar con el hotel, desde la reserva hasta el check-out.
+
+
 ## 2.3. Needfinding
 
 Para tener una mejor idea de cómo será la experiencia del usuario con nuestro producto, utilizaremos las herramientas de User Persona, User Task Matrix, User Journey Mapping, Empathy Mapping y As-is Scenario Mapping.
