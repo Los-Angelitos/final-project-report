@@ -3968,13 +3968,13 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
 
 <div style="text-align: center;">
-  <img src="https://i.imgur.com/LaDWjQF.png" alt="Class Diagram Inventory" width="90%" />
+  <img src="https://i.imgur.com/Sxsbfn0.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
-  <img src="https://i.imgur.com/SIn9u0B.png" alt="Class Diagram Inventory" width="90%" />
+  <img src="https://i.imgur.com/pRUKhgK.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
 ---
