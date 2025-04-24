@@ -4818,6 +4818,31 @@ detalle sobre la implementación de componentes en el bounded context. Aquí se
 incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
+##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="User persona Owner" width="100%" />
+</div>
+
+##### 4.2.X.6.2. Bounded Context Database Design Diagram
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="User persona Owner" width="100%" />
+</div>
+
+La única tabla del bounded context `Communication` es la tabla `Notification`. Esta tabla almacena las notificaciones enviadas a los usuarios de la aplicación. La tabla tiene una relación de uno a muchos con la tabla `User`, ya que un usuario puede recibir múltiples notificaciones, pero cada notificación está asociada a un solo usuario.
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string?`                | Título de la notificación |
+| `Content`       | `string?`             | Contenido de la notificación |
+| `SenderType`| `string?`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
+
+
+# Conclusiones
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 En esta sección el equipo presenta el Class Diagram de UML para las clases del
 Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
