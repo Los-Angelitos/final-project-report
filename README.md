@@ -2217,19 +2217,29 @@ incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
 ##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="User persona Owner" width="100%" />
+</div>
+
 ##### 4.2.X.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="User persona Owner" width="100%" />
+</div>
+
+La única tabla del bounded context `Communication` es la tabla `Notification`. Esta tabla almacena las notificaciones enviadas a los usuarios de la aplicación. La tabla tiene una relación de uno a muchos con la tabla `User`, ya que un usuario puede recibir múltiples notificaciones, pero cada notificación está asociada a un solo usuario.
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string?`                | Título de la notificación |
+| `Content`       | `string?`             | Contenido de la notificación |
+| `SenderType`| `string?`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
+
+
 # Conclusiones
 
 ## Recomendaciones
