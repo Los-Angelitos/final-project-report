@@ -1363,23 +1363,44 @@ __Fin de la experiencia:__ Al terminar su estancia, espera recibir un comprobant
 
 ### 2.3.4. Empathy Mapping
 
+De acuerdo a la metodología de diseño centrado en el usuario, el Empathy Mapping es una herramienta que permite comprender mejor las necesidades y emociones de los usuarios, de esta manera se pueden identificar oportunidades de mejora en la experiencia del usuario. A continuación, se presentan los Empathy Maps de los tres segmentos objetivo: Huésped, Administrador y Dueño.
+
 <h2>Empathy Map del Dueño de hotel</h2>
+<p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.<br>
+Durante el ejercicio de analizar a la persona del dueño del hotel, se considera que lleva una preocupación grande por la falta de comodidad ante sus clientes puesto que no cuenta con una idea innovadora para gestionar, afrontar de manera más fácil las reservas.<br>
+Normalmente intenta buscar mejores soluciones para realizar el trabajo más rápido y optimizado, sin embargo varias de estas herramientas que implementan no cumplen con sus expectativas de gestión.<br>
+Sus necesidades esperadas son que exista un sistema hotelero en su trabajo para mantener una mejor gestión y además colocar como prioridad la comidad del huésped mediante sus preferenncias y estas sean automatizadas con tecnología implementada en su hotel.</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/owner.png" alt="Empathy Map Dueño">
 </div><br>
-<p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.</p>
 <br><br>
+
 <h2>Empathy Map del Administrador</h2>
+<p>En este mapa de empatía, se ha representado al administrador como usuario que recibiría ayuda por parte de la aplicación. El administrador busca una experiencia de gestión cómoda y sin complicaciones para el cliente principal, y la aplicación tiene como objetivo facilitar esos procesos.
+<br>
+Normalmente intenta buscar mejores soluciones para realizar el trabajo más rápido y optimizado, sin embargo estas herramientas no cmplen con sus expectativas de administración.
+<br>
+Las personas que llegan a ser administradores prefieren migrar a un sistema automatizado para la buena gestión de los ciclos de trabajo dentro de un hotel. Además que podría aumentar la comodidad de sus clientes.
+<br>
+Una de sus esperanzadas necesitadas es que el hotel opte por un nuevo sistema innovador que gestione de manera adecuada los cicls de trabajo del hotel, además que cuente con tecnología y los haga diferenciar de otros hoteles que no mantienen esta misma idea.
+</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/admin.png" alt="Empathy Map Administrador">
 </div><br>
-<p>En este mapa de empatía, se ha representado al administrador como usuario que recibiría ayuda por parte de la aplicación. El administrador busca una experiencia de gestión cómoda y sin complicaciones para el cliente principal, y la aplicación tiene como objetivo facilitar esos procesos.</p>
 <br><br>
+
 <h2>Empathy Map del Huésped</h2>
+<p>En este mapa de empatía, se ha representado al huésped como el usuario principal de la aplicación. El usuario busca una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.
+<br>
+Los huéspedes son personas que buscan una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.
+<br>
+Normalmente intentan tener todo anotado en sus propios celulares sus preferencias como huésped o cliente, como por ejemplo la temperatura ideal de su bañera, volumen deseado en la radio, televisión, tipo de luz en el cuarto (cálida, fria) para entregarlo al llegarl al hotel y puedan configurarlo en su cuarto.
+<br>
+Una de sus esperanzas es que exista un sistema hotelero en el que pueda compartir con los demás hoteles dispuestos a brindar comodidad a sus clientes, sus preferencias como huésped.
+</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/client.png" alt="Empathy Map Huesped">
 </div><br>
-<p>En este mapa de empatía, se ha representado al huésped como el usuario principal de la aplicación. El usuario busca una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.</p>
 
 ### 2.3.5. As-is Scenario Mapping
 
@@ -4896,13 +4917,13 @@ detalle sobre la implementación de componentes en el bounded context. Aquí se
 incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="User persona Owner" width="100%" />
 </div>
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="User persona Owner" width="100%" />
