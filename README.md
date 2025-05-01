@@ -1192,11 +1192,11 @@ Personalidad: Alegre <br>
   <img src="https://i.imgur.com/sKGvt61.png" alt="Sergio Renard Interview" width="80%" />
 </div><br>
 
-Sergio Renard es un administrador hotelero radicado en La Plata, Argentina, quien gestiona un hospedaje familiar orientado tanto al turismo local como internacional. Sergio nos comparte su experiencia enfrentando los retos de la administración diaria, especialmente en lo relacionado a la gestión de reservas y preferencias de los clientes. A diferencia de otros establecimientos más grandes, actualmente no cuenta con un sistema automatizado, por lo que lleva el control de las reservas, pagos y asignaciones de forma manual, lo que implica una gran carga operativa y posibles errores humanos.
+Sergio Renard es un administrador hotelero de La Plata, Argentina, al frente de un hospedaje familiar que recibe tanto a turistas locales como internacionales. Su gestión diaria implica desafíos importantes, ya que actualmente realiza el control de reservas, pagos y asignaciones de forma manual. Esta dinámica le demanda mucho tiempo y conlleva un alto riesgo de errores humanos.
 
-Sergio se define como una persona práctica, comprometida y atenta a las necesidades del cliente, y por ello está en la búsqueda de una solución tecnológica que le permita modernizar su gestión hotelera. Uno de sus principales objetivos es brindar mayor comodidad a sus huéspedes, permitiéndoles guardar sus preferencias de estadía dentro de una plataforma digital, de modo que en futuras visitas se les pueda ofrecer una experiencia más personalizada.
+Comprometido con brindar un servicio de calidad y atento a las necesidades de sus huéspedes, Sergio busca modernizar su operativa mediante una solución tecnológica. Su objetivo principal es ofrecer una experiencia más personalizada, permitiendo a los clientes registrar sus preferencias de estadía y facilitando así futuras visitas. Además, considera esencial contar con una plataforma que no solo automatice las reservas, sino que también integre funciones administrativas, seguimiento de recursos y comunicación interna en un solo entorno digital.
 
-Además, considera clave que la herramienta no solo sirva para facilitar las reservas, sino que también integre funciones para el control administrativo, el seguimiento de recursos y la comunicación interna, todo en un mismo entorno. Sergio está convencido de que una buena gestión digital no solo beneficia al administrador, sino que enriquece la experiencia del cliente y fortalece la imagen del hotel frente a la competencia.
+Sergio se describe como una persona práctica y enfocada en mejorar continuamente. Actualmente trabaja con una laptop Acer Aspire con Windows 10 y un teléfono Xiaomi Poco X6, por lo que espera que cualquier solución tecnológica sea compatible con estos dispositivos y de fácil implementación.
 
 
 **Entrevista 01 (Huéspedes)**
