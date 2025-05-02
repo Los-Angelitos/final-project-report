@@ -2388,7 +2388,9 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
 
 ## 3.3. Impact Mapping
 
-Impact Mapping es una metodología visual que facilita la identificación clara de los objetivos que realmente queremos alcanzar para conectar efectivamente con nuestros usuarios. Utilizamos esta herramienta para mantener el enfoque y asegurar que trabajamos en función de nuestras metas principales. Así, al finalizar el mapa mental, logramos definir las acciones y funcionalidades necesarias para desarrollar el proyecto de forma eficiente.
+En el desarrollo de nuestro proyecto, aplicamos la metodología Impact Mapping como una herramienta estratégica para alinear las funcionalidades con los objetivos reales del negocio y las necesidades específicas de nuestros usuarios. Esta técnica nos permitió visualizar de forma clara qué queremos lograr, quiénes son los actores clave, cómo pueden contribuir o afectar el resultado y qué acciones deben priorizarse. Más que un simple mapa mental, el Impact Map nos ayudó a tomar decisiones fundamentadas sobre el alcance del proyecto, centrándonos en generar impacto real y evitando invertir recursos en características que no aporten valor directo.
+
+
 
 __Business goal:__
 
