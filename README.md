@@ -2916,6 +2916,10 @@ El diagrama de contexto del sistema ilustra la interacción entre el sistema de 
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios módulos, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
+Las personas podrán utilizar la página estática Landing Page para verificar los planes y lo que se ofrece en SweetManager.
+Una vez sean usuarios de SweetManager, tendrán acceso a una aplicación móvil y web, los cuales consumirán datos para ofrecer ante las necesidades del usuario directamente desde la API Web. Esta API mantendrá conexiones hacia la base de datos relacional desplegada en una Cloud, y otros sistemas externos como los servicios de Email y Pagos.<br>
+En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuario huésped, SweetManager no tendrá control sobre estos, sino que, es provisto por terceros y podría tener cambios o variabilidad en implementación. Sin embargo, los datos recolectados son procesados a través de una aplicación embebida que funcionará para enviarlo a un Edge y posteriormente a un Fog Node, para el procesamiento local con latencia mínima y escabilidad distruibuida.
+
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/container-diagram.png" alt="Container Diagram" width="90%" />
 </div><br><br>
