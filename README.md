@@ -1154,7 +1154,12 @@ Duración de la entrevista: 27:00 - 36:50.
 </div>
 <br>
 Gianella Francia es una joven administradora de uno de la cadena de hoteles más importantes para el turismo extranjero Decameron Resort. Gianella nos cuenta su experiencia como administradora de recursos humanos en la gestión de hoteles. Ella es una persona analítica, empática y profesional que busca siempre salir beneficiada de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial. Ella menciona que actualmente utiliza softwares como Opera PMS para disminuir la carga laboral mediante procesos automatizados, sin embargo, no llega a ser completoy no brinda herramientas innovadoras que beneficie administración y cliente. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
-<br><br>
+
+Gianella nos describe que su navegador más utilizado es Google Chrome y su dispositivo preferido es su celular Android. Ella se siente cómoda utilizando herramientas digitales y está abierta a la adopción de nuevas tecnologías que faciliten su trabajo diario. En cuanto a la comunicación, prefiere el uso de WhatsApp y correos electrónicos para coordinar con su equipo y proveedores.
+
+De la misma manera, ella considera que la comunicación y colaboración del equipo son fundamentales para el éxito de la gestión hotelera. En su opinión, un sistema hotelero dedicado a la gestión de recursos, comunicación con proveedores y seguimiento de ganancias podría mejorar significativamente la eficiencia operativa y la satisfacción del cliente.
+
+Por último, Gianella menciona que la gestión de proveedores y el control de inventarios son aspectos críticos en su trabajo diario. Ella considera que una herramienta que facilite la gestión de estos procesos podría ayudar a optimizar los recursos y mejorar la rentabilidad del hotel. También destaca la importancia de contar con un sistema que permita gestionar las preferencias y solicitudes de los huéspedes, lo que contribuiría a brindar un mejor servicio y aumentar la satisfacción del cliente.
 
 **Entrevista 02 (Administradores)**
 <br>
