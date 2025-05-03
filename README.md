@@ -3442,7 +3442,42 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 ### 4.2.2. Bounded Context: Reservations Bounded Context
 
 #### 4.2.2.1. Domain Layer
-### Agregados y Entidades del Dominio `Reservations`
+### Agregados y Entidades del Dominio `Reservations` en nuestro Web/Mobile Appliaction
+
+En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
+
+Room: 
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la habitación |
+| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
+| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
+| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
+
+
+Booking: 
+| Atributo            | Tipo                   | Descripción |
+|---------------------|------------------------|-------------|
+| `Id`                | `int`                  | Identificador único |
+| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
+| `RoomId`            | `int?`                 | Habitación reservada |
+| `Description`       | `string?`              | Información adicional |
+| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
+| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
+| `PriceRoom`         | `decimal?`             | Costo por noche |
+| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
+| `Amount`            | `decimal?`             | Monto total pagado |
+| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
+| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
+
+TypeRoom: 
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | ID único del tipo |
+| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
+| `Price`      | `decimal`             | Precio base asignado a este tipo |
+
+### Agregados y Entidades del Dominio `Reservations` en nuestro Web Services
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
 
@@ -3595,6 +3630,49 @@ Representa un tipo de habitación.
 
 ###  Services
 
+### Servicios del Dominio `Reservations` en nuestro Web/Mobile Appliaction
+
+Por cada Bounded Context definimos su propio services, con un api Service para cada agregado/entidad
+
+### Room Api Service
+
+| Método                          | Descripción                                      |
+|---------------------------------|--------------------------------------------------|
+| `getAll(hotelId)`              | Obtener todas las habitaciones de un hotel       |
+| `getRoomById(id)`              | Obtener habitación por ID                        |
+| `getRoomByState(hotelId, state)` | Filtrar habitaciones por estado en un hotel     |
+| `getRoomByTypeRoomId(hotelId, typeRoomId)` | Filtrar habitaciones por tipo                  |
+| `getByBookingAvailabilityInRange(hotelId, startDate, endDate)` | Ver disponibilidad por rango de fechas |
+| `create()`                     | Crear una nueva habitación                       |
+| `updateState(id, state)`      | Actualizar el estado de una habitación           |
+
+---
+
+### Booking Api Service
+
+| Método                             | Descripción                                         |
+|------------------------------------|-----------------------------------------------------|
+| `getAll(hotelId)`                 | Obtener todas las reservas de un hotel             |
+| `getByHotelIdAndState(hotelId, state)` | Filtrar reservas por estado en un hotel       |
+| `getById(id)`                     | Obtener reserva por ID                             |
+| `getByCustomerId(customerId)`     | Obtener reservas por cliente                       |
+| `create()`                        | Crear una nueva reserva                            |
+| `updateEndDate(id, endDate)`      | Actualizar la fecha de salida                      |
+| `updateState(id, state)`          | Actualizar el estado de la reserva                 |
+
+---
+
+###  TypeRoom Api Service
+
+| Método          | Descripción                                 |
+|------------------|---------------------------------------------|
+| `getAll(hotelId)` | Obtener todos los tipos de habitación de un hotel |
+| `getById()`      | Obtener tipo de habitación por ID           |
+| `create()`       | Crear un nuevo tipo de habitación           |
+  
+
+
+### Servicios del Dominio `Reservations` en nuestro Web Services
 ####  Booking
 
 | Archivo                          | Descripción breve |
