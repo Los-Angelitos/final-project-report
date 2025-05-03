@@ -4148,6 +4148,8 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
 
+## Web Services
+---
 
 ### `Hotel`
 
@@ -4266,14 +4268,83 @@ Representa la extensión al agregado `Hotel` que permite manejar la fecha de cre
 | `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
 | `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
 
----- 
+
+## Web Application
+
+**Modelos de UI y Estados del Dominio Web**
+
+En el núcleo de la aplicación web se definieron los siguientes **modelos de estado** y **componentes de presentación**, que representan las entidades clave de la interfaz gráfica de usuario en el contexto de gestión organizacional de hoteles.
+
+---
+
+#### `HotelModel`  
+Representa los datos presentados al usuario sobre un hotel.
+
+| Propiedad     | Tipo     | Descripción                         |
+|---------------|----------|-------------------------------------|
+| `id`          | number   | Identificador único del hotel       |
+| `name`        | string   | Nombre del hotel                    |
+| `description` | string   | Descripción visible del hotel       |
+| `email`       | string   | Correo de contacto                  |
+| `address`     | string   | Dirección del hotel                 |
+| `phone`       | string   | Número telefónico                   |
+| `ownerId`     | number   | Identificador del dueño del hotel   |
+
+---
+
+#### `ProviderModel`  
+Modelo que representa los proveedores en la UI.
+
+| Propiedad     | Tipo                     | Descripción                  |
+|---------------|--------------------------|------------------------------|
+| `id`          | number                   | ID único del proveedor       |
+| `name`        | string                   | Nombre del proveedor         |
+| `email`       | string                   | Correo electrónico           |
+| `phone`       | string                   | Número telefónico            |
+| `state`       | `"ACTIVE" \| "INACTIVE"` | Estado del proveedor         |
+
+
+## Mobile Application
+
+### Descripción
+Contiene las **entidades** del negocio, **interfaces de repositorio** (abstracciones) y **lógica empresarial pura**. Esta capa **no depende de ninguna otra**.
+
+---
+
+### Componentes
+| Componente     | Descripción                                                   |
+|----------------|---------------------------------------------------------------|
+| `HotelEntity`  | Entidad que representa un hotel (id, nombre, dirección, etc.) |
+| `ProviderEntity` | Entidad que representa un proveedor                         |
+| `HotelRepository` | Contrato abstracto para acceder a hoteles                  |
+| `ProviderRepository` | Contrato abstracto para acceder a proveedores          |
+
+### Ejemplo
+```dart
+class Hotel {
+  final String id;
+  final String name;
+  final String address;
+
+  Hotel({required this.id, required this.name, required this.address});
+}
+
+abstract class HotelRepository {
+  Future<List<Hotel>> getAllHotels();
+  Future<void> createHotel(Hotel hotel);
+}
+```
 
 #### 4.2.3.2. Interface Layer
 ### Interface Layer – Presentación de la Aplicación
 
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
 
+
+## Web Services
+
 ---
+
 
 ### Resources
 
@@ -4317,8 +4388,52 @@ Cada entidad clave en el Bounded Context `Organizational Management` cuenta con 
 
 ---
 
+## Web Application
+
+#### Services
+
+Clases que encapsulan la lógica de llamadas HTTP al backend.
+
+| Servicio             | Descripción                                                              |
+|----------------------|---------------------------------------------------------------------------|
+| `HotelService.js`    | Métodos: `getAll()`, `getById(id)`, `create(data)`, `update(id, data)`    |
+| `ProviderService.js` | Métodos: `getAll()`, `getById(id)`, `create(data)`, `update(id, data)`, `deactivate(id)` |
+
+---
+
+## Mobile Application
+### Descripción
+Contiene el UI, lógica de interacción con el usuario, manejo de estado y navegación. Interactúa directamente con los casos de uso.
+
+| Componentes             | Descripción                                                              |
+|----------------------|---------------------------------------------------------------------------|
+| `HotelListPage`    | Pantalla para listar hoteles    |
+| `HotelFormPage` | Formulario para registrar un nuevo hotel |
+| `HotelController` | Controlador que consume el caso de uso y expone datos al UI |
+| `Provider / Riverpod` | Gestión de estado (ViewModel) |
+
+### Ejemplo
+```dart
+class HotelController extends ChangeNotifier {
+  final GetAllHotelsUseCase useCase;
+  List<Hotel> hotels = [];
+
+  HotelController(this.useCase);
+
+  Future<void> fetchHotels() async {
+    hotels = await useCase();
+    notifyListeners();
+  }
+}
+```
+
+---
+
+
 #### 4.2.3.3. Application Layer
 ### Servicios de Aplicación – Gestión de Flujos de Negocio
+
+## Web Services
 ---
 
 ### CommandServices
@@ -4354,13 +4469,104 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 ---
 
+## Web Application
+
+#### Vistas Principales / Componentes
+
+| Componente/Vista         | Ruta               | Funcionalidad Principal                        |
+|--------------------------|--------------------|------------------------------------------------|
+| `HotelListView.vue`      | `/hotels`          | Lista todos los hoteles disponibles            |
+| `HotelForm.vue`          | `/hotels/create`   | Formulario para crear o editar hoteles         |
+| `ProviderListView.vue`   | `/providers`       | Lista los proveedores disponibles              |
+| `ProviderForm.vue`       | `/providers/create`| Crear o actualizar proveedor                   |
+| `HotelDetailsView.vue`   | `/hotels/:id`      | Vista detallada de un hotel específico         |
+
+---
+
+## Mobile Application
+
+### Descripción
+Contiene los casos de uso de la aplicación. Implementa la lógica orquestadora, utilizando interfaces del dominio.
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `GetAllHotelsUseCase`          | Caso de uso para listar hoteles |
+| `CreateHotelUseCase`               | Caso de uso para registrar un nuevo hotel                |
+| `UseCase`    | Interfaz base para los casos de uso              |
+
+### Ejemplo
+
+```dart
+class GetAllHotelsUseCase {
+  final HotelRepository repository;
+
+  GetAllHotelsUseCase(this.repository);
+
+  Future<List<Hotel>> call() {
+    return repository.getAllHotels();
+  }
+}
+
+```
+
+---
+
 #### 4.2.3.4. Infrastructure Layer
+
+## Web Services
+---
+
 ### Implementación de Repositories
 
 | Clase                     | Interfaz implementada       | Función principal |
 |---------------------------|------------------------------|-------------------|
 | `HotelRepository.cs`    | `IHotelRepository`         | Implementa operaciones de persistencia y consultas sobre los hoteles (`Hotel`), incluyendo la creación, actualización de un hotel |
 | `ProviderRepository.cs`       | `IProviderRepository`            | Implementa consultas y modificaciones sobre proveedores (`Provider`) asignado a un hotel. Son gestionados por el hotel mediante su estado (`ACTIVE`, `INACTIVE`). |
+
+---
+
+## Web Application
+### Infraestructura de Comunicación
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `httpClient.js`          | Cliente HTTP configurado (Axios) para todas las solicitudes al backend |
+| Base URL                | `http://localhost:5000/api/v1`                |
+| Mecanismo de Headers     | Headers globales (`Content-Type`, `Authorization` si aplica)              |
+| Manejo de Errores        | Interceptores para errores de red o lógica de backend  
+
+---
+
+## Mobile Application
+### Descripción
+Contiene las implementaciones reales de las interfaces del dominio, acceso a red, almacenamiento, seguridad, y monitorización.
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `HotelApiService`          | Clietne HTTP para conectarse con la API REST |
+| `HotelRepositoryImpl`                | Implementación del repositorio usando el API service                |
+| `SecureStorageService`     | Acceso seguro a token JWT           |
+| `CrashlyticsService`       | Reporte de errores en producción (Firebase, Sentry, etc.)            |
+
+### Ejemplo
+```dart
+class HotelRepositoryImpl implements HotelRepository {
+  final ApiService api;
+
+  HotelRepositoryImpl(this.api);
+
+  @override
+  Future<List<Hotel>> getAllHotels() async {
+    final response = await api.get('/hotels');
+    return (response.data as List).map((json) => Hotel.fromJson(json)).toList();
+  }
+
+  @override
+  Future<void> createHotel(Hotel hotel) async {
+    await api.post('/hotels', data: hotel.toJson());
+  }
+}
+```
 
 ---
 
