@@ -458,8 +458,6 @@ Nos enfocamos inicialmente en hoteles independientes y pequeñas cadenas hoteler
 - Gestión de habitaciones, incluyendo un control de ocupación en tiempo real.
 
 - Visualización de  reservas hechas por huéspedes. También puede registrar manualmente la llegada (check-in) y salida (check-out),
-
-- Integración con dispositivos IoT, que permitan automaticamente adecuarse a las necesidades de sus Huéspedes. 
   
 - Comunicación directa por correo dentro del sistema entre personal del hotel
 
@@ -467,7 +465,9 @@ Nos enfocamos inicialmente en hoteles independientes y pequeñas cadenas hoteler
 
 **Para el Huésped del hotel (huésped):**
 
-- Reservación de habitaciones, con la posibilidad de escoger fechas de inicio y salida, tipo de habitación, entre otras características. 
+- Reservación de habitaciones, con la posibilidad de escoger fechas de inicio y salida, tipo de habitación, entre otras características.
+
+- Integración con dispositivos IoT,que permiten adecuar su reserva a valores personalizados por ellos mismos. 
 
 - Personalización de la habitación, pudiendo determinar valores como la temperatura de la misma. 
 
