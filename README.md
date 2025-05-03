@@ -4571,11 +4571,31 @@ class HotelRepositoryImpl implements HotelRepository {
 ---
 
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
+
+A continuación, se presentan los diagramas de componentes tanto a nivel de Web Services, como de la aplicación web y móvil. Estos diagramas ilustran la interacción del usuario al realizar una solicitud de suministro en el sistema. Los diagramas muestran los componentes principales y sus interacciones<br>
+
 URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
+
+##### Backend
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Backend para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Web Application
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Frontend para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/org-management-component-webapp.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Mobile Application
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Mobile Application para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/org-management-component-mobileapp.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
