@@ -1145,17 +1145,29 @@ Para tener una mejor idea de cómo será la experiencia del usuario con nuestro 
 <div style="text-align: center;">
   <img src="./assets/img/user-persona/owner.jpeg" alt="User persona Owner" width="100%" />
 </div>
+<br>
+
+¬¬El segmento de Owner representa a los propietarios de hoteles que buscan optimizar la gestión de su negocio y mejorar la experiencia del cliente. Este perfil se caracteriza por su enfoque en la rentabilidad y la eficiencia operativa, así como por su interés en adoptar nuevas tecnologías que les ayuden a alcanzar estos objetivos. El Owner busca una solución integral que le permita gestionar todos los aspectos de su hotel, desde las reservas hasta la administración de recursos y finanzas. En cuanto a su personalidad, el Owner es una persona analítica y orientada a resultados, que busca constantemente formas de mejorar su negocio y mantenerse al tanto de las tendencias del mercado. Por otro lado, también es una persona empática y comunicativa, que valora la colaboración y el trabajo en equipo. En cuanto a su entorno laboral, el Owner suele trabajar en un ambiente dinámico y cambiante, donde la toma de decisiones rápidas y efectivas es fundamental para el éxito de su negocio. Por último, el Owner tiene un perfil demográfico variado, con una edad promedio de entre 30 y 55 años, y una formación académica en áreas relacionadas con la administración de empresas o la hotelería.
+
 <br><br>
 <h2>User Persona Administrador de Hotel</h2>
 <div style="text-align: center;">
   <img src="./assets/img/user-persona/admin.png" alt="User persona Admin" width="100%" />
 </div>
+<br>
+
+La User Persona Administrador representa a los administradores de hoteles que buscan optimizar la gestión de su trabajo diario y mejorar la experiencia del huésped. Este perfil se caracteriza por su enfoque en la eficiencia operativa y la atención al cliente. El Administrador busca una solución integral que le permita gestionar todos los aspectos de su trabajo, desde el monitoreo de las reservas hasta la comunicación con el equipo de trabajo. Asimismo, valora la posibilidad de personalizar la experiencia del huésped y mejorar la comunicación con su equipo de trabajo. El Administrador es una persona que busca mantenerse al tanto de las tendencias del mercado. Por último, el Administrador puede tener una edad promedio de entre 25 y 45 años, y una formación académica en áreas relacionadas con la administración u hotelería.
+
 <br><br>
 <h2>User Persona Huésped</h2>
 <div style="text-align: center;">
   <img src="./assets/img/user-persona/huesped.jpeg" alt="User persona Huesped" width="100%" />
 </div>
+<br>
 
+El segmento de Huésped representa a los clientes que buscan una experiencia de hospedaje cómoda y personalizada. Este perfil se caracteriza por su interés en la tecnología y la conectividad, así como por su deseo de disfrutar de un servicio excepcional durante su estancia. El Huésped busca una solución integral que le permita gestionar todos los aspectos de su experiencia y la personalización de su habitación. Asimismo, valora la posibilidad de comunicarse fácilmente con el personal del hotel y acceder a información relevante sobre su estancia. En cuanto a su personalidad, el Huésped es una persona abierta y sociable, que disfruta de conocer nuevas culturas y experiencias. Por último, el Huésped tiene un perfil demográfico entre 18 y 60 años.
+
+<br><br>
 
 ### 2.3.2. User Task Matrix
 
