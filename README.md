@@ -1154,7 +1154,12 @@ Duración de la entrevista: 27:00 - 36:50.
 </div>
 <br>
 Gianella Francia es una joven administradora de uno de la cadena de hoteles más importantes para el turismo extranjero Decameron Resort. Gianella nos cuenta su experiencia como administradora de recursos humanos en la gestión de hoteles. Ella es una persona analítica, empática y profesional que busca siempre salir beneficiada de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial. Ella menciona que actualmente utiliza softwares como Opera PMS para disminuir la carga laboral mediante procesos automatizados, sin embargo, no llega a ser completoy no brinda herramientas innovadoras que beneficie administración y cliente. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
-<br><br>
+
+Gianella nos describe que su navegador más utilizado es Google Chrome y su dispositivo preferido es su celular Android. Ella se siente cómoda utilizando herramientas digitales y está abierta a la adopción de nuevas tecnologías que faciliten su trabajo diario. En cuanto a la comunicación, prefiere el uso de WhatsApp y correos electrónicos para coordinar con su equipo y proveedores.
+
+De la misma manera, ella considera que la comunicación y colaboración del equipo son fundamentales para el éxito de la gestión hotelera. En su opinión, un sistema hotelero dedicado a la gestión de recursos, comunicación con proveedores y seguimiento de ganancias podría mejorar significativamente la eficiencia operativa y la satisfacción del cliente.
+
+Por último, Gianella menciona que la gestión de proveedores y el control de inventarios son aspectos críticos en su trabajo diario. Ella considera que una herramienta que facilite la gestión de estos procesos podría ayudar a optimizar los recursos y mejorar la rentabilidad del hotel. También destaca la importancia de contar con un sistema que permita gestionar las preferencias y solicitudes de los huéspedes, lo que contribuiría a brindar un mejor servicio y aumentar la satisfacción del cliente.
 
 **Entrevista 02 (Administradores)**
 <br>
@@ -1363,23 +1368,44 @@ __Fin de la experiencia:__ Al terminar su estancia, espera recibir un comprobant
 
 ### 2.3.4. Empathy Mapping
 
+De acuerdo a la metodología de diseño centrado en el usuario, el Empathy Mapping es una herramienta que permite comprender mejor las necesidades y emociones de los usuarios, de esta manera se pueden identificar oportunidades de mejora en la experiencia del usuario. A continuación, se presentan los Empathy Maps de los tres segmentos objetivo: Huésped, Administrador y Dueño.
+
 <h2>Empathy Map del Dueño de hotel</h2>
+<p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.<br>
+Durante el ejercicio de analizar a la persona del dueño del hotel, se considera que lleva una preocupación grande por la falta de comodidad ante sus clientes puesto que no cuenta con una idea innovadora para gestionar, afrontar de manera más fácil las reservas.<br>
+Normalmente intenta buscar mejores soluciones para realizar el trabajo más rápido y optimizado, sin embargo varias de estas herramientas que implementan no cumplen con sus expectativas de gestión.<br>
+Sus necesidades esperadas son que exista un sistema hotelero en su trabajo para mantener una mejor gestión y además colocar como prioridad la comidad del huésped mediante sus preferenncias y estas sean automatizadas con tecnología implementada en su hotel.</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/owner.png" alt="Empathy Map Dueño">
 </div><br>
-<p>En este mapa de empatía, se ha representado al dueño como el principal administrador de la aplicación. El dueño busca comodidad para sus clientes y la aplicación tiene como objetivo disminuir su carga de trabajo al gestionar los trámites de los huéspedes.</p>
 <br><br>
+
 <h2>Empathy Map del Administrador</h2>
+<p>En este mapa de empatía, se ha representado al administrador como usuario que recibiría ayuda por parte de la aplicación. El administrador busca una experiencia de gestión cómoda y sin complicaciones para el cliente principal, y la aplicación tiene como objetivo facilitar esos procesos.
+<br>
+Normalmente intenta buscar mejores soluciones para realizar el trabajo más rápido y optimizado, sin embargo estas herramientas no cmplen con sus expectativas de administración.
+<br>
+Las personas que llegan a ser administradores prefieren migrar a un sistema automatizado para la buena gestión de los ciclos de trabajo dentro de un hotel. Además que podría aumentar la comodidad de sus clientes.
+<br>
+Una de sus esperanzadas necesitadas es que el hotel opte por un nuevo sistema innovador que gestione de manera adecuada los cicls de trabajo del hotel, además que cuente con tecnología y los haga diferenciar de otros hoteles que no mantienen esta misma idea.
+</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/admin.png" alt="Empathy Map Administrador">
 </div><br>
-<p>En este mapa de empatía, se ha representado al administrador como usuario que recibiría ayuda por parte de la aplicación. El administrador busca una experiencia de gestión cómoda y sin complicaciones para el cliente principal, y la aplicación tiene como objetivo facilitar esos procesos.</p>
 <br><br>
+
 <h2>Empathy Map del Huésped</h2>
+<p>En este mapa de empatía, se ha representado al huésped como el usuario principal de la aplicación. El usuario busca una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.
+<br>
+Los huéspedes son personas que buscan una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.
+<br>
+Normalmente intentan tener todo anotado en sus propios celulares sus preferencias como huésped o cliente, como por ejemplo la temperatura ideal de su bañera, volumen deseado en la radio, televisión, tipo de luz en el cuarto (cálida, fria) para entregarlo al llegarl al hotel y puedan configurarlo en su cuarto.
+<br>
+Una de sus esperanzas es que exista un sistema hotelero en el que pueda compartir con los demás hoteles dispuestos a brindar comodidad a sus clientes, sus preferencias como huésped.
+</p>
 <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <img src="./assets/img/empathy-mapping/client.png" alt="Empathy Map Huesped">
 </div><br>
-<p>En este mapa de empatía, se ha representado al huésped como el usuario principal de la aplicación. El usuario busca una experiencia de viaje cómoda y sin complicaciones, y la aplicación tiene como objetivo facilitar su proceso de gestión de trámites al visitar un hotel del país.</p>
 
 ### 2.3.5. As-is Scenario Mapping
 
@@ -2895,6 +2921,10 @@ El diagrama de contexto del sistema ilustra la interacción entre el sistema de 
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
 A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios módulos, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
+Las personas podrán utilizar la página estática Landing Page para verificar los planes y lo que se ofrece en SweetManager.
+Una vez sean usuarios de SweetManager, tendrán acceso a una aplicación móvil y web, los cuales consumirán datos para ofrecer ante las necesidades del usuario directamente desde la API Web. Esta API mantendrá conexiones hacia la base de datos relacional desplegada en una Cloud, y otros sistemas externos como los servicios de Email y Pagos.<br>
+En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuario huésped, SweetManager no tendrá control sobre estos, sino que, es provisto por terceros y podría tener cambios o variabilidad en implementación. Sin embargo, los datos recolectados son procesados a través de una aplicación embebida que funcionará para enviarlo a un Edge y posteriormente a un Fog Node, para el procesamiento local con latencia mínima y escabilidad distruibuida.
+
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/container-diagram.png" alt="Container Diagram" width="90%" />
 </div><br><br>
@@ -4118,6 +4148,8 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
 
+## Web Services
+---
 
 ### `Hotel`
 
@@ -4236,14 +4268,83 @@ Representa la extensión al agregado `Hotel` que permite manejar la fecha de cre
 | `IProviderCommandService.cs`       | Comandos para modificar proveedores (crear, actualizar, cambiar estado). |
 | `IProviderQueryService.cs`         | Consultas sobre proveedores (obtener a todos aquellos registrados por un hotel, o en su defecto a todos). |
 
----- 
+
+## Web Application
+
+**Modelos de UI y Estados del Dominio Web**
+
+En el núcleo de la aplicación web se definieron los siguientes **modelos de estado** y **componentes de presentación**, que representan las entidades clave de la interfaz gráfica de usuario en el contexto de gestión organizacional de hoteles.
+
+---
+
+#### `HotelModel`  
+Representa los datos presentados al usuario sobre un hotel.
+
+| Propiedad     | Tipo     | Descripción                         |
+|---------------|----------|-------------------------------------|
+| `id`          | number   | Identificador único del hotel       |
+| `name`        | string   | Nombre del hotel                    |
+| `description` | string   | Descripción visible del hotel       |
+| `email`       | string   | Correo de contacto                  |
+| `address`     | string   | Dirección del hotel                 |
+| `phone`       | string   | Número telefónico                   |
+| `ownerId`     | number   | Identificador del dueño del hotel   |
+
+---
+
+#### `ProviderModel`  
+Modelo que representa los proveedores en la UI.
+
+| Propiedad     | Tipo                     | Descripción                  |
+|---------------|--------------------------|------------------------------|
+| `id`          | number                   | ID único del proveedor       |
+| `name`        | string                   | Nombre del proveedor         |
+| `email`       | string                   | Correo electrónico           |
+| `phone`       | string                   | Número telefónico            |
+| `state`       | `"ACTIVE" \| "INACTIVE"` | Estado del proveedor         |
+
+
+## Mobile Application
+
+### Descripción
+Contiene las **entidades** del negocio, **interfaces de repositorio** (abstracciones) y **lógica empresarial pura**. Esta capa **no depende de ninguna otra**.
+
+---
+
+### Componentes
+| Componente     | Descripción                                                   |
+|----------------|---------------------------------------------------------------|
+| `HotelEntity`  | Entidad que representa un hotel (id, nombre, dirección, etc.) |
+| `ProviderEntity` | Entidad que representa un proveedor                         |
+| `HotelRepository` | Contrato abstracto para acceder a hoteles                  |
+| `ProviderRepository` | Contrato abstracto para acceder a proveedores          |
+
+### Ejemplo
+```dart
+class Hotel {
+  final String id;
+  final String name;
+  final String address;
+
+  Hotel({required this.id, required this.name, required this.address});
+}
+
+abstract class HotelRepository {
+  Future<List<Hotel>> getAllHotels();
+  Future<void> createHotel(Hotel hotel);
+}
+```
 
 #### 4.2.3.2. Interface Layer
 ### Interface Layer – Presentación de la Aplicación
 
 La carpeta `Interfaces/REST` representa la capa de presentación de la arquitectura, encargada de recibir solicitudes HTTP, transformarlas en comandos o queries, y devolver respuestas adecuadas al cliente (por ejemplo, al frontend o a herramientas como Postman o Swagger).
 
+
+## Web Services
+
 ---
+
 
 ### Resources
 
@@ -4287,8 +4388,52 @@ Cada entidad clave en el Bounded Context `Organizational Management` cuenta con 
 
 ---
 
+## Web Application
+
+#### Services
+
+Clases que encapsulan la lógica de llamadas HTTP al backend.
+
+| Servicio             | Descripción                                                              |
+|----------------------|---------------------------------------------------------------------------|
+| `HotelService.js`    | Métodos: `getAll()`, `getById(id)`, `create(data)`, `update(id, data)`    |
+| `ProviderService.js` | Métodos: `getAll()`, `getById(id)`, `create(data)`, `update(id, data)`, `deactivate(id)` |
+
+---
+
+## Mobile Application
+### Descripción
+Contiene el UI, lógica de interacción con el usuario, manejo de estado y navegación. Interactúa directamente con los casos de uso.
+
+| Componentes             | Descripción                                                              |
+|----------------------|---------------------------------------------------------------------------|
+| `HotelListPage`    | Pantalla para listar hoteles    |
+| `HotelFormPage` | Formulario para registrar un nuevo hotel |
+| `HotelController` | Controlador que consume el caso de uso y expone datos al UI |
+| `Provider / Riverpod` | Gestión de estado (ViewModel) |
+
+### Ejemplo
+```dart
+class HotelController extends ChangeNotifier {
+  final GetAllHotelsUseCase useCase;
+  List<Hotel> hotels = [];
+
+  HotelController(this.useCase);
+
+  Future<void> fetchHotels() async {
+    hotels = await useCase();
+    notifyListeners();
+  }
+}
+```
+
+---
+
+
 #### 4.2.3.3. Application Layer
 ### Servicios de Aplicación – Gestión de Flujos de Negocio
+
+## Web Services
 ---
 
 ### CommandServices
@@ -4324,7 +4469,53 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 ---
 
+## Web Application
+
+#### Vistas Principales / Componentes
+
+| Componente/Vista         | Ruta               | Funcionalidad Principal                        |
+|--------------------------|--------------------|------------------------------------------------|
+| `HotelListView.vue`      | `/hotels`          | Lista todos los hoteles disponibles            |
+| `HotelForm.vue`          | `/hotels/create`   | Formulario para crear o editar hoteles         |
+| `ProviderListView.vue`   | `/providers`       | Lista los proveedores disponibles              |
+| `ProviderForm.vue`       | `/providers/create`| Crear o actualizar proveedor                   |
+| `HotelDetailsView.vue`   | `/hotels/:id`      | Vista detallada de un hotel específico         |
+
+---
+
+## Mobile Application
+
+### Descripción
+Contiene los casos de uso de la aplicación. Implementa la lógica orquestadora, utilizando interfaces del dominio.
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `GetAllHotelsUseCase`          | Caso de uso para listar hoteles |
+| `CreateHotelUseCase`               | Caso de uso para registrar un nuevo hotel                |
+| `UseCase`    | Interfaz base para los casos de uso              |
+
+### Ejemplo
+
+```dart
+class GetAllHotelsUseCase {
+  final HotelRepository repository;
+
+  GetAllHotelsUseCase(this.repository);
+
+  Future<List<Hotel>> call() {
+    return repository.getAllHotels();
+  }
+}
+
+```
+
+---
+
 #### 4.2.3.4. Infrastructure Layer
+
+## Web Services
+---
+
 ### Implementación de Repositories
 
 | Clase                     | Interfaz implementada       | Función principal |
@@ -4334,12 +4525,77 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 ---
 
+## Web Application
+### Infraestructura de Comunicación
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `httpClient.js`          | Cliente HTTP configurado (Axios) para todas las solicitudes al backend |
+| Base URL                | `http://localhost:5000/api/v1`                |
+| Mecanismo de Headers     | Headers globales (`Content-Type`, `Authorization` si aplica)              |
+| Manejo de Errores        | Interceptores para errores de red o lógica de backend  
+
+---
+
+## Mobile Application
+### Descripción
+Contiene las implementaciones reales de las interfaces del dominio, acceso a red, almacenamiento, seguridad, y monitorización.
+
+| Componente              | Descripción                                                                 |
+|--------------------------|-----------------------------------------------------------------------------|
+| `HotelApiService`          | Clietne HTTP para conectarse con la API REST |
+| `HotelRepositoryImpl`                | Implementación del repositorio usando el API service                |
+| `SecureStorageService`     | Acceso seguro a token JWT           |
+| `CrashlyticsService`       | Reporte de errores en producción (Firebase, Sentry, etc.)            |
+
+### Ejemplo
+```dart
+class HotelRepositoryImpl implements HotelRepository {
+  final ApiService api;
+
+  HotelRepositoryImpl(this.api);
+
+  @override
+  Future<List<Hotel>> getAllHotels() async {
+    final response = await api.get('/hotels');
+    return (response.data as List).map((json) => Hotel.fromJson(json)).toList();
+  }
+
+  @override
+  Future<void> createHotel(Hotel hotel) async {
+    await api.post('/hotels', data: hotel.toJson());
+  }
+}
+```
+
+---
+
 #### 4.2.3.5. Bounded Context Software Architecture Component Level Diagrams
-En el siguiente diagrama de componentes para Organizational Management Context donde se puede observar la interacción que tendrá el Owner usuario para gestionar y personalizar su hotel.<br>
+
+A continuación, se presentan los diagramas de componentes tanto a nivel de Web Services, como de la aplicación web y móvil. Estos diagramas ilustran la interacción del usuario al realizar una solicitud de suministro en el sistema. Los diagramas muestran los componentes principales y sus interacciones<br>
+
 URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
+
+##### Backend
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Backend para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Web Application
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Frontend para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/org-management-component-webapp.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Mobile Application
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Mobile Application para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de Hotel y Provider en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/org-management-component-mobileapp.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
@@ -4896,13 +5152,13 @@ detalle sobre la implementación de componentes en el bounded context. Aquí se
 incluye como secciones internas Bounded Context Domain Layer Class Diagrams y
 Bounded Context Database Diagram.
 https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagrams-139a75acb578
-##### 4.2.X.6.1. Bounded Context Domain Layer Class Diagrams
+##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="User persona Owner" width="100%" />
 </div>
 
-##### 4.2.X.6.2. Bounded Context Database Design Diagram
+##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="User persona Owner" width="100%" />
