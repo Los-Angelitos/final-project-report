@@ -1273,21 +1273,89 @@ Cuando se le presentó la idea de una aplicación que le permita buscar y reserv
 
 A fin de poder realizar un mejor análisis de las entrevistas, se registraron las respuestas en un formulario de Google que permite visualizar las respuestas de cada una de las entrevistas realizadas. A continuación, se presenta un resumen de los resultados obtenidos en las entrevistas.
 
-<div style="text-align: center;">
-  <img src="./assets/img/interview-analysis/analisis-1.jpeg" alt="Analisis de entrevistas" width="70%" />
-</div>
+<h4>Preguntas generales:</h3>
 
 <div style="text-align: center;">
-  <img src="./assets/img/interview-analysis/analisis-2.jpeg" alt="Analisis de entrevistas" width="70%" />
+  <img src="./assets/img/interview-analysis/pregunta-navegador.png" alt="Analisis de entrevistas" width="70%" />
 </div>
 
-<div style="text-align: center;">
-  <img src="./assets/img/interview-analysis/analisis-3.jpeg" alt="Analisis de entrevistas" width="70%" />
-</div>
+Comenzamos haciendo una pregunta general a todos los entrevistados sobre qué navegador y dispositivo tecnológico utilizan con más frecuencia. La mayoría de los entrevistados coincidieron en que utilizan Google como su navegador preferido y el celular como su dispositivo tecnológico más utilizado. Esto nos indica que la mayoría de los usuarios prefieren utilizar dispositivos móviles para realizar sus búsquedas y reservas.
+
+
+<h4>Análisis segmento Dueño de Hotel:</h3>
 
 <div style="text-align: center;">
-  <img src="./assets/img/interview-analysis/analisis-4.jpeg" alt="Analisis de entrevistas" width="70%" />
+  <img src="./assets/img/interview-analysis/analysis-graphics/owner/1.png" alt="Analisis de entrevistas" width="70%" />
 </div>
+
+Como se puede observar en la gráfica la mayoría de los dueños de hotel entrevistados opinan que los principales desafíos que enfrentan en la gestión diaria de su hotel son la alta rotación de personal, la gestión de reservas y disponibilidad de habitaciones, el manejo de quejas o reclamos de los huéspedes. Por ello, es importante que la solución que se desarrolle ofrezca herramientas para mejorar la gestión de recursos humanos, la comunicación interna y la atención al cliente.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/owner/2.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+
+Con respecto a los dueños de hotel, se observa que todos en su totalidad emplean diferentes herramientas de software, por lo que se sienten cómodos utilizando herramientas digitales y están abiertos a adoptar nuevas tecnologías. Sin embargo, también expresaron frustraciones con las herramientas actuales que utilizan, como Excel, y mencionaron la necesidad de una solución más integral y automatizada para la gestión hotelera.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/owner/3.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Todos los entrevistados gestionan el nivel de satisfacción de los huéspedes a través de encuestas y comentarios, principalmente a través de plataformas como la que ofrece Booking. Aquello nos indica que están interesados en mejorar la experiencia del cliente.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/owner/4.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Finalmente, la mayoría de los dueños de hotel entrevistados están abiertos a la idea de una aplicación que les permita gestionar sus hoteles de manera más eficiente y mejorar la experiencia del cliente. Esto indica que existe una oportunidad para desarrollar una solución que aborde sus necesidades y desafíos específicos.
+
+<h4>Análisis segmento Administrador:</h3>
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/admin/1.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Al responder la pregunta sobre qué herramientas o sistemas utilizan actualmente para realizar su trabajo y qué aspectos les resultan más difíciles o menos eficientes, la mayoría de los administradores de hotel entrevistados mencionaron que utilizan herramientas como Excel, Trello, WhatsApp y gestión interna oral. Sin embargo, también expresaron frustraciones con la falta de integración y automatización en estos sistemas, lo que les dificulta llevar un control eficiente de las reservas y la comunicación interna.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/admin/2.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Todos los entrevistados mencionaron que se sienten cómodos y dispuestos a adoptar nuevas tecnologías, lo que indica que están abiertos a la idea de una solución más integral y automatizada para la gestión hotelera.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/admin/3.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Con respecto a las herramientas o recursos adicionales que les ayudarían a ofrecer un mejor servicio a los huéspedes y mejorar su experiencia general en el hotel, la mayoría coincidió que un software para recopilar el seguimiento de las preferencias y satisdacción de los huéspedes, así como la automatización de procesos (check in/out) serían de gran ayuda.
+
+<h4>Análisis segmento Huésped:</h3>
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/guest/1.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Los huéspedes entrevistados mencionaron que los criterios más importantes al elegir un hotel son la ubicación, el precio y las comodidades ofrecidas. Esto indica que es fundamental que SweetManager ofrezca opciones de filtrado y comparación de hoteles según estos criterios.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/guest/2.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+La mitad de los huéspedes concuerdan en que es muy relevante para ellos tener la opción de cancelar una reserva de forma rápida y sencilla en caso de que surja algún imprevisto. Esto indica que es importante que la aplicación ofrezca una opción de cancelación fácil y rápida.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/guest/3.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Todos los huéspedes consideran que podría resultarles útil poder consultar el historial de sus reservas, por lo que es importante añadir una función que recopile esta información y la presente de forma clara y accesible.
+
+<div style="text-align: center;">
+  <img src="./assets/img/interview-analysis/analysis-graphics/guest/4.png" alt="Analisis de entrevistas" width="70%" />
+</div>
+
+Los huéspedes entrevistados en su totalidad coinciden que valorarían positivamente la posibilidad de gestionar sus preferencias de temperatura e iluminación a través de la aplicación. Pues ello les permitiría personalizar su experiencia en el hotel y sentirse más cómodos durante su estadía.
+
 
 Hallazgos Clave de las Entrevistas:
 - Los huéspedes valoran ubicación, precio, comodidades y servicios del hotel.
