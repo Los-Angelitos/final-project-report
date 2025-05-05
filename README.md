@@ -1409,17 +1409,23 @@ Una de sus esperanzas es que exista un sistema hotelero en el que pueda comparti
 
 ### 2.3.5. As-is Scenario Mapping
 
-En esta sección se presentan los Scenario Mapping de los segmentos objetivos: Huésped, Administrador y Dueño, que describen las experiencias actuales de los usuarios potenciales en sus actividades diarias.
+El As-Is Scenario Mapping representa la situación actual del hotel desde la perspectiva de los principales actores: Huéspedes, Administradores y Dueños. Se identifican sus actividades clave, pensamientos y emociones durante la operación diaria. El análisis revela procesos manuales, desconectados y con falta de automatización, lo cual genera sobrecarga operativa, incertidumbre para los usuarios y una experiencia limitada tanto para el personal como para los clientes.
 
 #### As-is Scenario Mapping Huésped:
+
+Esta sección representa la experiencia actual de los huéspedes durante su paso por el hotel. Se detallan las fases clave como la reserva, la llegada, la estadía y la salida, incluyendo sus acciones, pensamientos y emociones en cada etapa. Se observa una experiencia marcada por incertidumbre, posibles fallos de comunicación y una gestión poco automatizada, que genera frustración o sensación de desorganización en momentos clave.
 
 ![As-is Scenario Mapping Guest](assets/img/as-is-scenario-mapping/guest-as-is.png)
 
 #### As-is Scenario Mapping Administrador:
 
+Aquí se describe el flujo de trabajo cotidiano de los administradores del hotel, desde revisar reservas hasta la atención de quejas y mensajes. Las actividades se caracterizan por procesos manuales y poco integrados, que requieren constante verificación, contacto directo y gestión simultánea de varias tareas. Esto genera una carga de trabajo alta y emociones negativas como cansancio o frustración, especialmente ante el volumen de tareas repetitivas.
+
 ![As-is Scenario Mapping Manager](assets/img/as-is-scenario-mapping/manager-as-is.png)
 
 #### As-is Scenario Mapping Dueño:
+
+En esta parte se muestran las actividades actuales de los dueños del hotel, centradas principalmente en el control financiero, la supervisión del funcionamiento del establecimiento y la toma de decisiones administrativas. La gestión se da mediante métodos tradicionales (como hojas de Excel o reportes manuales) y la dependencia de intermediarios para obtener información clave. Esto provoca desconfianza, sobrecarga informativa y una visión poco clara del estado operativo del hotel.
 
 ![As-is Scenario Mapping Owner](assets/img/as-is-scenario-mapping/owner-as-is.png)
 
@@ -1447,17 +1453,23 @@ Esta sección contiene un glosario de términos y conceptos definidos sin ambig�
 
 ## 3.1. To-Be Scenario Mapping
 
-En esta sección se presentan los Scenario Mapping de los segmentos objetivos: Huéspedes, Administradores y Dueños, que describen cómo serán las interacciones, tareas y actividades de los usuarios una vez implementado y utilizado el sistema. De este modo, se proporciona una visión general de las características de la aplicación.
+El To-Be Scenario Mapping plantea una visión futura mejorada del funcionamiento del hotel con la implementación de una solución digital basada en tecnologías IoT. Cada actor experimenta una interacción más fluida, automatizada y eficiente, lo que reduce errores, mejora la experiencia del cliente y facilita la toma de decisiones. Las tareas rutinarias se optimizan y la gestión se vuelve más proactiva, transparente y centrada en el usuario.
 
 #### To-be Scenario Mapping Huésped:
+
+Esta sección refleja cómo sería la experiencia ideal de los huéspedes tras implementar una solución tecnológica con dispositivos IoT. Desde la reserva hasta la salida, se observa un proceso fluido, automatizado y centrado en la comodidad del usuario. Los huéspedes acceden fácilmente a su habitación, utilizan dispositivos inteligentes durante su estancia y gestionan todo desde una app. Esto reduce la incertidumbre y mejora la satisfacción, generando una experiencia moderna, controlada y personalizada.
 
 ![To-be Scenario Mapping Guest](assets/img/to-be-scenario-mapping/guest-to-be.png)
 
 #### To-be Scenario Mapping Administrador:
 
+Aquí se plantea una mejora significativa en la carga operativa del personal administrativo gracias a la digitalización. Las reservas, registros, monitoreo de actividades y atención a mensajes se gestionan de forma eficiente desde una plataforma unificada. El uso de sensores y notificaciones automáticas reduce los errores y permite enfocarse en tareas más importantes. Esto transforma el rol del administrador, brindándole más control, visibilidad y tiempo para brindar una mejor atención.
+
 ![To-be Scenario Mapping Manager](assets/img/to-be-scenario-mapping/manager-to-be.png)
 
 #### To-be Scenario Mapping Dueño:
+
+La experiencia de los dueños también se optimiza mediante la automatización y análisis de datos. Las finanzas, la supervisión de servicios, y la comunicación con el equipo se realizan de forma centralizada, precisa y en tiempo real. La tecnología proporciona métricas clave, reportes automatizados y alertas sobre el funcionamiento del hotel. Esto brinda mayor tranquilidad, capacidad de tomar decisiones estratégicas y confianza en la operación diaria sin estar físicamente presentes.
 
 ![To-be Scenario Mapping Owner](assets/img/to-be-scenario-mapping/owner-to-be.png)
 
