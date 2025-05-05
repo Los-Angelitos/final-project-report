@@ -1260,7 +1260,13 @@ Personalidad: Responsable y Trabajador <br>
 
 ![image](https://github.com/user-attachments/assets/b0abcd99-1456-49ff-93e1-8063f986f7fa)
 
-En resumen, Enzo Céspedes es un joven ingeniero industrial, práctico y sociable, que acostumbra viajar con sus padres o con amigos. Valora sobre todo la ubicación y el precio al momento de elegir un hotel, aunque también presta atención a las comodidades ofrecidas. Es un usuario con presencia digital moderada, usa frecuentemente Google como buscador y sus principales dispositivos tecnológicos son su celular y su laptop, que lleva siempre consigo en sus viajes. Cuando se le presentó la idea de una aplicación que le permita buscar y reservar hoteles, gestionar sus preferencias, cancelar con facilidad y comunicarse directamente con el personal, Enzo se mostró muy entusiasta. Comentó que una solución así le facilitaría mucho la vida, especialmente si pudiera filtrar hoteles según ubicación, comparar precios rápidamente y tener todo centralizado en su teléfono.
+En resumen, Enzo Céspedes es un joven ingeniero industrial, práctico y sociable, que acostumbra viajar con sus padres o con amigos. Valora sobre todo la ubicación y el precio al momento de elegir un hotel, aunque también presta atención a las comodidades ofrecidas, así como a la cercania con lugares turisticos de interés. Es un usuario con presencia digital moderada, usa frecuentemente Google Chrome como buscador y sus principales dispositivos tecnológicos son su celular Apple y su laptop MacBook, que lleva siempre consigo en sus viajes. 
+
+Con respecto a su experiencia en hoteles, el confirma que se ha sentido frustrado anteriormente al reservar una  habitación en linea, debido a los procesos tan lentos y burocraticos que suelen necesitar. Tambien, que cancelar una reserva suele requerir bastantes procesos como tener que acercarse a recepción para poder realizar el tramite, cuando una alternativa digital podria solventar este problema. 
+
+Cuando se le presentó la idea de una aplicación que le permita buscar y reservar hoteles, gestionar sus preferencias, cancelar con facilidad y comunicarse directamente con el personal, Enzo se mostró muy entusiasta. Comentó que una solución así le facilitaría mucho la vida, especialmente si pudiera filtrar hoteles según ubicación, comparar precios rápidamente y tener todo centralizado en su teléfono.
+
+
 
 
 ### 2.2.3. Análisis de entrevistas
