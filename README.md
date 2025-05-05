@@ -1201,11 +1201,11 @@ Personalidad: Alegre <br>
   <img src="https://i.imgur.com/sKGvt61.png" alt="Sergio Renard Interview" width="80%" />
 </div><br>
 
-Sergio Renard es un administrador hotelero radicado en La Plata, Argentina, quien gestiona un hospedaje familiar orientado tanto al turismo local como internacional. Sergio nos comparte su experiencia enfrentando los retos de la administración diaria, especialmente en lo relacionado a la gestión de reservas y preferencias de los clientes. A diferencia de otros establecimientos más grandes, actualmente no cuenta con un sistema automatizado, por lo que lleva el control de las reservas, pagos y asignaciones de forma manual, lo que implica una gran carga operativa y posibles errores humanos.
+Sergio Renard es un administrador hotelero de La Plata, Argentina, al frente de un hospedaje familiar que recibe tanto a turistas locales como internacionales. Su gestión diaria implica desafíos importantes, ya que actualmente realiza el control de reservas, pagos y asignaciones de forma manual. Esta dinámica le demanda mucho tiempo y conlleva un alto riesgo de errores humanos.
 
-Sergio se define como una persona práctica, comprometida y atenta a las necesidades del cliente, y por ello está en la búsqueda de una solución tecnológica que le permita modernizar su gestión hotelera. Uno de sus principales objetivos es brindar mayor comodidad a sus huéspedes, permitiéndoles guardar sus preferencias de estadía dentro de una plataforma digital, de modo que en futuras visitas se les pueda ofrecer una experiencia más personalizada.
+Comprometido con brindar un servicio de calidad y atento a las necesidades de sus huéspedes, Sergio busca modernizar su operativa mediante una solución tecnológica. Su objetivo principal es ofrecer una experiencia más personalizada, permitiendo a los clientes registrar sus preferencias de estadía y facilitando así futuras visitas. Además, considera esencial contar con una plataforma que no solo automatice las reservas, sino que también integre funciones administrativas, seguimiento de recursos y comunicación interna en un solo entorno digital.
 
-Además, considera clave que la herramienta no solo sirva para facilitar las reservas, sino que también integre funciones para el control administrativo, el seguimiento de recursos y la comunicación interna, todo en un mismo entorno. Sergio está convencido de que una buena gestión digital no solo beneficia al administrador, sino que enriquece la experiencia del cliente y fortalece la imagen del hotel frente a la competencia.
+Sergio se describe como una persona práctica y enfocada en mejorar continuamente. Actualmente trabaja con una laptop Acer Aspire con Windows 10 y un teléfono Xiaomi Poco X6, por lo que espera que cualquier solución tecnológica sea compatible con estos dispositivos y de fácil implementación.
 
 
 **Entrevista 01 (Huéspedes)**
@@ -1941,38 +1941,38 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <b>Escenario 1:</b> Ver listado de reservas<br>
         <em>Given</em> que el administrador accede a la página de reservas<br>
         <em>When</em> se cargan las reservas activas<br>
-        <em>Then</em> el sistema muestra una lista con nombre del huésped, fechas y estado.<br><br>
+        <em>Then</em> el sistema muestra una lista con nombre del huésped, fechas y estado de la reserva.<br><br>
         <b>Escenario 2:</b> Check-in<br>
         <em>Given</em> que el huésped ha llegado al hotel<br>
-        <em>When</em> el administrador actualiza la reserva<br>
-        <em>Then</em> el sistema marca la reserva como "En curso".<br><br>
+        <em>When</em> el administrador actualiza la reserva del huésped<br>
+        <em>Then</em> el sistema marca el estado de la reserva como "En curso".<br><br>
         <b>Escenario 3:</b> Check-out<br>
         <em>Given</em> que el huésped ha finalizado su estadía<br>
-        <em>When</em> el administrador registra la salida<br>
-        <em>Then</em> el sistema marca la reserva como "Completada".
+        <em>When</em> el administrador registra la salida del huésped<br>
+        <em>Then</em> el sistema marca el estado de la reserva como "Completada".
       </td>
       <td>EP04</td>
     </tr>
     <tr>
   <td>HU02</td>
-  <td>Enviar mensajes al gerente</td>
-  <td>Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
+  <td>Enviar mensajes al owner</td>
+  <td>Como administrador del hotel, quiero comunicarme con el owner mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante.</td>
   <td>
     <strong>Escenario 1:</strong> Envío de mensaje<br>
-    <em>Given</em> que el administrador está en la sección de mensajería<br>
-    <em>When</em> desea enviar un mensaje al dueño<br>
-    <em>Then</em> redacta el asunto y contenido<br>
-    <em>Y</em> el mensaje se guarda y notifica al dueño en su bandeja.<br><br>
+    <em>Given</em> que el administrador se encuentra en la sección de mensajería<br>
+    <em>When</em> redacta el asunto y contenido del mensaje<br>
+    <em>Then</em> envía el mensaje al owner<br>
+    <em>And</em> el mensaje se guarda y notifica al owner en su bandeja.<br><br>
     <strong>Escenario 2:</strong> Mensaje sin asunto<br>
     <em>Given</em> que el administrador está en la sección de mensajería<br>
-    <em>When</em> intenta enviar un mensaje sin ingresar un asunto<br>
-    <em>Then</em> el sistema muestra un mensaje de error indicando que el asunto es obligatorio<br>
-    <em>Y</em> el mensaje no se envía hasta que se complete el campo.<br><br>
+    <em>When</em> envia un mensaje sin ingresar un asunto o descripción<br>
+    <em>Then</em> el sistema muestra un mensaje de error indicando que el asunto y la descripción son obligatorias<br>
+    <em>Y</em> el mensaje no será enviado hasta que se complete los campos requeridos.<br><br>
     <strong>Escenario 3:</strong> Error de conexión al enviar mensaje<br>
     <em>Given</em> que el administrador ha redactado un mensaje completo<br>
     <em>When</em> presiona el botón de enviar y hay una falla en la conexión a internet<br>
     <em>Then</em> el sistema muestra una notificación de error de envío<br>
-    <em>Y</em> el mensaje se guarda temporalmente como borrador para reenviarlo más tarde.
+    <em>Y</em> el sistema le pide que verifique su conexión y lo vuelva a  intentar nuevamente.
   </td>
   <td>EP04</td>
 </tr>
@@ -1981,15 +1981,15 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Ver detalles de la reserva del huésped.</td>
       <td>Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.</td>
       <td>
-    <strong>Escenario 1:</strong> Consulta de reserva exitosa<br>
+    <strong>Escenario 1:</strong> Consulta de reserva de huésped activo<br>
     <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
     <b>When</b> selecciona un huésped de la lista,<br>
     <b>Then</b> el sistema muestra la información detallada de su reserva, incluyendo fechas, habitación, estado y preferencias.<br><br>
-    <strong>Escenario 2:</strong> Huésped desactivado<br>
+    <strong>Escenario 2:</strong> Consulta de reserva de huésped inactivo<br>
     <b>Given</b> que el administrador está en la lista de huéspedes alojados,<br>
-    <b>When</b> selecciona un huésped que ha sido desactivado del sistema,<br>
-    <b>Then</b> el sistema muestra un mensaje indicando que la información no está disponible<br>
-    <b>Y</b> su ficha de reserva permanece oculta.<br><br>
+    <b>When</b> intenta seleccionar a un huésped que se encuentra en estado inactivo,<br>
+    <b>Then</b> el sistema muestra un mensaje indicando que el huésped está inactivo<br>
+    <b>Y</b> no permite acceder a su ficha de reserva.<br><br>
   </td>
       <td>EP04</td>
     </tr>
@@ -1999,16 +1999,15 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
   <td>Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
   <td>
     <strong>Escenario 1:</strong> Consultar disponibilidad<br>
-    <em>Given</em> que el administrador desea verificar habitaciones disponibles<br>
-    <em>When</em> filtra por tipo y fecha<br>
-    <em>Then</em> el sistema muestra una lista de habitaciones libres para esas fechas.<br><br>
+    <em>Given</em> que el administrador se encuentra en la sección de habitaciones<br>
+    <em>When</em> selecciona un tipo de habitación y establece un rango de fechas<br>
+    <em>Then</em> el sistema muestra una lista de habitaciones disponibles para esas fechas.<br><br>
     <strong>Escenario 2:</strong> Sin disponibilidad para la fecha<br>
     <em>Given</em> que el administrador desea verificar habitaciones para una fecha específica<br>
     <em>When</em> no hay habitaciones disponibles que cumplan con los filtros<br>
     <em>Then</em> el sistema muestra un mensaje indicando que no hay habitaciones libres para ese rango de fechas<br>
-    <em>Y</em> sugiere fechas cercanas con disponibilidad.<br><br>
     <strong>Escenario 3:</strong> Error en los filtros de búsqueda<br>
-    <em>Given</em> que el administrador desea buscar disponibilidad<br>
+    <em>Given</em> que el administrador desea buscar disponibilidad de habitaciones<br>
     <em>When</em> ingresa un formato incorrecto de fecha o deja campos obligatorios vacíos<br>
     <em>Then</em> el sistema muestra un mensaje de validación<br>
     <em>Y</em> no ejecuta la búsqueda hasta corregir los datos.
@@ -2020,15 +2019,14 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Generar reporte de reservas del día</td>
       <td>Como administrador del hotel, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.</td>
       <td>
-        <strong>Escenario 1:</strong> Descargar reporte diario<br>
-    <em>Given</em> el administrador desea generar reporte diario<br>
+        <strong>Escenario 1:</strong> Generar reporte diario<br>
+    <em>Given</em> que el administrador desea generar reporte diario<br>
     <em>When</em> hace clic en "Generar reporte"<br>
     <em>Then</em> el sistema genera un archivo con las reservas del día, estado, nombre del huésped y habitación asignada.<br><br>
     <strong>Escenario 2:</strong> Día sin reservas<br>
     <em>Given</em> que el administrador intenta generar el reporte del día<br>
     <em>When</em> no existen reservas registradas para esa fecha<br>
-    <em>Then</em> el sistema genera un archivo indicando que no hubo movimientos<br>
-    <em>Y</em> muestra un mensaje de "No hay reservas para el día seleccionado".<br><br>
+    <em>Then</em> el sistema genera un archivo indicando que no hubo movimientos<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -2079,10 +2077,10 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <em>Given</em> que el administrador visualiza los detalles de la reserva,<br>
     <em>When</em> selecciona una nueva habitación disponible para el huésped,<br>
     <em>Then</em> el sistema actualiza la reserva con la nueva asignación de habitación.<br><br>
-    <strong>Escenario 2:</strong> Cambio por mantenimiento o imprevisto<br>
-    <em>Given</em> que una habitación asignada al huésped debe ser retirada del servicio por mantenimiento de última hora,<br>
-    <em>When</em> el administrador asigna una nueva habitación disponible,<br>
-    <em>Then</em> el sistema actualiza la reserva con la nueva asignación y notifica al huésped sobre el cambio debido al mantenimiento.<br><br>
+    <strong>Escenario 2:</strong> Cambio por mejora solicitada<br>
+<em>Given</em> que el huésped solicita cambiar su habitación por una de categoría superior,<br>
+<em>When</em> el administrador selecciona una habitación disponible de mayor categoría y confirma el cambio,<br>
+<em>Then</em> el sistema actualiza la reserva con la nueva asignación y añade el costo adicional al total de la estadía.<br><br>
       </td>
       <td>EP04</td>
     </tr>
@@ -2098,11 +2096,11 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <em>When</em> completa el formulario con su información y selecciona la organización a la que desea unirse,<br>
     <em>Then</em> se envía un correo electrónico al dueño de la organización con los datos del administrador solicitante.<br>
     <em>And</em> se muestra un mensaje de confirmación de que la solicitud fue enviada.<br><br>
-    <strong>Escenario 2:</strong> Organización no existe<br>
-    <em>Given</em> que el administrador ha intentado unirse a una organización que no existe en el sistema,<br>
-    <em>When</em> el administrador envía la solicitud,<br>
-    <em>Then</em> el sistema muestra un mensaje de error indicando que la organización no existe,<br>
-    <em>And</em> se solicita al administrador verificar el nombre de la organización e intentar nuevamente.<br><br>
+    <strong>Escenario 2:</strong> Solicitud previamente enviada<br>
+    <em>Given</em> que el administrador ya ha enviado anteriormente una solicitud para unirse a la organización,<br>
+    <em>When</em> intenta enviar una nueva solicitud para la misma organización,<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que ya existe una solicitud pendiente,<br>
+    <em>And</em> se desactiva el envío hasta que se reciba una respuesta del dueño.<br><br>
     <strong>Escenario 3:</strong> Datos incorrectos ingresados<br>
     <em>Given</em> que el administrador ha ingresado datos incorrectos o incompletos en el formulario (como un correo electrónico mal escrito),<br>
     <em>When</em> intenta enviar la solicitud,<br>
@@ -2518,7 +2516,9 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
 
 ## 3.3. Impact Mapping
 
-Impact Mapping es una metodología visual que facilita la identificación clara de los objetivos que realmente queremos alcanzar para conectar efectivamente con nuestros usuarios. Utilizamos esta herramienta para mantener el enfoque y asegurar que trabajamos en función de nuestras metas principales. Así, al finalizar el mapa mental, logramos definir las acciones y funcionalidades necesarias para desarrollar el proyecto de forma eficiente.
+En el desarrollo de nuestro proyecto, aplicamos la metodología Impact Mapping como una herramienta estratégica para alinear las funcionalidades con los objetivos reales del negocio y las necesidades específicas de nuestros usuarios. Esta técnica nos permitió visualizar de forma clara qué queremos lograr, quiénes son los actores clave, cómo pueden contribuir o afectar el resultado y qué acciones deben priorizarse. Más que un simple mapa mental, el Impact Map nos ayudó a tomar decisiones fundamentadas sobre el alcance del proyecto, centrándonos en generar impacto real y evitando invertir recursos en características que no aporten valor directo.
+
+
 
 __Business goal:__
 
