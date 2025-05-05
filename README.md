@@ -1111,9 +1111,7 @@ Personalidad: Analítica <br>
 En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años con una personalidad analítica y enfoque práctico. Vive en Pueblo Libre, Lima, y actualmente lidera su propio emprendimiento hotelero. Durante la entrevista, nos compartió que uno de los principales desafíos en la gestión diaria de su hotel es el control de inventario y la gestión eficiente de proveedores. Actualmente, el seguimiento de ingresos y reservas lo realiza mediante herramientas básicas como Excel, complementadas por procesos manuales. A pesar de ello, valora la organización y procura mantener un orden estructurado con apoyo de su equipo contable y administrativo. Entre las funcionalidades que considera más útiles para mejorar la eficiencia de su hotel destacan la automatización de reportes, una gestión centralizada de reservas y una plataforma integrada para coordinar con proveedores. 
 
 <br><br>
-
 **Entrevista 03 (Gerentes)**
-
 <br>
 URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
 Nombre: Luis Fernández <br>
@@ -1127,7 +1125,13 @@ Personalidad: Extrovertido <br>
 
 ![Entrevista° 3 - Dueños](assets/img/interview-analysis/owner3.png)
 
-Luis se presenta como una persona extrovertida, cuyo buscador de Internet más utilizado es Google y el dispositivo que más utiliza es su celular IPhone. Él, junto con sus hermanos, es propietario de un hotel pequeño en la ciudad de Huaraz. Explica que los principales retos que enfrenta son la gestión de las habitaciones y el inventario y la falta de personal que enfrentan en temporadas altas. También nos indica que actualmente realiza la gestión con herramientas como Excel y se comunican con los clientes por medio de WhatsApp. Al comentarle la idea de una aplicación mediante la cual pueda administrar las habitaciones, huéspedes, reservas y trabajadores del hotel además de comunicarse con sus administradores, se mostró muy interesado y aseguró que, de existir, seguramente decidiría utilizarla.
+Luis es una persona extrovertida, carismática y siempre dispuesto a conversar. Su actitud alegre y sociable lo convierte en alguien muy accesible tanto para clientes como para su equipo. En su vida cotidiana, utiliza con frecuencia herramientas tecnológicas, siendo Google su motor de búsqueda predilecto y su iPhone 14 el dispositivo que más emplea para mantenerse conectado y organizar sus actividades.
+
+Junto con sus hermanos, es propietario de un pequeño hotel ubicado en la ciudad de Huaraz, el cual administran de forma directa. Según explica, los principales desafíos que enfrentan actualmente son la gestión eficiente de las habitaciones y el inventario, así como la falta de personal en temporadas altas, lo que genera sobrecarga de trabajo y desorganización operativa.
+
+Luis señala que actualmente utilizan herramientas básicas como Excel para llevar el control del negocio y que la comunicación con los clientes se realiza principalmente a través de WhatsApp. Aunque estos métodos han sido funcionales hasta cierto punto, admite que la gestión resulta poco formal y propensa a errores, especialmente al momento de registrar y monitorear las reservas, lo que puede generar confusiones tanto para el equipo como para los huéspedes.
+
+Al presentarle la idea de una aplicación móvil desde la cual pueda gestionar las habitaciones, reservas, huéspedes, trabajadores e incluso mantener comunicación directa con los administradores, se mostró genuinamente entusiasmado. Afirmó que una herramienta de ese tipo no solo sería útil, sino que definitivamente optaría por implementarla si estuviera disponible, ya que solucionaría varios de los problemas que actualmente enfrenta en la operación del hotel.
 
 <br><br>
 **Entrevista 01 (Administradores)**
@@ -1234,7 +1238,11 @@ Personalidad: Tranquilo <br>
 
 ![Entrevista° 2 - Huespedes](assets/img/interview-analysis/customer-2.png)
 
-En resumen, Ramón se presenta como una persona tranquila, relajada y con poca presencia en redes sociales. Nos comenta además que el buscador de Internet que más utiliza es Google y los dispositivos tecnológicos que más usa son su celular y su laptop. Él es un huésped recurrente en distintos tipos de hoteles en los que se ha tenido que hospedar en viajes, ya sean por trabajo o por vacaciones. Explica que cuando va a viajar y debe reservar una habitación en hotel lo hace buscando en Google y entrando a una de las opciones, usualmente la primera, que le recomienda dicho buscador. Nos indica también que tiene ciertas preferencias en cuanto a la ubicación, precio y servicios de la habitación y del hotel en el que se hospeda. Nos cuenta, además, que en unas pocas ocasiones ha tenido problemas con sus reservaciones en hoteles. Al comentarle la idea de una aplicación mediante la cual pueda reservar, cancelar reservaciones, administrar sus preferencias y hasta comunicarse con el personal del hotel, se mostró bastante de acuerdo y comentó que le encantaría poder usarla.
+Ramón se presenta como una persona de carácter tranquilo y relajado, con un estilo de vida sobrio y una presencia limitada en redes sociales. En cuanto al uso de tecnología, prefiere herramientas prácticas y funcionales. Nos comenta que su buscador de Internet más utilizado es Google, mientras que los dispositivos tecnológicos que más emplea en su día a día son su teléfono celular Redmi 8 y su laptop Asus Vivobook 15.
+
+Es un huésped frecuente en distintos tipos de hoteles, ya sea por viajes laborales o vacaciones personales. Acostumbra a realizar sus reservas de forma sencilla: busca en Google alojamientos disponibles y suele ingresar a la primera opción que el buscador le ofrece. A pesar de esa dinámica, señala que tiene criterios específicos que valora al elegir un hotel, como la ubicación, el precio y los servicios incluidos tanto en la habitación como en el establecimiento en general.
+
+Ramón también relata que, en algunas ocasiones, ha experimentado problemas con sus reservaciones, lo cual le ha generado molestias y desconfianza en ciertos procesos. Por ello, al presentarle la propuesta de una aplicación móvil que le permita reservar, cancelar, personalizar preferencias y comunicarse directamente con el personal del hotel, reaccionó de forma muy positiva. Afirmó que una herramienta de ese tipo le resultaría sumamente útil y que sin duda estaría dispuesto a utilizarla, ya que le daría mayor control y seguridad sobre sus reservas y mejoraría su experiencia como huésped.
 
 <br><br>
 
