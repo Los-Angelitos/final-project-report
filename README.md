@@ -1612,12 +1612,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Given</em> el gerente está conectado a su cuenta<br>
         <em>When</em> se encuentra en el dashboard<br>
         <em>And</em> escoge el plazo semanal de finanzas<br>
-        <em>Then</em> revisa los ingresos y egresos semanales.<br><br>
+        <em>Then</em> el sistema muestra los ingresos y egresos semanales.<br><br>
         <b>Escenario 2:</b> Revisión de las finanzas mensuales<br>
         <em>Given</em> el gerente está conectado a su cuenta<br>
         <em>When</em> se encuentra en el dashboard<br>
         <em>And</em> escoge el plazo mensual de finanzas<br>
-        <em>Then</em> revisa los ingresos y egresos mensuales.<br><br>
+        <em>Then</em> el sistema muestra los ingresos y egresos mensuales.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1629,11 +1629,13 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <b>Escenario 1:</b> Solicitud de abastecimiento<br>
         <em>Given</em> el gerente está en la página de recursos<br>
         <em>When</em> nota que uno de sus recursos está por agotar el stock<br>
-        <em>Then</em> contacta a su proveedor y crea una solicitud de abastecimiento.<br><br>
+        <em>And</em> contacta a su proveedor y solicita abastecimiento<br>
+        <em>Then</em> el sistema rea una solicitud de abastecimiento.<br><br>
         <b>Escenario 2:</b> Revisión del stock de recursos<br>
         <em>Given</em> el gerente está en la página de recursos<br>
-        <em>When</em> revisa el stock de los productos y observa que ninguno está cerca de agotarse<br>
-        <em>Then</em> decide que no es necesario crear una solicitud de abastecimiento aún.<br><br>
+        <em>When</em> revisa el stock de los productos<br>
+        <em>And</em> ninguno está cerca de agotarse<br>
+        <em>Then</em> el sistema no muestra la opción de crear una solicitud de abastecimiento aún.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1644,19 +1646,18 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>
         <b>Escenario 1:</b> Envío de mensaje a un administrador<br>
         <em>Given</em> el gerente está en la página de mensajería<br>
-        <em>When</em> quiere enviar un mensaje a uno de sus administradores<br>
-        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
-        <em>And</em> lo envía al administrador seleccionado.<br><br>
+        <em>When</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía al administrador seleccionado.<br>
+        <em>Then</em> el sistema entrega el mensaje al administrador indicado.<br><br>
         <b>Escenario 2:</b> Envío de mensaje a sus administradores<br>
         <em>Given</em> el gerente está en la página de mensajería<br>
-        <em>When</em> quiere enviar un mensaje a todos sus administradores<br>
-        <em>Then</em> redacta el asunto y cuerpo del mensaje<br>
-        <em>And</em> lo envía a todos los administradores.<br><br>
-        <b>Escenario 3:</b> Envío de mensaje sin cuerpo y/o asunto<br>
+        <em>When</em> redacta el asunto y cuerpo del mensaje<br>
+        <em>And</em> lo envía a todos los administradores<br>
+        <em>Then</em> el sistema entrega el mensaje a todos los administardores.<br><br>
+        <b>Escenario 3:</b> Intento de envío de mensaje sin cuerpo y/o asunto<br>
         <em>Given</em> el gerente está en la página de mensajería<br>
-        <em>When</em> quiere enviar un mensaje<br>
-        <em>Then</em> intenta enviarlo sin redactar el asunto y/o el cuerpo del mensaje<br>
-        <em>And</em> recibe un mensaje que le indica que debe redactar un asunto y cuerpo en el mensaje.<br><br>
+        <em>When</em> intenta enviar un mensaje sin redactar el asunto y/o el cuerpo<br>
+        <em>And</em> el sistema le indica que debe redactar un asunto y cuerpo en el mensaje.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1675,7 +1676,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> quiere mejorar o degradar la subscripción actual<br>
         <em>And</em> entra a la página para cambiar la subscripción actual pero presiona el botón cancelar<br>
         <em>Then</em> el cambio se cancela y regresa a la página anterior.<br><br>
-        <b>Escenario 3:</b> Cambio de suscripción sin aceptar términos y condiciones<br>
+        <b>Escenario 3:</b> Intento de cambio de suscripción sin aceptar términos y condiciones<br>
         <em>Given</em> el gerente está en la página de subscripciones<br>
         <em>When</em> quiere mejorar o degradar la subscripción actual<br>
         <em>And</em> entra a la página para cambiar la subscripción actual y presiona continuar sin aceptar los términos y condiciones<br>
@@ -1690,12 +1691,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>
         <b>Escenario 1:</b> Invitación a un nuevo administrador<br>
         <em>Given</em> el gerente está en la página de administradores<br>
-        <em>When</em> quiere invitar a un nuevo administrador a la organización<br>
-        <em>Then</em> invita mediante su correo electrónico a la organización.<br><br>
+        <em>When</em> envía una invitación a un nuevo administrador a la organización<br>
+        <em>Then</em> el sistema envía la invitación mediante su correo electrónico a la organización.<br><br>
         <b>Escenario 2:</b> Invitación a múltiples administradores<br>
         <em>Given</em> el gerente está en la página de administradores<br>
-        <em>When</em> quiere invitar a varios administradores a la organización<br>
-        <em>Then</em> invita mediante un correo electrónico enviado a todos los administradores a la organización.<br><br>
+        <em>When</em> envía una invitación a varios administradores a la organización<br>
+        <em>Then</em> el sistema envía la invitación mediante un correo electrónico enviado a todos los administradores a la organización.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1706,14 +1707,13 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>
         <b>Escenario 1:</b> Agregar a un proveedor<br>
         <em>Given</em> el gerente está en la página de proveedores<br>
-        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
-        <em>Then</em> registra su información de contacto.<br><br>
-        <b>Escenario 2:</b> Agregar a un proveedor que ya existe<br>
+        <em>When</em> registra la información de contacto de un proveedor nuevo<br>
+        <em>Then</em> el sistema guarda su información de contacto.<br><br>
+        <b>Escenario 2:</b> Intento de agregar a un proveedor que ya existe<br>
         <em>Given</em> el gerente está en la página de proveedores<br>
-        <em>When</em> quiere registrar un nuevo proveedor a la lista de contacto<br>
-        <em>And</em> registra su información de contacto<br>
+        <em>When</em> intenta registrar un nuevo proveedor a la lista de contacto<br>
         <em>But</em> la información personal está duplicada o ya existe<br>
-        <em>Then</em> recibe un mensaje indicándole que el proveedor ya está registrado.<br><br>
+        <em>Then</em> el sistema le indica que el proveedor ya está registrado.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1724,19 +1724,18 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>
         <b>Escenario 1:</b> Agregar una habitación<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
-        <em>When</em> quiere agregar una nueva habitación<br>
-        <em>Then</em> ingresa la información correspondiente y la habitación queda registrada.<br><br>
-        <b>Escenario 2:</b> Agregar una habitación que ya existe<br>
+        <em>When</em> ingresa la información correspondiente a una nueva habitación<br>
+        <em>Then</em> el sistema guarda los datos de la habitación.<br><br>
+        <b>Escenario 2:</b> Intento de agregar una habitación que ya existe<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
-        <em>When</em> quiere agregar una nueva habitación<br>
-        <em>And</em> ingresa la información correspondiente<br>
+        <em>When</em> ingresa la información correspondiente a una nueva habitación<br>
         <em>But</em> la información de la habitación está duplicada o ya existe<br>
-        <em>Then</em> recibe un mensaje indicándole que la habitación ya está registrada.<br><br>
-        <b>Escenario 3:</b> Agregar una habitación con datos incompletos<br>
+        <em>Then</em> el sistema le indica que la habitación ya está registrada.<br><br>
+        <b>Escenario 3:</b> Intento de agregar una habitación con datos incompletos<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
-        <em>When</em> quiere agregar una nueva habitación<br>
+        <em>When</em> ingresa la información correspondiente a una nueva habitación<br>
         <em>But</em> presiona la opción de registrar habitación sin completar los datos<br>
-        <em>Then</em> recibe un mensaje indicándole que debe completar la información solicitada.<br><br>
+        <em>Then</em> el sistema le indica que debe completar la información solicitada.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1750,13 +1749,13 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> quiere actualizar el estado de una habitación<br>
         <em>And</em> selecciona la habitación<br>
         <em>And</em> su estado es activa<br>
-        <em>Then</em> cambia su estado a inactiva.<br><br>
+        <em>Then</em> el sistema cambia su estado a inactiva.<br><br>
         <b>Escenario 2:</b> Cambiar una habitación a activa<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
         <em>When</em> quiere actualizar el estado de una habitación<br>
         <em>And</em> selecciona la habitación<br>
         <em>And</em> su estado es inactiva<br>
-        <em>Then</em> cambia su estado a activa.<br><br>
+        <em>Then</em> el sistema cambia su estado a activa.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1768,18 +1767,15 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <b>Escenario 1:</b> Modificar una habitación<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
         <em>When</em> selecciona una habitación existente<br>
-        <em>Then</em> puede modificar su información como tipo, precio o descripción y guardar los cambios.<br><br>
-        <b>Escenario 2:</b> Modificar una habitación inexistente<br>
-        <em>Given</em> el gerente está en la página de administración de habitaciones<br>
-        <em>When</em> selecciona la opción de modificar<br>
-        <em>But</em> no ha seleccionado ninguna habitación existente<br>
-        <em>Then</em> recibe un mensaje indicándole que debe seleccionar una habitación existente.<br><br>
-        <b>Escenario 3:</b> Modificar una habitación sin guardar los cambios<br>
+        <em>When</em> modifica su información como tipo, precio o descripción<br>
+        <em>And</em> le indica al sistema que guarde los cambios<br>
+        <em>Then</em> el sistema guarda los cambios.<br><br>
+        <b>Escenario 2:</b> Modificar una habitación sin guardar los cambios<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
         <em>When</em> selecciona una habitación existente<br>
         <em>And</em> modifica su información como tipo, precio o descripción<br>
         <em>But</em> no guarda los cambios realizados<br>
-        <em>Then</em> regresa a la pantalla anterior sin guardar los cambios.<br><br>
+        <em>Then</em> el sistema lo regresa a la pantalla anterior sin guardar los cambios.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1791,12 +1787,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <b>Escenario 1:</b> Buscar habitaciones<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
         <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
-        <em>Then</em> se muestran únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.<br><br>
+        <em>Then</em> el sistema le muestra únicamente las habitaciones que coinciden con los criterios de búsqueda o estado seleccionado.<br><br>
         <b>Escenario 2:</b> Buscar habitaciones inexistentes<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
         <em>When</em> utiliza la barra de búsqueda o selecciona un filtro de estado<br>
         <em>But</em> la búsqueda no coincide con la información de ninguna habitación existente<br>
-        <em>Then</em> se muestra un mensaje que indica que no hubieron coincidencias en la búsqueda.<br><br>
+        <em>Then</em> el sistema muestra un mensaje que indica que no hubieron coincidencias en la búsqueda.<br><br>
       </td>
       <td>EP03</td>
     </tr>
@@ -1835,12 +1831,12 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <b>Escenario 2:</b> Desvincular a un administrador inexistente<br>
         <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
         <em>When</em> confirma la acción de desvinculación sin haber elegido algún administrador de la lista<br>
-        <em>Then</em> recibe un mensaje indicándole que debe elegir al menos un administrador.<br><br>
+        <em>Then</em> el sistema le indica que debe elegir al menos un administrador.<br><br>
         <b>Escenario 3:</b> Desvincular al último administrador<br>
         <em>Given</em> el propietario está en la lista de administradores asociados a su organización<br>
         <em>When</em> selecciona un administrador y confirma la acción de desvinculación<br>
         <em>But</em> el equipo de trabajo quedaría vacío si se eliminan a los administradores seleccionados<br>
-        <em>Then</em> recibe un mensaje indicándole que el equipo de trabajo activo debe tener al menos un administrador.<br><br>
+        <em>Then</em> el sistema le indica que el equipo de trabajo activo debe tener al menos un administrador.<br><br>
       </td>
       <td>EP03</td>
     </tr>
