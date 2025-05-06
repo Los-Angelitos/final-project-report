@@ -4005,74 +4005,83 @@ Las tablas principales y unicas del Bounded Context son:
 ### 4.2.5. Bounded Context: Inventory Bounded Context
 
 #### 4.2.5.1. Domain Layer
-### Agregados y Entidades del Dominio `Inventory`
+### Agregados y Entidades del Dominio `Inventory` en nuestro Web/Mobile Application
 
-En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
+En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase.
 
+Supply:
+
+| Atributo       | Tipo                          | Descripción                                                                 |
+|----------------|-------------------------------|-----------------------------------------------------------------------------|
+| `Id`           | `int`                         | ID único del suministro.                                                    |
+| `ProviderId`   | `int`                         | ID del proveedor asociado al suministro.                                   |
+| `HotelId`      | `int`                         | ID del hotel al que pertenece el suministro.                               |
+| `Name`         | `string`                      | Nombre del suministro (almacenado en mayúsculas).                          |
+| `Price`        | `decimal`                     | Precio del suministro.                                                     |
+| `Stock`        | `int`                         | Cantidad disponible en stock del suministro.                               |
+| `State`        | `string`                      | Estado del suministro (`ACTIVO`, `INACTIVO`, etc., en mayúsculas).         |
+
+
+Supply Request:
+
+| Atributo        | Tipo                            | Descripción                                                                 |
+|-----------------|----------------------------------|-----------------------------------------------------------------------------|
+| `Id`            | `int`                           | ID único de la solicitud de suministro.                                     |
+| `PaymentOwnerId`| `int`                           | ID del propietario del pago asociado a la solicitud.                        |
+| `SupplyId`      | `int`                           | ID del suministro solicitado.                                               |
+| `Count`         | `int`                           | Cantidad solicitada del suministro.                                         |
+| `Amount`        | `decimal`                       | Monto total de la solicitud (precio × cantidad).                            |
+              
+### Agregados y Entidades del Dominio `Inventory` en nuestro Web Services
+
+En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de suministros y solicitudes de suministros.
+
+
+Supply:
 
 Representa un suministro de inventario registrado dentro del sistema de SweetManager.
 
 #### Atributos principales:
 
-| Atributo          | Tipo                     | Descripción |
-|-------------------|--------------------------|-------------|
-| `Id`             | `int`                    | Identificador único del suministro |
-| `ProviderId`     | `int`                    | Relación con el proveedor mediante su identificador único (`Provider`) |
-| `HotelId`       | `int`                    | Relación con el hotel mediante su identificador único (`Hotel`) |
-| `Name`          | `string`                 | Nombre del suministro (en mayúsculas) |
-| `Price`         | `decimal`                | Precio unitario del suministro |
-| `Stock`         | `int`                    | Cantidad disponible en inventario |
-| `State`         | `string`                 | Estado actual del suministro (en mayúsculas) |
-| `Hotel`         | `Hotel?`                 | Hotel asociado al suministro |
-| `Provider`      | `Provider?`              | Proveedor asociado al suministro |
-| `SupplyRequests`| `ICollection<SupplyRequest>` | Relación con las solicitudes de suministro asociadas |
+| Atributo       | Tipo                          | Descripción                                                                 |
+|----------------|-------------------------------|-----------------------------------------------------------------------------|
+| `Id`           | `int`                         | ID único del suministro.                                                    |
+| `ProviderId`   | `int`                         | ID del proveedor asociado al suministro.                                   |
+| `HotelId`      | `int`                         | ID del hotel al que pertenece el suministro.                               |
+| `Name`         | `string`                      | Nombre del suministro (almacenado en mayúsculas).                          |
+| `Price`        | `decimal`                     | Precio del suministro.                                                     |
+| `Stock`        | `int`                         | Cantidad disponible en stock del suministro.                               |
+| `State`        | `string`                      | Estado del suministro (`ACTIVO`, `INACTIVO`, etc., en mayúsculas).         |
+| `Hotel`        | `Hotel?`                      | Referencia al hotel asociado (entidad de navegación).                      |
+| `Provider`     | `Provider?`                   | Referencia al proveedor asociado (entidad de navegación).                  |
+| `SupplyRequests` | `ICollection<SupplyRequest>` | Colección de solicitudes asociadas a este suministro.                      |
+
 
 #### Constructores:
 - Por parámetros individuales: `Id`, `HotelId`, `ProviderId`, `Name`, `Price`, `Stock`, `State`
 - A partir de `CreateSupplyCommand`
 
-#### Métodos:
-- `Update(UpdateSupplyCommand command)`: Actualiza todos los campos del suministro con los valores proporcionados
+
+Supply Request (Entidad):
 
 Representa una solicitud de suministro registrada dentro del sistema de SweetManager.
 
 #### Atributos principales:
 
-| Atributo          | Tipo               | Descripción |
-|-------------------|--------------------|-------------|
-| `Id`             | `int`              | Identificador único de la solicitud |
-| `PaymentOwnerId`  | `int`              | ID del propietario del pago asociado (`PaymentOwner`) |
-| `SupplyId`       | `int`              | ID del suministro solicitado (`Supply`) |
-| `Count`          | `int`              | Cantidad de unidades solicitadas |
-| `Amount`         | `decimal`          | Monto total de la solicitud |
-| `PaymentOwner`   | `PaymentOwner?`    | Propietario del pago asociado a la solicitud |
-| `Supply`         | `Supply?`          | Suministro asociado a la solicitud |
+| Atributo        | Tipo                            | Descripción                                                                 |
+|-----------------|----------------------------------|-----------------------------------------------------------------------------|
+| `Id`            | `int`                           | ID único de la solicitud de suministro.                                     |
+| `PaymentOwnerId`| `int`                           | ID del propietario del pago asociado a la solicitud.                        |
+| `SupplyId`      | `int`                           | ID del suministro solicitado.                                               |
+| `Count`         | `int`                           | Cantidad solicitada del suministro.                                         |
+| `Amount`        | `decimal`                       | Monto total de la solicitud (precio × cantidad).                            |
+| `PaymentOwner`  | `PaymentOwner?`                 | Referencia al propietario del pago (entidad de navegación).                 |
+| `Supply`        | `Supply?`                       | Referencia al suministro solicitado (entidad de navegación).                |
+
 
 #### Constructores:
 - Por parámetros individuales: `Id`, `PaymentOwnerId`, `SupplyId`, `Count`, `Amount`
 - A partir de `CreateSupplyRequestCommand`
-
-### SupplyAudit
-
-Representa la extensión al agregado Supply que permite manejar la fecha de creación y modificación del suministro.
-
-## Atributos principales:
-
-| Atributo       | Tipo               | Descripción |
-|----------------|--------------------|-------------|
-| `CreatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se creó el suministro |
-| `UpdatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se modificó el suministro |
-
-### SupplyRequestAudit
-
-Representa la extensión al agregado SupplyRequest que permite manejar la fecha de creación y modificación de la solicitud.
-
-## Atributos principales:
-
-| Atributo       | Tipo               | Descripción |
-|----------------|--------------------|-------------|
-| `CreatedDate`    | `DateTimeOffset?`    | Fecha y hora exactas en que se creó la solicitud |
-| `UpdatedDate`   | `DateTimeOffset?`    | Fecha y hora exactas en que se modificó la solicitud |
 
 ## Comandos
 
@@ -4124,42 +4133,53 @@ Representa la extensión al agregado SupplyRequest que permite manejar la fecha 
 | `ISupplyRequestRepository.cs`    | Define operaciones sobre solicitudes de suministro: `FindBySupplyId`, `FindByPaymentOwnerId`, `FindAllSuppliesRequestsAsync` y hereda operaciones base de `IBaseRepository<SupplyRequest>`. |
 
 
-## Services
+## Services 
+
+### Servicios del Dominio Inventory en nuestro Web/Mobile Application
+
+Por cada Bounded Context definimos su propio services, con un api Service para cada agregado/entidad
+
+### Supply Api Service
+
+| Método                     | Descripción                                             |
+|----------------------------|---------------------------------------------------------|
+| `getAll()`                 | Obtener todos los suministros.                          |
+| `getById(id)`              | Obtener un suministro por ID.                           |
+| `getByProviderId(providerId)` | Obtener suministros por proveedor.                  |
+| `create()`                 | Crear un nuevo suministro.                              |
+| `update(id)`               | Actualizar un suministro existente por ID.              |
+
+---
+
+### SupplyRequest Api Service
+
+| Método                           | Descripción                                                          |
+|----------------------------------|----------------------------------------------------------------------|
+| `create()`                       | Crear una nueva solicitud de suministro.                             |
+| `getByHotelId(hotelId)`          | Obtener solicitudes de suministro por ID de hotel.                   |
+| `getById(id)`                    | Obtener una solicitud de suministro por su ID.                       |
+| `getByPaymentOwnerId(paymentOwnerId)` | Obtener solicitudes por ID del propietario del pago.          |
+| `getBySupplyId(supplyId)`        | Obtener solicitudes por ID del suministro.                           |
+
+
+### Servicios del Dominio Inventory en nuestro Web Services
+
 
 ### Supply
 
-| Archivo                     | Descripción breve |
-|-----------------------------|-------------------|
-| `ISupplyCommandService.cs`  | Define comandos para crear y actualizar suministros. |
-| `ISupplyQueryService.cs`    | Define consultas para obtener suministros por ID, por proveedor o por hotel. |
+| Archivo                   | Descripción breve                                                                 |
+|---------------------------|------------------------------------------------------------------------------------|
+| `ISupplyCommandService.cs` | Define comandos para crear y actualizar suministros.                             |
+| `ISupplyQueryService.cs`   | Define consultas para obtener suministros por ID, por proveedor o por hotel.     |
 
 ---
 
 ### SupplyRequest
 
-| Archivo                          | Descripción breve |
-|----------------------------------|-------------------|
-| `ISupplyRequestCommandService.cs` | Define comandos para crear solicitudes de suministro. |
-| `ISupplyRequestQueryService.cs`   | Define consultas para obtener solicitudes por ID, por pagador, por suministro o por hotel. |
-
-## Exceptions
-
-### Supply
-
-| Archivo                                | Descripción breve |
-|----------------------------------------|-------------------|
-| `InvalidSupplyNameException.cs`        | Excepción lanzada cuando el nombre del suministro no es válido. |
-| `InvalidSupplyPriceException.cs`       | Excepción lanzada cuando el precio del suministro no es válido. |
-| `InvalidSupplyStockException.cs`       | Excepción lanzada cuando el stock del suministro no es válido. |
-| `SupplyNotFoundException.cs`          | Excepción lanzada cuando no se encuentra un suministro específico. |
-
-
-### SupplyRequest
-
-| Archivo                                      | Descripción breve |
-|----------------------------------------------|-------------------|
-| `InvalidSupplyRequestAmountException.cs`     | Excepción lanzada cuando el monto de la solicitud no es válido. |
-| `InvalidSupplyRequestCountException.cs`      | Excepción lanzada cuando la cantidad solicitada no es válida. |
+| Archivo                             | Descripción breve                                                                 |
+|-------------------------------------|------------------------------------------------------------------------------------|
+| `ISupplyRequestCommandService.cs`   | Define comandos para crear solicitudes de suministro.                             |
+| `ISupplyRequestQueryService.cs`     | Define consultas para obtener solicitudes por ID, por pagador, por suministro o por hotel. |
 
 
 #### 4.2.5.2. Interface Layer
