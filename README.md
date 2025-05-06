@@ -5359,22 +5359,178 @@ La única tabla del bounded context `Communication` es la tabla `Notification`. 
 | `SenderId`      | `int?`             | Identificador único del usuario que envía el mensaje |
 | `ReceiverId`    | `int?`             | Identificador único del usuario que recibe el mensaje |
 
+# Capítulo V: Solution UI/UX Design
+## 5.1. Style Guidelines.
+### 5.1.1. General Style Guidelines.
+Aquí se explica las decisiones y referencias visuales sobre conceptos generales
+básicos como Branding, Typography, Colors y Spacing, así como las dimensiones a
+adoptar para el tono de comunicación y lenguaje aplicado (Divertido/Serio,
+Formal/Casual, Respetuoso/Irreverente, Entusiasta/Sereno). Puede tomarse como
+referencia un Design System existente, sobre el cual se puede realizar adaptaciones.
+Esta sección debe incluir el sustento de principios y elementos de diseño
+considerados para las decisiones.
+### 5.1.2. Web, Mobile and IoT Style Guidelines.
+En esta sección se explica e ilustra las decisiones sobre los estándares visuales y de
+interacción para responsive web interfaces y las interfaces en mobile application
+interfaces y IoT application user interface. 
+
+## 5.2. Information Architecture.
+### 5.2.1. Organization Systems.
+En esta sección el equipo explica en qué grupos de información aplicará cuáles
+sistemas de organización. Aquí se incluye la explicación de en qué casos se aplicará la
+organización visual del contenido: de forma jerárquica (visual hierarchy),
+organización secuencial (step-by-step to accomplish) o matricial. Por otro lado,
+también se debe explicar en qué casos se utilizará qué esquemas de categorización
+de contenido: alfabético, cronológico, por tópicos, según audiencia (grupos de
+usuarios).
+### 5.2.2. Labeling Systems.
+Aquí el equipo explica de qué maneras se representarán los datos, considerando
+simplicidad y buscando evitar la confusión para los visitantes y usuarios. En esta
+sección se especifica las etiquetas (con el mínimo número de palabras) a utilizar para
+representar los conjuntos de información y las asociaciones4 entre las mismas.
+### 5.2.3. SEO Tags and Meta Tags
+En esta sección se debe incluir los SEO Tags y Meta Tags junto con los valores que
+asignará en las principales páginas de la experiencia tanto a nivel del sitio web
+estático (Landing Page) como Web Application. Se debe incluir Title, los Meta Tags
+Description, Keywords, Author como mínimo. Del mismo modo, para las aplicaciones
+móviles u otros productos digitales que se exponen vía un app store, debe incluir los
+ASO (App Store Optimization) elements como App Title, App keywords, App subtitle,
+App description.
+### 5.2.4. Searching Systems.
+En esta sección el equipo explica qué medios de ayuda se brindará al usuario para la
+búsqueda de datos dentro del producto digital. Dichas decisiones sobre los sistemas
+de búsqueda tratan de evitar que los usuarios se sientan perdidos entre el volumen
+de información. Aquí se deben especificar qué opciones de búsqueda ofrecerán las
+aplicaciones, con qué filtros contará el usuario en cada caso y cómo lucirán los datos
+después de la búsqueda.
+### 5.2.5. Navigation Systems.
+Aquí el equipo explica cuáles serán las acciones y técnicas que guiarán a los usuarios
+a través del Landing Page y las aplicaciones, permitiéndoles cumplir sus metas e
+interactuar de forma satisfactoria con el producto. Aquí se debe incluir de qué
+maneras los usuarios irán recorriendo el contenido.
+
+## 5.3. Landing Page UI Design.
+### 5.3.1. Landing Page Wireframe.
+Esta sección incluye una sección interna donde se presenta y explica los Wireframes
+del Landing Page para Desktop Web Browser y Mobile Web Browser. En la propuesta
+y la explicación debe evidenciarse la aplicación de los principios, elementos de
+diseño, diseño inclusivo y arquitectura de información.
+### 5.3.2. Landing Page Mock-up.
+Esta sección presenta y explica los Mock-ups del Landing Page, tanto en su versión
+para Desktop Web Browser como Mobile Web Browser. En la propuesta y la
+explicación debe evidenciarse la aplicación de los principios, elementos de diseño,
+diseño inclusivo y arquitectura de información, así como el Design System
+establecido para los productos digitales.
+## 5.4. Applications UX/UI Design.
+### 5.4.1. Applications Wireframes.
+Esta sección incluye una sección interna donde se presenta y explica los Wireframes
+de las aplicaciones móviles. En la propuesta y la explicación debe evidenciarse la
+aplicación de los principios, elementos de diseño, diseño inclusivo y arquitectura de
+información. Utilizar para los wireframes las herramientas indicadas.
+### 5.4.2. Applications Wireflow Diagrams.
+Esta sección presenta la propuesta de Wireflows. Debe considerarse un Wireflow
+para cada User goal, considerando los User Persona para cada aplicación que forma
+parte del alcance. Es recomendable que el equipo elabore previamente los
+correspondientes Task Flows, para establecer un consenso sobre las rutas típicas de
+steps para cada User goal. Es importante recordar que la forma como se refleja un
+cambio en una pantalla (Wireframe) como resultado de la interacción en un flujo es
+agregar un paso con un Wireframe con la representación del nuevo estado. Utilizar
+20/41 V1.0
+para los Wireflows las herramientas indicadas. Cada Wireflow diagram requiere que
+se redacte el User goal y se complemente con una explicación del flujo especificado
+### 5.4.2. Applications Mock-ups.
+Esta sección presenta y explica los Mock-ups de las aplicaciones. En la propuesta y la
+explicación debe evidenciarse la aplicación de los principios, elementos de diseño,
+diseño inclusivo y arquitectura de información, así como el Design System
+establecido para los productos digitales. Utilizar para los mock-ups las herramientas
+indicadas.
+### 5.4.3. Applications User Flow Diagrams.
+Esta sección presenta la propuesta de User Flows. Debe considerarse un User Flow
+para cada User goal, considerando los User Persona para cada aplicación que forma
+parte del alcance. Estos User Flows deben ser consistentes con los Wireflows de los
+cuales se derivan. Debe recordarse que en el User Flow se incluyen los Mock-ups de
+las vistas o pantallas de las aplicaciones, junto con los flujos que constituyen la ruta
+esperada (happy path) y las rutas alternativas (unhappy paths). Utilizar para los User
+Flows las herramientas indicadas. Cada User Flow diagram requiere que se redacte el
+User goal y se complemente con una explicación de los flujos y condiciones
+especificados.
+## 5.5. Applications Prototyping.
+Esta sección incluye Prototipos de UI para Desktop y Mobile Web Browser con
+simulación de interacción y navegación, acorde con la propuesta de paths de User
+Flow Diagrams. Esta sección inicia con una introducción en la que se explica los
+principales criterios para las decisiones de interacción. Es importante evidenciar la
+relación con las decisiones de arquitectura de información, en particular sobre el
+sistema de navegación y los tipos de interacciones seleccionadas. Para cada caso
+debe incluirse 1 screenshot de video y un enlace a un video subido a Microsoft
+Stream para cada aplicación, en el que se demuestre y explique los principales flujos
+de interacción que cubren los prototipos.
+# Capítulo VI: Product Implementation, Validation & Deployment
+## 6.1. Software Configuration Management.
+### 6.1.1. Software Development Environment Configuration.
+En esta sección el equipo especifica, describe e indica los nombres de productos, el
+propósito de uso en el proyecto, la ruta de referencia (para software basado en
+modelos SaaS) o ruta de descarga (para productos que se ejecutan en el computador
+del miembro del equipo) de cada uno de los productos de software que deben
+utilizar los miembros del equipo para colaborar en el ciclo de vida de los productos
+digitales que forman la solución con IoT, considerando todos los tipos de actividades
+como Project Management, Requirements Management, Product UX/UI Design,
+Software Development, Software Testing, Software Deployment, Software
+Documentation, respetando las restricciones indicadas sobre productos de software
+y herramientas que se pueden utilizar.
+### 6.1.2. Source Code Management.
+En esta sección el equipo establece los medios y esquema de organización que
+aplicará para el seguimiento de modificaciones. Para ello utilizará GitHub como
+plataforma y sistema de control de versiones. Debe incluirse el URL del repositorio
+de GitHub para cada producto: Landing Page, Web Services, Frontend Web
+Applications. Tomar en cuenta que en el caso de Web Services, se incluye en el
+repositorio el proyecto y los archivos de pruebas, tanto unitarias como de
+integración/aceptación.
+En esta sección debe también explicarse de qué forma implementará GitFlow (Ver
+artículo “A successful Git branching model” de Vincent Driessen en la sección de
+Referencias) como Workflow de control de versiones, es decir qué branches (ramas)
+creará además de main branch (rama principal), por ejemplo, develop branch. Para
+GitFlow cada Feature requiere su propio branch, por ello debe especificar qué
+convenciones se aplicará para nombrar los feature branches. Igualmente debe incluir
+las convenciones para Release branches y Hotfix branches. Aplique semantic
+versioning para nombrar sus Releases (Vea “Semantic Versioning 2.0.0” en la sección
+de Referencias).
+Aplique Conventional Commits para los textos de mensajes en sus commits (Vea
+“Conventional Commits” en la sección de Referencias).
+### 6.1.3. Source Code Style Guide & Conventions.
+Aquí el equipo explica e indica las referencias que adoptará para nombrar elementos
+y programar en los lenguajes que se utilizan en la solución (en este caso HTML, CSS,
+JavaScript, TypeScript, Java, C#, Kotlin, Swift, C++, Python u otros según los
+contraints del proyecto; así como Gherkin para los archivos .feature). Para todos los
+lenguajes debe aplicar la nomenclatura en inglés. Adicionalmente, adopte
+convenciones estándares para coding (Vea por ejemplo “HTML Style Guide and
+Coding Conventions”, “Google HTML/CSS Style Guide”, “Gherkin Conventions for
+Readable Specifications”, “Angular coding style guide”, “Google Java Style Guide”,
+“Google TypeScript Style Guide” y “Spring Boot Features” en la sección de
+Referencias).
+### 6.1.4. Software Deployment Configuration.
+En esta sección el equipo especifica la configuración del despliegue de la solución,
+incluyendo los pasos necesarios para que, a partir de los repositorios de código
+fuente, se pueda lograr el despliegue o publicación satisfactorio de cada uno de los
+productos digitales en la solución (Landing Page, Web Services, Web Applications,
+Mobile Applications, Embedded Applications u otros productos incluidos).
+Adicionalmente a la explicación, el equipo incluye aquí el Deployment Diagram de C4
+Model.
+## 6.2. Landing Page, Services & Applications Implementation
+### 6.2.1. Sprint n
+#### 6.2.1.1. Sprint Planning n.
+#### 6.2.1.2. Aspect Leaders and Collaborators.
+![image](https://github.com/user-attachments/assets/8857cea1-07e9-4544-b7a6-884ff2b51efd)
+
+#### 6.2.1.3. Sprint Backlog n.
+#### 6.2.1.4. Development Evidence for Sprint Review.
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+
 
 # Conclusiones
-##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
-En esta sección el equipo presenta el Class Diagram de UML para las clases del
-Domain Layer en el bounded context. El nivel de detalle debe incluir además de las
-clases, interfaces, enumeraciones y sus relaciones, los miembros para cada clase,
-incluyendo atributos, métodos y el scope en cada caso (private, public, protected).
-Las relaciones deben incluir la calificación con nombres, la dirección (cuando aplica)
-y la multiplicidad. Utilice para la elaboración del diagrama la herramienta indicada.
-##### 4.2.6.6.2. Bounded Context Database Design Diagram
-En esta sección el equipo presenta y explica el Database Diagram que incluye los
-objetos de base de datos que permitirán la persistencia de información para los
-objetos del bounded context. Para el caso de un almacenamiento en base de datos
-relacional, aquí debe especificarse tablas, columnas, constraints (por ejemplo,
-primary, foreign key) y evidenciarse las relaciones entre tablas. Utilice para la
-elaboración del diagrama la herramienta indicada.
 
 # Conclusiones y Recomendaciones
 Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
