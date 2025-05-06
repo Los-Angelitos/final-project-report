@@ -1215,11 +1215,15 @@ Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Breña - Lima <br>
-Ocupación: Jefe de start up <br>
+Ocupación: Contador<br>
 Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
 Personalidad: Analítica <br>
 ![Entrevista° 1 - Huespedes](https://i.imgur.com/RqN0KAx.png)<br>
-En resumen, Anatoly es un huésped con un amateur camino de experiencia. Se presenta como una persona analítica, empática y profesional que busca siempre salir beneficiado de las decisiones. Nos relata que le resulta de mucha importancia un sistema que automatize y mejore los procesos de reserva, que incluya un historial de reservas e inclusive sugerencias de hoteles de acuerdo a sus preferencias e historial.
+Anatoly se presenta como una persona analítica, empática y profesional, que busca siempre salir beneficiado de las decisiones que toma. Nos relata que le resulta muy importante contar con un sistema que automatice y mejore los procesos de reserva, que incluya un historial de reservas e incluso sugerencias de hoteles según sus preferencias y experiencias anteriores.
+
+Es un huésped con un nivel de experiencia amateur, ya que es una persona apasionada por conocer nuevos lugares. Además, destaca la importancia de la atención al cliente en los servicios hoteleros, así como la facilidad para realizar reservas y la limpieza de las habitaciones. En algunas ocasiones ha utilizado aplicaciones web dedicadas a sistemas hoteleros; sin embargo, no fue una experiencia agradable debido a la falta de mejoras en dichos sistemas.
+
+Anatoly nos cuenta que sería muy valiosa una aplicación robusta que satisfaga las principales necesidades de los huéspedes al buscar un hotel que se adecúe a sus preferencias, y que facilite tanto la toma de decisiones como el proceso de hospedaje.
 
 <br><br>
 
