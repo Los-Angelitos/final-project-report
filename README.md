@@ -5434,6 +5434,7 @@ En este ejemplo, el usuario puede buscar información específica utilizando la 
   <img src="./assets/img/searching-systems/admin-bar.PNG" alt="Barra de búsqueda" width="50%" />
 </div><br><br>
 
+### 5.2.5. Navigation Systems.
 - **Búsqueda por filtros, páginas y orden**: El usuario podrá aplicar filtros a su búsqueda para refinar los resultados. Estos filtros incluirán opciones como fecha, tipo de información (reservas, pagos, etc.) y estado (pendiente, completado, etc.). Esto permitirá al usuario encontrar rápidamente la información que necesita. Como de la misma manera, existen barrás de acceso rápido a las páginas más importantes de la aplicación, como "Overview", "Analytics", "Providers", "...". Estas barrás de acceso rápido estarán disponibles en la parte superior de la pantalla y permitirán al usuario navegar rápidamente a las páginas que necesita.
 
 <div style="text-align: center;">
@@ -5443,11 +5444,6 @@ En este ejemplo, el usuario puede buscar información específica utilizando la 
   <img src="./assets/img/searching-systems/topbar2.PNG" alt="Barra de búsqueda" width="50%" />
 </div><br><br>
 
-### 5.2.5. Navigation Systems.
-Aquí el equipo explica cuáles serán las acciones y técnicas que guiarán a los usuarios
-a través del Landing Page y las aplicaciones, permitiéndoles cumplir sus metas e
-interactuar de forma satisfactoria con el producto. Aquí se debe incluir de qué
-maneras los usuarios irán recorriendo el contenido.
 
 ## 5.3. Landing Page UI Design.
 ### 5.3.1. Landing Page Wireframe.
