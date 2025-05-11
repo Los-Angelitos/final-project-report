@@ -5417,12 +5417,32 @@ móviles u otros productos digitales que se exponen vía un app store, debe incl
 ASO (App Store Optimization) elements como App Title, App keywords, App subtitle,
 App description.
 ### 5.2.4. Searching Systems.
-En esta sección el equipo explica qué medios de ayuda se brindará al usuario para la
-búsqueda de datos dentro del producto digital. Dichas decisiones sobre los sistemas
-de búsqueda tratan de evitar que los usuarios se sientan perdidos entre el volumen
-de información. Aquí se deben especificar qué opciones de búsqueda ofrecerán las
-aplicaciones, con qué filtros contará el usuario en cada caso y cómo lucirán los datos
-después de la búsqueda.
+El usuario que utilice la aplicación de SweetManager se encontrará con un gran volumen de información, por lo que es importante ofrecerle opciones de búsqueda efectivas. Para ello, se implementarán las siguientes opciones de búsqueda:
+- **Barra de búsqueda**: El usuario podrá utilizar una barra de búsqueda para encontrar información específica dentro de la aplicación. Esta barra de búsqueda estará disponible en todas las pantallas y permitirá al usuario buscar por palabras clave.
+- **Filtros de búsqueda**: El usuario podrá aplicar filtros a su búsqueda para refinar los resultados. Estos filtros incluirán opciones como fecha, tipo de información (reservas, pagos, etc.) y estado (pendiente, completado, etc.). Esto permitirá al usuario encontrar rápidamente la información que necesita.
+- **Búsqueda por nombre de hotel**: El usuario podrá buscar hoteles por su nombre, lo que le permitirá encontrar rápidamente el hotel que le interesa
+
+<div style="text-align: center;">
+  <img src="./assets/img/searching-systems/search-bar.PNG" alt="Barra de búsqueda" width="50%" />
+</div><br>
+En este ejemplo, el usuario puede buscar información específica utilizando la barra de búsqueda. La barra de búsqueda estará disponible en la mayoria de las pantallas de la aplicación, lo que permitirá al usuario encontrar rápidamente la información que necesita.
+<br><br>
+
+- **Búsqueda de administradores**: El usuario podrá buscar administradores por su dirección de correo electrónico, lo que le permitirá encontrar rápidamente la información de contacto del administrador que necesita.
+
+<div style="text-align: center;">
+  <img src="./assets/img/searching-systems/admin-bar.PNG" alt="Barra de búsqueda" width="50%" />
+</div><br><br>
+
+- **Búsqueda por filtros, páginas y orden**: El usuario podrá aplicar filtros a su búsqueda para refinar los resultados. Estos filtros incluirán opciones como fecha, tipo de información (reservas, pagos, etc.) y estado (pendiente, completado, etc.). Esto permitirá al usuario encontrar rápidamente la información que necesita. Como de la misma manera, existen barrás de acceso rápido a las páginas más importantes de la aplicación, como "Overview", "Analytics", "Providers", "...". Estas barrás de acceso rápido estarán disponibles en la parte superior de la pantalla y permitirán al usuario navegar rápidamente a las páginas que necesita.
+
+<div style="text-align: center;">
+  <img src="./assets/img/searching-systems/topbar.PNG" alt="Barra de búsqueda" width="50%" />
+</div><br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/searching-systems/topbar2.PNG" alt="Barra de búsqueda" width="50%" />
+</div><br><br>
+
 ### 5.2.5. Navigation Systems.
 Aquí el equipo explica cuáles serán las acciones y técnicas que guiarán a los usuarios
 a través del Landing Page y las aplicaciones, permitiéndoles cumplir sus metas e
