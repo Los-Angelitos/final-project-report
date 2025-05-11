@@ -5444,6 +5444,13 @@ En este ejemplo, el usuario puede buscar información específica utilizando la 
   <img src="./assets/img/searching-systems/topbar2.PNG" alt="Barra de búsqueda" width="50%" />
 </div><br><br>
 
+- **Camino de migajas de pan (BreadCrumb)**: El usuario podrá ver el camino de migajas de pan (breadcrumb) en la parte superior de la pantalla, lo que le permitirá ver su ubicación actual dentro de la aplicación y navegar fácilmente a las pantallas anteriores.
+
+<div style="text-align: center;">
+  <img src="./assets/img/searching-systems/breadcrumb.PNG" alt="Barra de búsqueda" width="50%" />
+</div><br><br>
+
+
 
 ## 5.3. Landing Page UI Design.
 ### 5.3.1. Landing Page Wireframe.
