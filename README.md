@@ -3047,7 +3047,87 @@ En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistem
 
 #### 4.2.1.1. Domain Layer
 
-### Agregados y Entidades del Dominio `IAM`
+### Agregados y Entidades del Dominio `IAM` en nuestro Web/Mobile Application
+
+En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
+
+### `Owner` *(Agregado)*
+
+Representa un gerente/dueño de un hotel registrado dentro del sistema de SweetManager.
+
+#### Atributos principales:
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del gerente |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del gerente |
+| `Surname`       | `string?`             | Apellidos del gerente |
+| `Phone`| `string?`             | Número de telefono del gerente |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el gerente |
+| `State`    | `string?`             | Estado de cuenta del gerente |
+
+#### Constructores:
+- Vacío `Owner()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+
+### `Admin` *(Agregado)*
+
+Representa un administrador de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del administrador |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del administrador |
+| `Surname`       | `string?`             | Apellidos del adminitrador |
+| `Phone`| `string?`             | Número de telefono del administrador |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el administrador |
+| `State`    | `string?`             | Estado de cuenta del administrador |
+| `HotelId`    | `int?`             | Relación con el hotel en que trabaja (`Hotel`) |
+
+#### Constructores:
+- Vacío `Admin()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`, `HotelId`.
+
+### `Guest` *(Agregado)*
+
+Representa un huésped de un hotel dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único del huésped |
+| `RoleId`    | `int?`                | Relación con el rol de sistema mediante su identificador único (`Rol`) |
+| `Name`       | `string?`             | Nombres del huésped |
+| `Surname`       | `string?`             | Apellidos del huésped |
+| `Phone`| `string?`             | Número de telefono del huésped |
+| `Email`      | `string?`             | Correo electrónico único que tendrá el huésped |
+| `State`    | `string?`             | Estado de cuenta del huésped |
+
+#### Constructores:
+- Vacío `Guest()`
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+
+### `GuestPreference` *(Entidad)*
+
+Representa el conjunto de preferencias de un huésped dentro del sistema de SweetManager.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de las preferencias del huésped |
+| `GuestId`       | `int?`             | Relación con el huésped de sistema mediante su identificador único (`Guest`) |
+| `Temperature`    | `int?`                | Temperatura preferida para las habitaciones reservadas |
+
+#### Constructores:
+- Vacío `GuestPreference()`
+- Por parámetros individuales: `Name`, `GuestId`, `Temperature`
+
+### Agregados y Entidades del Dominio `IAM` en nuestro Web Services
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de gestión organizacional de los hoteles.
 
@@ -3308,9 +3388,52 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 | `IOwnerRepository.cs` | Define operaciones sobres los gerentes: CRUD, FindAllByFiltersAsync, FindByHotelIdAsync, FindHotelIdByIdAsync. |
 
 --- 
+
 ##  Services
 
-### Credentials (OwnerCredential, AdminCredential, GuestCredential)
+### Servicios del Dominio `IAM` en nuestro Web/Mobile Application
+
+Cada bounded Context tiene definido sus servicios orientados al consumo de la API Rest para cada agregado y entidad.
+
+#### GuestPreference Api Service
+
+El servicio enfocado al consumo de los endpoints de la entidad `GuestPreference`.
+
+| Método                          | Descripción                                      |
+|---------------------------------|--------------------------------------------------|
+| `getByGuestId(guestId)`         | Obtener las preferencias de un específico huésped       |
+| `getById(id)`              | Obtener las preferencias por su identificador                      |
+| `create(guestPreference)`                     | Crear preferencias de un huésped                       |
+| `update(id, guestPreference)`      | Actualizar las preferencias de un huesped           |
+
+#### Auth Api Service
+
+El servicio enfocado a la autenticación, consumiendo endpoints del API Web Service.
+
+| Método                          | Descripción                                      |
+|---------------------------------|--------------------------------------------------|
+| `signUp(signUpRequest)`         | Crear cuenta de usuario       |
+| `signIn(signInRequest)`         | Iniciar sesión y obtener autorización                      |
+
+#### Users (Owner, Admin, Guest)
+
+A continuación, servicio enfocado en consumo de endpoints, relacionado con mantemiento de los usuarios: `Owner`,`Admin`,`Guest`.
+
+| Método                          | Descripción                                      |
+|---------------------------------|--------------------------------------------------|
+| `getOwnerById(id)`         | Obtener gerente por su identificador       |
+| `getAllOwners(filters)`   | Obtener todos los gerentes registrados, dado cumplan con filtros opcionales por campo: `hotelId`,`email`,`phone`,`state`, enviados como query parameters |
+| `getAdminById(id)`         | Obtener administrador por su identificador       |
+| `getAllAdmins(filters)`         | Obtener todos los administradores registrados, dado cumplan con filtros opcionales por campo: `hotelId`,`email`,`phone`,`state`, enviados como query parameters       |
+| `getGuestById(id)`         | Obtener huésped por su identificador       |
+| `getAllGuests(filters)`         | Obtener todos los admihuéspedes registrados, dado cumplan con filtros opcionales por campo: `hotelId`,`email`,`phone`,`state`, enviados como query parameters       |
+| `updateOwner(updateOwnerRequest)`         | Actualizar información de cuenta de gerente       |
+| `updateAdmin(updateAdminRequest)`         | Actualizar información de cuenta de administrador       |
+| `updateGuest(updateGuestRequest)`         | Actualizar información de cuenta de huésped       |
+
+### Servicios del Dominio `IAM` en nuestro Web Services
+
+#### Credentials (OwnerCredential, AdminCredential, GuestCredential)
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
@@ -3321,21 +3444,21 @@ Representa la contraseña y el valor de *salt* de la credencial, encriptados uti
 | `IOwnerCredentialCommandService.cs`       | Define comandos como crear, actualizar una credencial de gerente. |
 | `IOwnerCredentialQueryService.cs`       | Define consultas para obtener credenciales de gerentes mediante su identificador único. |
 
-### GuestPreference
+#### GuestPreference
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
 | `IGuestPreferenceCommandService.cs`     | Define comandos como crear, actualizar preferencias de un huésped. |
 | `IGuestPreferenceQueryService.cs`       | Define consultas para obtener preferencias de huésped mediante su identificador único o identificador del huésped. |
 
-### Role
+#### Role
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
 | `IRoleCommandService.cs`     | Define comandos como crear todos los roles. |
 | `IRoleQueryService.cs`       | Define consultas para obtener roles mediante su nombre, obtener todos los roles u obtener su identificador único por nombre |
 
-### Users (Owner, Admin y Guest)
+#### Users (Owner, Admin y Guest)
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
@@ -3766,11 +3889,11 @@ Representa un tipo de habitación.
 
 ###  Services
 
-### Servicios del Dominio `Reservations` en nuestro Web/Mobile Appliaction
+### Servicios del Dominio `Reservations` en nuestro Web/Mobile Application
 
-Por cada Bounded Context definimos su propio services, con un api Service para cada agregado/entidad
+Cada bounded Context tiene definido sus servicios orientados al consumo de la API Rest para cada agregado y entidad.
 
-### Room Api Service
+#### Room Api Service
 
 | Método                          | Descripción                                      |
 |---------------------------------|--------------------------------------------------|
@@ -3784,7 +3907,7 @@ Por cada Bounded Context definimos su propio services, con un api Service para c
 
 ---
 
-### Booking Api Service
+#### Booking Api Service
 
 | Método                             | Descripción                                         |
 |------------------------------------|-----------------------------------------------------|
@@ -3798,7 +3921,7 @@ Por cada Bounded Context definimos su propio services, con un api Service para c
 
 ---
 
-###  TypeRoom Api Service
+####  TypeRoom Api Service
 
 | Método          | Descripción                                 |
 |------------------|---------------------------------------------|
