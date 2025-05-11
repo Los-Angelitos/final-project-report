@@ -3064,11 +3064,12 @@ Representa un gerente/dueño de un hotel registrado dentro del sistema de SweetM
 | `Surname`       | `string?`             | Apellidos del gerente |
 | `Phone`| `string?`             | Número de telefono del gerente |
 | `Email`      | `string?`             | Correo electrónico único que tendrá el gerente |
+| `PhotoURL`      | `string?`             | Link de foto de perfil |
 | `State`    | `string?`             | Estado de cuenta del gerente |
 
 #### Constructores:
 - Vacío `Owner()`
-- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `PhotoURL`,`State`, `RoleId`.
 
 ### `Admin` *(Agregado)*
 
@@ -3084,12 +3085,13 @@ Representa un administrador de un hotel dentro del sistema de SweetManager.
 | `Surname`       | `string?`             | Apellidos del adminitrador |
 | `Phone`| `string?`             | Número de telefono del administrador |
 | `Email`      | `string?`             | Correo electrónico único que tendrá el administrador |
+| `PhotoURL`      | `string?`             | Link de foto de perfil |
 | `State`    | `string?`             | Estado de cuenta del administrador |
 | `HotelId`    | `int?`             | Relación con el hotel en que trabaja (`Hotel`) |
 
 #### Constructores:
 - Vacío `Admin()`
-- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`, `HotelId`.
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `PhotoURL`, `State`, `RoleId`, `HotelId`.
 
 ### `Guest` *(Agregado)*
 
@@ -3105,11 +3107,12 @@ Representa un huésped de un hotel dentro del sistema de SweetManager.
 | `Surname`       | `string?`             | Apellidos del huésped |
 | `Phone`| `string?`             | Número de telefono del huésped |
 | `Email`      | `string?`             | Correo electrónico único que tendrá el huésped |
+| `PhotoURL`      | `string?`             | Link de foto de perfil |
 | `State`    | `string?`             | Estado de cuenta del huésped |
 
 #### Constructores:
 - Vacío `Guest()`
-- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `State`, `RoleId`.
+- Por parámetros individuales: `Id`, `Name`, `Surname`, `Phone`, `Email`, `PhotoURL`, `State`, `RoleId`.
 
 ### `GuestPreference` *(Entidad)*
 
