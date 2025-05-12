@@ -5710,36 +5710,77 @@ como Project Management, Requirements Management, Product UX/UI Design,
 Software Development, Software Testing, Software Deployment, Software
 Documentation, respetando las restricciones indicadas sobre productos de software
 y herramientas que se pueden utilizar.
-### 6.1.2. Source Code Management.
-En esta sección el equipo establece los medios y esquema de organización que
-aplicará para el seguimiento de modificaciones. Para ello utilizará GitHub como
-plataforma y sistema de control de versiones. Debe incluirse el URL del repositorio
-de GitHub para cada producto: Landing Page, Web Services, Frontend Web
-Applications. Tomar en cuenta que en el caso de Web Services, se incluye en el
-repositorio el proyecto y los archivos de pruebas, tanto unitarias como de
-integración/aceptación.
-En esta sección debe también explicarse de qué forma implementará GitFlow (Ver
-artículo “A successful Git branching model” de Vincent Driessen en la sección de
-Referencias) como Workflow de control de versiones, es decir qué branches (ramas)
-creará además de main branch (rama principal), por ejemplo, develop branch. Para
-GitFlow cada Feature requiere su propio branch, por ello debe especificar qué
-convenciones se aplicará para nombrar los feature branches. Igualmente debe incluir
-las convenciones para Release branches y Hotfix branches. Aplique semantic
-versioning para nombrar sus Releases (Vea “Semantic Versioning 2.0.0” en la sección
-de Referencias).
-Aplique Conventional Commits para los textos de mensajes en sus commits (Vea
-“Conventional Commits” en la sección de Referencias).
+### 6.1.2. Source Code Management
+En esta sección, explicamos la forma en que estamos controlando los diferentes aspectos de nuestro proyecto. Basandonos en Gitflow, nos hemos organizado de tal modo que hemos trabajado con Features Branches (ramas por feature) y mediante pull requests, las hemos unido al develop y posteriormente a la rama main. Para su nomenclatura hemos seguido la siguiente estructura: 
+Prefijo: Comienza con feature/ para indicar claramente que se trata de una rama de función, seguido de un:
+Nombre descriptivo: Proporciona un nombre conciso y descriptivo para la función. 
+
+Adicionalmente usamos Conventional Commits y para la nomenclatura de commits
+Para los release: release-*
+Par los hotfix: hotfix-*
+y Semantic Versioning para la numeración de los release. Adjuntamos los enlaces para visualizar los repositorios de la organización:
+
+- Repositorio de Landing Page:
+
+https://github.com/Los-Angelitos/landing-page.git
+
+Elaborado con HTML, CSS Y JavaScript. 
+
+- Repositorio de Web Applications
+  
+Enlace: https://github.com/Los-Angelitos/web-application.git
+
+Elaborado con Vue.js.
+
+- Repositorio de Web Services
+
+https://github.com/Los-Angelitos/web-services.git
+
+Elaborado con .NET 
+
+- Repositorio del Documento
+
+https://github.com/Los-Angelitos/final-project-report.git
+
+Elaborado en Markdown.
+
 ### 6.1.3. Source Code Style Guide & Conventions.
-Aquí el equipo explica e indica las referencias que adoptará para nombrar elementos
-y programar en los lenguajes que se utilizan en la solución (en este caso HTML, CSS,
-JavaScript, TypeScript, Java, C#, Kotlin, Swift, C++, Python u otros según los
-contraints del proyecto; así como Gherkin para los archivos .feature). Para todos los
-lenguajes debe aplicar la nomenclatura en inglés. Adicionalmente, adopte
-convenciones estándares para coding (Vea por ejemplo “HTML Style Guide and
-Coding Conventions”, “Google HTML/CSS Style Guide”, “Gherkin Conventions for
-Readable Specifications”, “Angular coding style guide”, “Google Java Style Guide”,
-“Google TypeScript Style Guide” y “Spring Boot Features” en la sección de
-Referencias).
+**Lenguaje C#**
+
+| Referencias Adoptadas | Explicación y Convenciones|
+|-----------|-----------|
+| C# Coding Conventions: https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions | Consideramos en utilizar la documentación de Microsoft  para aprender buenas prácticas y sintaxis de C#, puesto que lo utilizaremos en el desarrollo del Back-end. | Microsoft ASP .NET Core Coding Guidelines: https://github.com/dotnet/aspnetcore/wiki/Engineering-guidelines#coding-guidelines | Consideramos en utilizar la documentación de la referencia especificada para estudiar y aprender buenas prácticas, convenciones y cómo integrar código C# a ASP .NET Core, ya que lo utilizaremos en el backend de nuestros productos. |
+
+
+**Lenguaje Vue.JS**
+| Referencias Adoptadas | Explicación y Convenciones |
+|-----------|-----------|
+| Html Style Guide and Coding Conventions: https://www.w3schools.com/html/html5_syntax.asp | Consideramos que será beneficioso guiarnos y aprender de la documentación de la referencia indicada, ya que contiene una gran cantidad de información sobre las etiquetas HTML. Esto es fundamental para su uso en nuestros proyectos. | Google HTML/ CSS Style Guide: https://google.github.io/styleguide/htmlcssguide.html | Consideramos guiarnos con la documentación de Google para tener una lista de recomendaciones que nos ayude a mejorar la estructura de nuestras páginas. |Vue Style Guide: https://vuejs.org/v2/style-guide/|Consideramos guiarnos de la documentación oficial de Vue.JS para estudiar la sintaxis, buenas prácticas, recomendaciones, etc. De esta manera podremos desarrollar un mejor producto de Software.|
+
+**Lenguaje Gherkin**
+
+| Referencias Adoptadas | Explicación y Convenciones|
+|-----------|-----------|
+| Gherkin Conventions for Readable Specifications: https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/ | Consideramos guiarnos y aprender de la documentación situada en la referencia indicada, porque necesitamos tener ideas de cómo trabajar bajo ese lenguaje y poder usar de manera adecuada las herramientas.| Gherkin Conventions for Readable Specifications: https://specflow.org/gherkin/gherkin-conventions-for-readable-specifications/ | Consideramos guiarnos y aprender de la documentación situada en la referencia indicada, porque necesitamos tener ideas de cómo trabajar bajo ese lenguaje y poder usar de manera adecuada las herramientas. |
+
+**Lenguaje Dart**
+
+| Referencias Adoptadas| Explicación y Convenciones |
+|-----------|-----------|
+| Dart Style Guide: https://dart.dev/effective-dart/style | Dart ofrece en su documentación, algunas practicas, estilos y nomenclaturas para tanto la declaracionde de funciones, carpetas, clases, etc. |
+
+**Lenguaje Md**
+
+| Referencias Adoptadas| Explicación y Convenciones |
+|-----------|-----------|
+| The Markdown Guide: https://www.markdownguide.org/ | Consideramos guiarnos de la guía oficial de markdown para tener mayor noción de trabajo con el uso de esta tecnología. Usaremos el archivo .md para todo lo que es descripción o información del proyecto. |
+
+**Lenguaje Python**
+
+| Referencias Adoptadas| Explicación y Convenciones |
+|-----------|-----------|
+| Python Enhancement Proposals hecho por The Python Software Foundation: https://peps.python.org/pep-0008/ | Usamos las convenciones determinadas por la organización detras de Python, para una amplia noción de las nomenclaturas y buenas practicas para la elaboración de la Api. |
+
 ### 6.1.4. Software Deployment Configuration.
 En esta sección el equipo especifica la configuración del despliegue de la solución,
 incluyendo los pasos necesarios para que, a partir de los repositorios de código
