@@ -5687,15 +5687,16 @@ Flows las herramientas indicadas. Cada User Flow diagram requiere que se redacte
 User goal y se complemente con una explicación de los flujos y condiciones
 especificados.
 ## 5.5. Applications Prototyping.
-Esta sección incluye Prototipos de UI para Desktop y Mobile Web Browser con
-simulación de interacción y navegación, acorde con la propuesta de paths de User
-Flow Diagrams. Esta sección inicia con una introducción en la que se explica los
-principales criterios para las decisiones de interacción. Es importante evidenciar la
-relación con las decisiones de arquitectura de información, en particular sobre el
-sistema de navegación y los tipos de interacciones seleccionadas. Para cada caso
-debe incluirse 1 screenshot de video y un enlace a un video subido a Microsoft
-Stream para cada aplicación, en el que se demuestre y explique los principales flujos
-de interacción que cubren los prototipos.
+Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
+
+Link directo hacia el prototyping: <span><a href="https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1">Application Prototyping</a></span>
+
+Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: <span><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/EcPZtVvb6ENHsdfHpvnekFIB0MCXzIXyG59ltCO2sDa5TA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fzertn">Video demostrativo</a></span>
+
+<img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
+
+
+
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
 ### 6.1.1. Software Development Environment Configuration.
