@@ -3686,15 +3686,17 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 </div>
 Se muestra el diagrama de componentes del Web Services, desde la solicitud del front end, comunicación con otros bounded contexts y consultas a la base de datos.
 <br><br>
+
 **Mobile Application**
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/iam-component.png" alt="Mobile Application Component Diagram" width="90%" />
 </div>
 Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
 <br><br>
+
 **Web Application**
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/iam-component.png" alt="Web Application Component Diagram" width="90%" />
+  <img src="./assets/img/iam-bounded-context/iam_diagram_component_web_application.png" alt="Web Application Component Diagram" width="90%" />
 </div>
 Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
