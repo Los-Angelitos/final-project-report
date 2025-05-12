@@ -5525,13 +5525,64 @@ La única tabla del bounded context `Communication` es la tabla `Notification`. 
 # Capítulo V: Solution UI/UX Design
 ## 5.1. Style Guidelines.
 ### 5.1.1. General Style Guidelines.
-Aquí se explica las decisiones y referencias visuales sobre conceptos generales
-básicos como Branding, Typography, Colors y Spacing, así como las dimensiones a
-adoptar para el tono de comunicación y lenguaje aplicado (Divertido/Serio,
-Formal/Casual, Respetuoso/Irreverente, Entusiasta/Sereno). Puede tomarse como
-referencia un Design System existente, sobre el cual se puede realizar adaptaciones.
-Esta sección debe incluir el sustento de principios y elementos de diseño
-considerados para las decisiones.
+
+<h4>Lenguaje y tonalidad:</h4>
+El lenguaje utilizado en la Landing Page, así como en las aplicacines web y móvil de SweetManager es claro y directo, evitando tecnicismos innecesarios. La tonalidad es amigable y profesional, buscando generar confianza en los usuarios. El idioma empleado en todos nuestros productos es el inglés. Cabe resaltar que tanto para la Web Application como para la Mobile Application se hará uso de i18nternacionalización (i18n) para permitir la traducción al español.
+<h4>Tipografía:</h4>
+La tipografía utilizada en la Landing Page, así como en las aplicaciones web y móvil de SweetManager es "Poppins". Esta tipografía es moderna y legible, lo que facilita la lectura en diferentes dispositivos. Se utilizarán diferentes tamaños y pesos de la tipografía para resaltar información importante y mejorar la jerarquía visual.
+
+</br>
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/poppins-typography.png" alt="Poppins Typography" width="80%" />
+</div>
+
+<br>
+
+<h4>Logotipo:</h4>
+El logotipo de SweetManager es una representación visual abstracta de la marca, que incorpora elementos como un camino que conduce hacia hoteles, simbolizados por las siglas de SweetManager. Su diseño moderno y profesional refuerza la identidad y el carácter distintivo de la marca.
+
+</br>
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/logotipo.png" alt="Logo" width="80%" />
+</div>
+<br>
+
+<h4>Colores:</h4>
+El color principal de SweetManager es el azul #0066CC, que se utiliza en la mayoría de los elementos de la interfaz. Este color transmite confianza y profesionalismo. Además, se utilizan otros colores secundarios para resaltar información importante y mejorar la legibilidad. A continuación se presenta una paleta de colores utilizada en la Landing Page, así como en las aplicaciones web y móvil de SweetManager:
+
+</br>
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/color-palette.png" alt="Color Palette" width="80%" /> 
+</div>
+<br>
+
+<h4>Colores de estado:</h4>
+
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/status-colors.png" alt="Status Colors" width="80%" />
+</div>
+<br>
+
+<li><span style="color:#C13515; font-weight:bold">#C13515</span>: Color utilizado para indicar errores o advertencias. Este color es llamativo y ayuda a captar la atención del usuario ante situaciones críticas. Por ejemplo, cuando un pago no se ha procesado correctamente o cuando hay un problema con la reserva de un hotel.</li>
+<li><span style="color:#FFCD1B; font-weight:bold">#FFCD1B</span>: Color utilizado para indicar advertencias o información importante. Este color es menos agresivo que el rojo, pero aún así llama la atención del usuario. Por ejemplo, cuando se requiere la confirmación de un pago o cuando hay información adicional que el usuario debe conocer.</li>
+<li><span style="color:#0066CC; font-weight:bold">#0066CC</span>: Color principal de SweetManager y se utiliza para resaltar información importante o acciones destacadas. Este color transmite confianza y profesionalismo.</li>
+<li><span style="color:#74788D; font-weight:bold">#74788D</span>: Color neutro que se utiliza para elementos secundarios o de fondo. Este color ayuda a crear un contraste adecuado con los colores principales y secundarios, mejorando la legibilidad de la interfaz.</li>
+<li><span style="color:#00CA75; font-weight:bold">#00CA75</span>: Color utilizado para indicar éxito o confirmación. Este color es positivo y transmite una sensación de logro. Por ejemplo, cuando un pago se ha procesado correctamente o cuando una reserva ha sido confirmada.</li>
+
+<br>
+<h4>Dispositivos Iot:</h4>
+Los mensajes de error y advertencia se mostrarán por consola y serán fáciles de entender, concisos y claros, permitiendo a los usuarios identificar y resolver problemas de manera eficiente. Asimismo para mostrar a los huéspedes el cambio de temperatura en el hotel, se utilizarán pantallas LCD reflectivas segmentadas que mostrarán la temperatura en grados Celsius. Estas pantallas son fáciles de leer y proporcionan información clara y precisa a los usuarios.
+
+</br>
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/reflective-lcd.png" alt="IoT Device" width="70%" />
+  <p style="font-style: italic">Ejemplo de pantalla LCD reflectiva segmentada</p>
+</div>
+
+
+<br><br>
+
+
 ### 5.1.2. Web, Mobile and IoT Style Guidelines.
 En esta sección se explica e ilustra las decisiones sobre los estándares visuales y de
 interacción para responsive web interfaces y las interfaces en mobile application
