@@ -6024,13 +6024,31 @@ Elaborado en Markdown.
 | Python Enhancement Proposals hecho por The Python Software Foundation: https://peps.python.org/pep-0008/ | Usamos las convenciones determinadas por la organización detras de Python, para una amplia noción de las nomenclaturas y buenas practicas para la elaboración de la Api. |
 
 ### 6.1.4. Software Deployment Configuration.
-En esta sección el equipo especifica la configuración del despliegue de la solución,
-incluyendo los pasos necesarios para que, a partir de los repositorios de código
-fuente, se pueda lograr el despliegue o publicación satisfactorio de cada uno de los
-productos digitales en la solución (Landing Page, Web Services, Web Applications,
-Mobile Applications, Embedded Applications u otros productos incluidos).
-Adicionalmente a la explicación, el equipo incluye aquí el Deployment Diagram de C4
-Model.
+
+A continuación se detalla el conjunto de herramientas para el despliegue de cada producto de la solución IoT.
+
+**Landing Page**
+
+Para el despliegue de la Landing Page, se utilizará Github Pages por su simplicidad y automatización de despliegue.
+
+**Web Application**
+
+Para el despliegue de la Web Application, se utilizará Vercel por su fácil integración con repositorios de Github, y automatizado despliegue rápido y fácil.
+
+**Web Services**
+
+Los servicios web se empaquetarán y desplegarán como contenedores utilizando Docker, lo que garantiza portabilidad, escalabilidad y una configuración consistente del entorno 
+
+**Edge API**
+El despliegue de la Edge API está en evaluación. Se considerará una solución que permita baja latencia y procesamiento cercano al cliente, como Cloudflare Workers, AWS Lambda@Edge
+
+**Embedded Application**
+El despliegue de la Embedded Application dependerá de la plataforma de hardware objetivo. Se evaluarán opciones como actualizaciones OTA (Over-the-Air) mediante servicios como Mender, Balena, o flujos personalizados utilizando protocolos ligeros como MQTT o HTTP para sincronización remota.
+
+**Mobile Application**
+Para la distribución de la aplicación móvil durante el desarrollo y pruebas, se utilizará Firebase App Distribution, permitiendo enviar versiones preliminares a testers internos de manera segura, rápida y con seguimiento de métricas de uso y errores.
+
+
 ## 6.2. Landing Page, Services & Applications Implementation
 ### 6.2.1. Sprint n
 #### 6.2.1.1. Sprint Planning n.
