@@ -1219,7 +1219,7 @@ A continuación, se registraron todas las entrevistas realizadas para nuestra so
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 Nombres: Carlo
 
@@ -1245,7 +1245,9 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 <br><br>
 **Entrevista 02 (Gerentes)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
 Sexo: Masculino <br>
@@ -1262,7 +1264,10 @@ En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años co
 <br><br>
 **Entrevista 03 (Gerentes)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+
+<br>
 Nombre: Luis Fernández <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
@@ -1285,7 +1290,7 @@ Al presentarle la idea de una aplicación móvil desde la cual pueda gestionar l
 <br><br>
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D  
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 Nombres: Gianella
 
@@ -1316,7 +1321,10 @@ Por último, Gianella menciona que la gestión de proveedores y el control de in
 
 **Entrevista 02 (Administradores)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+<br>
+
 Nombre: Fabricio Gabriel Chavez Morales <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
@@ -1337,7 +1345,10 @@ Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, 
 
 **Entrevista 03 (Administradores)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+
+<br>
 Nombre: Sergio Renard <br>
 Edad: 21 <br>
 Sexo: Masculino <br>
@@ -1359,7 +1370,9 @@ Sergio se describe como una persona práctica y enfocada en mejorar continuament
 
 **Entrevista 01 (Huéspedes)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+<br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
 Sexo: Masculino <br>
@@ -1379,7 +1392,9 @@ Anatoly nos cuenta que sería muy valiosa una aplicación robusta que satisfaga 
 **Entrevista 02 (Huéspedes)**
 
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+<br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
 Sexo: Masculino <br>
@@ -1401,7 +1416,9 @@ Ramón también relata que, en algunas ocasiones, ha experimentado problemas con
 
 **Entrevista 03 (Huéspedes)**
 <br>
-URL del vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D <br>
+
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+<br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
 Sexo: Masculino <br>
@@ -6234,7 +6251,7 @@ https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 
 | Contenido | URL del Vídeo |
 |--------------|--------------|
-| Vídeo de Exposición TB1      | Link del Vídeo: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D|  
-| VÍdeo de Exposición TP1      | Link del Vídeo: - |
+| Vídeo de Exposición TB1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|  
+| VÍdeo de Exposición TP1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/Ebc4BC61KJhMvF6pepkzXmgBxWOcKV3wH3mMWbtitQf7Zg?e=bPXcj9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|
 | Vídeo de Exposición TB2    | Link del Vídeo: - | 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
