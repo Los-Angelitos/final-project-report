@@ -2080,6 +2080,26 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP03</td>
     </tr>
     <tr>
+      <td>HU14</td>
+      <td>Visualizar el estado de los dispositivos IoT en el hotel</td>
+      <td>Como gerente quiero visualizar el estado de los dispositivos IoT en mi hotel para identificar el correcto funcionamiento de estos</td>
+      <td>
+        <b>Escenario 1:</b> Consultar dispositivos con estado funcional<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> solicita la lista de dispositivos registrados en su hotel<br>
+        <em>Then</em> el sistema responde con el listado de dispositivos y su estado "funcional".<br><br>
+        <b>Escenario 2:</b> Consultar dispositivos con fallas<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> uno o más dispositivos tienen fallos de comunicación o funcionamiento<br>
+        <em>Then</em> el sistema incluye en la respuesta el identificador del dispositivo y su estado correspondiente (por ejemplo: "sin comunicación", "error de sensor").<br><br>
+        <b>Escenario 3:</b> Consultar cuando no hay dispositivos registrados<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> solicita el estado de los dispositivos<br>
+        <em>Then</em> el sistema responde que no existen dispositivos registrados en el hotel.<br><br>
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
       <td>EP04</td>
       <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
       <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
@@ -6201,7 +6221,40 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.1.4. Development Evidence for Sprint Review.
 
-
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">sweetmanager-landing-page</td>
+      <td rowspan="3">develop</td>
+      <td>489a9fef5d887e7e37ee9b0f25bfddf5f02b6f03</td>
+      <td>feat: added route to web application.</td>
+      <td></td>
+      <td>2025-05-13T09:04:29Z</td>
+    </tr>
+    <tr>
+      <td>f0527d61b427f45096228e781d8644a229d88b6e</td>
+      <td>feat: added url to web application.</td>
+      <td></td>
+      <td>2025-05-13T07:49:14Z</td>
+    </tr>
+    <tr>
+      <td>42d21c3dfa1e9055d46f3f9d3dbe81122b313e3f</td>
+      <td>feat(services): rooms management card added</td>
+      <td></td>
+      <td>2025-05-10T07:46:33Z</td>
+    </tr>
+  </tbody>
+</table>
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 **Landing Page**
@@ -6209,13 +6262,14 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 Para el caso de la landing page, no se requiere de una suite de pruebas para su desarrollo.
 
 **Web Application**
+
 Para el caso de la web application, no se requiere de una suite de pruebas para su desarrollo.
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
 **Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
 - El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
-- El link de la Web application: 
+- El link de la Web application: https://sweet-manager-web-application.vercel.app
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
