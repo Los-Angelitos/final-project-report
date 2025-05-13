@@ -5888,16 +5888,15 @@ Asimismo, se realizó un video demostrativo para explicar los diferentes flujos 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
 ### 6.1.1. Software Development Environment Configuration.
-En esta sección el equipo especifica, describe e indica los nombres de productos, el
-propósito de uso en el proyecto, la ruta de referencia (para software basado en
-modelos SaaS) o ruta de descarga (para productos que se ejecutan en el computador
-del miembro del equipo) de cada uno de los productos de software que deben
-utilizar los miembros del equipo para colaborar en el ciclo de vida de los productos
-digitales que forman la solución con IoT, considerando todos los tipos de actividades
-como Project Management, Requirements Management, Product UX/UI Design,
-Software Development, Software Testing, Software Deployment, Software
-Documentation, respetando las restricciones indicadas sobre productos de software
-y herramientas que se pueden utilizar.
+
+Los productos involucrados para la solución IoT son:
+- Landing Page: Tiene como propósito cautivar a los visitantes a usar el servicios que ofrecemos, mediante datos estadísticos y vídeos de presentación.
+- Web Application:  La aplicación web permite a los gerentes de hoteles y al personal de administradores gestionar operaciones, monitorear el estado de dispositivos IoT (como sensores de temperatura), y visualizar datos estadísticos. También facilita la gestión de reservas, control de inventarios y la comunicación interna dentro del sistema hotelero.
+- Mobile Application: Brindar a los gerentes de hotel, administradores y huéspedes acceso a funcionalidades clave del sistema SweetManager desde cualquier lugar. Adicionalmente, simplificar la navegación para mostrar lo principal de cada segmento.
+- Web Services: El servicio API proporciona endpoints para la integración de estos con Web Application y Mobile Application. Permite el manejo de intercambio de datos entre la plataforma central y otros sistemas.
+- Edge API: La Edge API actúa como intermediario entre los dispositivos IoT en el hotel (como sensores de temperatura) y la infraestructura central en la nube. Procesa datos a nivel local para asegurar respuestas rápidas, como ajustar la temperatura en una habitación o detectar fallos en dispositivos de manera autónoma.
+- Embedded Application: Las aplicaciones embebidas se ejecutan directamente en los dispositivos IoT del hotel, gestionando tareas específicas como controlar el sistema de temperatura. Adicionalmente, permitirá enviar datos al sistema central de Sweet Manager para un monitoreo centralizado.
+
 ### 6.1.2. Source Code Management
 En esta sección, explicamos la forma en que estamos controlando los diferentes aspectos de nuestro proyecto. Basandonos en Gitflow, nos hemos organizado de tal modo que hemos trabajado con Features Branches (ramas por feature) y mediante pull requests, las hemos unido al develop y posteriormente a la rama main. Para su nomenclatura hemos seguido la siguiente estructura: 
 Prefijo: Comienza con feature/ para indicar claramente que se trata de una rama de función, seguido de un:
@@ -5938,7 +5937,6 @@ Elaborado en Markdown.
 | Referencias Adoptadas | Explicación y Convenciones|
 |-----------|-----------|
 | C# Coding Conventions: https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions | Consideramos en utilizar la documentación de Microsoft  para aprender buenas prácticas y sintaxis de C#, puesto que lo utilizaremos en el desarrollo del Back-end. | Microsoft ASP .NET Core Coding Guidelines: https://github.com/dotnet/aspnetcore/wiki/Engineering-guidelines#coding-guidelines | Consideramos en utilizar la documentación de la referencia especificada para estudiar y aprender buenas prácticas, convenciones y cómo integrar código C# a ASP .NET Core, ya que lo utilizaremos en el backend de nuestros productos. |
-
 
 **Lenguaje Vue.JS**
 | Referencias Adoptadas | Explicación y Convenciones |
@@ -5992,7 +5990,7 @@ Model.
 Para el caso de la landing page, no se requiere de una suite de pruebas para su desarrollo.
 
 **Web Application**
-
+Para el caso de la web application, no se requiere de una suite de pruebas para su desarrollo.
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
