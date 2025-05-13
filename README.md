@@ -5664,11 +5664,17 @@ El diseño del wireframe también contempla la arquitectura de información, est
 
 
 ### 5.3.2. Landing Page Mock-up.
-Esta sección presenta y explica los Mock-ups del Landing Page, tanto en su versión
-para Desktop Web Browser como Mobile Web Browser. En la propuesta y la
-explicación debe evidenciarse la aplicación de los principios, elementos de diseño,
-diseño inclusivo y arquitectura de información, así como el Design System
-establecido para los productos digitales.
+
+El mock-up de la Landing Page presenta una interfaz moderna, coherente y visualmente atractiva siguiendo la identidd visual de la marca definida. La paleta utilizada se centra en el azul como color principal, lo cual comunica confianza, profesionalismo y serenidad. La elección de la tipografía “Poppins” contribuye a una lectura clara y fluida, gracias a su estilo limpio y contemporáneo.
+
+En términos de principios de diseño, se han aplicado conceptos como la proximidad, alineación, contraste y repetición, lo que permite una organización visual coherente y facilita que el usuario identifique patrones y jerarquías en el contenido. La estructura sigue una lógica de arquitectura de información en la que los bloques de contenido están jerarquizados desde lo más general a lo más específico, guiando al usuario a través de una trayectoria clara y efectiva. Asimismo, las llamadas a la acción (CTAs) están estratégicamente ubicadas para incentivar la conversión sin interrumpir la experiencia de navegación.
+
+<div style="text-align: center;">
+  <img src="./assets/img/landing-page/landing-page-mockup.png" width="80%" />
+  <p style="font-style: italic">Mock-up de la Landing page para Desktop web browser</p>
+
+
+
 ## 5.4. Applications UX/UI Design.
 ### 5.4.1. Applications Wireframes.
 Esta sección incluye una sección interna donde se presenta y explica los Wireframes
