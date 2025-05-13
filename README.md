@@ -6034,6 +6034,77 @@ En términos de principios de diseño, se han aplicado conceptos como la proximi
 
 ## 5.4. Applications UX/UI Design.
 ### 5.4.1. Applications Wireframes.
+
+Los Wireframes diseñados para el Web Application muestran una organización orientada a ofrecer una navegación intuitiva y fluida para los usuarios. En la parte superior se encuentra el encabezado, con el logo y las opciones principales, y, directamente debajo, está el menú de navegación principal, el cual permite un acceso en todo momento a las pantallas más importantes. Este diseño organiza la información de forma que sea fácil de entender y cómoda a la vista, asegurándose de que cada sección sea fácilmente reconocible y accesible:
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%281%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%282%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%283%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%284%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%285%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%286%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%287%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%288%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%289%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2810%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2811%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2812%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2813%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2814%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2815%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2816%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2817%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2818%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2819%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2820%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2821%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2822%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2823%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2824%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2825%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2826%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2827%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2828%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2829%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2830%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2831%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2832%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2833%29.png)
+
+![Wireframes](./assets/img/wireframes/web/wireframes%20%2834%29.png)
+                                            
 El wireframe diseñado para el Mobile Application muestra una disposición estructurada por bloques, pensada para ofrecer una navegación fluida e intuitiva. En la parte superior se ubica un encabezado funcional que incorpora el menú principal de navegación, asegurando el acceso constante y visible a las secciones más relevantes del sitio. Para la versión Mobile Web Browser de la aplicación, se ha optado por un menú hamburguesa que permite maximizar el espacio de visualización y mantener la estética minimalista, al tiempo que facilita la navegación. Este enfoque es especialmente útil en dispositivos móviles, donde el espacio de pantalla es limitado.
 
 Este diseño de wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
@@ -6059,18 +6130,71 @@ Este diseño de wireframe también contempla la arquitectura de información, es
 </div><br><br>
 
 
-
 ### 5.4.2. Applications Wireflow Diagrams.
-Esta sección presenta la propuesta de Wireflows. Debe considerarse un Wireflow
-para cada User goal, considerando los User Persona para cada aplicación que forma
-parte del alcance. Es recomendable que el equipo elabore previamente los
-correspondientes Task Flows, para establecer un consenso sobre las rutas típicas de
-steps para cada User goal. Es importante recordar que la forma como se refleja un
-cambio en una pantalla (Wireframe) como resultado de la interacción en un flujo es
-agregar un paso con un Wireframe con la representación del nuevo estado. Utilizar
-20/41 V1.0
-para los Wireflows las herramientas indicadas. Cada Wireflow diagram requiere que
-se redacte el User goal y se complemente con una explicación del flujo especificado
+En esta sección presentaremos los Wireflow Diagrams, los cuales definen el flujo de nuestra aplicación. Hemos relacionado cada uno a un User Goal, el cual determina cuál será el resultado final del flujo:
+
+#### User Goals:
+
+Registrarse:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-1.png)
+
+Iniciar Sesión:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-2.png)
+
+Visualizar información del Hotel:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-3.png)
+
+Realizar una reserva y visualizarla:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-4.png)
+
+Ver perfil de administrador:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-5.png)
+
+Establecer preferencias de huésped:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-6.png)
+
+Registrar un hotel nuevo:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-7.png)
+
+Registrar una habitación nueva:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-8.png)
+
+Administrar las reservas en su hotel:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-9.png)
+
+Visualizar mensajes:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-10.png)
+
+Revisar analíticas financieras del hotel:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-11.png)
+
+Revisar lista de proveedores:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-12.png)
+
+Revisar inventario:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-13.png)
+
+Gestionar administradores del hotel:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-14.png)
+
+Registrar y usar dispositivos IoT:
+
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-15.png)
+
 ### 5.4.2. Applications Mock-ups.
 
 Para la aplicación web, se han diseñado mock-ups que reflejan la identidad visual de la marca y los principios de diseño establecidos. A continuación se presentan los mock-ups de las pantallas de la aplicación web.
