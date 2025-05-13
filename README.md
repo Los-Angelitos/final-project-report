@@ -6049,16 +6049,54 @@ Los Wireframes diseñados para el Web Application muestran una organización ori
 ![Wireframes](./assets/img/wireframes/web/wireframes%20%2834%29.png)
 
 ### 5.4.2. Applications Wireflow Diagrams.
-Esta sección presenta la propuesta de Wireflows. Debe considerarse un Wireflow
-para cada User goal, considerando los User Persona para cada aplicación que forma
-parte del alcance. Es recomendable que el equipo elabore previamente los
-correspondientes Task Flows, para establecer un consenso sobre las rutas típicas de
-steps para cada User goal. Es importante recordar que la forma como se refleja un
-cambio en una pantalla (Wireframe) como resultado de la interacción en un flujo es
-agregar un paso con un Wireframe con la representación del nuevo estado. Utilizar
-20/41 V1.0
-para los Wireflows las herramientas indicadas. Cada Wireflow diagram requiere que
-se redacte el User goal y se complemente con una explicación del flujo especificado
+En esta sección presentaremos los Wireflow Diagrams, los cuales definen el flujo de nuestra aplicación. Hemos relacionado cada uno a un User Goal, el cual determina cuál será el resultado final del flujo:
+
+#### User Goals:
+Registrarse:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-1.png)
+
+Iniciar Sesión:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-2.png)
+
+Visualizar información del Hotel:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-3.png)
+
+Realizar una reserva y visualizarla:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-4.png)
+
+Ver perfil de administrador:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-5.png)
+
+Establecer preferencias de huésped:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-6.png)
+
+Registrar un hotel nuevo:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-7.png)
+
+Registrar una habitación nueva:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-8.png)
+
+Administrar las reservas en su hotel:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-9.png)
+
+Visualizar mensajes:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-10.png)
+
+Revisar analíticas financieras del hotel:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-11.png)
+
+Revisar lista de proveedores:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-12.png)
+
+Revisar inventario:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-13.png)
+
+Gestionar administradores del hotel:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-14.png)
+
+Registrar y usar dispositivos IoT:
+![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-15.png)
+
 ### 5.4.2. Applications Mock-ups.
 Esta sección presenta y explica los Mock-ups de las aplicaciones. En la propuesta y la
 explicación debe evidenciarse la aplicación de los principios, elementos de diseño,
