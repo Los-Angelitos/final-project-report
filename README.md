@@ -5939,15 +5939,38 @@ En términos de principios de diseño, se han aplicado conceptos como la proximi
 <div style="text-align: center;">
   <img src="./assets/img/landing-page/landing-page-mockup.png" width="80%" />
   <p style="font-style: italic">Mock-up de la Landing page para Desktop web browser</p>
+</div><br><br>
 
 
 
 ## 5.4. Applications UX/UI Design.
 ### 5.4.1. Applications Wireframes.
-Esta sección incluye una sección interna donde se presenta y explica los Wireframes
-de las aplicaciones móviles. En la propuesta y la explicación debe evidenciarse la
-aplicación de los principios, elementos de diseño, diseño inclusivo y arquitectura de
-información. Utilizar para los wireframes las herramientas indicadas.
+El wireframe diseñado para el Mobile Application muestra una disposición estructurada por bloques, pensada para ofrecer una navegación fluida e intuitiva. En la parte superior se ubica un encabezado funcional que incorpora el menú principal de navegación, asegurando el acceso constante y visible a las secciones más relevantes del sitio. Para la versión Mobile Web Browser de la aplicación, se ha optado por un menú hamburguesa que permite maximizar el espacio de visualización y mantener la estética minimalista, al tiempo que facilita la navegación. Este enfoque es especialmente útil en dispositivos móviles, donde el espacio de pantalla es limitado.
+
+Este diseño de wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
+
+<div style="text-align: center;">
+  <img src="./assets/img/mobile-application/wireframe.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Mobile Application</p>
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/mobile-application/wireframe2.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Mobile Application</p>
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/mobile-application/wireframe3.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Mobile Application</p>
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/mobile-application/wirefram4.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Mobile Application</p>
+</div><br><br>
+
+
+
 ### 5.4.2. Applications Wireflow Diagrams.
 Esta sección presenta la propuesta de Wireflows. Debe considerarse un Wireflow
 para cada User goal, considerando los User Persona para cada aplicación que forma
