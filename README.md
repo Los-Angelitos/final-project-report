@@ -2378,99 +2378,100 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HTU01</td>
       <td>Exponer endpoint para registrar habitación</td>
-      <td>Como Developer quiero exponer un endpoint POST /api/rooms para permitir registrar una nueva habitación a un hotel por medio de una API RESTful.</td>
+      <td>Como Developer quiero registrar una habitación por medio de un API para que pueda estar disponible para crear features relacionadas con un hotel</td>
       <td>
-        <b>Scenario:</b> Registro exitoso de una habitación<br>
-        <em>Given</em> un payload válido con datos de tipo, estado y hotelId del hotel asociado<br>
-        <em>When</em> se realiza un POST a /api/rooms<br>
-        <em>Then</em> la API responde con 201 Created y retorna el objeto creado<br><br>
-        <b>Scenario:</b> Registro fallido por datos incompletos<br>
-        <em>Given</em> un payload que no incluye el campo hotelId<br>
-        <em>When</em> se hace un POST a /api/rooms<br>
-        <em>Then</em> la API responde con 400 Bad Request<br>
-        <em>And</em> proporciona un mensaje de error indicando los campos obligatorios.<br><br>
-        <b>Scenario:</b> Registro fallido por hotelId inexistente<br>
-        <em>Given</em> un payload con un hotelId que no existe en la base de datos<br>
-        <em>When</em> se envía un POST a /api/rooms<br>
-        <em>Then</em> la API responde con 404 Not Found<br>
-        <em>And</em> proporciona un mensaje de error indicando que el hotel no fue encontrado.<br><br>
+        <b>Scenario:</b> Añadir habitación con ID de hotel existente<br>
+        <em>Given</em> el endpoint /api/rooms está disponible<br>
+        <em>When</em> una solicitud Post es enviada con un payload válido con datos de tipo, estado y hotelId del hotel asociado existente<br>
+        <em>Then</em> una respuesta con estatus 201 Created es recibida<br>
+        <em>And</em> un Room Resource es incluido en el Body de la respuesta con un nuevo Id, y valores registrados para el estado, tipo y id de hotel asociado existente.<br><br>
+        <b>Scenario:</b> Añadir habitación sin incluir ID de hotel<br>
+        <em>Given</em> el endpoint /api/rooms está disponible<br>
+        <em>When</em> una solicitud Post es enviada con un payload incompleto que no incluye el campo hotelId<br>
+        <em>Then</em> una respuesta con estatus 400 Bad Request es recibida<br>
+        <em>And</em> un mensaje de error es incluido en el Body indicando que hotelId es requerido.<br><br>
+        <b>Scenario:</b> Añadir habitación con ID de hotel inexistente<br>
+        <em>Given</em> el endpoint /api/rooms está disponible<br>
+        <em>When</em> una solicitud Post es enviada con un payload válido pero con un hotelId que no existe<br>
+        <em>Then</em> una respuesta con estatus 404 Not Found es recibida<br>
+        <em>And</em> un mensaje de error es incluido en el Body indicando que no se encontró el hotel con el ID especificado.
       </td>
       <td>EP06</td>
     </tr>
     <tr>
-      <td>HTU02</td>
-      <td>Consultar habitaciones filtradas por estado</td>
-      <td>Como Developer quiero exponer un endpoint GET /api/rooms?status=activo|inactivo para permitir consultar habitaciones por su estado.</td>
-      <td>
-        <b>Scenario:</b> Consulta con filtro "activo"<br>
-        <em>Given</em> que existen habitaciones registradas con estados "activo" e "inactivo"<br>
-        <em>When</em> se realiza una solicitud GET /api/rooms?status=activo<br>
-        <em>Then</em> la API responde con un código 200 OK<br>
-        <em>And</em> retorna solo habitaciones con estado "activo"<br><br>
-        <b>Scenario:</b> Consulta sin filtros<br>
-        <em>When</em> se realiza una solicitud GET /api/rooms sin parámetros<br>
-        <em>Then</em> la API responde con código 200 OK<br>
-        <em>And</em> retorna todas las habitaciones<br><br>
-        <b>Scenario:</b> Filtro con valor inválido<br>
-        <em>Given</em> que el parámetro de status tiene un valor no permitido (por ejemplo status=pending)<br>
-        <em>When</em> se realiza una solicitud GET /api/rooms?status=pending<br>
-        <em>Then</em> la API responde con código 400 Bad Request<br>
-        <em>And</em> retorna retorna un mensaje de error indicando que el valor del filtro debe ser "activo" o "inactivo".<br><br>
-      </td>
+        <td>HTU02</td>
+        <td>Consultar habitaciones filtradas por estado</td>
+        <td>Como Developer quiero obtener la lista de habitaciones por medio de un API para que pueda mostrar resultados según su estado en la interfaz de usuario</td>
+        <td>
+          <b>Scenario:</b> Consultar habitaciones con estado "activo"<br>
+          <em>Given</em> el endpoint /api/rooms está disponible y existen habitaciones con estados "activo" e "inactivo"<br>
+          <em>When</em> una solicitud GET es enviada con el parámetro status=activo<br>
+          <em>Then</em> una respuesta con estatus 200 OK es recibida<br>
+          <em>And</em> el cuerpo de la respuesta incluye únicamente habitaciones con estado "activo".<br><br>
+          <b>Scenario:</b> Consultar habitaciones sin aplicar filtro<br>
+          <em>Given</em> el endpoint /api/rooms está disponible<br>
+          <em>When</em> una solicitud GET es enviada sin parámetros<br>
+          <em>Then</em> una respuesta con estatus 200 OK es recibida<br>
+          <em>And</em> el cuerpo de la respuesta incluye todas las habitaciones disponibles.<br><br>
+          <b>Scenario:</b> Consultar habitaciones con filtro inválido<br>
+          <em>Given</em> el endpoint /api/rooms está disponible<br>
+          <em>When</em> una solicitud GET es enviada con un valor de status no permitido (por ejemplo, status=pending)<br>
+          <em>Then</em> una respuesta con estatus 400 Bad Request es recibida<br>
+          <em>And</em> un mensaje de error es incluido en el cuerpo indicando que el valor de status debe ser "activo" o "inactivo".
+        </td>
       <td>EP06</td>
     </tr>
     <tr>
       <td>HTU03</td>
       <td>Desvincular administrador de una organización</td>
-      <td>Como Developer quiero crear un endpoint DELETE /api/admins/{adminId} para que un usuario owner pueda remover un administrador de su organización y pueda mantener control sobre su equipo.</td>
+      <td>Como Developer quiero desvincular a un administrador de una organización por medio de un API para que pueda mantener actualizada la interfaz del equipo de trabajo</td>
       <td>
-        <b>Scenario:</b> Desvinculación exitosa<br>
-        <em>Given</em> que el adminId pertenece a la organización del usuario que solicita la desvinculación<br>
-        <em>When</em> DELETE /api/admins/123<br>
-        <em>Then</em> la API responde con 204 No Content<br>
-        <em>And</em> el administrador es eliminado de la organización<br><br>
-        <b>Scenario:</b> 
-        Admin no pertenece a la organización<br>
-        <em>Given</em> que el adminId no pertenece a la organización del solicitante,<br>
-        <em>When</em> se realiza un DELETE /api/admins/999<br>
-        <em>Then</em> la API responde con 403 Forbidden<br>
-        <em>And</em> un mensaje indicando que el administrador no pertenece a la organización.<br><br>
+        <b>Scenario:</b> Desvinculación exitosa de un administrador<br>
+        <em>Given</em> el endpoint /api/admins/{adminId} está disponible y el adminId pertenece a la organización del usuario solicitante<br>
+        <em>When</em> una solicitud DELETE es enviada al endpoint con un adminId válido<br>
+        <em>Then</em> una respuesta con estatus 204 No Content es recibida<br>
+        <em>And</em> el administrador es removido de la organización.<br><br>
+        <b>Scenario:</b> Intento de desvincular un administrador ajeno<br>
+        <em>Given</em> el endpoint /api/admins/{adminId} está disponible pero el adminId no pertenece a la organización del usuario solicitante<br>
+        <em>When</em> una solicitud DELETE es enviada al endpoint con dicho adminId<br>
+        <em>Then</em> una respuesta con estatus 403 Forbidden es recibida<br>
+        <em>And</em> el cuerpo de la respuesta incluye un mensaje indicando que el administrador no pertenece a la organización del usuario solicitante.
       </td>
       <td>EP06</td>
     </tr>
     <tr>
       <td>HTU04</td>
       <td>Exponer endpoint para registrar reserva</td>
-      <td>Como Developer quiero exponer un endpoint POST /api/bookings para permitir que un huésped registre su reserva desde la web, asegurando validaciones adecuadas de fechas y disponibilidad.</td>
+      <td>Como Developer quiero registrar una reserva por medio de un API para que pueda permitir a los huéspedes realizar reservas desde la interfaz web</td>
       <td>
-        <b>Scenario:</b> Reserva exitosa<br>
-        <em>Given</em> que el payload contiene datos válidos de fechas, huésped y habitación<br>
-        <em>When</em> se realiza un POST /api/bookings<br>
-        <em>Then</em> la API responde con 201 Created 
-        <em>And</em> retorna el objeto de reserva creado.<br><br>
-        <b>Scenario:</b> Fechas inválidas<br>
-        <em>Given</em> que el endDate es anterior al startDate<br>
-        <em>When</em> se envía un POST /api/bookings con esas fechas<br>
-        <em>Then</em> la API responde 400 Bad Request
-        <em>And</em> retorna un mensaje de error que indique que las fechas no son válidas.<br>
+        <b>Scenario:</b> Reserva registrada exitosamente<br>
+        <em>Given</em> el endpoint /api/bookings está disponible y el payload contiene datos válidos de fechas, huésped y habitación<br>
+        <em>When</em> una solicitud POST es enviada al endpoint con dicho payload<br>
+        <em>Then</em> una respuesta con estatus 201 Created es recibida<br>
+        <em>And</em> un Booking Resource es incluido en el cuerpo de la respuesta con los datos registrados.<br><br>
+        <b>Scenario:</b> Registro fallido por fechas inválidas<br>
+        <em>Given</em> el payload incluye una endDate anterior al startDate<br>
+        <em>When</em> se envía una solicitud POST a /api/bookings con esas fechas<br>
+        <em>Then</em> una respuesta con estatus 400 Bad Request es recibida<br>
+        <em>And</em> el cuerpo de la respuesta contiene un mensaje de error indicando que las fechas no son válidas.
       </td>
       <td>EP06</td>
     </tr>
     <tr>
-      <td>HTU05</td>
-      <td>Exponer endpoint para ver huéspedes alojados</td>
-      <td>Como Developer quiero crear un endpoint GET /api/bookings/active para listar a los huéspedes que actualmente se encuentran alojados, junto con la habitación que ocupan y el rango de fechas de su reserva. </td>
-      <td>
-        <b>Scenario:</b> Lista huéspedes alojados<br>
-        <em>Given</em> que existen reservas activas con fecha actual entre startDate y endDate<br>
-        <em>When</em> se realiza un GET /api/bookings/active<br>
-        <em>Then</em> la API responde con 200 OK<br>
-        <em>And</em>retorna una lista con de huéspedes con su nombre, habitación, y fecha de inicio y fin de la reserva.<br><br>
-        <b>Scenario:</b> Sin huéspedes alojados<br>
-        <em>Given</em> que no existen reservas activas para la fecha actual<br>
-        <em>When</em> se realiza un GET /api/bookings/active<br>
-        <em>Then</em> la API responde con 200 OK<br>
-        <em>And</em> un array vacío [].
+    <td>HTU05</td>
+    <td>Exponer endpoint para ver huéspedes alojados</td>
+    <td>Como Developer quiero consultar los huéspedes actualmente alojados por medio de un API para mostrarlos en la interfaz junto con sus habitaciones y fechas de reserva</td>
+    <td>
+      <b>Scenario:</b> Listar huéspedes actualmente alojados<br>
+      <em>Given</em> el endpoint /api/bookings/active está disponible y existen reservas activas cuya fecha actual se encuentra entre startDate y endDate<br>
+      <em>When</em> una solicitud GET es enviada al endpoint<br>
+      <em>Then</em> una respuesta con estatus 200 OK es recibida<br>
+      <em>And</em> el cuerpo de la respuesta contiene una lista de huéspedes alojados con su nombre, número de habitación y fechas de inicio y fin de reserva.<br><br>
+      <b>Scenario:</b> No hay huéspedes actualmente alojados<br>
+      <em>Given</em> que no existen reservas activas para la fecha actual<br>
+      <em>When</em> se envía una solicitud GET a /api/bookings/active<br>
+      <em>Then</em> una respuesta con estatus 200 OK es recibida<br>
+      <em>And</em> el cuerpo de la respuesta contiene un array vacío [].
       </td>
       <td>EP06</td>
     </tr>
