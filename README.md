@@ -4596,10 +4596,22 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
 URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
 <br><br>
-<div style="text-align: center;">
-  <img src="./assets/img/c4-model/inventory-component.png" alt="Component Diagram" width="90%" />
-</div><br><br>
 
+**Web Services**
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/L221yCb.png" alt="Inventory dsl for web services" width="90%" />
+</div><br>
+
+**Mobile Application**
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/g8Dqz1w.png" alt="Inventory dsl for mobile application" width="90%" />
+</div><br>
+
+**Web Application**
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/wW0koyh.png" alt="Inventory dsl for web application" width="90%" />
+</div><br>
 
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
