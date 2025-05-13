@@ -6862,3 +6862,8 @@ https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 | VÍdeo de Exposición TP1      | Link del Vídeo: - |
 | Vídeo de Exposición TB2    | Link del Vídeo: - | 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
+
+## Kanban Board
+| Contenido | URL del Trello |
+|--------------|--------------|
+| Kanban Board Sprint 1      | Link del Vídeo: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
