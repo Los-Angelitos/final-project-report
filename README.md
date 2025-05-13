@@ -6195,6 +6195,41 @@ Registrar y usar dispositivos IoT:
 
 ![Wireflow](./assets/img/wireflow-diagrams/web/wireflow-15.png)
 
+
+#### User Goal: Registrarse a la aplicación de SweetManager
+
+En este flujo podemos visualizar que el usuario puede registrarse a la aplicación de SweetManager. El flujo comienza con el usuario accediendo a la página de inicio de sesión, donde tiene la opción de registrarse. Al hacer clic en "Registrarse", se le redirige a la página de registro, donde debe completar un formulario con su información personal. Una vez que el formulario es enviado, el sistema valida los datos y, si son correctos, crea una nueva cuenta para el usuario. Finalmente, se muestra un mensaje de confirmación y se redirige al usuario a la página de inicio.
+
+<div style="text-align: center;">
+  <img src="./assets/img/wireflow-diagrams/wireflowmobile1.png" width="80%" />
+  <p style="font-style: italic">Wireflow de Registrarse</p>
+</div><br><br>
+
+
+#### User Goal: Añadir un nuevo hotel
+
+El siguiente flujo muestra cómo el usuario Dueño de un hotel es capaz de añadir un nuevo hotel a la aplicación. Este flujo comienza con el usuario seleccionando la opción de añadir un nuevo hotel en la página principal de la aplicación. Luego, el usuario ingresa los datos necesarios para crear el nuevo hotel y finalmente se redirige a la página principal de la aplicación.
+
+<div style="text-align: center;">
+  <img src="./assets/img/wireflow-diagrams/wireflowmobile2.png" width="80%" />
+  <p style="font-style: italic">Wireflow de Registrarse</p>
+</div><br><br>
+
+
+#### User Goal: Enviar mensaje a usuario dentro de organización
+
+En este flujo se puede observar cómo el usuario Dueño de un hotel es capaz de enviar un mensaje a otro usuario dentro de la organización. Este flujo comienza con el usuario seleccionando la opción de enviar un mensaje en la página principal de la aplicación. Luego, el usuario ingresa el contenido del mensaje y finalmente se redirige a la página principal de la aplicación.
+
+
+  <div style="text-align: center;">
+  <img src="./assets/img/wireflow-diagrams/wireflowmobile3.png" width="80%" />
+  <p style="font-style: italic">Wireflow de Registrarse</p>
+</div><br><br>
+
+
+
+
+
 ### 5.4.2. Applications Mock-ups.
 
 Para la aplicación web, se han diseñado mock-ups que reflejan la identidad visual de la marca y los principios de diseño establecidos. A continuación se presentan los mock-ups de las pantallas de la aplicación web.
