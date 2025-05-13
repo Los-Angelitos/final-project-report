@@ -5471,11 +5471,30 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
+A continuación, se presentan los diagramas de componentes tanto a nivel de Web Services, como de la Web y Mobile Application. Estos diagramas ilustran la interacción del usuario al acceder a las funciones del Bounded Context Commerce. Los diagramas muestran los componentes principales y sus interacciones<br>
+
+URL Structurizr: <a href="https://structurizr.com/share/83581/1b4eb2ca-2f99-4fa1-bfcb-b16e225cf362">https://structurizr.com/share/83581/1b4eb2ca-2f99-4fa1-bfcb-b16e225cf362</a>
 <br><br>
+
+##### Backend
+En este diagrama, se muestra la interacción de los componentes en el BackEnd, dividiéndolos en sus respectivos layers:<br>
+
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Web Application
+En este diagrama, se muestra la interacción de los componentes en la Web Application, mostrando los pages y components que son parte de la arquitectura de la aplicación:<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-web.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Mobile Application
+En este diagrama, se muestra la interacción de los widgets en la Mobile Application, mostrando cómo conforman arquitectura de la aplicación:<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-mobile.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
