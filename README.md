@@ -5705,26 +5705,78 @@ interfaces y IoT application user interface.
 
 ## 5.2. Information Architecture.
 ### 5.2.1. Organization Systems.
-En esta sección el equipo explica en qué grupos de información aplicará cuáles
-sistemas de organización. Aquí se incluye la explicación de en qué casos se aplicará la
-organización visual del contenido: de forma jerárquica (visual hierarchy),
-organización secuencial (step-by-step to accomplish) o matricial. Por otro lado,
-también se debe explicar en qué casos se utilizará qué esquemas de categorización
-de contenido: alfabético, cronológico, por tópicos, según audiencia (grupos de
-usuarios).
+
+Se implementaron tres sistemas de organización visual: jerárquica, secuencial y matricial. Cada uno se emplea de acuerdo con las características de la información o actividad a desarrollar, lo que garantiza una navegación clara, una experiencia de usuario eficiente y una adaptación óptima a diversos contextos.
+
+- <strong> Visual Hierarchy: </strong> La organización jerárquica se emplea principalmente en la página principal y en las pantallas que muestran información clave como la disponibilidad de habitaciones en distintos hoteles. Este enfoque permite destacar visualmente elementos importantes como la barra de búsqueda, las categorías destacadas y las tarjetas de hoteles con imágenes atractivas, ubicación, nombre y precio, facilitando que el usuario identifique rápidamente las mejores opciones de hospedaje.
+
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/WCbHwV9.png" alt="main page" width="80%" />
+</div><br>
+
+
+- <strong> Step-by-Step to Accomplish: </strong> La organización secuencial se utiliza en funciones que implican seguir un proceso ordenado, donde cada paso depende del anterior. Un ejemplo de esto es la sección de subscription plans, donde el usuario debe avanzar progresivamente desde la selección del plan hasta la confirmación del pago.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/2hgbOFe.png" alt="main page" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/mVdQHAw.png" alt="main page" width="80%" />
+</div><br>
+
+
+- <strong> Matricial: </strong>  Este tipo de organización se aplica en la vista de tabla de la sección de Inventario, permitiendo mostrar múltiples atributos de cada producto (como ID, nombre, precio, cantidad, stock y proveedor) de forma estructurada. Esta disposición facilita la comparación y gestión simultánea de varios elementos, optimizando la supervisión y el control del inventario del hotel.
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/enLGd6y.png" alt="main page" width="80%" />
+</div><br>
+
+
 ### 5.2.2. Labeling Systems.
-Aquí el equipo explica de qué maneras se representarán los datos, considerando
-simplicidad y buscando evitar la confusión para los visitantes y usuarios. En esta
-sección se especifica las etiquetas (con el mínimo número de palabras) a utilizar para
-representar los conjuntos de información y las asociaciones4 entre las mismas.
+En *Sweet Manager*, se busca representar los datos mediante etiquetas simples y directas, para facilitar la comprensión tanto de administradores como de otros usuarios del sistema. Esta estrategia de etiquetado ayuda a reducir la curva de aprendizaje y permite una navegación más fluida.
+
+#### a. Etiquetas Simplificadas y Claras  
+El uso de etiquetas breves y significativas es clave para una interfaz intuitiva. Las siguientes son algunas de las etiquetas implementadas en la aplicación web:
+
+- **Overview** → *Resumen*
+- **Analytics** → *Estadísticas*
+- **Providers** → *Proveedores*
+- **Inventory** → *Inventario*
+- **Rooms** → *Habitaciones*
+- **Organization** → *Organización*
+- **Devices** → *Dispositivos*
+- **Billing & Plans** → *Planes de Suscripción*
+- **Alerts** → *Alertas*
+- **Log Out** → *Cerrar Sesión*
+
+Estas etiquetas están seleccionadas para que representen con precisión el contenido de cada sección, minimizando ambigüedades y tecnicismos.
+
+#### b. Asociaciones Clave  
+Se establecen conexiones claras entre términos funcionales y sus beneficios esperados para el usuario. Esto refuerza la usabilidad del sistema:
+
+- **"Inventario"** se asocia con control de stock, abastecimiento y proveedores.
+- **"Planes de Suscripción"** se vincula a pagos, gestión de servicios y control financiero.
+- **"Alertas"** está relacionado con notificaciones de seguridad, incidentes o eventos relevantes.
+- **"Habitaciones"** permite gestionar la disponibilidad, limpieza y asignación de espacios.
+- **"Dispositivos"** conecta con sensores, tecnología IoT y monitoreo en tiempo real.
+
+El etiquetado evita redundancias o términos complejos, priorizando la funcionalidad y la claridad para usuarios no técnicos.
+
+
 ### 5.2.3. SEO Tags and Meta Tags
-En esta sección se debe incluir los SEO Tags y Meta Tags junto con los valores que
-asignará en las principales páginas de la experiencia tanto a nivel del sitio web
-estático (Landing Page) como Web Application. Se debe incluir Title, los Meta Tags
-Description, Keywords, Author como mínimo. Del mismo modo, para las aplicaciones
-móviles u otros productos digitales que se exponen vía un app store, debe incluir los
-ASO (App Store Optimization) elements como App Title, App keywords, App subtitle,
-App description.
+
+Con el objetivo de mejorar la visibilidad de **SweetManager** en los motores de búsqueda, atraer nuevos usuarios y proporcionar información relevante sobre la landing page y la aplicación web, se incorporarán las siguientes *Meta Tags* como etiquetas HTML en el `<head>` de las páginas principales:
+
+```html
+<title>SweetManager - Empowering Smart Hotel Management</title>
+<meta name="description" content="SweetManager is a smart hotel management platform that enhances operational efficiency through IoT integration, collaborative tools, and real-time insights.">
+<meta name="keywords" content="hotel management, smart hotels, IoT for hotels, room booking, hotel software, hotel automation">
+<meta name="author" content="SweetManager Team">
+```
+
+
 ### 5.2.4. Searching Systems.
 El usuario que utilice la aplicación de SweetManager se encontrará con un gran volumen de información, por lo que es importante ofrecerle opciones de búsqueda efectivas. Para ello, se implementarán las siguientes opciones de búsqueda:
 - **Barra de búsqueda**: El usuario podrá utilizar una barra de búsqueda para encontrar información específica dentro de la aplicación. Esta barra de búsqueda estará disponible en todas las pantallas y permitirá al usuario buscar por palabras clave.
