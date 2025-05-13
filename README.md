@@ -6232,9 +6232,7 @@ Para la distribución de la aplicación móvil durante el desarrollo y pruebas, 
 | **Sprint n – 1 Review Summary** |  |
 | **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar una documentación sólida del sistema, incluyendo modelos, sesiones de Event Storming, diagramas C4, etc. El equipo mostró compromiso y organización. Sin embargo, se detectaron errores en el nivel de Componentes del C4, lo cual fue una oportunidad para reforzar nuestro entendimiento del sistema y mejorar la coordinación técnica en próximas entregas. Se identificó la necesidad de validar más tempranamente los niveles de abstracción con todos los miembros del equipo. |
 | **Sprint Goal & User Stories** | |
-| **Sprint n Goal** | Our focus is on completing the frontend views and reaching 90% implementation progress.  
-We believe it delivers tangible progress and increased confidence to stakeholders by providing a functional user interface.  
-This will be confirmed when all planned views are visually completed, navigable, and demonstrable in a local environment still without backend integration. |
+| **Sprint n Goal** | Our focus is on completing the frontend views and reaching 90% implementation progress. We believe it delivers tangible progress and increased confidence to stakeholders by providing a functional user interface. This will be confirmed when all planned views are visually completed, navigable, and demonstrable in a local environment still without backend integration. |
 | **Sprint n Velocity** | 81 story points |
 | **Sum of Story Points** | 81 story points |
 
@@ -6308,8 +6306,8 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
   </thead>
   <tbody>
     <tr>
-      <td rowspan="3">sweetmanager-landing-page</td>
-      <td rowspan="3">develop</td>
+      <td rowspan="12">sweetmanager-web-applications</td>
+      <td rowspan="12">develop</td>
       <td>489a9fef5d887e7e37ee9b0f25bfddf5f02b6f03</td>
       <td>feat: added route to web application.</td>
       <td></td>
@@ -6327,23 +6325,228 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
       <td></td>
       <td>2025-05-10T07:46:33Z</td>
     </tr>
+    <tr>
+      <td>ffc1da29b0ac4e0f8a234567890abcde12345678</td>
+      <td>fix(reservations): added new booking component.</td>
+      <td>Se añadió el componente para la creación de reservas desde la interfaz del administrador.</td>
+      <td>2025-05-12T21:00:00Z</td>
+    </tr>
+    <tr>
+      <td>b59d599a1c2d3e4f5g6h7i8j9k0a1b2c3d4e5f6g</td>
+      <td>fix(reservations): added booking confirm check-in component.</td>
+      <td>Funcionalidad de confirmación de check-in de reservas.</td>
+      <td>2025-05-12T20:00:00Z</td>
+    </tr>
+    <tr>
+      <td>3790e15aaaaabbbbccccddddeeeeffff11112222</td>
+      <td>Merge pull request #19 from Los-Angelitos/feat/inventory</td>
+      <td>Merge de la rama de inventario con componentes de stock e interfaz base.</td>
+      <td>2025-05-12T19:45:00Z</td>
+    </tr>
+    <tr>
+      <td>ba36108bbbbccccddddeeeeffff111122223333</td>
+      <td>hotfix: minor changes</td>
+      <td>Correcciones menores en estilos y estructuras visuales.</td>
+      <td>2025-05-12T19:00:00Z</td>
+    </tr>
+    <tr>
+      <td>a96bc2d11112222333344445555666677778888</td>
+      <td>fix: fixed navbar navigation</td>
+      <td>Corrige la navegación del navbar en distintas vistas del sistema.</td>
+      <td>2025-05-13T01:00:00Z</td>
+    </tr>
+    <tr>
+      <td>bc433fc555566667777888899990000aaaabbbb</td>
+      <td>add: vercel json for routes</td>
+      <td>Configuración de rutas para despliegue en Vercel.</td>
+      <td>2025-05-13T01:10:00Z</td>
+    </tr>
+    <tr>
+      <td>8f36897aaaaabbbbccccddddeeeeffff11112222</td>
+      <td>feat(reservations): guest reservations component added</td>
+      <td>Componente que permite al huésped visualizar sus reservas actuales.</td>
+      <td>2025-05-12T08:00:00Z</td>
+    </tr>
+    <tr>
+      <td>cdf0da5dddddeeeeffff11112222333344445555</td>
+      <td>refactor(user-profile): updated user account responsive design</td>
+      <td>Actualización de diseño responsive para la cuenta del usuario.</td>
+      <td>2025-05-11T14:00:00Z</td>
+    </tr>
+    <tr>
+      <td>91463ad888899990000aaaabbbbccccddddeeee</td>
+      <td>add: hotel gallery component.</td>
+      <td>Nuevo componente para galería de imágenes del hotel.</td>
+      <td>2025-05-11T13:45:00Z</td>
+    </tr>
   </tbody>
 </table>
 
+
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
-**Landing Page**
 
-Para el caso de la landing page, no se requiere de una suite de pruebas para su desarrollo.
+## Reservations Bounded Context
 
-**Web Application**
+```gherkin
+Feature: Gestión de reservas de huéspedes
 
-Para el caso de la web application, no se requiere de una suite de pruebas para su desarrollo.
+  Scenario: Crear una nueva reserva
+    Given El administrador accede al módulo de reservas
+    When Completa el formulario de nueva reserva con los datos del huésped y habitación
+    Then La reserva debe guardarse correctamente y mostrarse en la lista de reservas activas
+
+  Scenario: Cancelar una reserva activa
+    Given El huésped accede a su lista de reservas
+    When Selecciona la opción para cancelar una reserva vigente
+    Then La reserva debe marcarse como cancelada y no debe generar penalización si está dentro del plazo
+
+  Scenario: Editar fechas de una reserva
+    Given El administrador selecciona una reserva existente
+    When Modifica la fecha de ingreso y/o salida
+    Then La reserva debe actualizarse con las nuevas fechas sin perder la información anterior
+```
+
+---
+
+## IAM (Identity and Access Management) Bounded Context
+
+```gherkin
+Feature: Gestión de usuarios y roles
+
+  Scenario: Crear cuenta de administrador
+    Given El gerente accede al formulario de registro
+    When Ingresa los datos necesarios para crear una cuenta de administrador
+    Then El sistema debe registrar la cuenta y asignarle permisos administrativos
+
+  Scenario: Invitar a un nuevo administrador
+    Given El gerente accede a la sección de administradores
+    When Envía una invitación por correo a un nuevo miembro
+    Then El nuevo administrador debe recibir un enlace de registro y unirse a la organización
+
+  Scenario: Desvincular administrador de la organización
+    Given El propietario del hotel visualiza la lista de administradores
+    When Selecciona uno para desvincular
+    Then El administrador debe ser removido de la organización y perder acceso
+```
+
+---
+
+## Communication Bounded Context
+
+```gherkin
+Feature: Comunicación interna en el hotel
+
+  Scenario: Enviar mensaje al gerente
+    Given El administrador accede a la sección de mensajes
+    When Escribe y envía un mensaje al gerente del hotel
+    Then El gerente debe recibir la notificación del mensaje en su bandeja de entrada
+
+  Scenario: Ver historial de mensajes
+    Given El gerente accede al módulo de comunicación
+    When Visualiza la conversación con un administrador
+    Then Debería ver todos los mensajes enviados y recibidos con orden cronológico
+```
+
+---
+
+## Organizational Management Bounded Context
+
+```gherkin
+Feature: Gestión de la organización del hotel
+
+  Scenario: Crear una organización
+    Given El gerente accede al formulario de creación de organización
+    When Ingresa los datos de nombre, dirección y responsable
+    Then El sistema debe registrar la nueva organización y asociarla a su cuenta
+
+  Scenario: Ver lista de administradores
+    Given El gerente accede al perfil de su organización
+    When Abre la pestaña de administradores
+    Then Debería ver los nombres y roles de todos los administradores registrados
+```
+
+---
+
+## Inventory Bounded Context
+
+```gherkin
+Feature: Gestión del inventario del hotel
+
+  Scenario: Visualizar stock actual
+    Given El gerente accede al módulo de inventario
+    When Visualiza la lista de recursos
+    Then Debería ver nombre, cantidad y estado de cada recurso disponible
+
+  Scenario: Revisar necesidades de abastecimiento
+    Given El sistema muestra el stock por debajo del mínimo
+    When El gerente accede a la lista de alertas
+    Then Debería ver qué recursos requieren ser reabastecidos
+```
+
+---
+
+## Commerce Bounded Context
+
+```gherkin
+Feature: Gestión de suscripciones y planes
+
+  Scenario: Ver planes de suscripción
+    Given El usuario accede a la sección de planes
+    When Se despliega la información de cada plan disponible
+    Then El usuario puede comparar opciones y seleccionar la más adecuada
+
+  Scenario: Actualizar plan de suscripción
+    Given El gerente ya cuenta con una suscripción activa
+    When Selecciona un nuevo plan y confirma el cambio
+    Then El sistema debe actualizar su suscripción y reflejar el cambio en la facturación
+```
+
 
 #### 6.2.1.6. Execution Evidence for Sprint Review.
 
 **Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
 - El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
+
+Imagen 1: Hero Section
+![image](https://github.com/user-attachments/assets/6e4253a0-01e5-4f8c-bb48-46d2e5308bb0)
+
+Imagen 2: Vista de Servicios
+![image](https://github.com/user-attachments/assets/58304a2f-5e91-4d76-b4a6-f5c307656f70)
+
+Imagen 3: Vista de Why Us? 
+![image](https://github.com/user-attachments/assets/133cefe4-dd42-4e58-b023-6a0652c25d58)
+
 - El link de la Web application: https://sweet-manager-web-application.vercel.app
+
+Imagen 1: Vista Principal del Proyecto
+![image](https://github.com/user-attachments/assets/975e8976-954e-45f1-8ee9-59b2070bd41b)
+
+Imagen 2: Vista de datos personales y preferencias de la cuenta
+![image](https://github.com/user-attachments/assets/6f36cfb8-5a48-462c-8360-ed8cebce86c8)
+
+Imagen 3: Vista de información del hotel
+![image](https://github.com/user-attachments/assets/4bc82b0f-2fd5-46ed-8ca4-1358934a9e8e)
+
+Imagen 4: Vista de Analíticas
+![image](https://github.com/user-attachments/assets/fbeed890-ab0b-4439-ae4a-b640009c3090)
+
+Imagen 5: Vista de Inventario
+![image](https://github.com/user-attachments/assets/eb51684f-a28e-4eb6-8383-62930d45e042)
+
+Imagen 6: Vista de habitaciones
+![image](https://github.com/user-attachments/assets/d050d0c4-c026-48d3-8ea2-323016e6e63f)
+
+Imagen 7: Vista de Organización
+![image](https://github.com/user-attachments/assets/fca409d3-12d4-4db7-ac05-3c461e881c59)
+
+Imagen 8: Vista de Devices
+![image](https://github.com/user-attachments/assets/e1e3c706-a775-4f1d-aa82-5074b369af05)
+
+Imagen 9: Vista de Configuración: 
+![image](https://github.com/user-attachments/assets/3d0f28b3-9cbf-4119-bd96-e5a6259357ea)
+
+Imagen 10: Vista de Perfil
+![image](https://github.com/user-attachments/assets/77327113-6a30-484a-b8be-c9ee6c12c128)
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
