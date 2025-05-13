@@ -6230,15 +6230,40 @@ Consideramos que es escencial que la experiencia del usuario al navegar por prim
 
 
 ### 5.4.3. Applications User Flow Diagrams.
-Esta sección presenta la propuesta de User Flows. Debe considerarse un User Flow
-para cada User goal, considerando los User Persona para cada aplicación que forma
-parte del alcance. Estos User Flows deben ser consistentes con los Wireflows de los
-cuales se derivan. Debe recordarse que en el User Flow se incluyen los Mock-ups de
-las vistas o pantallas de las aplicaciones, junto con los flujos que constituyen la ruta
-esperada (happy path) y las rutas alternativas (unhappy paths). Utilizar para los User
-Flows las herramientas indicadas. Cada User Flow diagram requiere que se redacte el
-User goal y se complemente con una explicación de los flujos y condiciones
-especificados.
+A continuación se presentan los diagramas de flujo de usuario (User Flow Diagrams) para las aplicaciones web y móvil. Estos diagramas ilustran las rutas típicas que los usuarios pueden seguir al interactuar con la aplicación, teniendo en cuenta los diferentes roles de usuario (administrador, huésped y propietario).
+
+En el siguiente flujo, se muestra el flujo de inicio de sesión en la Web Application. Este flujo es común para todos los usuarios, ya que todos deben iniciar sesión para acceder a la aplicación. El flujo comienza con el usuario ingresando su correo electrónico y contraseña en la página de inicio de sesión. Si las credenciales son correctas, el usuario es redirigido a la página principal de la aplicación.
+<div style="text-align: center;">
+  <img src="./assets/img//userflows/userflowweb1.png" width="90%" />
+  <p style="font-style: italic">Web Application User Flow</p>
+</div><br><br>
+
+En el siguiente flujo, se puede demostrar cómo el usuario Dueño de un hotel es capaz de crear una nueva organización en la aplicación. Este flujo comienza con el usuario seleccionando la opción de crear una nueva organización en la página principal de la aplicación. Luego, el usuario ingresa los datos necesarios para crear la organización y finalmente se redirige a la página principal de la aplicación.
+<div style="text-align: center;">
+  <img src="./assets/img//userflows/userflowweb2.png" width="90%" />
+  <p style="font-style: italic">Web Application User Flow</p>
+</div><br><br>
+
+En el siguiente flujo, el administrador del hotel, es invitado a unirse a la organización creada por el dueño del hotel. Este flujo comienza con el dueño del hotel enviando una invitación al administrador a través de la aplicación. Luego, el administrador recibe la invitación y acepta unirse a la organización. Finalmente, el administrador es redirigido a la página principal de la aplicación.
+<div style="text-align: center;">
+  <img src="./assets/img//userflows/userflowweb3.png" width="90%" />
+  <p style="font-style: italic">Web Application User Flow</p>
+</div><br><br>
+
+En el siguiente flujo se puede observar el inicio de sesión o registro de un usuario en nuestro Mobile Application. Este flujo es común para todos los usuarios, ya que todos deben iniciar sesión para acceder a la aplicación. El flujo comienza con el usuario ingresando su correo electrónico y contraseña en la página de inicio de sesión. Si las credenciales son correctas, el usuario es redirigido a la página principal de la aplicación.
+<div style="text-align: center;">
+  <img src="./assets/img//userflows/mobile1.png" width="90%" />
+  <p style="font-style: italic">Web Application User Flow</p>
+</div><br><br>
+
+En el siguiente flujo se puede observar el comportamiento del huésped, al encontrar o seleccionar un hotel para ver más su detalle, administrador y dueño de hotel al gestionar su organización y los dispositivos IoT. Este flujo comienza con el usuario seleccionando la opción de buscar un hotel en la página principal de la aplicación. Luego, el usuario ingresa los datos necesarios para buscar el hotel y finalmente se redirige a la página principal de la aplicación.
+
+<div style="text-align: center;">
+  <img src="./assets/img//userflows/mobile2.png" width="90%" />
+  <p style="font-style: italic">Web Application User Flow</p>
+</div><br><br>
+
+
 ## 5.5. Applications Prototyping.
 Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
 
