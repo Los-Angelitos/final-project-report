@@ -4973,6 +4973,9 @@ URL del diagrama de clases: <a href="https://lucid.app/lucidchart/aed64c50-821a-
 
 Se han identificado los siguientes **Aggregates**, **Entities** y **Value Objects** que representan los conceptos más importantes del contexto de comercio.
 
+## Web Services
+---
+
 ### `PaymentCustomer` 
 
 Representa un pago realizado por un huésped. 
@@ -5085,8 +5088,57 @@ Representa los estados en los que puede estar una suscripción o un contrato.
 
 ---
 
+## Web Application y Mobile Application
+---
+Se han identificado las **entities** representadas en la aplicación.
+
+**Modelos de UI y Estados del Dominio Web**
+
+Aquí se definirán los **componentes de presentación** de la aplicación web, los cuales representan las clases que son observadas en la interfaz gráfica del usuario en el contexto de comercio.
+
+#### `PaymentModel`
+
+Representa los datos presentados al usuario sobre un pago realizado.
+
+#### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `id`         | `int`                 | Identificador único del pago |
+| `ownerId / customerId`    | `int?`                | Relación con el dueño (`Owner`) o el huésped ('Customer') |
+| `description`| `string?`             | Información adicional. |
+|`finalAmount` | `decimal?`            | Monto asociado al pago |
+
+#### `SubscriptionModel`
+
+Representa los datos presentados al usuario sobre una suscripción de un usuario registrada.
+
+#### Atributos principales:
+
+| Atributo               | Tipo         | Descripción |
+|------------------------|--------------|-------------|
+| `id`                   | `int`                   | Identificador único de la suscripción |
+| `name`                 | `string?`    | Nombre de la suscripción (Basic, Regular, Premium) |
+| `ownerId`              | `int?`               | Identificador del dueño del hotel suscrito |
+
+#### `DashboardModel`
+
+Representa los datos presentados al usuario en el gráfico de analíticas.
+
+#### Atributos principales:
+
+| Atributo               | Tipo         | Descripción |
+|------------------------|--------------|-------------|
+| `weekNumbers`                   | `int`                   | El número de la semana del año en el que se registraron las ganancias y pérdidas. |
+| `totalIncome`                 | `decimal?`    | Las ganancias totales registradas en el rango de fechas. |
+| `totalExpense`              | `decimal?`    | Las pérdidas totales registradas en el rango de fechas. |
+| `totalProfit`              | `decimal?`    | La diferencia entre ganancias y pérdidas totales registradas en el rango de fechas. |
+
 ## Comandos
 
+---
+
+## Web Services
 ---
 
 ### PaymentCustomer
@@ -5159,7 +5211,8 @@ Representa los estados en los que puede estar una suscripción o un contrato.
 
 ###  Services
 
-####  Booking
+## Web Services
+---
 
 ### PaymentCustomer
 
@@ -5197,7 +5250,52 @@ Representa los estados en los que puede estar una suscripción o un contrato.
 
 ---
 
+## Web Application y Mobile Application
+---
+
+A continuación se describen los **services** que utiliza la aplicación para comunicarse con los endpoints del **web service** y acceder a la base de datos.
+
+#### `PaymentApiService`
+
+Interactúa con los endpoints relacionados a los pagos.
+
+#### Atributos principales:
+
+| Método                         | Descripción |
+|------------------------------------|-------------|
+| `createPayment()`  | Crea un nuevo pago. |
+| `updatePayment()`  | Actualiza un pago existente. |
+| `getAllPayments(hotelId)`  | Obtiene todos los pagos de un hotel. |
+| `getPaymentById(id)`  | Obtiene un pago a través de su identificador único. |
+
+#### `SubscriptionApiService`
+
+Interactúa con los endpoints relacionados a las suscripciones.
+
+#### Atributos principales:
+
+| Método                         | Descripción |
+|------------------------------------|-------------|
+| `createSubscription()`  | Crea una nueva suscripción. |
+| `updateSubscription()`  | Actualiza una suscripción existente. |
+| `getAllSubscriptions(hotelId)`  | Obtiene todas las suscripciones registradas de un hotel. |
+| `getSubscriptionById(id)`  | Obtiene una suscripción a través de su identificador único. |
+
+#### `DashboardApiService`
+
+Interactúa con los endpoints relacionados al dashboard de analíticas.
+
+#### Atributos principales:
+
+| Método                         | Descripción |
+|------------------------------------|-------------|
+| `getWeeklyData(hotelId)`  | Obtiene los datos financieros organizados por semanas. |
+| `getMonthlyData(hotelId)`  | Obtiene los datos financieros organizados por meses. |
+
 #### 4.2.4.2. Interface Layer
+
+## Web Services
+---
 
 ### Capa de Presentación de la Aplicación
 
@@ -5256,9 +5354,52 @@ Cada Aggregate del Bounded Context cuenta con un **REST Controller**. Estos cont
 |   `SubscriptionController.cs`  | `/api/subscription`      | Gestiona la creación, modificación y consulta de suscripciones. |
 |  `ContractOwnerController.cs`  | `/api/contract-owner`    | Gestiona la creación, modificación y consulta de contratos de dueños de hoteles. |
 
+## Web Application
+---
 
+### Pages
+
+A continuación se describen los **componentes vue** que actualizan la vista completa del usuario:
+
+| Archivo                                               | Descripción |
+|--------------------------------------------------------|---------|
+| `AnalyticsComponent.vue`      | Muestra la vista del cuadro de analíticas. |
+| `SubscriptionPlanRegisterComponent.vue`      | Muestra la vista del registro de una nueva suscripción. |
+| `CheckoutComponent.vue`      | Muestra la vista posterior al pago de una suscripción, en la cual se detalla la información de la misma. |
+
+### Components
+
+A continuación se describen los **componentes vue** que muestran vistas genéricas al usuario:
+
+| Archivo                                               | Descripción |
+|--------------------------------------------------------|---------|
+| `LineChart.vue`      | Muestra el cuadro de analíticas con los datos indicados. |
+
+## Mobile Application
+---
+
+### Screens
+
+A continuación se describen los **screens** o **Scaffold Widgets** que actualizan la vista completa del usuario:
+
+| Archivo                                               | Descripción |
+|--------------------------------------------------------|---------|
+| `AnalyticsPage`      | Muestra la vista del cuadro de analíticas. |
+| `SubscriptionPlanRegisterPage`      | Muestra la vista del registro de una nueva suscripción. |
+| `CheckoutComponentPage`      | Muestra la vista posterior al pago de una suscripción, en la cual se detalla la información de la misma. |
+
+### Widgets
+
+A continuación se describen los **componentes vue** que muestran vistas genéricas al usuario:
+
+| Archivo                                               | Descripción |
+|--------------------------------------------------------|---------|
+| `LineChartWidget`      | Muestra el cuadro de analíticas con los datos indicados. |
 
 #### 4.2.4.3. Application Layer
+
+## Web Services
+---
 
 ### Gestión de Flujos de Negocio
 
@@ -5319,6 +5460,9 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 
 #### 4.2.4.4. Infrastructure Layer
 
+## Web Services
+---
+
 ### Implementación de Repositories
 
 | Clase                     | Interfaz implementada       | Función principal |
@@ -5331,11 +5475,30 @@ A partir del Bounded Context Canvas y el Event Storming elaborado, podemos ident
 ---
 
 #### 4.2.4.5. Bounded Context Software Architecture Component Level Diagrams
-En el siguiente diagrama de componentes para Commerce Context se puede observar la interacción que tendrá el Owner usuario para realizar transacciones ante pagos y suscripciones a nuestro sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
+A continuación, se presentan los diagramas de componentes tanto a nivel de Web Services, como de la Web y Mobile Application. Estos diagramas ilustran la interacción del usuario al acceder a las funciones del Bounded Context Commerce. Los diagramas muestran los componentes principales y sus interacciones<br>
+
+URL Structurizr: <a href="https://structurizr.com/share/83581/1b4eb2ca-2f99-4fa1-bfcb-b16e225cf362">https://structurizr.com/share/83581/1b4eb2ca-2f99-4fa1-bfcb-b16e225cf362</a>
 <br><br>
+
+##### Backend
+En este diagrama, se muestra la interacción de los componentes en el BackEnd, dividiéndolos en sus respectivos layers:<br>
+
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/commerce-component.png" alt="Component Diagram" width="90%" />
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Web Application
+En este diagrama, se muestra la interacción de los componentes en la Web Application, mostrando los pages y components que son parte de la arquitectura de la aplicación:<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-web.png" alt="Component Diagram" width="90%" />
+</div><br><br>
+
+##### Mobile Application
+En este diagrama, se muestra la interacción de los widgets en la Mobile Application, mostrando cómo conforman arquitectura de la aplicación:<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-mobile.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
