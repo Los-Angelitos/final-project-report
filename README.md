@@ -2080,6 +2080,26 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP03</td>
     </tr>
     <tr>
+      <td>HU14</td>
+      <td>Visualizar el estado de los dispositivos IoT en el hotel</td>
+      <td>Como gerente quiero visualizar el estado de los dispositivos IoT en mi hotel para identificar el correcto funcionamiento de estos</td>
+      <td>
+        <b>Escenario 1:</b> Consultar dispositivos con estado funcional<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> solicita la lista de dispositivos registrados en su hotel<br>
+        <em>Then</em> el sistema responde con el listado de dispositivos y su estado "funcional".<br><br>
+        <b>Escenario 2:</b> Consultar dispositivos con fallas<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> uno o más dispositivos tienen fallos de comunicación o funcionamiento<br>
+        <em>Then</em> el sistema incluye en la respuesta el identificador del dispositivo y su estado correspondiente (por ejemplo: "sin comunicación", "error de sensor").<br><br>
+        <b>Escenario 3:</b> Consultar cuando no hay dispositivos registrados<br>
+        <em>Given</em> que el gerente accede al sistema de monitoreo<br>
+        <em>When</em> solicita el estado de los dispositivos<br>
+        <em>Then</em> el sistema responde que no existen dispositivos registrados en el hotel.<br><br>
+      </td>
+      <td>EP05</td>
+    </tr>
+    <tr>
       <td>EP04</td>
       <td>Gestión eficiente de reservas y comunicaciones para administradores de hoteles.</td>
       <td>Como administrador del hotel, quiero gestionar las reservas de los huéspedes, comunicarme con el gerente, consultar disponibilidad de habitaciones, generar reportes y realizar modificaciones en las reservas para asegurar una operación fluida del hotel.</td>
