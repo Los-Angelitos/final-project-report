@@ -5756,9 +5756,31 @@ Los mensajes de error y advertencia se mostrarán por consola y serán fáciles 
 
 
 ### 5.1.2. Web, Mobile and IoT Style Guidelines.
-En esta sección se explica e ilustra las decisiones sobre los estándares visuales y de
-interacción para responsive web interfaces y las interfaces en mobile application
-interfaces y IoT application user interface. 
+
+Se muestra y ejemplifica las decisiones tomadas en cuanto a los estándares visuales y de interacción aplicados en las interfaces web responsivas, aplicaciones móviles y plataformas de IoT. El objetivo es mantener una experiencia de usuario coherente, accesible y visualmente armoniosa en todos los dispositivos y contextos de uso.
+
+Paleta de Colores
+El color primario utilizado en la interfaz es #0066CC, una tonalidad azul intensa que transmite confianza, profesionalismo y frescura. Este color se combina con blanco para lograr un contraste nítido que facilita la lectura y navegación. Puede observarse claramente en elementos como el logotipo, botones de acción y la lupa del buscador. A continuación, se muestra paleta de colores secundarios: 
+
+<li><span style="color:#C13515; font-weight:bold">#C13515</span>
+<li><span style="color:#FFCD1B; font-weight:bold">#FFCD1B</span></li>
+<li><span style="color:#0066CC; font-weight:bold">#0066CC</span></li>
+<li><span style="color:#74788D; font-weight:bold">#74788D</span></li>
+<li><span style="color:#00CA75; font-weight:bold">#00CA75</span>
+
+A continuación, se muestran ejemplos de vistas usando los colores específicados:
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/main_view.png" alt="Main view example" width="70%" />
+</div>
+
+<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/login.png" alt="Main view example" width="70%" />
+</div>
+
+
 
 ## 5.2. Information Architecture.
 ### 5.2.1. Organization Systems.
