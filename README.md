@@ -35,89 +35,153 @@
 # Registro de Versiones del Informe
 
 <table>
-    <thead>
+  <thead>
     <tr>
-        <th>Version</th>
-        <th>Fecha</th>
-        <th>Autor</th>
-        <th>Descripción de modificación</th>
+      <th>Versión</th>
+      <th>Fecha</th>
+      <th>Autor</th>
+      <th>Descripción de modificación</th>
     </tr>
-    </thead>
-    <tbody>
+  </thead>
+  <tbody>
+    <!-- TB1 group (6 personas) -->
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Mauricio Abraham Rivo Rojas Sánchez</td>
-        <td>
+      <td rowspan="6">TB1</td>
+      <td>29/03/2024</td>
+      <td>Mauricio Abraham Rivo Rojas Sánchez</td>
+      <td>
         <ul>
-        <li> Antecedentes y Problemática </li>
-        <li> User stories </li>
+          <li>Antecedentes y Problemática</li>
+          <li>User stories</li>
         </ul>
-        </td>
+      </td>
     </tr>
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Giacomo Zoppi Rodriguez</td>
-        <td>
+      <td>29/03/2024</td>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
         <ul>
-        <li> Lean UX Process</li>
-        <li> Product Backlog</li>
-        <li> Ubiquitous Language </li>
+          <li>Lean UX Process</li>
+          <li>Product Backlog</li>
+          <li>Ubiquitous Language</li>
         </ul>
-        </td>
-    </tr>
-    <tr>  
+      </td>
     </tr>
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td>Omar Andrew Morales Montalvo</td>
-        <td>
+      <td>29/03/2024</td>
+      <td>Omar Andrew Morales Montalvo</td>
+      <td>
         <ul>
-        <li> User Journey Mapping </li>
-        <li> Impact Mapping </li>
+          <li>User Journey Mapping</li>
+          <li>Impact Mapping</li>
         </ul>
-        </td>
+      </td>
     </tr>
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td> Ramón Alejandro Jorge Arévalo </td>
-        <td>
+      <td>29/03/2024</td>
+      <td>Ramón Alejandro Jorge Arévalo</td>
+      <td>
         <ul>
-        <li> As-is Scenario Mapping </li>
-        <li> To-Be Scenario Mapping </li>
-        <li> User Task Matrix </li>
+          <li>As-is Scenario Mapping</li>
+          <li>To-Be Scenario Mapping</li>
+          <li>User Task Matrix</li>
         </ul>
-        </td>
+      </td>
     </tr>
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td> Fabia Alejandra Herrera Aguirre </td>
-        <td>
+      <td>29/03/2024</td>
+      <td>Fabia Alejandra Herrera Aguirre</td>
+      <td>
         <ul>
-        <li> Segmentos Objetivos </li>
-        <li> User Persona </li>
-        <li> Analisis Entrevistas </li>
+          <li>Segmentos Objetivos</li>
+          <li>User Persona</li>
+          <li>Análisis Entrevistas</li>
         </ul>
-        </td>
+      </td>
     </tr>
     <tr>
-        <td>TB1</td>
-        <td>29/03/2024</td>
-        <td> Arian Martín Rodriguez Vargas </td>
-        <td>
+      <td>29/03/2024</td>
+      <td>Arian Martín Rodriguez Vargas</td>
+      <td>
         <ul>
-        <li> Analisis Competitivo </li>
-        <li> Estrategias Frente a Competidores </li>
-        <li> Empathy Mapping </li>
+          <li>Análisis Competitivo</li>
+          <li>Estrategias Frente a Competidores</li>
+          <li>Empathy Mapping</li>
         </ul>
-        </td>
+      </td>
     </tr>
-    </tbody>
+    <tr>
+      <td rowspan="6">TP</td>
+      <td>12/05/2024</td>
+      <td>Mauricio Abraham Rivo Rojas Sánchez</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Software Development Environment & Deployment Configuration</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>12/05/2024</td>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Source Code Style Guides and Management</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>12/05/2024</td>
+      <td>Omar Andrew Morales Montalvo</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Organizations & Labelling System</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>12/05/2024</td>
+      <td>Ramón Alejandro Jorge Arévalo</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Wireframes & Wireflow</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>12/05/2024</td>
+      <td>Fabia Alejandra Herrera Aguirre</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Landing Page, Wireframe & Mockups</li>
+          <li>General Style Guidelines</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>12/05/2024</td>
+      <td>Arian Martín Rodriguez Vargas</td>
+      <td>
+        <ul>
+          <li>Web Applications</li>
+          <li>Prototyping, Wireframe & Wireflow</li>
+          <li>Navigation & Searching Systems</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
 </table>
+
 
 ---
 
@@ -287,8 +351,26 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Omar Morales: En esta primera entrega, participé activamente en las actividades del equipo, aportando ideas durante las sesiones colaborativas y apoyando en la redacción y organización de las historias de usuario. También fomenté la comunicación y el trabajo en equipo, contribuyendo a un ambiente inclusivo en el que todos pudieran participar y enfocados en cumplir con los objetivos establecidos.
         </p>
+        <p>
+        TP:
+        <p/>
+        Mauricio Rojas: En este entregable, participé activamente en el desarrollo del entorno de despliegue y configuración del sistema, además de colaborar en la organización del equipo y apoyar a mis compañeros en la implementación de las aplicaciones web.
+        <p/>
+        Giacomo Zoppi: En esta etapa, contribuí en el desarrollo de las aplicaciones web y participé en la definición de las guías de estilo del código fuente, además de apoyar en la coordinación efectiva en la gestión del equipo y de nuestro tablero de trabajo.
+        <p/>
+        Ramon Jorge: En esta entrega, desarrollé parte del sistema relacionado a wireframes y wireflows de la aplicación web, aportando ideas y manteniendo una comunicación constante con el equipo para garantizar la coherencia visual y funcional del producto.
+        <p/>
+        Arian Rodriguez: Durante esta entrega, colaboré en el diseño de prototipos y flujos de navegación, asegurando una arquitectura clara y funcional. También promoví la integración de ideas entre los compañeros para lograr una propuesta cohesiva.
+        <p/>
+        Fabia Herrera: En esta fase, participé en el diseño visual del sistema, desarrollando wireframes, mockups y guías de estilo generales. Mantuve comunicación constante con mis compañeros para asegurar una estética coherente y funcional.
+        <p/>
+        Omar Morales: En esta entrega, trabajé activamente en la estructuración de la organización del sistema y su etiquetado, además de apoyar en la implementación y validación de las funcionalidades propuestas, fomentando siempre un entorno colaborativo.
+        </p>
     </td>
-    <td>TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega. </p></td>
+    <td>
+        TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega.</p>
+        TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.
+     </td>
   </tr>
   <tr>
     <td>Crea un entorno colaborativo e inclusivo, establece metas, planifica tareas y cumple objetivos.</td>
@@ -307,8 +389,26 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         Junto con el equipo, establecimos metas claras, distribuimos tareas de manera equitativa y planificamos nuestras actividades para cumplir con los plazos establecidos por el mismo. Para esta entrega contribuí con los segmentos objetivo, la creación de los user persona, el análisis de las entrevistas, así como la documentación del Communication Bounded Context.
         <p/>
         Omar Morales: Durante este entregable, participé activamente en la definición de metas y tareas del equipo, colaborando en la redacción de historias de usuario y apoyando en la elaboración de la documentación del proyecto. Utilicé el tablero Kanban para organizar y dar seguimiento a mis responsabilidades, lo cual ayudó a mantener una visión clara del progreso del equipo. Además, fomenté un ambiente colaborativo mediante una comunicación constante y abierta, promoviendo la participación de todos los integrantes.
-        </p></td>
-    <td>TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p></td>
+        </p>
+    <p>
+      TP:
+      <p/>
+      Mauricio Rojas: En este entregable, promoví un ambiente de trabajo colaborativo, ayudando a planificar y coordinar tareas técnicas relacionadas con la configuración del entorno de desarrollo y el despliegue. Además, mantuve una comunicación fluida con el equipo para garantizar que los objetivos se cumplieran a tiempo.
+      <p/>
+      Giacomo Zoppi: Contribuí activamente en la organización y cumplimiento de objetivos grupales, planificando tareas en el tablero Kanban y asegurando su seguimiento. Además, fomenté un entorno responsable, cumpliendo mis entregables relacionados con guías de estilo y desarrollo web.
+      <p/>
+      Ramon Jorge: Para esta entrega, colaboré en la planificación y desarrollo de wireframes y wireflows, coordinando con el equipo para definir metas claras y plazos. Utilicé el tablero Kanban para mantener una visión clara del avance del grupo y asegurar la entrega coordinada de los entregables visuales.
+      <p/>
+      Arian Rodriguez: Establecí tareas concretas y objetivos dentro del tablero Kanban, asegurándome de mantener una comunicación abierta para resolver dudas. Apoyé en la elaboración de prototipos, wireflows y la estructura de navegación de la aplicación, cumpliendo con los plazos definidos.
+      <p/>
+      Fabia Herrera: Durante esta entrega, me enfoqué en la planificación visual del sistema, colaborando en la distribución de tareas del equipo y asegurando la coherencia en los entregables gráficos. Contribuí en el diseño de mockups y guías visuales respetando las metas establecidas desde el inicio.
+      <p/>
+      Omar Morales: Ayudé a definir tareas y a mantener un entorno de trabajo colaborativo, participando en la planificación y documentación del sistema. Supervisé el cumplimiento de los objetivos técnicos en el área de organización de etiquetas y arquitectura, comunicándome constantemente con los compañeros para mantenernos alineados.
+      </p>
+    </td>
+    <td>TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
+        TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.
+</td>
   </tr>
 </table>
 
