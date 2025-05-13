@@ -5567,11 +5567,40 @@ En este diagrama, se muestra la interacción de los widgets en la Mobile Applica
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de comunicación.
 
-### `Notification`
+#### Agregados y Entidades del Dominio `Organizational Management` en nuestro Web/Mobile Application
+
+En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase.
+
+### `Notification` (Aggregate)
 Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
+
+#### Constructores:
+- Vacío `Notification()`
+- A partir de parámetros individuales: `id`, `title`, `content`, `senderType`, `senderId`, `receiverId`, `status`.
+- A partir del service utilizado para consumir la API.
 
 
 #### Atributos principales:
+
+| Atributo     | Tipo                  | Descripción |
+|--------------|-----------------------|-------------|
+| `Id`         | `int`                 | Identificador único de la notificación |
+| `Title`    | `string`                | Título de la notificación |
+| `Content`       | `string`             | Contenido de la notificación |
+| `SenderType`| `string`             | Origen del que proviene el mensaje: "Guest", "Admin", "Owner" o "System" |
+| `SenderId`      | `int`             | Identificador único del usuario que envía el mensaje |
+| `ReceiverId`    | `int`             | Identificador único del usuario que recibe el mensaje |
+| `Status`      | `string`             | Estado de la notificación: "Seen", "Not Seen" |
+
+---
+
+
+#### Agregados y Entidades del Dominio `Communication` en nuestro Web Services
+
+
+#### `Notification` (Aggregate)
+Representa una notificación que se envía a los usuarios de la aplicación. Esta entidad es responsable de almacenar la información relacionada con la notificación, como el contenido, el estado y la fecha de envío.
+
 
 | Atributo     | Tipo                  | Descripción |
 |--------------|-----------------------|-------------|
@@ -5693,6 +5722,8 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.6.4. Infrastructure Layer
 
+La carpeta `Infrastructure` representa la capa de infraestructura de la arquitectura, que se encarga de la persistencia de datos y la implementación de los repositorios.
+
 ### Implementación de Repositories
 
 | Clase                     | Interfaz implementada       | Función principal |
@@ -5703,11 +5734,27 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 #### 4.2.6.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Communication Context se puede observar la interacción de las notificaciones emitidas cada vez que ocurre un evento en el sistema.<br>
-URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
+URL Structurizr: <a href="https://structurizr.com/share/102320">https://structurizr.com/share/102320</a>
 <br><br>
+
+### Web Services
+
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/communication-component.png" alt="Component Diagram" width="90%" />
+  <img src="./assets/img/communication-bounded-context/backend-components.png" alt="Backend Component Diagram" width="90%" />
 </div><br><br>
+
+### Mobile Application
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/mobile-components.png" alt="Mobile Component Diagram" width="90%" />
+</div><br><br>
+
+### Web Application
+
+<div style="text-align: center;">
+  <img src="./assets/img/communication-bounded-context/web-components.png" alt="Web Component Diagram" width="90%" />
+</div><br><br>
+
 
 
 #### 4.2.6.6. Bounded Context Software Architecture Code Level Diagrams
@@ -5719,13 +5766,13 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 ##### 4.2.6.6.1. Bounded Context Domain Layer Class Diagrams
 
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="User persona Owner" width="100%" />
+  <img src="./assets/img/communication-bounded-context/communication-bc-uml.jpeg" alt="Communication BC UML" width="100%" />
 </div>
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="User persona Owner" width="100%" />
+  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="100%" />
 </div>
 
 La única tabla del bounded context `Communication` es la tabla `Notification`. Esta tabla almacena las notificaciones enviadas a los usuarios de la aplicación. La tabla tiene una relación de uno a muchos con la tabla `User`, ya que un usuario puede recibir múltiples notificaciones, pero cada notificación está asociada a un solo usuario.
