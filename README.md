@@ -140,6 +140,19 @@ Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado 
 
 ![image](https://github.com/user-attachments/assets/b2afbc77-613e-4edb-96a4-60289f187457)
 
+TP: El entregabe consistió principalmente en el desarrollo de la Web Application de nuestro proyecto. Durante el desarollo, tuvimos en cuenta los siguientes puntos: 
+
+Se desarrollaron las vistas de la aplicación a nivel diseño y sin funcionalidad. 
+Se crearon las carpetas y componentes necesarios para un desarrollo mas acelerado del proyecto.
+Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso. 
+
+![image](https://github.com/user-attachments/assets/aec822cc-d3fe-439b-9e84-863c8db0dda4)
+
+![image](https://github.com/user-attachments/assets/f4c77e35-c15f-41a4-b877-45ce65379b32)
+
+
+
+
 
 # Contenido
 
