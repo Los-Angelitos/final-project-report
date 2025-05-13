@@ -6043,12 +6043,81 @@ Mobile Applications, Embedded Applications u otros productos incluidos).
 Adicionalmente a la explicación, el equipo incluye aquí el Deployment Diagram de C4
 Model.
 ## 6.2. Landing Page, Services & Applications Implementation
-### 6.2.1. Sprint n
-#### 6.2.1.1. Sprint Planning n.
-#### 6.2.1.2. Aspect Leaders and Collaborators.
-![image](https://github.com/user-attachments/assets/8857cea1-07e9-4544-b7a6-884ff2b51efd)
+### 6.2.1. Sprint 1
+#### 6.2.1.1. Sprint Planning 1
 
-#### 6.2.1.3. Sprint Backlog n.
+| **Sprint #** | Sprint n |
+|--------------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2025-05-11 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Rojas Sanchez, Mauricio |
+| **Attendees (to planning meeting)** | Zoppi, Giacomo - Herrera, Fabia - Rodriguez, Arian - Morales, Omar - Jorge, Ramón |
+| **Sprint n – 1 Review Summary** |  |
+| **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar una documentación sólida del sistema, incluyendo modelos, sesiones de Event Storming, diagramas C4, etc. El equipo mostró compromiso y organización. Sin embargo, se detectaron errores en el nivel de Componentes del C4, lo cual fue una oportunidad para reforzar nuestro entendimiento del sistema y mejorar la coordinación técnica en próximas entregas. Se identificó la necesidad de validar más tempranamente los niveles de abstracción con todos los miembros del equipo. |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | Our focus is on completing the frontend views and reaching 90% implementation progress.  
+We believe it delivers tangible progress and increased confidence to stakeholders by providing a functional user interface.  
+This will be confirmed when all planned views are visually completed, navigable, and demonstrable in a local environment still without backend integration. |
+| **Sprint n Velocity** | 81 story points |
+| **Sum of Story Points** | 81 story points |
+
+#### 6.2.1.2. Aspect Leaders and Collaborators.
+A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context y Landing Page a la hora de elaborar nuestros entregables de este Sprint. 
+
+| Team Member (Last Name, First Name) | GitHub Username     | Web Applications IAM Bounded Context | Web Applications Communication Bounded Context | Web Applications Reservations Bounded Context | Web Applications Organizational Management Bounded Context | Web Applications Commerce Bounded Context | Web Applications Inventory Bounded Context | Landing Page |
+|------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|---------------|
+| Zoppi, Giacomo                     | Giacomo202210029     | C                                    | C                                              | l                                             | C                                                            | C                                           | C                                           | C             |
+| Herrera, Fabia                     | pelumsa              | C                                    | L                                              | C                                             | C                                                            | C                                           | C                                           | C             |
+| Rojas, Mauricio                    | MayugiKentai11       | L                                    | C                                              | C                                             | C                                                            | C                                           | C                                           | C             |
+| Morales, Omar                      | andrewmm16           | C                                    | C                                              | L                                             | C                                                            | C                                           | L                                           | C             |
+| Rodriguez, Arian                   | arianrodriguez       | C                                    | C                                              | C                                             | L                                                            | C                                           | C                                           | L             |
+| Jorge, Ramón                       | salvlormonch         | C                                    | C                                              | C                                             | C                                                            | L                                           | C                                           | C             |
+
+
+#### 6.2.1.3. Sprint Backlog 1
+| User Story |            | Work-Item / Task |         |             |               |                |
+|------------|------------|------------------|---------|-------------|---------------|----------------|
+| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** (To-do / In-Process / To-Review / Done) |
+| HU001     | Obtener información de la empresa | T-001            | Crear sección de Information | Implementar una sección con información relevante del negocio | 1 | Arian Rodriguez | Done |
+| HU002     | Informarse sobre los beneficios del producto | T-001            | Crear sección de Beneficios | Implementar una sección con información relevante sobre los beneficios | 1 | Fabia Herrera | Done |
+| HU03       | Conocer los testimonios de los clientes pasados | T001    | Crear sección de testimonios | Implementar sección de testimonios con testimonios simulados en frontend | 1                   | Omar Morales      | Done   |
+| HU04       | Informarse sobre los diferentes planes de subscripción | T001    | Diseñar vista de planes | Maquetar y mostrar los planes de subscripción con datos estáticos     | 2                   | Equipo      | Done   |
+| HU01       | Gestionar las reservas de huéspedes              | T001    | Maquetar gestión de reservas | Crear vista de reservas, botones de acción y estructura general      | 5                   | Giacomo Zoppi      | Done   |
+| HU03       | Registrar nueva habitación en el hotel           | T001    | Diseñar formulario de habitaciones | Crear formulario para agregar habitaciones nuevas al sistema         | 5                   | Giacomo Zoppi      | Done   |
+| HU01       | Crear organización                               | T001    | Implementar creación de organización | Desarrollar formulario con validación para crear una nueva organización | 5                   | Arian Rodriguez      | Done   |
+| HU01       | Revisar ingresos y egresos de la organización    | T001    | Crear módulo de finanzas | Implementar interfaz para mostrar ingresos y egresos de forma visual | 3                   | Ramón Jorge      | Done   |
+| HU02       | Revisar stock de recursos del hotel              | T001    | Mostrar tabla de stock | Crear componente que visualice el stock actual del inventario         | 3                   | Omar Morales      | Done   |
+| HU06       | Agregar proveedores a su lista de contactos      | T001    | Crear vista de proveedores | Diseñar formulario para añadir nuevos proveedores a la lista          | 3                   | Omar Morales      | Done   |
+| HU02       | Gestionar la comunicación en la organización     | T001    | Crear módulo de mensajes | Diseñar bandeja de entrada y chat interno entre usuarios del sistema  | 3                   | Fabia Herrera      | Done   |
+| HU03       | Reservar una habitación personalizada            | T001    | Configurar filtros de preferencia | Implementar filtros para personalizar la selección de habitaciones    | 3                   | Giacomo Zoppi      | Done   |
+| HU04       | Visualizar y gestionar reservas activas          | T001    | Crear panel de reservas activas | Implementar interfaz para mostrar y gestionar reservas actuales       | 3                   | Giacomo Zoppi      | Done   |
+| HU05       | Cancelar reservas activas                        | T001    | Agregar opción de cancelación | Añadir botón de cancelación con validaciones según condiciones        | 3                   | Giacomo Zoppi      | Done   |
+| HU06       | Consultar historial de reservas anteriores       | T001    | Mostrar historial de reservas | Crear lista de reservas pasadas accesible para el usuario             | 3                   | Giacomo Zoppi      | Done   |
+| HU08       | Editar el estado de una habitación                | T001    | Agregar botón de activación  | Implementar botón para cambiar el estado activo/inactivo de una habitación    | 2                   | Giacomo Zoppi      | To do   |
+| HU09       | Actualizar información de una habitación          | T001    | Crear formulario de edición  | Diseñar y enlazar formulario para editar los datos de una habitación          | 2                   | Arian Rodriguez      | To do   |
+| HU10       | Buscar y filtrar habitaciones por estado          | T001    | Añadir filtros de estado     | Implementar búsqueda y filtros por estado en la vista de habitaciones         | 2                   | Arian Rodriguez      | Done   |
+| HU11       | Listar administradores de la organización         | T001    | Mostrar lista de admins      | Crear vista para visualizar a todos los administradores registrados           | 2                   | Mauricio Rojas      | Done   |
+| HU12       | Ver huéspedes actuales en el hotel                | T001    | Implementar vista de huéspedes actuales | Mostrar lista con reservas activas y sus huéspedes asociados         | 2                   | Mauricio Rojas      | Done   |
+| HU13       | Desvincular administrador de la organización      | T001    | Agregar opción de desvincular | Permitir eliminar administradores desde el panel de organización              | 2                   | Mauricio Rojas      | To do   |
+| HU02       | Enviar mensajes al gerente                        | T001    | Crear módulo de mensajes al gerente | Implementar sección de mensajes privados entre admins y gerente         | 2                   | Fabia Herrera      | Done   |
+| HU03       | Ver detalles de la reserva del huésped            | T001    | Mostrar detalles de reserva  | Diseñar vista con datos completos de una reserva seleccionada                 | 2                   | Arian Rodriguez      | To do   |
+| HU04       | Consultar disponibilidad de habitaciones          | T001    | Vista de disponibilidad      | Implementar consulta de habitaciones libres por fechas seleccionadas          | 2                   | Arian Rodriguez      | Done   |
+| HU05       | Generar reporte de reservas del día               | T001    | Crear reporte diario         | Crear funcionalidad para generar resumen de entradas y salidas del día        | 2                   | Ramón Jorge      | To do    |
+| HU06       | Registrar reserva presencial                      | T001    | Agregar formulario de reserva manual | Permitir ingreso de reservas sin cuenta previa                        | 2                   | Giacomo Zoppi      | Done   |
+| HU07       | Modificar fechas de una reserva                   | T001    | Editar fechas de reserva     | Agregar inputs para cambiar fechas de check-in y check-out                    | 2                   | Giacomo Zoppi      | To do   |
+| HU08       | Cambiar asignación de habitación                  | T001    | Rediseñar asignación dinámica | Permitir cambiar habitación desde el detalle de la reserva                    | 2                   | Arian Rodriguez      | Done   |
+| HU02       | Buscar y filtrar hoteles de Sweet Manager         | T001    | Añadir buscador de hoteles   | Implementar filtros por nombre, ubicación y servicios                         | 2                   | Arian Rodriguez      | Done   |
+| HU05       | Invitar administradores a su organización         | T001    | Crear invitación por correo  | Permitir al gerente enviar invitaciones a nuevos administradores              | 2                   | Mauricio Rojas      | To do    |
+| HU04       | Mejorar la subscripción de la organización        | T001    | Agregar opción de upgrade    | Mostrar opciones de cambio de plan y actualizar información en sistema        | 2                   | Ramon Jorge      | Done   |
+| HU09       | Solicitar unirse a una organización               | T001    | Crear solicitud de unión     | Implementar botón y proceso de solicitud para unirse a una organización       | 1                   | Ramon Jorge      | Done   |
+| HU03       | Comunicarse con sus administradores               | T001    | Habilitar chat con admins    | Permitir que el gerente envíe mensajes directos a administradores             | 1                   | Fabia Herrera      | Done   |
+| HU01       | Crear perfil único y público en SweetManager      | T001    | Crear vista de perfil global | Diseñar perfil personal público con preferencias e historial                  | 1                   | Mauricio Rojas      | Done   |
+| HU01       | Crear cuenta                                      | T001    | Formulario de registro       | Implementar el formulario de registro de cuenta con validaciones              | 1                   | Giacomo Zoppi      | Done   |
+
+
+
 #### 6.2.1.4. Development Evidence for Sprint Review.
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 #### 6.2.1.6. Execution Evidence for Sprint Review.
