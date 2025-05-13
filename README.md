@@ -4198,11 +4198,23 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 
 
 #### 4.2.2.5. Bounded Context Software Architecture Component Level Diagrams
-URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
+En el diagrama de componentes en el contexto Booking se puede observar la interacción del usuario al hacer consultas relacionadas a reservas y habitaciones.<br>
+URL Structurizr: <a href="https://structurizr.com/share/101410/diagrams#Component-001">https://structurizr.com/share/101410/diagrams#Component-001</a>
 <br><br>
-<div style="text-align: center;">
-  <img src="./assets/img/c4-model/reservations-component.png" alt="Component Diagram" width="90%" />
-</div><br><br>
+
+**Web Services**
+    ![structurizr-101410-Component-001](https://github.com/user-attachments/assets/6b4d4453-9dd0-485b-9e2f-93afa6e334a5)
+Se muestra el diagrama de componentes del Web Services, desde la solicitud del front end, comunicación con otros bounded contexts y consultas a la base de datos.
+<br><br>
+
+**Mobile Application**
+    ![structurizr-101410-Component-002](https://github.com/user-attachments/assets/02aa8223-2a89-41f0-8026-3eaae67a0e41)
+Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
+<br><br>
+
+**Web Application**
+    ![structurizr-101410-Component-003](https://github.com/user-attachments/assets/5aae84b8-64cb-4582-9390-676a95da4460)
+Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
