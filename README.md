@@ -5984,7 +5984,12 @@ Asimismo, se realizó un video demostrativo para explicar los diferentes flujos 
 
 <img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
 
+Link directo hacia el mobile prototyping: <span><a href="https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=3846-1527&t=yxfxPIeSPfCG5IaX-0&scaling=min-zoom&content-scaling=fixed&page-id=110%3A1227&starting-point-node-id=3846%3A1527
+"> Mobile Application Prototyping</a></span>
 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/YQ0OANa.png" alt="Mobile Prototyping" width="80%" />
+</div><br>
 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
