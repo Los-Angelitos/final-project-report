@@ -5756,16 +5756,38 @@ En este ejemplo, el usuario puede buscar información específica utilizando la 
 
 ## 5.3. Landing Page UI Design.
 ### 5.3.1. Landing Page Wireframe.
-Esta sección incluye una sección interna donde se presenta y explica los Wireframes
-del Landing Page para Desktop Web Browser y Mobile Web Browser. En la propuesta
-y la explicación debe evidenciarse la aplicación de los principios, elementos de
-diseño, diseño inclusivo y arquitectura de información.
+
+El wireframe diseñado para el Desktop Web Browser muestra una disposición estructurada por bloques, pensada para ofrecer una navegación fluida e intuitiva. En la parte superior se ubica un encabezado funcional que incorpora el menú principal de navegación, asegurando el acceso constante y visible a las secciones más relevantes del sitio. Para la versión Mobile Web Browser de la aplicación, se ha optado por un menú hamburguesa que permite maximizar el espacio de visualización y mantener la estética minimalista, al tiempo que facilita la navegación. Este enfoque es especialmente útil en dispositivos móviles, donde el espacio de pantalla es limitado.
+
+Utilizamos un esquema visual que aprovecha los principios de jerarquía visual al ubicar la información más destacada en la zona superior de la interfaz, lo cual permite a los usuarios identificar rápidamente los elementos clave y mejora la experiencia de uso.
+
+El diseño del wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
+
+<div style="text-align: center;">
+  <img src="./assets/img/landing-page/landing-page-wireframe.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Landing page para Desktop web browser</p>
+</div><br><br>
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile.png" width="80%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile2.png" width="80%" />
+  <p style="font-style: italic">Wireframes de la Landing page para Mobile web browser</p>
+</div><br><br>
+
+
 ### 5.3.2. Landing Page Mock-up.
-Esta sección presenta y explica los Mock-ups del Landing Page, tanto en su versión
-para Desktop Web Browser como Mobile Web Browser. En la propuesta y la
-explicación debe evidenciarse la aplicación de los principios, elementos de diseño,
-diseño inclusivo y arquitectura de información, así como el Design System
-establecido para los productos digitales.
+
+El mock-up de la Landing Page presenta una interfaz moderna, coherente y visualmente atractiva siguiendo la identidd visual de la marca definida. La paleta utilizada se centra en el azul como color principal, lo cual comunica confianza, profesionalismo y serenidad. La elección de la tipografía “Poppins” contribuye a una lectura clara y fluida, gracias a su estilo limpio y contemporáneo.
+
+En términos de principios de diseño, se han aplicado conceptos como la proximidad, alineación, contraste y repetición, lo que permite una organización visual coherente y facilita que el usuario identifique patrones y jerarquías en el contenido. La estructura sigue una lógica de arquitectura de información en la que los bloques de contenido están jerarquizados desde lo más general a lo más específico, guiando al usuario a través de una trayectoria clara y efectiva. Asimismo, las llamadas a la acción (CTAs) están estratégicamente ubicadas para incentivar la conversión sin interrumpir la experiencia de navegación.
+
+<div style="text-align: center;">
+  <img src="./assets/img/landing-page/landing-page-mockup.png" width="80%" />
+  <p style="font-style: italic">Mock-up de la Landing page para Desktop web browser</p>
+
+
+
 ## 5.4. Applications UX/UI Design.
 ### 5.4.1. Applications Wireframes.
 Esta sección incluye una sección interna donde se presenta y explica los Wireframes
