@@ -5985,12 +5985,78 @@ Model.
 
 #### 6.2.1.3. Sprint Backlog n.
 #### 6.2.1.4. Development Evidence for Sprint Review.
-#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
-#### 6.2.1.6. Execution Evidence for Sprint Review.
-#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
-#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
-#### 6.2.1.9. Team Collaboration Insights during Sprint.
 
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+**Landing Page**
+
+Para el caso de la landing page, no se requiere de una suite de pruebas para su desarrollo.
+
+**Web Application**
+
+
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+
+**Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
+- El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
+- El link de la Web application: 
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En este sprint se cumplió el objetivo de desarrollar la Landing Page y el Web Application; sin embargo, al ser Landing Page y Web Application, no requiere de documentación relacionada a Web Services.
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+En este sprint, se completó el desarrollo de la landing page y el Web Application, a continuación, se detallan el conjunto de herramientas utilizadas para su despliegue:
+
+- Git: Utilizado como sistema de control de versiones para facilitar el trabajo en equipo durante el desarrollo de los artefactos.
+- GitFlow: Implementado como flujo de trabajo para gestionar el progreso individual de cada miembro del equipo en el desarrollo del los artefactos.
+- GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
+- Vercel: Plataforma utilizada para el despliegue del Web Application, conectandolo al repositorio de Github y sincronizar los cambios.
+
+**Evidencias Landing Page**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/github_pages_landing_page.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+Se ha creado un Github Page en el repositorio de la Landing Page, para su despliegue rápido y sencillo. No hay problemas de configuración o despliegue, ya que es una página estática.
+
+**Evidencias Web Application**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/vercel_set_up_web_application.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+
+Se selecciona el repositorio de Github el cual va alimentar el proyecto desplegado. En este caso, se hizo un fork a la rama main del repositorio `Los-Angelitos/web-application`.
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/vercel_configuration_project.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+
+Se configura las variables de entorno, configurar el puerto de entrada y la ruta base del proyecto en Vite.
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
+
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
+
+**Web Application**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/first_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/second_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+Los commits mostrados, pertenecen al repositorio de Web Application, evidenciando las contribuciones de cada participante para el artefacto mencionado.
+
+**Landing Page**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/first_team_landing_page.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/second_part_landing.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+Los commits mostrados, pertenecen al repositorio Landing Page, evidenciando las constribuciones de cada participante para el artefacto mencionado.
 
 # Conclusiones
 
