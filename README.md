@@ -327,6 +327,42 @@ Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprin
          - [4.2.6.6. Bounded Context Software Architecture Code Level Diagrams](#4266-bounded-context-software-architecture-code-level-diagrams)
             * [4.2.6.6.1. Bounded Context Domain Layer Class Diagrams](#42661-bounded-context-domain-layer-class-diagrams)
             * [4.2.6.6.2. Bounded Context Database Design Diagram](#42662-bounded-context-database-design-diagram)
+- [Capítulo V: Solution UI/UX Design](#capítulo-v-solution-ui/ux-design)
+   * [5.1. Style Guidelines](#51-style-guidelines)
+     + [5.1.1. General Style Guidelines](#511-general-style-guidelines)
+     + [5.1.2. Web, Mobile and IoT Style Guidelines](#512-web-mobile-and-iot-style-guidelines)
+   * [5.2. Information Architecture](#52-information-architecture)
+     + [5.2.1. Organization Systems](#521-organization-systems)
+     + [5.2.2. Labeling Systems](#522-labeling-systems)
+     + [5.2.3. SEO Tags and Meta Tags](#523-seo-tags-and-meta-tags)
+     + [5.2.4. Searching Systems](#524-searching-systems)
+     + [5.2.5. Navigation Systems](#525-navigation-systems)
+   * [5.3. Landing Page UI Design](#53-landing-page-ui-design)
+     + [5.3.1. Landing Page Wireframe](#531-landing-page-wireframe)
+     + [5.3.2. Landing Page Mock-up](#532-landing-page-mock-up)
+   * [5.4. Applications UX/UI Design](#54-applications-uxui-design)
+     + [5.4.1. Applications Wireframes](#541-applications-wireframes)
+     + [5.4.2. Applications Wireflow Diagrams](#542-applications-wireflow-diagrams)
+     + [5.4.2. Applications Mock-ups](#542-applications-mock-ups)
+     + [5.4.3. Applications User Flow Diagrams](#543-applications-user-flow-diagrams)
+   * [5.5. Applications Prototyping](#55-applications-prototyping)
+- [Capítulo VI: Product Implementation, Validation & Deployment](#capítulo-vi-product-implementation-validation--deployment)
+   * [6.1. Software Configuration Management](#61-software-configuration-management)
+      + [6.1.1. Software Development Environment Configuration](#611-software-development-environment-configuration) 
+      + [6.1.2. Source Code Management](#612-source-code-management)
+      + [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
+      + [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
+   * [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
+      + [6.2.1. Sprint 1](#621-sprint-1)
+         - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
+         - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
+         - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
+         - [6.2.1.4. Development Evidence for Sprint Review](#6214-development-evidence-for-sprint-review)
+         - [6.2.1.5. Testing Suite Evidence for Sprint Review](#6215-testing-suite-evidence-for-sprint-review)
+         - [6.2.1.6. Execution Evidence for Sprint Review](#6216-execution-evidence-for-sprint-review)
+         - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
+         - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
+         - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -5953,16 +5989,15 @@ Asimismo, se realizó un video demostrativo para explicar los diferentes flujos 
 # Capítulo VI: Product Implementation, Validation & Deployment
 ## 6.1. Software Configuration Management.
 ### 6.1.1. Software Development Environment Configuration.
-En esta sección el equipo especifica, describe e indica los nombres de productos, el
-propósito de uso en el proyecto, la ruta de referencia (para software basado en
-modelos SaaS) o ruta de descarga (para productos que se ejecutan en el computador
-del miembro del equipo) de cada uno de los productos de software que deben
-utilizar los miembros del equipo para colaborar en el ciclo de vida de los productos
-digitales que forman la solución con IoT, considerando todos los tipos de actividades
-como Project Management, Requirements Management, Product UX/UI Design,
-Software Development, Software Testing, Software Deployment, Software
-Documentation, respetando las restricciones indicadas sobre productos de software
-y herramientas que se pueden utilizar.
+
+Los productos involucrados para la solución IoT son:
+- Landing Page: Tiene como propósito cautivar a los visitantes a usar el servicios que ofrecemos, mediante datos estadísticos y vídeos de presentación.
+- Web Application:  La aplicación web permite a los gerentes de hoteles y al personal de administradores gestionar operaciones, monitorear el estado de dispositivos IoT (como sensores de temperatura), y visualizar datos estadísticos. También facilita la gestión de reservas, control de inventarios y la comunicación interna dentro del sistema hotelero.
+- Mobile Application: Brindar a los gerentes de hotel, administradores y huéspedes acceso a funcionalidades clave del sistema SweetManager desde cualquier lugar. Adicionalmente, simplificar la navegación para mostrar lo principal de cada segmento.
+- Web Services: El servicio API proporciona endpoints para la integración de estos con Web Application y Mobile Application. Permite el manejo de intercambio de datos entre la plataforma central y otros sistemas.
+- Edge API: La Edge API actúa como intermediario entre los dispositivos IoT en el hotel (como sensores de temperatura) y la infraestructura central en la nube. Procesa datos a nivel local para asegurar respuestas rápidas, como ajustar la temperatura en una habitación o detectar fallos en dispositivos de manera autónoma.
+- Embedded Application: Las aplicaciones embebidas se ejecutan directamente en los dispositivos IoT del hotel, gestionando tareas específicas como controlar el sistema de temperatura. Adicionalmente, permitirá enviar datos al sistema central de Sweet Manager para un monitoreo centralizado.
+
 ### 6.1.2. Source Code Management
 En esta sección, explicamos la forma en que estamos controlando los diferentes aspectos de nuestro proyecto. Basandonos en Gitflow, nos hemos organizado de tal modo que hemos trabajado con Features Branches (ramas por feature) y mediante pull requests, las hemos unido al develop y posteriormente a la rama main. Para su nomenclatura hemos seguido la siguiente estructura: 
 Prefijo: Comienza con feature/ para indicar claramente que se trata de una rama de función, seguido de un:
@@ -6003,7 +6038,6 @@ Elaborado en Markdown.
 | Referencias Adoptadas | Explicación y Convenciones|
 |-----------|-----------|
 | C# Coding Conventions: https://docs.microsoft.com/en-us/dotnet/csharp/fundamentals/coding-style/coding-conventions | Consideramos en utilizar la documentación de Microsoft  para aprender buenas prácticas y sintaxis de C#, puesto que lo utilizaremos en el desarrollo del Back-end. | Microsoft ASP .NET Core Coding Guidelines: https://github.com/dotnet/aspnetcore/wiki/Engineering-guidelines#coding-guidelines | Consideramos en utilizar la documentación de la referencia especificada para estudiar y aprender buenas prácticas, convenciones y cómo integrar código C# a ASP .NET Core, ya que lo utilizaremos en el backend de nuestros productos. |
-
 
 **Lenguaje Vue.JS**
 | Referencias Adoptadas | Explicación y Convenciones |
@@ -6050,12 +6084,80 @@ Model.
 
 #### 6.2.1.3. Sprint Backlog n.
 #### 6.2.1.4. Development Evidence for Sprint Review.
-#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
-#### 6.2.1.6. Execution Evidence for Sprint Review.
-#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
-#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
-#### 6.2.1.9. Team Collaboration Insights during Sprint.
 
+
+
+#### 6.2.1.5. Testing Suite Evidence for Sprint Review.
+**Landing Page**
+
+Para el caso de la landing page, no se requiere de una suite de pruebas para su desarrollo.
+
+**Web Application**
+Para el caso de la web application, no se requiere de una suite de pruebas para su desarrollo.
+
+#### 6.2.1.6. Execution Evidence for Sprint Review.
+
+**Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
+- El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
+- El link de la Web application: 
+
+#### 6.2.1.7. Services Documentation Evidence for Sprint Review.
+
+En este sprint se cumplió el objetivo de desarrollar la Landing Page y el Web Application; sin embargo, al ser Landing Page y Web Application, no requiere de documentación relacionada a Web Services.
+
+#### 6.2.1.8. Software Deployment Evidence for Sprint Review.
+En este sprint, se completó el desarrollo de la landing page y el Web Application, a continuación, se detallan el conjunto de herramientas utilizadas para su despliegue:
+
+- Git: Utilizado como sistema de control de versiones para facilitar el trabajo en equipo durante el desarrollo de los artefactos.
+- GitFlow: Implementado como flujo de trabajo para gestionar el progreso individual de cada miembro del equipo en el desarrollo del los artefactos.
+- GitHub: Empleado como plataforma colaborativa para almacenar las versiones del proyceto y facilitar el desarrollo conjunto del equipo.
+- Vercel: Plataforma utilizada para el despliegue del Web Application, conectandolo al repositorio de Github y sincronizar los cambios.
+
+**Evidencias Landing Page**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/github_pages_landing_page.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+Se ha creado un Github Page en el repositorio de la Landing Page, para su despliegue rápido y sencillo. No hay problemas de configuración o despliegue, ya que es una página estática.
+
+**Evidencias Web Application**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/vercel_set_up_web_application.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+
+Se selecciona el repositorio de Github el cual va alimentar el proyecto desplegado. En este caso, se hizo un fork a la rama main del repositorio `Los-Angelitos/web-application`.
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/vercel_configuration_project.png" alt="Github Pages Landing Page" width="50%" />
+</div><br><br>
+
+Se configura las variables de entorno, configurar el puerto de entrada y la ruta base del proyecto en Vite.
+
+#### 6.2.1.9. Team Collaboration Insights during Sprint.
+En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Landing Page y Web Application.
+
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
+
+**Web Application**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/first_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/second_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+Los commits mostrados, pertenecen al repositorio de Web Application, evidenciando las contribuciones de cada participante para el artefacto mencionado.
+
+**Landing Page**
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/first_team_landing_page.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/deployment_evidence/second_part_landing.png" alt="Github Pages Landing Page" width="100%" />
+</div><br><br>
+
+Los commits mostrados, pertenecen al repositorio Landing Page, evidenciando las constribuciones de cada participante para el artefacto mencionado.
 
 # Conclusiones
 
