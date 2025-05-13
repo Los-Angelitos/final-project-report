@@ -6011,10 +6011,43 @@ En términos de principios de diseño, se han aplicado conceptos como la proximi
 
 ## 5.4. Applications UX/UI Design.
 ### 5.4.1. Applications Wireframes.
-Esta sección incluye una sección interna donde se presenta y explica los Wireframes
-de las aplicaciones móviles. En la propuesta y la explicación debe evidenciarse la
-aplicación de los principios, elementos de diseño, diseño inclusivo y arquitectura de
-información. Utilizar para los wireframes las herramientas indicadas.
+Los Wireframes diseñados para el Web Application muestran una organización orientada a ofrecer una navegación intuitiva y fluida para los usuarios. En la parte superior se encuentra el encabezado, con el logo y las opciones principales, y, directamente debajo, está el menú de navegación principal, el cual permite un acceso en todo momento a las pantallas más importantes. Este diseño organiza la información de forma que sea fácil de entender y cómoda a la vista, asegurándose de que cada sección sea fácilmente reconocible y accesible:
+
+![Wireframes](./assets/img/wireframes/web/wireframes (1).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (2).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (3).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (4).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (5).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (6).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (7).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (8).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (9).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (10).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (11).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (12).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (13).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (14).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (15).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (16).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (17).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (18).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (19).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (20).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (21).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (22).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (23).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (24).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (25).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (26).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (27).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (28).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (29).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (30).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (31).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (32).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (33).png)
+![Wireframes](./assets/img/wireframes/web/wireframes (34).png)
+
 ### 5.4.2. Applications Wireflow Diagrams.
 Esta sección presenta la propuesta de Wireflows. Debe considerarse un Wireflow
 para cada User goal, considerando los User Persona para cada aplicación que forma
