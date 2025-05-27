@@ -2645,7 +2645,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     </tr>
     <tr>
       <td>EP08</td>
-      <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
+      <td>Control de termostato, detector de humo y tarjeta RFID bajo Framework y Approaches</td>
       <td>
         Como Device Maker, quiero utilizar framework de código a bajo nivel y distintos approaches para maximinar mis recursos y facilitar el debugging del producto.
       </td>
@@ -6455,7 +6455,9 @@ Para la distribución de la aplicación móvil durante el desarrollo y pruebas, 
 | **Sprint n – 1 Review Summary** |  |
 | **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar una documentación sólida del sistema, incluyendo modelos, sesiones de Event Storming, diagramas C4, etc. El equipo mostró compromiso y organización. Sin embargo, se detectaron errores en el nivel de Componentes del C4, lo cual fue una oportunidad para reforzar nuestro entendimiento del sistema y mejorar la coordinación técnica en próximas entregas. Se identificó la necesidad de validar más tempranamente los niveles de abstracción con todos los miembros del equipo. |
 | **Sprint Goal & User Stories** | |
-| **Sprint n Goal** | Our focus is on completing the frontend views and reaching 90% implementation progress. We believe it delivers tangible progress and increased confidence to stakeholders by providing a functional user interface. This will be confirmed when all planned views are visually completed, navigable, and demonstrable in a local environment still without backend integration. |
+| **Sprint n Goal** | Our focus is on delivering an interactive and intuitive user interface.
+We believe it delivers greater clarity, confidence, and ease of use for hotel staff, owners, and clients.
+This will be confirmed when all users can access, navigate and view all pages of the web application. |
 | **Sprint n Velocity** | 81 story points |
 | **Sum of Story Points** | 81 story points |
 
@@ -6730,45 +6732,46 @@ Feature: Gestión de suscripciones y planes
 **Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
 - El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
 
-Imagen 1: Hero Section
+Imagen 1: Hero Section, en esta sección se visualiza el menú superior de la landing page, así como una imagen principal llamtiva y atractiva al cliente. 
 ![image](https://github.com/user-attachments/assets/6e4253a0-01e5-4f8c-bb48-46d2e5308bb0)
 
-Imagen 2: Vista de Servicios
+Imagen 2: Vista de Servicios, dedicada a los Servicios ofrecidos por Sweet Manager, incluyendo la gestión de pagos, la gestión de inventarios y habitaciones, suscripciones y  dispostivos IOT
 ![image](https://github.com/user-attachments/assets/58304a2f-5e91-4d76-b4a6-f5c307656f70)
 
-Imagen 3: Vista de Why Us? 
+Imagen 3: Vista dedicada a la sección "Why Us?", en la que explicamos como puede aportar Sweet Manager a sus segmentos objetivos y que lo diferencia de otros productos similares
 ![image](https://github.com/user-attachments/assets/133cefe4-dd42-4e58-b023-6a0652c25d58)
 
 - El link de la Web application: https://sweet-manager-web-application.vercel.app
 
-Imagen 1: Vista Principal del Proyecto
+Imagen 1: Vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 ![image](https://github.com/user-attachments/assets/975e8976-954e-45f1-8ee9-59b2070bd41b)
 
-Imagen 2: Vista de datos personales y preferencias de la cuenta
+Imagen 2: Vista de datos personales y preferencias de la cuenta: Ingresado a la sección de preferences dentro del menú superior, se visualizan las preferencias que el cliente decidió configurar para sus habitaciones, con la posibilidad de editarlos. 
 ![image](https://github.com/user-attachments/assets/6f36cfb8-5a48-462c-8360-ed8cebce86c8)
 
-Imagen 3: Vista de información del hotel
+Imagen 3: Vista de información del hotel: Ingresado a la sección de My Hotel, se puede visualizar un segundo menú superior. De forma predetrminada se le redirige al primer item de ese menú: Overview, en el que se visualiza la información general del Hotel del usuario. 
 ![image](https://github.com/user-attachments/assets/4bc82b0f-2fd5-46ed-8ca4-1358934a9e8e)
 
-Imagen 4: Vista de Analíticas
+Imagen 4: Vista de Analíticas. Como segundo item, tenemos las analíticas en las que se grafican semanal y mensualmente los ingresos y egresos del hotel. 
+
 ![image](https://github.com/user-attachments/assets/fbeed890-ab0b-4439-ae4a-b640009c3090)
 
-Imagen 5: Vista de Inventario
+Imagen 5: Vista de Inventario. Como cuarto item del menú de My Hotel, ingresamos al Inventario, en el que se visualizan los distintos insumos con información como: ID, nombre, precio, cantidad, disponibilidad y proveedor. Con la posibilidad de añadir y eliminar.
 ![image](https://github.com/user-attachments/assets/eb51684f-a28e-4eb6-8383-62930d45e042)
 
-Imagen 6: Vista de habitaciones
+Imagen 6: Vista de habitaciones. Como quinto item del menú de My Hotel, tenemos la vista de Habitaciones del Hotel con información sobre las reservas, disponibilidad y tiempos de reserva, así como botones para agregar y eliminar habitaciones. 
 ![image](https://github.com/user-attachments/assets/d050d0c4-c026-48d3-8ea2-323016e6e63f)
 
-Imagen 7: Vista de Organización
+Imagen 7: Vista de Organización. Como sexto item del menú, se puede visualizar la organización del personal del hotel, mediante ramificaciones y un esquema visual.
 ![image](https://github.com/user-attachments/assets/fca409d3-12d4-4db7-ac05-3c461e881c59)
 
-Imagen 8: Vista de Devices
+Imagen 8: Vista de Devices. Como séptimo item del menú de My Hotel, se visualizan los dispositivos IOT configurados en el hotel, junto a información detallada de los mismos y su estado actual. 
 ![image](https://github.com/user-attachments/assets/e1e3c706-a775-4f1d-aa82-5074b369af05)
 
-Imagen 9: Vista de Configuración: 
+Imagen 9: Vista de Configuración. Se visualiza la información personal del usuario, incluidos nombre, rol, email, teléfono, contraseña, preferencias, etc. 
 ![image](https://github.com/user-attachments/assets/3d0f28b3-9cbf-4119-bd96-e5a6259357ea)
 
-Imagen 10: Vista de Perfil
+Imagen 10: Vista de Perfil. Mediante un modal, se visualizan distintos botones dedicados a la visualziacion de información personal, preferencias, reservas y cierre de sesión. 
 ![image](https://github.com/user-attachments/assets/77327113-6a30-484a-b8be-c9ee6c12c128)
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
@@ -6828,6 +6831,57 @@ Los commits mostrados, pertenecen al repositorio de Web Application, evidenciand
 </div><br><br>
 
 Los commits mostrados, pertenecen al repositorio Landing Page, evidenciando las constribuciones de cada participante para el artefacto mencionado.
+
+### 6.2.2. Sprint 2
+#### 6.2.2.1.Sprint Planning 2.
+#### 6.2.2.2.Aspect Leaders and Collaborators.
+#### 6.2.2.3.Sprint Backlog 2.
+#### 6.2.2.4.Development Evidence for Sprint Review.
+#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+#### 6.2.2.6.Execution Evidence for Sprint Review.
+#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.2.9.Team Collaboration Insights during Sprint.
+## 6.3. Validation Interviews.
+
+### 6.3.1. Diseño de Entrevistas.
+En esta sección el equipo establece por cada segmento objetivo los elementos a
+incluir en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Aquí
+se especifica también cuáles serán los user flows de las aplicaciones, que formarán
+parte del proceso de validación.
+
+### 6.3.2. Registro de Entrevistas.
+Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas
+se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot
+de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el
+timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en
+video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en
+este informe un resumen, que explique de forma descriptiva las principales
+apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras
+indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen
+Videos
+
+### 6.3.3. Evaluaciones según heurísticas.
+Esta sección contiene el proceso de evaluación de las sesiones de validación basado
+en heurísticas, considerando heurísticas de usabilidad, arquitectura de información e
+inclusive design de la experiencia propuesta. Para esto la sección debe contener la
+estructura del formato para evaluaciones de heurísticas indicado en el Anexo D.
+Formato para Evaluación de User Experience según Heurísticas
+
+## 6.4. Video About-the-Product.
+En esta sección el equipo redacta una introducción y resumen del contenido incluido
+en el Video About-the-Product, el cual tiene como público objetivo los visitantes al
+Landing Page, quienes desean conocer sobre el modelo de negocio y las
+características principales de los productos de software, al igual que los usuarios de
+las Aplicaciones, quienes desean realizar tareas relacionadas con los procesos
+soportados por la solución. El tono que utilice en la comunicación debe ser
+consistente con el tono adoptado para el producto y debe incluirse al menos un
+testimonio positivo de un usuario que haya participado en las entrevistas de
+validación. Debe incluirse también en esta sección un screenshot del Video, el URL
+de la versión publicada en Microsoft Stream (y además, el URL de la versión
+publicada en YouTube utilizada para incrustarse en el Landing Page), así como el
+timing (duración) del mismo. Ver otras indicaciones importantes en el Anexo C.
+Indicaciones para secciones que incluyen Videos
 
 # Conclusiones
 
