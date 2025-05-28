@@ -2643,6 +2643,51 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP07</td>
     </tr>
+      <tr>
+      <td>HU04</td>
+      <td>Recibir notificación por activación de sensor de humo</td>
+      <td>
+        Como Device User, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio.
+      </td>
+      <td>
+        <b>Escenario 1:</b> Notificación en Web Application por activación de sensor de humo <br>
+        <em>Given</em> hay un sensor de humo instalado y funcionando en una habitación  <br>
+        <em>And</em> el usuario está logueado en la Web Application<br>
+        <em>When</em> el sensor detecta humo y se activa  <br>
+        <em>Then</em> el usuario recibe una notificación visual inmediata en la interfaz de la Web Application <br>
+        <em>And</em> la notificación incluye la identificacion de la habitación afectada y la hora de activación<br>
+        <b>Escenario 2:</b> Error de visualización por dispositivo conectado<br>
+        <em>Given</em>  el usuario ha ingresado un correo electrónico valido al crear su cuenta<br>
+        <em>When</em>  se detecta humo por uno de los sensores activos <br>
+        <em>Then</em>  se envía automáticamente un correo al usuario con los detalles del incidente<br>
+        <b>Escenario 3:</b> Sensor de humo desactivado o con fallas<br>
+        <em>Given</em> el sensor de humo está desconectado o presenta un fallo  <br>
+        <em>When</em> el usuario accede al panel de sensores desde la Web Application  <br>
+        <em>Then</em> se muestra información sobre el estado del sensor <br>
+        <em>And</em> se recomienda revisar o reemplazar el dispositivo<br>
+      </td>
+      <td>EP07</td>
+    </tr>
+      tr>
+      <td>HU04</td>
+      <td>Recibir alerta sonora ante detección de humo</td>
+      <td>
+        Como Device User, quiero que el sensor de humo active un buzzer audible cuando detecte niveles peligrosos de humo en una habitación, para poder reaccionar rápidamente incluso sin conexión a internet o acceso a una pantalla.
+      </td>
+      <td>
+        <b>Escenario 1:</b> Activación del buzzer por detección de humo <br>
+        <em>And</em> el buzzer está correctamente conectado al dispositivo <br>
+        <em>Given</em> que el sensor está instalado y en funcionamiento en una habitación <br>
+        <em>When</em> el valor de humo supera el umbral configurado <br>
+        <em>Then</em>  el buzzer se activa emitiendo un sonido de alerta continuo <br>
+        <em>And</em> se mantiene activo mientras los niveles sigan siendo peligrosos n<br>
+        <b>Escenario 2:</b> Desactivación automática del buzzer cuando el nivel vuelve a la normalidad<br>
+        <em>Given</em>  que el buzzer está activo debido a un nivel de humo elevado<br>
+        <em>When</em>  el nivel de humo baja por debajo del umbral segur <br>
+        <em>Then</em>  el buzzer se apaga automáticamente<br>
+      </td>
+      <td>EP07</td>
+    </tr>
     <tr>
       <td>EP08</td>
       <td>Control de termostato y tarjeta RFID bajo Framework y Approaches</td>
@@ -2701,7 +2746,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Then</em> el dispositivo continúa funcionando sin error, pero no se visualiza salida<br><br>
       </td>
       <td>EP08</td>
-    </tr>
   </tbody>
 </table>
 
