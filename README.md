@@ -2114,7 +2114,32 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> solicita el estado de los dispositivos<br>
         <em>Then</em> el sistema responde que no existen dispositivos registrados en el hotel.<br><br>
       </td>
-      <td>EP05</td>
+      <td>EP03</td>
+    </tr>
+       <tr>
+      <td>HU15</td>
+      <td>Recibir notificación por activación de sensor de humo</td>
+      <td>
+        Como gerente, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio.
+      </td>
+      <td>
+        <b>Escenario 1:</b> Notificación en Web Application por activación de sensor de humo <br>
+        <em>Given</em> hay un sensor de humo instalado y funcionando en una habitación  <br>
+        <em>And</em> el usuario está logueado en la Web Application<br>
+        <em>When</em> el sensor detecta humo y se activa  <br>
+        <em>Then</em> el usuario recibe una notificación visual inmediata en la interfaz de la Web Application <br>
+        <em>And</em> la notificación incluye la identificacion de la habitación afectada y la hora de activación<br>
+        <b>Escenario 2:</b> Error de visualización por dispositivo conectado<br>
+        <em>Given</em>  el usuario ha ingresado un correo electrónico valido al crear su cuenta<br>
+        <em>When</em>  se detecta humo por uno de los sensores activos <br>
+        <em>Then</em>  se envía automáticamente un correo al usuario con los detalles del incidente<br>
+        <b>Escenario 3:</b> Sensor de humo desactivado o con fallas<br>
+        <em>Given</em> el sensor de humo está desconectado o presenta un fallo  <br>
+        <em>When</em> el usuario accede al panel de sensores desde la Web Application  <br>
+        <em>Then</em> se muestra información sobre el estado del sensor <br>
+        <em>And</em> se recomienda revisar o reemplazar el dispositivo<br>
+      </td>
+      <td>EP03</td>
     </tr>
     <tr>
       <td>EP04</td>
@@ -2640,31 +2665,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>When</em> accede a la sección de control de temperatura<br>
         <em>Then</em> se muestra un mensaje indicando que no hay una configuración previa<br>
         <em>And</em> se le ofrece un botón para establecer la temperatura inicial<br>
-      </td>
-      <td>EP07</td>
-    </tr>
-      <tr>
-      <td>HU04</td>
-      <td>Recibir notificación por activación de sensor de humo</td>
-      <td>
-        Como Device User, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio.
-      </td>
-      <td>
-        <b>Escenario 1:</b> Notificación en Web Application por activación de sensor de humo <br>
-        <em>Given</em> hay un sensor de humo instalado y funcionando en una habitación  <br>
-        <em>And</em> el usuario está logueado en la Web Application<br>
-        <em>When</em> el sensor detecta humo y se activa  <br>
-        <em>Then</em> el usuario recibe una notificación visual inmediata en la interfaz de la Web Application <br>
-        <em>And</em> la notificación incluye la identificacion de la habitación afectada y la hora de activación<br>
-        <b>Escenario 2:</b> Error de visualización por dispositivo conectado<br>
-        <em>Given</em>  el usuario ha ingresado un correo electrónico valido al crear su cuenta<br>
-        <em>When</em>  se detecta humo por uno de los sensores activos <br>
-        <em>Then</em>  se envía automáticamente un correo al usuario con los detalles del incidente<br>
-        <b>Escenario 3:</b> Sensor de humo desactivado o con fallas<br>
-        <em>Given</em> el sensor de humo está desconectado o presenta un fallo  <br>
-        <em>When</em> el usuario accede al panel de sensores desde la Web Application  <br>
-        <em>Then</em> se muestra información sobre el estado del sensor <br>
-        <em>And</em> se recomienda revisar o reemplazar el dispositivo<br>
       </td>
       <td>EP07</td>
     </tr>
