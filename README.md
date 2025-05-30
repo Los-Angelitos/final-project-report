@@ -353,7 +353,7 @@ Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprin
       + [6.1.3. Source Code Style Guide & Conventions](#613-source-code-style-guide--conventions)
       + [6.1.4. Software Deployment Configuration](#614-software-deployment-configuration)
    * [6.2. Landing Page, Services & Applications Implementation](#62-landing-page-services--applications-implementation)
-      + [6.2.1. Sprint 1](#621-sprint-1)
+      + [6.2.1. ](#621-sprint-1)
          - [6.2.1.1. Sprint Planning 1](#6211-sprint-planning-1)
          - [6.2.1.2. Aspect Leaders and Collaborators](#6212-aspect-leaders-and-collaborators)
          - [6.2.1.3. Sprint Backlog 1](#6213-sprint-backlog-1)
@@ -1799,7 +1799,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
   <td>HU01</td>
   <td>Crear organización</td>
-  <td>Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+  <td>Como Web Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
   <td>
     <b>GERENTE</b>
     <br>
@@ -1855,14 +1855,14 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
-      <td>Como gerente del hotel quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
+      <td>Como Web Hotel Owner quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
       <td>El gerente puede gestionar todos los aspectos operativos del hotel, incluyendo el control de las finanzas, el seguimiento de los recursos y la comunicación con los administradores. El gerente podrá revisar los ingresos y egresos, gestionar el stock de recursos, enviar mensajes a los administradores, y manejar la subscripción de la organización. También puede administrar las habitaciones, agregar nuevos proveedores, e invitar nuevos administradores a la organización, garantizando un control completo de las operaciones del hotel.</td>
       <td></td>
     </tr>
     <tr>
       <td>HU01</td>
       <td>Revisar ingresos y egresos de la organización</td>
-      <td>Como gerente del hotel quiero revisar las finanzas en términos de ingresos y egresos de mi hotel para mantener un constante seguimiento de estos.</td>
+      <td>Como Web Hotel Owner quiero revisar las finanzas en términos de ingresos y egresos de mi hotel para mantener un constante seguimiento de estos.</td>
       <td>
         <b>Escenario 1:</b> Revisión de las finanzas semanales<br>
         <em>Given</em> el gerente está conectado a su cuenta<br>
@@ -1880,7 +1880,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU02</td>
       <td>Revisar stock de recursos del hotel</td>
-      <td>Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
+      <td>Como Web Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
       <td>
         <b>Escenario 1:</b> Solicitud de abastecimiento<br>
         <em>Given</em> el gerente está en la página de recursos<br>
@@ -1898,7 +1898,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU03</td>
       <td>Comunicarse con sus administradores.</td>
-      <td>Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.</td>
+      <td>Como Web Hotel Owner quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.</td>
       <td>
         <b>Escenario 1:</b> Envío de mensaje a un administrador<br>
         <em>Given</em> el gerente está en la página de mensajería<br>
@@ -1920,7 +1920,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU04</td>
       <td>Mejorar la subscripción de la organización.</td>
-      <td>Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
+      <td>Como Web Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
       <td>
         <b>Escenario 1:</b> Cambio de suscripción<br>
         <em>Given</em> el gerente está en la página de subscripciones<br>
@@ -1943,7 +1943,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU05</td>
       <td>Invitar administradores a su organización.</td>
-      <td>Como gerente del hotel quiero invitar administradores a mi organización para que tengan acceso al servicio.</td>
+      <td>Como Web Hotel Owner quiero invitar administradores a mi organización para que tengan acceso al servicio.</td>
       <td>
         <b>Escenario 1:</b> Invitación a un nuevo administrador<br>
         <em>Given</em> el gerente está en la página de administradores<br>
@@ -1959,7 +1959,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU06</td>
       <td>Agregar proveedores a su lista de contactos.</td>
-      <td>Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.</td>
+      <td>Como Web Hotel Owner quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.</td>
       <td>
         <b>Escenario 1:</b> Agregar a un proveedor<br>
         <em>Given</em> el gerente está en la página de proveedores<br>
@@ -1976,7 +1976,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU07</td>
       <td>Registrar nueva habitación en el hotel.</td>
-      <td>Como gerente del hotel quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
+      <td>Como Web Hotel Owner quiero registrar una nueva habitación en el sistema para que esté disponible en las reservas.</td>
       <td>
         <b>Escenario 1:</b> Agregar una habitación<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
@@ -1998,7 +1998,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU08</td>
       <td>Editar el estado de una habitación.</td>
-      <td>Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
+      <td>Como Web Hotel Owner quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.</td>
       <td>
         <b>Escenario 1:</b> Cambiar una habitación a inactiva<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
@@ -2018,7 +2018,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU09</td>
       <td>Actualizar información de una habitación.</td>
-      <td>Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
+      <td>Como Web Hotel Owner quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.</td>
       <td>
         <b>Escenario 1:</b> Modificar una habitación<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
@@ -2038,7 +2038,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU10</td>
       <td>Buscar y filtrar habitaciones por estado.</td>
-      <td>Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
+      <td>Como Web Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
       <td>
         <b>Escenario 1:</b> Buscar habitaciones<br>
         <em>Given</em> el gerente está en la página de administración de habitaciones<br>
@@ -2055,7 +2055,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU11</td>
       <td>Listar administradores de la organización.</td>
-      <td>Como gerente del hotel quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando el hotel.</td>
+      <td>Como Web Hotel Owner quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando el hotel.</td>
       <td>
         <b>Given</b> el propietario ha iniciado sesión y accede a la sección de administración de usuarios.<br>
         <b>When</b> selecciona la opción para ver los administradores registrados en su organización.<br>
@@ -2066,7 +2066,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU12</td>
       <td>Ver huéspedes actuales en el hotel</td>
-      <td>Como gerente del hotel, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada, para monitorear la ocupación en tiempo real.</td>
+      <td>Como Web Hotel Owner, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada, para monitorear la ocupación en tiempo real.</td>
       <td>
         <b>Escenario:</b> Visualizar huéspedes actuales<br>
         <em>Given</em> que el propietario ha accedido al panel de control de ocupación<br>
@@ -2099,7 +2099,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU14</td>
       <td>Visualizar el estado de los dispositivos IoT en el hotel</td>
-      <td>Como gerente quiero visualizar el estado de los dispositivos IoT en mi hotel para identificar el correcto funcionamiento de estos</td>
+      <td>Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel para identificar el correcto funcionamiento de estos</td>
       <td>
         <b>Escenario 1:</b> Consultar dispositivos con estado funcional<br>
         <em>Given</em> que el gerente accede al sistema de monitoreo<br>
@@ -2120,7 +2120,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>HU15</td>
       <td>Recibir notificación por activación de sensor de humo</td>
       <td>
-        Como gerente, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio.
+        Como Web Hotel Owner, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio.
       </td>
       <td>
         <b>Escenario 1:</b> Notificación en Web Application por activación de sensor de humo <br>
@@ -2332,14 +2332,14 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>EP05</td>
       <td>Crear un perfil global para los huéspedes de SweetManager que permita personalizar preferencias de búsqueda, gestionar reservas y configurar opciones personales que podrán sincronizarse con los dispositivos IoT del hotel para una experiencia personalizada durante su estadía.</td>
-      <td>Como huésped, quiero crear un perfil único en la plataforma donde pueda registrar mis preferencias (como tipo de habitación, temperatura, iluminación), realizar reservas rápidamente y asegurarme de que mi experiencia en el hotel este personalizada según mis elecciones.</td>
+      <td>Como Web Guest, quiero crear un perfil único en la plataforma donde pueda registrar mis preferencias (como tipo de habitación, temperatura, iluminación), realizar reservas rápidamente y asegurarme de que mi experiencia en el hotel este personalizada según mis elecciones.</td>
       <td>Los huéspedes pueden crear un perfil único en la plataforma, donde pueden almacenar su historial de búsqueda, gestionar sus reservas y facilitar su experiencia de reservar hoteles de manera personalizada con sus preferencias de cliente. A través de este perfil, los hoteles podrán gestionar la personalización y trámite de reserva a disposición de su cliente, de esta manera el huésped se mantiene cómodo y confiado en el servicio de hotel que se le ofrece.</td>
       <td></td>
     </tr>
     <tr>
       <td>HU01</td>
       <td>Crear perfil único y público en SweetManager</td>
-      <td>Como huésped quiero crear un perfil global para guardar mis preferencias como cliente y reutilizarlos en futuras reservas.</td>
+      <td>Como Web Guest quiero crear un perfil global para guardar mis preferencias como cliente y reutilizarlos en futuras reservas.</td>
       <td>
         <strong>Escenario 1:</strong> Registro de huésped<br>
         <em>Given</em> que el huésped no tiene una cuenta<br>
@@ -2359,7 +2359,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU02</td>
       <td>Buscar y filtrar hoteles de Sweet Manager</td>
-      <td>Como huésped quiero filtrar y buscar hoteles de la red de SweetManager según mis preferencias para encontrar un hotel adecuado.</td>
+      <td>Como Web Guest quiero filtrar y buscar hoteles de la red de SweetManager según mis preferencias para encontrar un hotel adecuado.</td>
       <td>
         <b>Escenario 1:</b> Buscar hoteles por nombre o ciudad.<br>
         <em>Given</em> que el huésped está en la página de búsqueda de hoteles<br>
@@ -2379,7 +2379,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU03</td>
       <td>Reservar una habitación personalizada</td>
-      <td>Como huésped quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda y acorde a mis necesidades.</td>
+      <td>Como Web Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda y acorde a mis necesidades.</td>
       <td>
         <b>Escenario 1:</b> Selección de fechas.<br>
         <em>Given</em> que el huésped está en la página de reservas del hotel<br>
@@ -2399,7 +2399,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU04</td>
       <td>Visualizar y gestionar reservas activas</td>
-      <td>Como huésped, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré, y asegurarme de que la habitación se ajuste a mis preferencias.</td>
+      <td>Como Web Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré, y asegurarme de que la habitación se ajuste a mis preferencias.</td>
       <td>
         <b>Escenario 1:</b> Visualización de reservas activas<br>
         <em>Given</em> que el huésped se encuentra activo con su perfil
@@ -2419,7 +2419,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU05</td>
       <td>Cancelar reservas activas</td>
-      <td>Como huésped, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
+      <td>Como Web Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
       <td>
         <b>Escenario 1:</b> Cancelación dentro del plazo permitido<br>
         <em>Given</em> que el huésped tiene una reserva activa y la política de cancelación gratuita aún aplica.<br>
@@ -2439,7 +2439,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
     <tr>
       <td>HU06</td>
       <td>Consultar historial de reservas anteriores</td>
-      <td>Como huésped, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
+      <td>Como Web Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
       <td>
         <b>Escenario 1:</b> Visualización del historial completo<br>
         <em>Given</em> que el huésped se encuentra activo con su perfil público.<br>
@@ -2456,6 +2456,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
+    
     <tr>
       <td>EP06</td>
       <td>API RESTful para gestión de habitaciones, reservas y administración</td>
@@ -2464,11 +2465,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>
         <ul>
-          <li>HTU01 - Exponer endpoint para registrar habitación</li>
-          <li>HTU02 - Consultar habitaciones filtradas por estado</li>
-          <li>HTU03 - Exponer endpoint para desvincular administrador</li>
-          <li>HTU04 - Exponer endpoint para registrar reserva</li>
-          <li>HTU05 - Exponer endpoint para ver huéspedes alojados</li>
+          
         </ul>
       </td>
       <td>BACKEND</td>
@@ -2577,7 +2574,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP07</td>
       <td>Control de temperatura y acceso a habitaciones</td>
       <td>
-        Como Device User, quiero presionar un botón para controlar la temperatura de mi habitación y una tarjeta para acceder a mis habitaciones.
+        Como Device User, quiero presionar un botón para controlar la temperatura de mi habitación, un sensor para detectar el humo de la habitación y una tarjeta para acceder a mis habitaciones.
       </td>
       <td>
       </td>
@@ -2746,8 +2743,284 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Then</em> el dispositivo continúa funcionando sin error, pero no se visualiza salida<br><br>
       </td>
       <td>EP08</td>
+      <tr>
+  <tr>
+      <td>EP09</td>
+      <td>Gestión de Reservas desde la aplicación móvil</td>
+      <td>
+        Como Mobile Guest, quiero gestionar mis reservas desde la aplicación móvil para estar al tanto de mis alojamientos en cualquier momento y lugar de mi viaje.
+      </td>
+      <td>
+      </td>
+      <td>IOT</td>
+    </tr>
+  <td>HU01</td>
+  <td>Registrar nueva reserva en el hotel</td>
+  <td>Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
+  <td>
+    <b>Escenario 1:</b> Reserva exitosa desde móvil<br>
+    <em>Given</em> el huésped ha iniciado sesión en la app móvil y accede a la sección de reservas<br>
+    <em>When</em> selecciona fechas y habitación disponibles<br>
+    <em>Then</em> el sistema confirma la reserva y muestra un mensaje de éxito con código de reserva<br><br>
+    <b>Escenario 2:</b> Reserva sin disponibilidad<br>
+    <em>Given</em> el huésped busca habitaciones en fechas específicas<br>
+    <em>When</em> no hay disponibilidad para ese rango<br>
+    <em>Then</em> el sistema muestra un mensaje de no disponibilidad y sugiere fechas alternativas<br><br>
+    <b>Escenario 3:</b> Error de pago<br>
+    <em>Given</em> el huésped ya ha seleccionado habitación y fechas<br>
+    <em>When</em> intenta pagar pero ocurre un error con el método de pago<br>
+    <em>Then</em> el sistema muestra un mensaje de error y permite reintentar con otro método
+  </td>
+  <td>EP09</td>
+</tr>
+
+<tr>
+  <td>HU02</td>
+  <td>Reservar una habitación personalizada</td>
+  <td>Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.</td>
+  <td>
+    <b>Escenario 1:</b> Personalización exitosa<br>
+    <em>Given</em> el huésped tiene preferencias guardadas en su perfil<br>
+    <em>When</em> busca una habitación<br>
+    <em>Then</em> el sistema prioriza las que coincidan con esas preferencias<br><br>
+    <b>Escenario 2:</b> Preferencias no disponibles<br>
+    <em>Given</em> que el usuaario no ha configurado preferencias<br>
+    <em>When</em> el huésped intenta añadir sus preferencias a la reserva<br>
+    <em>Then</em> el sistema le indica que no hay preferencias que añadir<br>
+  </td>
+  <td>EP09</td>
+</tr>
+
+<tr>
+  <td>HU03</td>
+  <td>Visualizar y gestionar reservas activas</td>
+  <td>Como Mobile Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.</td>
+  <td>
+    <b>Escenario 1:</b> Acceso a reservas activas<br>
+    <em>Given</em> el huésped está logueado en la app móvil<br>
+    <em>When</em> accede a "Mis Reservas"<br>
+    <em>Then</em> el sistema muestra la lista de reservas activas con fechas y ubicaciones<br><br>
+    <b>Escenario 2:</b> Gestión de reservas<br>
+    <em>Given</em> el huésped visualiza una reserva activa<br>
+    <em>When</em> elige modificarla o cancelarla<br>
+    <em>Then</em> el sistema permite editar o cancelar si está dentro del plazo permitido
+  </td>
+  <td>EP09</td>
+</tr>
+
+<tr>
+  <td>HU04</td>
+  <td>Cancelar reservas activas</td>
+  <td>Como Mobile Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
+  <td>
+    <b>Escenario 1:</b> Cancelación exitosa<br>
+    <em>Given</em> el huésped accede a una reserva activa desde la app<br>
+    <em>When</em> está dentro del plazo de cancelación<br>
+    <em>Then</em> el sistema cancela la reserva y muestra confirmación<br><br>
+    <b>Escenario 2:</b> Cancelación fuera de plazo<br>
+    <em>Given</em> la reserva ya está próxima a la fecha de inicio<br>
+    <em>When</em> el huésped intenta cancelarla<br>
+    <em>Then</em> el sistema informa que ya no es posible cancelar sin penalización
+  </td>
+  <td>EP09</td>
+</tr>
+<tr>
+  <td>HU05</td>
+  <td>Buscar y filtrar hoteles de Sweet Manager</td>
+  <td>Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
+  <td>
+    <b>Escenario 1:</b> Búsqueda por ubicación<br>
+    <em>Given</em> el huésped introduce una ciudad o región<br>
+    <em>When</em> realiza la búsqueda<br>
+    <em>Then</em> el sistema muestra hoteles disponibles en esa zona<br><br>
+
+    <b>Escenario 2:</b> Filtro por preferencias<br>
+    <em>Given</em> el huésped aplica filtros como tipo de habitación o servicios<br>
+    <em>When</em> se actualiza la búsqueda<br>
+    <em>Then</em> solo se muestran hoteles que cumplan con esos criterios
+  </td>
+  <td>EP09</td>
+</tr>
+
+<tr>
+  <td>HU06</td>
+  <td>Consultar historial de reservas anteriores</td>
+  <td>Como Mobile Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
+  <td>
+    <b>Escenario 1:</b> Visualización de historial<br>
+    <em>Given</em> el huésped está logueado y accede a su perfil<br>
+    <em>When</em> entra a la sección de historial<br>
+    <em>Then</em> el sistema muestra una lista cronológica de sus reservas pasadas<br><br>
+    <b>Escenario 2:</b> Filtro de historial<br>
+    <em>Given</em> el huésped quiere encontrar una reserva específica<br>
+    <em>When</em> utiliza filtros por fecha o ubicación<br>
+    <em>Then</em> el sistema muestra solo las reservas que coinciden con esos filtros
+  </td>
+  <td>EP09</td>
+</tr>
+<tr>
+  <td>HU07</td>
+  <td>Crear perfil y preferencias</td>
+  <td>Como Mobile Guest quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
+  <td>
+    <b>Escenario 1:</b> Creación del perfil<br>
+    <em>Given</em> el huésped ha completado el registro<br>
+    <em>When</em> accede a la opción "Mi perfil"<br>
+    <em>Then</em> el sistema le permite ingresar preferencias, foto y datos públicos<br><br>
+    <b>Escenario 2:</b> Uso del perfil en reservas<br>
+    <em>Given</em> que el huésped tiene su perfil configurado<br>
+    <em>When</em> realiza una nueva reserva<br>
+    <em>Then</em> el sistema sugiere opciones que coincidan con sus preferencias guardadas
+  </td>
+  <td>EP09</td>
+</tr>
+<tr>
+      <td>EP10</td>
+      <td>Control operativo hotelero desde la aplicación móvil</td>
+      <td>
+        Como Mobile Owner, quiero tener total control operativo desde mi celular para estar al tanto de mi hotel en cualquier lugar y momento de mi dia. 
+      </td>
+      <td>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+  <td>HU01</td>
+  <td>Crear organización</td>
+  <td>Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+  <td>
+    <b>Escenario 1:</b> Registro exitoso de organización<br>
+    <em>Given</em> el hotelero ha completado el formulario de registro desde su móvil<br>
+    <em>When</em> realiza el pago del plan seleccionado<br>
+    <em>Then</em> el sistema crea la organización y muestra el panel principal con un mensaje de bienvenida<br><br>
+    <b>Escenario 2:</b> Error en la creación de organización<br>
+    <em>Given</em> el hotelero ingresa la información y selecciona un plan<br>
+    <em>When</em> ocurre un error durante el pago<br>
+    <em>Then</em> el sistema muestra un mensaje de error y permite reintentar el proceso
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU02</td>
+  <td>Mejorar la subscripción de la organización</td>
+  <td>Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
+  <td>
+    <b>Escenario 1:</b> Cambio exitoso de suscripción<br>
+    <em>Given</em> el hotelero accede al panel de suscripción desde la app móvil<br>
+    <em>When</em> selecciona un nuevo plan y confirma el pago<br>
+    <em>Then</em> el sistema actualiza la suscripción y muestra un mensaje de confirmación<br><br>
+    <b>Escenario 2:</b> Comparación de planes<br>
+    <em>Given</em> el hotelero desea cambiar de plan<br>
+    <em>When</em> accede a la sección de planes<br>
+    <em>Then</em> el sistema muestra una comparación detallada de los planes disponibles y el actual
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU03</td>
+  <td>Revisar stock de recursos del hotel</td>
+  <td>Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
+  <td>
+    <b>Escenario 1:</b> Consulta de stock actual<br>
+    <em>Given</em> el hotelero accede al módulo de inventario desde su móvil<br>
+    <em>When</em> selecciona el área de recursos<br>
+    <em>Then</em> el sistema muestra una lista detallada del stock disponible con cantidades actualizadas<br><br>
+    <b>Escenario 2:</b> Identificación de stock bajo<br>
+    <em>Given</em> el hotelero revisa el inventario<br>
+    <em>When</em> detecta recursos con niveles por debajo del mínimo<br>
+    <em>Then</em> el sistema destaca dichos recursos
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU04</td>
+  <td>Agregar proveedores</td>
+  <td>Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada.</td>
+  <td>
+    <b>Escenario 1:</b> Registro de nuevo proveedor<br>
+    <em>Given</em> el hotelero accede a la sección de proveedores<br>
+    <em>When</em> completa los datos requeridos desde su móvil<br>
+    <em>Then</em> el sistema registra el proveedor y lo incluye en la lista de contactos<br><br>
+    <b>Escenario 2:</b> Duplicado de proveedor<br>
+    <em>Given</em> ya existe un proveedor registrado con los mismos datos<br>
+    <em>When</em> el hotelero intenta registrar otro similar<br>
+    <em>Then</em> el sistema muestra un mensaje de advertencia y evita la duplicación
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU05</td>
+  <td>Buscar y filtrar habitaciones por estado</td>
+  <td>Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
+  <td>
+    <b>Escenario 1:</b> Filtro por estado activo/inactivo<br>
+    <em>Given</em> el hotelero accede a la lista de habitaciones desde su móvil<br>
+    <em>When</em> aplica el filtro por estado<br>
+    <em>Then</em> el sistema muestra solo las habitaciones que coinciden con el filtro seleccionado<br><br>
+    <b>Escenario 2:</b> No hay habitaciones en el estado seleccionado<br>
+    <em>Given</em> el hotelero aplica un filtro<br>
+    <em>When</em> no existen habitaciones en ese estado<br>
+    <em>Then</em> el sistema muestra un mensaje indicando que no hay coincidencias
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU06</td>
+  <td>Consultar disponibilidad de habitaciones</td>
+  <td>Como Mobile Hotel Owner, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
+  <td>
+    <b>Escenario 1:</b> Consulta general de disponibilidad<br>
+    <em>Given</em> el hotelero accede al calendario de habitaciones<br>
+    <em>When</em> selecciona una fecha específica<br>
+    <em>Then</em> el sistema muestra qué habitaciones están disponibles y cuáles ocupadas<br><br>
+    <b>Escenario 2:</b> Filtro por tipo de habitación<br>
+    <em>Given</em> el hotelero desea buscar disponibilidad de un tipo específico<br>
+    <em>When</em> aplica el filtro correspondiente<br>
+    <em>Then</em> el sistema muestra solo la disponibilidad de ese tipo de habitación
+  </td>
+  <td>EP10</td>
+</tr>
+
+<tr>
+  <td>HU07</td>
+  <td>Crear cuenta</td>
+  <td>Como Mobile Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+  <td>
+    <b>Escenario 1:</b> Registro exitoso<br>
+    <em>Given</em> el hotelero accede a la app móvil por primera vez<br>
+    <em>When</em> completa el formulario con datos válidos<br>
+    <em>Then</em> el sistema crea la cuenta y muestra el panel de inicio<br><br>
+    <b>Escenario 2:</b> Error en el registro<br>
+    <em>Given</em> el hotelero intenta registrarse<br>
+    <em>When</em> omite campos obligatorios o hay error de validación<br>
+    <em>Then</em> el sistema muestra mensajes de error específicos e impide avanzar
+  </td>
+  <td>EP10</td>
+</tr>
+<tr>
+  <td>HU08</td>
+  <td>Solicitar dispositivos</td>
+  <td>Como Mobile Hotel Owner, quiero poder solicitar más dispositivos IOT en mi hotel para que cada habitación disponga de personalización de temperatura, sensores de humo y/o escáneres RFID para el ingreso.</td>
+  <td>
+    <b>Escenario 1:</b> Solicitud de dispositivos aceptada<br>
+    <em>Given</em> el hotelero accede al módulo de dispositivos desde su app<br>
+    <em>When</em> selecciona el tipo y número de dispositivos deseados<br>
+    <em>Then</em> el sistema genera una solicitud con confirmación y estado de envío<br><br>
+    <b>Escenario 2:</b> Solicitud rechazada por exceder límite<br>
+    <em>Given</em> hay un límite establecido de dispositivos por suscripción<br>
+    <em>When</em> el hotelero solicita más de lo permitido<br>
+    <em>Then</em> el sistema rechaza la solicitud y muestra el límite disponible
+  </td>
+  <td>EP10</td>
+</tr>
   </tbody>
 </table>
+
 
 ## 3.3. Impact Mapping
 
@@ -2780,51 +3053,67 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 | Orden | User Story ID | Título                                                    | Descripción                                                                                                                                          | Story Points (1/2/3/5/8) |
 |-------|---------------|------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|
 | 1     | HU01            | Obtener información de la empresa                      | Como visitante del sitio web, quiero obtener información adicional sobre la empresa a cargo del producto.                                |                          1 |
-| 2     | HU02            | Informarse sobre los beneficios del producto           | Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.                                              |                          2 |
+| 2     | HU02            | Informarse sobre los beneficios del producto           | Como visitante del sitio web, quiero informarme sobre los beneficios del producto ofrecido.                                              |                          1 |
 | 3     | HU03            | Conocer los testimonios de los clientes pasados        | Como visitante, quiero acceder a los testimonios de clientes anteriores para evaluar la experiencia y la calidad de atención al cliente. |                          1 |
-| 4     | HU04            | Informarse sobre los diferentes planes de subscripción | Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades.       |                          2 |
-| 5     | HU01          | Gestionar las reservas de huéspedes                        | Como administrador del hotel quiero gestionar las reservas de los huéspedes para asegurar la correcta gestión de las mismas.                        | 5                        |
-| 6     | HU03          | Registrar nueva habitación en el hotel                     | Como huésped quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.                                                 | 5                        |
-| 7     | HU01          | Crear organización                                         | Como gerente quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.              | 5                        |
-| 8     | HU01          | Revisar ingresos y egresos de la organización              | Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.                     | 3                        |
-| 9     | HU02          | Revisar stock de recursos del hotel                        | Como gerente del hotel quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.                                     | 3                        |
-| 10     | HU06          | Agregar proveedores a su lista de contactos                | Como gerente del hotel quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.                     | 3                        |
-| 11     | HU02          | Gestionar la comunicación en la organización               | Como administrador del hotel quiero comunicarme con el dueño mediante mensajes internos de la aplicación para algún caso lo requiera.               | 3                        |
-| 12    | HU03          | Reservar una habitación personalizada                      | Como huésped quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.                      | 3                        |
-| 13    | HU04          | Visualizar y gestionar reservas activas                    | Como huésped, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.                                            | 3                        |
-| 14    | HU05          | Cancelar reservas activas                                  | Como huésped, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.         | 3                        |
-| 15    | HU06          | Consultar historial de reservas anteriores                 | Como huésped, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.         | 3                        |
-| 16    | HU01          | Tarjeta para acceso a habitaciones                         | Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.                        | 3                        |
-| 17    | HU02          | Control de temperatura en habitaciones                     | Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.                   | 3                        |
-| 18    | HU01          | Uso de Interrupt-Driven Detection                          | Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responda eficientemente sin sobrecargar el main loop. | 3 |
-| 19    | HTU01         | Exponer endpoint para registrar habitación                 | Como Developer quiero exponer un endpoint POST /api/rooms para permitir registrar una nueva habitación a un hotel por medio de una API RESTful.     | 2                        |
-| 20    | HTU02         | Consultar habitaciones filtradas por estado                | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo para permitir filtrar habitaciones por su estado.                  | 2                        |
-| 21    | HTU03         | Exponer endpoint para desvincular administrador            | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId} para permitir al owner remover un administrador de su organización.            | 2                        |
-| 22    | HTU04         | Exponer endpoint para registrar reserva                    | Como Developer quiero exponer un endpoint POST /api/bookings para permitir que un huésped registre su reserva desde la web.                         | 2                        |
-| 23    | HTU05         | Exponer endpoint para ver huéspedes alojados               | Como Developer quiero exponer un endpoint GET /api/bookings/active para listar huéspedes actualmente alojados con habitación y fechas.              | 2                        |
-| 24    | HU03          | Visualizar la temperatura específicada en la Web           | Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.      | 2                        |
-| 25    | EP08          | Control de termostato y tarjeta RFID bajo Framework        | Como Device Maker, quiero utilizar framework de código a bajo nivel y distintos approaches para maximinar mis recursos y facilitar el debugging.     | 2                        |
-| 26    | HU02          | Monitorear el cambio de temperatura                        | Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing. | 2 |
-| 27    | HU08          | Editar el estado de una habitación                         | Como gerente del hotel quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.               | 2                        |
-| 28    | HU09          | Actualizar información de una habitación                   | Como gerente del hotel quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.               | 2                        |
-| 29    | HU10          | Buscar y filtrar habitaciones por estado                   | Como gerente del hotel quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.             | 2                        |
-| 30    | HU11          | Listar administradores de la organización                  | Como gerente del hotel quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando. | 2                        |
-| 31    | HU12          | Ver huéspedes actuales en el hotel                         | Como gerente del hotel, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada.         | 2                        |
-| 32    | HU13          | Desvincular administrador de la organización               | Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.   | 2                        |
-| 33    | HU02          | Enviar mensajes al gerente                                 | Como administrador del hotel, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante. | 2 |
-| 34    | HU03          | Ver detalles de la reserva del huésped                     | Como administrador del hotel, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.        | 2                        |
-| 35    | HU04          | Consultar disponibilidad de habitaciones                   | Como administrador del hotel, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.                 | 2                        |
-| 36    | HU05          | Generar reporte de reservas del día                        | Como administrador del hotel, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.                            | 2                        |
-| 37    | HU06          | Registrar reserva presencial                               | Como administrador del hotel, quiero crear una reserva manualmente cuando un huésped llega sin haber hecho una reserva previa.                      | 2                        |
-| 38    | HU07          | Modificar fechas de una reserva                            | Como administrador del hotel, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.   | 2                        |
-| 39    | HU08          | Cambiar asignación de habitación                           | Como administrador del hotel, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.                 | 2                        |
-| 40    | HU02          | Buscar y filtrar hoteles de Sweet Manager                  | Como huésped quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.                                               | 2                        |
-| 41    | HU05          | Invitar administradores a su organización                  | Como dueño, quiero añadir administradores a mi organización para delegar tareas.                                                                    | 2                        |
-| 42    | HU04          | Mejorar la subscripción de la organización                 | Como gerente del hotel quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.                    | 2                        |
-| 43    | HU09          | Solicitar unirse a una organización                        | Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente.                                     | 1                        |
-| 44    | HU03          | Comunicarse con sus administradores                        | Como gerente del hotel quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.                               | 1                        |
-| 45    | HU01          | Crear perfil único y público en SweetManager               | Como huésped quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.                                             | 1                        |
-| 46    | HU01          | Crear cuenta                                               | Como gerente quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.                    | 1                        |
+| 4     | HU04            | Informarse sobre los diferentes planes de subscripción | Como visitante, quiero conocer los diferentes planes de subscripción disponibles para determinar cuál se ajusta a mis necesidades.       |                          1 |
+| 5     | HU01          | Gestionar las reservas de huéspedes                        | Como Web Hotel Admin quiero gestionar las reservas de los huéspedes para asegurar la correcta gestión de las mismas.                        | 3                        |
+| 6     | HU03          | Registrar nueva habitación en el hotel                     | Como Web Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.                                                 | 5                        |
+| 7     | HU01          | Crear organización                                         | Como Web Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.              | 3                        |
+| 9     | HU02          | Revisar stock de recursos del hotel                        | Como Web Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.                                     | 3                        |
+| 10     | HU06          | Agregar proveedores a su lista de contactos                | Como Web Hotel Owner quiero agregar proveedor a mi lista de contactos para tener su información guardada en caso la necesite.                     | 2                        |
+| 11    | HU03          | Reservar una habitación personalizada                      | Como Web Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.                      | 3                        |
+| 12    | HU04          | Visualizar y gestionar reservas activas                    | Como Web Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.                                            | 3                        |
+| 13    | HU05          | Cancelar reservas activas                                  | Como Web Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.         | 2                        |
+| 14    | HU08          | Editar el estado de una habitación                         | Como Web Hotel Owner quiero cambiar el estado de una habitación a activa o inactiva para gestionar su disponibilidad en el sistema.               | 2                        |
+| 15    | HU10          | Buscar y filtrar habitaciones por estado                   | Como Web Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.             | 2                        |
+| 16    | HU12          | Ver huéspedes actuales en el hotel                         | Como Web Hotel Owner, quiero ver una lista de los huéspedes que están actualmente en el hotel junto con su reserva y habitación asociada.         | 2                        |                       |
+| 17    | HU03          | Ver detalles de la reserva del huésped                     | Como Web Hotel Admin, quiero ver los detalles de la reserva de un huésped para consultar información relevante cuando sea necesario.        | 2                        |
+| 18    | HU04          | Consultar disponibilidad de habitaciones                   | Como Web Hotel Admin, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.                 | 2                        |
+| 19    | HU01          | Revisar ingresos y egresos de la organización              | Como Web Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.                     | 2                       |
+| 20    | HU09          | Actualizar información de una habitación                   | Como Web Hotel Owner quiero actualizar la información de una habitación para asegurar que los datos estén correctos y actualizados.               | 2                        |
+| 21    | HU11          | Listar administradores de la organización                  | Como Web Hotel Owner quiero listar todos los administradores de mi organización para tener visibilidad y control sobre quiénes están gestionando. | 2                        |
+| 22    | HU06          | Registrar reserva presencial                               | Como Web Hotel Admin, quiero crear una reserva manualmente cuando un huésped llega sin haber hecho una reserva previa.                      | 2                        |
+| 23    | HU07          | Modificar fechas de una reserva                            | Como Web Hotel Admin, quiero poder editar las fechas de entrada y salida de una reserva para ajustarlas si el huésped solicita un cambio.   | 2                        |
+| 24    | HU08          | Cambiar asignación de habitación                           | Como Web Hotel Admin, quiero cambiar la habitación asignada a un huésped en caso de inconvenientes o solicitud del cliente.                 | 2                        |
+| 25    | HU02          | Buscar y filtrar hoteles de Sweet Manager                  | Como Web Guest quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.                                               | 2                        |
+| 26    | HU13          | Desvincular administrador de la organización               | Como propietario del hotel, quiero poder desvincular a un administrador de la organización para mantener actualizado el equipo de trabajo activo.   | 2
+| 27    | HU05          | Generar reporte de reservas del día                        | Como Web Hotel Admin, quiero generar un reporte diario de reservas para tener un resumen de entradas y salidas.                            | 2                        |
+| 28    | HU02          | Enviar mensajes al gerente                                 | Como Web Hotel Admin, quiero comunicarme con el gerente mediante mensajes internos para reportar incidencias, solicitar aprobación o compartir información importante. | 2 |
+| 29    | HU05          | Invitar administradores a su organización                  | Como Web Hotel Owner, quiero añadir administradores a mi organización para delegar tareas.                                                                    | 2                        |
+| 30    | HU06          | Consultar historial de reservas anteriores                 | Como Web Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.         | 2                       |
+| 31    | HU04          | Mejorar la subscripción de la organización                 | Como Web Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.                    | 2                        |
+| 32    | HU09          | Solicitar unirse a una organización                        | Como administrador quiero enviar una solicitud por correo electrónico para unirme a una organización existente.                                     | 1                        |
+| 33    | HU03          | Comunicarse con sus administradores                        | Como Web Hotel Owner quiero enviar mensajes a cualquiera de mis administradores para mantener comunicación interna.                               | 1                        |
+| 34    | HU01          | Crear perfil único y público en SweetManager               | Como Web Guest quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.                                             | 1                        |
+| 35    | HU01          | Crear cuenta                                               | Como Web Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.                    | 1                        |
+| 36    | HU01          | Registrar nueva reserva en el hotel                     | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.                                                 | 3 |
+| 37    | HU01          | Crear organización                                         | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.              | 3                        |
+| 38    | HU02         | Mejorar la subscripción de la organización                 | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.                    | 2                        |
+| 39    | HU03          | Revisar stock de recursos del hotel                        | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.                                     | 3                        | 
+| 40     | HU04          | Agregar proveedores                | Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada.                    | 2                        | 
+| 41    | HU02          | Reservar una habitación personalizada                      | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.                      | 3                        |
+| 42    | HU03          | Visualizar y gestionar reservas activas                    | Como Mobile Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.                                            | 3                        |
+| 43    | HU04          | Cancelar reservas activas                                  | Como Mobile Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.         | 2                        |
+| 44    | HU05          | Buscar y filtrar habitaciones por estado                   | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.             | 2                        |
+| 45    | HU06          | Consultar disponibilidad de habitaciones                   | Como Mobile Hotel Owner, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.                 | 2                        || 40    | HU02          | Buscar y filtrar hoteles de Sweet Manager                  | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.                                               | 2                        |
+| 46    | HU06          | Consultar historial de reservas anteriores                 | Como Mobile Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.         | 2                       || 42    | HU04          | Mejorar la subscripción de la organización                 | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.                    | 2                        |
+| 47    | HU08          | Solicitar dispositivos                                              | Como Mobile Hotel Owner, quiero poder solicitar mas dispositivos IOT en mi hotel para que cada habitación disponga de personalización de temperatura, sensores de humo y/o escaners RFID para el ingreso                   | 1                        |
+| 48    | HU07          | Crear perfil y preferencias               | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.                                             | 1                        |
+| 49    | HU07          | Crear cuenta                                               | Como Mobile Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.                    | 1                        |
+| 50    | HTU01         | Exponer endpoint para registrar habitación                 | Como Developer quiero exponer un endpoint POST /api/rooms para permitir registrar una nueva habitación a un hotel por medio de una API RESTful.     | 2                        |
+| 51    | HTU02         | Consultar habitaciones filtradas por estado                | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo para permitir filtrar habitaciones por su estado.                  | 2                        |
+| 52    | HTU03         | Exponer endpoint para desvincular administrador            | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId} para permitir al owner remover un administrador de su organización.            | 2                        |
+| 53    | HTU04         | Exponer endpoint para registrar reserva                    | Como Developer quiero exponer un endpoint POST /api/bookings para permitir que un huésped registre su reserva desde la web.                         | 2                        |
+| 54    | HTU05         | Exponer endpoint para ver huéspedes alojados               | Como Developer quiero exponer un endpoint GET /api/bookings/active para listar huéspedes actualmente alojados con habitación y fechas.              | 2                        |
+| 55    | HU01          | Uso de Interrupt-Driven Detection                          | Como Device Maker, quiero usar la metodología interrupt-driven para detectar un botón presionado, de tal modo que el dispositivo responda eficientemente sin sobrecargar el main loop. | 5 |
+| 56    | HU01          | Tarjeta para acceso a habitaciones                         | Como Device User, quiero acercar una tarjeta para poder habilitar la puerta, de tal modo que pueda ingresar a mi habitación.                        | 3                        |
+| 57    | HU02          | Control de temperatura en habitaciones                     | Como Device User, quiero presionar un botón para subir y bajar la temperatura de mi habitación, de tal modo que me sienta cómodo.                   | 3                        |
+| 58    | HU04          | Recibir alerta sonora ante detección de humo                                              | Como Device User, quiero que el sensor de humo active un buzzer audible cuando detecte niveles peligrosos de humo en una habitación, para poder reaccionar rápidamente incluso sin conexión a internet o acceso a una pantalla. | 3  |
+| 59   | HU15          | Recibir notificación por activación de sensor de humo                                             | Como Web Hotel Owner, quiero recibir una notificación inmediata cuando se active un sensor de humo en alguna habitación, para poder actuar rápidamente en caso de un posible incendio. | 3  |
+| 60    | HU03          | Visualizar la temperatura específicada en la Web           | Como Device User, quiero visualizar una pantalla para ver la temperatura, de tal modo que pueda ver la temperatura que establecí en mi perfil.      | 2                        |
+| 61    | HU02          | Monitorear el cambio de temperatura                        | Como Device Maker, quiero visualizar el actual valor de temperatura impreso al Serial Monitor, de tal modo que pueda verificar que el dispositivo funciona correctamente durante el desarrollo y testing. | 2 |
+| 62   | HU14          | Visualizar el estado de los dispositivos IoT en el hotel                                             | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel para identificar el correcto funcionamiento de estos | 3  |
+
 
 
 
@@ -6488,7 +6777,7 @@ Para la distribución de la aplicación móvil durante el desarrollo y pruebas, 
 ### 6.2.1. Sprint 1
 #### 6.2.1.1. Sprint Planning 1
 
-| **Sprint #** | Sprint n |
+| **Sprint #** | Sprint 1 |
 |--------------|----------|
 | **Sprint Planning Background** | |
 | **Date** | 2025-05-11 |
@@ -6496,14 +6785,10 @@ Para la distribución de la aplicación móvil durante el desarrollo y pruebas, 
 | **Location** | Virtual, mediante una llamada de Discord |
 | **Prepared By** | Rojas Sanchez, Mauricio |
 | **Attendees (to planning meeting)** | Zoppi, Giacomo - Herrera, Fabia - Rodriguez, Arian - Morales, Omar - Jorge, Ramón |
-| **Sprint n – 1 Review Summary** |  |
-| **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar una documentación sólida del sistema, incluyendo modelos, sesiones de Event Storming, diagramas C4, etc. El equipo mostró compromiso y organización. Sin embargo, se detectaron errores en el nivel de Componentes del C4, lo cual fue una oportunidad para reforzar nuestro entendimiento del sistema y mejorar la coordinación técnica en próximas entregas. Se identificó la necesidad de validar más tempranamente los niveles de abstracción con todos los miembros del equipo. |
 | **Sprint Goal & User Stories** | |
-| **Sprint n Goal** | Our focus is on delivering an interactive and intuitive user interface.
-We believe it delivers greater clarity, confidence, and ease of use for hotel staff, owners, and clients.
-This will be confirmed when all users can access, navigate and view all pages of the web application. |
-| **Sprint n Velocity** | 81 story points |
-| **Sum of Story Points** | 81 story points |
+| **Sprint n Goal** | Our focus is on completing the frontend views and reaching 90% implementation progress. We believe it delivers tangible progress and increased confidence to stakeholders by providing a functional user interface. This will be confirmed when all planned views are visually completed, navigable, and demonstrable in a local environment still without backend integration. |
+| **Sprint 1 Velocity** | 61 story points |
+| **Sum of Story Points** | 61 story points |
 
 #### 6.2.1.2. Aspect Leaders and Collaborators.
 A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context y Landing Page a la hora de elaborar nuestros entregables de este Sprint. 
@@ -6878,8 +7163,58 @@ Los commits mostrados, pertenecen al repositorio Landing Page, evidenciando las 
 
 ### 6.2.2. Sprint 2
 #### 6.2.2.1.Sprint Planning 2.
+Hemos planeado para este sprint, el desarrollo de la fog api, edge api, embedded application, web services y mobile application. Junto a ello las correcciones de la Web Applications y Landing Page. Así como la culminación del documento, a excepción del Sprint 3. 
+
+| **Sprint #** | Sprint 2 |
+|--------------|----------|
+| **Sprint Planning Background** | |
+| **Date** | 2025-05-22 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Rojas Sanchez, Mauricio |
+| **Attendees (to planning meeting)** | Zoppi, Giacomo - Herrera, Fabia - Rodriguez, Arian - Morales, Omar - Jorge, Ramón |
+| **Sprint n – 1 Review Summary** |  |
+| **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar las vistas del Web Applications en un 90%, junto a la landing page en un 100% El equipo mostró compromiso y organización en el trabajo, de tal modo que logramos completar los entregables con el tiempo debido. Aparte, desde un principio, definimos aspects leaders, cada uno teniendo un Bounded Context en el que centrarse, facilitando el desarrollo de vistas. Por ultimo, como una potencial mejora, creemos que podemos definir mejor los tiempos y fechas limites, con rangos mas cortos de tiempo, habriamos trabajado igual de bien y en menor tiempo, lo cual nos será esencial para este Sprint 2 |
+| **Sprint Goal & User Stories** | |
+| **Sprint n Goal** | **Our focus** is on enabling users to manage rooms, make reservations, control IoT devices, and oversee all hotel operations through a suite of technological solutions including embedded, mobile, web, web services, edge, fog, and a landing page. **We believe it delivers** a comprehensive solution that covers all operational and hospitality needs of a hotel, allowing guests, administrators, and owners to operate efficiently. **This will be confirmed** when users can seamlessly interact with and manage all key hotel operations through a unified platform without relying on external tools. |
+| **Sprint 2 Velocity** | 67 story points |
+| **Sum of Story Points** | 67 story points |
+
 #### 6.2.2.2.Aspect Leaders and Collaborators.
 #### 6.2.2.3.Sprint Backlog 2.
+| User Story |            | Work-Item / Task |         |             |               |                |                |
+|------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
+| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| HU01     | Registrar nueva reserva en el hotel | T-001 | Reservar habitaciones | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia. | 3 | Giacomo Zoppi | To-do |
+| HU01     | Crear organización | T-001 | Registrar organización | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3 | Arian Rodriguez | To-do |
+| HU02     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2 | Ramon Jorge | To-do |
+| HU03     | Revisar stock de recursos del hotel | T-001 | Ver stock de recursos | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3 | Omar Morales | To-do |
+| HU04     | Agregar proveedores | T-001 | Registrar proveedor | Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada. | 2 | Omar Morales | To-do |
+| HU02     | Reservar una habitación personalizada | T-001 | Reserva personalizada | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias. | 3 | Giacomo Zoppi | To-do |
+| HU03     | Visualizar y gestionar reservas activas | T-001 | Gestionar reservas activas | Como Mobile Guest quiero visualizar y gestionar mis reservas activas. | 3 | Giacomo Zoppi | To-do |
+| HU04     | Cancelar reservas activas | T-001 | Cancelar reserva | Como Mobile Guest quiero cancelar una de mis reservas activas dentro del plazo permitido. | 2 | Giacomo Zoppi | To-do |
+| HU05     | Buscar y filtrar habitaciones por estado | T-001 | Filtrar habitaciones | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo). | 2 | Arian Rodriguez | To-do |
+| HU06     | Consultar disponibilidad de habitaciones | T-001 | Ver disponibilidad | Como Mobile Hotel Owner quiero consultar la disponibilidad de habitaciones. | 2 | Giacomo Zoppi  | To-do |
+| HU02     | Buscar y filtrar hoteles de Sweet Manager | T-001 | Filtrar hoteles | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias. | 2 | Arian Rodriguez | To-do |
+| HU06     | Consultar historial de reservas anteriores | T-001 | Ver historial de reservas | Como Mobile Guest quiero acceder a mi historial de reservas. | 2 | Giacomo Zoppi | To-do |
+| HU04     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización. | 2 | Ramón Jorge | To-do |
+| HU08     | Solicitar dispositivos | T-001 | Pedir dispositivos IoT | Como Mobile Hotel Owner quiero poder solicitar más dispositivos IoT para personalización de habitaciones. | 1 | Giacomo Zoppi | To-do |
+| HU07     | Crear perfil y preferencias | T-001 | Crear perfil | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias. | 1 | Mauricio Rojas | To-do |
+| HU07     | Crear cuenta | T-001 | Registrar cuenta | Como Mobile Hotel Owner quiero registrar una cuenta para gestionar el hotel. | 1 | Mauricio Rojas | To-do |
+| HTU01    | Exponer endpoint para registrar habitación | T-001 | Endpoint registrar habitación | Como Developer quiero exponer un endpoint POST /api/rooms para registrar una habitación por API. | 2 | Giacomo Zoppi | To-do |
+| HTU02    | Consultar habitaciones filtradas por estado | T-001 | Endpoint filtrar habitaciones | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo. | 2 | Giacomo Zoppi | To-do |
+| HTU03    | Exponer endpoint para desvincular administrador | T-001 | Endpoint eliminar admin | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId}. | 2 | Mauricio Rojas | To-do |
+| HTU04    | Exponer endpoint para registrar reserva | T-001 | Endpoint registrar reserva | Como Developer quiero exponer un endpoint POST /api/bookings. | 2 | Giacomo Zoppi | To-do |
+| HTU05    | Exponer endpoint para ver huéspedes alojados | T-001 | Endpoint ver huéspedes | Como Developer quiero exponer un endpoint GET /api/bookings/active. | 2 | Giacomo Zoppi | To-do |
+| HU01     | Uso de Interrupt-Driven Detection | T-001 | Detectar botón con interrupción | Como Device Maker quiero usar metodología interrupt-driven para detectar un botón presionado eficientemente. | 5 | Mauricio Rojas | To-do |
+| HU01     | Tarjeta para acceso a habitaciones | T-001 | Acceso con tarjeta | Como Device User quiero acercar una tarjeta para habilitar la puerta. | 3 | Omar Morales | To-do |
+| HU02     | Control de temperatura en habitaciones | T-001 | Controlar temperatura | Como Device User quiero presionar un botón para ajustar la temperatura. | 3 | Arian Rodriguez | To-do |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible. | 3 | Fabia Herrera | To-do |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | To-do |
+| HU03     | Visualizar estado de dispositivos IoT| T-001 | Ver temperatura en pantalla | Como Device User quiero visualizar una pantalla con la temperatura configurada. | 2 | Ramón Jorge | To-do |
+| HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | To-do |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
+
 #### 6.2.2.4.Development Evidence for Sprint Review.
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
 #### 6.2.2.6.Execution Evidence for Sprint Review.
@@ -6981,4 +7316,4 @@ https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 ## Kanban Board
 | Contenido | URL del Trello |
 |--------------|--------------|
-| Kanban Board Sprint 1      | Link del Vídeo: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board       | Link del Vídeo: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
