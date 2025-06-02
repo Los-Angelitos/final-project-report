@@ -44,9 +44,8 @@
     </tr>
   </thead>
   <tbody>
-    <!-- TB1 group (6 personas) -->
     <tr>
-      <td rowspan="6">TB1</td>
+      <td rowspan="6">V1</td>
       <td>29/03/2024</td>
       <td>Mauricio Abraham Rivo Rojas Sánchez</td>
       <td>
@@ -111,8 +110,8 @@
       </td>
     </tr>
     <tr>
-      <td rowspan="6">TP</td>
-      <td>12/05/2024</td>
+      <td rowspan="6">V2</td>
+      <td>12/05/2025</td>
       <td>Mauricio Abraham Rivo Rojas Sánchez</td>
       <td>
         <ul>
@@ -123,7 +122,7 @@
       </td>
     </tr>
     <tr>
-      <td>12/05/2024</td>
+      <td>12/05/2025</td>
       <td>Giacomo Zoppi Rodriguez</td>
       <td>
         <ul>
@@ -134,7 +133,7 @@
       </td>
     </tr>
     <tr>
-      <td>12/05/2024</td>
+      <td>12/05/2025</td>
       <td>Omar Andrew Morales Montalvo</td>
       <td>
         <ul>
@@ -145,7 +144,7 @@
       </td>
     </tr>
     <tr>
-      <td>12/05/2024</td>
+      <td>12/05/2025</td>
       <td>Ramón Alejandro Jorge Arévalo</td>
       <td>
         <ul>
@@ -156,7 +155,7 @@
       </td>
     </tr>
     <tr>
-      <td>12/05/2024</td>
+      <td>12/05/2025</td>
       <td>Fabia Alejandra Herrera Aguirre</td>
       <td>
         <ul>
@@ -168,7 +167,7 @@
       </td>
     </tr>
     <tr>
-      <td>12/05/2024</td>
+      <td>12/05/2025</td>
       <td>Arian Martín Rodriguez Vargas</td>
       <td>
         <ul>
@@ -179,6 +178,75 @@
         </ul>
       </td>
     </tr>
+     <tr>
+      <td rowspan="6">V3</td>
+      <td>01/06/2025</td>
+      <td>Mauricio Abraham Rivo Rojas Sánchez</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>01/06/2025</td>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>01/06/2024</td>
+      <td>Omar Andrew Morales Montalvo</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>01/06/2025</td>
+      <td>Ramón Alejandro Jorge Arévalo</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>01/06/2025</td>
+      <td>Fabia Alejandra Herrera Aguirre</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>01/06/2025</td>
+      <td>Arian Martín Rodriguez Vargas</td>
+      <td>
+        <ul>
+          <li>Mobile y Embedded Applications</li>
+          <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
   </tbody>
 </table>
 
@@ -196,25 +264,34 @@ Se redactaron y estructuraron los contenidos asignados a cada miembro utilizando
 Se completaron los siguientes puntos: capitulos I-IV, conclusiones y video exposición, en colaboración del equipo. 
 Se llevaron a cabo reuniones semanales para hacer una revisión de lo elaborado por el grupo. 
 
+Imagen 1: Gráfico general de commits y contribuciones hechas por cada miembros del equipo de Sweet Manager. Incluye tambien los pull requests activos y aceptados. 
 ![image](https://github.com/user-attachments/assets/fa3d4175-c603-4bb3-b582-5980284581f0)
 
+Imagen 2: Gráfico detallado de los commits de cada miembros del equipo al repositorio del informe. Incluye fechas e información mas especifica. 
 ![image](https://github.com/user-attachments/assets/154cf9e0-6276-4d65-83f9-55d7c4759cdf)
 
+Imagen 3: Gráfico de la sección Network de nuestro repositorio del informe.
 ![image](https://github.com/user-attachments/assets/df947a4f-1357-46f9-b40f-b986c7145aac)
 
+Imagen 4: Gráfico de la sección Netowrk de nuestro repositorio de la Landing Page.
 ![image](https://github.com/user-attachments/assets/b2afbc77-613e-4edb-96a4-60289f187457)
 
 TP: El entregabe consistió principalmente en el desarrollo de la Web Application de nuestro proyecto. Durante el desarollo, tuvimos en cuenta los siguientes puntos: 
 
 Se desarrollaron las vistas de la aplicación a nivel diseño y sin funcionalidad. 
 Se crearon las carpetas y componentes necesarios para un desarrollo mas acelerado del proyecto.
-Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso. 
+Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso.
 
+Imagen 5: Gráfico general de commits y contribuciones hechas por cada miembros del equipo de Sweet Manager al repositorio de la Web Application. Incluye tambien los pull requests activos y aceptados. 
 ![image](https://github.com/user-attachments/assets/aec822cc-d3fe-439b-9e84-863c8db0dda4)
 
+Imagen 6: Gráfico detallado de los commits de cada miembros del equipo al repositorio de la Web Applications. Incluye fechas e información mas especifica. 
 ![image](https://github.com/user-attachments/assets/f4c77e35-c15f-41a4-b877-45ce65379b32)
 
+TB2: El entregabe consistió principalmente en la corrección de errores de la Web Application así como el inicio del desarrollo de la Mobile Applications, Web Services, Edge Api, FOG Api y Embedded Applications de nuestro proyecto. Durante el desarollo, tuvimos en cuenta los siguientes puntos: 
 
+Se desarrollaron las las distintas soluciones tecnologias requeridas para el funcionamiento correcto de Sweet Manager. 
+Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso.
 
 
 
@@ -415,10 +492,32 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Omar Morales: En esta entrega, trabajé activamente en la estructuración de la organización del sistema y su etiquetado, además de apoyar en la implementación y validación de las funcionalidades propuestas, fomentando siempre un entorno colaborativo.
         </p>
+                <p>
+TB2:
+<p/>
+
+Mauricio Rojas: En este entregable, participé activamente en todas las áreas del sistema: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Contribuí en la configuración del entorno de despliegue y en tareas técnicas generales, además de colaborar con el equipo en el desarrollo e implementación.
+<p/>
+
+Giacomo Zoppi: En esta etapa, colaboré transversalmente en el desarrollo del sistema, incluyendo web, servicios, mobile, embedded, validaciones y fog API. Apoyé liderando en algunos puntos, en especial, aquellos relacionados a mi Bounded Context. 
+<p/>
+
+Ramón Jorge: En esta entrega, aporté al diseño funcional y visual del sistema, desde wireframes hasta la implementación en distintas áreas como web, mobile, embedded y servicios. Mantuve siempre una comunicación constante con el equipo y participé activamente en entrevistas de validación y mejoras en la Fog API.
+<p/>
+
+Arian Rodríguez: Durante esta entrega, colaboré en los distintos módulos del sistema como mobile, embedded, servicios y fog API. Fomenté el trabajo conjunto y la cohesión de ideas entre los compañeros, incluyendo validaciones con usuarios.
+<p/>
+
+Fabia Herrera: En esta fase, trabajé  en la integración de componentes en todas las áreas: aplicaciones web, mobile, servicios, embedded y fog API. Participé también en entrevistas de validación y coordiné la coherencia estética y funcional del proyecto.
+<p/>
+
+Omar Morales: En esta entrega, me involucré en la estructuración de todo el sistema: desde el etiquetado y arquitectura hasta el desarrollo en web, servicios, embedded, mobile, validaciones y fog API. Fomenté un entorno colaborativo y apoyé la implementación técnica en distintas fases del proyecto.
+<p/>
     </td>
     <td>
         TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega.</p>
         TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.
+        TB2: En esta fase del proyecto se reforzó el liderazgo compartido dentro del equipo. Cada integrante aportó en todas las áreas del sistema —web, mobile, servicios, embedded, validaciones y fog API— asumiendo responsabilidades y tomando iniciativa cuando fue necesario. La comunicación, el uso efectivo del tablero Kanban y la colaboración constante permitieron que el equipo avanzara de forma coordinada y autónoma, manteniendo siempre una visión común.
      </td>
   </tr>
   <tr>
@@ -453,10 +552,32 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
       Fabia Herrera: Durante esta entrega, me enfoqué en la planificación visual del sistema, colaborando en la distribución de tareas del equipo y asegurando la coherencia en los entregables gráficos. Contribuí en el diseño de mockups y guías visuales respetando las metas establecidas desde el inicio.
       <p/>
       Omar Morales: Ayudé a definir tareas y a mantener un entorno de trabajo colaborativo, participando en la planificación y documentación del sistema. Supervisé el cumplimiento de los objetivos técnicos en el área de organización de etiquetas y arquitectura, comunicándome constantemente con los compañeros para mantenernos alineados.
-      </p>
-    </td>
-    <td>TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
-        TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.
+    </p>
+    <p>
+TB2:
+<p/>
+
+Mauricio Rojas: En este entregable, participé activamente en todas las áreas del proyecto: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Promoví un ambiente de trabajo colaborativo, ayudando a coordinar tareas técnicas y manteniendo una comunicación constante con el equipo para garantizar que los objetivos se cumplieran a tiempo.
+<p/>
+
+Giacomo Zoppi: Contribuí de manera transversal en el desarrollo del sistema, aportando tanto en la web como en mobile, servicios, embedded y fog API. Planifiqué tareas en el tablero Kanban y aseguré su seguimiento, fomentando un entorno responsable y participando en entrevistas de validación.
+<p/>
+
+Ramón Jorge: Para esta entrega colaboré en distintas partes del sistema, desde el diseño de wireframes y flujos de navegación para la aplicación web y mobile, hasta tareas relacionadas con servicios, embedded y fog API. Utilicé el tablero Kanban para mantener una visión clara del avance del grupo y asegurar la entrega coordinada.
+<p/>
+
+Arian Rodríguez: Estuve involucrado en todas las secciones del proyecto, apoyando en el desarrollo de la aplicación web, mobile, servicios, embedded y fog API. También participé en entrevistas de validación y trabajé activamente en la organización del tablero Kanban, resolviendo dudas y cumpliendo los plazos definidos.
+<p/>
+
+Fabia Herrera: Durante esta entrega, colaboré en los distintos aspectos del sistema, aportando en el diseño visual y técnico de la web, mobile, servicios, embedded y fog API. También formé parte del equipo que organizó y llevó adelante las entrevistas de validación, asegurando coherencia en los entregables.
+<p/>
+
+Omar Morales: Participé activamente en todas las etapas del proyecto, desde la planificación y documentación del sistema hasta el desarrollo en web, mobile, servicios, embedded y fog API. Además, colaboré en las entrevistas de validación y ayudé a mantener la organización del equipo mediante una comunicación constante.
+<p/>
+<td>
+TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
+TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.</p>
+TB2: En esta fase, reafirmamos nuestro compromiso con un entorno colaborativo e inclusivo. Establecimos metas claras desde el inicio, asignando tareas específicas en el tablero Kanban y manteniendo una comunicación constante entre los integrantes. Todos aportamos activamente en las distintas etapas del trabajo, compartiendo responsabilidades y asegurando el cumplimiento de los objetivos planteados dentro de los tiempos establecidos.
 </td>
   </tr>
 </table>
@@ -1241,7 +1362,7 @@ Personalidad: Análitica
   <img src="assets/img/interview-analysis/owner1.jpg" alt="Owner Carlo Rebagliati" width="100%" />
 </div><br>
 
-En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android. Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
+En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android y una computadora con Windows. . Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
 <br><br>
 **Entrevista 02 (Gerentes)**
 <br>
@@ -1260,6 +1381,8 @@ Personalidad: Analítica <br>
 
 
 En resumen, Sergio Alberto Cadillo Nuñez es un joven emprendedor de 30 años con una personalidad analítica y enfoque práctico. Vive en Pueblo Libre, Lima, y actualmente lidera su propio emprendimiento hotelero. Durante la entrevista, nos compartió que uno de los principales desafíos en la gestión diaria de su hotel es el control de inventario y la gestión eficiente de proveedores. Actualmente, el seguimiento de ingresos y reservas lo realiza mediante herramientas básicas como Excel, complementadas por procesos manuales. A pesar de ello, valora la organización y procura mantener un orden estructurado con apoyo de su equipo contable y administrativo. Entre las funcionalidades que considera más útiles para mejorar la eficiencia de su hotel destacan la automatización de reportes, una gestión centralizada de reservas y una plataforma integrada para coordinar con proveedores. 
+
+Al hablar sobre herramientas, el comenta que hace uso de Excel, Word y OneDrive desde su computadora HP y que responde mensajes desde su telefono móvil Iphone. 
 
 <br><br>
 **Entrevista 03 (Gerentes)**
@@ -1338,6 +1461,8 @@ Personalidad: Enfocado, orientado al servicio al cliente <br>
 
 Fabricio señala que actualmente utiliza un software de gestión para el control de habitaciones (ocupadas, desocupadas, con o sin personal de housekeeping, etc.) y para el seguimiento de los alimentos servidos. Considera que sería útil incorporar a la aplicación de gestión de housekeeping un módulo que permita registrar y monitorear la cantidad de artículos de limpieza disponibles y utilizados, con el fin de optimizar la administración de estos recursos. Durante la conversación, menciona que una de las principales dificultades que ha enfrentado en la gestión de su negocio es que algunos usuarios encuentran el proceso de reserva confuso o demasiado extenso.
 
+Adicionalmente a ello, nos comenta que tiene una laptop Toshiba con sistema operativo Windows y dos telefonos, ambos Android, pero uno de ellos es personal, mientras el otro lo utiliza para el trabajo unicamente. 
+
 Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, destaca el uso de plataformas como Sweet Manager y otras aplicaciones orientadas a hacer de la administración hotelera una experiencia más eficiente y personalizada.
 
 
@@ -1384,6 +1509,8 @@ Personalidad: Analítica <br>
 Anatoly se presenta como una persona analítica, empática y profesional, que busca siempre salir beneficiado de las decisiones que toma. Nos relata que le resulta muy importante contar con un sistema que automatice y mejore los procesos de reserva, que incluya un historial de reservas e incluso sugerencias de hoteles según sus preferencias y experiencias anteriores.
 
 Es un huésped con un nivel de experiencia amateur, ya que es una persona apasionada por conocer nuevos lugares. Además, destaca la importancia de la atención al cliente en los servicios hoteleros, así como la facilidad para realizar reservas y la limpieza de las habitaciones. En algunas ocasiones ha utilizado aplicaciones web dedicadas a sistemas hoteleros; sin embargo, no fue una experiencia agradable debido a la falta de mejoras en dichos sistemas.
+
+Adicionalmente, Anatoly comenta que utiliza una laptop HP con sistema operativo Windows y teléfono Samsung con sistema operativo Android. Comenta que ambos tienen años de antiguedad, pero que no necesita cambiarlos. 
 
 Anatoly nos cuenta que sería muy valiosa una aplicación robusta que satisfaga las principales necesidades de los huéspedes al buscar un hotel que se adecúe a sus preferencias, y que facilite tanto la toma de decisiones como el proceso de hospedaje.
 
@@ -1758,7 +1885,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP1</td>
       <td>Información del producto</td>
       <td>Como visitante del sitio web, quiero obtener información relacionada al producto que se ofrece.</td>
-      <td>Los visitantes del sitio web pueden ver toda la información relevante acerca del producto, ayudándolos a entender los beneficios y características de la oferta. Al acceder a la landing page, los visitantes podrán conocer más sobre el producto y, si están interesados, se les redirigirá a la aplicación web o móvil para que puedan explorar más a fondo o realizar alguna acción.</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1793,7 +1920,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP02</td>
       <td>Crear organización</td>
       <td>Como usuario quiero crear una organización para pertenecer a ella y utilizar los servicios de Sweet Manager.</td>
-      <td>Este epic permite a los usuarios crear y configurar una organización en Sweet Manager para acceder a sus servicios y gestionar sus operaciones. El flujo comienza con el registro de la organización, donde el gerente debe ingresar los datos del hotel, su información personal y seleccionar un plan de suscripción. Después de realizar el pago, la organización se inicializa correctamente y el gerente recibe un mensaje de bienvenida y es redirigido al dashboard principal. Los administradores invitados reciben una invitación por correo para unirse a la organización, y al aceptar, también serán redirigidos a la página principal de la organización. Los huéspedes podrán registrar su cuenta y aclarar sus preferencias de habitaciones u hoteles para buscar y reservar hoteles cómodos.</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -1856,7 +1983,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP03</td>
       <td>Gestionar las finanzas, abastecimientos e información de la organización.</td>
       <td>Como Web Hotel Owner quiero actualizar y revisar las finanzas, recursos y abastecimientos del hotel para mantener un seguimiento de estos.</td>
-      <td>El gerente puede gestionar todos los aspectos operativos del hotel, incluyendo el control de las finanzas, el seguimiento de los recursos y la comunicación con los administradores. El gerente podrá revisar los ingresos y egresos, gestionar el stock de recursos, enviar mensajes a los administradores, y manejar la subscripción de la organización. También puede administrar las habitaciones, agregar nuevos proveedores, e invitar nuevos administradores a la organización, garantizando un control completo de las operaciones del hotel.</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2333,7 +2460,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>EP05</td>
       <td>Crear un perfil global para los huéspedes de SweetManager que permita personalizar preferencias de búsqueda, gestionar reservas y configurar opciones personales que podrán sincronizarse con los dispositivos IoT del hotel para una experiencia personalizada durante su estadía.</td>
       <td>Como Web Guest, quiero crear un perfil único en la plataforma donde pueda registrar mis preferencias (como tipo de habitación, temperatura, iluminación), realizar reservas rápidamente y asegurarme de que mi experiencia en el hotel este personalizada según mis elecciones.</td>
-      <td>Los huéspedes pueden crear un perfil único en la plataforma, donde pueden almacenar su historial de búsqueda, gestionar sus reservas y facilitar su experiencia de reservar hoteles de manera personalizada con sus preferencias de cliente. A través de este perfil, los hoteles podrán gestionar la personalización y trámite de reserva a disposición de su cliente, de esta manera el huésped se mantiene cómodo y confiado en el servicio de hotel que se le ofrece.</td>
+      <td></td>
       <td></td>
     </tr>
     <tr>
@@ -2456,7 +2583,6 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>EP05</td>
     </tr>
-    
     <tr>
       <td>EP06</td>
       <td>API RESTful para gestión de habitaciones, reservas y administración</td>
@@ -2465,10 +2591,9 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>
         <ul>
-          
         </ul>
       </td>
-      <td>BACKEND</td>
+      <td></td>
     </tr>
     <tr>
       <td>HTU01</td>
@@ -2578,7 +2703,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>
       </td>
-      <td>IOT</td>
+      <td></td>
     </tr>
     <tr>
       <td>HU01</td>
@@ -7254,15 +7379,25 @@ Indicaciones para secciones que incluyen Videos
 # Conclusiones
 
 # Conclusiones y Recomendaciones
-Nuestro proyecto de gestión hotelera esta siendo una experiencia gratificante y enriquecedora. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
+Nuestro proyecto de Sweet Manager se va desarrollando progresivamente. Estamos diseñando y desarrollando una solución IoT que aborda las necesidades de los gerentes, administradores y huéspedes de hoteles, facilitando la gestión diaria, el seguimiento de ingresos y egresos, la administración de recursos, el contacto con proveedores, gestión de los procesos de check-in y check-out hasta el control de temperatura de habitaciones mediante termoestatos inteligentes.
 
-Nuestros *Problem Statements* identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
+Nuestros Problem Statements identificaban una gestión fragmentada y poco eficiente en los procesos hoteleros diarios, desde el seguimiento de ingresos y egresos, la administración de reservas, hasta la comunicación con proveedores y huéspedes. Para abordar estos retos, asumimos que los usuarios valoran la automatización, visibilidad en tiempo real y centralización de las operaciones como elementos fundamentales para mejorar su experiencia y eficiencia.
 
 Durante el proceso, se establecieron Hipótesis como que los administradores necesitan una vista consolidada de los huéspedes actuales (HU12), que los propietarios requieren trazabilidad financiera clara (EP02), y que los huéspedes prefieren experiencias fluidas y simples al momento de reservar y hospedarse (EP05). Las validaciones realizadas hasta el momento, mediante el diseño de entrevistas e historias de usuario, han respaldado estas hipótesis.
+
+Luego, se establecieron user stories, además de un proceso de Event Storming, que nos permitieron definir Bounded Contexts completos. Con estos Bounded Context y aplicando Domain Driven Design, pudimos desarrollar correctamente nuestro Web Applications. Escogiendo tambien a un Aspect Leader por cada Bounded Context, de este modo, cada integrande del grupo pudo participar del desarrollo de todas las soluciones y con un contexto con el que ya estaban familiarizados. 
+
+En cuanto a la elaboración de los servicios web y mobile applications, aplicamos la misma estrategia de trabajo, permitiendonos culminar los entregables a tiempo. De igual modo conectamos ambas aplicaciones con nuestro servicio. Y con respecto a lo requerido por los dispositivos IOT, planteamos la creación de una FOG API que se conectase a todos los EDGE API de cada dispositvo IOT en el hotel. Así como una Embedded application que se encarga del funcionamiento correcto del dispositvo. 
+
+Además, se ha trabajado en definir una arquitectura técnica sólida, capaz de escalar y adaptarse a distintos contextos hoteleros. Esto ha implicado diseñar flujos de información entre capas, establecer canales de comunicación eficientes entre los dispositivos IoT y el backend, y desarrollar interfaces intuitivas para facilitar la interacción del usuario final con el sistema.
 
 Para continuar con el desarrollo estratégico de SweetManager, recomendamos:
 
 Validar mediante prototipos de alta fidelidad las funcionalidades priorizadas para cada segmento, enfocándonos especialmente en las vistas operativas de administración y control de huéspedes activos.
+
+Tomar en cuenta y priorizar en todo momento la información encontrada por las entrevistas y entrevistas de validación, pues son la prueba de si el proyecto planteado cubre las necesidades del cliente y por ende, es efectivo o no en su cometido. 
+
+Establecer las User Stories y Bounded Context efectivamente, pues son la base de muchos puntos a tomar en cuenta a la hora de elaborar el proyecto y más aun, a la hora de desarrollar los entregables. Por lo que un error con el establecimiento de estos dos puntos, puede generar cambios importantes en toda la solución. 
 
 # Video About-the-Team
 
