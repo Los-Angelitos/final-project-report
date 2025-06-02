@@ -6469,17 +6469,6 @@ Este diseño de wireframe también contempla la arquitectura de información, es
   <p style="font-style: italic">Wireframes de la Mobile Application</p>
 </div><br><br>
 
-<div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wireframe3.png" width="80%" />
-  <p style="font-style: italic">Wireframes de la Mobile Application</p>
-</div><br><br>
-
-<div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wirefram4.png" width="80%" />
-  <p style="font-style: italic">Wireframes de la Mobile Application</p>
-</div><br><br>
-
-
 ### 5.4.2. Applications Wireflow Diagrams.
 En esta sección presentaremos los Wireflow Diagrams, los cuales definen el flujo de nuestra aplicación. Hemos relacionado cada uno a un User Goal, el cual determina cuál será el resultado final del flujo:
 
