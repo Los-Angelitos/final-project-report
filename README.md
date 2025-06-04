@@ -359,7 +359,7 @@ Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprin
          - [4.2.1.6. Bounded Context Software Architecture Code Level Diagrams](#4216-bounded-context-software-architecture-code-level-diagrams)
             * [4.2.1.6.1. Bounded Context Domain Layer Class Diagrams](#42161-bounded-context-domain-layer-class-diagrams)
             * [4.2.1.6.2. Bounded Context Database Design Diagram](#42162-bounded-context-database-design-diagram)
-      + [4.2.2 Bounded Context: Reservations Bounded Context](#422-bounded-context-reservations-bounded-context)
+      + [4.2.2 Bounded Context: Operations and Monitoring Bounded Context](#422-bounded-context-operations-and-monitoring-bounded-context)
          - [4.2.2.1. Domain Layer](#4221-domain-layer)
          - [4.2.2.2. Interface Layer](#4222-interface-layer)
          - [4.2.2.3. Application Layer](#4223-application-layer)
@@ -3249,12 +3249,25 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
 ## 4.1. Strategic-Level Domain-Driven Design
 
 ### 4.1.1. EventStorming
-![image](https://github.com/user-attachments/assets/005860e9-9ce5-4be0-872f-616b0db75f29)
-![image](https://github.com/user-attachments/assets/c53afb21-2cd5-40d5-a5ca-3e0ad2678195)
+Imagen del Event Storming general en su fase final: 
+![image](https://github.com/user-attachments/assets/cb8b1f07-3dec-462d-ad11-b19805010edf)
+
+Imagen con resultado del Event Storming en relación a Operations and Monitoring Bounded Context:
+![image](https://github.com/user-attachments/assets/cc5f5691-f57d-4193-a991-cada287b2511)
+
+Imagen con resultado del Event Storming en relación a Communication Bounded Context:
 ![image](https://github.com/user-attachments/assets/6ff291f1-4659-45db-9ece-5bbf3879500c)
+
+Imagen con resultado del Event Storming en relación a Organizational Management Bounded COntext:
 ![image](https://github.com/user-attachments/assets/d9a90a98-556b-4e89-a1e9-de7c123706a4)
+
+Imagen con resultado del Event Storming en relación a Inventory Bounded Context:
 ![image](https://github.com/user-attachments/assets/532bc1af-f435-46c1-bca3-04367cf34bcd)
+
+Imagen con resultado del Event Storming en relación a IAM Bounded Context:
 ![image](https://github.com/user-attachments/assets/bc39a22a-78d9-4fe1-8769-bd37ab0d7b31)
+
+Imagen con resultado del Event Storming en relación a Commerce Bounded Context:
 ![image](https://github.com/user-attachments/assets/9c2af623-c8b1-4bb2-9de0-ca2def6f4b6d)
 
 
@@ -3344,30 +3357,30 @@ Optimizar el 60% de las reservas realizadas por huéspedes en un plazo de 4 mese
   <img src="./assets/img/organizational-management-bounded-context/flow6.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
-<h2> Reservations Bounded Context </h2>
+<h2> Operations and Monitoring Bounded Context </h2>
 
 <h3>Escenario: El dueño crea las habitaciones del hotel</h3>
-<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda registrar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la selección y creación del hotel, y luego, envia un formulario al Reservations Bounded Context, para la creación y personalización de las habitaciones dentro de dicho hotel. </p>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda registrar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la selección y creación del hotel, y luego, envia un formulario al Operations and Monitoring Bounded Context, para la creación y personalización de las habitaciones dentro de dicho hotel. </p>
 
 ![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
 
 <h3>Escenario: El dueño lista las habitacionesl</h3>
-<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Reservations Bounded Context, para listar las habitaciones pertenecientes a dicho hotel. </p>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Operations and Monitoring Bounded Context, para listar las habitaciones pertenecientes a dicho hotel. </p>
     
 ![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
 
 <h3>Escenario: El dueño lista las reservas</h3>
-<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar las reservas actuales en un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Reservations Bounded Context, para listar las reservas actuales en dicho hotel. </p>
+<p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar las reservas actuales en un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Operations and Monitoring Bounded Context, para listar las reservas actuales en dicho hotel. </p>
     
 ![image](https://github.com/user-attachments/assets/83642508-3aae-44ba-87a9-84658b3da11e)
 
 <h3>Escenario: El cliente paga por la habitacion personalizada</h3>
-<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda hacer una reserva personalizada y pagar por ella. Se hace una consulta al IAM Bounded Context para solicitar las preferencias del huésped, segun ello, el formulario de la reserva es confirmada en el Reservations Bounded Context, y se procesa el pago, para lo cual se hace una consulta al Commerce Bounded Context y determinar si el pago fue hecho correctamente. </p>
+<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda hacer una reserva personalizada y pagar por ella. Se hace una consulta al IAM Bounded Context para solicitar las preferencias del huésped, segun ello, el formulario de la reserva es confirmada en el Operations and Monitoring Bounded Context, y se procesa el pago, para lo cual se hace una consulta al Commerce Bounded Context y determinar si el pago fue hecho correctamente. </p>
     
 ![image](https://github.com/user-attachments/assets/aba46a4f-02e7-49eb-b352-9d20f8430fb2)
 
 <h3>Escenario: El cliente selecciona una habitación para reservar</h3>
-<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda consultar hoteles y hacer una reserva de una de sus habitaciones. Se hace una consulta al Organizational Managemente Bounded Context para obtener todos los hoteles, segun ello, se hace una consulta al Reservations Bounded Context para visualizar todas las habitaciones disponibles de dicho hotel, de la cual, el usuario escoge una de ellas y empieza el proceso de reserva. </p>
+<p>Para este escenario, se espera que el cliente desde su cuenta creada en SweetManager, pueda consultar hoteles y hacer una reserva de una de sus habitaciones. Se hace una consulta al Organizational Managemente Bounded Context para obtener todos los hoteles, segun ello, se hace una consulta al Operations and Monitoring Bounded Context para visualizar todas las habitaciones disponibles de dicho hotel, de la cual, el usuario escoge una de ellas y empieza el proceso de reserva. </p>
 
 ![image](https://github.com/user-attachments/assets/2cb1e1d7-6a82-4b9e-8cd9-a5678055b1a2)
 
@@ -3547,11 +3560,12 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
   <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
 </div><br>
 
-<h2>Reservations Bounded Context</h2>
+<h2>Operations and Monitoring Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de habitaciones y reservas, dedicada al negocio de administradores y gerentes.
 </p>
 
-![image](https://github.com/user-attachments/assets/74ac5599-8351-4fa3-9d4d-be3804ccd5ab)
+![image](https://github.com/user-attachments/assets/99f05c54-158f-435b-b87c-f14e5c5640a9)
+
 
 <h2>IAM Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de sesiones y permisosde navegación, para todos los IAM Users.</p>
@@ -3571,15 +3585,15 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 - **Inventory**
 - **Communication**
 - **Commerce**
-- **Reservations**
+- **Operations and Monitoring**
 
 ###### 1.2. Identificación de Relaciones Iniciales
 1. **Commerce** ⟷ **IAM**: Relación de **Customer/Supplier**.
    - *Commerce* provee los cambios en las suscripciones de los usuarios, mientras *IAM* consume y ajusta la información.
-2. **Reservations** ⟷ **IAM**: Relación de **Customer/Supplier**.
-   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *IAM* actualiza la información en el perfil del huésped.
-3. **Reservations** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
-   - *Reservations* provee los cambios en las reservas de los huéspedes, mientras *Organizational Management* actualiza la información de las reservas realizadas.
+2. **Operations and Monitoring** ⟷ **IAM**: Relación de **Customer/Supplier**.
+   - *Operations and Monitoring* provee los cambios en las reservas de los huéspedes, mientras *IAM* actualiza la información en el perfil del huésped.
+3. **Operations and Monitoring** ⟷ **Organizational Management**: Relación de **Customer/Supplier**.
+   - *Operations and Monitoring* provee los cambios en las reservas de los huéspedes, mientras *Organizational Management* actualiza la información de las reservas realizadas.
 4. **IAM** ⟷ **Organizational Management**: Relación de **Open/Host Service**.
    - *IAM* proporciona un servicio público al cual accede *Organizational Management*, el cual utiliza sus métodos para modificar la información de los usuarios.
 5. **Organizational Management** ⟷ **Communication**: Relación de **Customer/Supplier**.
@@ -3590,18 +3604,18 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 ##### 2. Análisis de Alternativas y Preguntas Clave
 
 ###### 2.1. ¿Qué pasaría si movemos este capability a otro bounded context?
-- **Caso Considerado:** Mover la capacidad de gestión de check-in y check-out desde *Reservations* hacia *Communication*.
+- **Caso Considerado:** Mover la capacidad de gestión de check-in y check-out desde *Operations and Monitoring* hacia *Communication*.
 - **Impacto:**
   - *Communication* tendría la responsabilidad de administrar las notificaciones enviadas a los huéspedes y administradores en relación a las entradas y salidas.
   - Incrementaría el acoplamiento de *Communication*.
 - **Discusión:**
-  - Es recomendable mantener la separación, ya que, aunque *Communication* es el encargado de administrar notificaciones, es *Reservations* el que administra todo lo relacionado a las reservas. Puede interactuar con un ACL de *Communication* luego para mandar la notificación.
+  - Es recomendable mantener la separación, ya que, aunque *Communication* es el encargado de administrar notificaciones, es *Operations and Monitoring* el que administra todo lo relacionado a las reservas. Puede interactuar con un ACL de *Communication* luego para mandar la notificación.
 
 ###### 2.2. ¿Qué pasaría si descomponemos este capability y movemos uno de los sub-capabilities a otro bounded context?
-- **Caso Considerado:** Descomponer *Reservations* en sub-capabilities como *ReservationsManagement* y *ReservationsNotifications* y mover *ReservationsNotifications* a *Communication*.
+- **Caso Considerado:** Descomponer *Operations and Monitoring* en sub-capabilities como *OperationsManagement* y *OperativeNotifications* y mover *OperativeNotifications* a *Communication*.
 - **Impacto:**
-  - Implicaría que *Communication* pueda gestionar las notificaciones de las reservas, liberando responsabilidades de *Reservations*.
-  - *ReservationsManagement* seguirá gestionando las entradas y salidas de los usuarios.
+  - Implicaría que *Communication* pueda gestionar las notificaciones de las reservas, liberando responsabilidades de *Operations and Monitoring*.
+  - *OperationsManagement* seguirá gestionando las entradas y salidas de los usuarios.
 - **Discusión:**
   - Esta descomposición permitiría dividir las responsabilidades de forma más acorde al alcance de cada Bounded Context, sin embargo, incrementaría el acoplamiento y ambos contextos dependerían demasiado el uno del otro.
 
@@ -3643,13 +3657,13 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 
 ##### 3. Alternativa Recomendada de Context Mapping
 
-1. **Crear un ACL para que *Reservations* pueda utilizar funciones de *Communication*** que maneje las notificaciones enviadas en relación a los check-in y check-out.
+1. **Crear un ACL para que *Operations and Monitoring* pueda utilizar funciones de *Communication*** que maneje las notificaciones enviadas en relación a los check-in y check-out.
 2. **Desacoplar adecuadamente las funcionalidades de *Communication* y *Commerce*** para reducir la complejidad del código de cada Bounded Context.
 
 ##### 4. Patrones de Relaciones Sugeridos
 
 - **Anti-corruption Layer (ACL):** Para proteger el contexto *Communication* y *Commerce* de cambios en *IAM*.
-- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Reservations* y mande notificaciones.
+- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Operations and Monitoring* y mande notificaciones.
 
 ![Context Mapping](/assets/img/context-mapping/context-mapping.png)
 
@@ -3659,7 +3673,7 @@ URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structuri
 <br><br>
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes módulos: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Reservations**.<br>
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes módulos: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Operations and Monitoring**.<br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
 </div><br><br>
@@ -4366,10 +4380,10 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 
 ---
 
-### 4.2.2. Bounded Context: Reservations Bounded Context
+### 4.2.2. Bounded Context: Operations and Monitoring Bounded Context
 
 #### 4.2.2.1. Domain Layer
-### Agregados y Entidades del Dominio `Reservations` en nuestro Web/Mobile Appliaction
+### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web/Mobile Appliaction
 
 En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
 
@@ -4404,7 +4418,7 @@ TypeRoom:
 | `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
 | `Price`      | `decimal`             | Precio base asignado a este tipo |
 
-### Agregados y Entidades del Dominio `Reservations` en nuestro Web Services
+### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web Services
 
 En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
 
@@ -4557,7 +4571,7 @@ Representa un tipo de habitación.
 
 ###  Services
 
-### Servicios del Dominio `Reservations` en nuestro Web/Mobile Application
+### Servicios del Dominio `Operations and Monitoring` en nuestro Web/Mobile Application
 
 Cada bounded Context tiene definido sus servicios orientados al consumo de la API Rest para cada agregado y entidad.
 
@@ -4599,7 +4613,7 @@ Cada bounded Context tiene definido sus servicios orientados al consumo de la AP
   
 
 
-### Servicios del Dominio `Reservations` en nuestro Web Services
+### Servicios del Dominio `Operations and Monitoring` en nuestro Web Services
 ####  Booking
 
 | Archivo                          | Descripción breve |
@@ -4664,7 +4678,7 @@ Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son resp
 
 ### Controllers
 
-Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
+Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con un **REST Controller**. Estos controladores definen los endpoints públicos de la aplicación y orquestan los flujos de ejecución:
 
 | Controlador           | Ruta base típica        | Responsabilidad principal |
 |------------------------|--------------------------|----------------------------|
@@ -4696,7 +4710,7 @@ Cada entidad clave en el Bounded Context `Reservations` cuenta con un **REST Con
 | `RoomQueryService.cs`              | Lista habitaciones por ID, estado, tipo, hotel o fechas disponibles. |
 | `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados.
 
-## Capabilities del Bounded Context `Reservations`
+## Capabilities del Bounded Context `Operations and Monitoring`
 
 Extraído del Bounded Context Canvas y el Event Storming elaborado: 
 
@@ -6907,7 +6921,7 @@ Para la distribución de la aplicación móvil durante el desarrollo y pruebas, 
 #### 6.2.1.2. Aspect Leaders and Collaborators.
 A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context y Landing Page a la hora de elaborar nuestros entregables de este Sprint. 
 
-| Team Member (Last Name, First Name) | GitHub Username     | Web Applications IAM Bounded Context | Web Applications Communication Bounded Context | Web Applications Reservations Bounded Context | Web Applications Organizational Management Bounded Context | Web Applications Commerce Bounded Context | Web Applications Inventory Bounded Context | Landing Page |
+| Team Member (Last Name, First Name) | GitHub Username     | Web Applications IAM Bounded Context | Web Applications Communication Bounded Context | Web Applications Operations and Monitoring Bounded Context | Web Applications Organizational Management Bounded Context | Web Applications Commerce Bounded Context | Web Applications Inventory Bounded Context | Landing Page |
 |------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|---------------|
 | Zoppi, Giacomo                     | Giacomo202210029     | C                                    | C                                              | l                                             | C                                                            | C                                           | C                                           | C             |
 | Herrera, Fabia                     | pelumsa              | C                                    | L                                              | C                                             | C                                                            | C                                           | C                                           | C             |
@@ -6995,13 +7009,13 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
     </tr>
     <tr>
       <td>ffc1da29b0ac4e0f8a234567890abcde12345678</td>
-      <td>fix(reservations): added new booking component.</td>
+      <td>fix(Operations and Monitoring): added new booking component.</td>
       <td>Se añadió el componente para la creación de reservas desde la interfaz del administrador.</td>
       <td>2025-05-12T21:00:00Z</td>
     </tr>
     <tr>
       <td>b59d599a1c2d3e4f5g6h7i8j9k0a1b2c3d4e5f6g</td>
-      <td>fix(reservations): added booking confirm check-in component.</td>
+      <td>fix(Operations and Monitoring): added booking confirm check-in component.</td>
       <td>Funcionalidad de confirmación de check-in de reservas.</td>
       <td>2025-05-12T20:00:00Z</td>
     </tr>
@@ -7031,7 +7045,7 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
     </tr>
     <tr>
       <td>8f36897aaaaabbbbccccddddeeeeffff11112222</td>
-      <td>feat(reservations): guest reservations component added</td>
+      <td>feat(Operations and Monitoring): guest Operations and Monitoring component added</td>
       <td>Componente que permite al huésped visualizar sus reservas actuales.</td>
       <td>2025-05-12T08:00:00Z</td>
     </tr>
@@ -7053,7 +7067,7 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.1.5. Testing Suite Evidence for Sprint Review.
 
-## Reservations Bounded Context
+## Operations and Monitoring Bounded Context
 
 ```gherkin
 Feature: Gestión de reservas de huéspedes
@@ -7385,7 +7399,7 @@ Nuestros Problem Statements identificaban una gestión fragmentada y poco eficie
 
 Durante el proceso, se establecieron Hipótesis como que los administradores necesitan una vista consolidada de los huéspedes actuales (HU12), que los propietarios requieren trazabilidad financiera clara (EP02), y que los huéspedes prefieren experiencias fluidas y simples al momento de reservar y hospedarse (EP05). Las validaciones realizadas hasta el momento, mediante el diseño de entrevistas e historias de usuario, han respaldado estas hipótesis.
 
-Luego, se establecieron user stories, además de un proceso de Event Storming, que nos permitieron definir Bounded Contexts completos. Con estos Bounded Context y aplicando Domain Driven Design, pudimos desarrollar correctamente nuestro Web Applications. Escogiendo tambien a un Aspect Leader por cada Bounded Context, de este modo, cada integrande del grupo pudo participar del desarrollo de todas las soluciones y con un contexto con el que ya estaban familiarizados. 
+Luego, se establecieron user stories y se diseñó la arquitectura del software, además de un proceso de Event Storming, que nos permitieron definir Bounded Contexts completos. Con estos Bounded Context y aplicando Domain Driven Design, pudimos desarrollar correctamente nuestro Web Applications. Escogiendo tambien a un Aspect Leader por cada Bounded Context, de este modo, cada integrande del grupo pudo participar del desarrollo de todas las soluciones y con un contexto con el que ya estaban familiarizados. 
 
 En cuanto a la elaboración de los servicios web y mobile applications, aplicamos la misma estrategia de trabajo, permitiendonos culminar los entregables a tiempo. De igual modo conectamos ambas aplicaciones con nuestro servicio. Y con respecto a lo requerido por los dispositivos IOT, planteamos la creación de una FOG API que se conectase a todos los EDGE API de cada dispositvo IOT en el hotel. Así como una Embedded application que se encarga del funcionamiento correcto del dispositvo. 
 
