@@ -6706,8 +6706,6 @@ En este flujo se puede observar cómo el usuario Dueño de un hotel es capaz de 
 
 
 
-
-
 ### 5.4.2. Applications Mock-ups.
 
 Para la aplicación web, se han diseñado mock-ups que reflejan la identidad visual de la marca y los principios de diseño establecidos. A continuación se presentan los mock-ups de las pantallas de la aplicación web.
@@ -6745,35 +6743,40 @@ Consideramos que es escencial que la experiencia del usuario al navegar por prim
 ### 5.4.3. Applications User Flow Diagrams.
 A continuación se presentan los diagramas de flujo de usuario (User Flow Diagrams) para las aplicaciones web y móvil. Estos diagramas ilustran las rutas típicas que los usuarios pueden seguir al interactuar con la aplicación, teniendo en cuenta los diferentes roles de usuario (administrador, huésped y propietario).
 
+#### User Goal: Registrarse en la Aplicación Web de SweetManager
+
 En el siguiente flujo, se muestra el flujo de inicio de sesión en la Web Application. Este flujo es común para todos los usuarios, ya que todos deben iniciar sesión para acceder a la aplicación. El flujo comienza con el usuario ingresando su correo electrónico y contraseña en la página de inicio de sesión. Si las credenciales son correctas, el usuario es redirigido a la página principal de la aplicación.
 <div style="text-align: center;">
   <img src="./assets/img//userflows/userflowweb1.png" width="90%" />
-  <p style="font-style: italic">Web Application User Flow</p>
 </div><br><br>
+
+#### User Goal: Crear una nueva organización
 
 En el siguiente flujo, se puede demostrar cómo el usuario Dueño de un hotel es capaz de crear una nueva organización en la aplicación. Este flujo comienza con el usuario seleccionando la opción de crear una nueva organización en la página principal de la aplicación. Luego, el usuario ingresa los datos necesarios para crear la organización y finalmente se redirige a la página principal de la aplicación.
 <div style="text-align: center;">
   <img src="./assets/img//userflows/userflowweb2.png" width="90%" />
-  <p style="font-style: italic">Web Application User Flow</p>
 </div><br><br>
+
+#### User Goal: Añadir un administrador a la organización
 
 En el siguiente flujo, el administrador del hotel, es invitado a unirse a la organización creada por el dueño del hotel. Este flujo comienza con el dueño del hotel enviando una invitación al administrador a través de la aplicación. Luego, el administrador recibe la invitación y acepta unirse a la organización. Finalmente, el administrador es redirigido a la página principal de la aplicación.
 <div style="text-align: center;">
   <img src="./assets/img//userflows/userflowweb3.png" width="90%" />
-  <p style="font-style: italic">Web Application User Flow</p>
 </div><br><br>
+
+#### User Goal: Registrarse en la Aplicación Móvil de SweetManager
 
 En el siguiente flujo se puede observar el inicio de sesión o registro de un usuario en nuestro Mobile Application. Este flujo es común para todos los usuarios, ya que todos deben iniciar sesión para acceder a la aplicación. El flujo comienza con el usuario ingresando su correo electrónico y contraseña en la página de inicio de sesión. Si las credenciales son correctas, el usuario es redirigido a la página principal de la aplicación.
 <div style="text-align: center;">
   <img src="./assets/img//userflows/mobile1.png" width="90%" />
-  <p style="font-style: italic">Web Application User Flow</p>
 </div><br><br>
+
+#### User Goal: Buscar un hotel
 
 En el siguiente flujo se puede observar el comportamiento del huésped, al encontrar o seleccionar un hotel para ver más su detalle, administrador y dueño de hotel al gestionar su organización y los dispositivos IoT. Este flujo comienza con el usuario seleccionando la opción de buscar un hotel en la página principal de la aplicación. Luego, el usuario ingresa los datos necesarios para buscar el hotel y finalmente se redirige a la página principal de la aplicación.
 
 <div style="text-align: center;">
   <img src="./assets/img//userflows/mobile2.png" width="90%" />
-  <p style="font-style: italic">Web Application User Flow</p>
 </div><br><br>
 
 
