@@ -7437,14 +7437,14 @@ No estan incluidos en esta evaluación las siguientes tareas:
 
 #### DESCRIPCIÓN DE PROBLEMAS:
 
-##### PROBLEMA #1: No se utiliza la misma paleta de colores en la sección de login  
+##### PROBLEMA #1: No se utiliza la misma paleta de colores en la sección de sign in  
 **Severidad:** 1  
 **Heurística violada:** Usability: Consistencia y estándares  
 
 **Problema:**  
 La sección de login presenta una paleta de colores distinta al resto de la aplicación, lo cual rompe con la identidad visual general del sistema. Esto puede generar confusión y una percepción de baja cohesión en el diseño.  
 
-*(Insertar aquí una captura de pantalla de la vista de login con otra paleta)*  
+![image](https://github.com/user-attachments/assets/7c4fe792-9bd9-4dd4-a812-a72a91fb28d4)
 
 **Recomendación:**  
 Unificar los colores de la sección de login con los usados en el resto de la aplicación.  
@@ -7456,7 +7456,7 @@ Unificar los colores de la sección de login con los usados en el resto de la ap
 **Problema:**  
 Los usuarios no encuentran fácilmente una sección de preguntas frecuentes (FAQ) o tutoriales que les orienten en el uso de la aplicación, lo que puede generar frustración especialmente en usuarios nuevos o poco experimentados.  
 
-*(Insertar aquí una captura de pantalla del menú principal sin acceso a ayuda)*  
+![image](https://github.com/user-attachments/assets/ec479cc6-79ea-4ad4-8010-f2cdebf0cc66)
 
 **Recomendación:**  
 Incluir un acceso visible a una sección de ayuda o preguntas frecuentes.  
@@ -7468,7 +7468,8 @@ Incluir un acceso visible a una sección de ayuda o preguntas frecuentes.
 **Problema:**  
 Existe un botón de “Contact Support”, pero al hacer clic no lleva a ninguna página ni ofrece formas de contactar al equipo de soporte, lo cual afecta la experiencia del usuario en momentos críticos en los que pueda necesitar asistencia.  
 
-*(Insertar aquí una captura de pantalla del botón inactivo o sin funcionalidad)*  
+![image](https://github.com/user-attachments/assets/28cc34d1-968a-4b5f-b315-a44ef5f09229)
+![image](https://github.com/user-attachments/assets/7a7a1e3b-204f-484c-86fb-ed0076d12f24)
 
 **Recomendación:**  
 Vincular el botón a una vista de contacto o a un formulario funcional.  
@@ -7480,7 +7481,7 @@ Vincular el botón a una vista de contacto o a un formulario funcional.
 **Problema:**  
 Aunque se presenta un botón para recuperar la contraseña, este no lleva a ninguna página ni ofrece retroalimentación, lo que bloquea completamente al usuario en caso de olvidar sus credenciales.  
 
-*(Insertar aquí una captura de pantalla del botón sin redirección)*  
+![image](https://github.com/user-attachments/assets/16370fd5-39a5-46f3-af29-a2c7eef05e2e)
 
 **Recomendación:**  
 Implementar la funcionalidad de recuperación de contraseña con ingreso de correo.  
@@ -7492,7 +7493,8 @@ Implementar la funcionalidad de recuperación de contraseña con ingreso de corr
 **Problema:**  
 No se proporciona información sobre la cantidad de dispositivos IoT que pueden solicitarse con cada plan de suscripción, lo que obliga al usuario a asumirla.  
 
-*(Insertar aquí una captura de pantalla del área de suscripciones sin detalles)*  
+![image](https://github.com/user-attachments/assets/ef19cbcc-d01f-4585-9227-9de5008973a8)
+
 
 **Recomendación:**  
 Agregar una tabla comparativa clara de planes y límites de dispositivos o en modal la cantidad de dispositivos de cada plan.
@@ -7504,7 +7506,7 @@ Agregar una tabla comparativa clara de planes y límites de dispositivos o en mo
 **Problema:**  
 En la sección de suministros no hay filtros disponibles para facilitar la búsqueda, lo que dificulta encontrar artículos específicos en bases de datos grandes o complejas.  
 
-*(Insertar aquí una captura de pantalla de la lista de suministros sin filtros)*  
+![image](https://github.com/user-attachments/assets/45d7a595-4e1f-4b51-a7da-a4d1b03e893c)
 
 **Recomendación:**  
 Añadir filtros por nombre, categoría o estado a la vista de suministros.  
@@ -7528,7 +7530,7 @@ Mostrar la ubicación física (piso/área) junto al número o nombre de habitaci
 **Problema:**  
 No hay opciones para guardar y crear un nuevo elemento rápidamente, ni atajos de teclado. Esto reduce la eficiencia del usuario al tener que realizar el mismo proceso repetidamente para crear múltiples elementos.  
 
-*(Insertar aquí una captura de pantalla del formulario sin opciones adicionales)*  
+![image](https://github.com/user-attachments/assets/cb168769-3bac-4baa-956f-fa3bb27453f8)
 
 **Recomendación:**  
 Agregar botón “Guardar y nuevo” y atajos para duplicar formularios o implementar funcionalidad de teclado como `Ctrl+Enter` para guardar.
@@ -7540,7 +7542,7 @@ Agregar botón “Guardar y nuevo” y atajos para duplicar formularios o implem
 **Problema:**  
 El usuario no puede seleccionar el tipo de gráfico que desea visualizar (barras, líneas, pastel, etc.), limitando su capacidad de interpretación y personalización de datos analíticos.  
 
-*(Insertar aquí una captura de pantalla del área de analíticas con un solo tipo de gráfico)*  
+![image](https://github.com/user-attachments/assets/16020a8e-a432-41d9-98f6-d3c1258dc997)
 
 **Recomendación:**  
 Permitir al usuario cambiar entre distintos tipos de gráfico con un selector.  
@@ -7552,7 +7554,8 @@ Permitir al usuario cambiar entre distintos tipos de gráfico con un selector.
 **Problema:**  
 No hay opción para que el usuario edite información básica del hotel como su nombre o dirección, lo que reduce la capacidad de gestión del sistema por parte del usuario.  
 
-*(Insertar aquí una captura de pantalla de los campos bloqueados del hotel)*  
+![image](https://github.com/user-attachments/assets/06c41fb6-675f-4be7-bb30-066c94ae88f2)
+
 
 **Recomendación:**  
 Permitir modificar nombre y dirección desde el Hotel Overview. 
