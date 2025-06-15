@@ -4387,41 +4387,6 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 
 En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
 
-Room: 
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de la habitación |
-| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
-| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
-| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
-
-
-Booking: 
-| Atributo            | Tipo                   | Descripción |
-|---------------------|------------------------|-------------|
-| `Id`                | `int`                  | Identificador único |
-| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
-| `RoomId`            | `int?`                 | Habitación reservada |
-| `Description`       | `string?`              | Información adicional |
-| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
-| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
-| `PriceRoom`         | `decimal?`             | Costo por noche |
-| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
-| `Amount`            | `decimal?`             | Monto total pagado |
-| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
-| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
-
-TypeRoom: 
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | ID único del tipo |
-| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
-| `Price`      | `decimal`             | Precio base asignado a este tipo |
-
-### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web Services
-
-En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
-
 ### `Room` 
 
 Representa una habitación en un hotel. 
@@ -4490,6 +4455,39 @@ Objeto diseñado para exponer reservas al cliente sin crear ciclos de referencia
 | `PreferenceTemperature`| `int?`       | Temperatura preferida del huésped |
 
 ---
+### SmokeSensor
+| Atributo            | Tipo               | Descripción                                      |
+|---------------------|--------------------|--------------------------------------------------|
+| `Id`                | `int`              | ID único del sensor de humo                      |
+| `RoomId`            | `int?`             | ID de la habitación asociada                     |
+| `IpAddress`         | `string?`          | Dirección IP del sensor                          |
+| `LastAnalogicValue` | `double?`          | Último valor analógico leído del sensor          |
+| `MacAddress`        | `string?`          | Dirección MAC del sensor                         |
+| `State`             | `string?`          | Estado actual del sensor (`ON`, `OFF`, etc.)     |
+| `LastAlertTime`     | `DateTime?`        | Fecha y hora de la última alerta de humo         |
+| `Room`              | `Room?`            | Navegación a la entidad habitación               |
+
+#### Constructores:
+
+- A partir de `CreateSmokeSensorCommand`, `UpdateSmokeSensorStateCommand`, y `UpdateSmokeSensorCommand`
+
+
+### Thermostat
+| Atributo        | Tipo         | Descripción                                       |
+|------------------|--------------|---------------------------------------------------|
+| `Id`             | `int`        | ID único del termostato                           |
+| `RoomId`         | `int?`       | ID de la habitación asociada                      |
+| `Temperature`    | `double?`    | Temperatura configurada del dispositivo           |
+| `IpAddress`      | `string?`    | Dirección IP del termostato                       |
+| `MacAddress`     | `string?`    | Dirección MAC del termostato                      |
+| `State`          | `string?`    | Estado del termostato (`ON`, `OFF`, etc.)         |
+| `LastUpdate`     | `DateTime?`  | Fecha y hora del último cambio o actualización    |
+| `Room`           | `Room?`      | Navegación a la entidad habitación                |
+
+#### Constructores:
+
+- A partir de `CreateThermostatCommand`, `UpdateThermostatStateCommand`, y `UpdateThermostatCommand`
+
 
 ###  `TypeRoom` (Entidad)
 
@@ -4533,6 +4531,28 @@ Representa un tipo de habitación.
 
 ---
 
+### Thermostat 
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `CreateThermostatCommand.cs`           | Encapsula los datos necesarios para registrar un nuevo termostato (`RoomId`, `Temperature`, `IpAddress`, `MacAddress`, `State`, `LastUpdate`). |
+| `UpdateThermostatCommand.cs`           | Encapsula todos los campos para actualizar un termostato existente.         |
+| `UpdateThermostatStateCommand.cs`      | Encapsula únicamente el campo `State` para actualizar el estado del termostato. |
+| `UpdateThermostatTemperatureCommand.cs`| Encapsula únicamente el campo `Temperature` para actualizar la temperatura del termostato. |
+
+---
+
+### SmokeSensor 
+
+| Comando                                      | Descripción                                                                 |
+|----------------------------------------------|-----------------------------------------------------------------------------|
+| `CreateSmokeSensorCommand.cs`                | Encapsula los datos necesarios para registrar un nuevo sensor de humo (`RoomId`, `LastAnalogicValue`, `IpAddress`, `MacAddress`, `State`, `LastAlertTime`). |
+| `UpdateSmokeSensorCommand.cs`                | Encapsula todos los campos para actualizar un sensor de humo existente.     |
+| `UpdateSmokeSensorStateCommand.cs`           | Encapsula únicamente el campo `State` para actualizar el estado del sensor. |
+| `UpdatSmokeSensorAnalogicValueCommand.cs`    | Encapsula únicamente el campo `LastAnalogicValue` para actualizar el valor analógico. |
+
+---
+
 ### TypeRoom
 
 | Comando                         | Descripción |
@@ -4556,8 +4576,10 @@ Representa un tipo de habitación.
 | `GetRoomsByStateQuery.cs`             | Lista habitaciones según su estado (`AVAILABLE`, `OCCUPIED`, etc). |
 | `GetRoomsByTypeRoomIdQuery.cs`        | Lista habitaciones según el tipo. |
 | `GetTypeRoomByIdQuery.cs`             | Trae información de un tipo de habitación por ID. |
-
----
+| `GetSmokeSensorByIdQuery.cs`          | Trae información de un tipo de habitación por ID. |
+| `GetSmokeSensorByRoomIdQuery.cs`      | Trae información de un tipo de habitación por ID. |
+| `GetThermostatByIdQuery.cs`           | Trae información de un tipo de habitación por ID. |
+| `GetThermostatByRoomIdQuery.cs`       | Trae información de un tipo de habitación por ID. |
 
 ### Repositories (Interfaces)
 
@@ -4566,74 +4588,46 @@ Representa un tipo de habitación.
 | `IBookingRepository.cs`  | Define operaciones sobre reservas: FindByHotelIdAndStateAsync, FindByCustomerIdAsync, FindAllByHotelIdAsync, UpdateBookingEndDateAsync . |
 | `IRoomRepository.cs`     | Define operaciones sobre habitaciones: FindAllByHotelIdAsync, FindByStateAsync,FindByTypeRoomIdAsync, FindByRange. |
 | `ITypeRoomRepository.cs` | Define operaciones sobre tipos de habitación: FindAllByHotelIdAsync |
+| `ISmokeSensorRepository.cs` | Define operaciones sobre sensores de humo : FindAll, FindByRoomIdAsync |
+| `IThermostatRepository.cs` | Define operaciones sobre termostato: FindAll, FindByRoomIdAsync  |
 
----
-
-###  Services
-
-### Servicios del Dominio `Operations and Monitoring` en nuestro Web/Mobile Application
-
-Cada bounded Context tiene definido sus servicios orientados al consumo de la API Rest para cada agregado y entidad.
-
-#### Room Api Service
-
-| Método                          | Descripción                                      |
-|---------------------------------|--------------------------------------------------|
-| `getAll(hotelId)`              | Obtener todas las habitaciones de un hotel       |
-| `getRoomById(id)`              | Obtener habitación por ID                        |
-| `getRoomByState(hotelId, state)` | Filtrar habitaciones por estado en un hotel     |
-| `getRoomByTypeRoomId(hotelId, typeRoomId)` | Filtrar habitaciones por tipo                  |
-| `getByBookingAvailabilityInRange(hotelId, startDate, endDate)` | Ver disponibilidad por rango de fechas |
-| `create()`                     | Crear una nueva habitación                       |
-| `updateState(id, state)`      | Actualizar el estado de una habitación           |
-
----
-
-#### Booking Api Service
-
-| Método                             | Descripción                                         |
-|------------------------------------|-----------------------------------------------------|
-| `getAll(hotelId)`                 | Obtener todas las reservas de un hotel             |
-| `getByHotelIdAndState(hotelId, state)` | Filtrar reservas por estado en un hotel       |
-| `getById(id)`                     | Obtener reserva por ID                             |
-| `getByCustomerId(customerId)`     | Obtener reservas por cliente                       |
-| `create()`                        | Crear una nueva reserva                            |
-| `updateEndDate(id, endDate)`      | Actualizar la fecha de salida                      |
-| `updateState(id, state)`          | Actualizar el estado de la reserva                 |
-
----
-
-####  TypeRoom Api Service
-
-| Método          | Descripción                                 |
-|------------------|---------------------------------------------|
-| `getAll(hotelId)` | Obtener todos los tipos de habitación de un hotel |
-| `getById()`      | Obtener tipo de habitación por ID           |
-| `create()`       | Crear un nuevo tipo de habitación           |
-  
+--- 
 
 
-### Servicios del Dominio `Operations and Monitoring` en nuestro Web Services
-####  Booking
+####  Booking Services
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
 | `IBookingCommandServices.cs`     | Define comandos como crear, actualizar estado o actualizar fecha final. |
 | `IBookingQueryServices.cs`       | Define consultas para obtener reservas (por cliente, por hotel, por hotel y estado, por id). |
 
-####  Room
+####  Room Services
 
 | Archivo                        | Descripción breve |
 |--------------------------------|--------------------|
 | `IRoomCommandService.cs`       | Comandos para modificar habitaciones (crear, cambiar estado). |
 | `IRoomQueryService.cs`         | Consultas sobre habitaciones (por disponibilidad en un rango de fechas, por estado, por tipo, por id, por hotel). |
 
-####  TypeRoom
+####  TypeRoom Services
 
 | Archivo                            | Descripción breve |
 |------------------------------------|--------------------|
 | `ITypeRoomCommandService.cs`       | Comandos sobre tipos de habitación, unicamente la creación. |
 | `ITypeRoomQueryService.cs`         | Consultas sobre los tipos de habitación disponibles por hotel y por id. |
+
+####  Thermostat Services
+
+| Archivo                            | Descripción breve |
+|------------------------------------|--------------------|
+| `IThermostatCommandService.cs`       | Comandos sobre termostatos, como su creación y actualización |
+| `IThermostatQueryService.cs`         | Consultas sobre los termostatos disponibles por habitación y por id. |
+
+####  SmokeSensor Services
+
+| Archivo                            | Descripción breve |
+|------------------------------------|--------------------|
+| `ISmokeSensorCommandService.cs`       | Comandos sobr sensores de humo, como su creación y actualización |
+| `ISmokeSensorQueryService.cs`         | Consultas sobre los sensores de humo disponibles por habitación y por id. |
 
 ---
 
@@ -4660,6 +4654,13 @@ Las clases *Resource* funcionan como objetos de transferencia  entre el mundo ex
 | `RoomResource.cs`                 | Devuelve información de una habitación. |
 | `CreateTypeRoomResource.cs`       | Recibe datos para crear un tipo de habitación. |
 | `TypeRoomResource.cs`             | Expone la información de un tipo de habitación (GET). |
+| `UpdateThermostatResource.cs`      | Permite cambiar el estado de un termostato. |
+| `ThermostatResource.cs`                 | Devuelve información de un termostato. |
+| `CreateThermostatResource.cs`       | Recibe datos para crear un termostato. |
+| `UpdateSmokeSensorStateResource.cs`      | Permite cambiar el estado de una termostato. |
+| `SmokeSensorResource.cs`                 | Devuelve información de un termostato. |
+| `CreateSmokeSensorResource.cs`       | Recibe datos para crear un tersmostato. |
+
 
 ---
 
@@ -4670,11 +4671,30 @@ Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son resp
 - Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
 - Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
 
-| Archivo                                               | Función |
-|--------------------------------------------------------|---------|
-| `CreateBookingCommandFromResourceAssembler.cs`         | Transforma `CreateBookingResource` en `CreateBookingCommand`. |
-| `UpdateBookingStateCommandFromResourceAssembler.cs`    | Transforma `UpdateBookingStateResource` en `UpdateBookingStateCommand`. |
-| `BookingResourceFromEntityAssembler.cs`                | Convierte una entidad `Booking` en un `BookingResource` limpio (sin ciclos). |
+| Archivo                                                        | Función                                                                 |
+|-----------------------------------------------------------------|-------------------------------------------------------------------------|
+| `CreateBookingCommandFromResourceAssembler.cs`                 | Transforma `CreateBookingResource` en `CreateBookingCommand`.           |
+| `UpdateBookingStateCommandFromResourceAssembler.cs`            | Transforma `UpdateBookingStateResource` en `UpdateBookingStateCommand`. |
+| `BookingResourceFromEntityAssembler.cs`                        | Convierte una entidad `Booking` en un `BookingResource` limpio (sin ciclos). |
+| `BulkRoomsCommandFromResourceAssembler.cs`                     | Transforma múltiples `RoomResource` en comandos de creación masiva.     |
+| `CreateRoomCommandFromResourceAssembler.cs`                    | Transforma `RoomResource` en `CreateRoomCommand`.                        |
+| `RoomResourceFromEntityAssembler.cs`                           | Convierte una entidad `Room` en `RoomResource`.                          |
+| `UpdateRoomStateCommandFromResource.cs`                        | Transforma `RoomResource` parcial en un `UpdateRoomStateCommand`.       |
+| `CreateSmokeSensorCommandFromResourceAssembler.cs`            | Transforma `SmokeSensorResource` en `CreateSmokeSensorCommand`.         |
+| `SmokeSensorResourceFromEntityAssembler.cs`                   | Convierte una entidad `SmokeSensor` en `SmokeSensorResource`.           |
+| `UpdatSmokeSensorAnalogicValueCommandFromResourceAssembler.cs`| Transforma `SmokeSensorResource` parcial en `UpdateSmokeSensorAnalogicValueCommand`. |
+| `UpdateSmokeSensorCommandFromResourceAssembler.cs`            | Transforma `SmokeSensorResource` completo en `UpdateSmokeSensorCommand`.|
+| `UpdateSmokeSensorStateCommandFromResourceAssembler.cs`       | Transforma solo el estado (`State`) del sensor en un comando.           |
+| `CreateThermostatCommandFromResourceAssembler.cs`             | Transforma `ThermostatResource` en `CreateThermostatCommand`.           |
+| `ThermostatResourceFromEntityAssembler.cs`                    | Convierte una entidad `Thermostat` en `ThermostatResource`.             |
+| `UpdateThermostatCommandFromResourceAssembler.cs`             | Transforma `ThermostatResource` completo en `UpdateThermostatCommand`.  |
+| `UpdateThermostatStateCommandFromResourceAssembler.cs`        | Transforma solo el estado del termostato en un comando.                 |
+| `UpdateThermostatTemperatureCommandFromResourceAssembler.cs`  | Transforma solo la temperatura del termostato en un comando.            |
+| `CreateTypeRoomCommandFromResourceAssembler.cs`               | Transforma `TypeRoomResource` en `CreateTypeRoomCommand`.               |
+| `TypeRoomResourceFromEntityAssembler.cs`                      | Convierte una entidad `TypeRoom` en `TypeRoomResource`.                 |
+
+
+
 
 ### Controllers
 
@@ -4685,6 +4705,8 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 | `BookingController.cs` | `/api/booking`           | Gestiona la creación, actualización, consulta y cancelación de reservas. |
 | `RoomController.cs`    | `/api/room`              | Maneja operaciones sobre habitaciones: crear, actualizar estado, consultar disponibilidad. |
 | `TypeRoomController.cs`| `/api/typeroom`          | Expone endpoints para crear y consultar tipos de habitación (`Single`, `Double`, etc). |
+| `SmokeSensorController.cs`| `/api/smokesensor`          | Expone endpoints para crear y consultar sensores de humo en el hotel |
+| `ThermostatController.cs`| `/api/thermostat`          | Expone endpoints para crear y consultar termostatos en el hotel |
 
 
 
@@ -4699,6 +4721,8 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 | `BookingCommandService.cs`       | Maneja comandos para crear una reserva, actualizar su estado o su fecha final. Utiliza el agregado `Booking`. |
 | `RoomCommandService.cs`          | Procesa la creación de habitaciones y el cambio de estado (`Room`). Interactúa con el agregado `Room`. |
 | `TypeRoomCommandServices.cs`     | Administra la creación de tipos de habitación (`TypeRoom`). Valida descripciones y precios.
+| `ThermostatCommandServices.cs`     | Administra la creación de termostatos. |
+| `SmokeSensorCommandServices.cs`     | Administra la creación de sensores de humo. |
 
 ---
 
@@ -4708,7 +4732,10 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 |------------------------------------|-------------|
 | `BookingQueryService.cs`           | Devuelve reservas filtradas por cliente, ID, hotel, estado o disponibilidad. Utiliza `BookingDto` para evitar ciclos. |
 | `RoomQueryService.cs`              | Lista habitaciones por ID, estado, tipo, hotel o fechas disponibles. |
-| `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados.
+| `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados. |
+| `ThermostatQueryService.cs`              | Lista termostatos por ID, estado o habitación. |
+| `SmokeSensorQueryService.cs`              | Lista habitaciones por ID, estado  o habitación. |
+
 
 ## Capabilities del Bounded Context `Operations and Monitoring`
 
@@ -4720,14 +4747,22 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | ✅ **Submit Booking**                         | Command       | `BookingCommandService.Handle(CreateBookingCommand)` | Registra una nueva reserva. |
 | ✅ **Create Room**                            | Command       | `RoomCommandService.Handle(CreateRoomCommand)` | Crea una nueva habitación en un hotel. |
 | ✅ **Modify Room**                            | Command       | `RoomCommandService.Handle(UpdateRoomStateCommand)` | Cambia el estado de una habitación (`available`, `occupied`, etc.). |
-| ✅ **List Rooms**                             | Query         | `RoomQueryService.GetAllRoomsQuery(...)` | Devuelve habitaciones. |
+| ✅ **List Rooms**                             | Query         | `RoomQueryService.GetAllRoomsQuery(...)`     | Devuelve habitaciones. |
 | ✅ **Filter Room**                            | Query         | `RoomQueryService.GetRoomsById`, `GetRoomsByTypeRoomId` | Filtra habitaciones por estado o tipo. |
-| ✅ **Check Room Availability**                | Query         | `RoomQueryService.GetRoomsByState`, `` | Revisa si una habitación específica está libre. |
+| ✅ **Check Room Availability**                | Query         | `RoomQueryService.GetRoomsByState`, ``       | Revisa si una habitación específica está libre. |
 | ✅ **List Bookings**                          | Query         | `BookingQueryService.GetAllBookings`         | Devuelve todas las reservas registradas. |
 | ✅ **List Guest's Bookings**                  | Query         | `BookingQueryService.Handle(GetBookingByCustomerIdQuery)` | Lista reservas hechas por un huésped. |
 | ✅ **Modify Booking's End Date**              | Command       | `BookingCommandService.Handle(UpdateBookingEndDateCommand)` | Permite modificar la fecha final de una reserva. |
 | ✅ **Finish Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `FINISHED` o `COMPLETED`. |
 | ✅ **Cancel Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `CANCELLED`. |
+| ✅ **Create TypeRoom**                        | Command       | `TypeRoomCommandService.Handle(CreateTypeRoomCommand)` | Registra un nuevo tipo de habitación (`Doble`, `Suite`, etc.). |
+| ✅ **Create Thermostat**                      | Command       | `ThermostatCommandService.Handle(CreateThermostatCommand)` | Registra un nuevo dispositivo termostato para una habitación. |
+| ✅ **Update Thermostat State**                | Command       | `ThermostatCommandService.Handle(UpdateThermostatStateCommand)` | Cambia el estado del termostato (por ejemplo, `ON` o `OFF`). |
+| ✅ **Update Thermostat Temperature**          | Command       | `ThermostatCommandService.Handle(UpdateThermostatTemperatureCommand)` | Cambia la temperatura objetivo del termostato. |
+| ✅ **Create SmokeSensor**                     | Command       | `SmokeSensorCommandService.Handle(CreateSmokeSensorCommand)` | Registra un nuevo sensor de humo. |
+| ✅ **Update SmokeSensor State**               | Command       | `SmokeSensorCommandService.Handle(UpdateSmokeSensorStateCommand)` | Actualiza el estado del sensor de humo. |
+| ✅ **Update SmokeSensor Value**               | Command       | `SmokeSensorCommandService.Handle(UpdateSmokeSensorAnalogicValueCommand)` | Actualiza el último valor analógico recibido por el sensor. |
+
 
 
 #### 4.2.2.4. Infrastructure Layer
@@ -4739,6 +4774,8 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | `BookingRepository.cs`    | `IBookingRepository`         | Implementa operaciones de persistencia y consultas sobre las reservas (`Booking`), incluyendo búsqueda por cliente, por hotel, por estado y por rango de fechas. |
 | `RoomRepository.cs`       | `IRoomRepository`            | Implementa consultas y modificaciones sobre habitaciones (`Room`). Gestiona la disponibilidad por fechas y el cambio de estado (`AVAILABLE`, `OCCUPIED`, etc.). |
 | `TypeRoomRepository.cs`   | `ITypeRoomRepository`        | Se encarga del acceso y persistencia de los tipos de habitación (`TypeRoom`), incluyendo la relación con las habitaciones (`Room`). |
+| `ThermostatRepository.cs`   | `IThermostatRepository`        | Se encarga del acceso y persistencia de los termostatos. |
+| `SmokeSensorRepository.cs`   | `ISmokeSensorRepository`        | Se encarga del acceso y persistencia de los sensores de humo. |
 
 ---
 
