@@ -7518,7 +7518,7 @@ Añadir filtros por nombre, categoría o estado a la vista de suministros.
 **Problema:**  
 Las habitaciones del hotel no muestran a qué piso o área pertenecen, lo que dificulta la navegación lógica del sistema y puede saturar al administrador al no permitirle filtrar ni evaluar por área.  
 
-*(Insertar aquí una captura de pantalla del listado de habitaciones sin ubicación)*  
+![image](https://github.com/user-attachments/assets/cb168769-3bac-4baa-956f-fa3bb27453f8)
 
 **Recomendación:**  
 Mostrar la ubicación física (piso/área) junto al número o nombre de habitación y permitir ordenar por este atributo.
@@ -7530,7 +7530,8 @@ Mostrar la ubicación física (piso/área) junto al número o nombre de habitaci
 **Problema:**  
 No hay opciones para guardar y crear un nuevo elemento rápidamente, ni atajos de teclado. Esto reduce la eficiencia del usuario al tener que realizar el mismo proceso repetidamente para crear múltiples elementos.  
 
-![image](https://github.com/user-attachments/assets/cb168769-3bac-4baa-956f-fa3bb27453f8)
+![image](https://github.com/user-attachments/assets/5f26d6b9-d0ef-496e-ba61-c968ef8c3986)
+
 
 **Recomendación:**  
 Agregar botón “Guardar y nuevo” y atajos para duplicar formularios o implementar funcionalidad de teclado como `Ctrl+Enter` para guardar.
