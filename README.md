@@ -3540,11 +3540,15 @@ Critique.
   <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
+Este *bounded context* se enfoca en la gestión organizacional de hoteles y proveedores dentro del sistema. Permite registrar, visualizar, modificar y administrar la información relacionada con hoteles disponibles, incluyendo sus datos generales y contenido multimedia como fotografías. Además, facilita la gestión de proveedores encargados de suministrar recursos o servicios asociados a la operación hotelera. Esta funcionalidad es clave para mantener una base de datos actualizada y organizada sobre la infraestructura y los recursos disponibles en la plataforma.
+
 <h2>Inventory Bounded Context</h2>
 <p>Es principalmente responsable de la gestión integral de suministros y solicitudes de materiales dentro de la plataforma.</p>
 <div style="text-align: center;">
   <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
 </div><br>
+
+Este *bounded context* se enfoca en la gestión eficiente del inventario dentro de la plataforma. Su responsabilidad principal es administrar los suministros y procesar las solicitudes de materiales necesarios para el funcionamiento operativo, especialmente en las habitaciones de los hoteles. Incluye el control y seguimiento de recursos como toallas, papel higiénico, jabón, entre otros insumos.
 
 <h2>Communication Bounded Context Canvas</h2>
 
@@ -3553,6 +3557,7 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
 </div>
+Este *bounded context* se especializa en la gestión de la comunicación interna entre los miembros del staff del hotel. Permite crear, enviar y recibir mensajes dentro de la plataforma, asegurando una coordinación efectiva entre los distintos roles operativos. Esta funcionalidad es fundamental para mantener una comunicación fluida en tiempo real, facilitar la asignación de tareas, compartir información relevante y resolver situaciones operativas de forma oportuna.
 
 <h2>Commerce Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de pagos realizados, tanto por huéspedes como por dueños de hoteles, y de la gestión de suscripciones dentro de la plataforma.</p>
@@ -3560,11 +3565,15 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
   <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
 </div><br>
 
+Este *bounded context* se encarga de la gestión de las transacciones económicas dentro de la plataforma. Administra los pagos realizados por los huéspedes en el proceso de reserva, así como los pagos efectuados por los dueños de hoteles relacionados con suscripciones o servicios adicionales. También contempla la administración de planes de suscripción, renovaciones y facturación. Su correcta operación es esencial para garantizar la transparencia financiera y la automatización de los procesos comerciales dentro del ecosistema de la plataforma.
+
 <h2>Operations and Monitoring Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de habitaciones y reservas, dedicada al negocio de administradores y gerentes.
 </p>
 
 ![image](https://github.com/user-attachments/assets/99f05c54-158f-435b-b87c-f14e5c5640a9)
+
+Este *bounded context* se centra en la gestión operativa diaria del hotel, con especial atención a la administración de habitaciones y reservas. Está diseñado para facilitar el trabajo de administradores y gerentes, permitiéndoles gestionar la disponibilidad de habitaciones, registrar nuevas reservas, supervisar el estado de ocupación y realizar ajustes según las necesidades operativas. Además, brinda visibilidad sobre el rendimiento del hotel mediante herramientas de monitoreo, lo que permite tomar decisiones informadas para optimizar la ocupación y mejorar la eficiencia del servicio.
 
 
 <h2>IAM Bounded Context</h2>
@@ -3572,6 +3581,8 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/iam-bounded-context/bounded-context-canvas.jpg" alt="IAM Bounded Context Canvas " width="90%" />
 </div><br>
+
+Este *bounded context* es responsable de la gestión de identidad y control de acceso dentro de la plataforma. Administra las sesiones de usuario, autenticación y autorización, asegurando que cada usuario tenga acceso únicamente a las funcionalidades y recursos correspondientes a su rol. Gestiona tanto el inicio y cierre de sesión como los permisos de navegación y operación para todos los *IAM Users*, incluyendo administradores, personal del hotel y otros perfiles. Este contexto es fundamental para garantizar la seguridad, integridad y personalización de la experiencia del usuario en el sistema.
 
 ### 4.1.2. Context Mapping
 
