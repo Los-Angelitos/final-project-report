@@ -7497,14 +7497,6 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 #### Preguntas de Validación – Segmento 3: Huéspedes (Guests)
 Estas preguntas están pensadas para validar si la experiencia de usuario en el proceso de búsqueda, reserva y contacto con el hotel fue fluida, agradable y clara.
 
-- Landing Page
-
-¿La landing page te permitió encontrar rápidamente información relevante sobre los hoteles?
-
-¿La presentación general de la página te inspiró confianza para seguir con la reserva?
-
-¿Qué información o funcionalidad esperabas ver antes de reservar y no encontraste?
-
 - Mobile Application
 
 ¿Te resultó fácil registrarte y crear un perfil desde el celular?
