@@ -1,4 +1,4 @@
-# <center>Informe del Trabajo Final</center>
+![image](https://github.com/user-attachments/assets/94ece5b6-bbfb-401e-992f-578a384756fe)# <center>Informe del Trabajo Final</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -7592,11 +7592,10 @@ No estan incluidos en esta evaluación las siguientes tareas:
 | 2  | No hay acceso a FAQ o tutoriales dentro de la app | 1| Usability: Ayuda y documentación |
 | 3  | Incluye una checkbox con los Términos y Condiciones y Políticas de Privacidad, pero no existe la posibilidad de leerlos| 3 | Information Architecture: ¿Es útil? |
 | 4  | Incluye un botón "Olvidé mi contraseña" pero no redirecciona a una vista dedicada a ello o incluye una funcionalidad de "Recuperar Contraseña" | 3 | Information Architecture: ¿Es útil? |
-| 5  | No incluye pantallas o indicadores de carga al hacer solicitudes | 2  | Usability: Visibilidad del estado del sistema |
-| 6  | No incluye información sobre la habitación en la que se ubica cada dispositivo IOT | 2  | Usability: Flexibilidad y eficiencia de uso |
-| 7  | No existe la opción de ocultar la ultima conexión a la aplicación | 1  | Usability: Flexibilidad y eficiencia de uso |
-| 8  | No existe la posibilidad de editar  el nombre y la dirección del hotel | 3 | Usability: Libertad y control del usuario |
-| 9  | No incluye la posibilidad de pagar la suscripcion, mediante diferentes medios de pago como Google Pay, Apple Pay a pesar de incluir sus imagenes en la pasarela de pago  | 3 | Information Architecture: ¿Es útil? |
+| 5  | No incluye información sobre la habitación en la que se ubica cada dispositivo IOT | 2  | Usability: Flexibilidad y eficiencia de uso |
+| 6  | No existe la opción de ocultar la ultima conexión a la aplicación | 1  | Usability: Flexibilidad y eficiencia de uso |
+| 7  | No existe la posibilidad de editar  el nombre y la dirección del hotel | 3 | Usability: Libertad y control del usuario |
+| 8  | No incluye la posibilidad de pagar la suscripcion, mediante diferentes medios de pago como Google Pay, Apple Pay a pesar de incluir sus imagenes en la pasarela de pago  | 3 | Information Architecture: ¿Es útil? |
 
 ##### PROBLEMA #1: Incluye una sección de selección de rol, a pesar de estar registrado ya el usuario con su rol  
 **Severidad:** 2  
@@ -7605,7 +7604,7 @@ No estan incluidos en esta evaluación las siguientes tareas:
 **Problema:**  
 Se muestra una pantalla innecesaria para seleccionar un rol, incluso si el usuario ya tiene un rol previamente registrado. Esto ralentiza la experiencia y agrega pasos innecesarios.  
 
-*(Insertar aquí una captura de pantalla que muestre la pantalla de selección de rol)*  
+![image](https://github.com/user-attachments/assets/9b1cfe93-5ddd-42e0-a450-13909e55e895)
 
 **Recomendación:**  
 Implementar una redirección automática al dashboard correspondiente según el rol guardado.
@@ -7617,7 +7616,7 @@ Implementar una redirección automática al dashboard correspondiente según el 
 **Problema:**  
 Los usuarios no tienen acceso a material de ayuda, lo que dificulta su orientación y resolución de dudas durante el uso inicial o ante errores.  
 
-*(Insertar aquí una captura de pantalla de la vista principal sin acceso a FAQ)*  
+![image](https://github.com/user-attachments/assets/b4670cbe-13c4-4912-a60f-03ac9362c962)
 
 **Recomendación:**  
 Agregar una sección accesible desde el menú con preguntas frecuentes o un tutorial básico.  
@@ -7629,7 +7628,7 @@ Agregar una sección accesible desde el menú con preguntas frecuentes o un tuto
 **Problema:**  
 No se provee acceso al contenido de los documentos legales que el usuario debe aceptar, lo cual genera desconfianza y afecta la transparencia del sistema.  
 
-*(Insertar aquí una captura de pantalla del checkbox sin enlaces funcionales)*  
+![image](https://github.com/user-attachments/assets/ac150724-acad-4663-be65-9073e969ba08)
 
 **Recomendación:**  
 Hacer que al tocar “Términos y Condiciones” o “Política de Privacidad” se abra una vista o PDF.
@@ -7641,67 +7640,58 @@ Hacer que al tocar “Términos y Condiciones” o “Política de Privacidad”
 **Problema:**  
 La opción existe visualmente pero no tiene una funcionalidad real, lo que puede frustrar al usuario que ha olvidado su contraseña y necesita recuperar el acceso.  
 
-*(Insertar aquí una captura de pantalla del botón sin funcionalidad)*  
+![image](https://github.com/user-attachments/assets/7ed113c3-e70d-4c06-a63f-22d797ca80cc)
+
+![image](https://github.com/user-attachments/assets/7f01a3e1-9b4d-412b-b4e9-478e2a9c82f0)
 
 **Recomendación:**  
 Implementar una vista donde el usuario pueda ingresar su correo para recuperar su contraseña.  
 
-##### PROBLEMA #5: No incluye pantallas o indicadores de carga al hacer solicitudes  
-**Severidad:** 2  
-**Heurística violada:** Usability: Visibilidad del estado del sistema  
-
-**Problema:**  
-La app no da señales visuales mientras se cargan datos o se realizan operaciones, lo que puede llevar al usuario a pensar que la app no está funcionando.  
-
-*(Insertar aquí una captura de pantalla donde se produce la espera sin feedback)*  
-
-**Recomendación:**  
-Agregar spinners o barras de progreso al realizar operaciones que toman tiempo.  
-
-##### PROBLEMA #6: No incluye información sobre la habitación en la que se ubica cada dispositivo IOT  
+##### PROBLEMA #5: No incluye información sobre la habitación en la que se ubica cada dispositivo IOT  
 **Severidad:** 2  
 **Heurística violada:** Usability: Flexibilidad y eficiencia de uso  
 
 **Problema:**  
 El usuario no puede visualizar dispositivos IoT con la habitación a la que pertencen, dificultando su gestión y mantenimiento.  
 
-*(Insertar aquí una captura de pantalla de la vista de dispositivos sin info de habitación)*  
+![image](https://github.com/user-attachments/assets/b0e98314-f4f6-4b47-ac18-46a64e1007b3)
 
 **Recomendación:**  
 Mostrar número de habitación junto al nombre del dispositivo en la sección de Devices. 
 
-##### PROBLEMA #7: No existe la opción de ocultar la última conexión a la aplicación  
+##### PROBLEMA #6: No existe la opción de ocultar la última conexión a la aplicación  
 **Severidad:** 1  
 **Heurística violada:** Usability: Flexibilidad y eficiencia de uso  
 
 **Problema:**  
 El usuario no tiene control sobre su privacidad respecto a la última vez que usó la app, lo que puede ser un problema en entornos colaborativos o sensibles.  
 
-*(Insertar aquí una captura de pantalla del perfil del usuario sin esa opción)*  
+![image](https://github.com/user-attachments/assets/1fb0e2c8-a1b0-45e7-a579-1d70c158b33c)
 
 **Recomendación:**  
 Añadir una opción tipo “Ocultar última vez en línea” en la configuración, y así evitar que en la sección de organización, los demás trabajadores puedan visualizarla. 
 
-##### PROBLEMA #8: No existe la posibilidad de editar el nombre y la dirección del hotel  
+##### PROBLEMA #7: No existe la posibilidad de editar el nombre y la dirección del hotel  
 **Severidad:** 3  
 **Heurística violada:** Usability: Libertad y control del usuario  
 
 **Problema:**  
 No hay opción para que el usuario edite información básica del hotel como su nombre o dirección, lo que reduce la capacidad de gestión del sistema por parte del usuario.  
 
-*(Insertar aquí una captura de pantalla de la vista con los datos del hotel bloqueados)*  
+![image](https://github.com/user-attachments/assets/8f02afb3-e667-45bd-97e8-bb9d23d3b34e)
+
 
 **Recomendación:**  
 Habilitar campos editables para nombre y dirección en Hotel Overview. 
 
-##### PROBLEMA #9: No incluye la posibilidad de pagar la suscripción mediante diferentes medios de pago como Google Pay o Apple Pay, a pesar de incluir sus imágenes en la pasarela de pago  
+##### PROBLEMA #8: No incluye la posibilidad de pagar la suscripción mediante diferentes medios de pago como Google Pay o Apple Pay, a pesar de incluir sus imágenes en la pasarela de pago  
 **Severidad:** 3  
 **Heurística violada:** Information Architecture: ¿Es útil?  
 
 **Problema:**  
 Se muestran íconos de métodos de pago populares que en realidad no están implementados, generando confusión y expectativas falsas en el usuario.  
 
-*(Insertar aquí una captura de pantalla de la pasarela con íconos falsos)*  
+![image](https://github.com/user-attachments/assets/2ca9f9b8-6451-406c-ad96-537303f943b9)
 
 **Recomendación:**  
 Ocultar los íconos de medios de pago no habilitados o implementar realmente esas opciones.  
@@ -7727,7 +7717,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 | 4  | No incluye temperatura en distintas medidas como Kelvin o Farenheidt | 2| Information Architecture: ¿Es Findable?  |
 | 5  | La iluminación del Serial Monitor es baja, generando que en horas nocturnas, los usuarios no puedan visualizar la pantalla sin luz externa adicional | 2| Information Architecture: ¿Es Findable?  |
 
-#### PROBLEMA #1: No existe la posibilidad de configurar la temperatura mediante pantalla táctil 
+#### PROBLEMA #1: No existe la posibilidad de configurar-+ la temperatura mediante pantalla táctil 
 **Severidad:** 3 
 **Heurística violada:** Libertad y control del usuario 
 
