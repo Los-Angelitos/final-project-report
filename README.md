@@ -7424,7 +7424,7 @@ parte del proceso de validación.
 #### Preguntas de Validación – Segmento 1: Gerentes (Owners)
 Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App, Mobile App y Landing Page) desde su rol estratégico.
 
-- Landing Page (4 preguntas)
+- Landing Page
 
 ¿La información en la landing page fue suficiente para entender los beneficios del sistema?
 
@@ -7434,17 +7434,15 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 
 ¿Faltó alguna información clave que te hubiera gustado ver antes de registrarte?
 
-- Mobile Application (4 preguntas)
+- Mobile Application
 
 ¿Te resultó cómoda la experiencia de usar la app desde tu celular?
-
-¿Pudiste acceder fácilmente a los reportes financieros o indicadores clave desde el móvil?
 
 ¿Te sentiste en control al modificar precios o disponibilidad de habitaciones desde la app?
 
 ¿Qué tan útil te pareció gestionar reservas y ver alertas desde tu celular?
 
-- Web Application (4 preguntas)
+- Web Application
 
 ¿La interfaz web te permitió tener una visión clara del estado general del hotel?
 
@@ -7456,31 +7454,17 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 
 #### Preguntas de Validación – Segmento 2: Administradores (Admins)
 
-- Landing Page (4 preguntas)
+- Landing Page
 
 ¿La landing page te ayudó a comprender cómo esta plataforma te facilitaría el trabajo diario?
-
-¿Hubo alguna sección de la página que generó dudas o confusión sobre tu rol en el sistema?
 
 ¿Te sentiste identificado/a con los problemas que la plataforma promete solucionar?
 
 ¿Te habría gustado una demo interactiva o más casos de uso concretos?
 
-- Mobile Application (4 preguntas)
-
-¿Pudiste hacer check-in y check-out de huéspedes de forma clara y sin errores desde la app?
-
-¿Te resultó fácil acceder a las tareas del día o a las reservas pendientes?
-
-¿La app te ayudó a comunicarte o colaborar mejor con otros miembros del equipo?
-
-¿Tuviste problemas de lentitud, diseño o usabilidad al operar con el sistema móvil?
-
-- Web Application (4 preguntas)
+- Web Application
 
 ¿Pudiste ver el historial de reservas y estados de habitación sin dificultad desde el navegador?
-
-¿Cómo calificarías la experiencia de reportar incidencias o registrar información operativa?
 
 ¿Te pareció clara y bien organizada la distribución del contenido en el panel web?
 
@@ -7489,27 +7473,21 @@ Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las 
 #### Preguntas de Validación – Segmento 3: Huéspedes (Guests)
 Estas preguntas están pensadas para validar si la experiencia de usuario en el proceso de búsqueda, reserva y contacto con el hotel fue fluida, agradable y clara.
 
-- Landing Page (4 preguntas)
+- Landing Page
 
 ¿La landing page te permitió encontrar rápidamente información relevante sobre los hoteles?
-
-¿Pudiste filtrar fácilmente según tus preferencias (precio, ubicación, servicios)?
 
 ¿La presentación general de la página te inspiró confianza para seguir con la reserva?
 
 ¿Qué información o funcionalidad esperabas ver antes de reservar y no encontraste?
 
-- Mobile Application (4 preguntas)
+- Mobile Application
 
 ¿Te resultó fácil registrarte y crear un perfil desde el celular?
 
 ¿La experiencia de reservar una habitación fue clara y sin fricciones?
 
-¿Pudiste modificar o cancelar tu reserva fácilmente desde la app?
-
-¿La funcionalidad de chatear o contactar al hotel te pareció útil y accesible?
-
-- Web Application (4 preguntas)
+- Web Application
 
 ¿Encontraste rápidamente el hotel que buscabas en la versión web?
 
@@ -7519,7 +7497,7 @@ Estas preguntas están pensadas para validar si la experiencia de usuario en el 
 
 ¿Hubo algún momento del flujo web en que decidiste abandonar la reserva? ¿Por qué?
 
-- Embedded Application Wokwi (2 preguntas)
+- Embedded Application Wokwi
 
 ¿Pudiste ver reflejada correctamente tu temperatura preferida en la pantalla del termostato (LCD) al ingresar a la habitación?
 
