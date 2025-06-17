@@ -440,6 +440,16 @@ Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprin
          - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
          - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
          - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+      + [6.2.2. ](#622-sprint-2)
+         - [6.2.2.1. Sprint Planning 2](#6221sprint-planning-2)
+         - [6.2.2.2. Aspect Leaders and Collaborators](#6222aspect-leaders-and-collaborators)
+         - [6.2.2.3. Sprint Backlog 2](#6223sprint-backlog-2)
+         - [6.2.2.4. Development Evidence for Sprint Review](#6224development-evidence-for-sprint-review)
+         - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225testing-suite-evidence-for-sprint-review)
+         - [6.2.2.6. Execution Evidence for Sprint Review](#6226execution-evidence-for-sprint-review)
+         - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227services-documentation-evidence-for-sprint-review)
+         - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228software-deployment-evidence-for-sprint-review)
+         - [6.2.2.9. Team Collaboration Insights during Sprint](#6229team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -7373,6 +7383,8 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+
+
 #### 6.2.2.3.Sprint Backlog 2.
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
@@ -7408,11 +7420,23 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
 
 #### 6.2.2.4.Development Evidence for Sprint Review.
+
+
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+
+
 #### 6.2.2.6.Execution Evidence for Sprint Review.
+
+
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+
+
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+
+
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
+
+
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
