@@ -7421,16 +7421,281 @@ incluir en la sesión de validación, incluyendo el Landing Page y las aplicacio
 se especifica también cuáles serán los user flows de las aplicaciones, que formarán
 parte del proceso de validación.
 
+#### Preguntas de Validación – Segmento 1: Gerentes (Owners)
+Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App, Mobile App y Landing Page) desde su rol estratégico.
+
+- Landing Page (4 preguntas)
+
+¿La información en la landing page fue suficiente para entender los beneficios del sistema?
+
+¿Te resultó confiable el diseño y contenido del sitio para decidir registrarte?
+
+¿Qué tanto influyó la presentación de funcionalidades en tu interés por probar la plataforma?
+
+¿Faltó alguna información clave que te hubiera gustado ver antes de registrarte?
+
+- Mobile Application (4 preguntas)
+
+¿Te resultó cómoda la experiencia de usar la app desde tu celular?
+
+¿Pudiste acceder fácilmente a los reportes financieros o indicadores clave desde el móvil?
+
+¿Te sentiste en control al modificar precios o disponibilidad de habitaciones desde la app?
+
+¿Qué tan útil te pareció gestionar reservas y ver alertas desde tu celular?
+
+- Web Application (4 preguntas)
+
+¿La interfaz web te permitió tener una visión clara del estado general del hotel?
+
+¿Pudiste configurar fácilmente el tipo de habitaciones, tarifas y servicios desde el panel web?
+
+¿Encontraste rápido las opciones para ver reportes, estadísticas o ingresos?
+
+¿Hay alguna funcionalidad importante que esperabas encontrar y no estaba disponible en la versión web?
+
+#### Preguntas de Validación – Segmento 2: Administradores (Admins)
+
+- Landing Page (4 preguntas)
+
+¿La landing page te ayudó a comprender cómo esta plataforma te facilitaría el trabajo diario?
+
+¿Hubo alguna sección de la página que generó dudas o confusión sobre tu rol en el sistema?
+
+¿Te sentiste identificado/a con los problemas que la plataforma promete solucionar?
+
+¿Te habría gustado una demo interactiva o más casos de uso concretos?
+
+- Mobile Application (4 preguntas)
+
+¿Pudiste hacer check-in y check-out de huéspedes de forma clara y sin errores desde la app?
+
+¿Te resultó fácil acceder a las tareas del día o a las reservas pendientes?
+
+¿La app te ayudó a comunicarte o colaborar mejor con otros miembros del equipo?
+
+¿Tuviste problemas de lentitud, diseño o usabilidad al operar con el sistema móvil?
+
+- Web Application (4 preguntas)
+
+¿Pudiste ver el historial de reservas y estados de habitación sin dificultad desde el navegador?
+
+¿Cómo calificarías la experiencia de reportar incidencias o registrar información operativa?
+
+¿Te pareció clara y bien organizada la distribución del contenido en el panel web?
+
+¿La plataforma te permitió completar tus tareas más rápido o te generó pasos innecesarios?
+
+#### Preguntas de Validación – Segmento 3: Huéspedes (Guests)
+Estas preguntas están pensadas para validar si la experiencia de usuario en el proceso de búsqueda, reserva y contacto con el hotel fue fluida, agradable y clara.
+
+- Landing Page (4 preguntas)
+
+¿La landing page te permitió encontrar rápidamente información relevante sobre los hoteles?
+
+¿Pudiste filtrar fácilmente según tus preferencias (precio, ubicación, servicios)?
+
+¿La presentación general de la página te inspiró confianza para seguir con la reserva?
+
+¿Qué información o funcionalidad esperabas ver antes de reservar y no encontraste?
+
+- Mobile Application (4 preguntas)
+
+¿Te resultó fácil registrarte y crear un perfil desde el celular?
+
+¿La experiencia de reservar una habitación fue clara y sin fricciones?
+
+¿Pudiste modificar o cancelar tu reserva fácilmente desde la app?
+
+¿La funcionalidad de chatear o contactar al hotel te pareció útil y accesible?
+
+- Web Application (4 preguntas)
+
+¿Encontraste rápidamente el hotel que buscabas en la versión web?
+
+¿El proceso de reserva en el navegador fue más claro o más confuso que en la app?
+
+¿Pudiste revisar tu historial de reservas y preferencias de manera sencilla?
+
+¿Hubo algún momento del flujo web en que decidiste abandonar la reserva? ¿Por qué?
+
+- Embedded Application Wokwi (2 preguntas)
+
+¿Pudiste ver reflejada correctamente tu temperatura preferida en la pantalla del termostato (LCD) al ingresar a la habitación?
+
+¿El sistema ajustó la temperatura automáticamente de acuerdo a tu perfil o preferencias guardadas en la app?
+
 ### 6.3.2. Registro de Entrevistas.
-Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas
-se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot
-de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el
-timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en
-video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en
-este informe un resumen, que explique de forma descriptiva las principales
-apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras
-indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen
-Videos
+A continuación, se registraron todas las entrevistas de validación para nuestra solución, categorizadas según su segmento objetivo, y con un resumen que destaca las características y críticas realizadas sobre nuestro proyecto.
+
+**Entrevista 01 (Gerentes)**
+
+URL del Vídeo: 
+
+Nombres: Carlo
+
+Apellidos: Rebagliati
+
+Edad: 45
+
+Sexo: Masculino
+
+Ocupación: Gerente Hotelero
+
+Lugar donde vive: Pueblo Libre
+
+Duración de la entrevista: 00:00 - 12:20 
+
+Personalidad: Análitica
+
+<div style="text-align: center;">
+  <img src="" alt="Owner Carlo Rebagliati" width="100%" />
+</div><br>
+
+<br><br>
+**Entrevista 02 (Gerentes)**
+<br>
+
+URL del vídeo: 
+Nombre: Sergio Alberto Cadillo Nuñez <br>
+Edad: 30 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Pueblo Libre-Lima <br>
+Ocupación: Dueño de un emprendimeinto hotelero <br>
+Duración de la entrevista: 21:24 - 27:00 <br>
+Personalidad: Analítica <br>
+
+![image]()
+
+<br><br>
+
+**Entrevista 03 (Gerentes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Luis Fernández <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Surquillo - Lima <br>
+Ocupación: Dueño y manager de un hotel <br>
+Duración de la entrevista: 12:20 - 21:24 <br>
+Personalidad: Extrovertido <br>
+<br>
+
+![Entrevista° 3 - Dueños]()
+
+<br><br>
+
+**Entrevista 01 (Administradores)**
+
+URL del Vídeo:
+
+Nombres: Gianella
+
+Apellidos: Francia
+
+Edad: 25
+
+Sexo: Femenino
+
+Ocupación: Administradora de RRHH en la gestión de hoteles
+
+Lugar donde vive: Santa Anita, Perú
+
+Duración de la entrevista: 27:00 - 36:50.
+
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
+
+**Entrevista 02 (Administradores)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Fabricio Gabriel Chavez Morales <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Magdalena del Mar-Lima <br>
+Ocupación: Administrador del hotel Los Lirios <br>
+Duración de la entrevista: 36:50 - 46:45 <br>
+Personalidad: Enfocado, orientado al servicio al cliente <br>
+
+![Entrevista° 2 - Administradores]()
+
+<br><br>
+
+**Entrevista 03 (Administradores)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Sergio Renard <br>
+Edad: 21 <br>
+Sexo: Masculino <br>
+Lugar donde vive: La Plata - Argentina <br>
+Ocupación: Administrador de hotel <br>
+Duración de la entrevista: : 46:45 - 51:04 <br>
+Personalidad: Alegre <br>
+
+<div style="text-align: center;">
+  <img src="" alt="Sergio Renard Interview" width="80%" />
+</div><br>
+
+**Entrevista 01 (Huéspedes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Anatoly Noriega <br>
+Edad: 22 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Breña - Lima <br>
+Ocupación: Contador<br>
+Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
+Personalidad: Analítica <br>
+![Entrevista° 1 - Huespedes]()<br>
+
+<br><br>
+
+**Entrevista 02 (Huéspedes)**
+
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Ramón Jorge <br>
+Edad: 51 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Jesús María - Lima <br>
+Ocupación: Ingeniero Civil <br>
+Duración de la entrevista: 51:04 - 59:57 <br> 
+Personalidad: Tranquilo <br>
+<br>
+
+![Entrevista° 2 - Huespedes]()
+
+<br><br>
+
+**Entrevista 03 (Huéspedes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Enzo Céspedes <br>
+Edad: 23 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Los Olivos <br>
+Ocupación: Ingeniero Industrial <br>
+Duración de la entrevista: 59:57 - 01: 08: 24  <br>
+Personalidad: Responsable y Trabajador <br>
+<br>
+
+![Aquí imagen 3 de entrevistas de huespedes]()
+
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ### SITE o APP A EVALUAR:
