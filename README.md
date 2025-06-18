@@ -1,4 +1,4 @@
-# <center>Informe del Trabajo Final</center>
+![image](https://github.com/user-attachments/assets/54ebb936-16c5-41ca-aefb-e15d2a2aa2ae)![image](https://github.com/user-attachments/assets/1e372c7e-5895-47b6-a369-2b09cc22e7c4)# <center>Informe del Trabajo Final</center>
 
 <p align="center">
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
@@ -292,6 +292,23 @@ TB2: El entregabe consistió principalmente en la corrección de errores de la W
 
 Se desarrollaron las las distintas soluciones tecnologias requeridas para el funcionamiento correcto de Sweet Manager. 
 Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso.
+
+Imagen 7: Gráfico detallado de los commits de cada miembros del equipo al repositorio del Web Services
+![image](https://github.com/user-attachments/assets/06429e77-b655-4fc4-a372-bff4f5ae84da)
+
+Imagen 8: Gráfico detallado de los commits de cada miembros del equipo al repositorio del Web Services
+![image](https://github.com/user-attachments/assets/8d6ac616-abb2-4190-a02e-6a0eb329a90c)
+
+Imagen 9: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la FOG Api.
+
+
+Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la Edge Api.
+
+
+
+
+
+
 
 
 
@@ -7325,6 +7342,16 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context  a la hora de elaborar nuestros entregables de este Sprint. 
+
+| Team Member (Last Name, First Name) | GitHub Username     | IAM Bounded Context | Communication Bounded Context | Operations and Monitoring Bounded Context | Organizational Management Bounded Context | Commerce Bounded Context | Inventory Bounded Context |
+|------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|
+| Zoppi, Giacomo                     | Giacomo202210029     | C                                    |                                               | L                                             |                                                             |                                            | C                                           | C             |
+| Herrera, Fabia                     | pelumsa              |                                     | L                                              | C                                             | C                                                            |                                            |                                            | C             |
+| Rojas, Mauricio                    | MayugiKentai11       | L                                    |                                               | C                                             | C                                                            |                      C                      |                                            | C             |
+| Morales, Omar                      | andrewmm16           |                                     |                                               | C                                             | C                                                            |                                            | L                                           | C             |
+| Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
+| Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 #### 6.2.2.3.Sprint Backlog 2.
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
@@ -7365,6 +7392,36 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
+
+En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
+
+Mobile Application: 
+
+![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
+
+![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
+
+Web Services: 
+
+![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
+
+FOG API: 
+
+
+EDGE API: 
+
+
+
+EMBEDDED APPLICATION: 
+
+
+
+
+
+
+
+
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
@@ -7724,7 +7781,7 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 **Problema:** 
 La pantalla actual no cuenta con funcionalidad táctil para permitir la configuración directa de la temperatura. Esto obliga al usuario a depender exclusivamente de la aplicación móvil o comandos externos, limitando la autonomía y control directo sobre el dispositivo.
 
-*(Incluir una imagen de la pantalla y su interfaz actual).*
+![image](https://github.com/user-attachments/assets/2611a2c9-54c1-4eb0-a762-0d489aee6398)
 
 **Recomendación:** 
 Incorporar controles táctiles básicos (botones digitales en pantalla o sliders) que permitan al usuario ajustar directamente la temperatura desde el dispositivo, aumentando así su usabilidad e independencia.
@@ -7737,7 +7794,8 @@ Incorporar controles táctiles básicos (botones digitales en pantalla o sliders
 **Problema:** 
 La interfaz de la pantalla no sigue la línea de diseño visual (paleta de colores, tipografía, estilo gráfico) ni el lenguaje comunicacional utilizado en otras soluciones Sweet Manager, lo que puede generar una experiencia de usuario incoherente o confusa.
 
-*(Incluir una comparación visual entre esta interfaz y otras de Sweet Manager).*
+![image](https://github.com/user-attachments/assets/f54c4f60-149e-4e6d-8725-0e9c640ac19c)
+
 
 **Recomendación:** 
 Actualizar la interfaz gráfica de la pantalla para alinearla con los estándares de diseño de Sweet Manager, incluyendo paleta de colores azul, íconos consistentes y mensajes en el mismo tono de comunicación.
@@ -7750,7 +7808,8 @@ Actualizar la interfaz gráfica de la pantalla para alinearla con los estándare
 **Problema:** 
 Existe un retraso perceptible entre el ajuste de temperatura en la app y su reflejo en la pantalla del dispositivo. Este desfase puede llevar a errores de interpretación, frustración del usuario o ajustes innecesarios por pensar que el cambio no se ha registrado.
 
-*(Incluir evidencia de latencia o video del desfase).*
+![image](https://github.com/user-attachments/assets/454d6303-2775-4111-9204-0aa65add3035)
+
 
 **Recomendación:** 
 Optimizar la comunicación entre la app y el dispositivo para garantizar una respuesta más inmediata, o incluir un indicador de “sincronización en curso” que informe al usuario que el cambio se está procesando.
@@ -7763,7 +7822,8 @@ Optimizar la comunicación entre la app y el dispositivo para garantizar una res
 **Problema:** 
 El sistema solo permite visualizar la temperatura en grados Celsius, sin ofrecer opciones para alternar a otras unidades comunes como Fahrenheit o Kelvin. Esto limita su comprensión y utilidad para usuarios internacionales o técnicos que manejan otras escalas.
 
-*(Incluir una imagen de la pantalla mostrando la unidad fija).*
+![image](https://github.com/user-attachments/assets/b42c9131-e215-41f6-93c3-aa83ba1b7191)
+
 
 **Recomendación:** 
 Añadir una opción de configuración que permita al usuario seleccionar la unidad de medida deseada desde el menú del dispositivo o desde la app.
@@ -7776,7 +7836,7 @@ Añadir una opción de configuración que permita al usuario seleccionar la unid
 **Problema:** 
 Durante la noche o en ambientes con poca luz, la retroiluminación del monitor serial es insuficiente, lo que impide una lectura clara de los valores en pantalla sin utilizar linternas u otras fuentes externas de iluminación.
 
-*(Incluir una foto del monitor en un ambiente oscuro).*
+![image](https://github.com/user-attachments/assets/f60b7f9a-305a-4fab-8724-cf66f12ec4f0)
 
 **Recomendación:** 
 Mejorar la retroiluminación del dispositivo o añadir un modo de alto contraste nocturno, activable desde la configuración, para facilitar la lectura en condiciones de baja visibilidad.
@@ -7787,7 +7847,7 @@ Sweet Manager Led Light
 #### TAREAS A EVALUAR:
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
-1. Encendido de las luces Led cuando el sensor de humo detecta humo por sobre su limite determinado.
+1. Encendido de las luces Led según el nivel de temperatura de la habitación. 
 
 
 #### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
@@ -7796,16 +7856,16 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 |----|-----------------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------|
 | 1  | No existe la posibilidad de personalizar el color de la luz LED                               | 3                    | Libertad y control del usuario                          |
 | 2  | Su color no es consistente con la paleta de colores de Sweet Manager, que consiste en azules  | 1                    | Consistencia y estándares                               |
-| 3  | No se informa de forma clara si el encendido fue exitoso o si el sistema falló                | 3                    | Visibilidad del estado del sistema                      |
 
 #### PROBLEMA #1: No existe la posibilidad de personalizar el color de la luz LED 
 **Severidad:** 3 
 **Heurística violada:** Libertad y control del usuario 
 
 **Problema:** 
-El sistema enciende una luz LED predeterminada al detectar humo, pero no permite que el usuario seleccione o cambie el color de dicha luz según sus preferencias, necesidades o el entorno (por ejemplo, personas con sensibilidad a ciertos colores o ambientes con iluminación especial).
+El sistema enciende una luz LED predeterminada al detectar temperaturas por encima de los 32° C, pero no permite que el usuario seleccione o cambie el color de dicha luz según sus preferencias, necesidades o el entorno (por ejemplo, personas con sensibilidad a ciertos colores o ambientes con iluminación especial).
 
-*(Incluir una captura del panel de configuración o del sistema de luces).*
+![image](https://github.com/user-attachments/assets/fffd0c3f-1e98-453c-9614-156e93bc1599)
+
 
 **Recomendación:** 
 Agregar una opción de configuración que permita seleccionar entre una gama de colores para la luz LED, de manera que el usuario pueda personalizar la respuesta visual del sistema ante una emergencia.
@@ -7818,77 +7878,13 @@ Agregar una opción de configuración que permita seleccionar entre una gama de 
 **Problema:** 
 El color que emite la luz LED no sigue la línea visual ni la paleta de colores del resto del sistema (basada en tonos fríos y azules), generando una experiencia visual disonante y rompiendo con la identidad de marca.
 
-*(Incluir una captura que muestre el color del LED junto al diseño general del sistema).*
+![image](https://github.com/user-attachments/assets/3c99629d-315c-4f89-8063-6e869c5353df)
+
 
 **Recomendación:** 
 Alinear el color predeterminado de la luz LED con la identidad visual de Sweet Manager, utilizando colores fríos o tonos de azul para mantener una estética coherente y reconocible.
 
-#### PROBLEMA #3: No se informa de forma clara si el encendido fue exitoso o si el sistema falló 
-**Severidad:** 3 
-**Heurística violada:** Visibilidad del estado del sistema 
 
-**Problema:** 
-Cuando el sensor detecta humo y se supone que debe activarse la luz LED, no hay retroalimentación clara que confirme que la acción se ejecutó correctamente. Esto deja al usuario sin certeza sobre si el sistema está funcionando o no.
-
-*(Incluir una captura del momento posterior a la detección de humo).*
-
-**Recomendación:** 
-Agregar una notificación visual (como una luz secundaria o mensaje en pantalla) o un registro de evento que indique claramente que la luz se activó correctamente, o en su defecto, que hubo una falla.
-
-
-### SITE o APP A EVALUAR:
-Sweet Manager Sound Alert
-
-#### TAREAS A EVALUAR:
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-
-1. Encendido de la alerta cuando el sensor de humo detecta humo por sobre su limite determinado.
-
-
-#### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
-
-| #  | Problema                                                                                                  | Escala de severidad | Heurística/Principio violado(a)                         |
-|----|-----------------------------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------|
-| 1  | No existe la posibilidad de personalizar el volumen o tipo de sonido de la alerta                         | 3                    | Libertad y control del usuario                          |
-| 2  | El sistema no informa de manera clara si la alerta fue efectivamente activada tras la detección de humo  | 3                    | Visibilidad del estado del sistema                      |
-| 3  | No se ofrece una opción de prueba para que el usuario verifique el sonido en condiciones normales         | 2                    | Flexibilidad y eficiencia de uso                        |
-
-#### PROBLEMA #1: No existe la posibilidad de personalizar el volumen o tipo de sonido de la alerta 
-**Severidad:** 1
-**Heurística violada:** Usabilidad – Libertad y control del usuario 
-
-**Problema:** 
-El sistema emite una única alerta sonora genérica cuando se detecta humo, sin permitir al usuario ajustar el volumen o el tipo de sonido según sus necesidades (por ejemplo, ambientes con niños, adultos mayores o personas con problemas auditivos). Esto limita el control que tiene el usuario sobre cómo se comunica una situación crítica.
-
-*(Incluir una captura de pantalla del panel de configuración o interfaz donde se esperaría este control).*
-
-**Recomendación:** 
-Incluir una sección en la configuración que permita al usuario seleccionar entre diferentes tipos de sonido (agudo, grave, intermitente, etc.) y ajustar el volumen, dentro de márgenes seguros, para adaptarlo al contexto donde se instala el dispositivo.
-
-
-#### PROBLEMA #2: El sistema no informa claramente si la alerta fue activada tras la detección de humo 
-**Severidad:** 3 
-**Heurística violada:** Visibilidad del estado del sistema 
-
-**Problema:** 
-Luego de que el sensor detecta humo, no hay una retroalimentación inmediata y clara que indique que la alerta sonora fue efectivamente activada. Esto puede generar dudas sobre si el sistema está funcionando correctamente o si hay una falla en la conexión entre sensor y alerta.
-
-*(Incluir una captura de la interfaz del sistema o aplicación justo después de una detección).*
-
-**Recomendación:** 
-Incluir una confirmación visual o auditiva secundaria (por ejemplo, un breve tono inicial, luz intermitente o mensaje en pantalla) que indique que el sistema ha detectado humo y ha activado la alarma con éxito.
-
-#### PROBLEMA #3: No existe una opción de prueba para verificar que la alerta sonora funciona correctamente 
-**Severidad:** 2 
-**Heurística violada:** Flexibilidad y eficiencia de uso 
-
-**Problema:** 
-El sistema no cuenta con una función que permita al usuario realizar pruebas periódicas de funcionamiento del sistema sonoro sin necesidad de generar humo real. Esto reduce la confianza del usuario en el sistema y dificulta el mantenimiento preventivo.
-
-*(Incluir una captura del panel de control donde debería estar la opción de prueba).*
-
-**Recomendación:** 
-Incorporar un botón físico o digital de “Modo Prueba” que permita al usuario activar la alerta por unos segundos para comprobar que el dispositivo funciona correctamente.
 
 
 ## 6.4. Video About-the-Product.
