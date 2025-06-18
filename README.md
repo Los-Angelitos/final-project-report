@@ -457,6 +457,16 @@ Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repos
          - [6.2.1.7. Services Documentation Evidence for Sprint Review](#6217-services-documentation-evidence-for-sprint-review)
          - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
          - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
+      + [6.2.2. ](#622-sprint-2)
+         - [6.2.2.1. Sprint Planning 2](#6221sprint-planning-2)
+         - [6.2.2.2. Aspect Leaders and Collaborators](#6222aspect-leaders-and-collaborators)
+         - [6.2.2.3. Sprint Backlog 2](#6223sprint-backlog-2)
+         - [6.2.2.4. Development Evidence for Sprint Review](#6224development-evidence-for-sprint-review)
+         - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225testing-suite-evidence-for-sprint-review)
+         - [6.2.2.6. Execution Evidence for Sprint Review](#6226execution-evidence-for-sprint-review)
+         - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227services-documentation-evidence-for-sprint-review)
+         - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228software-deployment-evidence-for-sprint-review)
+         - [6.2.2.9. Team Collaboration Insights during Sprint](#6229team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -3557,11 +3567,15 @@ Critique.
   <img src="./assets/img/organizational-management-bounded-context/canvas.PNG" alt="Message Flow Organizational Management" width="90%" />
 </div><br>
 
+Este *bounded context* se enfoca en la gestión organizacional de hoteles y proveedores dentro del sistema. Permite registrar, visualizar, modificar y administrar la información relacionada con hoteles disponibles, incluyendo sus datos generales y contenido multimedia como fotografías. Además, facilita la gestión de proveedores encargados de suministrar recursos o servicios asociados a la operación hotelera. Esta funcionalidad es clave para mantener una base de datos actualizada y organizada sobre la infraestructura y los recursos disponibles en la plataforma.
+
 <h2>Inventory Bounded Context</h2>
 <p>Es principalmente responsable de la gestión integral de suministros y solicitudes de materiales dentro de la plataforma.</p>
 <div style="text-align: center;">
   <img src="https://i.imgur.com/6pg7QCg.png" alt="Message Flow Inventory " width="90%" />
 </div><br>
+
+Este *bounded context* se enfoca en la gestión eficiente del inventario dentro de la plataforma. Su responsabilidad principal es administrar los suministros y procesar las solicitudes de materiales necesarios para el funcionamiento operativo, especialmente en las habitaciones de los hoteles. Incluye el control y seguimiento de recursos como toallas, papel higiénico, jabón, entre otros insumos.
 
 <h2>Communication Bounded Context Canvas</h2>
 
@@ -3570,6 +3584,7 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/bounded-context-canvases/communication-bounded-context-canvas.png" alt="Imagen del Communication bounded context canvas" width="90%" />
 </div>
+Este *bounded context* se especializa en la gestión de la comunicación interna entre los miembros del staff del hotel. Permite crear, enviar y recibir mensajes dentro de la plataforma, asegurando una coordinación efectiva entre los distintos roles operativos. Esta funcionalidad es fundamental para mantener una comunicación fluida en tiempo real, facilitar la asignación de tareas, compartir información relevante y resolver situaciones operativas de forma oportuna.
 
 <h2>Commerce Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de pagos realizados, tanto por huéspedes como por dueños de hoteles, y de la gestión de suscripciones dentro de la plataforma.</p>
@@ -3577,11 +3592,15 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
   <img src="./assets/img/bounded-context-canvases/commerce-bounded-context-canvas.png" alt="Commerce Bounded Context Canvas " width="90%" />
 </div><br>
 
+Este *bounded context* se encarga de la gestión de las transacciones económicas dentro de la plataforma. Administra los pagos realizados por los huéspedes en el proceso de reserva, así como los pagos efectuados por los dueños de hoteles relacionados con suscripciones o servicios adicionales. También contempla la administración de planes de suscripción, renovaciones y facturación. Su correcta operación es esencial para garantizar la transparencia financiera y la automatización de los procesos comerciales dentro del ecosistema de la plataforma.
+
 <h2>Operations and Monitoring Bounded Context</h2>
 <p>Es principalmente responsable de la gestión de habitaciones y reservas, dedicada al negocio de administradores y gerentes.
 </p>
 
 ![image](https://github.com/user-attachments/assets/99f05c54-158f-435b-b87c-f14e5c5640a9)
+
+Este *bounded context* se centra en la gestión operativa diaria del hotel, con especial atención a la administración de habitaciones y reservas. Está diseñado para facilitar el trabajo de administradores y gerentes, permitiéndoles gestionar la disponibilidad de habitaciones, registrar nuevas reservas, supervisar el estado de ocupación y realizar ajustes según las necesidades operativas. Además, brinda visibilidad sobre el rendimiento del hotel mediante herramientas de monitoreo, lo que permite tomar decisiones informadas para optimizar la ocupación y mejorar la eficiencia del servicio.
 
 
 <h2>IAM Bounded Context</h2>
@@ -3589,6 +3608,8 @@ Es principalmente responsable de la gestión de mensajes entre el staff del hote
 <div style="text-align: center;">
   <img src="./assets/img/iam-bounded-context/bounded-context-canvas.jpg" alt="IAM Bounded Context Canvas " width="90%" />
 </div><br>
+
+Este *bounded context* es responsable de la gestión de identidad y control de acceso dentro de la plataforma. Administra las sesiones de usuario, autenticación y autorización, asegurando que cada usuario tenga acceso únicamente a las funcionalidades y recursos correspondientes a su rol. Gestiona tanto el inicio y cierre de sesión como los permisos de navegación y operación para todos los *IAM Users*, incluyendo administradores, personal del hotel y otros perfiles. Este contexto es fundamental para garantizar la seguridad, integridad y personalización de la experiencia del usuario en el sistema.
 
 ### 4.1.2. Context Mapping
 
@@ -4404,41 +4425,6 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 
 En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
 
-Room: 
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | Identificador único de la habitación |
-| `TypeRoomId` | `int?`                | Relación con el tipo de habitación (`TypeRoom`) |
-| `HotelId`    | `int?`                | Relación con el hotel que la contiene |
-| `State`      | `string?`             | Estado actual (`AVAILABLE`, `OCCUPIED`, etc.) |
-
-
-Booking: 
-| Atributo            | Tipo                   | Descripción |
-|---------------------|------------------------|-------------|
-| `Id`                | `int`                  | Identificador único |
-| `PaymentCustomerId` | `int?`                 | Pago de la reserva hecha por el cliente |
-| `RoomId`            | `int?`                 | Habitación reservada |
-| `Description`       | `string?`              | Información adicional |
-| `StartDate`         | `DateTime?`            | Fecha de inicio de la reserva |
-| `FinalDate`         | `DateTime?`            | Fecha de término de la reserva |
-| `PriceRoom`         | `decimal?`             | Costo por noche |
-| `NightCount`        | `int?`                 | Cantidad de noches reservadas |
-| `Amount`            | `decimal?`             | Monto total pagado |
-| `State`             | `string?`              | Estado de la reserva (`CONFIRMED`, `CANCELLED`, etc.) |
-| `PreferenceId`      | `int?`                 | Preferencias del huésped (como temperatura) |
-
-TypeRoom: 
-| Atributo     | Tipo                  | Descripción |
-|--------------|-----------------------|-------------|
-| `Id`         | `int`                 | ID único del tipo |
-| `Description`| `string?`             | Descripción del tipo (`Simple`, `Doble`, etc.) |
-| `Price`      | `decimal`             | Precio base asignado a este tipo |
-
-### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web Services
-
-En el núcleo del dominio se definieron los siguientes **agregados** y **entidades** que representan los conceptos más importantes del contexto de reservas.
-
 ### `Room` 
 
 Representa una habitación en un hotel. 
@@ -4507,6 +4493,39 @@ Objeto diseñado para exponer reservas al cliente sin crear ciclos de referencia
 | `PreferenceTemperature`| `int?`       | Temperatura preferida del huésped |
 
 ---
+### SmokeSensor
+| Atributo            | Tipo               | Descripción                                      |
+|---------------------|--------------------|--------------------------------------------------|
+| `Id`                | `int`              | ID único del sensor de humo                      |
+| `RoomId`            | `int?`             | ID de la habitación asociada                     |
+| `IpAddress`         | `string?`          | Dirección IP del sensor                          |
+| `LastAnalogicValue` | `double?`          | Último valor analógico leído del sensor          |
+| `MacAddress`        | `string?`          | Dirección MAC del sensor                         |
+| `State`             | `string?`          | Estado actual del sensor (`ON`, `OFF`, etc.)     |
+| `LastAlertTime`     | `DateTime?`        | Fecha y hora de la última alerta de humo         |
+| `Room`              | `Room?`            | Navegación a la entidad habitación               |
+
+#### Constructores:
+
+- A partir de `CreateSmokeSensorCommand`, `UpdateSmokeSensorStateCommand`, y `UpdateSmokeSensorCommand`
+
+
+### Thermostat
+| Atributo        | Tipo         | Descripción                                       |
+|------------------|--------------|---------------------------------------------------|
+| `Id`             | `int`        | ID único del termostato                           |
+| `RoomId`         | `int?`       | ID de la habitación asociada                      |
+| `Temperature`    | `double?`    | Temperatura configurada del dispositivo           |
+| `IpAddress`      | `string?`    | Dirección IP del termostato                       |
+| `MacAddress`     | `string?`    | Dirección MAC del termostato                      |
+| `State`          | `string?`    | Estado del termostato (`ON`, `OFF`, etc.)         |
+| `LastUpdate`     | `DateTime?`  | Fecha y hora del último cambio o actualización    |
+| `Room`           | `Room?`      | Navegación a la entidad habitación                |
+
+#### Constructores:
+
+- A partir de `CreateThermostatCommand`, `UpdateThermostatStateCommand`, y `UpdateThermostatCommand`
+
 
 ###  `TypeRoom` (Entidad)
 
@@ -4550,6 +4569,28 @@ Representa un tipo de habitación.
 
 ---
 
+### Thermostat 
+
+| Comando                                | Descripción                                                                 |
+|----------------------------------------|-----------------------------------------------------------------------------|
+| `CreateThermostatCommand.cs`           | Encapsula los datos necesarios para registrar un nuevo termostato (`RoomId`, `Temperature`, `IpAddress`, `MacAddress`, `State`, `LastUpdate`). |
+| `UpdateThermostatCommand.cs`           | Encapsula todos los campos para actualizar un termostato existente.         |
+| `UpdateThermostatStateCommand.cs`      | Encapsula únicamente el campo `State` para actualizar el estado del termostato. |
+| `UpdateThermostatTemperatureCommand.cs`| Encapsula únicamente el campo `Temperature` para actualizar la temperatura del termostato. |
+
+---
+
+### SmokeSensor 
+
+| Comando                                      | Descripción                                                                 |
+|----------------------------------------------|-----------------------------------------------------------------------------|
+| `CreateSmokeSensorCommand.cs`                | Encapsula los datos necesarios para registrar un nuevo sensor de humo (`RoomId`, `LastAnalogicValue`, `IpAddress`, `MacAddress`, `State`, `LastAlertTime`). |
+| `UpdateSmokeSensorCommand.cs`                | Encapsula todos los campos para actualizar un sensor de humo existente.     |
+| `UpdateSmokeSensorStateCommand.cs`           | Encapsula únicamente el campo `State` para actualizar el estado del sensor. |
+| `UpdatSmokeSensorAnalogicValueCommand.cs`    | Encapsula únicamente el campo `LastAnalogicValue` para actualizar el valor analógico. |
+
+---
+
 ### TypeRoom
 
 | Comando                         | Descripción |
@@ -4573,8 +4614,10 @@ Representa un tipo de habitación.
 | `GetRoomsByStateQuery.cs`             | Lista habitaciones según su estado (`AVAILABLE`, `OCCUPIED`, etc). |
 | `GetRoomsByTypeRoomIdQuery.cs`        | Lista habitaciones según el tipo. |
 | `GetTypeRoomByIdQuery.cs`             | Trae información de un tipo de habitación por ID. |
-
----
+| `GetSmokeSensorByIdQuery.cs`          | Trae información de un tipo de habitación por ID. |
+| `GetSmokeSensorByRoomIdQuery.cs`      | Trae información de un tipo de habitación por ID. |
+| `GetThermostatByIdQuery.cs`           | Trae información de un tipo de habitación por ID. |
+| `GetThermostatByRoomIdQuery.cs`       | Trae información de un tipo de habitación por ID. |
 
 ### Repositories (Interfaces)
 
@@ -4583,74 +4626,46 @@ Representa un tipo de habitación.
 | `IBookingRepository.cs`  | Define operaciones sobre reservas: FindByHotelIdAndStateAsync, FindByCustomerIdAsync, FindAllByHotelIdAsync, UpdateBookingEndDateAsync . |
 | `IRoomRepository.cs`     | Define operaciones sobre habitaciones: FindAllByHotelIdAsync, FindByStateAsync,FindByTypeRoomIdAsync, FindByRange. |
 | `ITypeRoomRepository.cs` | Define operaciones sobre tipos de habitación: FindAllByHotelIdAsync |
+| `ISmokeSensorRepository.cs` | Define operaciones sobre sensores de humo : FindAll, FindByRoomIdAsync |
+| `IThermostatRepository.cs` | Define operaciones sobre termostato: FindAll, FindByRoomIdAsync  |
 
----
-
-###  Services
-
-### Servicios del Dominio `Operations and Monitoring` en nuestro Web/Mobile Application
-
-Cada bounded Context tiene definido sus servicios orientados al consumo de la API Rest para cada agregado y entidad.
-
-#### Room Api Service
-
-| Método                          | Descripción                                      |
-|---------------------------------|--------------------------------------------------|
-| `getAll(hotelId)`              | Obtener todas las habitaciones de un hotel       |
-| `getRoomById(id)`              | Obtener habitación por ID                        |
-| `getRoomByState(hotelId, state)` | Filtrar habitaciones por estado en un hotel     |
-| `getRoomByTypeRoomId(hotelId, typeRoomId)` | Filtrar habitaciones por tipo                  |
-| `getByBookingAvailabilityInRange(hotelId, startDate, endDate)` | Ver disponibilidad por rango de fechas |
-| `create()`                     | Crear una nueva habitación                       |
-| `updateState(id, state)`      | Actualizar el estado de una habitación           |
-
----
-
-#### Booking Api Service
-
-| Método                             | Descripción                                         |
-|------------------------------------|-----------------------------------------------------|
-| `getAll(hotelId)`                 | Obtener todas las reservas de un hotel             |
-| `getByHotelIdAndState(hotelId, state)` | Filtrar reservas por estado en un hotel       |
-| `getById(id)`                     | Obtener reserva por ID                             |
-| `getByCustomerId(customerId)`     | Obtener reservas por cliente                       |
-| `create()`                        | Crear una nueva reserva                            |
-| `updateEndDate(id, endDate)`      | Actualizar la fecha de salida                      |
-| `updateState(id, state)`          | Actualizar el estado de la reserva                 |
-
----
-
-####  TypeRoom Api Service
-
-| Método          | Descripción                                 |
-|------------------|---------------------------------------------|
-| `getAll(hotelId)` | Obtener todos los tipos de habitación de un hotel |
-| `getById()`      | Obtener tipo de habitación por ID           |
-| `create()`       | Crear un nuevo tipo de habitación           |
-  
+--- 
 
 
-### Servicios del Dominio `Operations and Monitoring` en nuestro Web Services
-####  Booking
+####  Booking Services
 
 | Archivo                          | Descripción breve |
 |----------------------------------|--------------------|
 | `IBookingCommandServices.cs`     | Define comandos como crear, actualizar estado o actualizar fecha final. |
 | `IBookingQueryServices.cs`       | Define consultas para obtener reservas (por cliente, por hotel, por hotel y estado, por id). |
 
-####  Room
+####  Room Services
 
 | Archivo                        | Descripción breve |
 |--------------------------------|--------------------|
 | `IRoomCommandService.cs`       | Comandos para modificar habitaciones (crear, cambiar estado). |
 | `IRoomQueryService.cs`         | Consultas sobre habitaciones (por disponibilidad en un rango de fechas, por estado, por tipo, por id, por hotel). |
 
-####  TypeRoom
+####  TypeRoom Services
 
 | Archivo                            | Descripción breve |
 |------------------------------------|--------------------|
 | `ITypeRoomCommandService.cs`       | Comandos sobre tipos de habitación, unicamente la creación. |
 | `ITypeRoomQueryService.cs`         | Consultas sobre los tipos de habitación disponibles por hotel y por id. |
+
+####  Thermostat Services
+
+| Archivo                            | Descripción breve |
+|------------------------------------|--------------------|
+| `IThermostatCommandService.cs`       | Comandos sobre termostatos, como su creación y actualización |
+| `IThermostatQueryService.cs`         | Consultas sobre los termostatos disponibles por habitación y por id. |
+
+####  SmokeSensor Services
+
+| Archivo                            | Descripción breve |
+|------------------------------------|--------------------|
+| `ISmokeSensorCommandService.cs`       | Comandos sobr sensores de humo, como su creación y actualización |
+| `ISmokeSensorQueryService.cs`         | Consultas sobre los sensores de humo disponibles por habitación y por id. |
 
 ---
 
@@ -4677,6 +4692,13 @@ Las clases *Resource* funcionan como objetos de transferencia  entre el mundo ex
 | `RoomResource.cs`                 | Devuelve información de una habitación. |
 | `CreateTypeRoomResource.cs`       | Recibe datos para crear un tipo de habitación. |
 | `TypeRoomResource.cs`             | Expone la información de un tipo de habitación (GET). |
+| `UpdateThermostatResource.cs`      | Permite cambiar el estado de un termostato. |
+| `ThermostatResource.cs`                 | Devuelve información de un termostato. |
+| `CreateThermostatResource.cs`       | Recibe datos para crear un termostato. |
+| `UpdateSmokeSensorStateResource.cs`      | Permite cambiar el estado de una termostato. |
+| `SmokeSensorResource.cs`                 | Devuelve información de un termostato. |
+| `CreateSmokeSensorResource.cs`       | Recibe datos para crear un tersmostato. |
+
 
 ---
 
@@ -4687,11 +4709,30 @@ Las clases de la carpeta `Transform` (también llamadas **Assemblers**) son resp
 - Convertir `Resources` en **Command Objects** para que los maneje la capa de aplicación.
 - Convertir entidades del dominio en **Resources** para que sean devueltos en la respuesta de la API.
 
-| Archivo                                               | Función |
-|--------------------------------------------------------|---------|
-| `CreateBookingCommandFromResourceAssembler.cs`         | Transforma `CreateBookingResource` en `CreateBookingCommand`. |
-| `UpdateBookingStateCommandFromResourceAssembler.cs`    | Transforma `UpdateBookingStateResource` en `UpdateBookingStateCommand`. |
-| `BookingResourceFromEntityAssembler.cs`                | Convierte una entidad `Booking` en un `BookingResource` limpio (sin ciclos). |
+| Archivo                                                        | Función                                                                 |
+|-----------------------------------------------------------------|-------------------------------------------------------------------------|
+| `CreateBookingCommandFromResourceAssembler.cs`                 | Transforma `CreateBookingResource` en `CreateBookingCommand`.           |
+| `UpdateBookingStateCommandFromResourceAssembler.cs`            | Transforma `UpdateBookingStateResource` en `UpdateBookingStateCommand`. |
+| `BookingResourceFromEntityAssembler.cs`                        | Convierte una entidad `Booking` en un `BookingResource` limpio (sin ciclos). |
+| `BulkRoomsCommandFromResourceAssembler.cs`                     | Transforma múltiples `RoomResource` en comandos de creación masiva.     |
+| `CreateRoomCommandFromResourceAssembler.cs`                    | Transforma `RoomResource` en `CreateRoomCommand`.                        |
+| `RoomResourceFromEntityAssembler.cs`                           | Convierte una entidad `Room` en `RoomResource`.                          |
+| `UpdateRoomStateCommandFromResource.cs`                        | Transforma `RoomResource` parcial en un `UpdateRoomStateCommand`.       |
+| `CreateSmokeSensorCommandFromResourceAssembler.cs`            | Transforma `SmokeSensorResource` en `CreateSmokeSensorCommand`.         |
+| `SmokeSensorResourceFromEntityAssembler.cs`                   | Convierte una entidad `SmokeSensor` en `SmokeSensorResource`.           |
+| `UpdatSmokeSensorAnalogicValueCommandFromResourceAssembler.cs`| Transforma `SmokeSensorResource` parcial en `UpdateSmokeSensorAnalogicValueCommand`. |
+| `UpdateSmokeSensorCommandFromResourceAssembler.cs`            | Transforma `SmokeSensorResource` completo en `UpdateSmokeSensorCommand`.|
+| `UpdateSmokeSensorStateCommandFromResourceAssembler.cs`       | Transforma solo el estado (`State`) del sensor en un comando.           |
+| `CreateThermostatCommandFromResourceAssembler.cs`             | Transforma `ThermostatResource` en `CreateThermostatCommand`.           |
+| `ThermostatResourceFromEntityAssembler.cs`                    | Convierte una entidad `Thermostat` en `ThermostatResource`.             |
+| `UpdateThermostatCommandFromResourceAssembler.cs`             | Transforma `ThermostatResource` completo en `UpdateThermostatCommand`.  |
+| `UpdateThermostatStateCommandFromResourceAssembler.cs`        | Transforma solo el estado del termostato en un comando.                 |
+| `UpdateThermostatTemperatureCommandFromResourceAssembler.cs`  | Transforma solo la temperatura del termostato en un comando.            |
+| `CreateTypeRoomCommandFromResourceAssembler.cs`               | Transforma `TypeRoomResource` en `CreateTypeRoomCommand`.               |
+| `TypeRoomResourceFromEntityAssembler.cs`                      | Convierte una entidad `TypeRoom` en `TypeRoomResource`.                 |
+
+
+
 
 ### Controllers
 
@@ -4702,6 +4743,8 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 | `BookingController.cs` | `/api/booking`           | Gestiona la creación, actualización, consulta y cancelación de reservas. |
 | `RoomController.cs`    | `/api/room`              | Maneja operaciones sobre habitaciones: crear, actualizar estado, consultar disponibilidad. |
 | `TypeRoomController.cs`| `/api/typeroom`          | Expone endpoints para crear y consultar tipos de habitación (`Single`, `Double`, etc). |
+| `SmokeSensorController.cs`| `/api/smokesensor`          | Expone endpoints para crear y consultar sensores de humo en el hotel |
+| `ThermostatController.cs`| `/api/thermostat`          | Expone endpoints para crear y consultar termostatos en el hotel |
 
 
 
@@ -4716,6 +4759,8 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 | `BookingCommandService.cs`       | Maneja comandos para crear una reserva, actualizar su estado o su fecha final. Utiliza el agregado `Booking`. |
 | `RoomCommandService.cs`          | Procesa la creación de habitaciones y el cambio de estado (`Room`). Interactúa con el agregado `Room`. |
 | `TypeRoomCommandServices.cs`     | Administra la creación de tipos de habitación (`TypeRoom`). Valida descripciones y precios.
+| `ThermostatCommandServices.cs`     | Administra la creación de termostatos. |
+| `SmokeSensorCommandServices.cs`     | Administra la creación de sensores de humo. |
 
 ---
 
@@ -4725,7 +4770,10 @@ Cada entidad clave en el Bounded Context `Operations and Monitoring` cuenta con 
 |------------------------------------|-------------|
 | `BookingQueryService.cs`           | Devuelve reservas filtradas por cliente, ID, hotel, estado o disponibilidad. Utiliza `BookingDto` para evitar ciclos. |
 | `RoomQueryService.cs`              | Lista habitaciones por ID, estado, tipo, hotel o fechas disponibles. |
-| `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados.
+| `TypeRoomQueryServices.cs`         | Consulta información de tipos de habitación registrados. |
+| `ThermostatQueryService.cs`              | Lista termostatos por ID, estado o habitación. |
+| `SmokeSensorQueryService.cs`              | Lista habitaciones por ID, estado  o habitación. |
+
 
 ## Capabilities del Bounded Context `Operations and Monitoring`
 
@@ -4737,14 +4785,22 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | ✅ **Submit Booking**                         | Command       | `BookingCommandService.Handle(CreateBookingCommand)` | Registra una nueva reserva. |
 | ✅ **Create Room**                            | Command       | `RoomCommandService.Handle(CreateRoomCommand)` | Crea una nueva habitación en un hotel. |
 | ✅ **Modify Room**                            | Command       | `RoomCommandService.Handle(UpdateRoomStateCommand)` | Cambia el estado de una habitación (`available`, `occupied`, etc.). |
-| ✅ **List Rooms**                             | Query         | `RoomQueryService.GetAllRoomsQuery(...)` | Devuelve habitaciones. |
+| ✅ **List Rooms**                             | Query         | `RoomQueryService.GetAllRoomsQuery(...)`     | Devuelve habitaciones. |
 | ✅ **Filter Room**                            | Query         | `RoomQueryService.GetRoomsById`, `GetRoomsByTypeRoomId` | Filtra habitaciones por estado o tipo. |
-| ✅ **Check Room Availability**                | Query         | `RoomQueryService.GetRoomsByState`, `` | Revisa si una habitación específica está libre. |
+| ✅ **Check Room Availability**                | Query         | `RoomQueryService.GetRoomsByState`, ``       | Revisa si una habitación específica está libre. |
 | ✅ **List Bookings**                          | Query         | `BookingQueryService.GetAllBookings`         | Devuelve todas las reservas registradas. |
 | ✅ **List Guest's Bookings**                  | Query         | `BookingQueryService.Handle(GetBookingByCustomerIdQuery)` | Lista reservas hechas por un huésped. |
 | ✅ **Modify Booking's End Date**              | Command       | `BookingCommandService.Handle(UpdateBookingEndDateCommand)` | Permite modificar la fecha final de una reserva. |
 | ✅ **Finish Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `FINISHED` o `COMPLETED`. |
 | ✅ **Cancel Booking**                         | Command       | `BookingCommandService.Handle(UpdateBookingStateCommand)` | Cambia el estado a `CANCELLED`. |
+| ✅ **Create TypeRoom**                        | Command       | `TypeRoomCommandService.Handle(CreateTypeRoomCommand)` | Registra un nuevo tipo de habitación (`Doble`, `Suite`, etc.). |
+| ✅ **Create Thermostat**                      | Command       | `ThermostatCommandService.Handle(CreateThermostatCommand)` | Registra un nuevo dispositivo termostato para una habitación. |
+| ✅ **Update Thermostat State**                | Command       | `ThermostatCommandService.Handle(UpdateThermostatStateCommand)` | Cambia el estado del termostato (por ejemplo, `ON` o `OFF`). |
+| ✅ **Update Thermostat Temperature**          | Command       | `ThermostatCommandService.Handle(UpdateThermostatTemperatureCommand)` | Cambia la temperatura objetivo del termostato. |
+| ✅ **Create SmokeSensor**                     | Command       | `SmokeSensorCommandService.Handle(CreateSmokeSensorCommand)` | Registra un nuevo sensor de humo. |
+| ✅ **Update SmokeSensor State**               | Command       | `SmokeSensorCommandService.Handle(UpdateSmokeSensorStateCommand)` | Actualiza el estado del sensor de humo. |
+| ✅ **Update SmokeSensor Value**               | Command       | `SmokeSensorCommandService.Handle(UpdateSmokeSensorAnalogicValueCommand)` | Actualiza el último valor analógico recibido por el sensor. |
+
 
 
 #### 4.2.2.4. Infrastructure Layer
@@ -4756,6 +4812,8 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 | `BookingRepository.cs`    | `IBookingRepository`         | Implementa operaciones de persistencia y consultas sobre las reservas (`Booking`), incluyendo búsqueda por cliente, por hotel, por estado y por rango de fechas. |
 | `RoomRepository.cs`       | `IRoomRepository`            | Implementa consultas y modificaciones sobre habitaciones (`Room`). Gestiona la disponibilidad por fechas y el cambio de estado (`AVAILABLE`, `OCCUPIED`, etc.). |
 | `TypeRoomRepository.cs`   | `ITypeRoomRepository`        | Se encarga del acceso y persistencia de los tipos de habitación (`TypeRoom`), incluyendo la relación con las habitaciones (`Room`). |
+| `ThermostatRepository.cs`   | `IThermostatRepository`        | Se encarga del acceso y persistencia de los termostatos. |
+| `SmokeSensorRepository.cs`   | `ISmokeSensorRepository`        | Se encarga del acceso y persistencia de los sensores de humo. |
 
 ---
 
@@ -7342,6 +7400,7 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+  
 A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context  a la hora de elaborar nuestros entregables de este Sprint. 
 
 | Team Member (Last Name, First Name) | GitHub Username     | IAM Bounded Context | Communication Bounded Context | Operations and Monitoring Bounded Context | Organizational Management Bounded Context | Commerce Bounded Context | Inventory Bounded Context |
@@ -7352,6 +7411,7 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | Morales, Omar                      | andrewmm16           |                                     |                                               | C                                             | C                                                            |                                            | L                                           | C             |
 | Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
 | Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
+
 #### 6.2.2.3.Sprint Backlog 2.
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
@@ -7387,10 +7447,20 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
 
 #### 6.2.2.4.Development Evidence for Sprint Review.
+
+
 #### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+
+
 #### 6.2.2.6.Execution Evidence for Sprint Review.
+
+
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+
+
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+
+
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
 
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
@@ -7415,13 +7485,6 @@ EDGE API:
 
 EMBEDDED APPLICATION: 
 
-
-
-
-
-
-
-
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
@@ -7430,16 +7493,251 @@ incluir en la sesión de validación, incluyendo el Landing Page y las aplicacio
 se especifica también cuáles serán los user flows de las aplicaciones, que formarán
 parte del proceso de validación.
 
+#### Preguntas de Validación – Segmento 1: Gerentes (Owners)
+Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App, Mobile App y Landing Page) desde su rol estratégico.
+
+- Landing Page
+
+¿La información en la landing page fue suficiente para entender los beneficios del sistema?
+
+¿Te resultó confiable el diseño y contenido del sitio para decidir registrarte?
+
+¿Qué tanto influyó la presentación de funcionalidades en tu interés por probar la plataforma?
+
+¿Faltó alguna información clave que te hubiera gustado ver antes de registrarte?
+
+- Mobile Application
+
+¿Te resultó cómoda la experiencia de usar la app desde tu celular?
+
+¿Te sentiste en control al modificar precios o disponibilidad de habitaciones desde la app?
+
+¿Qué tan útil te pareció gestionar reservas y ver alertas desde tu celular?
+
+- Web Application
+
+¿La interfaz web te permitió tener una visión clara del estado general del hotel?
+
+¿Pudiste configurar fácilmente el tipo de habitaciones, tarifas y servicios desde el panel web?
+
+¿Encontraste rápido las opciones para ver reportes, estadísticas o ingresos?
+
+¿Hay alguna funcionalidad importante que esperabas encontrar y no estaba disponible en la versión web?
+
+#### Preguntas de Validación – Segmento 2: Administradores (Admins)
+
+- Landing Page
+
+¿La landing page te ayudó a comprender cómo esta plataforma te facilitaría el trabajo diario?
+
+¿Te sentiste identificado/a con los problemas que la plataforma promete solucionar?
+
+¿Te habría gustado una demo interactiva o más casos de uso concretos?
+
+- Web Application
+
+¿Pudiste ver el historial de reservas y estados de habitación sin dificultad desde el navegador?
+
+¿Te pareció clara y bien organizada la distribución del contenido en el panel web?
+
+¿La plataforma te permitió completar tus tareas más rápido o te generó pasos innecesarios?
+
+#### Preguntas de Validación – Segmento 3: Huéspedes (Guests)
+Estas preguntas están pensadas para validar si la experiencia de usuario en el proceso de búsqueda, reserva y contacto con el hotel fue fluida, agradable y clara.
+
+- Mobile Application
+
+¿Te resultó fácil registrarte y crear un perfil desde el celular?
+
+¿La experiencia de reservar una habitación fue clara y sin fricciones?
+
+- Web Application
+
+¿Encontraste rápidamente el hotel que buscabas en la versión web?
+
+¿El proceso de reserva en el navegador fue más claro o más confuso que en la app?
+
+¿Pudiste revisar tu historial de reservas y preferencias de manera sencilla?
+
+¿Hubo algún momento del flujo web en que decidiste abandonar la reserva? ¿Por qué?
+
+- Embedded Application Wokwi
+
+¿Pudiste ver reflejada correctamente tu temperatura preferida en la pantalla del termostato (LCD) al ingresar a la habitación?
+
+¿El sistema ajustó la temperatura automáticamente de acuerdo a tu perfil o preferencias guardadas en la app?
+
 ### 6.3.2. Registro de Entrevistas.
-Para cada segmento se requiere de 3 a 5 entrevistas. Para cada una de las entrevistas
-se debe indicar la información de nombres, apellidos, edad, distrito, un screenshot
-de un cuadro de video y el URL del video subido en Microsoft Stream incluyendo el
-timing donde inicia la entrevista y su duración. La entrevista debe ser registrada en
-video, que sirve de evidencia de entrevistas. Para cada entrevista debe redactarse en
-este informe un resumen, que explique de forma descriptiva las principales
-apreciaciones del entrevistado con respecto a las tareas asignadas. Ver otras
-indicaciones importantes en el Anexo C. Indicaciones para secciones que incluyen
-Videos
+A continuación, se registraron todas las entrevistas de validación para nuestra solución, categorizadas según su segmento objetivo, y con un resumen que destaca las características y críticas realizadas sobre nuestro proyecto.
+
+**Entrevista 01 (Gerentes)**
+
+URL del Vídeo: 
+
+Nombres: Carlo
+
+Apellidos: Rebagliati
+
+Edad: 45
+
+Sexo: Masculino
+
+Ocupación: Gerente Hotelero
+
+Lugar donde vive: Pueblo Libre
+
+Duración de la entrevista: 00:00 - 12:20 
+
+Personalidad: Análitica
+
+<div style="text-align: center;">
+  <img src="" alt="Owner Carlo Rebagliati" width="100%" />
+</div><br>
+
+<br><br>
+**Entrevista 02 (Gerentes)**
+<br>
+
+URL del vídeo: 
+Nombre: Sergio Alberto Cadillo Nuñez <br>
+Edad: 30 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Pueblo Libre-Lima <br>
+Ocupación: Dueño de un emprendimeinto hotelero <br>
+Duración de la entrevista: 21:24 - 27:00 <br>
+Personalidad: Analítica <br>
+
+![image]()
+
+<br><br>
+
+**Entrevista 03 (Gerentes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Luis Fernández <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Surquillo - Lima <br>
+Ocupación: Dueño y manager de un hotel <br>
+Duración de la entrevista: 12:20 - 21:24 <br>
+Personalidad: Extrovertido <br>
+<br>
+
+![Entrevista° 3 - Dueños]()
+
+<br><br>
+
+**Entrevista 01 (Administradores)**
+
+URL del Vídeo:
+
+Nombres: Gianella
+
+Apellidos: Francia
+
+Edad: 25
+
+Sexo: Femenino
+
+Ocupación: Administradora de RRHH en la gestión de hoteles
+
+Lugar donde vive: Santa Anita, Perú
+
+Duración de la entrevista: 27:00 - 36:50.
+
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
+
+**Entrevista 02 (Administradores)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Fabricio Gabriel Chavez Morales <br>
+Edad: 28 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Magdalena del Mar-Lima <br>
+Ocupación: Administrador del hotel Los Lirios <br>
+Duración de la entrevista: 36:50 - 46:45 <br>
+Personalidad: Enfocado, orientado al servicio al cliente <br>
+
+![Entrevista° 2 - Administradores]()
+
+<br><br>
+
+**Entrevista 03 (Administradores)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Sergio Renard <br>
+Edad: 21 <br>
+Sexo: Masculino <br>
+Lugar donde vive: La Plata - Argentina <br>
+Ocupación: Administrador de hotel <br>
+Duración de la entrevista: : 46:45 - 51:04 <br>
+Personalidad: Alegre <br>
+
+<div style="text-align: center;">
+  <img src="" alt="Sergio Renard Interview" width="80%" />
+</div><br>
+
+**Entrevista 01 (Huéspedes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Anatoly Noriega <br>
+Edad: 22 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Breña - Lima <br>
+Ocupación: Contador<br>
+Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
+Personalidad: Analítica <br>
+![Entrevista° 1 - Huespedes]()<br>
+
+<br><br>
+
+**Entrevista 02 (Huéspedes)**
+
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Ramón Jorge <br>
+Edad: 51 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Jesús María - Lima <br>
+Ocupación: Ingeniero Civil <br>
+Duración de la entrevista: 51:04 - 59:57 <br> 
+Personalidad: Tranquilo <br>
+<br>
+
+![Entrevista° 2 - Huespedes]()
+
+<br><br>
+
+**Entrevista 03 (Huéspedes)**
+<br>
+
+URL del vídeo: 
+<br>
+Nombre: Enzo Céspedes <br>
+Edad: 23 <br>
+Sexo: Masculino <br>
+Lugar donde vive: Los Olivos <br>
+Ocupación: Ingeniero Industrial <br>
+Duración de la entrevista: 59:57 - 01: 08: 24  <br>
+Personalidad: Responsable y Trabajador <br>
+<br>
+
+![Aquí imagen 3 de entrevistas de huespedes]()
+
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ### SITE o APP A EVALUAR:
