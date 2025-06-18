@@ -293,6 +293,23 @@ TB2: El entregabe consistió principalmente en la corrección de errores de la W
 Se desarrollaron las las distintas soluciones tecnologias requeridas para el funcionamiento correcto de Sweet Manager. 
 Se documentó el desarrollo en el informe, mediante la elaboraicón de los sprints y capitulos requeridso.
 
+Imagen 7: Gráfico detallado de los commits de cada miembros del equipo al repositorio del Web Services
+![image](https://github.com/user-attachments/assets/06429e77-b655-4fc4-a372-bff4f5ae84da)
+
+Imagen 8: Gráfico detallado de los commits de cada miembros del equipo al repositorio del Web Services
+![image](https://github.com/user-attachments/assets/8d6ac616-abb2-4190-a02e-6a0eb329a90c)
+
+Imagen 9: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la FOG Api.
+
+
+Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la Edge Api.
+
+
+
+
+
+
+
 
 
 # Contenido
@@ -7383,7 +7400,17 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
+  
+A continuación explicamos la organización que tuvimos con respecto a los distintos Bounded Context  a la hora de elaborar nuestros entregables de este Sprint. 
 
+| Team Member (Last Name, First Name) | GitHub Username     | IAM Bounded Context | Communication Bounded Context | Operations and Monitoring Bounded Context | Organizational Management Bounded Context | Commerce Bounded Context | Inventory Bounded Context |
+|------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|
+| Zoppi, Giacomo                     | Giacomo202210029     | C                                    |                                               | L                                             |                                                             |                                            | C                                           | C             |
+| Herrera, Fabia                     | pelumsa              |                                     | L                                              | C                                             | C                                                            |                                            |                                            | C             |
+| Rojas, Mauricio                    | MayugiKentai11       | L                                    |                                               | C                                             | C                                                            |                      C                      |                                            | C             |
+| Morales, Omar                      | andrewmm16           |                                     |                                               | C                                             | C                                                            |                                            | L                                           | C             |
+| Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
+| Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
 #### 6.2.2.3.Sprint Backlog 2.
 | User Story |            | Work-Item / Task |         |             |               |                |                |
@@ -7436,6 +7463,27 @@ and Mobile or Web Developers have an error rate lower than 2% in documented API 
 
 #### 6.2.2.9.Team Collaboration Insights during Sprint.
 
+En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
+A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
+
+Mobile Application: 
+
+![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
+
+![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
+
+Web Services: 
+
+![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
+
+FOG API: 
+
+
+EDGE API: 
+
+
+
+EMBEDDED APPLICATION: 
 
 ## 6.3. Validation Interviews.
 
@@ -7744,14 +7792,14 @@ No estan incluidos en esta evaluación las siguientes tareas:
 
 #### DESCRIPCIÓN DE PROBLEMAS:
 
-##### PROBLEMA #1: No se utiliza la misma paleta de colores en la sección de login  
+##### PROBLEMA #1: No se utiliza la misma paleta de colores en la sección de sign in  
 **Severidad:** 1  
 **Heurística violada:** Usability: Consistencia y estándares  
 
 **Problema:**  
 La sección de login presenta una paleta de colores distinta al resto de la aplicación, lo cual rompe con la identidad visual general del sistema. Esto puede generar confusión y una percepción de baja cohesión en el diseño.  
 
-*(Insertar aquí una captura de pantalla de la vista de login con otra paleta)*  
+![image](https://github.com/user-attachments/assets/7c4fe792-9bd9-4dd4-a812-a72a91fb28d4)
 
 **Recomendación:**  
 Unificar los colores de la sección de login con los usados en el resto de la aplicación.  
@@ -7763,7 +7811,7 @@ Unificar los colores de la sección de login con los usados en el resto de la ap
 **Problema:**  
 Los usuarios no encuentran fácilmente una sección de preguntas frecuentes (FAQ) o tutoriales que les orienten en el uso de la aplicación, lo que puede generar frustración especialmente en usuarios nuevos o poco experimentados.  
 
-*(Insertar aquí una captura de pantalla del menú principal sin acceso a ayuda)*  
+![image](https://github.com/user-attachments/assets/ec479cc6-79ea-4ad4-8010-f2cdebf0cc66)
 
 **Recomendación:**  
 Incluir un acceso visible a una sección de ayuda o preguntas frecuentes.  
@@ -7775,7 +7823,8 @@ Incluir un acceso visible a una sección de ayuda o preguntas frecuentes.
 **Problema:**  
 Existe un botón de “Contact Support”, pero al hacer clic no lleva a ninguna página ni ofrece formas de contactar al equipo de soporte, lo cual afecta la experiencia del usuario en momentos críticos en los que pueda necesitar asistencia.  
 
-*(Insertar aquí una captura de pantalla del botón inactivo o sin funcionalidad)*  
+![image](https://github.com/user-attachments/assets/28cc34d1-968a-4b5f-b315-a44ef5f09229)
+![image](https://github.com/user-attachments/assets/7a7a1e3b-204f-484c-86fb-ed0076d12f24)
 
 **Recomendación:**  
 Vincular el botón a una vista de contacto o a un formulario funcional.  
@@ -7787,7 +7836,7 @@ Vincular el botón a una vista de contacto o a un formulario funcional.
 **Problema:**  
 Aunque se presenta un botón para recuperar la contraseña, este no lleva a ninguna página ni ofrece retroalimentación, lo que bloquea completamente al usuario en caso de olvidar sus credenciales.  
 
-*(Insertar aquí una captura de pantalla del botón sin redirección)*  
+![image](https://github.com/user-attachments/assets/16370fd5-39a5-46f3-af29-a2c7eef05e2e)
 
 **Recomendación:**  
 Implementar la funcionalidad de recuperación de contraseña con ingreso de correo.  
@@ -7799,7 +7848,8 @@ Implementar la funcionalidad de recuperación de contraseña con ingreso de corr
 **Problema:**  
 No se proporciona información sobre la cantidad de dispositivos IoT que pueden solicitarse con cada plan de suscripción, lo que obliga al usuario a asumirla.  
 
-*(Insertar aquí una captura de pantalla del área de suscripciones sin detalles)*  
+![image](https://github.com/user-attachments/assets/ef19cbcc-d01f-4585-9227-9de5008973a8)
+
 
 **Recomendación:**  
 Agregar una tabla comparativa clara de planes y límites de dispositivos o en modal la cantidad de dispositivos de cada plan.
@@ -7811,7 +7861,7 @@ Agregar una tabla comparativa clara de planes y límites de dispositivos o en mo
 **Problema:**  
 En la sección de suministros no hay filtros disponibles para facilitar la búsqueda, lo que dificulta encontrar artículos específicos en bases de datos grandes o complejas.  
 
-*(Insertar aquí una captura de pantalla de la lista de suministros sin filtros)*  
+![image](https://github.com/user-attachments/assets/45d7a595-4e1f-4b51-a7da-a4d1b03e893c)
 
 **Recomendación:**  
 Añadir filtros por nombre, categoría o estado a la vista de suministros.  
@@ -7823,7 +7873,7 @@ Añadir filtros por nombre, categoría o estado a la vista de suministros.
 **Problema:**  
 Las habitaciones del hotel no muestran a qué piso o área pertenecen, lo que dificulta la navegación lógica del sistema y puede saturar al administrador al no permitirle filtrar ni evaluar por área.  
 
-*(Insertar aquí una captura de pantalla del listado de habitaciones sin ubicación)*  
+![image](https://github.com/user-attachments/assets/cb168769-3bac-4baa-956f-fa3bb27453f8)
 
 **Recomendación:**  
 Mostrar la ubicación física (piso/área) junto al número o nombre de habitación y permitir ordenar por este atributo.
@@ -7835,7 +7885,8 @@ Mostrar la ubicación física (piso/área) junto al número o nombre de habitaci
 **Problema:**  
 No hay opciones para guardar y crear un nuevo elemento rápidamente, ni atajos de teclado. Esto reduce la eficiencia del usuario al tener que realizar el mismo proceso repetidamente para crear múltiples elementos.  
 
-*(Insertar aquí una captura de pantalla del formulario sin opciones adicionales)*  
+![image](https://github.com/user-attachments/assets/5f26d6b9-d0ef-496e-ba61-c968ef8c3986)
+
 
 **Recomendación:**  
 Agregar botón “Guardar y nuevo” y atajos para duplicar formularios o implementar funcionalidad de teclado como `Ctrl+Enter` para guardar.
@@ -7847,7 +7898,7 @@ Agregar botón “Guardar y nuevo” y atajos para duplicar formularios o implem
 **Problema:**  
 El usuario no puede seleccionar el tipo de gráfico que desea visualizar (barras, líneas, pastel, etc.), limitando su capacidad de interpretación y personalización de datos analíticos.  
 
-*(Insertar aquí una captura de pantalla del área de analíticas con un solo tipo de gráfico)*  
+![image](https://github.com/user-attachments/assets/16020a8e-a432-41d9-98f6-d3c1258dc997)
 
 **Recomendación:**  
 Permitir al usuario cambiar entre distintos tipos de gráfico con un selector.  
@@ -7859,7 +7910,8 @@ Permitir al usuario cambiar entre distintos tipos de gráfico con un selector.
 **Problema:**  
 No hay opción para que el usuario edite información básica del hotel como su nombre o dirección, lo que reduce la capacidad de gestión del sistema por parte del usuario.  
 
-*(Insertar aquí una captura de pantalla de los campos bloqueados del hotel)*  
+![image](https://github.com/user-attachments/assets/06c41fb6-675f-4be7-bb30-066c94ae88f2)
+
 
 **Recomendación:**  
 Permitir modificar nombre y dirección desde el Hotel Overview. 
@@ -7895,11 +7947,10 @@ No estan incluidos en esta evaluación las siguientes tareas:
 | 2  | No hay acceso a FAQ o tutoriales dentro de la app | 1| Usability: Ayuda y documentación |
 | 3  | Incluye una checkbox con los Términos y Condiciones y Políticas de Privacidad, pero no existe la posibilidad de leerlos| 3 | Information Architecture: ¿Es útil? |
 | 4  | Incluye un botón "Olvidé mi contraseña" pero no redirecciona a una vista dedicada a ello o incluye una funcionalidad de "Recuperar Contraseña" | 3 | Information Architecture: ¿Es útil? |
-| 5  | No incluye pantallas o indicadores de carga al hacer solicitudes | 2  | Usability: Visibilidad del estado del sistema |
-| 6  | No incluye información sobre la habitación en la que se ubica cada dispositivo IOT | 2  | Usability: Flexibilidad y eficiencia de uso |
-| 7  | No existe la opción de ocultar la ultima conexión a la aplicación | 1  | Usability: Flexibilidad y eficiencia de uso |
-| 8  | No existe la posibilidad de editar  el nombre y la dirección del hotel | 3 | Usability: Libertad y control del usuario |
-| 9  | No incluye la posibilidad de pagar la suscripcion, mediante diferentes medios de pago como Google Pay, Apple Pay a pesar de incluir sus imagenes en la pasarela de pago  | 3 | Information Architecture: ¿Es útil? |
+| 5  | No incluye información sobre la habitación en la que se ubica cada dispositivo IOT | 2  | Usability: Flexibilidad y eficiencia de uso |
+| 6  | No existe la opción de ocultar la ultima conexión a la aplicación | 1  | Usability: Flexibilidad y eficiencia de uso |
+| 7  | No existe la posibilidad de editar  el nombre y la dirección del hotel | 3 | Usability: Libertad y control del usuario |
+| 8  | No incluye la posibilidad de pagar la suscripcion, mediante diferentes medios de pago como Google Pay, Apple Pay a pesar de incluir sus imagenes en la pasarela de pago  | 3 | Information Architecture: ¿Es útil? |
 
 ##### PROBLEMA #1: Incluye una sección de selección de rol, a pesar de estar registrado ya el usuario con su rol  
 **Severidad:** 2  
@@ -7908,7 +7959,7 @@ No estan incluidos en esta evaluación las siguientes tareas:
 **Problema:**  
 Se muestra una pantalla innecesaria para seleccionar un rol, incluso si el usuario ya tiene un rol previamente registrado. Esto ralentiza la experiencia y agrega pasos innecesarios.  
 
-*(Insertar aquí una captura de pantalla que muestre la pantalla de selección de rol)*  
+![image](https://github.com/user-attachments/assets/9b1cfe93-5ddd-42e0-a450-13909e55e895)
 
 **Recomendación:**  
 Implementar una redirección automática al dashboard correspondiente según el rol guardado.
@@ -7920,7 +7971,7 @@ Implementar una redirección automática al dashboard correspondiente según el 
 **Problema:**  
 Los usuarios no tienen acceso a material de ayuda, lo que dificulta su orientación y resolución de dudas durante el uso inicial o ante errores.  
 
-*(Insertar aquí una captura de pantalla de la vista principal sin acceso a FAQ)*  
+![image](https://github.com/user-attachments/assets/b4670cbe-13c4-4912-a60f-03ac9362c962)
 
 **Recomendación:**  
 Agregar una sección accesible desde el menú con preguntas frecuentes o un tutorial básico.  
@@ -7932,7 +7983,7 @@ Agregar una sección accesible desde el menú con preguntas frecuentes o un tuto
 **Problema:**  
 No se provee acceso al contenido de los documentos legales que el usuario debe aceptar, lo cual genera desconfianza y afecta la transparencia del sistema.  
 
-*(Insertar aquí una captura de pantalla del checkbox sin enlaces funcionales)*  
+![image](https://github.com/user-attachments/assets/ac150724-acad-4663-be65-9073e969ba08)
 
 **Recomendación:**  
 Hacer que al tocar “Términos y Condiciones” o “Política de Privacidad” se abra una vista o PDF.
@@ -7944,67 +7995,58 @@ Hacer que al tocar “Términos y Condiciones” o “Política de Privacidad”
 **Problema:**  
 La opción existe visualmente pero no tiene una funcionalidad real, lo que puede frustrar al usuario que ha olvidado su contraseña y necesita recuperar el acceso.  
 
-*(Insertar aquí una captura de pantalla del botón sin funcionalidad)*  
+![image](https://github.com/user-attachments/assets/7ed113c3-e70d-4c06-a63f-22d797ca80cc)
+
+![image](https://github.com/user-attachments/assets/7f01a3e1-9b4d-412b-b4e9-478e2a9c82f0)
 
 **Recomendación:**  
 Implementar una vista donde el usuario pueda ingresar su correo para recuperar su contraseña.  
 
-##### PROBLEMA #5: No incluye pantallas o indicadores de carga al hacer solicitudes  
-**Severidad:** 2  
-**Heurística violada:** Usability: Visibilidad del estado del sistema  
-
-**Problema:**  
-La app no da señales visuales mientras se cargan datos o se realizan operaciones, lo que puede llevar al usuario a pensar que la app no está funcionando.  
-
-*(Insertar aquí una captura de pantalla donde se produce la espera sin feedback)*  
-
-**Recomendación:**  
-Agregar spinners o barras de progreso al realizar operaciones que toman tiempo.  
-
-##### PROBLEMA #6: No incluye información sobre la habitación en la que se ubica cada dispositivo IOT  
+##### PROBLEMA #5: No incluye información sobre la habitación en la que se ubica cada dispositivo IOT  
 **Severidad:** 2  
 **Heurística violada:** Usability: Flexibilidad y eficiencia de uso  
 
 **Problema:**  
 El usuario no puede visualizar dispositivos IoT con la habitación a la que pertencen, dificultando su gestión y mantenimiento.  
 
-*(Insertar aquí una captura de pantalla de la vista de dispositivos sin info de habitación)*  
+![image](https://github.com/user-attachments/assets/b0e98314-f4f6-4b47-ac18-46a64e1007b3)
 
 **Recomendación:**  
 Mostrar número de habitación junto al nombre del dispositivo en la sección de Devices. 
 
-##### PROBLEMA #7: No existe la opción de ocultar la última conexión a la aplicación  
+##### PROBLEMA #6: No existe la opción de ocultar la última conexión a la aplicación  
 **Severidad:** 1  
 **Heurística violada:** Usability: Flexibilidad y eficiencia de uso  
 
 **Problema:**  
 El usuario no tiene control sobre su privacidad respecto a la última vez que usó la app, lo que puede ser un problema en entornos colaborativos o sensibles.  
 
-*(Insertar aquí una captura de pantalla del perfil del usuario sin esa opción)*  
+![image](https://github.com/user-attachments/assets/1fb0e2c8-a1b0-45e7-a579-1d70c158b33c)
 
 **Recomendación:**  
 Añadir una opción tipo “Ocultar última vez en línea” en la configuración, y así evitar que en la sección de organización, los demás trabajadores puedan visualizarla. 
 
-##### PROBLEMA #8: No existe la posibilidad de editar el nombre y la dirección del hotel  
+##### PROBLEMA #7: No existe la posibilidad de editar el nombre y la dirección del hotel  
 **Severidad:** 3  
 **Heurística violada:** Usability: Libertad y control del usuario  
 
 **Problema:**  
 No hay opción para que el usuario edite información básica del hotel como su nombre o dirección, lo que reduce la capacidad de gestión del sistema por parte del usuario.  
 
-*(Insertar aquí una captura de pantalla de la vista con los datos del hotel bloqueados)*  
+![image](https://github.com/user-attachments/assets/8f02afb3-e667-45bd-97e8-bb9d23d3b34e)
+
 
 **Recomendación:**  
 Habilitar campos editables para nombre y dirección en Hotel Overview. 
 
-##### PROBLEMA #9: No incluye la posibilidad de pagar la suscripción mediante diferentes medios de pago como Google Pay o Apple Pay, a pesar de incluir sus imágenes en la pasarela de pago  
+##### PROBLEMA #8: No incluye la posibilidad de pagar la suscripción mediante diferentes medios de pago como Google Pay o Apple Pay, a pesar de incluir sus imágenes en la pasarela de pago  
 **Severidad:** 3  
 **Heurística violada:** Information Architecture: ¿Es útil?  
 
 **Problema:**  
 Se muestran íconos de métodos de pago populares que en realidad no están implementados, generando confusión y expectativas falsas en el usuario.  
 
-*(Insertar aquí una captura de pantalla de la pasarela con íconos falsos)*  
+![image](https://github.com/user-attachments/assets/2ca9f9b8-6451-406c-ad96-537303f943b9)
 
 **Recomendación:**  
 Ocultar los íconos de medios de pago no habilitados o implementar realmente esas opciones.  
@@ -8030,14 +8072,14 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 | 4  | No incluye temperatura en distintas medidas como Kelvin o Farenheidt | 2| Information Architecture: ¿Es Findable?  |
 | 5  | La iluminación del Serial Monitor es baja, generando que en horas nocturnas, los usuarios no puedan visualizar la pantalla sin luz externa adicional | 2| Information Architecture: ¿Es Findable?  |
 
-#### PROBLEMA #1: No existe la posibilidad de configurar la temperatura mediante pantalla táctil 
+#### PROBLEMA #1: No existe la posibilidad de configurar-+ la temperatura mediante pantalla táctil 
 **Severidad:** 3 
 **Heurística violada:** Libertad y control del usuario 
 
 **Problema:** 
 La pantalla actual no cuenta con funcionalidad táctil para permitir la configuración directa de la temperatura. Esto obliga al usuario a depender exclusivamente de la aplicación móvil o comandos externos, limitando la autonomía y control directo sobre el dispositivo.
 
-*(Incluir una imagen de la pantalla y su interfaz actual).*
+![image](https://github.com/user-attachments/assets/2611a2c9-54c1-4eb0-a762-0d489aee6398)
 
 **Recomendación:** 
 Incorporar controles táctiles básicos (botones digitales en pantalla o sliders) que permitan al usuario ajustar directamente la temperatura desde el dispositivo, aumentando así su usabilidad e independencia.
@@ -8050,7 +8092,8 @@ Incorporar controles táctiles básicos (botones digitales en pantalla o sliders
 **Problema:** 
 La interfaz de la pantalla no sigue la línea de diseño visual (paleta de colores, tipografía, estilo gráfico) ni el lenguaje comunicacional utilizado en otras soluciones Sweet Manager, lo que puede generar una experiencia de usuario incoherente o confusa.
 
-*(Incluir una comparación visual entre esta interfaz y otras de Sweet Manager).*
+![image](https://github.com/user-attachments/assets/f54c4f60-149e-4e6d-8725-0e9c640ac19c)
+
 
 **Recomendación:** 
 Actualizar la interfaz gráfica de la pantalla para alinearla con los estándares de diseño de Sweet Manager, incluyendo paleta de colores azul, íconos consistentes y mensajes en el mismo tono de comunicación.
@@ -8063,7 +8106,8 @@ Actualizar la interfaz gráfica de la pantalla para alinearla con los estándare
 **Problema:** 
 Existe un retraso perceptible entre el ajuste de temperatura en la app y su reflejo en la pantalla del dispositivo. Este desfase puede llevar a errores de interpretación, frustración del usuario o ajustes innecesarios por pensar que el cambio no se ha registrado.
 
-*(Incluir evidencia de latencia o video del desfase).*
+![image](https://github.com/user-attachments/assets/454d6303-2775-4111-9204-0aa65add3035)
+
 
 **Recomendación:** 
 Optimizar la comunicación entre la app y el dispositivo para garantizar una respuesta más inmediata, o incluir un indicador de “sincronización en curso” que informe al usuario que el cambio se está procesando.
@@ -8076,7 +8120,8 @@ Optimizar la comunicación entre la app y el dispositivo para garantizar una res
 **Problema:** 
 El sistema solo permite visualizar la temperatura en grados Celsius, sin ofrecer opciones para alternar a otras unidades comunes como Fahrenheit o Kelvin. Esto limita su comprensión y utilidad para usuarios internacionales o técnicos que manejan otras escalas.
 
-*(Incluir una imagen de la pantalla mostrando la unidad fija).*
+![image](https://github.com/user-attachments/assets/b42c9131-e215-41f6-93c3-aa83ba1b7191)
+
 
 **Recomendación:** 
 Añadir una opción de configuración que permita al usuario seleccionar la unidad de medida deseada desde el menú del dispositivo o desde la app.
@@ -8089,7 +8134,7 @@ Añadir una opción de configuración que permita al usuario seleccionar la unid
 **Problema:** 
 Durante la noche o en ambientes con poca luz, la retroiluminación del monitor serial es insuficiente, lo que impide una lectura clara de los valores en pantalla sin utilizar linternas u otras fuentes externas de iluminación.
 
-*(Incluir una foto del monitor en un ambiente oscuro).*
+![image](https://github.com/user-attachments/assets/f60b7f9a-305a-4fab-8724-cf66f12ec4f0)
 
 **Recomendación:** 
 Mejorar la retroiluminación del dispositivo o añadir un modo de alto contraste nocturno, activable desde la configuración, para facilitar la lectura en condiciones de baja visibilidad.
@@ -8100,7 +8145,7 @@ Sweet Manager Led Light
 #### TAREAS A EVALUAR:
 El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
 
-1. Encendido de las luces Led cuando el sensor de humo detecta humo por sobre su limite determinado.
+1. Encendido de las luces Led según el nivel de temperatura de la habitación. 
 
 
 #### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
@@ -8109,16 +8154,16 @@ El alcance de esta evaluación incluye la revisión de la usabilidad de las sigu
 |----|-----------------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------|
 | 1  | No existe la posibilidad de personalizar el color de la luz LED                               | 3                    | Libertad y control del usuario                          |
 | 2  | Su color no es consistente con la paleta de colores de Sweet Manager, que consiste en azules  | 1                    | Consistencia y estándares                               |
-| 3  | No se informa de forma clara si el encendido fue exitoso o si el sistema falló                | 3                    | Visibilidad del estado del sistema                      |
 
 #### PROBLEMA #1: No existe la posibilidad de personalizar el color de la luz LED 
 **Severidad:** 3 
 **Heurística violada:** Libertad y control del usuario 
 
 **Problema:** 
-El sistema enciende una luz LED predeterminada al detectar humo, pero no permite que el usuario seleccione o cambie el color de dicha luz según sus preferencias, necesidades o el entorno (por ejemplo, personas con sensibilidad a ciertos colores o ambientes con iluminación especial).
+El sistema enciende una luz LED predeterminada al detectar temperaturas por encima de los 32° C, pero no permite que el usuario seleccione o cambie el color de dicha luz según sus preferencias, necesidades o el entorno (por ejemplo, personas con sensibilidad a ciertos colores o ambientes con iluminación especial).
 
-*(Incluir una captura del panel de configuración o del sistema de luces).*
+![image](https://github.com/user-attachments/assets/fffd0c3f-1e98-453c-9614-156e93bc1599)
+
 
 **Recomendación:** 
 Agregar una opción de configuración que permita seleccionar entre una gama de colores para la luz LED, de manera que el usuario pueda personalizar la respuesta visual del sistema ante una emergencia.
@@ -8131,77 +8176,13 @@ Agregar una opción de configuración que permita seleccionar entre una gama de 
 **Problema:** 
 El color que emite la luz LED no sigue la línea visual ni la paleta de colores del resto del sistema (basada en tonos fríos y azules), generando una experiencia visual disonante y rompiendo con la identidad de marca.
 
-*(Incluir una captura que muestre el color del LED junto al diseño general del sistema).*
+![image](https://github.com/user-attachments/assets/3c99629d-315c-4f89-8063-6e869c5353df)
+
 
 **Recomendación:** 
 Alinear el color predeterminado de la luz LED con la identidad visual de Sweet Manager, utilizando colores fríos o tonos de azul para mantener una estética coherente y reconocible.
 
-#### PROBLEMA #3: No se informa de forma clara si el encendido fue exitoso o si el sistema falló 
-**Severidad:** 3 
-**Heurística violada:** Visibilidad del estado del sistema 
 
-**Problema:** 
-Cuando el sensor detecta humo y se supone que debe activarse la luz LED, no hay retroalimentación clara que confirme que la acción se ejecutó correctamente. Esto deja al usuario sin certeza sobre si el sistema está funcionando o no.
-
-*(Incluir una captura del momento posterior a la detección de humo).*
-
-**Recomendación:** 
-Agregar una notificación visual (como una luz secundaria o mensaje en pantalla) o un registro de evento que indique claramente que la luz se activó correctamente, o en su defecto, que hubo una falla.
-
-
-### SITE o APP A EVALUAR:
-Sweet Manager Sound Alert
-
-#### TAREAS A EVALUAR:
-El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
-
-1. Encendido de la alerta cuando el sensor de humo detecta humo por sobre su limite determinado.
-
-
-#### ESCALA DE SEVERIDAD Y TABLA RESUMEN DE PROBLEMAS
-
-| #  | Problema                                                                                                  | Escala de severidad | Heurística/Principio violado(a)                         |
-|----|-----------------------------------------------------------------------------------------------------------|----------------------|----------------------------------------------------------|
-| 1  | No existe la posibilidad de personalizar el volumen o tipo de sonido de la alerta                         | 3                    | Libertad y control del usuario                          |
-| 2  | El sistema no informa de manera clara si la alerta fue efectivamente activada tras la detección de humo  | 3                    | Visibilidad del estado del sistema                      |
-| 3  | No se ofrece una opción de prueba para que el usuario verifique el sonido en condiciones normales         | 2                    | Flexibilidad y eficiencia de uso                        |
-
-#### PROBLEMA #1: No existe la posibilidad de personalizar el volumen o tipo de sonido de la alerta 
-**Severidad:** 1
-**Heurística violada:** Usabilidad – Libertad y control del usuario 
-
-**Problema:** 
-El sistema emite una única alerta sonora genérica cuando se detecta humo, sin permitir al usuario ajustar el volumen o el tipo de sonido según sus necesidades (por ejemplo, ambientes con niños, adultos mayores o personas con problemas auditivos). Esto limita el control que tiene el usuario sobre cómo se comunica una situación crítica.
-
-*(Incluir una captura de pantalla del panel de configuración o interfaz donde se esperaría este control).*
-
-**Recomendación:** 
-Incluir una sección en la configuración que permita al usuario seleccionar entre diferentes tipos de sonido (agudo, grave, intermitente, etc.) y ajustar el volumen, dentro de márgenes seguros, para adaptarlo al contexto donde se instala el dispositivo.
-
-
-#### PROBLEMA #2: El sistema no informa claramente si la alerta fue activada tras la detección de humo 
-**Severidad:** 3 
-**Heurística violada:** Visibilidad del estado del sistema 
-
-**Problema:** 
-Luego de que el sensor detecta humo, no hay una retroalimentación inmediata y clara que indique que la alerta sonora fue efectivamente activada. Esto puede generar dudas sobre si el sistema está funcionando correctamente o si hay una falla en la conexión entre sensor y alerta.
-
-*(Incluir una captura de la interfaz del sistema o aplicación justo después de una detección).*
-
-**Recomendación:** 
-Incluir una confirmación visual o auditiva secundaria (por ejemplo, un breve tono inicial, luz intermitente o mensaje en pantalla) que indique que el sistema ha detectado humo y ha activado la alarma con éxito.
-
-#### PROBLEMA #3: No existe una opción de prueba para verificar que la alerta sonora funciona correctamente 
-**Severidad:** 2 
-**Heurística violada:** Flexibilidad y eficiencia de uso 
-
-**Problema:** 
-El sistema no cuenta con una función que permita al usuario realizar pruebas periódicas de funcionamiento del sistema sonoro sin necesidad de generar humo real. Esto reduce la confianza del usuario en el sistema y dificulta el mantenimiento preventivo.
-
-*(Incluir una captura del panel de control donde debería estar la opción de prueba).*
-
-**Recomendación:** 
-Incorporar un botón físico o digital de “Modo Prueba” que permita al usuario activar la alerta por unos segundos para comprobar que el dispositivo funciona correctamente.
 
 
 ## 6.4. Video About-the-Product.
