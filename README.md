@@ -4852,6 +4852,11 @@ Se muestra el diagrama de componentes de Web Application, mostrando los componen
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ![diagrama de clase](https://github.com/user-attachments/assets/6b076738-98c0-440c-8975-26229005f50a)
 
+##### 4.2.2.6.2. Bounded Context Domain Layer Class Diagrams Embedded Application
+<img src="./assets/img/organizational-management-bounded-context/diagram-class-thermostat.png" alt="Diagrama de clases del termostato" width="90%">
+
+En este diagrama de clases del Termostato, se puede observar la relación entre las entidades y los comandos asociados al Termostato. Siguiendo Modest IoT framework, el Termostato es un dispositivo IoT que se encarga de regular la temperatura de una habitación dada una preferencia del huésped. El Termostato puede ser encendido o apagado, y puede recibir actualizaciones de temperatura.
+
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
 ![image](https://github.com/user-attachments/assets/8c242d51-1399-4d88-b830-2c8ec1e21b18)
 
@@ -8279,32 +8284,34 @@ Duración de la entrevista: 29:30 - 51:20 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños]()
+![Entrevista° 3 - Dueños](assets/img/validation-interviews/owner3.png)
 
-<br><br>
+<br>Luis expresó su agrado por el diseño y la información presentada en la Landing Page y comentó que ve todos los datos correctos, interesantes y que lo motivan a utilizar el servicio. Además, mencionó que le gustaba poder interactuar con los elementos del sitio y que tenga un enlace que lo redirija automáticamente a la aplicación web.
+En cuanto a la aplicación móvil, señaló que la experiencia fue bastante sencilla y cómoda, siendo capaz de registrarse e iniciar sesión, registrar su hotel, revisar la información de su hotel, añadir administradores y proveedores, etc. Valoró también la posibilidad de gestionar su organización desde cualquier lugar, pues no siempre tenía una laptop o PC a la mano. Por otro lado, mencionó que le gustaban los colores y las interfaces, pues eran amigables con el usuario y agradables a la vista.
+Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las distintas vistas de la aplicación, destacando que consideraba que cumplía con las features necesarias para poder administrar correctamente un hotel. No obstante, encontró unos errores menores durante la navegación por la página, como vistas sin una opción de regresar a la página anterior o errores de traducción.<br>
 
 **Entrevista 01 (Administradores)**
 
 URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
-
 Nombres: Gianella
-
 Apellidos: Francia
-
 Edad: 25
-
 Sexo: Femenino
-
 Ocupación: Administradora de RRHH en la gestión de hoteles
-
 Lugar donde vive: Santa Anita, Perú
-
 Duración de la entrevista: 51:20 - 1:13:30.
 
-
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-<img src="" alt="Administradora de hotel" width="90%" />
+<img src="./assets/img/validation-gianella.PNG" alt="Administradora de hotel" width="90%" />
 </div>
+<br>
+
+Durante esta entrevista de validación, Gianella Francia , una administradora de recursos humanos con experiencia en la gestión hotelera, compartió sus impresiones sobre la plataforma.
+En primer lugar, destacó que la landing page le resultó clara y concisa, aunque sugiere incluir más información sobre los beneficios específicos que la plataforma ofrece a los administradores de hoteles. En cuanto a la aplicación móvil, Gianella mencionó que la experiencia fue cómoda y práctica, permitiéndole gestionar reservas y recibir alertas de manera eficiente. Sin embargo, sugirió que sería útil contar con una sección dedicada a la gestión de personal y recursos humanos.
+Respecto a la aplicación web, Gianella valoró positivamente la interfaz, destacando su facilidad de uso y la claridad en la presentación de información. Sin embargo, sugirió que sería beneficioso incluir herramientas adicionales para la gestión de nómina y seguimiento del desempeño del personal. En general, Gianella consideró que la plataforma tiene un gran potencial para mejorar la eficiencia en la gestión hotelera, pero sugirió algunas mejoras específicas para adaptarse mejor a las necesidades de los administradores de recursos humanos.
+
+De la misma manera, Gianella mencionó que la plataforma debería considerar la implementación de un sistema de gestión de inventario y suministros, lo cual sería de gran utilidad para los administradores de hoteles. También sugirió que se podrían incluir funcionalidades adicionales para facilitar la comunicación interna entre el personal del hotel, como un sistema de mensajería o notificaciones.
+Como también es usuaria de la aplicación móvil, Gianella destacó la importancia de que la plataforma sea compatible con dispositivos móviles, ya que esto le permite acceder a la información y gestionar tareas desde cualquier lugar. En general, consideró que la plataforma tiene un gran potencial para mejorar la eficiencia en la gestión hotelera, pero sugirió algunas mejoras específicas para adaptarse mejor a las necesidades de los administradores de recursos humanos.
 <br>
 
 **Entrevista 02 (Administradores)**
@@ -8381,9 +8388,11 @@ Duración de la entrevista: 41:34 - 1:08:20 <br>
 Personalidad: Tranquilo <br>
 <br>
 
-![Entrevista° 2 - Huespedes]()
+![Entrevista° 2 - Huespedes](assets/img/validation-interviews/guest2.png)
 
-<br><br>
+<br>Ramón se sintió muy cómodo navegando por la aplicación móvil, expresó que le gustaba que la interfaz y las vistas sean similares a la de la aplicación web, pero adaptadas para un dispositivo móvil, y que las funcionalidades eran correctas y fáciles de entender y usar. Sin embargo, encontró errores menores durante la navegación, como botones pequeños o difícilmente visibles y algunos colores en la página de proovedores que le parecían fuera de lugar.
+Por otro lado, respecto a la aplicación web, pudo completar el flujo de crear un usuario y registrarse y el de buscar un hotel y realizar una reserva correctamente. Hizo varias observaciones como posibles mejoras en los filtros, en la información mostrada sobre los hoteles, preferencias para usuarios alérgicos y visualización de información de los pagos realizados, los cuales considera importantes para cualquier tipo de usuario.
+Finalmente, confirmó que la Embedded Application mostró adecuadamente la temperatura según sus preferencias y lo consideró como un valor añadido muy interesante para el negocio.<br>
 
 **Entrevista 03 (Huéspedes)**
 <br>
@@ -8888,6 +8897,10 @@ Tomar en cuenta y priorizar en todo momento la información encontrada por las e
 Establecer las User Stories y Bounded Context efectivamente, pues son la base de muchos puntos a tomar en cuenta a la hora de elaborar el proyecto y más aun, a la hora de desarrollar los entregables. Por lo que un error con el establecimiento de estos dos puntos, puede generar cambios importantes en toda la solución. 
 
 # Video About-the-Team
+
+En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
 
 # Bibliografía
 - Gothelf, J., & Seiden, J. (2021). Lean UX (3rd ed.). O'Reilly Media. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
