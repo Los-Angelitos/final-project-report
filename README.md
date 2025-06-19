@@ -8757,6 +8757,9 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 
 # Video About-the-Team
 
+En este video, cada miembro del equipo pudo dar su susteno y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. 
+https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EV9nrq4QWvBOoM2xMU-KqNgBQEexDs2t3qIdnv_Pdg1tLg?e=xSok5k&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+
 # Bibliografía
 - Gothelf, J., & Seiden, J. (2021). Lean UX (3rd ed.). O'Reilly Media. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
 
