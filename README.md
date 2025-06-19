@@ -8157,13 +8157,15 @@ Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Surquillo - Lima <br>
 Ocupación: Dueño y manager de un hotel <br>
-Duración de la entrevista: 12:20 - 21:24 <br>
+Duración de la entrevista: 00:00 - 00:00 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños]()
+![Entrevista° 3 - Dueños](assets/img/validation-interviews/owner3.png)
 
-<br><br>
+<br>Luis expresó su agrado por el diseño y la información presentada en la Landing Page y comentó que ve todos los datos correctos, interesantes y que lo motivan a utilizar el servicio. Además, mencionó que le gustaba poder interactuar con los elementos del sitio y que tenga un enlace que lo redirija automáticamente a la aplicación web.
+En cuanto a la aplicación móvil, señaló que la experiencia fue bastante sencilla y cómoda, siendo capaz de registrarse e iniciar sesión, registrar su hotel, revisar la información de su hotel, añadir administradores y proveedores, etc. Valoró también la posibilidad de gestionar su organización desde cualquier lugar, pues no siempre tenía una laptop o PC a la mano. Por otro lado, mencionó que le gustaban los colores y las interfaces, pues eran amigables con el usuario y agradables a la vista.
+Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las distintas vistas de la aplicación, destacando que consideraba que cumplía con las features necesarias para poder administrar correctamente un hotel. No obstante, encontró unos errores menores durante la navegación por la página, como vistas sin una opción de regresar a la página anterior o errores de traducción.<br>
 
 **Entrevista 01 (Administradores)**
 
@@ -8251,13 +8253,15 @@ Edad: 51 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Jesús María - Lima <br>
 Ocupación: Ingeniero Civil <br>
-Duración de la entrevista: 51:04 - 59:57 <br> 
+Duración de la entrevista: 00:00 - 00:00 <br> 
 Personalidad: Tranquilo <br>
 <br>
 
-![Entrevista° 2 - Huespedes]()
+![Entrevista° 2 - Huespedes](assets/img/validation-interviews/guest2.png)
 
-<br><br>
+<br>Ramón se sintió muy cómodo navegando por la aplicación móvil, expresó que le gustaba que la interfaz y las vistas sean similares a la de la aplicación web, pero adaptadas para un dispositivo móvil, y que las funcionalidades eran correctas y fáciles de entender y usar. Sin embargo, encontró errores menores durante la navegación, como botones pequeños o difícilmente visibles y algunos colores en la página de proovedores que le parecían fuera de lugar.
+Por otro lado, respecto a la aplicación web, pudo completar el flujo de crear un usuario y registrarse y el de buscar un hotel y realizar una reserva correctamente. Hizo varias observaciones como posibles mejoras en los filtros, en la información mostrada sobre los hoteles, preferencias para usuarios alérgicos y visualización de información de los pagos realizados, los cuales considera importantes para cualquier tipo de usuario.
+Finalmente, confirmó que la Embedded Application mostró adecuadamente la temperatura según sus preferencias y lo consideró como un valor añadido muy interesante para el negocio.<br>
 
 **Entrevista 03 (Huéspedes)**
 <br>
