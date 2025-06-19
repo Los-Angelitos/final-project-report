@@ -7457,6 +7457,27 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.2.7.Services Documentation Evidence for Sprint Review.
 
+A continuación, se mostrará la documentación Swagger del Web Services: 
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
+
+Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
+
+La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
+
+En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
 
 #### 6.2.2.8.Software Deployment Evidence for Sprint Review.
 
@@ -7591,8 +7612,16 @@ Duración de la entrevista: 00:00 - 12:20
 Personalidad: Análitica
 
 <div style="text-align: center;">
-  <img src="" alt="Owner Carlo Rebagliati" width="100%" />
+  <img src="/assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
 </div><br>
+
+En resumen, Carlo Rebagliati, gerente de hotel, adoptó una perspectiva analítica al evaluar todos los productos presentados.
+
+Comenzando por la Landing Page, sugirió incluir enlaces a fuentes confiables que respalden los datos estadísticos mostrados. Además, recomendó enriquecer el contenido de los componentes y mejorar significativamente el diseño visual. Según su opinión, este aspecto resulta crucial, ya que la interfaz actual no le generó interés por continuar navegando ni por acceder a la aplicación web.
+
+Respecto a la aplicación web, destacó una mejora notable en el diseño. No obstante, propuso agregar mayor nivel de detalle en la vista de los hoteles, incluyendo información sobre los servicios ofrecidos, tipos de planes disponibles (familiares, luna de miel, individuales, etc.), y especificaciones como si el alojamiento incluye desayuno. En cuanto a la navegación, comentó que le pareció intuitiva y funcional.
+
+Finalmente, Carlo subrayó la importancia de que tanto la aplicación web como la Landing Page cuenten con soporte multilingüe, específicamente en inglés y español, con el fin de facilitar la comprensión del contenido para un público más amplio.
 
 <br><br>
 **Entrevista 02 (Gerentes)**
@@ -8182,9 +8211,6 @@ El color que emite la luz LED no sigue la línea visual ni la paleta de colores 
 **Recomendación:** 
 Alinear el color predeterminado de la luz LED con la identidad visual de Sweet Manager, utilizando colores fríos o tonos de azul para mantener una estética coherente y reconocible.
 
-
-
-
 ## 6.4. Video About-the-Product.
 En esta sección el equipo redacta una introducción y resumen del contenido incluido
 en el Video About-the-Product, el cual tiene como público objetivo los visitantes al
@@ -8226,29 +8252,31 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 # Video About-the-Team
 
 # Bibliografía
-- Gothelf, J., & Seiden, J. (2021). Lean UX, 3rd Edition. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
+- Gothelf, J., & Seiden, J. (2021). Lean UX (3rd ed.). O'Reilly Media. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
 
-- Progressa Lean. (2014). 5W+2H Técnica de análisis de problemas - Progressa Lean. Progressa Lean. https://www.progressalean.com/
-5w2h-tecnica-de-analisis-de-problemas/
+- Gothelf, J. (2024). LeanUX Sampler. Scribd. https://es.scribd.com/document/655516553/Leanux-Sampler
 
-- UX Planet. (2017). Information Architecture. Basics for Designers. - UX Planet. Medium; UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
+- Progressa Lean. (2014). 5W+2H: Técnica de análisis de problemas. https://www.progressalean.com/5w2h-tecnica-de-analisis-de-problemas/
 
-- Gothelf, J. (2024). Leanux Sampler. https://es.scribd.com/document/655516553/Leanux-Sampler
+- UX Planet. (2017). Information architecture: Basics for designers. Medium – UX Planet. https://uxplanet.org/information-architecture-basics-for-designers-b5d43df62e20
 
-- ¿Qué es la gestión hotelera y cuál es su importancia en el sector hotelero? (2021, febrero 10). Ostelea.com.
-https://www.ostelea.com/actualidad/blog-turismo/direccion-hotelera/que-es-la-gestion-hotelera-y-cual-es-su-importancia-en-el-sector-hotelero
+- Ostelea. (2021, febrero 10). ¿Qué es la gestión hotelera y cuál es su importancia en el sector hotelero? https://www.ostelea.com/actualidad/blog-turismo/direccion-hotelera/que-es-la-gestion-hotelera-y-cual-es-su-importancia-en-el-sector-hotelero
 
-- Buenas prácticas para el desarrollo de grandes proyectos con Vue.js. (s/f). Solucionex. Recuperado el 29 de abril de 2024.
-https://www.solucionex.com/blog/buenas-practicas-para-el-desarrollo-de-grandes-proyectos-con-vuejs
+- Solucionex. (2024). Buenas prácticas para el desarrollo de grandes proyectos con Vue.js. https://www.solucionex.com/blog/buenas-practicas-para-el-desarrollo-de-grandes-proyectos-con-vuejs
 
-- Eseme, S. (2021, agosto 12). 10 cosas que debes saber sobre Vue.js Frontend Framework. Kinsta®; Kinsta.
-https://kinsta.com/es/blog/vue-js/
+- Eseme, S. (2021, agosto 12). 10 cosas que debes saber sobre Vue.js frontend framework. Kinsta. https://kinsta.com/es/blog/vue-js/
 
-- de Javier, V. M. C. (s/f). DDD y arquitectura Onion, todo lo que necesitas saber. Paradigmadigital.com. Recuperado el 29 de abril de 2024 de
-https://www.paradigmadigital.com/techbiz/domain-driven-design-y-arquitectura-onion/
+- de Javier, V. M. C. (2024). DDD y arquitectura Onion: Todo lo que necesitas saber. Paradigma Digital. https://www.paradigmadigital.com/techbiz/domain-driven-design-y-arquitectura-onion/
 
-- Arquitectura DDD(Domain Driven Design). (2021, junio 21). Sergio Tapia.
-https://sergiotapia.net/arquitectura-ddddomain-driven-design/
+- Tapia, S. (2021, junio 21). Arquitectura DDD (Domain Driven Design). https://sergiotapia.net/arquitectura-ddddomain-driven-design/
+
+- Cooper, A., Reimann, R., Cronin, D., Noessel, C., Csizmadi, J., & LeMoine, D. (2014). About face: The essentials of interaction design (4th ed.). Wiley.
+
+- Nielsen, J. (1995). 10 usability heuristics for user interface design. Nielsen Norman Group. https://www.nngroup.com/articles/ten-usability-heuristics/
+
+- Norman, D. A. (2013). The design of everyday things (Revised & expanded ed.). Basic Books.
+
+- International Organization for Standardization. (2018). ISO 9241-210:2018 Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems. https://www.iso.org/standard/77520.html
 
 # Anexos
 
@@ -8264,4 +8292,4 @@ https://sergiotapia.net/arquitectura-ddddomain-driven-design/
 ## Kanban Board
 | Contenido | URL del Trello |
 |--------------|--------------|
-| Kanban Board       | Link del Vídeo: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board       | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
