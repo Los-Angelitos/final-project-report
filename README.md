@@ -7962,37 +7962,75 @@ En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, 
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
-</div><br><br>
+</div><br>
 Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+  </div><br>
 
+  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
+</div><br>
   Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+</div><br>
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
+</div><br>
   Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
+</div><br>
+
   Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
+</div><br>
+
   Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
+</div><br>
+
   Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="60%" />
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
+</div><br>
+Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
@@ -8236,8 +8274,11 @@ Duración de la entrevista: 36:50 - 46:45 <br>
 Personalidad: Enfocado, orientado al servicio al cliente <br>
 
 <div style="text-align: center;">
-  <img src="" alt="Fabricio Chavez Interview" width="80%" />
+  <img src="./assets/img/validation-interviews/validation-interview-admin2.png" width="90%" />
 </div><br>
+
+Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
+
 Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
 
 
