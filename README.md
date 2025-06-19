@@ -300,9 +300,18 @@ Imagen 8: Gráfico detallado de los commits de cada miembros del equipo al repos
 ![image](https://github.com/user-attachments/assets/8d6ac616-abb2-4190-a02e-6a0eb329a90c)
 
 Imagen 9: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la FOG Api.
+![image](https://github.com/user-attachments/assets/7af61d99-9dc5-4ae6-96ed-77ceab8caefa)
 
 
 Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la Edge Api.
+![image](https://github.com/user-attachments/assets/b50fefcb-2843-4b2b-b647-9f5dd657ff6d)
+
+Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositorios de las embedded application. 
+![image](https://github.com/user-attachments/assets/de14afa2-f08c-4fc9-bc33-f3bc658e2644)
+![image](https://github.com/user-attachments/assets/5f550cf0-9d14-4ad0-84e4-b3a7918fdd62)
+![image](https://github.com/user-attachments/assets/e1951ac9-2a6e-4424-ac2d-e8c106393f42)
+
+
 
 
 
@@ -4371,7 +4380,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 |---------------------------|------------------------------|-------------------|
 | `TokenSettings.cs`    | `None`         | Entidad que contiene los campos de configuración de un token (aud, iss, exp, secret key)  |
 | `TokenService.cs`    | `ITokenService`         | Implementa las funciones de generar y validar token.  |
-| `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
+| `TokenHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
@@ -5240,6 +5249,10 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 <div style="text-align: center;">
   <img src="https://i.imgur.com/Sxsbfn0.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
+
+Diagrama de Clases de RFID Reader
+![image](https://github.com/user-attachments/assets/a21def6e-d6f8-47ee-b3d9-c357a95105c9)
+
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
@@ -7489,30 +7502,50 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 
 Mobile Application: 
 
+Gráficos de la sección insights en el repositorio de la Mobile Application. 
+
 ![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
 
 ![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
 
 Web Services: 
 
+Gráficos de la sección insights en el repositorio de los Web Services: 
+
 ![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
 
 FOG API: 
 
+Gráficos de la sección insights en el repositorio de la FOG API. 
+
+![image](https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73)
 
 EDGE API: 
 
+Gráficos de la sección insights en el repositorio de la EDGE API. 
+
+![image](https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b)
+
+EMBEDDED APPLICATIONS: 
+
+Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee)
+
+Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a)
+
+Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82)
 
 
-EMBEDDED APPLICATION: 
 
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
-En esta sección el equipo establece por cada segmento objetivo los elementos a
-incluir en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Aquí
-se especifica también cuáles serán los user flows de las aplicaciones, que formarán
-parte del proceso de validación.
+En esta sección el equipo estableció por cada segmento objetivo los elementos a incluir en la sesión de validación.
 
 #### Preguntas de Validación – Segmento 1: Gerentes (Owners)
 Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App, Mobile App y Landing Page) desde su rol estratégico.
@@ -7636,9 +7669,10 @@ Ocupación: Dueño de un emprendimeinto hotelero <br>
 Duración de la entrevista: 21:24 - 27:00 <br>
 Personalidad: Analítica <br>
 
-![image]()
+![image](https://github.com/user-attachments/assets/3a89ce4f-f357-4cfc-ab22-7dd36f07e12e)
 
-<br><br>
+
+<br>Sergio indicó que la información presentada en la landing page fue en su mayoría clara y suficiente para comprender los beneficios del sistema. Sin embargo, mencionó que habría sido útil contar con ejemplos más específicos de casos de uso así como información adicional sobre los desarrolladores y miembros del equipo. Respecto al uso de la aplicación móvil, Sergio señaló que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Y respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
 
 **Entrevista 03 (Gerentes)**
 <br>
@@ -7765,8 +7799,12 @@ Duración de la entrevista: 59:57 - 01: 08: 24  <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
-![Aquí imagen 3 de entrevistas de huespedes]()
+![image](https://github.com/user-attachments/assets/2113b29b-dd05-44c2-a3fb-84d00fed3192)
 
+
+<br>Enzo señaló que el registro y la creación de perfil desde el celular fue un proceso sencillo y rápido. Destacó que la experiencia de reservar una habitación resultó clara, sin complicaciones, y con pasos intuitivos que le transmitieron seguridad durante la operación. Desde el navegador, pudo encontrar fácilmente el hotel que buscaba gracias al motor de búsqueda optimizado y los filtros disponibles. Comparó ambas versiones (web y móvil), y mencionó que si bien ambas fueron efectivas, la aplicación web le pareció ligeramente más fluida. 
+
+Por último, confirmó que la embedded application  ajustó automáticamente la temperatura según las preferencias guardadas en su perfil de usuario, lo cual valoró como un detalle tecnológico que mejora la experiencia de confort.<br>
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ### SITE o APP A EVALUAR:
@@ -8292,4 +8330,5 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 ## Kanban Board
 | Contenido | URL del Trello |
 |--------------|--------------|
-| Kanban Board       | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board  Sprint 1     | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board  Sprint 2     | Link: https://trello.com/invite/b/6853ace69bba62aaa400a389/ATTIfdf1f4e297cfe436340a808a9f24974fB6BA4FC0/sprint-backlog-2-sweet-manager|  
