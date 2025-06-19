@@ -8235,6 +8235,13 @@ Ocupación: Administrador del hotel Los Lirios <br>
 Duración de la entrevista: 36:50 - 46:45 <br>
 Personalidad: Enfocado, orientado al servicio al cliente <br>
 
+<div style="text-align: center;">
+  <img src="" alt="Fabricio Chavez Interview" width="80%" />
+</div><br>
+Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
+
+
+
 ![Entrevista° 2 - Administradores]()
 
 <br><br>
