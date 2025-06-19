@@ -8338,8 +8338,17 @@ Duración de la entrevista: : 13:30 - 18:17 <br>
 Personalidad: Alegre <br>
 
 <div style="text-align: center;">
-  <img src="" alt="Sergio Renard Interview" width="80%" />
+  <img src="https://i.imgur.com/DIOnixo.png" alt="Sergio Renard Interview" width="80%" />
 </div><br>
+
+<br>
+Sergio indicó que la landing page cumplió eficazmente su propósito informativo, al explicar de forma clara y concreta cómo la plataforma puede integrarse en el flujo de trabajo diario. Valoró especialmente que se mostraran ejemplos de cómo se automatizan tareas como el registro de reservas, la actualización del estado de habitaciones y el seguimiento de disponibilidad, lo cual le permitió visualizar cómo aplicaría estas funciones en su rutina laboral.
+
+En cuanto a los problemas que la plataforma promete resolver, el usuario afirmó sentirse plenamente identificado. Mencionó que en su entorno habitual suele enfrentarse a errores por desorganización en las reservas, pérdida de tiempo al revisar manualmente el estado de cada habitación y dificultades para mantener la información del hotel actualizada. Estos aspectos coincidieron con los puntos expuestos, lo que reforzó su percepción de que la solución está bien alineada con sus necesidades reales.
+
+Respecto a la aplicación web, el usuario explicó que pudo acceder sin complicaciones al historial de reservas, donde revisó entradas anteriores con filtros funcionales y tiempos de carga adecuados. También comprobó el estado de cada habitación (disponible, ocupada, en limpieza, etc.) directamente desde el panel, con visuales intuitivos y colores bien diferenciados, lo que facilitó una lectura rápida de la situación actual del hotel.
+<br>
+
 
 **Entrevista 01 (Huéspedes)**
 <br>
