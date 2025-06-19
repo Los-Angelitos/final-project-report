@@ -6432,7 +6432,7 @@ Para el monitoreo del ambiente, hemos contemplado una luz LED que se encenderá 
 
 </br>
 <div style="text-align: center;">
-  <img src="./assets/img/general-style-guidelines/red-led.jpg" alt="IoT Device" width="70%" />
+  <img src="./assets/img/general-style-guidelines/red-led.jpg" alt="IoT Device" width="50%" />
   <p style="font-style: italic">Ejemplo de luz LED de alerta</p>
 </div>
 
