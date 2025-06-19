@@ -4380,7 +4380,7 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 |---------------------------|------------------------------|-------------------|
 | `TokenSettings.cs`    | `None`         | Entidad que contiene los campos de configuración de un token (aud, iss, exp, secret key)  |
 | `TokenService.cs`    | `ITokenService`         | Implementa las funciones de generar y validar token.  |
-| `TokenValidationHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
+| `TokenHandler.cs`    | `None`         | Se encarga de validar el token del `Authorization-Header` y aprobarlo.  |
 
 #### 4.2.1.5. Bounded Context Software Architecture Component Level Diagrams
 En el diagrama de componentes en el contexto IAM se puede observar la interacción del usuario al autenticarse en nuestro sistema.<br>
@@ -7545,10 +7545,7 @@ Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED 
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
-En esta sección el equipo establece por cada segmento objetivo los elementos a
-incluir en la sesión de validación, incluyendo el Landing Page y las aplicaciones. Aquí
-se especifica también cuáles serán los user flows de las aplicaciones, que formarán
-parte del proceso de validación.
+En esta sección el equipo estableció por cada segmento objetivo los elementos a incluir en la sesión de validación.
 
 #### Preguntas de Validación – Segmento 1: Gerentes (Owners)
 Estas preguntas buscan validar la utilidad, usabilidad y valor percibido de las interfaces (Web App, Mobile App y Landing Page) desde su rol estratégico.
@@ -7672,9 +7669,10 @@ Ocupación: Dueño de un emprendimeinto hotelero <br>
 Duración de la entrevista: 21:24 - 27:00 <br>
 Personalidad: Analítica <br>
 
-![image]()
+![image](https://github.com/user-attachments/assets/3a89ce4f-f357-4cfc-ab22-7dd36f07e12e)
 
-<br><br>
+
+<br>Sergio indicó que la información presentada en la landing page fue en su mayoría clara y suficiente para comprender los beneficios del sistema. Sin embargo, mencionó que habría sido útil contar con ejemplos más específicos de casos de uso así como información adicional sobre los desarrolladores y miembros del equipo. Respecto al uso de la aplicación móvil, Sergio señaló que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Y respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
 
 **Entrevista 03 (Gerentes)**
 <br>
@@ -7801,8 +7799,12 @@ Duración de la entrevista: 59:57 - 01: 08: 24  <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
-![Aquí imagen 3 de entrevistas de huespedes]()
+![image](https://github.com/user-attachments/assets/2113b29b-dd05-44c2-a3fb-84d00fed3192)
 
+
+<br>Enzo señaló que el registro y la creación de perfil desde el celular fue un proceso sencillo y rápido. Destacó que la experiencia de reservar una habitación resultó clara, sin complicaciones, y con pasos intuitivos que le transmitieron seguridad durante la operación. Desde el navegador, pudo encontrar fácilmente el hotel que buscaba gracias al motor de búsqueda optimizado y los filtros disponibles. Comparó ambas versiones (web y móvil), y mencionó que si bien ambas fueron efectivas, la aplicación web le pareció ligeramente más fluida. 
+
+Por último, confirmó que la embedded application  ajustó automáticamente la temperatura según las preferencias guardadas en su perfil de usuario, lo cual valoró como un detalle tecnológico que mejora la experiencia de confort.<br>
 
 ### 6.3.3. Evaluaciones según heurísticas.
 ### SITE o APP A EVALUAR:
