@@ -7941,31 +7941,229 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
-A continuación, se mostrará la documentación Swagger del Web Services: 
+## Operations and Monitoring Bounded Context
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
-</div>
-<br>
+```gherkin
+Feature: Gestión de reservas de huéspedes
 
-Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
+Scenario: Crear una nueva reserva
+ Given El administrador accede al módulo de reservas
+ When Completa el formulario de nueva reserva con los datos del huésped y habitación
+ Then La reserva debe guardarse correctamente y mostrarse en la lista de reservas activas
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+Scenario: Cancelar una reserva activa
+ Given El huésped accede a su lista de reservas
+ When Selecciona la opción para cancelar una reserva vigente
+ Then La reserva debe marcarse como cancelada y no debe generar penalización si está dentro del plazo
 
-En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
+Scenario: Editar fechas de una reserva
+ Given El administrador selecciona una reserva existente
+ When Modifica la fecha de ingreso y/o salida
+ Then La reserva debe actualizarse con las nuevas fechas sin perder la información anterior
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
-A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
+Scenario: Consultar disponibilidad de habitaciones
+ Given El usuario accede al sistema de reservas
+ When Selecciona fechas de check-in y check-out
+ Then El sistema debe mostrar solo las habitaciones disponibles para ese período
 
-La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
+Scenario: Visualizar estado de dispositivos IoT
+ Given El propietario del hotel accede al panel de control
+ When Consulta el estado de los dispositivos IoT
+ Then Debe visualizar el estado actual de temperatura, sensores y dispositivos de acceso
+```
 
-En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+## IAM (Identity and Access Management) Bounded Context
 
-Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
+```gherkin
+Feature: Gestión de usuarios y roles
+
+Scenario: Crear cuenta de administrador
+ Given El gerente accede al formulario de registro
+ When Ingresa los datos necesarios para crear una cuenta de administrador
+ Then El sistema debe registrar la cuenta y asignarle permisos administrativos
+
+Scenario: Invitar a un nuevo administrador
+ Given El gerente accede a la sección de administradores
+ When Envía una invitación por correo a un nuevo miembro
+ Then El nuevo administrador debe recibir un enlace de registro y unirse a la organización
+
+Scenario: Desvincular administrador de la organización
+ Given El propietario del hotel visualiza la lista de administradores
+ When Selecciona uno para desvincular
+ Then El administrador debe ser removido de la organización y perder acceso
+
+Scenario: Crear perfil de huésped
+ Given Un nuevo usuario accede a la aplicación móvil
+ When Completa el formulario de registro con sus datos y preferencias
+ Then El sistema debe crear un perfil global con sus preferencias guardadas
+```
+
+## Communication Bounded Context
+
+```gherkin
+Feature: Gestión de notificaciones y alertas
+
+Scenario: Recibir notificación por sensor de humo
+ Given Un sensor de humo detecta actividad anormal
+ When Se activa la alerta en el sistema
+ Then El propietario del hotel debe recibir una notificación inmediata
+
+Scenario: Alerta sonora por detección de humo
+ Given El sensor de humo detecta presencia de humo
+ When Se activa el protocolo de emergencia
+ Then Debe sonar una alerta audible en la habitación afectada
+```
+
+
+## Organizational Management Bounded Context
+
+```gherkin
+
+Feature: Gestión de organización y suscripcione
+
+Scenario: Registrar nueva organización
+ Given El propietario del hotel accede al formulario de registro
+ When Completa los datos de la organización (nombre, dirección, información fiscal)
+ Then La organización debe registrarse correctamente en el sistema
+
+Scenario: Cambiar plan de suscripción
+ Given El propietario accede a la configuración de suscripción
+ When Selecciona un nuevo plan que se ajuste a sus necesidades
+ Then El sistema debe actualizar la suscripción y aplicar las nuevas características
+
+Scenario: Filtrar habitaciones por estado
+ Given El propietario accede al panel de habitaciones
+ When Aplica filtros por estado (activo/inactivo)
+ Then Debe mostrarse solo las habitaciones que coincidan con el filtro seleccionado
+
+```
+
+
+## Inventory Bounded Context
+
+```gherkin
+Feature: Gestión de inventario y recursos
+
+Scenario: Revisar stock de recursos del hotel
+ Given El propietario del hotel accede al módulo de inventario
+ When Consulta el stock actual de recursos
+ Then Debe visualizar las cantidades disponibles y el estado de cada recurso
+
+Scenario: Registrar nuevo proveedor
+ Given El administrador accede al módulo de proveedores
+ When Ingresa la información del proveedor (nombre, contacto, productos)
+ Then El proveedor debe guardarse en el sistema para futuras referencias
+
+Scenario: Solicitar dispositivos IoT
+ Given El propietario identifica la necesidad de más dispositivos
+ When Realiza una solicitud a través del sistema
+ Then La solicitud debe registrarse y enviarse al departamento correspondiente
+```
+
+## Commerce Bounded Context
+
+```gherkin
+Feature: Gestión de reservas y transacciones comerciales
+
+Scenario: Reservar habitación personalizada
+ Given El huésped accede a la lista de habitaciones disponibles
+ When Selecciona una habitación y aplica personalizaciones según sus preferencias
+ Then La reserva debe procesarse con las especificaciones personalizadas
+
+Scenario: Gestionar reservas activas
+ Given El huésped tiene reservas vigentes
+ When Accede a su panel de reservas activas
+ Then Debe poder visualizar, modificar o cancelar sus reservas según las políticas del hotel
+
+Scenario: Filtrar hoteles por preferencias
+ Given El huésped busca alojamiento
+ When Aplica filtros según sus preferencias (ubicación, precio, servicios)
+ Then El sistema debe mostrar solo los hoteles que cumplan con los criterios seleccionados
+
+Scenario: Consultar historial de reservas
+ Given El huésped accede a su perfil
+ When Solicita ver su historial de reservas anteriores
+ Then Debe visualizar todas sus reservas pasadas con detalles completos
+```
 
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
-A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
+  A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
+
+En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+
+* Link a la aplicación web de SweetManager: https://sweet-manager-web-application.vercel.app/home
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
+</div><br>
+Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
+  </div><br>
+
+  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
+</div><br>
+  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
+</div><br>
+  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
+</div><br>
+
+  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
+</div><br>
+
+  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
+</div><br>
+
+  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
+
+* Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
+</div><br>
+Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
 
 **Web Application**
 
@@ -8156,7 +8354,7 @@ A continuación, se registraron todas las entrevistas de validación para nuestr
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: 
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 Nombres: Carlo
 
@@ -8170,7 +8368,7 @@ Ocupación: Gerente Hotelero
 
 Lugar donde vive: Pueblo Libre
 
-Duración de la entrevista: 00:00 - 12:20 
+Duración de la entrevista: 00:00 - 21:40 
 
 Personalidad: Análitica
 
@@ -8190,13 +8388,13 @@ Finalmente, Carlo subrayó la importancia de que tanto la aplicación web como l
 **Entrevista 02 (Gerentes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Pueblo Libre-Lima <br>
 Ocupación: Dueño de un emprendimeinto hotelero <br>
-Duración de la entrevista: 21:24 - 27:00 <br>
+Duración de la entrevista: 21:40 - 29:30 <br>
 Personalidad: Analítica <br>
 
 ![image](https://github.com/user-attachments/assets/3a89ce4f-f357-4cfc-ab22-7dd36f07e12e)
@@ -8207,14 +8405,14 @@ Personalidad: Analítica <br>
 **Entrevista 03 (Gerentes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Luis Fernández <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Surquillo - Lima <br>
 Ocupación: Dueño y manager de un hotel <br>
-Duración de la entrevista: 00:00 - 00:00 <br>
+Duración de la entrevista: 29:30 - 51:20 <br>
 Personalidad: Extrovertido <br>
 <br>
 
@@ -8226,15 +8424,14 @@ Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las 
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: https://upcedupe-my.sharepoint.com/personal/u202212383_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202212383%5Fupc%5Fedu%5Fpe%2FDocuments%2FV%C3%ADdeo%20sin%20t%C3%ADtulo%20%E2%80%90%20Hecho%20con%20Clipchamp%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee546212a%2D1f31%2D477f%2D93b9%2Dbaab9048d8ab
-
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 Nombres: Gianella
 Apellidos: Francia
 Edad: 25
 Sexo: Femenino
 Ocupación: Administradora de RRHH en la gestión de hoteles
 Lugar donde vive: Santa Anita, Perú
-Duración de la entrevista: 27:00.
+Duración de la entrevista: 51:20 - 1:13:30.
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
 <img src="./assets/img/validation-gianella.PNG" alt="Administradora de hotel" width="90%" />
@@ -8252,15 +8449,25 @@ Como también es usuaria de la aplicación móvil, Gianella destacó la importan
 **Entrevista 02 (Administradores)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Fabricio Gabriel Chavez Morales <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Magdalena del Mar-Lima <br>
 Ocupación: Administrador del hotel Los Lirios <br>
-Duración de la entrevista: 36:50 - 46:45 <br>
+Duración de la entrevista: 18:17 - 41:34 <br>
 Personalidad: Enfocado, orientado al servicio al cliente <br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/validation-interviews/validation-interview-admin2.png" width="90%" />
+</div><br>
+
+Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
+
+Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
+
+
 
 ![Entrevista° 2 - Administradores]()
 
@@ -8269,24 +8476,33 @@ Personalidad: Enfocado, orientado al servicio al cliente <br>
 **Entrevista 03 (Administradores)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Sergio Renard <br>
 Edad: 21 <br>
 Sexo: Masculino <br>
 Lugar donde vive: La Plata - Argentina <br>
 Ocupación: Administrador de hotel <br>
-Duración de la entrevista: : 46:45 - 51:04 <br>
+Duración de la entrevista: : 13:30 - 18:17 <br>
 Personalidad: Alegre <br>
 
 <div style="text-align: center;">
-  <img src="" alt="Sergio Renard Interview" width="80%" />
+  <img src="https://i.imgur.com/DIOnixo.png" alt="Sergio Renard Interview" width="80%" />
 </div><br>
+
+<br>
+Sergio indicó que la landing page cumplió eficazmente su propósito informativo, al explicar de forma clara y concreta cómo la plataforma puede integrarse en el flujo de trabajo diario. Valoró especialmente que se mostraran ejemplos de cómo se automatizan tareas como el registro de reservas, la actualización del estado de habitaciones y el seguimiento de disponibilidad, lo cual le permitió visualizar cómo aplicaría estas funciones en su rutina laboral.
+
+En cuanto a los problemas que la plataforma promete resolver, el usuario afirmó sentirse plenamente identificado. Mencionó que en su entorno habitual suele enfrentarse a errores por desorganización en las reservas, pérdida de tiempo al revisar manualmente el estado de cada habitación y dificultades para mantener la información del hotel actualizada. Estos aspectos coincidieron con los puntos expuestos, lo que reforzó su percepción de que la solución está bien alineada con sus necesidades reales.
+
+Respecto a la aplicación web, el usuario explicó que pudo acceder sin complicaciones al historial de reservas, donde revisó entradas anteriores con filtros funcionales y tiempos de carga adecuados. También comprobó el estado de cada habitación (disponible, ocupada, en limpieza, etc.) directamente desde el panel, con visuales intuitivos y colores bien diferenciados, lo que facilitó una lectura rápida de la situación actual del hotel.
+<br>
+
 
 **Entrevista 01 (Huéspedes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
@@ -8303,14 +8519,14 @@ Personalidad: Analítica <br>
 
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Jesús María - Lima <br>
 Ocupación: Ingeniero Civil <br>
-Duración de la entrevista: 00:00 - 00:00 <br> 
+Duración de la entrevista: 41:34 - 1:08:20 <br> 
 Personalidad: Tranquilo <br>
 <br>
 
@@ -8323,14 +8539,14 @@ Finalmente, confirmó que la Embedded Application mostró adecuadamente la tempe
 **Entrevista 03 (Huéspedes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Los Olivos <br>
 Ocupación: Ingeniero Industrial <br>
-Duración de la entrevista: 59:57 - 01: 08: 24  <br>
+Duración de la entrevista: 1:08:20 - 01: 18: 54  <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
