@@ -4852,6 +4852,11 @@ Se muestra el diagrama de componentes de Web Application, mostrando los componen
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
 ![diagrama de clase](https://github.com/user-attachments/assets/6b076738-98c0-440c-8975-26229005f50a)
 
+##### 4.2.2.6.2. Bounded Context Domain Layer Class Diagrams Embedded Application
+<img src="./assets/img/organizational-management-bounded-context/diagram-class-thermostat.png" alt="Diagrama de clases del termostato" width="90%">
+
+En este diagrama de clases del Termostato, se puede observar la relación entre las entidades y los comandos asociados al Termostato. Siguiendo Modest IoT framework, el Termostato es un dispositivo IoT que se encarga de regular la temperatura de una habitación dada una preferencia del huésped. El Termostato puede ser encendido o apagado, y puede recibir actualizaciones de temperatura.
+
 ##### 4.2.2.6.2. Bounded Context Database Design Diagram
 ![image](https://github.com/user-attachments/assets/8c242d51-1399-4d88-b830-2c8ec1e21b18)
 
