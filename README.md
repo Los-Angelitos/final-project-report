@@ -6432,14 +6432,22 @@ El color principal de SweetManager es el azul #0066CC, que se utiliza en la mayo
 
 <br>
 <h4>Dispositivos Iot:</h4>
-Los mensajes de error y advertencia se mostrarán por consola y serán fáciles de entender, concisos y claros, permitiendo a los usuarios identificar y resolver problemas de manera eficiente. Asimismo para mostrar a los huéspedes el cambio de temperatura en el hotel, se utilizarán pantallas LCD reflectivas segmentadas que mostrarán la temperatura en grados Celsius. Estas pantallas son fáciles de leer y proporcionan información clara y precisa a los usuarios.
+
+Los mensajes de error y advertencia se mostrarán por consola y serán fáciles de entender, concisos y claros, esto será principalmente orientado a los desarrolladores, permitiendoles identificar y resolver problemas de manera eficiente. Asimismo, para mostrar a los huéspedes el cambio de temperatura en el hotel, se utilizarán pantallas LCD reflectivas segmentadas que mostrarán la temperatura en grados Celsius. Estas pantallas son fáciles de leer y proporcionan información clara y precisa a los usuarios. Se seguirán las convenciones generales de LCD Display, por lo cual, en dicha pantalla, se mostrarán los mensajes o las palabras con letras mayúsculas, para que sea más sencillo de leer; se usará la primera línea para mostrar información principal, como la temperatura actual, y la segunda línea del LCD para información complementaria, como la unidad de medida (Celsius, en nuestro caso). De igual forma, se procurará que los colores del fondo y de los caracteres del display tengan un contraste correcto para que puedan ser fácilmente legibles por cualquier usuario.
 
 </br>
 <div style="text-align: center;">
   <img src="./assets/img/general-style-guidelines/reflective-lcd.png" alt="IoT Device" width="70%" />
-  <p style="font-style: italic">Ejemplo de pantalla LCD reflectiva segmentada</p>
+  <p style="font-style: italic">Ejemplo de pantalla LCD reflectiva segmentada con Style Guidelines generales</p>
 </div>
 
+Para el monitoreo del ambiente, hemos contemplado una luz LED que se encenderá si es que se detecta humo dentro de la habitación, lo cual puede suponer un potencial incendio. Esta luz será roja y estará colocada en un lugar visible de la habitación, de modo de que cualquier persona que esté dentro va a ser correctamente alertada y seguirá los procedimientos de seguridad correspondientes.
+
+</br>
+<div style="text-align: center;">
+  <img src="./assets/img/general-style-guidelines/red-led.jpg" alt="IoT Device" width="50%" />
+  <p style="font-style: italic">Ejemplo de luz LED de alerta</p>
+</div>
 
 <br><br>
 
