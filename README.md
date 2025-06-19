@@ -6858,14 +6858,14 @@ En el siguiente flujo se puede observar el comportamiento del huésped, al encon
 ## 5.5. Applications Prototyping.
 Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a la aplicación para que pueda servir de guía en la programación de este. De la misma manera, funciona para reconocer los paths que pueden llegar a mantener los diferentes usuarios basado en sus diferentes roles.
 
-Link directo hacia el prototyping: <span><a href="https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1">Application Prototyping</a></span>
+Link directo hacia el prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1
 
-Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: <span><a href="https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/EcPZtVvb6ENHsdfHpvnekFIB0MCXzIXyG59ltCO2sDa5TA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fzertn">Video demostrativo</a></span>
+Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/EcPZtVvb6ENHsdfHpvnekFIB0MCXzIXyG59ltCO2sDa5TA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fzertn
+
 
 <img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
 
-Link directo hacia el mobile prototyping: <span><a href="https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=3846-1527&t=yxfxPIeSPfCG5IaX-0&scaling=min-zoom&content-scaling=fixed&page-id=110%3A1227&starting-point-node-id=3846%3A1527
-"> Mobile Application Prototyping</a></span>
+Link directo hacia el mobile prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=3846-1527&t=yxfxPIeSPfCG5IaX-0&scaling=min-zoom&content-scaling=fixed&page-id=110%3A1227&starting-point-node-id=3846%3A1527
 
 <div style="text-align: center;">
   <img src="https://i.imgur.com/YQ0OANa.png" alt="Mobile Prototyping" width="80%" />
@@ -7397,6 +7397,7 @@ Owners can visualize and control at least 95% of their hotel operations from the
 Device Users interact with devices during more than 80% of their stays, without reading or authentication errors,
 Device Makers validate and control devices with a 98% success rate in integration tests,
 and Mobile or Web Developers have an error rate lower than 2% in documented API calls.|
+
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
@@ -7446,22 +7447,481 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | To-do |
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
 
-#### 6.2.2.4.Development Evidence for Sprint Review.
+#### 6.2.2.4. Development Evidence for Sprint Review.
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13">sweetmanager-web-applications</td>
+      <td rowspan="13">develop</td>
+      <td>c1a2b3d</td>
+      <td>Merge pull request #60 from Los-Angelitos/refactor/latest-changes-final</td>
+      <td></td>
+      <td>2025-06-18T19:00:00Z</td>
+    </tr>
+    <tr>
+      <td>d2b3c4e</td>
+      <td>update: connecting admin with owner organization hotel</td>
+      <td></td>
+      <td>2025-06-18T18:55:00Z</td>
+    </tr>
+    <tr>
+      <td>e3c4d5f</td>
+      <td>Merge pull request #59 from Los-Angelitos/refactor/latest-changes-final</td>
+      <td></td>
+      <td>2025-06-18T18:00:00Z</td>
+    </tr>
+    <tr>
+      <td>f4d5e6a</td>
+      <td>fix: double sending request</td>
+      <td></td>
+      <td>2025-06-18T17:55:00Z</td>
+    </tr>
+    <tr>
+      <td>a5e6f7b</td>
+      <td>Merge pull request #58 from Los-Angelitos/refactor/latest-changes-final</td>
+      <td></td>
+      <td>2025-06-18T17:45:00Z</td>
+    </tr>
+    <tr>
+      <td>b6f7g8c</td>
+      <td>update: minor changes</td>
+      <td></td>
+      <td>2025-06-18T17:40:00Z</td>
+    </tr>
+    <tr>
+      <td>c7g8h9d</td>
+      <td>add: iot configuration connected with web services</td>
+      <td></td>
+      <td>2025-06-18T17:30:00Z</td>
+    </tr>
+    <tr>
+      <td>d8h9i0e</td>
+      <td>update: fetching hotel data</td>
+      <td></td>
+      <td>2025-06-18T17:00:00Z</td>
+    </tr>
+    <tr>
+      <td>e9i0j1f</td>
+      <td>refactor: major changes</td>
+      <td></td>
+      <td>2025-06-18T16:45:00Z</td>
+    </tr>
+    <tr>
+      <td>f0j1k2g</td>
+      <td>Merge pull request #57 from Los-Angelitos/refactor/minor-changes-latest</td>
+      <td></td>
+      <td>2025-06-18T15:00:00Z</td>
+    </tr>
+    <tr>
+      <td>g1k2l3h</td>
+      <td>Merge pull request #56 from Los-Angelitos/refactor/minor-changes-pelusita</td>
+      <td></td>
+      <td>2025-06-18T13:00:00Z</td>
+    </tr>
+    <tr>
+      <td>h2l3m4i</td>
+      <td>fix: admin menu icons updated</td>
+      <td></td>
+      <td>2025-06-18T08:00:00Z</td>
+    </tr>
+    <tr>
+      <td>i3m4n5j</td>
+      <td>update: owner views fixed</td>
+      <td></td>
+      <td>2025-06-18T07:00:00Z</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="18">sweetmanager-web-services</td>
+      <td rowspan="18">develop</td>
+      <td>f0ab1c2</td>
+      <td>Merge pull request #35 from Los-Angelitos/feat/rfid</td>
+      <td></td>
+      <td>2025-06-18T07:00:00Z</td>
+    </tr>
+    <tr>
+      <td>a1bc2d3</td>
+      <td>feat(rfid): added RFID get by hotel id feature.</td>
+      <td></td>
+      <td>2025-06-17T23:00:00Z</td>
+    </tr>
+    <tr>
+      <td>b2cd3e4</td>
+      <td>Merge pull request #34 from Los-Angelitos/feat/rfid</td>
+      <td></td>
+      <td>2025-06-17T22:00:00Z</td>
+    </tr>
+    <tr>
+      <td>c3de4f5</td>
+      <td>feat(rfid): configured rfid on db context.</td>
+      <td></td>
+      <td>2025-06-17T21:45:00Z</td>
+    </tr>
+    <tr>
+      <td>d4ef5g6</td>
+      <td>feat(rfid): configured dependency injection for RFID Card.</td>
+      <td></td>
+      <td>2025-06-17T21:30:00Z</td>
+    </tr>
+    <tr>
+      <td>e5f6g7h</td>
+      <td>feat(rfid): created RFID controller.</td>
+      <td></td>
+      <td>2025-06-17T21:15:00Z</td>
+    </tr>
+    <tr>
+      <td>f6g7h8i</td>
+      <td>feat(rfid): added RFID transform files.</td>
+      <td></td>
+      <td>2025-06-17T21:00:00Z</td>
+    </tr>
+    <tr>
+      <td>g7h8i9j</td>
+      <td>feat(rfid): added RFID Card repository and resource files.</td>
+      <td></td>
+      <td>2025-06-17T20:45:00Z</td>
+    </tr>
+    <tr>
+      <td>h8i9j0k</td>
+      <td>feat(rfid): added RFID Card command and query services.</td>
+      <td></td>
+      <td>2025-06-17T20:30:00Z</td>
+    </tr>
+    <tr>
+      <td>i9j0k1l</td>
+      <td>feat(rfid): added RFID Card repository, command and query services interfaces.</td>
+      <td></td>
+      <td>2025-06-17T20:15:00Z</td>
+    </tr>
+    <tr>
+      <td>j0k1l2m</td>
+      <td>feat(rfid): added RFID Card entity, commands and queries.</td>
+      <td></td>
+      <td>2025-06-17T20:00:00Z</td>
+    </tr>
+    <tr>
+      <td>k1l2m3n</td>
+      <td>Merge pull request #33 from Los-Angelitos/feat/fog-catalog</td>
+      <td></td>
+      <td>2025-06-16T23:00:00Z</td>
+    </tr>
+    <tr>
+      <td>l2m3n4o</td>
+      <td>feat(fog): added put endpoint.</td>
+      <td></td>
+      <td>2025-06-16T22:45:00Z</td>
+    </tr>
+    <tr>
+      <td>m3n4o5p</td>
+      <td>refactor(fog): removed hotel id from update command.</td>
+      <td></td>
+      <td>2025-06-16T22:30:00Z</td>
+    </tr>
+    <tr>
+      <td>n4o5p6q</td>
+      <td>chore(fog): removed hotel id validation from fog update.</td>
+      <td></td>
+      <td>2025-06-16T22:15:00Z</td>
+    </tr>
+    <tr>
+      <td>o5p6q7r</td>
+      <td>fix(fog): fixed constructor.</td>
+      <td></td>
+      <td>2025-06-16T22:00:00Z</td>
+    </tr>
+    <tr>
+      <td>p6q7r8s</td>
+      <td>chore: updated dependencies injection.</td>
+      <td></td>
+      <td>2025-06-16T21:45:00Z</td>
+    </tr>
+    <tr>
+      <td>q7r8s9t</td>
+      <td>chore: added fog server context.</td>
+      <td></td>
+      <td>2025-06-16T21:30:00Z</td>
+    </tr>
+    <tr>
+      <td>r8s9t0u</td>
+      <td>feat(fog): added controller.</td>
+      <td></td>
+      <td>2025-06-16T21:15:00Z</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="15">sweetmanager-mobile-application</td>
+      <td rowspan="15">develop</td>
+      <td>a1b2c3d</td>
+      <td>Merge pull request #20 from Los-Angelitos/fix/guest</td>
+      <td></td>
+      <td>2025-06-18T07:00:00Z</td>
+    </tr>
+    <tr>
+      <td>b2c3d4e</td>
+      <td>Merge branch 'main' into fix/guest</td>
+      <td></td>
+      <td>2025-06-18T06:45:00Z</td>
+    </tr>
+    <tr>
+      <td>c3d4e5f</td>
+      <td>chore: updated routes.</td>
+      <td></td>
+      <td>2025-06-18T06:30:00Z</td>
+    </tr>
+    <tr>
+      <td>d4e5f6g</td>
+      <td>chore: updated route flow.</td>
+      <td></td>
+      <td>2025-06-18T06:15:00Z</td>
+    </tr>
+    <tr>
+      <td>e5f6g7h</td>
+      <td>chore: cleaned code.</td>
+      <td></td>
+      <td>2025-06-18T06:00:00Z</td>
+    </tr>
+    <tr>
+      <td>f6g7h8i</td>
+      <td>chore: added guest reservation service integration.</td>
+      <td></td>
+      <td>2025-06-18T05:45:00Z</td>
+    </tr>
+    <tr>
+      <td>g7h8i9j</td>
+      <td>feat: added basic template for type rooms booking view.</td>
+      <td></td>
+      <td>2025-06-18T05:30:00Z</td>
+    </tr>
+    <tr>
+      <td>h8i9j0k</td>
+      <td>chore: added services integration for hotel detail.</td>
+      <td></td>
+      <td>2025-06-18T05:15:00Z</td>
+    </tr>
+    <tr>
+      <td>i9j0k1l</td>
+      <td>chore: added new required attribute.</td>
+      <td></td>
+      <td>2025-06-18T05:00:00Z</td>
+    </tr>
+    <tr>
+      <td>j0k1l2m</td>
+      <td>chore: updated main page base layout and design.</td>
+      <td></td>
+      <td>2025-06-18T04:45:00Z</td>
+    </tr>
+    <tr>
+      <td>k1l2m3n</td>
+      <td>Merge pull request #19 from Los-Angelitos/feat/owner-corrections</td>
+      <td></td>
+      <td>2025-06-18T04:30:00Z</td>
+    </tr>
+    <tr>
+      <td>l2m3n4o</td>
+      <td>feat(organizational-management): admin service added</td>
+      <td></td>
+      <td>2025-06-18T04:15:00Z</td>
+    </tr>
+    <tr>
+      <td>m3n4o5p</td>
+      <td>fix(organizational-management): fix added for admin add button and admin info</td>
+      <td></td>
+      <td>2025-06-18T04:00:00Z</td>
+    </tr>
+    <tr>
+      <td>n4o5p6q</td>
+      <td>fix(organizational-management): fix added for admin card display</td>
+      <td></td>
+      <td>2025-06-18T03:45:00Z</td>
+    </tr>
+    <tr>
+      <td>o5p6q7r</td>
+      <td>feat(inventory): fix delete provider in provider service</td>
+      <td></td>
+      <td>2025-06-18T03:30:00Z</td>
+    </tr>
+  </tbody>
+</table>
 
 
-#### 6.2.2.5.Testing Suite Evidence for Sprint Review.
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">sweetmanager-fog-api</td>
+      <td rowspan="10">develop</td>
+      <td>a1b2c3d4</td>
+      <td>Merge pull request #12 from Los-Angelitos/feat/acl-operations-monitoring</td>
+      <td></td>
+      <td>2025-06-16T08:00:00Z</td>
+    </tr>
+    <tr>
+      <td>b2c3d4e5</td>
+      <td>Merge pull request #11 from Los-Angelitos/fix/commerce</td>
+      <td></td>
+      <td>2025-06-16T07:45:00Z</td>
+    </tr>
+    <tr>
+      <td>c3d4e5f6</td>
+      <td>update(monitoring): added acl facade for get devices</td>
+      <td></td>
+      <td>2025-06-16T07:30:00Z</td>
+    </tr>
+    <tr>
+      <td>d4e5f6g7</td>
+      <td>fix(commerce): corrected post and put methods.</td>
+      <td></td>
+      <td>2025-06-16T07:15:00Z</td>
+    </tr>
+    <tr>
+      <td>e5f6g7h8</td>
+      <td>fix(commerce): corrected get methods for commerce.</td>
+      <td></td>
+      <td>2025-06-16T07:00:00Z</td>
+    </tr>
+    <tr>
+      <td>f6g7h8i9</td>
+      <td>fix(commerce): corrected repository methods.</td>
+      <td></td>
+      <td>2025-06-16T06:45:00Z</td>
+    </tr>
+    <tr>
+      <td>g7h8i9j0</td>
+      <td>feat(commerce): configured Swagger for endpoints.</td>
+      <td></td>
+      <td>2025-06-16T06:30:00Z</td>
+    </tr>
+    <tr>
+      <td>h8i9j0k1</td>
+      <td>fix(commerce): configured commerce endpoints in app.py.</td>
+      <td></td>
+      <td>2025-06-15T22:30:00Z</td>
+    </tr>
+    <tr>
+      <td>i9j0k1l2</td>
+      <td>update(monitoring): added device_id and api_key for devices</td>
+      <td></td>
+      <td>2025-06-15T22:00:00Z</td>
+    </tr>
+    <tr>
+      <td>j0k1l2m3</td>
+      <td>fix(commerce): corrected commerce models to use sqlalchemy.</td>
+      <td></td>
+      <td>2025-06-15T21:45:00Z</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">sweetmanager-edge-api</td>
+      <td rowspan="5">develop</td>
+      <td>a1b2c3d4</td>
+      <td>Merge pull request #7 from Los-Angelitos/feat/inventory</td>
+      <td></td>
+      <td>2025-06-17T08:00:00Z</td>
+    </tr>
+    <tr>
+      <td>b2c3d4e5</td>
+      <td>fix: solved merge conflict.</td>
+      <td></td>
+      <td>2025-06-17T07:45:00Z</td>
+    </tr>
+    <tr>
+      <td>c3d4e5f6</td>
+      <td>feat(inventory): added edge endpoints for embedded app.</td>
+      <td></td>
+      <td>2025-06-17T07:30:00Z</td>
+    </tr>
+    <tr>
+      <td>d4e5f6g7</td>
+      <td>Merge pull request #3 from Los-Angelitos/feat/wokwi-integration</td>
+      <td></td>
+      <td>2025-06-17T07:00:00Z</td>
+    </tr>
+    <tr>
+      <td>e5f6g7h8</td>
+      <td>update(monitoring): body swagger response</td>
+      <td></td>
+      <td>2025-06-17T06:45:00Z</td>
+    </tr>
+  </tbody>
+</table>
 
 
-#### 6.2.2.6.Execution Evidence for Sprint Review.
 
 
-#### 6.2.2.7.Services Documentation Evidence for Sprint Review.
+#### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
 
-#### 6.2.2.8.Software Deployment Evidence for Sprint Review.
+#### 6.2.2.6. Execution Evidence for Sprint Review.
 
 
-#### 6.2.2.9.Team Collaboration Insights during Sprint.
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+
+#### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
