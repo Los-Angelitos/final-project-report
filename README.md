@@ -7935,12 +7935,6 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-
-#### 6.2.2.6. Execution Evidence for Sprint Review.
-
-
-#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
-
 ## Operations and Monitoring Bounded Context
 
 ```gherkin
@@ -8086,9 +8080,111 @@ Scenario: Consultar historial de reservas
  Then Debe visualizar todas sus reservas pasadas con detalles completos
 ```
 
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
+</div><br><br>
+</div><br>
+Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
+  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+  </div><br>
+
+  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
+</div><br>
+  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
+</div><br>
+  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
+</div><br>
+
+  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
+</div><br>
+
+  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
+</div><br>
+
+  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
+
+* Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="60%" />
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
+</div><br>
+
+Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
+</div><br>
+Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
+
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+
+A continuación, se mostrará la documentación Swagger del Web Services: 
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
+
+Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
+
+La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
+
+En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
+
 #### 6.2.2.8. Software Deployment Evidence for Sprint Review.
 
-  A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
+A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
 
 En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
 
@@ -8219,9 +8315,6 @@ La Fog API se ha implementado con éxito en un entorno local (fog node), actuand
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-
-
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
