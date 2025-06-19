@@ -5250,6 +5250,10 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
   <img src="https://i.imgur.com/Sxsbfn0.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
+Diagrama de Clases de RFID Reader
+![image](https://github.com/user-attachments/assets/a21def6e-d6f8-47ee-b3d9-c357a95105c9)
+
+
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
@@ -8324,4 +8328,5 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 ## Kanban Board
 | Contenido | URL del Trello |
 |--------------|--------------|
-| Kanban Board       | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board  Sprint 1     | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
+| Kanban Board  Sprint 2     | Link: https://trello.com/invite/b/6853ace69bba62aaa400a389/ATTIfdf1f4e297cfe436340a808a9f24974fB6BA4FC0/sprint-backlog-2-sweet-manager|  
