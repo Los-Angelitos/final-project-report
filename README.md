@@ -8162,26 +8162,27 @@ Personalidad: Extrovertido <br>
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo:
+URL del Vídeo: https://upcedupe-my.sharepoint.com/personal/u202212383_upc_edu_pe/_layouts/15/stream.aspx?id=%2Fpersonal%2Fu202212383%5Fupc%5Fedu%5Fpe%2FDocuments%2FV%C3%ADdeo%20sin%20t%C3%ADtulo%20%E2%80%90%20Hecho%20con%20Clipchamp%2Emp4&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0&ga=1&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ee546212a%2D1f31%2D477f%2D93b9%2Dbaab9048d8ab
 
 Nombres: Gianella
-
 Apellidos: Francia
-
 Edad: 25
-
 Sexo: Femenino
-
 Ocupación: Administradora de RRHH en la gestión de hoteles
-
 Lugar donde vive: Santa Anita, Perú
-
-Duración de la entrevista: 27:00 - 36:50.
-
+Duración de la entrevista: 27:00.
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-<img src="" alt="Administradora de hotel" width="90%" />
+<img src="./assets/img/validation-gianella.PNG" alt="Administradora de hotel" width="90%" />
 </div>
+<br>
+
+Durante esta entrevista de validación, Gianella Francia , una administradora de recursos humanos con experiencia en la gestión hotelera, compartió sus impresiones sobre la plataforma.
+En primer lugar, destacó que la landing page le resultó clara y concisa, aunque sugiere incluir más información sobre los beneficios específicos que la plataforma ofrece a los administradores de hoteles. En cuanto a la aplicación móvil, Gianella mencionó que la experiencia fue cómoda y práctica, permitiéndole gestionar reservas y recibir alertas de manera eficiente. Sin embargo, sugirió que sería útil contar con una sección dedicada a la gestión de personal y recursos humanos.
+Respecto a la aplicación web, Gianella valoró positivamente la interfaz, destacando su facilidad de uso y la claridad en la presentación de información. Sin embargo, sugirió que sería beneficioso incluir herramientas adicionales para la gestión de nómina y seguimiento del desempeño del personal. En general, Gianella consideró que la plataforma tiene un gran potencial para mejorar la eficiencia en la gestión hotelera, pero sugirió algunas mejoras específicas para adaptarse mejor a las necesidades de los administradores de recursos humanos.
+
+De la misma manera, Gianella mencionó que la plataforma debería considerar la implementación de un sistema de gestión de inventario y suministros, lo cual sería de gran utilidad para los administradores de hoteles. También sugirió que se podrían incluir funcionalidades adicionales para facilitar la comunicación interna entre el personal del hotel, como un sistema de mensajería o notificaciones.
+Como también es usuaria de la aplicación móvil, Gianella destacó la importancia de que la plataforma sea compatible con dispositivos móviles, ya que esto le permite acceder a la información y gestionar tareas desde cualquier lugar. En general, consideró que la plataforma tiene un gran potencial para mejorar la eficiencia en la gestión hotelera, pero sugirió algunas mejoras específicas para adaptarse mejor a las necesidades de los administradores de recursos humanos.
 <br>
 
 **Entrevista 02 (Administradores)**
