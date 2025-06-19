@@ -7933,9 +7933,13 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 </table>
 
 
-
-
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
+
+
+#### 6.2.2.6. Execution Evidence for Sprint Review.
+
+
+#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
 ## Operations and Monitoring Bounded Context
 
@@ -8082,7 +8086,9 @@ Scenario: Consultar historial de reservas
  Then Debe visualizar todas sus reservas pasadas con detalles completos
 ```
 
-#### 6.2.2.6. Execution Evidence for Sprint Review.
+#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+
+  A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
 
 En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
 
@@ -8148,7 +8154,6 @@ Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación mó
 
 Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
 
-
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
 </div><br>
@@ -8160,11 +8165,62 @@ Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus re
 </div><br>
 Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
 
+**Web Application**
 
-#### 6.2.2.7. Services Documentation Evidence for Sprint Review.
+La web application ha sido desplegada en vercel, en este caso, la web se alimenta de un repositorio de github que se encuentra como parte de los repositorios.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
 
-#### 6.2.2.8. Software Deployment Evidence for Sprint Review.
+**Web Services**
+
+El componente de Web Services ha sido desplegado a través de un perfil público en un entorno de producción proporcionado por MonsterASP .NET. Este servicio expone los endpoints principales del backend, permitiendo la interacción con las aplicaciones frontend y otros módulos. El entorno de despliegue garantiza alta disponibilidad y facilita el monitoreo en tiempo real del funcionamiento de la API.
+
+El backend del sistema ha sido desplegado en un entorno de producción proporcionado por MonsterASP.NET, que permite exponer los servicios de forma pública. Este entorno incluye una interfaz administrativa, monitoreo básico y alta disponibilidad. A través de esta plataforma se gestionan todos los endpoints relacionados con la lógica de negocio central.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil público Web Services" width="90%" /> </div><br>
+
+
+<div style="
+display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil de Producción Web Services" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+**Edge API**
+
+Se levanto dentro de una maquina virtual RaspBian, en este caso el edge corre desde ahi. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
+
+<div style="display:flex; flex-direction:column; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Evidencia Edge API 1" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Evidencia Edge API 2" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Evidencia Edge API 3" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Evidencia Edge API 4" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Evidencia Edge API 5" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Evidencia Edge API 6" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Evidencia Edge API 7" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Evidencia Edge API 8" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+**Fog API**
+
+La Fog API se ha implementado con éxito en un entorno local (fog node), actuando como componente intermedio entre el Edge y los Web Services. Este microservicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales:
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+
 
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
