@@ -7932,27 +7932,150 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 #### 6.2.2.5. Testing Suite Evidence for Sprint Review.
 
-A continuación, se mostrará la documentación Swagger del Web Services: 
+## Operations and Monitoring Bounded Context
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
-</div>
-<br>
+```gherkin
+Feature: Gestión de reservas de huéspedes
 
-Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
+Scenario: Crear una nueva reserva
+ Given El administrador accede al módulo de reservas
+ When Completa el formulario de nueva reserva con los datos del huésped y habitación
+ Then La reserva debe guardarse correctamente y mostrarse en la lista de reservas activas
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+Scenario: Cancelar una reserva activa
+ Given El huésped accede a su lista de reservas
+ When Selecciona la opción para cancelar una reserva vigente
+ Then La reserva debe marcarse como cancelada y no debe generar penalización si está dentro del plazo
 
-En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
+Scenario: Editar fechas de una reserva
+ Given El administrador selecciona una reserva existente
+ When Modifica la fecha de ingreso y/o salida
+ Then La reserva debe actualizarse con las nuevas fechas sin perder la información anterior
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
-A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
+Scenario: Consultar disponibilidad de habitaciones
+ Given El usuario accede al sistema de reservas
+ When Selecciona fechas de check-in y check-out
+ Then El sistema debe mostrar solo las habitaciones disponibles para ese período
 
-La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
+Scenario: Visualizar estado de dispositivos IoT
+ Given El propietario del hotel accede al panel de control
+ When Consulta el estado de los dispositivos IoT
+ Then Debe visualizar el estado actual de temperatura, sensores y dispositivos de acceso
+```
 
-En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+## IAM (Identity and Access Management) Bounded Context
 
-Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
+```gherkin
+Feature: Gestión de usuarios y roles
+
+Scenario: Crear cuenta de administrador
+ Given El gerente accede al formulario de registro
+ When Ingresa los datos necesarios para crear una cuenta de administrador
+ Then El sistema debe registrar la cuenta y asignarle permisos administrativos
+
+Scenario: Invitar a un nuevo administrador
+ Given El gerente accede a la sección de administradores
+ When Envía una invitación por correo a un nuevo miembro
+ Then El nuevo administrador debe recibir un enlace de registro y unirse a la organización
+
+Scenario: Desvincular administrador de la organización
+ Given El propietario del hotel visualiza la lista de administradores
+ When Selecciona uno para desvincular
+ Then El administrador debe ser removido de la organización y perder acceso
+
+Scenario: Crear perfil de huésped
+ Given Un nuevo usuario accede a la aplicación móvil
+ When Completa el formulario de registro con sus datos y preferencias
+ Then El sistema debe crear un perfil global con sus preferencias guardadas
+```
+
+## Communication Bounded Context
+
+```gherkin
+Feature: Gestión de notificaciones y alertas
+
+Scenario: Recibir notificación por sensor de humo
+ Given Un sensor de humo detecta actividad anormal
+ When Se activa la alerta en el sistema
+ Then El propietario del hotel debe recibir una notificación inmediata
+
+Scenario: Alerta sonora por detección de humo
+ Given El sensor de humo detecta presencia de humo
+ When Se activa el protocolo de emergencia
+ Then Debe sonar una alerta audible en la habitación afectada
+```
+
+
+## Organizational Management Bounded Context
+
+```gherkin
+
+Feature: Gestión de organización y suscripcione
+
+Scenario: Registrar nueva organización
+ Given El propietario del hotel accede al formulario de registro
+ When Completa los datos de la organización (nombre, dirección, información fiscal)
+ Then La organización debe registrarse correctamente en el sistema
+
+Scenario: Cambiar plan de suscripción
+ Given El propietario accede a la configuración de suscripción
+ When Selecciona un nuevo plan que se ajuste a sus necesidades
+ Then El sistema debe actualizar la suscripción y aplicar las nuevas características
+
+Scenario: Filtrar habitaciones por estado
+ Given El propietario accede al panel de habitaciones
+ When Aplica filtros por estado (activo/inactivo)
+ Then Debe mostrarse solo las habitaciones que coincidan con el filtro seleccionado
+
+```
+
+
+## Inventory Bounded Context
+
+```gherkin
+Feature: Gestión de inventario y recursos
+
+Scenario: Revisar stock de recursos del hotel
+ Given El propietario del hotel accede al módulo de inventario
+ When Consulta el stock actual de recursos
+ Then Debe visualizar las cantidades disponibles y el estado de cada recurso
+
+Scenario: Registrar nuevo proveedor
+ Given El administrador accede al módulo de proveedores
+ When Ingresa la información del proveedor (nombre, contacto, productos)
+ Then El proveedor debe guardarse en el sistema para futuras referencias
+
+Scenario: Solicitar dispositivos IoT
+ Given El propietario identifica la necesidad de más dispositivos
+ When Realiza una solicitud a través del sistema
+ Then La solicitud debe registrarse y enviarse al departamento correspondiente
+```
+
+## Commerce Bounded Context
+
+```gherkin
+Feature: Gestión de reservas y transacciones comerciales
+
+Scenario: Reservar habitación personalizada
+ Given El huésped accede a la lista de habitaciones disponibles
+ When Selecciona una habitación y aplica personalizaciones según sus preferencias
+ Then La reserva debe procesarse con las especificaciones personalizadas
+
+Scenario: Gestionar reservas activas
+ Given El huésped tiene reservas vigentes
+ When Accede a su panel de reservas activas
+ Then Debe poder visualizar, modificar o cancelar sus reservas según las políticas del hotel
+
+Scenario: Filtrar hoteles por preferencias
+ Given El huésped busca alojamiento
+ When Aplica filtros según sus preferencias (ubicación, precio, servicios)
+ Then El sistema debe mostrar solo los hoteles que cumplan con los criterios seleccionados
+
+Scenario: Consultar historial de reservas
+ Given El huésped accede a su perfil
+ When Solicita ver su historial de reservas anteriores
+ Then Debe visualizar todas sus reservas pasadas con detalles completos
+```
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
