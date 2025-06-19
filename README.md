@@ -7956,6 +7956,44 @@ Este tipo de documentación es clave para garantizar la correcta implementación
 
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
+En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+
+* Link a la aplicación web de SweetManager: https://sweet-manager-web-application.vercel.app/home
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
+</div><br><br>
+Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
+  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
+  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
+  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
+  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
+  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
+  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
+
+* Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="60%" />
+
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
 
