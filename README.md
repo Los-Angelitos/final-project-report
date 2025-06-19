@@ -8217,7 +8217,7 @@ A continuación, se registraron todas las entrevistas de validación para nuestr
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: 
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 Nombres: Carlo
 
@@ -8231,7 +8231,7 @@ Ocupación: Gerente Hotelero
 
 Lugar donde vive: Pueblo Libre
 
-Duración de la entrevista: 00:00 - 12:20 
+Duración de la entrevista: 00:00 - 21:40 
 
 Personalidad: Análitica
 
@@ -8251,13 +8251,13 @@ Finalmente, Carlo subrayó la importancia de que tanto la aplicación web como l
 **Entrevista 02 (Gerentes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Pueblo Libre-Lima <br>
 Ocupación: Dueño de un emprendimeinto hotelero <br>
-Duración de la entrevista: 21:24 - 27:00 <br>
+Duración de la entrevista: 21:40 - 29:30 <br>
 Personalidad: Analítica <br>
 
 ![image](https://github.com/user-attachments/assets/3a89ce4f-f357-4cfc-ab22-7dd36f07e12e)
@@ -8268,14 +8268,14 @@ Personalidad: Analítica <br>
 **Entrevista 03 (Gerentes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Luis Fernández <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Surquillo - Lima <br>
 Ocupación: Dueño y manager de un hotel <br>
-Duración de la entrevista: 12:20 - 21:24 <br>
+Duración de la entrevista: 29:30 - 51:20 <br>
 Personalidad: Extrovertido <br>
 <br>
 
@@ -8285,7 +8285,7 @@ Personalidad: Extrovertido <br>
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo:
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 
 Nombres: Gianella
 
@@ -8299,7 +8299,7 @@ Ocupación: Administradora de RRHH en la gestión de hoteles
 
 Lugar donde vive: Santa Anita, Perú
 
-Duración de la entrevista: 27:00 - 36:50.
+Duración de la entrevista: 51:20 - 1:13:30.
 
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
@@ -8310,14 +8310,14 @@ Duración de la entrevista: 27:00 - 36:50.
 **Entrevista 02 (Administradores)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Fabricio Gabriel Chavez Morales <br>
 Edad: 28 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Magdalena del Mar-Lima <br>
 Ocupación: Administrador del hotel Los Lirios <br>
-Duración de la entrevista: 36:50 - 46:45 <br>
+Duración de la entrevista: 18:17 - 41:34 <br>
 Personalidad: Enfocado, orientado al servicio al cliente <br>
 
 ![Entrevista° 2 - Administradores]()
@@ -8327,14 +8327,14 @@ Personalidad: Enfocado, orientado al servicio al cliente <br>
 **Entrevista 03 (Administradores)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Sergio Renard <br>
 Edad: 21 <br>
 Sexo: Masculino <br>
 Lugar donde vive: La Plata - Argentina <br>
 Ocupación: Administrador de hotel <br>
-Duración de la entrevista: : 46:45 - 51:04 <br>
+Duración de la entrevista: : 13:30 - 18:17 <br>
 Personalidad: Alegre <br>
 
 <div style="text-align: center;">
@@ -8344,7 +8344,7 @@ Personalidad: Alegre <br>
 **Entrevista 01 (Huéspedes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
@@ -8361,14 +8361,14 @@ Personalidad: Analítica <br>
 
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Jesús María - Lima <br>
 Ocupación: Ingeniero Civil <br>
-Duración de la entrevista: 51:04 - 59:57 <br> 
+Duración de la entrevista: 41:34 - 1:08:20 <br> 
 Personalidad: Tranquilo <br>
 <br>
 
@@ -8379,14 +8379,14 @@ Personalidad: Tranquilo <br>
 **Entrevista 03 (Huéspedes)**
 <br>
 
-URL del vídeo: 
+URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
 <br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
 Sexo: Masculino <br>
 Lugar donde vive: Los Olivos <br>
 Ocupación: Ingeniero Industrial <br>
-Duración de la entrevista: 59:57 - 01: 08: 24  <br>
+Duración de la entrevista: 1:08:20 - 01: 18: 54  <br>
 Personalidad: Responsable y Trabajador <br>
 <br>
 
