@@ -300,9 +300,18 @@ Imagen 8: Gráfico detallado de los commits de cada miembros del equipo al repos
 ![image](https://github.com/user-attachments/assets/8d6ac616-abb2-4190-a02e-6a0eb329a90c)
 
 Imagen 9: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la FOG Api.
+![image](https://github.com/user-attachments/assets/7af61d99-9dc5-4ae6-96ed-77ceab8caefa)
 
 
 Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repositorio de la Edge Api.
+![image](https://github.com/user-attachments/assets/b50fefcb-2843-4b2b-b647-9f5dd657ff6d)
+
+Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositorios de las embedded application. 
+![image](https://github.com/user-attachments/assets/de14afa2-f08c-4fc9-bc33-f3bc658e2644)
+![image](https://github.com/user-attachments/assets/5f550cf0-9d14-4ad0-84e4-b3a7918fdd62)
+![image](https://github.com/user-attachments/assets/e1951ac9-2a6e-4424-ac2d-e8c106393f42)
+
+
 
 
 
@@ -7489,22 +7498,45 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
 
 Mobile Application: 
 
+Gráficos de la sección insights en el repositorio de la Mobile Application. 
+
 ![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
 
 ![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
 
 Web Services: 
 
+Gráficos de la sección insights en el repositorio de los Web Services: 
+
 ![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
 
 FOG API: 
 
+Gráficos de la sección insights en el repositorio de la FOG API. 
+
+![image](https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73)
 
 EDGE API: 
 
+Gráficos de la sección insights en el repositorio de la EDGE API. 
+
+![image](https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b)
+
+EMBEDDED APPLICATIONS: 
+
+Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee)
+
+Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a)
+
+Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION. 
+
+![image](https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82)
 
 
-EMBEDDED APPLICATION: 
 
 ## 6.3. Validation Interviews.
 
