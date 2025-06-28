@@ -7439,39 +7439,39 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
 | Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
-#### 6.2.2.3.Sprint Backlog 2.
+#### 6.2.2.3.Sprint Backlog 2
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| HU01     | Registrar nueva reserva en el hotel | T-001 | Reservar habitaciones | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia. | 3 | Giacomo Zoppi | To-do |
-| HU01     | Crear organización | T-001 | Registrar organización | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3 | Arian Rodriguez | To-do |
-| HU02     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2 | Ramon Jorge | To-do |
-| HU03     | Revisar stock de recursos del hotel | T-001 | Ver stock de recursos | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3 | Omar Morales | To-do |
+| HU01     | Registrar nueva reserva en el hotel | T-001 | Reservar habitaciones | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia. | 3 | Giacomo Zoppi | Done |
+| HU01     | Crear organización | T-001 | Registrar organización | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3 | Arian Rodriguez | Done |
+| HU02     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2 | Ramon Jorge | Done |
+| HU03     | Revisar stock de recursos del hotel | T-001 | Ver stock de recursos | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3 | Omar Morales | Done |
 | HU04     | Agregar proveedores | T-001 | Registrar proveedor | Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada. | 2 | Omar Morales | To-do |
-| HU02     | Reservar una habitación personalizada | T-001 | Reserva personalizada | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias. | 3 | Giacomo Zoppi | To-do |
-| HU03     | Visualizar y gestionar reservas activas | T-001 | Gestionar reservas activas | Como Mobile Guest quiero visualizar y gestionar mis reservas activas. | 3 | Giacomo Zoppi | To-do |
-| HU04     | Cancelar reservas activas | T-001 | Cancelar reserva | Como Mobile Guest quiero cancelar una de mis reservas activas dentro del plazo permitido. | 2 | Giacomo Zoppi | To-do |
-| HU05     | Buscar y filtrar habitaciones por estado | T-001 | Filtrar habitaciones | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo). | 2 | Arian Rodriguez | To-do |
-| HU06     | Consultar disponibilidad de habitaciones | T-001 | Ver disponibilidad | Como Mobile Hotel Owner quiero consultar la disponibilidad de habitaciones. | 2 | Giacomo Zoppi  | To-do |
-| HU02     | Buscar y filtrar hoteles de Sweet Manager | T-001 | Filtrar hoteles | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias. | 2 | Arian Rodriguez | To-do |
-| HU06     | Consultar historial de reservas anteriores | T-001 | Ver historial de reservas | Como Mobile Guest quiero acceder a mi historial de reservas. | 2 | Giacomo Zoppi | To-do |
-| HU04     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización. | 2 | Ramón Jorge | To-do |
-| HU08     | Solicitar dispositivos | T-001 | Pedir dispositivos IoT | Como Mobile Hotel Owner quiero poder solicitar más dispositivos IoT para personalización de habitaciones. | 1 | Giacomo Zoppi | To-do |
-| HU07     | Crear perfil y preferencias | T-001 | Crear perfil | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias. | 1 | Mauricio Rojas | To-do |
-| HU07     | Crear cuenta | T-001 | Registrar cuenta | Como Mobile Hotel Owner quiero registrar una cuenta para gestionar el hotel. | 1 | Mauricio Rojas | To-do |
-| HTU01    | Exponer endpoint para registrar habitación | T-001 | Endpoint registrar habitación | Como Developer quiero exponer un endpoint POST /api/rooms para registrar una habitación por API. | 2 | Giacomo Zoppi | To-do |
-| HTU02    | Consultar habitaciones filtradas por estado | T-001 | Endpoint filtrar habitaciones | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo. | 2 | Giacomo Zoppi | To-do |
-| HTU03    | Exponer endpoint para desvincular administrador | T-001 | Endpoint eliminar admin | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId}. | 2 | Mauricio Rojas | To-do |
-| HTU04    | Exponer endpoint para registrar reserva | T-001 | Endpoint registrar reserva | Como Developer quiero exponer un endpoint POST /api/bookings. | 2 | Giacomo Zoppi | To-do |
-| HTU05    | Exponer endpoint para ver huéspedes alojados | T-001 | Endpoint ver huéspedes | Como Developer quiero exponer un endpoint GET /api/bookings/active. | 2 | Giacomo Zoppi | To-do |
-| HU01     | Uso de Interrupt-Driven Detection | T-001 | Detectar botón con interrupción | Como Device Maker quiero usar metodología interrupt-driven para detectar un botón presionado eficientemente. | 5 | Mauricio Rojas | To-do |
-| HU01     | Tarjeta para acceso a habitaciones | T-001 | Acceso con tarjeta | Como Device User quiero acercar una tarjeta para habilitar la puerta. | 3 | Omar Morales | To-do |
-| HU02     | Control de temperatura en habitaciones | T-001 | Controlar temperatura | Como Device User quiero presionar un botón para ajustar la temperatura. | 3 | Arian Rodriguez | To-do |
-| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible. | 3 | Fabia Herrera | To-do |
-| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | To-do |
-| HU03     | Visualizar estado de dispositivos IoT| T-001 | Ver temperatura en pantalla | Como Device User quiero visualizar una pantalla con la temperatura configurada. | 2 | Ramón Jorge | To-do |
-| HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | To-do |
-| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
+| HU02     | Reservar una habitación personalizada | T-001 | Reserva personalizada | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias. | 3 | Giacomo Zoppi | Done |
+| HU03     | Visualizar y gestionar reservas activas | T-001 | Gestionar reservas activas | Como Mobile Guest quiero visualizar y gestionar mis reservas activas. | 3 | Giacomo Zoppi | Done |
+| HU04     | Cancelar reservas activas | T-001 | Cancelar reserva | Como Mobile Guest quiero cancelar una de mis reservas activas dentro del plazo permitido. | 2 | Giacomo Zoppi | Done |
+| HU05     | Buscar y filtrar habitaciones por estado | T-001 | Filtrar habitaciones | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo). | 2 | Arian Rodriguez | Done |
+| HU06     | Consultar disponibilidad de habitaciones | T-001 | Ver disponibilidad | Como Mobile Hotel Owner quiero consultar la disponibilidad de habitaciones. | 2 | Giacomo Zoppi  | Done |
+| HU02     | Buscar y filtrar hoteles de Sweet Manager | T-001 | Filtrar hoteles | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias. | 2 | Arian Rodriguez | Done |
+| HU06     | Consultar historial de reservas anteriores | T-001 | Ver historial de reservas | Como Mobile Guest quiero acceder a mi historial de reservas. | 2 | Giacomo Zoppi | Done |
+| HU04     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización. | 2 | Ramón Jorge | Done |
+| HU08     | Solicitar dispositivos | T-001 | Pedir dispositivos IoT | Como Mobile Hotel Owner quiero poder solicitar más dispositivos IoT para personalización de habitaciones. | 1 | Giacomo Zoppi | Done |
+| HU07     | wCrear perfil y preferencias | T-001 | Crear perfil | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias. | 1 | Mauricio Rojas | Done |
+| HU07     | Crear cuenta | T-001 | Registrar cuenta | Como Mobile Hotel Owner quiero registrar una cuenta para gestionar el hotel. | 1 | Mauricio Rojas | Done |
+| HTU01    | Exponer endpoint para registrar habitación | T-001 | Endpoint registrar habitación | Como Developer quiero exponer un endpoint POST /api/rooms para registrar una habitación por API. | 2 | Giacomo Zoppi | Done |
+| HTU02    | Consultar habitaciones filtradas por estado | T-001 | Endpoint filtrar habitaciones | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo. | 2 | Giacomo Zoppi | Done |
+| HTU03    | Exponer endpoint para desvincular administrador | T-001 | Endpoint eliminar admin | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId}. | 2 | Mauricio Rojas | Done |
+| HTU04    | Exponer endpoint para registrar reserva | T-001 | Endpoint registrar reserva | Como Developer quiero exponer un endpoint POST /api/bookings. | 2 | Giacomo Zoppi | Done |
+| HTU05    | Exponer endpoint para ver huéspedes alojados | T-001 | Endpoint ver huéspedes | Como Developer quiero exponer un endpoint GET /api/bookings/active. | 2 | Giacomo Zoppi | Done |
+| HU01     | Uso de Interrupt-Driven Detection | T-001 | Detectar botón con interrupción | Como Device Maker quiero usar metodología interrupt-driven para detectar un botón presionado eficientemente. | 5 | Mauricio Rojas | Working on |
+| HU01     | Tarjeta para acceso a habitaciones | T-001 | Acceso con tarjeta | Como Device User quiero acercar una tarjeta para habilitar la puerta. | 3 | Omar Morales | Done |
+| HU02     | Control de temperatura en habitaciones | T-001 | Controlar potenciometro | Como Device User quiero utilizar un potenciometro para ajustar la temperatura. | 3 | Arian Rodriguez | Working On |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible. | 3 | Fabia Herrera | Working On |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | Working on |
+| HU03     | Visualizar estado de dispositivos IoT| T-001 | Ver temperatura en pantalla | Como Device User quiero visualizar una pantalla con la temperatura configurada. | 2 | Ramón Jorge | Done |
+| HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | Working On |
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
 <table border="1">
@@ -8361,7 +8361,35 @@ Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED 
 
 ![image](https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82)
 
+### 6.2.3. Sprint 3
+#### 6.2.3.1. Sprint Planning 3.
+Hemos planeado para este sprint, Hemos planeado para este sprint, la finalización de nuestra fog api, edge api y embedded application. Así como la culminación del documento, incluyendo el Video About the Product.
 
+| **Sprint #** | Sprint 3 |
+|--------------|----------|
+| **Sprint Planning Background**  |
+| **Date** | 2025-06-28 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Rojas Sanchez, Mauricio |
+| **Attendees (to planning meeting)** | Zoppi, Giacomo - Herrera, Fabia - Rodriguez, Arian - Morales, Omar - Jorge, Ramón |
+| **Sprint n – 2 Review Summary** |  |
+| **Sprint n – 2 Retrospective Summary** | Durante el Sprint anterior, logramos culminar al 100% nuestros Web Application, Mobile Application y Web Services y culminamos la Fog api, Edge api y embedded application a un 70%. Aparte, buscamos plasmar parte de nuestra aplicación embebida en dispositivos fisicos, el cual tambien es nuestro enfoque en este ultimo sprint. Por ultimo, como mejora con respecto a la ultima entrega, creo que podemos organizarnos de tal modo, que priorizemos lo mas complicado por sobre lo que tenemos menos experiencia. De este modo, evitamos tener errores y complicaciones tan cercanos a la fecha de cierre del sprint y garantizamos que cada entregable sea cumplido al 100%. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | **Our focus is** on enabling Administrators to visualize IoT devices via the web application, Device Makers to configure the threshold for the smoke sensor via the Edge API and Fog API andDevice Users and Device Makers to  receive smoke sensor alerts via the embedded application. **We believe it delivers**  better management of hotel equipment for Administrators, useful interaction with IoT devices in hotel rooms for Device Users and a system for testing and controlling devices for Device Makers. **This will be confirmed** when Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Device Users interact with devices during more than 80% of their stays, without reading or authentication errors and Device Makers validate and control devices with a 98% success rate in integration tests.
+| **Sprint 3 Velocity** | |
+| **Sum of Story Points** | 14 story points |
+
+
+#### 6.2.3.3.Sprint Backlog 3
+| User Story |            | Work-Item / Task |         |             |               |                |                |
+|------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
+| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | Done |
+| HU03     | Visualizar estado de dispositivos IoT| T-002 | Ver las luces LED encendidas segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | Done |
 
 ## 6.3. Validation Interviews.
 
