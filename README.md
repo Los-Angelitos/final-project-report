@@ -549,11 +549,26 @@ Fabia Herrera: En esta fase, trabajé  en la integración de componentes en toda
 
 Omar Morales: En esta entrega, me involucré en la estructuración de todo el sistema: desde el etiquetado y arquitectura hasta el desarrollo en web, servicios, embedded, mobile, validaciones y fog API. Fomenté un entorno colaborativo y apoyé la implementación técnica en distintas fases del proyecto.
 <p/>
+TF:
+        <p/>
+        Mauricio Rojas: En este entregable, participé activamente en la elaboración del prototipo como team leader, así como el completado del informe y el despliegue de la aplicación móvil. Considero que proporcioné liderazgo de forma efectiva a lo largo del desarrollo del proyecot. 
+        <p/>
+        Giacomo Zoppi: En esta etapa, contribuí en el desarrollo del prototipo fisico y corregir algunos puntos debiles, además de apoyar en la coordinación efectiva en la gestión del equipo y de nuestro tablero de trabajo.
+        <p/>
+        Ramon Jorge: En esta entrega, apoyé en la elaboración del prototipo fisico y el reporte. Además, como Aspect Leader, logré organizar a los colaboradores y compartirles mi idea sobre mi Bounded Context. 
+        <p/>
+        Arian Rodriguez: Durante esta entrega, asumí mi papel de Aspect Leader del Organizational Management Bounded Context, pero tambien asumi mi papel como colaborador en otros Bounded Context. Creo que esta responsabilidad y flexibilidad e un trabajo en grupo es esencial para proporcinar liderazgo. 
+        <p/>
+        Fabia Herrera: En esta fase, participé del dispositivo fisico y el sprint backlog 3. Lideré mi aspecto, así como algunos puntos y reuniones relacionados al seguimiento y organización del equipo. 
+        <p/>
+        Omar Morales: En esta entrega, trabajé activamente en el desarrollo del dispositivo fisico, asi como del cumplimiento de cada entregable. Fomenté el liderazgo y asumí el mio en lo relacionado al aspecto del que soy lider. 
+        </p>
     </td>
     <td>
         TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega.</p>
         TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.
         TB2: En esta fase del proyecto se reforzó el liderazgo compartido dentro del equipo. Cada integrante aportó en todas las áreas del sistema —web, mobile, servicios, embedded, validaciones y fog API— asumiendo responsabilidades y tomando iniciativa cuando fue necesario. La comunicación, el uso efectivo del tablero Kanban y la colaboración constante permitieron que el equipo avanzara de forma coordinada y autónoma, manteniendo siempre una visión común.
+        TF1: En esta ultima fase del proyecto, ha sido esencial el liderazgo asumido por cada miembro del equipo para el cumplimiento de cada entregable y punto por cada Bounded Context. Cada miembro cumplió con su rol y sus tareas y con ello, colaboraron en lograr la excelencia de nuestro trabajo y de generar un ambiente grupal efectivo. 
      </td>
   </tr>
   <tr>
@@ -610,10 +625,26 @@ Fabia Herrera: Durante esta entrega, colaboré en los distintos aspectos del sis
 
 Omar Morales: Participé activamente en todas las etapas del proyecto, desde la planificación y documentación del sistema hasta el desarrollo en web, mobile, servicios, embedded y fog API. Además, colaboré en las entrevistas de validación y ayudé a mantener la organización del equipo mediante una comunicación constante.
 <p/>
+<p>
+      TF:
+      <p/>
+      Mauricio Rojas: Para este entregable y en general para todo el trabajo, pienso que he logrado plasmar y crear un ambiente en el cual los distintos miembros del equipo se pueden desenvolver y compartir sus opiniones. Aparte, he podido alinear los objetivos de cada miembro y enfocar nuestros esfuerzos hacia el cumplimiento del student outcomes y el logro del curso. 
+      <p/>
+      Giacomo Zoppi: Para esta entrega, participé colaborando con el grupo mediante una correcta administración de los backlog, así como host en la distintas reuniones de poker technique que hayamos realizado. Por ultimo, ayude a planificar las tareas a completar para este entregable. 
+      <p/>
+      Ramon Jorge: Promoví el uso del tablero Kanban a lo largo del proyecto, le di seguimiento y colaboré en establecer las metas principales. De este modo, pude crear un entorno colaborativo. 
+      <p/>
+      Arian Rodriguez: Trabajé activamente en la organización del tablero Kanban, resolviendo dudas y cumpliendo los plazos definidos. 
+      <p/>
+      Fabia Herrera: Establecí tareas concretas y objetivos dentro del tablero Kanban, asegurándome de mantener una comunicación abierta para resolver dudas.
+      <p/>
+      Omar Morales: Colaboré con el equipo en plasmar un ambiente colaborativo, lo cual considero que es esencial a la hora de formar un equipo de trabajo, en lugar de solo un grupo de clase. También aporte con el cumplimiento de tareas y el seguimiento a los sprint backlogs. 
+    </p>
 <td>
 TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
 TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.</p>
 TB2: En esta fase, reafirmamos nuestro compromiso con un entorno colaborativo e inclusivo. Establecimos metas claras desde el inicio, asignando tareas específicas en el tablero Kanban y manteniendo una comunicación constante entre los integrantes. Todos aportamos activamente en las distintas etapas del trabajo, compartiendo responsabilidades y asegurando el cumplimiento de los objetivos planteados dentro de los tiempos establecidos.
+TF: En este ultimo entregable, logramos completar cada uno de los entregables y objetivos planteados, de este modo, confirmando la eficacia de nuestra organización y del entorno colaborativo que hemos creado a lo largo del curso. Destacamos como nuestros puntos fuertes el colaborativo y ameno ambiente de trabajo, la importancia y seriedad con la que nos tomamos los entregables desde el principio y el establecimiento de sprint goals y metas al inicio de cada sprint. Creemos que todo ello fue la clave para el exito de nuestro grupo, nuestro aprendizaje como ingenieros de software y la calidad garantizada en cada una de nuestras soluciones. 
 </td>
   </tr>
 </table>
@@ -7408,22 +7439,7 @@ Hemos planeado para este sprint, el desarrollo de la fog api, edge api, embedded
 | **Sprint n – 1 Review Summary** |  |
 | **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar las vistas del Web Applications en un 90%, junto a la landing page en un 100% El equipo mostró compromiso y organización en el trabajo, de tal modo que logramos completar los entregables con el tiempo debido. Aparte, desde un principio, definimos aspects leaders, cada uno teniendo un Bounded Context en el que centrarse, facilitando el desarrollo de vistas. Por ultimo, como una potencial mejora, creemos que podemos definir mejor los tiempos y fechas limites, con rangos mas cortos de tiempo, habriamos trabajado igual de bien y en menor tiempo, lo cual nos será esencial para este Sprint 2 |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | **Our focus is** on enabling Owners to visualize hotel stock, register the organization, register providers, change subscription plans, request IoT devices, register and view the availability of rooms in their hotel via the mobile application, and invite administrators by email through the web application.
-Guests will be able to register, view their profile, view and filter hotels, make and manage reservations via the mobile application, and edit reservation dates via the web application.
-Administrators will be able to visualize IoT devices via the web application.
-Device Makers will validate the reservation ID using the room card and change the room temperature via the Edge API and Fog API.
-Device Users and Device Makers will monitor room temperature changes using a serial monitor, use room access cards, and receive smoke sensor alerts via the embedded application.
-Mobile or Web Developers will expose endpoints for room and reservation registration, and for filtering rooms and guests by accommodation via the Web Services.
-
-**We believe it delivers** easier monitoring of room reservations for Guests, better management of hotel equipment for Administrators, full operational visibility and control for Owners, meaningful interaction with IoT devices in hotel rooms for Device Users, a system for testing and controlling devices for Device Makers, and reliable access to hotel and user data for Mobile or Web Developers.
-
-**This will be confirmed** when Guests positively rate their booking experience in at least 90% of cases,
-Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager,
-Owners can visualize and control at least 95% of their hotel operations from the platform,
-Device Users interact with devices during more than 80% of their stays, without reading or authentication errors,
-Device Makers validate and control devices with a 98% success rate in integration tests,
-and Mobile or Web Developers have an error rate lower than 2% in documented API calls.|
-
+| **Sprint 2 Goal** | **Our focus is** on enabling Owners to visualize hotel stock, register the organization, register providers, change subscription plans, request IoT devices, register and view the availability of rooms in their hotel via the mobile application, and invite administrators by email through the web application. Guests will be able to register, view their profile, view and filter hotels, make and manage reservations via the mobile application, and edit reservation dates via the web application. Administrators will be able to visualize IoT devices via the web application. Device Makers will validate the reservation ID using the room card and change the room temperature via the Edge API and Fog API. Device Users and Device Makers will monitor room temperature changes using a serial monitor, use room access cards, and receive smoke sensor alerts via the embedded application. Mobile or Web Developers will expose endpoints for room and reservation registration, and for filtering rooms and guests by accommodation via the Web Services. **We believe it delivers** easier monitoring of room reservations for Guests, better management of hotel equipment for Administrators, full operational visibility and control for Owners, meaningful interaction with IoT devices in hotel rooms for Device Users, a system for testing and controlling devices for Device Makers, and reliable access to hotel and user data for Mobile or Web Developers. **This will be confirmed** when Guests positively rate their booking experience in at least 90% of cases, Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Owners can visualize and control at least 95% of their hotel operations from the platform, Device Users interact with devices during more than 80% of their stays, without reading or authentication errors, Device Makers validate and control devices with a 98% success rate in integration tests and Mobile or Web Developers have an error rate lower than 2% in documented API calls.|
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
@@ -8321,45 +8337,69 @@ La Fog API se ha implementado con éxito en un entorno local (fog node), actuand
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
 
-Mobile Application: 
+## Mobile Application:
 
-Gráficos de la sección insights en el repositorio de la Mobile Application. 
+Gráficos de la sección insights en el repositorio de la Mobile Application desde el 24 de mayo hasta el 14 de junio. Todos los miembros del equipo colaboraron, como se puede evidenciar. 
 
-![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe" width="500">
+</div>
 
-![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604" width="500">
+</div>
 
-Web Services: 
+---
 
-Gráficos de la sección insights en el repositorio de los Web Services: 
+## Web Services:
 
-![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
+Gráficos de la sección insights en el repositorio de los Web Services, como se puede evidenciar, todos los miembros colaboraron en el desarrollo.
 
-FOG API: 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad" width="500">
+</div>
 
-Gráficos de la sección insights en el repositorio de la FOG API. 
+---
 
-![image](https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73)
+## FOG API:
 
-EDGE API: 
+Gráficos de la sección insights en el repositorio de la FOG API. Como se puede evidenciar, todos los miembros colaboraron en el desarrollo.
 
-Gráficos de la sección insights en el repositorio de la EDGE API. 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73" width="500">
+</div>
 
-![image](https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b)
+---
 
-EMBEDDED APPLICATIONS: 
+## EDGE API:
 
-Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION. 
+Gráficos de la sección insights en el repositorio de la EDGE API. Se evidencia la colaboración de cada uno de los miembros del equipo.
 
-![image](https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b" width="500">
+</div>
 
-Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION. 
+---
 
-![image](https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a)
+## EMBEDDED APPLICATIONS:
 
-Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION. 
+Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION.
 
-![image](https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82" width="500">
+</div>
 
 ### 6.2.3. Sprint 3
 #### 6.2.3.1. Sprint Planning 3.
@@ -8376,7 +8416,7 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | **Sprint n – 2 Review Summary** |  |
 | **Sprint n – 2 Retrospective Summary** | Durante el Sprint anterior, logramos culminar al 100% nuestros Web Application, Mobile Application y Web Services y culminamos la Fog api, Edge api y embedded application a un 70%. Aparte, buscamos plasmar parte de nuestra aplicación embebida en dispositivos fisicos, el cual tambien es nuestro enfoque en este ultimo sprint. Por ultimo, como mejora con respecto a la ultima entrega, creo que podemos organizarnos de tal modo, que priorizemos lo mas complicado por sobre lo que tenemos menos experiencia. De este modo, evitamos tener errores y complicaciones tan cercanos a la fecha de cierre del sprint y garantizamos que cada entregable sea cumplido al 100%. |
 | **Sprint Goal & User Stories** | |
-| **Sprint 3 Goal** | **Our focus is** on enabling Administrators to visualize IoT devices via the web application, Device Makers to configure the threshold for the smoke sensor via the Edge API and Fog API andDevice Users and Device Makers to  receive smoke sensor alerts via the embedded application. **We believe it delivers**  better management of hotel equipment for Administrators, useful interaction with IoT devices in hotel rooms for Device Users and a system for testing and controlling devices for Device Makers. **This will be confirmed** when Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Device Users interact with devices during more than 80% of their stays, without reading or authentication errors and Device Makers validate and control devices with a 98% success rate in integration tests.
+| **Sprint 3 Goal** | Our focus is on enabling Administrators to visualize IoT devices via the web application, Device Makers to configure the threshold for the smoke sensor via the Edge and FOG API and Device Users to receive  smoke sensor alerts via the embedded application. We believe it delivers better management of hotel equipment for Administrators, useful interaction with IoT devices in hotel rooms for Device Users and a system testing and controlling devices for Device Makers. This will be confirmed when Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Device Users interact with devices during more than 80% of their stays, without reading authentication errors and Device Makers validate and control Device Makers and control devices with 98% succes rate in integration tests.
 | **Sprint 3 Velocity** | |
 | **Sum of Story Points** | 14 story points |
 
@@ -8385,11 +8425,13 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
+| HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura mediante un potenciometro | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
 | HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
-| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | Done |
-| HU03     | Visualizar estado de dispositivos IoT| T-002 | Ver las luces LED encendidas segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
-| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | Done |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo activado en la web | Como Web Hotel Admin quiero recibir una notificación inmediata al activarse un sensor de humo en la sección de notificaciones | 3 | Fabia Herrera | Done |
+| HU15     | Recibir notificación por humo | T-002 | Creación de notificación desde la edge api | Como Device Maker quiero que la Edge y FOG API interactuen con la Cloud API, de tal modo que se cree una notificación cuando el sensor de humo es activado. | 3 | Omar Morales | Done |
+| HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
 
 ## 6.3. Validation Interviews.
 
@@ -9199,7 +9241,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVx
 | Contenido | URL del Vídeo |
 |--------------|--------------|
 | Vídeo de Exposición TB1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|  
-| VÍdeo de Exposición TP1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/Ebc4BC61KJhMvF6pepkzXmgBxWOcKV3wH3mMWbtitQf7Zg?e=bPXcj9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|
+| VÍdeo de Exposición TP1      | Link del Vídeo: <https://acortar.link/oR8F2o>|
 | Vídeo de Exposición TB2    | Link del Vídeo: - | 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
 
