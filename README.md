@@ -8398,6 +8398,18 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | **Sprint 3 Velocity** | |
 | **Sum of Story Points** | 14 story points |
 
+#### 6.2.3.2. Aspect Leaders and Collaborators.
+  
+Para este último Sprint, mantuvimos la organización de líderes y colaboradores en los aspectos, los cuales fueron definidos por cada Bounded Context que hemos definido para el proyecto. A continuación, se detalla la lista con todos los miembros del equipo:
+
+| Team Member (Last Name, First Name) | GitHub Username     | IAM Bounded Context | Communication Bounded Context | Operations and Monitoring Bounded Context | Organizational Management Bounded Context | Commerce Bounded Context | Inventory Bounded Context |
+|------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|
+| Zoppi, Giacomo                     | Giacomo202210029     | C                                    |                                               | L                                             |                                                             |                                            | C                                           | C             |
+| Herrera, Fabia                     | pelumsa              |                                     | L                                              | C                                             | C                                                            |                                            |                                            | C             |
+| Rojas, Mauricio                    | MayugiKentai11       | L                                    |                                               | C                                             | C                                                            |                      C                      |                                            | C             |
+| Morales, Omar                      | andrewmm16           |                                     |                                               | C                                             | C                                                            |                                            | L                                           | C             |
+| Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
+| Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
 #### 6.2.3.3.Sprint Backlog 3
 | User Story |            | Work-Item / Task |         |             |               |                |                |
