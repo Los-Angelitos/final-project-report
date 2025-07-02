@@ -4443,6 +4443,17 @@ Se muestra el diagrama de componentes del Mobile Application, mostrando los Widg
 </div>
 Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-iam.PNG" alt="Web Application Component Diagram" width="90%" />
+</div>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-iam.PNG" alt="Web Application Component Diagram" width="90%" />
+</div>
+Se muestra el diagrama de componentes de Edge API, mostrando los componentes y páginas relacionados entre sí.
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
@@ -4882,6 +4893,17 @@ Se muestra el diagrama de componentes del Mobile Application, mostrando los Widg
     ![structurizr-101410-Component-003](https://github.com/user-attachments/assets/5aae84b8-64cb-4582-9390-676a95da4460)
 Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-op-monitoring.png" alt="Web Application Component Diagram" width="90%" />
+</div>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-op-monitoring.png" alt="Web Application Component Diagram" width="90%" />
+</div>
+Se muestra el diagrama de componentes de Edge API, mostrando los componentes y páginas relacionados entre sí.
+
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -5283,6 +5305,17 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
   <img src="https://i.imgur.com/wW0koyh.png" alt="Inventory dsl for web application" width="90%" />
 </div><br>
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-inventory.png" alt="Fog API Component Diagram" width="90%" />
+</div><br>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-inventory.png" alt="Edge API Component Diagram" width="90%" />
+</div><br>
+
+
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
@@ -5636,6 +5669,12 @@ Para el presente diagrama, se representa la arquitectura de componentes por part
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component-mobileapp.png" alt="Component Diagram" width="90%" />
 </div><br><br>
+
+##### Fog API
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Fog API para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de la Organización en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-org-management.png" alt="Fog API Component Diagram" width="90%" />
+</div><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -6186,6 +6225,14 @@ En este diagrama, se muestra la interacción de los widgets en la Mobile Applica
 <div style="text-align: center;">
   <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-mobile.png" alt="Component Diagram" width="90%" />
 </div><br><br>
+
+
+##### Fog API
+En este diagrama, se muestra la interacción de los componentes en el Fog API, mostrando cómo interactura con el servicio web Cloud:<br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-commerce.png" alt="Fog API Component Diagram" width="90%" />
+</div><br><br>
+
 
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
