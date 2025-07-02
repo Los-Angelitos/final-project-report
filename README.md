@@ -3774,8 +3774,13 @@ En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuari
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes módulos y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
+
+El entorno de Producción de SweetManager se basa principalmente en la dependencia para la capa del cliente en el Browser (Edge/Chrome) para poder servir la aplicación web que se encuentra desplegada en el servicio de Vercel. La aplicación móvil se encuentra desplegada en la distribución de Firebase para que se pueda descargar a través de un módulo apk en cualquier dispositivo móvil. La API Web se encuentra desplegada en un Virtual Private Server (VPS) con el proveedor Monster, en este caso, se utiliza un servidor Ubuntu 22.04 con Docker para contenerizar la aplicación y la base de datos de esta manera poder desplegarla de manera eficiente, además se utilizan servicios externos para el envío de correos electrónicos y el /procesamiento de pagos, los cuales son consumidos por la API Web.
+Por el lado de la arquitectura IoT, se utiliza un dispositivo embebido que recolecta datos de los sensores y los envía a un Edge Node montado en un Raspberry Pi 4, el cual procesa los datos localmente y los envía a un Fog Node para su almacenamiento y procesamiento distribuido montado en un servidor local con host kernel de Alpine Linux 3.22 LTS contenederizado junto con su base de datos.
+<br> 
+
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="90%" />
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="100%" />
 </div><br><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
