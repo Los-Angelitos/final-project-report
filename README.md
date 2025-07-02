@@ -9240,9 +9240,9 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVx
 
 | Contenido | URL del Vídeo |
 |--------------|--------------|
-| Vídeo de Exposición TB1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|  
+| Vídeo de Exposición TB1      | Link del Vídeo: <https://acortar.link/R0Hppu>|  
 | VÍdeo de Exposición TP1      | Link del Vídeo: <https://acortar.link/oR8F2o>|
-| Vídeo de Exposición TB2    | Link del Vídeo: - | 
+| Vídeo de Exposición TB2    | Link del Vídeo: - <https://acortar.link/EQqztA>| 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
 
 ## Kanban Board
