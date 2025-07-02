@@ -8456,6 +8456,31 @@ La Fog API se ha implementado con éxito en un entorno local (fog node) simuland
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
+### Embedded Application
+
+* Link hacia el repositorio del Thermostat Embedded Application: https://github.com/Los-Angelitos/thermostat-embedded-application
+* Link hacia el repositorio del Smoke Sensor Embedded Application:
+https://github.com/Los-Angelitos/smoke-sensor-embedded-application.git
+* Link hacia el repositorio del RFID Embedded Application: https://github.com/Los-Angelitos/rfid-embedded-application
+
+Para esta entrega, se realizó el "upload" del sketch.ino en OOP del Thermostat Embedded Application desde Arduino IDE a la placa ESP32, que simula el termostato de una habitación de hotel. Este dispositivo permite a los huéspedes ajustar la temperatura de su habitación y recibir notificaciones sobre cambios en el estado del sensor de humo.
+
+URL del Thermostat Embedded Application: https://wokwi.com/projects/434787349155396609
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura.PNG" alt="" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura2.PNG" alt="" width="90%" /> </div> <br>
+
+En esta captura se evidencia el proceso de carga del sketch.ino en la placa ESP32 física.
+
+Mientras que nuestros otros productos de RFID y Smoke Sensor Embedded Application fueron desplegados en Wokwi, una plataforma de simulación de hardware que permite probar y validar el funcionamiento de circuitos electrónicos y microcontroladores sin necesidad de hardware físico. A continuación se muestran las capturas de pantalla de los productos desplegados en Wokwi:
+
+URL Wokwi del RFID Embedded Application: https://wokwi.com/projects/433613195311893505
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/rfid-wokwi.PNG" alt="" width="90%" /> </div> <br>
+
+URL Wokwi del Smoke Sensor Embedded Application: https://wokwi.com/projects/433948209896527873
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/smoke-wokwi.PNG" alt="" width="90%" /> </div> <br>
+
 ## 6.3. Validation Interviews.
 
 ### 6.3.1. Diseño de Entrevistas.
