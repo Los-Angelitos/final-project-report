@@ -8400,17 +8400,23 @@ En esta captura de la aplicación podemos ver la vista principal del proyecto o 
 <br><br>
 
 ### Aplicación Móvil
-* Link de descarga hacia la aplicación móvil: 
+* Link de descarga hacia la aplicación móvil: https://appdistribution.firebase.google.com/accept/5a3b54abbd1985a2b785b3a5
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 
-Para el despliegue de la aplicación móvil se utilizó Firebase App Distribution, una plataforma que permite distribuir aplicaciones móviles de manera eficiente y segura. Esta herramienta facilita la gestión de versiones, la distribución a testers y la recopilación de comentarios, lo que optimiza el proceso de prueba y mejora la calidad del producto final.
+Para el despliegue de la aplicación móvil se utilizó Firebase App Distribution, una plataforma que permite distribuir aplicaciones móviles de manera eficiente y segura. Esta herramienta facilita la gestión de versiones, la distribución a testers y la recopilación de comentarios, lo que optimiza el proceso de prueba y mejora la calidad del producto final.<br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+  <img src="./assets/img/software-deployment-evidence/mobile_app/firebase2.jpg" width="90%" />
 </div><br>
 
-En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/mobile_app/firebase3.jpg" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/mobile_app/phone.png" width="50%" />
+</div><br>
 
 <br><br>
 
