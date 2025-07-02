@@ -8207,135 +8207,71 @@ Este tipo de documentación es clave para garantizar la correcta implementación
 
 A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
 
-En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application (Simulado y Físico), Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
 
-* Link a la aplicación web de SweetManager: https://sweet-manager-web-application.vercel.app/home
+* Link a la aplicación web de SweetManager Web: https://sweet-manager-web-application.vercel.app/home
+* Link hacia el repositorio de aplicación web: https://github.com/Los-Angelitos/web-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/web_app/1.jpg" width="90%" />
+</div><br>
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
 </div><br>
-Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
-  </div><br>
+En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
-</div><br>
-  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
-</div><br>
+<br><br>
 
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
-</div><br>
-  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
-
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
-</div><br>
-
-  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
-</div><br>
-
-  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
-</div><br>
-
-  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
-
+### Aplicación Móvil
+* Link de descarga hacia la aplicación móvil: 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
 </div><br>
 
-Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
-</div><br>
+<br><br>
 
-Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
-</div><br>
-
-Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
-</div><br>
-
-Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
-</div><br>
-Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
-
-**Web Application**
-
-La web application ha sido desplegada en vercel, en este caso, la web se alimenta de un repositorio de github que se encuentra como parte de los repositorios.
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-
-**Web Services**
-
-El componente de Web Services ha sido desplegado a través de un perfil público en un entorno de producción proporcionado por MonsterASP .NET. Este servicio expone los endpoints principales del backend, permitiendo la interacción con las aplicaciones frontend y otros módulos. El entorno de despliegue garantiza alta disponibilidad y facilita el monitoreo en tiempo real del funcionamiento de la API.
+### Web Services
+* Link de Swagger hacia el Web Services: https://sweet-manager-api.runasp.net/swagger/index.html
+* Link al repositorio de la Web Services de SweetManager: https://github.com/Los-Angelitos/web-services
 
 El backend del sistema ha sido desplegado en un entorno de producción proporcionado por MonsterASP.NET, que permite exponer los servicios de forma pública. Este entorno incluye una interfaz administrativa, monitoreo básico y alta disponibilidad. A través de esta plataforma se gestionan todos los endpoints relacionados con la lógica de negocio central.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil público Web Services" width="90%" /> </div><br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/yts.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
-<div style="
-display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil de Producción Web Services" width="90%" /> </div> <br>
+<br><br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+### Edge API
 
-**Edge API**
+* Link hacia repositorio de Edge API: https://github.com/Los-Angelitos/edge-api
 
-Se levanto dentro de una maquina virtual RaspBian, en este caso el edge corre desde ahi. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
+Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
 
-<div style="display:flex; flex-direction:column; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Evidencia Edge API 1" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Evidencia Edge API 2" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Evidencia Edge API 3" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Evidencia Edge API 4" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Evidencia Edge API 5" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Evidencia Edge API 6" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Evidencia Edge API 7" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Evidencia Edge API 8" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<br><br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+### Fog API
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+* Link hacia repositorio de Fog API: https://github.com/Los-Angelitos/fog-api
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-**Fog API**
-
-La Fog API se ha implementado con éxito en un entorno local (fog node), actuando como componente intermedio entre el Edge y los Web Services. Este microservicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales:
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
@@ -8366,7 +8302,7 @@ Gráficos de la sección insights en el repositorio de los Web Services, como se
 
 ---
 
-## FOG API:
+## Fog API:
 
 Gráficos de la sección insights en el repositorio de la FOG API. Como se puede evidenciar, todos los miembros colaboraron en el desarrollo.
 
@@ -8376,7 +8312,7 @@ Gráficos de la sección insights en el repositorio de la FOG API. Como se puede
 
 ---
 
-## EDGE API:
+## Edge API:
 
 Gráficos de la sección insights en el repositorio de la EDGE API. Se evidencia la colaboración de cada uno de los miembros del equipo.
 
@@ -8437,6 +8373,82 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review.
+
+A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
+
+En este Sprint 3, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application (Simulado y Físico), Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+
+### Aplicación Web
+
+* Link a la aplicación web de SweetManager Web: https://sweet-manager-web-application.vercel.app/home
+* Link hacia el repositorio de aplicación web: https://github.com/Los-Angelitos/web-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/web_app/1.jpg" width="90%" />
+</div><br>
+
+La Aplicación web fue desplegada en Vercel, una plataforma de despliegue que permite alojar aplicaciones web de forma rápida y eficiente. Esta plataforma ofrece integración continua, escalabilidad automática y un entorno optimizado para aplicaciones Vue.js, lo que facilita la implementación y el mantenimiento del proyecto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
+</div><br>
+
+En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<br><br>
+
+### Aplicación Móvil
+* Link de descarga hacia la aplicación móvil: 
+* Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
+
+
+Para el despliegue de la aplicación móvil se utilizó Firebase App Distribution, una plataforma que permite distribuir aplicaciones móviles de manera eficiente y segura. Esta herramienta facilita la gestión de versiones, la distribución a testers y la recopilación de comentarios, lo que optimiza el proceso de prueba y mejora la calidad del producto final.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+</div><br>
+
+En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<br><br>
+
+### Web Services
+* Link de Swagger hacia el Web Services: https://sweet-manager-api.runasp.net/swagger/index.html
+* Link al repositorio de la Web Services de SweetManager: https://github.com/Los-Angelitos/web-services
+
+El backend del sistema ha sido desplegado en un entorno de producción proporcionado por MonsterASP.NET, que permite exponer los servicios de forma pública. Este entorno incluye una interfaz administrativa, monitoreo básico y alta disponibilidad. A través de esta plataforma se gestionan todos los endpoints relacionados con la lógica de negocio central.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/yts.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<br><br>
+
+### Edge API
+
+* Link hacia repositorio de Edge API: https://github.com/Los-Angelitos/edge-api
+
+Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<br><br>
+
+### Fog API
+
+* Link hacia repositorio de Fog API: https://github.com/Los-Angelitos/fog-api
+
+La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 ## 6.3. Validation Interviews.
 
