@@ -3741,9 +3741,9 @@ Este *bounded context* es responsable de la gestión de identidad y control de a
 ##### 4. Patrones de Relaciones Sugeridos
 
 - **Anti-corruption Layer (ACL):** Para proteger el contexto *Communication* y *Commerce* de cambios en *IAM*.
-- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Operations and Monitoring* y mande notificaciones.
+- **Open/Host Service:** Para que *Comunication* reciba los datos de *Operations and Monitoring* y mande notificaciones.
 
-![Context Mapping](/assets/img/context-mapping/context-mapping.png)
+![Context Mapping](./assets/img/context-mapping/context-mapping.png)
 
 ### 4.1.3. Software Architecture
 
@@ -6410,7 +6410,7 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="100%" />
+  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="50%" />
 </div>
 
 La única tabla del bounded context `Communication` es la tabla `Notification`. Esta tabla almacena las notificaciones enviadas a los usuarios de la aplicación. La tabla tiene una relación de uno a muchos con la tabla `User`, ya que un usuario puede recibir múltiples notificaciones, pero cada notificación está asociada a un solo usuario.
@@ -6633,14 +6633,14 @@ Utilizamos un esquema visual que aprovecha los principios de jerarquía visual a
 El diseño del wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
 
 <div style="text-align: center;">
-  <img src="./assets/img/landing-page/landing-page-wireframe.png" width="80%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe.png" width="50%" />
   <p style="font-style: italic">Wireframes de la Landing page para Desktop web browser</p>
 </div><br><br>
 
 
 <div style="text-align: center;">
-  <img src="./assets/img/landing-page/landing-page-wireframe-mobile.png" width="80%" />
-  <img src="./assets/img/landing-page/landing-page-wireframe-mobile2.png" width="80%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile.png" width="60%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile2.png" width="60%" />
   <p style="font-style: italic">Wireframes de la Landing page para Mobile web browser</p>
 </div><br><br>
 
@@ -6662,6 +6662,7 @@ En términos de principios de diseño, se han aplicado conceptos como la proximi
 ### 5.4.1. Applications Wireframes.
 
 Los Wireframes diseñados para el Web Application muestran una organización orientada a ofrecer una navegación intuitiva y fluida para los usuarios. En la parte superior se encuentra el encabezado, con el logo y las opciones principales, y, directamente debajo, está el menú de navegación principal, el cual permite un acceso en todo momento a las pantallas más importantes. Este diseño organiza la información de forma que sea fácil de entender y cómoda a la vista, asegurándose de que cada sección sea fácilmente reconocible y accesible:
+
 
 ![Wireframes](./assets/img/wireframes/web/wireframes%20%281%29.png)
 
@@ -6736,12 +6737,12 @@ El wireframe diseñado para el Mobile Application muestra una disposición estru
 Este diseño de wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
 
 <div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wireframe.png" width="80%" />
+  <img src="./assets/img/mobile-application/wireframe.png" width="40%" />
   <p style="font-style: italic">Wireframes de la Mobile Application</p>
 </div><br><br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wireframe2.png" width="80%" />
+  <img src="./assets/img/mobile-application/wireframe2.png" width="40%" />
   <p style="font-style: italic">Wireframes de la Mobile Application</p>
 </div><br><br>
 
@@ -7329,47 +7330,73 @@ Feature: Gestión de suscripciones y planes
 **Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
 - El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
 
-Imagen 1: Hero Section, en esta sección se visualiza el menú superior de la landing page, así como una imagen principal llamtiva y atractiva al cliente. 
+**Imagen 1:** Hero Section, en esta sección se visualiza el menú superior de la landing page, así como una imagen principal llamtiva y atractiva al cliente. 
 ![image](https://github.com/user-attachments/assets/6e4253a0-01e5-4f8c-bb48-46d2e5308bb0)
 
-Imagen 2: Vista de Servicios, dedicada a los Servicios ofrecidos por Sweet Manager, incluyendo la gestión de pagos, la gestión de inventarios y habitaciones, suscripciones y  dispostivos IOT
+</br>
+
+**Imagen 2:** Vista de Servicios, dedicada a los Servicios ofrecidos por Sweet Manager, incluyendo la gestión de pagos, la gestión de inventarios y habitaciones, suscripciones y  dispostivos IOT
 ![image](https://github.com/user-attachments/assets/58304a2f-5e91-4d76-b4a6-f5c307656f70)
 
-Imagen 3: Vista dedicada a la sección "Why Us?", en la que explicamos como puede aportar Sweet Manager a sus segmentos objetivos y que lo diferencia de otros productos similares
+</br>
+
+**Imagen 3:** Vista dedicada a la sección "Why Us?", en la que explicamos como puede aportar Sweet Manager a sus segmentos objetivos y que lo diferencia de otros productos similares
 ![image](https://github.com/user-attachments/assets/133cefe4-dd42-4e58-b023-6a0652c25d58)
+
+</br></br>
 
 - El link de la Web application: https://sweet-manager-web-application.vercel.app
 
-Imagen 1: Vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+**Imagen 1:** Vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 ![image](https://github.com/user-attachments/assets/975e8976-954e-45f1-8ee9-59b2070bd41b)
 
-Imagen 2: Vista de datos personales y preferencias de la cuenta: Ingresado a la sección de preferences dentro del menú superior, se visualizan las preferencias que el cliente decidió configurar para sus habitaciones, con la posibilidad de editarlos. 
+</br>
+
+**Imagen 2:** Vista de datos personales y preferencias de la cuenta: Ingresado a la sección de preferences dentro del menú superior, se visualizan las preferencias que el cliente decidió configurar para sus habitaciones, con la posibilidad de editarlos. 
 ![image](https://github.com/user-attachments/assets/6f36cfb8-5a48-462c-8360-ed8cebce86c8)
 
-Imagen 3: Vista de información del hotel: Ingresado a la sección de My Hotel, se puede visualizar un segundo menú superior. De forma predetrminada se le redirige al primer item de ese menú: Overview, en el que se visualiza la información general del Hotel del usuario. 
+</br>
+
+**Imagen 3:** Vista de información del hotel: Ingresado a la sección de My Hotel, se puede visualizar un segundo menú superior. De forma predetrminada se le redirige al primer item de ese menú: Overview, en el que se visualiza la información general del Hotel del usuario. 
 ![image](https://github.com/user-attachments/assets/4bc82b0f-2fd5-46ed-8ca4-1358934a9e8e)
 
-Imagen 4: Vista de Analíticas. Como segundo item, tenemos las analíticas en las que se grafican semanal y mensualmente los ingresos y egresos del hotel. 
+</br>
+
+**Imagen 4:** Vista de Analíticas. Como segundo item, tenemos las analíticas en las que se grafican semanal y mensualmente los ingresos y egresos del hotel. 
 
 ![image](https://github.com/user-attachments/assets/fbeed890-ab0b-4439-ae4a-b640009c3090)
 
-Imagen 5: Vista de Inventario. Como cuarto item del menú de My Hotel, ingresamos al Inventario, en el que se visualizan los distintos insumos con información como: ID, nombre, precio, cantidad, disponibilidad y proveedor. Con la posibilidad de añadir y eliminar.
+</br>
+
+**Imagen 5:** Vista de Inventario. Como cuarto item del menú de My Hotel, ingresamos al Inventario, en el que se visualizan los distintos insumos con información como: ID, nombre, precio, cantidad, disponibilidad y proveedor. Con la posibilidad de añadir y eliminar.
 ![image](https://github.com/user-attachments/assets/eb51684f-a28e-4eb6-8383-62930d45e042)
 
-Imagen 6: Vista de habitaciones. Como quinto item del menú de My Hotel, tenemos la vista de Habitaciones del Hotel con información sobre las reservas, disponibilidad y tiempos de reserva, así como botones para agregar y eliminar habitaciones. 
+</br>
+
+**Imagen 6:** Vista de habitaciones. Como quinto item del menú de My Hotel, tenemos la vista de Habitaciones del Hotel con información sobre las reservas, disponibilidad y tiempos de reserva, así como botones para agregar y eliminar habitaciones. 
 ![image](https://github.com/user-attachments/assets/d050d0c4-c026-48d3-8ea2-323016e6e63f)
 
-Imagen 7: Vista de Organización. Como sexto item del menú, se puede visualizar la organización del personal del hotel, mediante ramificaciones y un esquema visual.
+</br>
+
+**Imagen 7:** Vista de Organización. Como sexto item del menú, se puede visualizar la organización del personal del hotel, mediante ramificaciones y un esquema visual.
 ![image](https://github.com/user-attachments/assets/fca409d3-12d4-4db7-ac05-3c461e881c59)
 
-Imagen 8: Vista de Devices. Como séptimo item del menú de My Hotel, se visualizan los dispositivos IOT configurados en el hotel, junto a información detallada de los mismos y su estado actual. 
+</br>
+
+**Imagen 8:** Vista de Devices. Como séptimo item del menú de My Hotel, se visualizan los dispositivos IOT configurados en el hotel, junto a información detallada de los mismos y su estado actual. 
 ![image](https://github.com/user-attachments/assets/e1e3c706-a775-4f1d-aa82-5074b369af05)
 
-Imagen 9: Vista de Configuración. Se visualiza la información personal del usuario, incluidos nombre, rol, email, teléfono, contraseña, preferencias, etc. 
+</br>
+
+**Imagen 9:** Vista de Configuración. Se visualiza la información personal del usuario, incluidos nombre, rol, email, teléfono, contraseña, preferencias, etc. 
 ![image](https://github.com/user-attachments/assets/3d0f28b3-9cbf-4119-bd96-e5a6259357ea)
 
-Imagen 10: Vista de Perfil. Mediante un modal, se visualizan distintos botones dedicados a la visualziacion de información personal, preferencias, reservas y cierre de sesión. 
+</br>
+
+**Imagen 10:** Vista de Perfil. Mediante un modal, se visualizan distintos botones dedicados a la visualziacion de información personal, preferencias, reservas y cierre de sesión. 
 ![image](https://github.com/user-attachments/assets/77327113-6a30-484a-b8be-c9ee6c12c128)
+
+</br>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
@@ -8107,76 +8134,85 @@ Scenario: Consultar historial de reservas
   <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
 </div><br><br>
 </div><br>
-Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+
+**Imagen 1** En esta captura de la aplicación podemos ver la
+ vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+</br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
-  </div><br>
+  <img src="./assets/img/exec-evidence-s2/2detail-web.png" 
+  width="90%" />
 
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+ **Imagen 2:** En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+  </div>
+
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
 </div><br>
-  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+
+  **Imagen 3:** En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
 </div><br>
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
 </div><br>
-  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
+  **Imagen 4:** En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
 
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
 </div><br>
 
-  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
+  **Imagen 5:** En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
 </div><br>
 
-  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
+  **Imagen 6:** En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
 </div><br>
 
-  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
+  **Imagen 7:** En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="60%" />
-  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+  
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+**Imagen 1:** En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+**Imagen 2:** En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+**Imagen 3:** En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
 
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
+**Imagen 4:** En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="40%" />
 </div><br>
-Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
+
+**Imagen 5:** En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
@@ -8184,17 +8220,17 @@ Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el 
 A continuación, se mostrará la documentación Swagger del Web Services: 
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
+  <img src="./assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
 </div>
 <br>
 
 Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
 A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
 
 La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
@@ -8229,12 +8265,14 @@ En esta captura de la aplicación podemos ver la vista principal del proyecto o 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="40%" />
 </div><br>
 
 En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-<br><br>
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="40%" />
+</div><br>
 
 ### Web Services
 * Link de Swagger hacia el Web Services: https://sweet-manager-api.runasp.net/swagger/index.html
@@ -8271,7 +8309,6 @@ La Fog API se ha implementado con éxito en un entorno local (fog node) simuland
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
-
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
@@ -8559,7 +8596,7 @@ Duración de la entrevista: 00:00 - 21:40
 Personalidad: Análitica
 
 <div style="text-align: center;">
-  <img src="/assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+  <img src="./assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
 </div><br>
 
 En resumen, Carlo Rebagliati, gerente de hotel, adoptó una perspectiva analítica al evaluar todos los productos presentados.
@@ -8610,14 +8647,14 @@ Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las 
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
-Nombres: Gianella
-Apellidos: Francia
-Edad: 25
-Sexo: Femenino
-Ocupación: Administradora de RRHH en la gestión de hoteles
-Lugar donde vive: Santa Anita, Perú
-Duración de la entrevista: 51:20 - 1:13:30.
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D><br>
+Nombres: Gianella<br>
+Apellidos: Francia<br>
+Edad: 25<br>
+Sexo: Femenino<br>
+Ocupación: Administradora de RRHH en la gestión de hoteles<br>
+Lugar donde vive: Santa Anita, Perú<br>
+Duración de la entrevista: 51:20 - 1:13:30.<br>
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
 <img src="./assets/img/validation-gianella.PNG" alt="Administradora de hotel" width="90%" />
@@ -8653,9 +8690,6 @@ Fabricio destacó que la información presentada en la landing page fue clara y 
 
 Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
 
-
-
-![Entrevista° 2 - Administradores]()
 
 <br><br>
 
@@ -8697,12 +8731,12 @@ Lugar donde vive: Breña - Lima <br>
 Ocupación: Contador<br>
 Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
 Personalidad: Analítica <br>
+
 ![Entrevista° 1 - Huespedes]()<br>
 
 <br><br>
 
 **Entrevista 02 (Huéspedes)**
-
 <br>
 
 URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
