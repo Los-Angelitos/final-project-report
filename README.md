@@ -8421,6 +8421,61 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
 
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review.
+
+En este entregable, se cumple con la documentación de los servicios desarrollados en este sprint, que son la Fog API y Edge API como también del Web Services desplegado en nuestra Cloud. A continuación se muestra la documentación Swagger de ambos servicios:
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swagger1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Cloud API, que es el Web Services desplegado en nuestra Cloud. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/hotels: Este endpoint permite registrar un nuevo hotel en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/hotels/{id}: Este endpoint permite obtener los detalles de un hotel específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**PUT** → /api/v1/hotels/{id}: Este endpoint permite actualizar la información de un hotel existente. La documentación especifica los campos que pueden ser modificados y los tipos de datos esperados.
+
+**POST** → /api/v1/hotels/{id}/rooms: Este endpoint permite agregar una nueva habitación a un hotel específico. La documentación detalla los campos necesarios para la creación de una habitación, como el número de cuarto, tipo, precio y estado.
+
+Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
+
+<br><br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swaggerfog1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Fog API, que es el servicio que actúa como intermediario entre los dispositivos embebidos y los Web Services. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/devices: Este endpoint permite registrar un nuevo dispositivo en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/devices/{id}: Este endpoint permite obtener los detalles de un dispositivo específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**PUT** → /api/v1/devices/{id}: Este endpoint permite actualizar la información de un dispositivo existente. La documentación especifica los campos que pueden ser modificados y los tipos de datos esperados.
+
+<br><br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swaggeredge1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Edge API, que es el servicio que actúa como intermediario entre los dispositivos embebidos y la Fog API. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/inventory/rfid-devices: Este endpoint permite registrar un nuevo dispositivo RFID en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/inventory/rfid-devices/{id}: Este endpoint permite obtener los detalles de un dispositivo RFID específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**POST** → /api/v1/inventory/validate-access: Este endpoint permite validar el acceso a un dispositivo RFID. La documentación especifica los campos que deben ser enviados en la solicitud, como el ID del dispositivo y el token de acceso.
+
+**POST** → /api/v1/monitoring/thermostats: Este endpoint permite registrar un nuevo termostato en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+
 #### 6.2.3.8. Software Deployment Evidence for Sprint Review.
 
 A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
