@@ -549,11 +549,26 @@ Fabia Herrera: En esta fase, trabajé  en la integración de componentes en toda
 
 Omar Morales: En esta entrega, me involucré en la estructuración de todo el sistema: desde el etiquetado y arquitectura hasta el desarrollo en web, servicios, embedded, mobile, validaciones y fog API. Fomenté un entorno colaborativo y apoyé la implementación técnica en distintas fases del proyecto.
 <p/>
+TF:
+        <p/>
+        Mauricio Rojas: En este entregable, participé activamente en la elaboración del prototipo como team leader, así como el completado del informe y el despliegue de la aplicación móvil. Considero que proporcioné liderazgo de forma efectiva a lo largo del desarrollo del proyecot. 
+        <p/>
+        Giacomo Zoppi: En esta etapa, contribuí en el desarrollo del prototipo fisico y corregir algunos puntos debiles, además de apoyar en la coordinación efectiva en la gestión del equipo y de nuestro tablero de trabajo.
+        <p/>
+        Ramon Jorge: En esta entrega, apoyé en la elaboración del prototipo fisico y el reporte. Además, como Aspect Leader, logré organizar a los colaboradores y compartirles mi idea sobre mi Bounded Context. 
+        <p/>
+        Arian Rodriguez: Durante esta entrega, asumí mi papel de Aspect Leader del Organizational Management Bounded Context, pero tambien asumi mi papel como colaborador en otros Bounded Context. Creo que esta responsabilidad y flexibilidad e un trabajo en grupo es esencial para proporcinar liderazgo. 
+        <p/>
+        Fabia Herrera: En esta fase, participé del dispositivo fisico y el sprint backlog 3. Lideré mi aspecto, así como algunos puntos y reuniones relacionados al seguimiento y organización del equipo. 
+        <p/>
+        Omar Morales: En esta entrega, trabajé activamente en el desarrollo del dispositivo fisico, asi como del cumplimiento de cada entregable. Fomenté el liderazgo y asumí el mio en lo relacionado al aspecto del que soy lider. 
+        </p>
     </td>
     <td>
         TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega.</p>
         TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.
         TB2: En esta fase del proyecto se reforzó el liderazgo compartido dentro del equipo. Cada integrante aportó en todas las áreas del sistema —web, mobile, servicios, embedded, validaciones y fog API— asumiendo responsabilidades y tomando iniciativa cuando fue necesario. La comunicación, el uso efectivo del tablero Kanban y la colaboración constante permitieron que el equipo avanzara de forma coordinada y autónoma, manteniendo siempre una visión común.
+        TF1: En esta ultima fase del proyecto, ha sido esencial el liderazgo asumido por cada miembro del equipo para el cumplimiento de cada entregable y punto por cada Bounded Context. Cada miembro cumplió con su rol y sus tareas y con ello, colaboraron en lograr la excelencia de nuestro trabajo y de generar un ambiente grupal efectivo. 
      </td>
   </tr>
   <tr>
@@ -610,10 +625,26 @@ Fabia Herrera: Durante esta entrega, colaboré en los distintos aspectos del sis
 
 Omar Morales: Participé activamente en todas las etapas del proyecto, desde la planificación y documentación del sistema hasta el desarrollo en web, mobile, servicios, embedded y fog API. Además, colaboré en las entrevistas de validación y ayudé a mantener la organización del equipo mediante una comunicación constante.
 <p/>
+<p>
+      TF:
+      <p/>
+      Mauricio Rojas: Para este entregable y en general para todo el trabajo, pienso que he logrado plasmar y crear un ambiente en el cual los distintos miembros del equipo se pueden desenvolver y compartir sus opiniones. Aparte, he podido alinear los objetivos de cada miembro y enfocar nuestros esfuerzos hacia el cumplimiento del student outcomes y el logro del curso. 
+      <p/>
+      Giacomo Zoppi: Para esta entrega, participé colaborando con el grupo mediante una correcta administración de los backlog, así como host en la distintas reuniones de poker technique que hayamos realizado. Por ultimo, ayude a planificar las tareas a completar para este entregable. 
+      <p/>
+      Ramon Jorge: Promoví el uso del tablero Kanban a lo largo del proyecto, le di seguimiento y colaboré en establecer las metas principales. De este modo, pude crear un entorno colaborativo. 
+      <p/>
+      Arian Rodriguez: Trabajé activamente en la organización del tablero Kanban, resolviendo dudas y cumpliendo los plazos definidos. 
+      <p/>
+      Fabia Herrera: Establecí tareas concretas y objetivos dentro del tablero Kanban, asegurándome de mantener una comunicación abierta para resolver dudas.
+      <p/>
+      Omar Morales: Colaboré con el equipo en plasmar un ambiente colaborativo, lo cual considero que es esencial a la hora de formar un equipo de trabajo, en lugar de solo un grupo de clase. También aporte con el cumplimiento de tareas y el seguimiento a los sprint backlogs. 
+    </p>
 <td>
 TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
 TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.</p>
 TB2: En esta fase, reafirmamos nuestro compromiso con un entorno colaborativo e inclusivo. Establecimos metas claras desde el inicio, asignando tareas específicas en el tablero Kanban y manteniendo una comunicación constante entre los integrantes. Todos aportamos activamente en las distintas etapas del trabajo, compartiendo responsabilidades y asegurando el cumplimiento de los objetivos planteados dentro de los tiempos establecidos.
+TF: En este ultimo entregable, logramos completar cada uno de los entregables y objetivos planteados, de este modo, confirmando la eficacia de nuestra organización y del entorno colaborativo que hemos creado a lo largo del curso. Destacamos como nuestros puntos fuertes el colaborativo y ameno ambiente de trabajo, la importancia y seriedad con la que nos tomamos los entregables desde el principio y el establecimiento de sprint goals y metas al inicio de cada sprint. Creemos que todo ello fue la clave para el exito de nuestro grupo, nuestro aprendizaje como ingenieros de software y la calidad garantizada en cada una de nuestras soluciones. 
 </td>
   </tr>
 </table>
@@ -3710,9 +3741,9 @@ Este *bounded context* es responsable de la gestión de identidad y control de a
 ##### 4. Patrones de Relaciones Sugeridos
 
 - **Anti-corruption Layer (ACL):** Para proteger el contexto *Communication* y *Commerce* de cambios en *IAM*.
-- **Open/Host Service:** Para que *Comunication* se reciba los datos de *Operations and Monitoring* y mande notificaciones.
+- **Open/Host Service:** Para que *Comunication* reciba los datos de *Operations and Monitoring* y mande notificaciones.
 
-![Context Mapping](/assets/img/context-mapping/context-mapping.png)
+![Context Mapping](./assets/img/context-mapping/context-mapping.png)
 
 ### 4.1.3. Software Architecture
 
@@ -3743,8 +3774,13 @@ En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuari
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
 En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes módulos y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
+
+El entorno de Producción de SweetManager se basa principalmente en la dependencia para la capa del cliente en el Browser (Edge/Chrome) para poder servir la aplicación web que se encuentra desplegada en el servicio de Vercel. La aplicación móvil se encuentra desplegada en la distribución de Firebase para que se pueda descargar a través de un módulo apk en cualquier dispositivo móvil. La API Web se encuentra desplegada en un Virtual Private Server (VPS) con el proveedor Monster, en este caso, se utiliza un servidor Ubuntu 22.04 con Docker para contenerizar la aplicación y la base de datos de esta manera poder desplegarla de manera eficiente, además se utilizan servicios externos para el envío de correos electrónicos y el /procesamiento de pagos, los cuales son consumidos por la API Web.
+Por el lado de la arquitectura IoT, se utiliza un dispositivo embebido que recolecta datos de los sensores y los envía a un Edge Node montado en un Raspberry Pi 4, el cual procesa los datos localmente y los envía a un Fog Node para su almacenamiento y procesamiento distribuido montado en un servidor local con host kernel de Alpine Linux 3.22 LTS contenederizado junto con su base de datos.
+<br> 
+
 <div style="text-align: center;">
-  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="90%" />
+  <img src="./assets/img/c4-model/deployment-diagram.png" alt="Deployment Diagram" width="100%" />
 </div><br><br>
 
 ## 4.2. Tactical-Level Domain-Driven Design
@@ -4407,6 +4443,17 @@ Se muestra el diagrama de componentes del Mobile Application, mostrando los Widg
 </div>
 Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-iam.PNG" alt="Web Application Component Diagram" width="90%" />
+</div>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-iam.PNG" alt="Web Application Component Diagram" width="90%" />
+</div>
+Se muestra el diagrama de componentes de Edge API, mostrando los componentes y páginas relacionados entre sí.
+
 #### 4.2.1.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
@@ -4846,6 +4893,17 @@ Se muestra el diagrama de componentes del Mobile Application, mostrando los Widg
     ![structurizr-101410-Component-003](https://github.com/user-attachments/assets/5aae84b8-64cb-4582-9390-676a95da4460)
 Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-op-monitoring.png" alt="Web Application Component Diagram" width="90%" />
+</div>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-op-monitoring.png" alt="Web Application Component Diagram" width="90%" />
+</div>
+Se muestra el diagrama de componentes de Edge API, mostrando los componentes y páginas relacionados entre sí.
+
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -5247,6 +5305,17 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
   <img src="https://i.imgur.com/wW0koyh.png" alt="Inventory dsl for web application" width="90%" />
 </div><br>
 
+**Fog API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-inventory.png" alt="Fog API Component Diagram" width="90%" />
+</div><br>
+
+**Edge API**
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/edge-inventory.png" alt="Edge API Component Diagram" width="90%" />
+</div><br>
+
+
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
@@ -5600,6 +5669,12 @@ Para el presente diagrama, se representa la arquitectura de componentes por part
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/org-management-component-mobileapp.png" alt="Component Diagram" width="90%" />
 </div><br><br>
+
+##### Fog API
+Para el presente diagrama, se representa la arquitectura de componentes por parte del Fog API para el Bounded Context Organizational Management. En este diagrama se puede observar la interacción del usuario al realizar una solicitud que tenga que ver con los agregados de la Organización en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-org-management.png" alt="Fog API Component Diagram" width="90%" />
+</div><br>
 
 #### 4.2.3.6. Bounded Context Software Architecture Code Level Diagrams
 
@@ -6151,6 +6226,14 @@ En este diagrama, se muestra la interacción de los widgets en la Mobile Applica
   <img src="./assets/img/commerce-bounded-context/commerce-bounded-context-mobile.png" alt="Component Diagram" width="90%" />
 </div><br><br>
 
+
+##### Fog API
+En este diagrama, se muestra la interacción de los componentes en el Fog API, mostrando cómo interactura con el servicio web Cloud:<br>
+<div style="text-align: center;">
+  <img src="./assets/img/c4-model/fog-commerce.png" alt="Fog API Component Diagram" width="90%" />
+</div><br><br>
+
+
 #### 4.2.4.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.4.6.1. Bounded Context Domain Layer Class Diagrams
@@ -6374,7 +6457,7 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
 
 <div style="text-align: center;">
-  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="100%" />
+  <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="50%" />
 </div>
 
 La única tabla del bounded context `Communication` es la tabla `Notification`. Esta tabla almacena las notificaciones enviadas a los usuarios de la aplicación. La tabla tiene una relación de uno a muchos con la tabla `User`, ya que un usuario puede recibir múltiples notificaciones, pero cada notificación está asociada a un solo usuario.
@@ -6597,14 +6680,14 @@ Utilizamos un esquema visual que aprovecha los principios de jerarquía visual a
 El diseño del wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
 
 <div style="text-align: center;">
-  <img src="./assets/img/landing-page/landing-page-wireframe.png" width="80%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe.png" width="50%" />
   <p style="font-style: italic">Wireframes de la Landing page para Desktop web browser</p>
 </div><br><br>
 
 
 <div style="text-align: center;">
-  <img src="./assets/img/landing-page/landing-page-wireframe-mobile.png" width="80%" />
-  <img src="./assets/img/landing-page/landing-page-wireframe-mobile2.png" width="80%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile.png" width="60%" />
+  <img src="./assets/img/landing-page/landing-page-wireframe-mobile2.png" width="60%" />
   <p style="font-style: italic">Wireframes de la Landing page para Mobile web browser</p>
 </div><br><br>
 
@@ -6626,6 +6709,7 @@ En términos de principios de diseño, se han aplicado conceptos como la proximi
 ### 5.4.1. Applications Wireframes.
 
 Los Wireframes diseñados para el Web Application muestran una organización orientada a ofrecer una navegación intuitiva y fluida para los usuarios. En la parte superior se encuentra el encabezado, con el logo y las opciones principales, y, directamente debajo, está el menú de navegación principal, el cual permite un acceso en todo momento a las pantallas más importantes. Este diseño organiza la información de forma que sea fácil de entender y cómoda a la vista, asegurándose de que cada sección sea fácilmente reconocible y accesible:
+
 
 ![Wireframes](./assets/img/wireframes/web/wireframes%20%281%29.png)
 
@@ -6700,12 +6784,12 @@ El wireframe diseñado para el Mobile Application muestra una disposición estru
 Este diseño de wireframe también contempla la arquitectura de información, estructurando el contenido de manera lógica y coherente. Esto facilita la navegación y permite a los usuarios encontrar la información que buscan de manera eficiente. La disposición de los bloques y la jerarquía visual se han diseñado para guiar al usuario a través del sitio, asegurando que cada sección sea fácilmente identificable y accesible.
 
 <div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wireframe.png" width="80%" />
+  <img src="./assets/img/mobile-application/wireframe.png" width="40%" />
   <p style="font-style: italic">Wireframes de la Mobile Application</p>
 </div><br><br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/mobile-application/wireframe2.png" width="80%" />
+  <img src="./assets/img/mobile-application/wireframe2.png" width="40%" />
   <p style="font-style: italic">Wireframes de la Mobile Application</p>
 </div><br><br>
 
@@ -7293,47 +7377,73 @@ Feature: Gestión de suscripciones y planes
 **Sprint 1:** En este entregable, hemos logrado desarrollar la Landing Page y el Web Application para nuestra Startup Sweet Manager. 
 - El link de la landing page es el siguiente: https://los-angelitos.github.io/landing-page/
 
-Imagen 1: Hero Section, en esta sección se visualiza el menú superior de la landing page, así como una imagen principal llamtiva y atractiva al cliente. 
+**Imagen 1:** Hero Section, en esta sección se visualiza el menú superior de la landing page, así como una imagen principal llamtiva y atractiva al cliente. 
 ![image](https://github.com/user-attachments/assets/6e4253a0-01e5-4f8c-bb48-46d2e5308bb0)
 
-Imagen 2: Vista de Servicios, dedicada a los Servicios ofrecidos por Sweet Manager, incluyendo la gestión de pagos, la gestión de inventarios y habitaciones, suscripciones y  dispostivos IOT
+</br>
+
+**Imagen 2:** Vista de Servicios, dedicada a los Servicios ofrecidos por Sweet Manager, incluyendo la gestión de pagos, la gestión de inventarios y habitaciones, suscripciones y  dispostivos IOT
 ![image](https://github.com/user-attachments/assets/58304a2f-5e91-4d76-b4a6-f5c307656f70)
 
-Imagen 3: Vista dedicada a la sección "Why Us?", en la que explicamos como puede aportar Sweet Manager a sus segmentos objetivos y que lo diferencia de otros productos similares
+</br>
+
+**Imagen 3:** Vista dedicada a la sección "Why Us?", en la que explicamos como puede aportar Sweet Manager a sus segmentos objetivos y que lo diferencia de otros productos similares
 ![image](https://github.com/user-attachments/assets/133cefe4-dd42-4e58-b023-6a0652c25d58)
+
+</br></br>
 
 - El link de la Web application: https://sweet-manager-web-application.vercel.app
 
-Imagen 1: Vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+**Imagen 1:** Vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 ![image](https://github.com/user-attachments/assets/975e8976-954e-45f1-8ee9-59b2070bd41b)
 
-Imagen 2: Vista de datos personales y preferencias de la cuenta: Ingresado a la sección de preferences dentro del menú superior, se visualizan las preferencias que el cliente decidió configurar para sus habitaciones, con la posibilidad de editarlos. 
+</br>
+
+**Imagen 2:** Vista de datos personales y preferencias de la cuenta: Ingresado a la sección de preferences dentro del menú superior, se visualizan las preferencias que el cliente decidió configurar para sus habitaciones, con la posibilidad de editarlos. 
 ![image](https://github.com/user-attachments/assets/6f36cfb8-5a48-462c-8360-ed8cebce86c8)
 
-Imagen 3: Vista de información del hotel: Ingresado a la sección de My Hotel, se puede visualizar un segundo menú superior. De forma predetrminada se le redirige al primer item de ese menú: Overview, en el que se visualiza la información general del Hotel del usuario. 
+</br>
+
+**Imagen 3:** Vista de información del hotel: Ingresado a la sección de My Hotel, se puede visualizar un segundo menú superior. De forma predetrminada se le redirige al primer item de ese menú: Overview, en el que se visualiza la información general del Hotel del usuario. 
 ![image](https://github.com/user-attachments/assets/4bc82b0f-2fd5-46ed-8ca4-1358934a9e8e)
 
-Imagen 4: Vista de Analíticas. Como segundo item, tenemos las analíticas en las que se grafican semanal y mensualmente los ingresos y egresos del hotel. 
+</br>
+
+**Imagen 4:** Vista de Analíticas. Como segundo item, tenemos las analíticas en las que se grafican semanal y mensualmente los ingresos y egresos del hotel. 
 
 ![image](https://github.com/user-attachments/assets/fbeed890-ab0b-4439-ae4a-b640009c3090)
 
-Imagen 5: Vista de Inventario. Como cuarto item del menú de My Hotel, ingresamos al Inventario, en el que se visualizan los distintos insumos con información como: ID, nombre, precio, cantidad, disponibilidad y proveedor. Con la posibilidad de añadir y eliminar.
+</br>
+
+**Imagen 5:** Vista de Inventario. Como cuarto item del menú de My Hotel, ingresamos al Inventario, en el que se visualizan los distintos insumos con información como: ID, nombre, precio, cantidad, disponibilidad y proveedor. Con la posibilidad de añadir y eliminar.
 ![image](https://github.com/user-attachments/assets/eb51684f-a28e-4eb6-8383-62930d45e042)
 
-Imagen 6: Vista de habitaciones. Como quinto item del menú de My Hotel, tenemos la vista de Habitaciones del Hotel con información sobre las reservas, disponibilidad y tiempos de reserva, así como botones para agregar y eliminar habitaciones. 
+</br>
+
+**Imagen 6:** Vista de habitaciones. Como quinto item del menú de My Hotel, tenemos la vista de Habitaciones del Hotel con información sobre las reservas, disponibilidad y tiempos de reserva, así como botones para agregar y eliminar habitaciones. 
 ![image](https://github.com/user-attachments/assets/d050d0c4-c026-48d3-8ea2-323016e6e63f)
 
-Imagen 7: Vista de Organización. Como sexto item del menú, se puede visualizar la organización del personal del hotel, mediante ramificaciones y un esquema visual.
+</br>
+
+**Imagen 7:** Vista de Organización. Como sexto item del menú, se puede visualizar la organización del personal del hotel, mediante ramificaciones y un esquema visual.
 ![image](https://github.com/user-attachments/assets/fca409d3-12d4-4db7-ac05-3c461e881c59)
 
-Imagen 8: Vista de Devices. Como séptimo item del menú de My Hotel, se visualizan los dispositivos IOT configurados en el hotel, junto a información detallada de los mismos y su estado actual. 
+</br>
+
+**Imagen 8:** Vista de Devices. Como séptimo item del menú de My Hotel, se visualizan los dispositivos IOT configurados en el hotel, junto a información detallada de los mismos y su estado actual. 
 ![image](https://github.com/user-attachments/assets/e1e3c706-a775-4f1d-aa82-5074b369af05)
 
-Imagen 9: Vista de Configuración. Se visualiza la información personal del usuario, incluidos nombre, rol, email, teléfono, contraseña, preferencias, etc. 
+</br>
+
+**Imagen 9:** Vista de Configuración. Se visualiza la información personal del usuario, incluidos nombre, rol, email, teléfono, contraseña, preferencias, etc. 
 ![image](https://github.com/user-attachments/assets/3d0f28b3-9cbf-4119-bd96-e5a6259357ea)
 
-Imagen 10: Vista de Perfil. Mediante un modal, se visualizan distintos botones dedicados a la visualziacion de información personal, preferencias, reservas y cierre de sesión. 
+</br>
+
+**Imagen 10:** Vista de Perfil. Mediante un modal, se visualizan distintos botones dedicados a la visualziacion de información personal, preferencias, reservas y cierre de sesión. 
 ![image](https://github.com/user-attachments/assets/77327113-6a30-484a-b8be-c9ee6c12c128)
+
+</br>
 
 #### 6.2.1.7. Services Documentation Evidence for Sprint Review.
 
@@ -7408,22 +7518,7 @@ Hemos planeado para este sprint, el desarrollo de la fog api, edge api, embedded
 | **Sprint n – 1 Review Summary** |  |
 | **Sprint n – 1 Retrospective Summary** | Durante el Sprint anterior logramos completar las vistas del Web Applications en un 90%, junto a la landing page en un 100% El equipo mostró compromiso y organización en el trabajo, de tal modo que logramos completar los entregables con el tiempo debido. Aparte, desde un principio, definimos aspects leaders, cada uno teniendo un Bounded Context en el que centrarse, facilitando el desarrollo de vistas. Por ultimo, como una potencial mejora, creemos que podemos definir mejor los tiempos y fechas limites, con rangos mas cortos de tiempo, habriamos trabajado igual de bien y en menor tiempo, lo cual nos será esencial para este Sprint 2 |
 | **Sprint Goal & User Stories** | |
-| **Sprint 2 Goal** | **Our focus is** on enabling Owners to visualize hotel stock, register the organization, register providers, change subscription plans, request IoT devices, register and view the availability of rooms in their hotel via the mobile application, and invite administrators by email through the web application.
-Guests will be able to register, view their profile, view and filter hotels, make and manage reservations via the mobile application, and edit reservation dates via the web application.
-Administrators will be able to visualize IoT devices via the web application.
-Device Makers will validate the reservation ID using the room card and change the room temperature via the Edge API and Fog API.
-Device Users and Device Makers will monitor room temperature changes using a serial monitor, use room access cards, and receive smoke sensor alerts via the embedded application.
-Mobile or Web Developers will expose endpoints for room and reservation registration, and for filtering rooms and guests by accommodation via the Web Services.
-
-**We believe it delivers** easier monitoring of room reservations for Guests, better management of hotel equipment for Administrators, full operational visibility and control for Owners, meaningful interaction with IoT devices in hotel rooms for Device Users, a system for testing and controlling devices for Device Makers, and reliable access to hotel and user data for Mobile or Web Developers.
-
-**This will be confirmed** when Guests positively rate their booking experience in at least 90% of cases,
-Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager,
-Owners can visualize and control at least 95% of their hotel operations from the platform,
-Device Users interact with devices during more than 80% of their stays, without reading or authentication errors,
-Device Makers validate and control devices with a 98% success rate in integration tests,
-and Mobile or Web Developers have an error rate lower than 2% in documented API calls.|
-
+| **Sprint 2 Goal** | **Our focus is** on enabling Owners to visualize hotel stock, register the organization, register providers, change subscription plans, request IoT devices, register and view the availability of rooms in their hotel via the mobile application, and invite administrators by email through the web application. Guests will be able to register, view their profile, view and filter hotels, make and manage reservations via the mobile application, and edit reservation dates via the web application. Administrators will be able to visualize IoT devices via the web application. Device Makers will validate the reservation ID using the room card and change the room temperature via the Edge API and Fog API. Device Users and Device Makers will monitor room temperature changes using a serial monitor, use room access cards, and receive smoke sensor alerts via the embedded application. Mobile or Web Developers will expose endpoints for room and reservation registration, and for filtering rooms and guests by accommodation via the Web Services. **We believe it delivers** easier monitoring of room reservations for Guests, better management of hotel equipment for Administrators, full operational visibility and control for Owners, meaningful interaction with IoT devices in hotel rooms for Device Users, a system for testing and controlling devices for Device Makers, and reliable access to hotel and user data for Mobile or Web Developers. **This will be confirmed** when Guests positively rate their booking experience in at least 90% of cases, Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Owners can visualize and control at least 95% of their hotel operations from the platform, Device Users interact with devices during more than 80% of their stays, without reading or authentication errors, Device Makers validate and control devices with a 98% success rate in integration tests and Mobile or Web Developers have an error rate lower than 2% in documented API calls.|
 | **Sum of Story Points** | 67 story points |
 
 #### 6.2.2.2.Aspect Leaders and Collaborators.
@@ -7439,39 +7534,39 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
 | Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
-#### 6.2.2.3.Sprint Backlog 2.
+#### 6.2.2.3.Sprint Backlog 2
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
-| HU01     | Registrar nueva reserva en el hotel | T-001 | Reservar habitaciones | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia. | 3 | Giacomo Zoppi | To-do |
-| HU01     | Crear organización | T-001 | Registrar organización | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3 | Arian Rodriguez | To-do |
-| HU02     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2 | Ramon Jorge | To-do |
-| HU03     | Revisar stock de recursos del hotel | T-001 | Ver stock de recursos | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3 | Omar Morales | To-do |
+| HU01     | Registrar nueva reserva en el hotel | T-001 | Reservar habitaciones | Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia. | 3 | Giacomo Zoppi | Done |
+| HU01     | Crear organización | T-001 | Registrar organización | Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel. | 3 | Arian Rodriguez | Done |
+| HU02     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales. | 2 | Ramon Jorge | Done |
+| HU03     | Revisar stock de recursos del hotel | T-001 | Ver stock de recursos | Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento. | 3 | Omar Morales | Done |
 | HU04     | Agregar proveedores | T-001 | Registrar proveedor | Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada. | 2 | Omar Morales | To-do |
-| HU02     | Reservar una habitación personalizada | T-001 | Reserva personalizada | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias. | 3 | Giacomo Zoppi | To-do |
-| HU03     | Visualizar y gestionar reservas activas | T-001 | Gestionar reservas activas | Como Mobile Guest quiero visualizar y gestionar mis reservas activas. | 3 | Giacomo Zoppi | To-do |
-| HU04     | Cancelar reservas activas | T-001 | Cancelar reserva | Como Mobile Guest quiero cancelar una de mis reservas activas dentro del plazo permitido. | 2 | Giacomo Zoppi | To-do |
-| HU05     | Buscar y filtrar habitaciones por estado | T-001 | Filtrar habitaciones | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo). | 2 | Arian Rodriguez | To-do |
-| HU06     | Consultar disponibilidad de habitaciones | T-001 | Ver disponibilidad | Como Mobile Hotel Owner quiero consultar la disponibilidad de habitaciones. | 2 | Giacomo Zoppi  | To-do |
-| HU02     | Buscar y filtrar hoteles de Sweet Manager | T-001 | Filtrar hoteles | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias. | 2 | Arian Rodriguez | To-do |
-| HU06     | Consultar historial de reservas anteriores | T-001 | Ver historial de reservas | Como Mobile Guest quiero acceder a mi historial de reservas. | 2 | Giacomo Zoppi | To-do |
-| HU04     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización. | 2 | Ramón Jorge | To-do |
-| HU08     | Solicitar dispositivos | T-001 | Pedir dispositivos IoT | Como Mobile Hotel Owner quiero poder solicitar más dispositivos IoT para personalización de habitaciones. | 1 | Giacomo Zoppi | To-do |
-| HU07     | Crear perfil y preferencias | T-001 | Crear perfil | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias. | 1 | Mauricio Rojas | To-do |
-| HU07     | Crear cuenta | T-001 | Registrar cuenta | Como Mobile Hotel Owner quiero registrar una cuenta para gestionar el hotel. | 1 | Mauricio Rojas | To-do |
-| HTU01    | Exponer endpoint para registrar habitación | T-001 | Endpoint registrar habitación | Como Developer quiero exponer un endpoint POST /api/rooms para registrar una habitación por API. | 2 | Giacomo Zoppi | To-do |
-| HTU02    | Consultar habitaciones filtradas por estado | T-001 | Endpoint filtrar habitaciones | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo. | 2 | Giacomo Zoppi | To-do |
-| HTU03    | Exponer endpoint para desvincular administrador | T-001 | Endpoint eliminar admin | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId}. | 2 | Mauricio Rojas | To-do |
-| HTU04    | Exponer endpoint para registrar reserva | T-001 | Endpoint registrar reserva | Como Developer quiero exponer un endpoint POST /api/bookings. | 2 | Giacomo Zoppi | To-do |
-| HTU05    | Exponer endpoint para ver huéspedes alojados | T-001 | Endpoint ver huéspedes | Como Developer quiero exponer un endpoint GET /api/bookings/active. | 2 | Giacomo Zoppi | To-do |
-| HU01     | Uso de Interrupt-Driven Detection | T-001 | Detectar botón con interrupción | Como Device Maker quiero usar metodología interrupt-driven para detectar un botón presionado eficientemente. | 5 | Mauricio Rojas | To-do |
-| HU01     | Tarjeta para acceso a habitaciones | T-001 | Acceso con tarjeta | Como Device User quiero acercar una tarjeta para habilitar la puerta. | 3 | Omar Morales | To-do |
-| HU02     | Control de temperatura en habitaciones | T-001 | Controlar temperatura | Como Device User quiero presionar un botón para ajustar la temperatura. | 3 | Arian Rodriguez | To-do |
-| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible. | 3 | Fabia Herrera | To-do |
-| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | To-do |
-| HU03     | Visualizar estado de dispositivos IoT| T-001 | Ver temperatura en pantalla | Como Device User quiero visualizar una pantalla con la temperatura configurada. | 2 | Ramón Jorge | To-do |
-| HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | To-do |
-| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | To-do |
+| HU02     | Reservar una habitación personalizada | T-001 | Reserva personalizada | Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias. | 3 | Giacomo Zoppi | Done |
+| HU03     | Visualizar y gestionar reservas activas | T-001 | Gestionar reservas activas | Como Mobile Guest quiero visualizar y gestionar mis reservas activas. | 3 | Giacomo Zoppi | Done |
+| HU04     | Cancelar reservas activas | T-001 | Cancelar reserva | Como Mobile Guest quiero cancelar una de mis reservas activas dentro del plazo permitido. | 2 | Giacomo Zoppi | Done |
+| HU05     | Buscar y filtrar habitaciones por estado | T-001 | Filtrar habitaciones | Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo). | 2 | Arian Rodriguez | Done |
+| HU06     | Consultar disponibilidad de habitaciones | T-001 | Ver disponibilidad | Como Mobile Hotel Owner quiero consultar la disponibilidad de habitaciones. | 2 | Giacomo Zoppi  | Done |
+| HU02     | Buscar y filtrar hoteles de Sweet Manager | T-001 | Filtrar hoteles | Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias. | 2 | Arian Rodriguez | Done |
+| HU06     | Consultar historial de reservas anteriores | T-001 | Ver historial de reservas | Como Mobile Guest quiero acceder a mi historial de reservas. | 2 | Giacomo Zoppi | Done |
+| HU04     | Mejorar la subscripción de la organización | T-001 | Cambiar subscripción | Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización. | 2 | Ramón Jorge | Done |
+| HU08     | Solicitar dispositivos | T-001 | Pedir dispositivos IoT | Como Mobile Hotel Owner quiero poder solicitar más dispositivos IoT para personalización de habitaciones. | 1 | Giacomo Zoppi | Done |
+| HU07     | wCrear perfil y preferencias | T-001 | Crear perfil | Como Mobile Guest quiero crear un perfil global para guardar mis preferencias. | 1 | Mauricio Rojas | Done |
+| HU07     | Crear cuenta | T-001 | Registrar cuenta | Como Mobile Hotel Owner quiero registrar una cuenta para gestionar el hotel. | 1 | Mauricio Rojas | Done |
+| HTU01    | Exponer endpoint para registrar habitación | T-001 | Endpoint registrar habitación | Como Developer quiero exponer un endpoint POST /api/rooms para registrar una habitación por API. | 2 | Giacomo Zoppi | Done |
+| HTU02    | Consultar habitaciones filtradas por estado | T-001 | Endpoint filtrar habitaciones | Como Developer quiero exponer un endpoint GET /api/rooms?status=activo/inactivo. | 2 | Giacomo Zoppi | Done |
+| HTU03    | Exponer endpoint para desvincular administrador | T-001 | Endpoint eliminar admin | Como Developer quiero crear un endpoint DELETE /api/admins/{adminId}. | 2 | Mauricio Rojas | Done |
+| HTU04    | Exponer endpoint para registrar reserva | T-001 | Endpoint registrar reserva | Como Developer quiero exponer un endpoint POST /api/bookings. | 2 | Giacomo Zoppi | Done |
+| HTU05    | Exponer endpoint para ver huéspedes alojados | T-001 | Endpoint ver huéspedes | Como Developer quiero exponer un endpoint GET /api/bookings/active. | 2 | Giacomo Zoppi | Done |
+| HU01     | Uso de Interrupt-Driven Detection | T-001 | Detectar botón con interrupción | Como Device Maker quiero usar metodología interrupt-driven para detectar un botón presionado eficientemente. | 5 | Mauricio Rojas | Working on |
+| HU01     | Tarjeta para acceso a habitaciones | T-001 | Acceso con tarjeta | Como Device User quiero acercar una tarjeta para habilitar la puerta. | 3 | Omar Morales | Done |
+| HU02     | Control de temperatura en habitaciones | T-001 | Controlar potenciometro | Como Device User quiero utilizar un potenciometro para ajustar la temperatura. | 3 | Arian Rodriguez | Working On |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible. | 3 | Fabia Herrera | Working On |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo | Como Web Hotel Owner quiero recibir una notificación inmediata al activarse un sensor de humo. | 3 | Fabia Herrera | Working on |
+| HU03     | Visualizar estado de dispositivos IoT| T-001 | Ver temperatura en pantalla | Como Device User quiero visualizar una pantalla con la temperatura configurada. | 2 | Ramón Jorge | Done |
+| HU02     | Monitorear el cambio de temperatura | T-001 | Ver temperatura en Serial Monitor | Como Device Maker quiero ver la temperatura en el monitor serial. | 2 | Fabia Herrera | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Owner quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Giacomo Zoppi | Working On |
 
 #### 6.2.2.4. Development Evidence for Sprint Review.
 <table border="1">
@@ -8086,76 +8181,85 @@ Scenario: Consultar historial de reservas
   <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
 </div><br><br>
 </div><br>
-Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+
+**Imagen 1** En esta captura de la aplicación podemos ver la
+ vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+</br>
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
-  </div><br>
+  <img src="./assets/img/exec-evidence-s2/2detail-web.png" 
+  width="90%" />
 
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+ **Imagen 2:** En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
+  </div>
+
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
 </div><br>
-  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
+
+  **Imagen 3:** En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
 </div><br>
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
 </div><br>
-  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
+
+  **Imagen 4:** En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
 
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
 </div><br>
 
-  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
+  **Imagen 5:** En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
 </div><br>
 
-  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
+  **Imagen 6:** En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
 </div><br>
 
-  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
+  **Imagen 7:** En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="60%" />
-  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+  
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+**Imagen 1:** En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+**Imagen 2:** En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
+**Imagen 3:** En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
 
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
+**Imagen 4:** En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="40%" />
 </div><br>
-Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
+
+**Imagen 5:** En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
 
 
 #### 6.2.2.7. Services Documentation Evidence for Sprint Review.
@@ -8163,17 +8267,17 @@ Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el 
 A continuación, se mostrará la documentación Swagger del Web Services: 
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="/assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
+  <img src="./assets/img/services-documentation/swag1.png" alt="Administradora de hotel" width="90%" />
 </div>
 <br>
 
 Se muestra la primera vista del Web Services desplegado, utilizando Swagger Docs. Se muestra información básica de la API, y los endpoints se muestran agrupados por controladoras.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag2.png" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 En esta sección se presentan algunos endpoints principales (Core) del sistema, los cuales forman parte esencial de la lógica de negocio. Cada uno está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT). Esta información nos permite comprender de forma rápida cómo interactuar con la API y qué operaciones están disponibles.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag3.png" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/services-documentation/swag5.png" alt="Administradora de hotel" width="90%" /> </div> <br>
 A continuación, se detalla el funcionamiento del endpoint [POST] → /api/v1/hotels, correspondiente al registro de un nuevo hotel en el sistema.
 
 La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. 
@@ -8186,182 +8290,335 @@ Este tipo de documentación es clave para garantizar la correcta implementación
 
 A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
 
-En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application, Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+En este Sprint 2, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application (Simulado y Físico), Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
 
-* Link a la aplicación web de SweetManager: https://sweet-manager-web-application.vercel.app/home
+* Link a la aplicación web de SweetManager Web: https://sweet-manager-web-application.vercel.app/home
+* Link hacia el repositorio de aplicación web: https://github.com/Los-Angelitos/web-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/web_app/1.jpg" width="90%" />
+</div><br>
 
 <div style="text-align: center;">
   <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
 </div><br>
-Imagen 1: En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2detail-web.png" width="90%" />
-  </div><br>
+En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
-  Imagen 2: En esta imagen podemos ver el detalle de un hotel, en el que se visualiza la información del hotel, así como los servicios que ofrece. Es posible reservar una habitación desde esta vista, así como ver el precio mínimo de un cuarto.
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3overview-web.png" width="90%" />
-</div><br>
-  Imagen 3: En esta parte del flujo, el usuario se ha autenticado como owner de un hotel y ya ha creado uno, en esta vista se puede ver el overview del hotel, con información general del mismo, como el nombre, dirección, teléfono, email y la cantidad de habitaciones disponibles.
-</div><br>
+<br><br>
 
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4rooms-web.png" width="90%" />
-</div><br>
-  Imagen 4: En esta captura, el usuario autenticado como owner de hotel puede revisar el estado de la totalidad de habitaciones del hotel, así como su estado. En esta sección el dueño de hotel será capaz de agregar o eliminar un hotel de considerarlo necesario.
-
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5organization-web.png" width="90%" />
-</div><br>
-
-  Imagen 5: En esta parte del flujo, el usuario autenticado como owner de hotel puede ver la organización del hotel, con sus respectivos administradores y su jerarquía. Desde aquí es posible invitar a nuevos administradores o eliminar a los existentes.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/6devices-web.png" width="90%" />
-</div><br>
-
-  Imagen 6: En esta captura, el usuario autenticado como owner de hotel puede ver los dispositivos IoT que tiene configurados en su hotel, así como su estado actual. Desde aquí es posible solicitar más dispositivos IoT para personalizar las habitaciones del hotel.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/7profile-web.png" width="90%" />
-</div><br>
-
-  Imagen 7: En esta parte del flujo, el usuario puede ver su perfil, con su información personal. Desde aquí es posible editar la información personal y cerrar sesión.
-
+### Aplicación Móvil
+* Link de descarga hacia la aplicación móvil: 
 * Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/1home-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 1: En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+En esta captura de la aplicación móvil podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal inferior con la información personal del usuario, el idioma de la app y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
 
 <div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="50%" />
+  <img src="./assets/img/exec-evidence-s2/2profile-mobile.jpg" width="40%" />
 </div><br>
 
-Imagen 2: En esta imagen podemos ver el perfil del usuario en la aplicación móvil, donde se muestra la información personal del usuario, así como la opción de editar su perfil y cerrar sesión. En este caso, al tratarse de un usuario huesped, se hay una sección en la que puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/3edit-profile-mobile.jpg" width="50%" />
-</div><br>
-
-Imagen 3: En esta parte del flujo, el usuario puede editar su perfil, cambiando su nombre, email y contraseña. También puede agregar sus preferencias en cuanto a la temperatura de su cuarto.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/4reservation-mobile.jpg" width="50%" />
-</div><br>
-
-Imagen 4: En esta captura, el usuario autenticado como huésped puede ver sus reservas, así como la información de cada una de ellas. Desde aquí es posible cancelar una reserva si así lo desea.
-
-<div style="text-align: center;">
-  <img src="./assets/img/exec-evidence-s2/5-payment-mobile.jpg" width="50%" />
-</div><br>
-Imagen 5: En esta imagen el usuario autenticado como huésped puede realizar el pago de la reserva realizada con anterioridad. Por ello, se muestra un pequeño formulario con el cual el usuario pagará por la reserva.
-
-**Web Application**
-
-La web application ha sido desplegada en vercel, en este caso, la web se alimenta de un repositorio de github que se encuentra como parte de los repositorios.
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_app/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-
-**Web Services**
-
-El componente de Web Services ha sido desplegado a través de un perfil público en un entorno de producción proporcionado por MonsterASP .NET. Este servicio expone los endpoints principales del backend, permitiendo la interacción con las aplicaciones frontend y otros módulos. El entorno de despliegue garantiza alta disponibilidad y facilita el monitoreo en tiempo real del funcionamiento de la API.
+### Web Services
+* Link de Swagger hacia el Web Services: https://sweet-manager-api.runasp.net/swagger/index.html
+* Link al repositorio de la Web Services de SweetManager: https://github.com/Los-Angelitos/web-services
 
 El backend del sistema ha sido desplegado en un entorno de producción proporcionado por MonsterASP.NET, que permite exponer los servicios de forma pública. Este entorno incluye una interfaz administrativa, monitoreo básico y alta disponibilidad. A través de esta plataforma se gestionan todos los endpoints relacionados con la lógica de negocio central.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil público Web Services" width="90%" /> </div><br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/yts.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
 
-<div style="
-display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Perfil de Producción Web Services" width="90%" /> </div> <br>
+<br><br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+### Edge API
 
-**Edge API**
+* Link hacia repositorio de Edge API: https://github.com/Los-Angelitos/edge-api
 
-Se levanto dentro de una maquina virtual RaspBian, en este caso el edge corre desde ahi. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
+Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
 
-<div style="display:flex; flex-direction:column; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Evidencia Edge API 1" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Evidencia Edge API 2" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Evidencia Edge API 3" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Evidencia Edge API 4" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Evidencia Edge API 5" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Evidencia Edge API 6" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Evidencia Edge API 7" width="90%" /> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Evidencia Edge API 8" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/2.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<br><br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+### Fog API
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+* Link hacia repositorio de Fog API: https://github.com/Los-Angelitos/fog-api
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
-
-**Fog API**
-
-La Fog API se ha implementado con éxito en un entorno local (fog node), actuando como componente intermedio entre el Edge y los Web Services. Este microservicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales:
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/4.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/5.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
-
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/6.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
 
-Mobile Application: 
+## Mobile Application:
 
-Gráficos de la sección insights en el repositorio de la Mobile Application. 
+Gráficos de la sección insights en el repositorio de la Mobile Application desde el 24 de mayo hasta el 14 de junio. Todos los miembros del equipo colaboraron, como se puede evidenciar. 
 
-![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe" width="500">
+</div>
 
-![image](https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/799e9040-1f73-41b3-829d-7967ff9f1604" width="500">
+</div>
 
-Web Services: 
+---
 
-Gráficos de la sección insights en el repositorio de los Web Services: 
+## Web Services:
 
-![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
+Gráficos de la sección insights en el repositorio de los Web Services, como se puede evidenciar, todos los miembros colaboraron en el desarrollo.
 
-FOG API: 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad" width="500">
+</div>
 
-Gráficos de la sección insights en el repositorio de la FOG API. 
+---
 
-![image](https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73)
+## Fog API:
 
-EDGE API: 
+Gráficos de la sección insights en el repositorio de la FOG API. Como se puede evidenciar, todos los miembros colaboraron en el desarrollo.
 
-Gráficos de la sección insights en el repositorio de la EDGE API. 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73" width="500">
+</div>
 
-![image](https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b)
+---
 
-EMBEDDED APPLICATIONS: 
+## Edge API:
 
-Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION. 
+Gráficos de la sección insights en el repositorio de la EDGE API. Se evidencia la colaboración de cada uno de los miembros del equipo.
 
-![image](https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b" width="500">
+</div>
 
-Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION. 
+---
 
-![image](https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a)
+## EMBEDDED APPLICATIONS:
 
-Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION. 
+Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION.
 
-![image](https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82)
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/1e55308b-e716-432a-816a-8ec70403823a" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/58813696-8c98-4cd7-ae5a-334384cb2c82" width="500">
+</div>
+
+### 6.2.3. Sprint 3
+#### 6.2.3.1. Sprint Planning 3.
+Hemos planeado para este sprint, Hemos planeado para este sprint, la finalización de nuestra fog api, edge api y embedded application. Así como la culminación del documento, incluyendo el Video About the Product.
+
+| **Sprint #** | Sprint 3 |
+|--------------|----------|
+| **Sprint Planning Background**  |
+| **Date** | 2025-06-28 |
+| **Time** | 09:00 PM |
+| **Location** | Virtual, mediante una llamada de Discord |
+| **Prepared By** | Rojas Sanchez, Mauricio |
+| **Attendees (to planning meeting)** | Zoppi, Giacomo - Herrera, Fabia - Rodriguez, Arian - Morales, Omar - Jorge, Ramón |
+| **Sprint n – 2 Review Summary** |  |
+| **Sprint n – 2 Retrospective Summary** | Durante el Sprint anterior, logramos culminar al 100% nuestros Web Application, Mobile Application y Web Services y culminamos la Fog api, Edge api y embedded application a un 70%. Aparte, buscamos plasmar parte de nuestra aplicación embebida en dispositivos fisicos, el cual tambien es nuestro enfoque en este ultimo sprint. Por ultimo, como mejora con respecto a la ultima entrega, creo que podemos organizarnos de tal modo, que priorizemos lo mas complicado por sobre lo que tenemos menos experiencia. De este modo, evitamos tener errores y complicaciones tan cercanos a la fecha de cierre del sprint y garantizamos que cada entregable sea cumplido al 100%. |
+| **Sprint Goal & User Stories** | |
+| **Sprint 3 Goal** | Our focus is on enabling Administrators to visualize IoT devices via the web application, Device Makers to configure the threshold for the smoke sensor via the Edge and FOG API and Device Users to receive  smoke sensor alerts via the embedded application. We believe it delivers better management of hotel equipment for Administrators, useful interaction with IoT devices in hotel rooms for Device Users and a system testing and controlling devices for Device Makers. This will be confirmed when Administrators report a 20% increase in positive user feedback at their hotel using Sweet Manager, Device Users interact with devices during more than 80% of their stays, without reading authentication errors and Device Makers validate and control Device Makers and control devices with 98% succes rate in integration tests.
+| **Sprint 3 Velocity** | |
+| **Sum of Story Points** | 14 story points |
 
 
+#### 6.2.3.3.Sprint Backlog 3
+| User Story |            | Work-Item / Task |         |             |               |                |                |
+|------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
+| **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
+| HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura mediante un potenciometro | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo activado en la web | Como Web Hotel Admin quiero recibir una notificación inmediata al activarse un sensor de humo en la sección de notificaciones | 3 | Fabia Herrera | Done |
+| HU15     | Recibir notificación por humo | T-002 | Creación de notificación desde la edge api | Como Device Maker quiero que la Edge y FOG API interactuen con la Cloud API, de tal modo que se cree una notificación cuando el sensor de humo es activado. | 3 | Omar Morales | Done |
+| HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
+
+#### 6.2.3.7. Services Documentation Evidence for Sprint Review.
+
+En este entregable, se cumple con la documentación de los servicios desarrollados en este sprint, que son la Fog API y Edge API como también del Web Services desplegado en nuestra Cloud. A continuación se muestra la documentación Swagger de ambos servicios:
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swagger1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Cloud API, que es el Web Services desplegado en nuestra Cloud. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/hotels: Este endpoint permite registrar un nuevo hotel en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/hotels/{id}: Este endpoint permite obtener los detalles de un hotel específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**PUT** → /api/v1/hotels/{id}: Este endpoint permite actualizar la información de un hotel existente. La documentación especifica los campos que pueden ser modificados y los tipos de datos esperados.
+
+**POST** → /api/v1/hotels/{id}/rooms: Este endpoint permite agregar una nueva habitación a un hotel específico. La documentación detalla los campos necesarios para la creación de una habitación, como el número de cuarto, tipo, precio y estado.
+
+Este tipo de documentación es clave para garantizar la correcta implementación de las funcionalidades y minimizar errores durante el consumo de la API.
+
+<br><br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swaggerfog1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Fog API, que es el servicio que actúa como intermediario entre los dispositivos embebidos y los Web Services. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/devices: Este endpoint permite registrar un nuevo dispositivo en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/devices/{id}: Este endpoint permite obtener los detalles de un dispositivo específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**PUT** → /api/v1/devices/{id}: Este endpoint permite actualizar la información de un dispositivo existente. La documentación especifica los campos que pueden ser modificados y los tipos de datos esperados.
+
+<br><br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/services-documentation/swaggeredge1.png" alt="" width="90%" />
+</div>
+
+En esta imagen se evidencia la documentación Swagger de la Edge API, que es el servicio que actúa como intermediario entre los dispositivos embebidos y la Fog API. En esta sección se muestran los distintos endpoints disponibles, agrupados por controladoras. Cada endpoint está claramente documentado, mostrando la ruta de acceso, el tipo de método HTTP utilizado (GET, POST, PUT) y una breve descripción de su funcionalidad.
+
+##### Ejemplo de Endpoints
+**POST** → /api/v1/inventory/rfid-devices: Este endpoint permite registrar un nuevo dispositivo RFID en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+**GET** → /api/v1/inventory/rfid-devices/{id}: Este endpoint permite obtener los detalles de un dispositivo RFID específico, identificándolo por su ID único. La documentación incluye ejemplos de solicitudes y respuestas, así como posibles códigos de error.
+
+**POST** → /api/v1/inventory/validate-access: Este endpoint permite validar el acceso a un dispositivo RFID. La documentación especifica los campos que deben ser enviados en la solicitud, como el ID del dispositivo y el token de acceso.
+
+**POST** → /api/v1/monitoring/thermostats: Este endpoint permite registrar un nuevo termostato en el sistema. La documentación generada por Swagger permite visualizar el JSON Schema requerido en la solicitud, especificando todos los campos obligatorios, sus tipos de datos y ejemplos de valores válidos. En cuanto a la respuesta del servidor, si la solicitud es válida y se procesa exitosamente, el servicio retorna un código 200 OK junto con el objeto creado o un mensaje de confirmación. En caso de que la solicitud contenga errores de validación o campos faltantes, se devuelve un código 400 BAD REQUEST, acompañado de una descripción del problema para facilitar su resolución.
+
+
+#### 6.2.3.8. Software Deployment Evidence for Sprint Review.
+
+A continuación, se muestra la evidencia de deployment de todos los productos abarcados en este sprint:
+
+En este Sprint 3, hemos logrado desarrollar los siguientes artefactos: Fog API, Edge API, Embedded Application (Simulado y Físico), Web Services, Mobile Application y Web Application. A continuación se muestran las vistas de cada uno de los artefactos desarrollados en este sprint:
+
+### Aplicación Web
+
+* Link a la aplicación web de SweetManager Web: https://sweet-manager-web-application.vercel.app/home
+* Link hacia el repositorio de aplicación web: https://github.com/Los-Angelitos/web-application
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/web_app/1.jpg" width="90%" />
+</div><br>
+
+La Aplicación web fue desplegada en Vercel, una plataforma de despliegue que permite alojar aplicaciones web de forma rápida y eficiente. Esta plataforma ofrece integración continua, escalabilidad automática y un entorno optimizado para aplicaciones Vue.js, lo que facilita la implementación y el mantenimiento del proyecto.
+
+<div style="text-align: center;">
+  <img src="./assets/img/exec-evidence-s2/1home-web.png" width="90%" />
+</div><br>
+
+En esta captura de la aplicación podemos ver la vista principal del proyecto o Home Page, conformada por un menú principal superior con la información personal del usuario, el idioma de la web y las notificaciones. Así como una sección principal en la que se visualizan los distintos hoteles, divididos en categorías.
+
+<br><br>
+
+### Aplicación Móvil
+* Link de descarga hacia la aplicación móvil: https://appdistribution.firebase.google.com/accept/5a3b54abbd1985a2b785b3a5
+* Link al repositorio de la aplicación móvil de SweetManager: https://github.com/Los-Angelitos/mobile-application
+
+
+Para el despliegue de la aplicación móvil se utilizó Firebase App Distribution, una plataforma que permite distribuir aplicaciones móviles de manera eficiente y segura. Esta herramienta facilita la gestión de versiones, la distribución a testers y la recopilación de comentarios, lo que optimiza el proceso de prueba y mejora la calidad del producto final.<br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/mobile_app/firebase2.jpg" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/mobile_app/firebase3.jpg" width="90%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="./assets/img/software-deployment-evidence/mobile_app/phone.png" width="50%" />
+</div><br>
+
+<br><br>
+
+### Web Services
+* Link de Swagger hacia el Web Services: https://sweet-manager-api.runasp.net/swagger/index.html
+* Link al repositorio de la Web Services de SweetManager: https://github.com/Los-Angelitos/web-services
+
+El backend del sistema ha sido desplegado en un entorno de producción proporcionado por MonsterASP.NET, que permite exponer los servicios de forma pública. Este entorno incluye una interfaz administrativa, monitoreo básico y alta disponibilidad. A través de esta plataforma se gestionan todos los endpoints relacionados con la lógica de negocio central.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/public_profile.jpg" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/web_services/yts.PNG" alt="Administradora de hotel" width="90%" /> </div> <div style="display:flex; justify-content:center; align-items:center; width: 100%"></div> <br>
+
+<br><br>
+
+### Edge API
+
+* Link hacia repositorio de Edge API: https://github.com/Los-Angelitos/edge-api
+
+Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<br><br>
+
+### Fog API
+
+* Link hacia repositorio de Fog API: https://github.com/Los-Angelitos/fog-api
+
+La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+
+### Embedded Application
+
+* Link hacia el repositorio del Thermostat Embedded Application: https://github.com/Los-Angelitos/thermostat-embedded-application
+* Link hacia el repositorio del Smoke Sensor Embedded Application:
+https://github.com/Los-Angelitos/smoke-sensor-embedded-application.git
+* Link hacia el repositorio del RFID Embedded Application: https://github.com/Los-Angelitos/rfid-embedded-application
+
+Para esta entrega, se realizó el "upload" del sketch.ino en OOP del Thermostat Embedded Application desde Arduino IDE a la placa ESP32, que simula el termostato de una habitación de hotel. Este dispositivo permite a los huéspedes ajustar la temperatura de su habitación y recibir notificaciones sobre cambios en el estado del sensor de humo.
+
+URL del Thermostat Embedded Application: https://wokwi.com/projects/434787349155396609
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura.PNG" alt="" width="90%" /> </div> <br>
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura2.PNG" alt="" width="90%" /> </div> <br>
+
+En esta captura se evidencia el proceso de carga del sketch.ino en la placa ESP32 física.
+
+Mientras que nuestros otros productos de RFID y Smoke Sensor Embedded Application fueron desplegados en Wokwi, una plataforma de simulación de hardware que permite probar y validar el funcionamiento de circuitos electrónicos y microcontroladores sin necesidad de hardware físico. A continuación se muestran las capturas de pantalla de los productos desplegados en Wokwi:
+
+URL Wokwi del RFID Embedded Application: https://wokwi.com/projects/433613195311893505
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/rfid-wokwi.PNG" alt="" width="90%" /> </div> <br>
+
+URL Wokwi del Smoke Sensor Embedded Application: https://wokwi.com/projects/433948209896527873
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/smoke-wokwi.PNG" alt="" width="90%" /> </div> <br>
 
 ## 6.3. Validation Interviews.
 
@@ -8466,7 +8723,7 @@ Duración de la entrevista: 00:00 - 21:40
 Personalidad: Análitica
 
 <div style="text-align: center;">
-  <img src="/assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+  <img src="./assets/img/validation-interviews/carlo_rebagliati.jpg" alt="Owner Carlo Rebagliati" width="100%" />
 </div><br>
 
 En resumen, Carlo Rebagliati, gerente de hotel, adoptó una perspectiva analítica al evaluar todos los productos presentados.
@@ -8517,14 +8774,14 @@ Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las 
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
-Nombres: Gianella
-Apellidos: Francia
-Edad: 25
-Sexo: Femenino
-Ocupación: Administradora de RRHH en la gestión de hoteles
-Lugar donde vive: Santa Anita, Perú
-Duración de la entrevista: 51:20 - 1:13:30.
+URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D><br>
+Nombres: Gianella<br>
+Apellidos: Francia<br>
+Edad: 25<br>
+Sexo: Femenino<br>
+Ocupación: Administradora de RRHH en la gestión de hoteles<br>
+Lugar donde vive: Santa Anita, Perú<br>
+Duración de la entrevista: 51:20 - 1:13:30.<br>
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
 <img src="./assets/img/validation-gianella.PNG" alt="Administradora de hotel" width="90%" />
@@ -8560,9 +8817,6 @@ Fabricio destacó que la información presentada en la landing page fue clara y 
 
 Fabricio destacó que la información presentada en la landing page fue clara y suficiente para entender los beneficios del sistema. Sin embargo, sugirió que sería útil incluir ejemplos más específicos de casos de uso y una sección de preguntas frecuentes para resolver dudas comunes. En cuanto a la aplicación móvil, Fabricio mencionó que la experiencia fue cómoda y práctica. Se sintió en control al modificar precios y disponibilidad de habitaciones, y valoró especialmente la posibilidad de gestionar reservas y recibir alertas desde cualquier lugar. Respecto a la plataforma web, destacó que la interfaz le permitió tener una visión clara y rápida del estado general del hotel. La configuración de habitaciones, tarifas y servicios le resultó intuitiva, y encontró con facilidad las secciones de reportes y estadísticas. No obstante, sugirió que sería útil incorporar herramientas adicionales para segmentar mejor los ingresos por canal de venta, algo que considera importante para su toma de decisiones. <br>
 
-
-
-![Entrevista° 2 - Administradores]()
 
 <br><br>
 
@@ -8604,12 +8858,12 @@ Lugar donde vive: Breña - Lima <br>
 Ocupación: Contador<br>
 Duración de la entrevista:  01: 08: 24 - 01: 15: 59 <br> 
 Personalidad: Analítica <br>
+
 ![Entrevista° 1 - Huespedes]()<br>
 
 <br><br>
 
 **Entrevista 02 (Huéspedes)**
-
 <br>
 
 URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
@@ -9170,9 +9424,9 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVx
 
 | Contenido | URL del Vídeo |
 |--------------|--------------|
-| Vídeo de Exposición TB1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|  
-| VÍdeo de Exposición TP1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/Ebc4BC61KJhMvF6pepkzXmgBxWOcKV3wH3mMWbtitQf7Zg?e=bPXcj9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|
-| Vídeo de Exposición TB2    | Link del Vídeo:  <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/EZf5sBOKX8BFhsp-elG9Ys4BfCmNIw-jOmNE13Duh_EeSA?e=1xBsXX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>| 
+| Vídeo de Exposición TB1      | Link del Vídeo: <https://acortar.link/R0Hppu>|  
+| VÍdeo de Exposición TP1      | Link del Vídeo: <https://acortar.link/oR8F2o>|
+| Vídeo de Exposición TB2    | Link del Vídeo: - <https://acortar.link/EQqztA>| 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
 
 ## Kanban Board
