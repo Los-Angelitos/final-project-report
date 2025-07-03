@@ -4,7 +4,7 @@
     <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
     <strong>Ingeniería de Software</strong><br>
-    <strong>Desarrollo de Soluciones IoT - 2971</strong><br>
+    <strong>1ASI0572 - Desarrollo de Soluciones IoT - 2971</strong><br>
     <strong>Profesor: Angel Augusto Velasquez Nuñez </strong><br>
     <br>INFORME
 </p>
@@ -311,16 +311,6 @@ Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositor
 ![image](https://github.com/user-attachments/assets/5f550cf0-9d14-4ad0-84e4-b3a7918fdd62)
 ![image](https://github.com/user-attachments/assets/e1951ac9-2a6e-4424-ac2d-e8c106393f42)
 
-
-
-
-
-
-
-
-
-
-
 # Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -476,6 +466,16 @@ Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositor
          - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
          - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
          - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
+      + [6.2.3. ](#623-sprint-3)
+         - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
+         - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
+         - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-3)
+         - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
+         - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
+         - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
+         - [6.2.3.7. Services Documentation Evidence for Sprint Review](#6237-services-documentation-evidence-for-sprint-review)
+         - [6.2.3.8. Software Deployment Evidence for Sprint Review](#6238-software-deployment-evidence-for-sprint-review)
+         - [6.2.3.9. Team Collaboration Insights during Sprint](#6239-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -9418,6 +9418,7 @@ https://shorturl.at/h5k4G
 
 
 # Bibliografía
+
 - Gothelf, J., & Seiden, J. (2021). Lean UX (3rd ed.). O'Reilly Media. https://www.oreilly.com/library/view/lean-ux-3rd/9781098116293/
 
 - Gothelf, J. (2024). LeanUX Sampler. Scribd. https://es.scribd.com/document/655516553/Leanux-Sampler
@@ -9443,6 +9444,23 @@ https://shorturl.at/h5k4G
 - Norman, D. A. (2013). The design of everyday things (Revised & expanded ed.). Basic Books.
 
 - International Organization for Standardization. (2018). ISO 9241-210:2018 Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems. https://www.iso.org/standard/77520.html
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
+- 
+
 
 # Anexos
 
