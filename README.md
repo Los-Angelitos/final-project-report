@@ -311,16 +311,6 @@ Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositor
 ![image](https://github.com/user-attachments/assets/5f550cf0-9d14-4ad0-84e4-b3a7918fdd62)
 ![image](https://github.com/user-attachments/assets/e1951ac9-2a6e-4424-ac2d-e8c106393f42)
 
-
-
-
-
-
-
-
-
-
-
 # Contenido
 
 - [Registro de Versiones del Informe](#registro-de-versiones-del-informe)
@@ -1003,7 +993,9 @@ con las opciones de personalización de la habitación, como la temperatura.
 
 #### 1.2.2.4. Lean UX Canvas
 
----
+Se ha desarrollado un Lean UX Canvas como herramienta estratégica para estructurar y validar el concepto del producto de manera ágil. Esta metodología permite al equipo identificar claramente el problema de negocio, definir los usuarios objetivo, establecer hipótesis validables y determinar los experimentos mínimos necesarios para aprender y iterar sobre la solución propuesta, reduciendo significativamente el riesgo de desarrollar características que no aporten valor real al usuario final.
+
+
 
 ![canva](https://github.com/user-attachments/assets/862270c6-921d-41a9-9121-7da189452f65)
 
@@ -4411,6 +4403,8 @@ Se muestra el diagrama de componentes de Web Application, mostrando los componen
 
 ##### 4.2.1.6.1. Bounded Context Domain Layer Class Diagrams
 
+En el siguiente diagrama de clases se muestran las interfaces, clases e implementaciones de repositorios que conforman el bounded context actual. Este diagrama permite visualizar la estructura interna del dominio, así como las relaciones y dependencias entre los distintos componentes que lo integran.
+
 <div style="text-align: center;">
   <img src="./assets/img/iam-bounded-context/uml.png" alt="ERD IAM" width="90%" />
 </div><br>
@@ -4419,6 +4413,7 @@ Link: https://lucid.app/lucidchart/0a661614-a2e4-42cb-b8a2-73a9bc6b6569/edit?vie
 
 ##### 4.2.1.6.2. Bounded Context Database Design Diagram
 
+Por otro lado, el diagrama entidad-relación (ERD) representa la estructura de la base de datos del bounded context, detallando las entidades, sus atributos y las relaciones entre ellas. Este modelo facilita la comprensión del diseño físico de los datos y su organización dentro del sistema.
 <div style="text-align: center;">
   <img src="./assets/img/iam-bounded-context/erd.png" alt="ERD IAM" width="90%" />
 </div><br>
@@ -4837,22 +4832,25 @@ URL Structurizr: <a href="https://structurizr.com/share/101410/diagrams#Componen
 Se muestra el diagrama de componentes del Web Services, desde la solicitud del front end, comunicación con otros bounded contexts y consultas a la base de datos.
 <br><br>
 
-**Mobile Application**
+**Web Application**
     ![structurizr-101410-Component-002](https://github.com/user-attachments/assets/02aa8223-2a89-41f0-8026-3eaae67a0e41)
-Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
+Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 <br><br>
 
-**Web Application**
+**Mobile Application**
     ![structurizr-101410-Component-003](https://github.com/user-attachments/assets/5aae84b8-64cb-4582-9390-676a95da4460)
-Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 
+Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
 
 #### 4.2.2.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.2.6.1. Bounded Context Domain Layer Class Diagrams
+
+En el siguiente diagrama de clases se muestran las interfaces, clases e implementaciones de repositorios que conforman el bounded context actual. Este diagrama permite visualizar la estructura interna del dominio, así como las relaciones y dependencias entre los distintos componentes que lo integran.
 ![diagrama de clase](https://github.com/user-attachments/assets/6b076738-98c0-440c-8975-26229005f50a)
 
 ##### 4.2.2.6.2. Bounded Context Domain Layer Class Diagrams Embedded Application
+
 <img src="./assets/img/organizational-management-bounded-context/diagram-class-thermostat.png" alt="Diagrama de clases del termostato" width="90%">
 
 En este diagrama de clases del Termostato, se puede observar la relación entre las entidades y los comandos asociados al Termostato. Siguiendo Modest IoT framework, el Termostato es un dispositivo IoT que se encarga de regular la temperatura de una habitación dada una preferencia del huésped. El Termostato puede ser encendido o apagado, y puede recibir actualizaciones de temperatura.
@@ -5229,20 +5227,24 @@ Extraído del Bounded Context Canvas y el Event Storming elaborado:
 #### 4.2.5.5. Bounded Context Software Architecture Component Level Diagrams
 En el siguiente diagrama de componentes para Inventory Context se puede observar la interacción del usuario al realizar una solicitud de suministro en el sistema. El diagrama muestra los componentes principales y sus interacciones<br>
 URL Structurizr: <a href="https://structurizr.com/share/101537">https://structurizr.com/share/101537</a>
-<br><br>
+<br>
 
 **Web Services**
+Se muestra el diagrama de componentes del Web Services, desde la solicitud del front end, comunicación con otros bounded contexts y consultas a la base de datos.
 
 <div style="text-align: center;">
   <img src="https://i.imgur.com/L221yCb.png" alt="Inventory dsl for web services" width="90%" />
 </div><br>
 
 **Mobile Application**
+Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
+
 <div style="text-align: center;">
   <img src="https://i.imgur.com/g8Dqz1w.png" alt="Inventory dsl for mobile application" width="90%" />
 </div><br>
 
 **Web Application**
+Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 <div style="text-align: center;">
   <img src="https://i.imgur.com/wW0koyh.png" alt="Inventory dsl for web application" width="90%" />
 </div><br>
@@ -5250,17 +5252,19 @@ URL Structurizr: <a href="https://structurizr.com/share/101537">https://structur
 #### 4.2.5.6. Bounded Context Software Architecture Code Level Diagrams
 
 ##### 4.2.5.6.1. Bounded Context Domain Layer Class Diagrams
-
+En el siguiente diagrama de clases se muestran las interfaces, clases e implementaciones de repositorios que conforman el bounded context actual. Este diagrama permite visualizar la estructura interna del dominio, así como las relaciones y dependencias entre los distintos componentes que lo integran.
 <div style="text-align: center;">
   <img src="https://i.imgur.com/Sxsbfn0.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
 
-Diagrama de Clases de RFID Reader
+### Diagrama de Clases de RFID Reader
+Se ha diseñado un diagrama de clases que modela la arquitectura del sistema RFID Reader, definiendo las entidades principales y sus relaciones para el control de acceso inteligente. El diagrama incluye componentes como ServoLock para el mecanismo de bloqueo, SmartLockDevice como dispositivo central, RfidReader para la lectura de tarjetas, Sensor para la detección de eventos, y clases auxiliares como Actuator y Device, junto con sus interfaces CommandHandler y EventHandler que gestionan los comandos y eventos del sistema de manera estructurada y modular.
 ![image](https://github.com/user-attachments/assets/a21def6e-d6f8-47ee-b3d9-c357a95105c9)
 
 
 ##### 4.2.5.6.2. Bounded Context Database Design Diagram
 
+En el siguiente diagrama entidad-relación (ERD) se han ilustrado las principales tablas correspondientes al bounded context, detallando sus atributos y las relaciones existentes entre ellas. Este esquema facilita la comprensión de cómo se estructuran y conectan los datos dentro del sistema. 
 <div style="text-align: center;">
   <img src="https://i.imgur.com/pRUKhgK.png" alt="Class Diagram Inventory" width="90%" />
 </div><br>
@@ -5610,6 +5614,8 @@ URL del diagrama de clases: <a href="https://lucid.app/lucidchart/aed64c50-821a-
 </div><br>
 
 ##### 4.2.3.6.2. Bounded Context Database Design Diagram
+En el siguiente diagrama entidad-relación (ERD) se han ilustrado las principales tablas correspondientes al bounded context, detallando sus atributos y las relaciones existentes entre ellas. Este esquema facilita la comprensión de cómo se estructuran y conectan los datos dentro del sistema.
+
 <div style="text-align: center;">
   <img src="./assets/img/organizational-management-bounded-context/database.png" alt="Database Organizational Management" width="90%" />
 </div><br>
@@ -6340,19 +6346,21 @@ URL Structurizr: <a href="https://structurizr.com/share/102320">https://structur
 <br><br>
 
 ### Web Services
+Se muestra el diagrama de componentes del Web Services, desde la solicitud del front end, comunicación con otros bounded contexts y consultas a la base de datos.
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/backend-components.png" alt="Backend Component Diagram" width="90%" />
 </div><br><br>
 
 ### Mobile Application
+Se muestra el diagrama de componentes del Mobile Application, mostrando los Widgets relacionados entre sí.
 
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/mobile-components.png" alt="Mobile Component Diagram" width="90%" />
 </div><br><br>
 
 ### Web Application
-
+Se muestra el diagrama de componentes de Web Application, mostrando los componentes y páginas relacionados entre sí.
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/web-components.png" alt="Web Component Diagram" width="90%" />
 </div><br><br>
@@ -6372,7 +6380,7 @@ https://medium.com/nick-tune-tech-strategy-blog/domain-driven-architecture-diagr
 </div>
 
 ##### 4.2.6.6.2. Bounded Context Database Design Diagram
-
+En el siguiente diagrama entidad-relación (ERD) se han ilustrado las principales tablas correspondientes al bounded context, detallando sus atributos y las relaciones existentes entre ellas. Este esquema facilita la comprensión de cómo se estructuran y conectan los datos dentro del sistema.
 <div style="text-align: center;">
   <img src="./assets/img/communication-bounded-context/bc-communication-bd.png" alt="Communication BC BD" width="100%" />
 </div>
@@ -6813,22 +6821,19 @@ Para la aplicación web, se han diseñado mock-ups que reflejan la identidad vis
 
 Consideramos que es escencial que la experiencia del usuario al navegar por primera vez por la aplicación sea fluida y agradable. Por ello, se ha diseñado una interfaz intuitiva que permite a los usuarios navegar fácilmente por las diferentes secciones de la aplicación. La barra de navegación superior proporciona acceso rápido a las funciones más importantes, como la gestión de reservas, el control de inventario y la administración de dispositivos IoT (en el caso de los administradores). Mientras que para los huéspedes, la barra de navegación lateral permite acceder a secciones como las de mis reservas, mis pagos y mis preferencias.
 
+### Web Application Mock-ups
 
 <div style="text-align: center;">
   <img src="./assets/img/app-mockups/web1.png" width="90%" />
   <p style="font-style: italic">Log in & Sign Up pages</p>
 </div><br><br>
 
-
-### Web Application Mock-ups
-
+### Mobile Application Mock-ups
 
 <div style="text-align: center;">
   <img src="./assets/img/app-mockups/mobile1.png" width="90%" />
   <p style="font-style: italic">Guest Main Views</p>
 </div><br><br>
-
-### Mobile Application Mock-ups
 
 <div style="text-align: center;">
   <img src="./assets/img/app-mockups/mobile2.png" width="90%" />
@@ -7372,6 +7377,8 @@ En este Sprint 1, todos hemos colaborado en conjunto para el desarrollo de los a
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint.
 
 **Web Application**
+
+En las siguientes imágenes se evidencia la colaboración activa de cada miembro del equipo en el desarrollo de la Web Application. Se puede observar cómo todos han contribuido mediante commits, pull requests y la integración de funcionalidades dentro del repositorio, lo que refleja un trabajo colaborativo y organizado en el proceso de construcción del sistema.
 <div style="text-align: center;">
   <img src="./assets/img/deployment_evidence/first_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
 </div><br><br>
@@ -7380,9 +7387,11 @@ A continuación se muestran las colaboraciones individuales por cada artefacto t
   <img src="./assets/img/deployment_evidence/second_part_team_collaboration.png" alt="Github Pages Landing Page" width="100%" />
 </div><br><br>
 
-Los commits mostrados, pertenecen al repositorio de Web Application, evidenciando las contribuciones de cada participante para el artefacto mencionado.
+
 
 **Landing Page**
+La imagen muestra la Landing Page desarrollada para la Web Application, la cual representa la primera vista que los usuarios tienen al acceder al sistema. Esta página fue diseñada con un enfoque visual atractivo y funcional, integrando los lineamientos del proyecto y reflejando el trabajo colaborativo del equipo en su construcción e implementación.
+
 <div style="text-align: center;">
   <img src="./assets/img/deployment_evidence/first_team_landing_page.png" alt="Github Pages Landing Page" width="100%" />
 </div><br><br>
@@ -7391,7 +7400,6 @@ Los commits mostrados, pertenecen al repositorio de Web Application, evidenciand
   <img src="./assets/img/deployment_evidence/second_part_landing.png" alt="Github Pages Landing Page" width="100%" />
 </div><br><br>
 
-Los commits mostrados, pertenecen al repositorio Landing Page, evidenciando las constribuciones de cada participante para el artefacto mencionado.
 
 ### 6.2.2. Sprint 2
 #### 6.2.2.1.Sprint Planning 2.
@@ -8320,10 +8328,11 @@ La Fog API se ha implementado con éxito en un entorno local (fog node), actuand
 
 En este Sprint 2, todos hemos colaborado en conjunto para el desarrollo de los artefactos: Mobile Applications, Web Services, Fog Api, Edge Api y Embedded Applications
 A continuación se muestran las colaboraciones individuales por cada artefacto terminado durante este sprint: 
+<br>
 
-Mobile Application: 
+Mobile Application:
 
-Gráficos de la sección insights en el repositorio de la Mobile Application. 
+En las siguientes capturas se presenta la Mobile Application desarrollada como parte del sistema. Estas imágenes muestran la interfaz y funcionalidades principales implementadas, evidenciando un diseño orientado a la experiencia del usuario, así como la integración de los módulos clave definidos por el equipo. La aplicación móvil fue construida de forma colaborativa, asegurando consistencia con la versión web y cumplimiento con los objetivos del proyecto.
 
 ![image](https://github.com/user-attachments/assets/eea04de5-4cd7-448e-9457-14f0f801e2fe)
 
@@ -8331,25 +8340,25 @@ Gráficos de la sección insights en el repositorio de la Mobile Application.
 
 Web Services: 
 
-Gráficos de la sección insights en el repositorio de los Web Services: 
+La imagen muestra los gráficos de la sección Insights del repositorio correspondiente a los Web Services. En ella se evidencia la actividad del equipo durante el desarrollo, destacando la frecuencia de commits, el número de contribuciones y el trabajo colaborativo realizado en esta parte fundamental del sistema. Esta información refleja la constancia y organización en la implementación de los servicios que soportan la lógica del negocio y la comunicación entre aplicaciones.
 
 ![image](https://github.com/user-attachments/assets/3cd5da4c-df81-420b-94f9-23384c8883ad)
 
 FOG API: 
 
-Gráficos de la sección insights en el repositorio de la FOG API. 
-
+La imagen presenta los gráficos de la sección Insights del repositorio correspondiente a la FOG API. Se puede observar el nivel de actividad del equipo a través de las contribuciones, commits y otros indicadores relevantes. Estos datos evidencian el trabajo conjunto realizado para el desarrollo e integración de esta API, la cual cumple un rol clave dentro del ecosistema del sistema al facilitar la comunicación entre servicios y dispositivos relacionados.
 ![image](https://github.com/user-attachments/assets/96175c64-fbd8-44c8-9e41-f23467d32d73)
 
 EDGE API: 
 
-Gráficos de la sección insights en el repositorio de la EDGE API. 
+La imagen muestra los gráficos de la sección Insights del repositorio correspondiente a la EDGE API. En ella se refleja la participación activa del equipo mediante commits, contribuciones y trabajo colaborativo constante. Esta API cumple una función esencial dentro de la arquitectura del sistema, facilitando el procesamiento y la gestión de datos en el borde (edge computing), lo que contribuye a mejorar la eficiencia y la respuesta del sistema en tiempo real.
+
 
 ![image](https://github.com/user-attachments/assets/5e569aa1-b56c-40b7-9494-873b3f4e5f2b)
 
 EMBEDDED APPLICATIONS: 
 
-Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION. 
+La imagen presenta los gráficos de la sección Insights del repositorio de la RFID Embedded Application. En ellos se evidencia el compromiso y la participación del equipo durante el desarrollo de esta aplicación embebida, mediante múltiples commits y contribuciones. Esta aplicación está diseñada para interactuar directamente con dispositivos de lectura RFID, siendo fundamental para la captura y transmisión de datos desde el hardware hacia el sistema central, permitiendo una integración fluida entre el entorno físico y digital.
 
 ![image](https://github.com/user-attachments/assets/57ce901e-ebd6-46c3-a378-7d81bcbeedee)
 
