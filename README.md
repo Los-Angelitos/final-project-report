@@ -1426,7 +1426,7 @@ Duración de la entrevista: 00:00 - 12:20
 Personalidad: Análitica
 
 <div style="text-align: center;">
-  <img src="assets/img/interview-analysis/owner1.jpg" alt="Owner Carlo Rebagliati" width="100%" />
+  <img src="./assets/img/interview-analysis/owner1.jpg" alt="Owner Carlo Rebagliati" width="100%" />
 </div><br>
 
 En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de experiencia. Él es una persona analítica, comunicativa, empática y profesional que le importan las estadísticas y los beneficios y consecuencias de cada decisión. Nos relata que sus canales de comunicación preferidos son Whatssap, Zoom y cara a cara; adicionalmente, su navegador más frecuente es Google Chrome y usa Smartphone Android y una computadora con Windows. . Los principales desafíos que tiene su hotel es el llamado a los turistas desde provincia, ya que la mayoría de la clientela que tiene son turistas. Afortunadamente, está manteniendo a sus trabajadores motivados para que las bajas ventas por temporadas no afecte su rendimiento. Adicionalmente, mencionó que tienen una plataforma web donde los clientes realizan sus reservas, también tienen un área contable y administrativa para el seguimiento de ganancia y recursos. Finalmente, cree necesario una aplicación o software que se concentre en la gestión de un hotel, tanto para la comunicación, administración, gestión y seguimiento de recursos.
@@ -3536,7 +3536,7 @@ El flujo inicia cuando el usuario accede a la pantalla de registro e ingresa sus
 Una vez validados los datos, el sistema crea una nueva cuenta de usuario en el contexto IAM, asignándole un rol predeterminado (por ejemplo, "Guest") y generando un perfil básico con estado inicial activo. Si el proceso es exitoso, el usuario recibe un correo de bienvenida y es redirigido automáticamente a la pantalla principal de la aplicación o a una vista de onboarding.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-1.jpg" alt="Sign Up User" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-1.jpg" alt="Sign Up User" width="90%" /> 
 </div><br>
 
 <h3>Escenario: El administrador inicia sesión.</h3> 
@@ -3547,7 +3547,7 @@ El sistema verifica las credenciales en el contexto de gestión de identidad (IA
 Una vez autenticado, el administrador es redirigido al panel principal, donde puede ver el estado de las habitaciones, reservas activas, notificaciones, y puede acceder a funcionalidades específicas asignadas a su rol.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-2.jpg" alt="Sign In Admin" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-2.jpg" alt="Sign In Admin" width="90%" /> 
 </div><br>
 
 <h3>Escenario: El gerente inicia sesión.</h3> 
@@ -3558,7 +3558,7 @@ El sistema verifica las credenciales en el contexto de gestión de identidad (IA
 Una vez autenticado, el gerente es redirigido al panel principal, donde puede ver el estado de las habitaciones, reservas activas, notificaciones, y puede acceder a funcionalidades específicas asignadas a su rol.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-3.jpg" alt="Sign In Owner" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-3.jpg" alt="Sign In Owner" width="90%" /> 
 </div><br>
 
 <h3>Escenario: El huésped inicia sesión.</h3> 
@@ -3569,7 +3569,7 @@ El sistema valida las credenciales ingresadas contra el módulo de gestión de i
 Una vez autenticado, el huésped es redirigido a su panel principal, donde puede visualizar sus próximas reservas, realizar nuevas búsquedas de hoteles, acceder a promociones personalizadas y gestionar sus preferencias de usuario.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-4.jpg" alt="Sign In Guest" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-4.jpg" alt="Sign In Guest" width="90%" /> 
 </div><br>
 
 <h3>Escenario: El huésped actualiza sus preferencias.</h3> 
@@ -3579,7 +3579,7 @@ El flujo comienza cuando el huésped, ya autenticado, navega a la sección de co
 Una vez completada la operación, el sistema confirma que las preferencias han sido actualizadas correctamente.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-5.jpg" alt="Update Guest's preferences" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-5.jpg" alt="Update Guest's preferences" width="90%" /> 
 </div><br>
 
 <h3>Escenario: El IAM user actualiza su cuenta personal.</h3> 
@@ -3589,7 +3589,7 @@ El flujo comienza cuando el IAM User, ya autenticado, accede a la sección de pe
 Al finalizar, el sistema confirma la actualización con un mensaje y, si los cambios afectan al modo de autenticación o contacto (como un nuevo correo), puede requerirse una verificación adicional o reautenticación para aplicar dichos cambios.
 </p>
 <div style="text-align: center;"> 
-  <img src="assets/img/iam-bounded-context/flow-modeling-6.jpg" alt="Update Guest's preferences" width="90%" /> 
+  <img src="./assets/img/iam-bounded-context/flow-modeling-6.jpg" alt="Update Guest's preferences" width="90%" /> 
 </div><br>
 
 #### 4.1.1.3. Bounded Context Canvases
@@ -8356,9 +8356,9 @@ El backend del sistema ha sido desplegado en un entorno de producción proporcio
 
 Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
 <br>
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 <br><br>
 
@@ -8368,11 +8368,11 @@ Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 f
 
 La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 #### 6.2.2.9. Team Collaboration Insights during Sprint.
 
@@ -8603,9 +8603,9 @@ El backend del sistema ha sido desplegado en un entorno de producción proporcio
 
 Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 físico. La Edge API ha sido desplegada directamente sobre una máquina virtual con sistema operativo Raspbian, ejecutándose en una Raspberry Pi como nodo perimetral. Esta API actúa como intermediario entre los dispositivos embebidos y la Fog API, gestionando la autenticación, el aprovisionamiento de dispositivos y el envío seguro de datos sensoriales. Se presenta a continuación evidencia de su ejecución, logs de consola, configuración de puertos y pruebas funcionales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/edge/1.PNG" alt="Administradora de hotel" width="90%" /> </div>
 <br>
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/edge/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 <br><br>
 
@@ -8615,11 +8615,11 @@ Se levanta dentro de una maquina virtual Raspbian, simulando un Raspberry Pi 4 f
 
 La Fog API se ha implementado con éxito en un entorno local (fog node) simulando ser un servidor montado localmente dentro de un hotel con host kernel Alpine Linux v3.22 LTS, actuando como componente intermedio entre el Edge y los Web Services dentro de una Máquina Virtual. Este servicio está diseñado para procesar y enrutar datos desde múltiples dispositivos, aplicar reglas de negocio a nivel perimetral, y asegurar tolerancia a fallos. En las siguientes imágenes se muestran registros de despliegue, ejecución del servidor Flask, conexión de dispositivos y pruebas de los endpoints locales.
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/3.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/7.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/fog/8.PNG" alt="Administradora de hotel" width="90%" /> </div> <br>
 
 ### Embedded Application
 
@@ -8632,19 +8632,19 @@ Para esta entrega, se realizó el "upload" del sketch.ino en OOP del Thermostat 
 
 URL del Thermostat Embedded Application: https://wokwi.com/projects/434787349155396609
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura.PNG" alt="" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/Captura.PNG" alt="" width="90%" /> </div> <br>
 
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/Captura2.PNG" alt="" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/Captura2.PNG" alt="" width="90%" /> </div> <br>
 
 En esta captura se evidencia el proceso de carga del sketch.ino en la placa ESP32 física.
 
 Mientras que nuestros otros productos de RFID y Smoke Sensor Embedded Application fueron desplegados en Wokwi, una plataforma de simulación de hardware que permite probar y validar el funcionamiento de circuitos electrónicos y microcontroladores sin necesidad de hardware físico. A continuación se muestran las capturas de pantalla de los productos desplegados en Wokwi:
 
 URL Wokwi del RFID Embedded Application: https://wokwi.com/projects/433613195311893505
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/rfid-wokwi.PNG" alt="" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/rfid-wokwi.PNG" alt="" width="90%" /> </div> <br>
 
 URL Wokwi del Smoke Sensor Embedded Application: https://wokwi.com/projects/433948209896527873
-<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="/assets/img/software-deployment-evidence/embedded/smoke-wokwi.PNG" alt="" width="90%" /> </div> <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/smoke-wokwi.PNG" alt="" width="90%" /> </div> <br>
 
 ## 6.3. Validation Interviews.
 
@@ -8792,7 +8792,7 @@ Duración de la entrevista: 29:30 - 51:20 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños](assets/img/validation-interviews/owner3.png)
+![Entrevista° 3 - Dueños](assets/img/validation-interviews/owner3.1)
 
 <br>Luis expresó su agrado por el diseño y la información presentada en la Landing Page y comentó que ve todos los datos correctos, interesantes y que lo motivan a utilizar el servicio. Además, mencionó que le gustaba poder interactuar con los elementos del sitio y que tenga un enlace que lo redirija automáticamente a la aplicación web.
 En cuanto a la aplicación móvil, señaló que la experiencia fue bastante sencilla y cómoda, siendo capaz de registrarse e iniciar sesión, registrar su hotel, revisar la información de su hotel, añadir administradores y proveedores, etc. Valoró también la posibilidad de gestionar su organización desde cualquier lugar, pues no siempre tenía una laptop o PC a la mano. Por otro lado, mencionó que le gustaban los colores y las interfaces, pues eran amigables con el usuario y agradables a la vista.
