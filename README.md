@@ -467,15 +467,15 @@ Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositor
          - [6.2.1.8. Software Deployment Evidence for Sprint Review](#6218-software-deployment-evidence-for-sprint-review)
          - [6.2.1.9. Team Collaboration Insights during Sprint](#6219-team-collaboration-insights-during-sprint)
       + [6.2.2. ](#622-sprint-2)
-         - [6.2.2.1. Sprint Planning 2](#6221sprint-planning-2)
-         - [6.2.2.2. Aspect Leaders and Collaborators](#6222aspect-leaders-and-collaborators)
-         - [6.2.2.3. Sprint Backlog 2](#6223sprint-backlog-2)
-         - [6.2.2.4. Development Evidence for Sprint Review](#6224development-evidence-for-sprint-review)
-         - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225testing-suite-evidence-for-sprint-review)
-         - [6.2.2.6. Execution Evidence for Sprint Review](#6226execution-evidence-for-sprint-review)
-         - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227services-documentation-evidence-for-sprint-review)
-         - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228software-deployment-evidence-for-sprint-review)
-         - [6.2.2.9. Team Collaboration Insights during Sprint](#6229team-collaboration-insights-during-sprint)
+         - [6.2.2.1. Sprint Planning 2](#6221-sprint-planning-2)
+         - [6.2.2.2. Aspect Leaders and Collaborators](#6222-aspect-leaders-and-collaborators)
+         - [6.2.2.3. Sprint Backlog 2](#6223-sprint-backlog-2)
+         - [6.2.2.4. Development Evidence for Sprint Review](#6224-development-evidence-for-sprint-review)
+         - [6.2.2.5. Testing Suite Evidence for Sprint Review](#6225-testing-suite-evidence-for-sprint-review)
+         - [6.2.2.6. Execution Evidence for Sprint Review](#6226-execution-evidence-for-sprint-review)
+         - [6.2.2.7. Services Documentation Evidence for Sprint Review](#6227-services-documentation-evidence-for-sprint-review)
+         - [6.2.2.8. Software Deployment Evidence for Sprint Review](#6228-software-deployment-evidence-for-sprint-review)
+         - [6.2.2.9. Team Collaboration Insights during Sprint](#6229-team-collaboration-insights-during-sprint)
 - [Conclusiones](#conclusiones)
    * [Recomendaciones](#recomendaciones)
 - [Video About-the-Team](#video-about-the-team)
@@ -9172,7 +9172,7 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVx
 |--------------|--------------|
 | Vídeo de Exposición TB1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EX0mjVsYqYxIuik_JuBF65MByh5aYLvyI4Wn4lh4ZBSD1w?e=wXl3LL&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|  
 | VÍdeo de Exposición TP1      | Link del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/Ebc4BC61KJhMvF6pepkzXmgBxWOcKV3wH3mMWbtitQf7Zg?e=bPXcj9&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>|
-| Vídeo de Exposición TB2    | Link del Vídeo: - | 
+| Vídeo de Exposición TB2    | Link del Vídeo:  <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202211572_upc_edu_pe/EZf5sBOKX8BFhsp-elG9Ys4BfCmNIw-jOmNE13Duh_EeSA?e=1xBsXX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>| 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
 
 ## Kanban Board
