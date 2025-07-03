@@ -1407,7 +1407,7 @@ A continuación, se registraron todas las entrevistas realizadas para nuestra so
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del Vídeo: <https://acortar.link/8jKmNcD>
 
 Nombres: Carlo
 
@@ -1434,7 +1434,7 @@ En resumen, Carlo Rebagliati es un gerente de hotel con un largo camino de exper
 **Entrevista 02 (Gerentes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://acortar.link/8jKmNcD>
 
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
@@ -1455,7 +1455,7 @@ Al hablar sobre herramientas, el comenta que hace uso de Excel, Word y OneDrive 
 **Entrevista 03 (Gerentes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://acortar.link/8jKmNcD>
 
 <br>
 Nombre: Luis Fernández <br>
@@ -1480,7 +1480,7 @@ Al presentarle la idea de una aplicación móvil desde la cual pueda gestionar l
 <br><br>
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del Vídeo: <https://acortar.link/8jKmNcD>
 
 Nombres: Gianella
 
@@ -1512,7 +1512,7 @@ Por último, Gianella menciona que la gestión de proveedores y el control de in
 **Entrevista 02 (Administradores)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://acortar.link/8jKmNcD>
 <br>
 
 Nombre: Fabricio Gabriel Chavez Morales <br>
@@ -1538,7 +1538,7 @@ Finalmente, al ser consultado sobre herramientas que podrían mejorar su labor, 
 **Entrevista 03 (Administradores)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://acortar.link/8jKmNcD>
 
 <br>
 Nombre: Sergio Renard <br>
@@ -1563,7 +1563,7 @@ Sergio se describe como una persona práctica y enfocada en mejorar continuament
 **Entrevista 01 (Huéspedes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+URL del vídeo: <https://acortar.link/8jKmNcD> 
 <br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
@@ -1587,7 +1587,7 @@ Anatoly nos cuenta que sería muy valiosa una aplicación robusta que satisfaga 
 
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+URL del vídeo: <https://acortar.link/8jKmNcD> 
 <br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
@@ -1611,7 +1611,7 @@ Ramón también relata que, en algunas ocasiones, ha experimentado problemas con
 **Entrevista 03 (Huéspedes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/EQZmxYAVoSdMvQFJr1Gr9WYBWcP4x6_jHI8xWXVLbspv4A?e=z48rRx&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D> 
+URL del vídeo: <https://acortar.link/8jKmNcD> 
 <br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
@@ -6970,7 +6970,7 @@ Mediante la herramienta de Figma, se elaboró el prototipado correspondiente a l
 
 Link directo hacia el prototyping: https://www.figma.com/proto/N0Oc3Y6SzhUWzSGF9yDLty/Apps-Mobiles---mauwiwi?node-id=5334-2915&p=f&t=rU4tRCifwjIBviUS-1&scaling=contain&content-scaling=fixed&page-id=4171%3A2345&starting-point-node-id=5334%3A2915&show-proto-sidebar=1
 
-Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212096_upc_edu_pe/EcPZtVvb6ENHsdfHpvnekFIB0MCXzIXyG59ltCO2sDa5TA?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=fzertn
+Asimismo, se realizó un video demostrativo para explicar los diferentes flujos que mantendrá nuesta aplicación. Este video se encuentra disponible en el siguiente link: https://n9.cl/7p1d2g
 
 
 <img src="./assets/img/application-prototyping/webapp.PNG" alt="Web App Prototyping" width="100%" />
@@ -7120,6 +7120,15 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 
 
 #### 6.2.1.3. Sprint Backlog 1
+
+Para organizar las tareas de cada historia de usuario, hemos elaborado en la herramienta Trello un Kanban Board en el que dar seguimiento al proceso en el que se encuentra cada tarea (To do/Working On/Done). Esto nos permite tambien saber a que miembro del equipo se la adjudica cada tarea asi como la cantidad de story points por sprint, con el uso de la extensión: Agile Tools. 
+![image](https://github.com/user-attachments/assets/dc18333d-fc6c-4dfd-8ecc-468284849c5b)
+
+Link del Kanban Board del Sprint 1: https://shorturl.at/Ru8kt 
+
+A continuación el cuadro en el que exponemos cada una de estas tareas junto a su descripción: 
+
+
 | User Story |            | Work-Item / Task |         |             |               |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** (To-do / In-Process / To-Review / Done) |
@@ -7535,6 +7544,14 @@ A continuación explicamos la organización que tuvimos con respecto a los disti
 | Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
 #### 6.2.2.3.Sprint Backlog 2
+Para organizar las tareas de cada historia de usuario, hemos elaborado en la herramienta Trello un Kanban Board en el que dar seguimiento al proceso en el que se encuentra cada tarea (To do/Working On/Done). Esto nos permite tambien saber a que miembro del equipo se la adjudica cada tarea y si es que requiere de apoyo.  
+![image](https://github.com/user-attachments/assets/59d1e5de-52d8-41ce-a15f-65ffdc536d3b)
+
+
+Link del Kanban Board del Sprint 2: https://shorturl.at/7wZLj  
+
+A continuación el cuadro en el que exponemos cada una de estas tareas junto a su descripción: 
+
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
@@ -8447,15 +8464,24 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 
 
 #### 6.2.3.3.Sprint Backlog 3
+Para organizar las tareas de cada historia de usuario, hemos elaborado en la herramienta Trello un Kanban Board en el que dar seguimiento al proceso en el que se encuentra cada tarea (To do/Working On/Done). Esto nos permite tambien saber a que miembro del equipo se la adjudica cada tarea y si es que requiere de apoyo.  
+![image](https://github.com/user-attachments/assets/cfae168d-d469-4316-a3ea-c2d0fec7d2a5)
+
+
+
+Link del Kanban Board del Sprint 3: https://shorturl.at/5DRwi
+
+A continuación el cuadro en el que exponemos cada una de estas tareas junto a su descripción: 
+
 | User Story |            | Work-Item / Task |         |             |               |                |                |
 |------------|------------|------------------|---------|-------------|---------------|----------------|----------------|
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
 | HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura mediante un potenciometro | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
-| HU04     | Recibir alerta sonora ante humo | T-001 | Alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
+| HU04     | Recibir alerta sonora ante humo | T-001 | Generar alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
 | HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo activado en la web | Como Web Hotel Admin quiero recibir una notificación inmediata al activarse un sensor de humo en la sección de notificaciones | 3 | Fabia Herrera | Done |
 | HU15     | Recibir notificación por humo | T-002 | Creación de notificación desde la edge api | Como Device Maker quiero que la Edge y FOG API interactuen con la Cloud API, de tal modo que se cree una notificación cuando el sensor de humo es activado. | 3 | Omar Morales | Done |
 | HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
-| HU14     | Visualizar estado de dispositivos en la web | T-001 | Ver estado de IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
+| HU14     | Visualizar estado de dispositivos en la web | T-001 | Mostrar estado de dispositivos IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
@@ -8704,7 +8730,7 @@ A continuación, se registraron todas las entrevistas de validación para nuestr
 
 **Entrevista 01 (Gerentes)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del Vídeo: <https://shorturl.at/h5k4G>
 
 Nombres: Carlo
 
@@ -8738,7 +8764,7 @@ Finalmente, Carlo subrayó la importancia de que tanto la aplicación web como l
 **Entrevista 02 (Gerentes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/h5k4G>
 Nombre: Sergio Alberto Cadillo Nuñez <br>
 Edad: 30 <br>
 Sexo: Masculino <br>
@@ -8755,7 +8781,7 @@ Personalidad: Analítica <br>
 **Entrevista 03 (Gerentes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/h5k4G>
 <br>
 Nombre: Luis Fernández <br>
 Edad: 28 <br>
@@ -8774,7 +8800,7 @@ Finalmente, respecto a la aplicación web, se sintió cómodo navegando por las 
 
 **Entrevista 01 (Administradores)**
 
-URL del Vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D><br>
+URL del Vídeo: <https://shorturl.at/h5k4G><br>
 Nombres: Gianella<br>
 Apellidos: Francia<br>
 Edad: 25<br>
@@ -8799,7 +8825,7 @@ Como también es usuaria de la aplicación móvil, Gianella destacó la importan
 **Entrevista 02 (Administradores)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/KLBqb>
 <br>
 Nombre: Fabricio Gabriel Chavez Morales <br>
 Edad: 28 <br>
@@ -8823,7 +8849,7 @@ Fabricio destacó que la información presentada en la landing page fue clara y 
 **Entrevista 03 (Administradores)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/KLBqb>
 <br>
 Nombre: Sergio Renard <br>
 Edad: 21 <br>
@@ -8849,7 +8875,7 @@ Respecto a la aplicación web, el usuario explicó que pudo acceder sin complica
 **Entrevista 01 (Huéspedes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/KLBqb>
 <br>
 Nombre: Anatoly Noriega <br>
 Edad: 22 <br>
@@ -8866,7 +8892,7 @@ Personalidad: Analítica <br>
 **Entrevista 02 (Huéspedes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/KLBqb>
 <br>
 Nombre: Ramón Jorge <br>
 Edad: 51 <br>
@@ -8886,7 +8912,7 @@ Finalmente, confirmó que la Embedded Application mostró adecuadamente la tempe
 **Entrevista 03 (Huéspedes)**
 <br>
 
-URL del vídeo: <https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/Ea3vzuVyoRpOgQ9pWk2cC2sB4AMn44RvZKPrsuBGv2g0CQ?e=eoZ8y7&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D>
+URL del vídeo: <https://shorturl.at/KLBqb>
 <br>
 Nombre: Enzo Céspedes <br>
 Edad: 23 <br>
@@ -9388,7 +9414,7 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 # Video About-the-Team
 
 En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. 
-https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVxzydGveHHfEJEW-ABwIOzhYMOQUOTsGPKLgHi3Q?e=RrvFYX&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+https://shorturl.at/h5k4G
 
 
 # Bibliografía
@@ -9429,8 +9455,12 @@ https://upcedupe-my.sharepoint.com/:v:/g/personal/u202212383_upc_edu_pe/ESZ1gyVx
 | Vídeo de Exposición TB2    | Link del Vídeo: - <https://acortar.link/EQqztA>| 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
 
+
 ## Kanban Board
 | Contenido | URL del Trello |
 |--------------|--------------|
-| Kanban Board  Sprint 1     | Link: https://trello.com/invite/b/68230f142dd6cebf8c65554e/ATTI210a639592b9d1cff287d61a792740c622491BEA/sprint-backlogsweetmanager|  
-| Kanban Board  Sprint 2     | Link: https://trello.com/invite/b/6853ace69bba62aaa400a389/ATTIfdf1f4e297cfe436340a808a9f24974fB6BA4FC0/sprint-backlog-2-sweet-manager|  
+| Kanban Board  Sprint 1     | Link: https://shorturl.at/Ru8kt|  
+| Kanban Board  Sprint 2     | Link: https://shorturl.at/7wZLj| 
+| Kanban Board  Sprint 3     | Link: https://shorturl.at/5DRwi|  
+
+
