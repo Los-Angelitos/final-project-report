@@ -530,28 +530,22 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Omar Morales: En esta entrega, trabajé activamente en la estructuración de la organización del sistema y su etiquetado, además de apoyar en la implementación y validación de las funcionalidades propuestas, fomentando siempre un entorno colaborativo.
         </p>
-                <p>
-TB2:
-<p/>
-
-Mauricio Rojas: En este entregable, participé activamente en todas las áreas del sistema: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Contribuí en la configuración del entorno de despliegue y en tareas técnicas generales, además de colaborar con el equipo en el desarrollo e implementación.
-<p/>
-
-Giacomo Zoppi: En esta etapa, colaboré transversalmente en el desarrollo del sistema, incluyendo web, servicios, mobile, embedded, validaciones y fog API. Apoyé liderando en algunos puntos, en especial, aquellos relacionados a mi Bounded Context. 
-<p/>
-
-Ramón Jorge: En esta entrega, aporté al diseño funcional y visual del sistema, desde wireframes hasta la implementación en distintas áreas como web, mobile, embedded y servicios. Mantuve siempre una comunicación constante con el equipo y participé activamente en entrevistas de validación y mejoras en la Fog API.
-<p/>
-
-Arian Rodríguez: Durante esta entrega, colaboré en los distintos módulos del sistema como mobile, embedded, servicios y fog API. Fomenté el trabajo conjunto y la cohesión de ideas entre los compañeros, incluyendo validaciones con usuarios.
-<p/>
-
-Fabia Herrera: En esta fase, trabajé  en la integración de componentes en todas las áreas: aplicaciones web, mobile, servicios, embedded y fog API. Participé también en entrevistas de validación y coordiné la coherencia estética y funcional del proyecto.
-<p/>
-
-Omar Morales: En esta entrega, me involucré en la estructuración de todo el sistema: desde el etiquetado y arquitectura hasta el desarrollo en web, servicios, embedded, mobile, validaciones y fog API. Fomenté un entorno colaborativo y apoyé la implementación técnica en distintas fases del proyecto.
-<p/>
-TF:
+        <p>
+        TB2:
+        <p/>
+        Mauricio Rojas: En este entregable, participé activamente en todas las áreas del sistema: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Contribuí en la configuración del entorno de despliegue y en tareas técnicas generales, además de colaborar con el equipo en el desarrollo e implementación.
+        <p/>
+        Giacomo Zoppi: En esta etapa, colaboré transversalmente en el desarrollo del sistema, incluyendo web, servicios, mobile, embedded, validaciones y fog API. Apoyé liderando en algunos puntos, en especial, aquellos relacionados a mi Bounded Context. 
+        <p/>
+        Ramón Jorge: En esta entrega, aporté al diseño funcional y visual del sistema, desde wireframes hasta la implementación en distintas áreas como web, mobile, embedded y servicios. Mantuve siempre una comunicación constante con el equipo y participé activamente en entrevistas de validación y mejoras en la Fog API.
+        <p/>
+        Arian Rodríguez: Durante esta entrega, colaboré en los distintos módulos del sistema como mobile, embedded, servicios y fog API. Fomenté el trabajo conjunto y la cohesión de ideas entre los compañeros, incluyendo validaciones con usuarios.
+        <p/>
+        Fabia Herrera: En esta fase, trabajé  en la integración de componentes en todas las áreas: aplicaciones web, mobile, servicios, embedded y fog API. Participé también en entrevistas de validación y coordiné la coherencia estética y funcional del proyecto.
+        <p/>
+        Omar Morales: En esta entrega, me involucré en la estructuración de todo el sistema: desde el etiquetado y arquitectura hasta el desarrollo en web, servicios, embedded, mobile, validaciones y fog API. Fomenté un entorno colaborativo y apoyé la implementación técnica en distintas fases del proyecto.
+        <p/>
+        TF:
         <p/>
         Mauricio Rojas: En este entregable, participé activamente en la elaboración del prototipo como team leader, así como el completado del informe y el despliegue de la aplicación móvil. Considero que proporcioné liderazgo de forma efectiva a lo largo del desarrollo del proyecot. 
         <p/>
@@ -568,9 +562,9 @@ TF:
     </td>
     <td>
         TB1: En esta entrega logramos trabajar en equipo, apoyándonos mutuamente y colaborando en la redacción del informe. Cada uno de los integrantes participó activamente en el desarrollo de las secciones asignadas, lo que permitió un avance significativo en el proyecto. La comunicación constante y la disposición para ayudar a los demás fueron clave para el éxito de esta entrega.</p>
-        TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.
-        TB2: En esta fase del proyecto se reforzó el liderazgo compartido dentro del equipo. Cada integrante aportó en todas las áreas del sistema —web, mobile, servicios, embedded, validaciones y fog API— asumiendo responsabilidades y tomando iniciativa cuando fue necesario. La comunicación, el uso efectivo del tablero Kanban y la colaboración constante permitieron que el equipo avanzara de forma coordinada y autónoma, manteniendo siempre una visión común.
-        TF1: En esta ultima fase del proyecto, ha sido esencial el liderazgo asumido por cada miembro del equipo para el cumplimiento de cada entregable y punto por cada Bounded Context. Cada miembro cumplió con su rol y sus tareas y con ello, colaboraron en lograr la excelencia de nuestro trabajo y de generar un ambiente grupal efectivo. 
+        TP: En esta entrega nos enfocamos en la implementación y documentación técnica del sistema. Cada integrante asumió responsabilidades específicas relacionadas con wireframes, mockups, arquitectura de software y guías de desarrollo, asegurando la coherencia y calidad del proyecto. El trabajo colaborativo y el compromiso individual fueron esenciales para lograr los objetivos establecidos.</p>
+        TB2: En esta fase del proyecto se reforzó el liderazgo compartido dentro del equipo. Cada integrante aportó en todas las áreas del sistema —web, mobile, servicios, embedded, validaciones y fog API— asumiendo responsabilidades y tomando iniciativa cuando fue necesario. La comunicación, el uso efectivo del tablero Kanban y la colaboración constante permitieron que el equipo avanzara de forma coordinada y autónoma, manteniendo siempre una visión común.</p>
+        TF1: En esta ultima fase del proyecto, ha sido esencial el liderazgo asumido por cada miembro del equipo para el cumplimiento de cada entregable y punto por cada Bounded Context. Cada miembro cumplió con su rol y sus tareas y con ello, colaboraron en lograr la excelencia de nuestro trabajo y de generar un ambiente grupal efectivo.</p> 
      </td>
   </tr>
   <tr>
@@ -607,27 +601,21 @@ TF:
       Omar Morales: Ayudé a definir tareas y a mantener un entorno de trabajo colaborativo, participando en la planificación y documentación del sistema. Supervisé el cumplimiento de los objetivos técnicos en el área de organización de etiquetas y arquitectura, comunicándome constantemente con los compañeros para mantenernos alineados.
     </p>
     <p>
-TB2:
-<p/>
-
-Mauricio Rojas: En este entregable, participé activamente en todas las áreas del proyecto: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Promoví un ambiente de trabajo colaborativo, ayudando a coordinar tareas técnicas y manteniendo una comunicación constante con el equipo para garantizar que los objetivos se cumplieran a tiempo.
-<p/>
-
-Giacomo Zoppi: Contribuí de manera transversal en el desarrollo del sistema, aportando tanto en la web como en mobile, servicios, embedded y fog API. Planifiqué tareas en el tablero Kanban y aseguré su seguimiento, fomentando un entorno responsable y participando en entrevistas de validación.
-<p/>
-
-Ramón Jorge: Para esta entrega colaboré en distintas partes del sistema, desde el diseño de wireframes y flujos de navegación para la aplicación web y mobile, hasta tareas relacionadas con servicios, embedded y fog API. Utilicé el tablero Kanban para mantener una visión clara del avance del grupo y asegurar la entrega coordinada.
-<p/>
-
-Arian Rodríguez: Estuve involucrado en todas las secciones del proyecto, apoyando en el desarrollo de la aplicación web, mobile, servicios, embedded y fog API. También participé en entrevistas de validación y trabajé activamente en la organización del tablero Kanban, resolviendo dudas y cumpliendo los plazos definidos.
-<p/>
-
-Fabia Herrera: Durante esta entrega, colaboré en los distintos aspectos del sistema, aportando en el diseño visual y técnico de la web, mobile, servicios, embedded y fog API. También formé parte del equipo que organizó y llevó adelante las entrevistas de validación, asegurando coherencia en los entregables.
-<p/>
-
-Omar Morales: Participé activamente en todas las etapas del proyecto, desde la planificación y documentación del sistema hasta el desarrollo en web, mobile, servicios, embedded y fog API. Además, colaboré en las entrevistas de validación y ayudé a mantener la organización del equipo mediante una comunicación constante.
-<p/>
-<p>
+    TB2:
+    <p/>
+    Mauricio Rojas: En este entregable, participé activamente en todas las áreas del proyecto: aplicaciones web, servicios web, mobile, embedded, entrevistas de validación y la Fog API. Promoví un ambiente de trabajo colaborativo, ayudando a coordinar tareas técnicas y manteniendo una comunicación constante con el equipo para garantizar que los objetivos se cumplieran a tiempo.
+    <p/>
+    Giacomo Zoppi: Contribuí de manera transversal en el desarrollo del sistema, aportando tanto en la web como en mobile, servicios, embedded y fog API. Planifiqué tareas en el tablero Kanban y aseguré su seguimiento, fomentando un entorno responsable y participando en entrevistas de validación.
+    <p/>
+    Ramón Jorge: Para esta entrega colaboré en distintas partes del sistema, desde el diseño de wireframes y flujos de navegación para la aplicación web y mobile, hasta tareas relacionadas con servicios, embedded y fog API. Utilicé el tablero Kanban para mantener una visión clara del avance del grupo y asegurar la entrega coordinada.
+    <p/>
+    Arian Rodríguez: Estuve involucrado en todas las secciones del proyecto, apoyando en el desarrollo de la aplicación web, mobile, servicios, embedded y fog API. También participé en entrevistas de validación y trabajé activamente en la organización del tablero Kanban, resolviendo dudas y cumpliendo los plazos definidos.
+    <p/>
+    Fabia Herrera: Durante esta entrega, colaboré en los distintos aspectos del sistema, aportando en el diseño visual y técnico de la web, mobile, servicios, embedded y fog API. También formé parte del equipo que organizó y llevó adelante las entrevistas de validación, asegurando coherencia en los entregables.
+    <p/>
+    Omar Morales: Participé activamente en todas las etapas del proyecto, desde la planificación y documentación del sistema hasta el desarrollo en web, mobile, servicios, embedded y fog API. Además, colaboré en las entrevistas de validación y ayudé a mantener la organización del equipo mediante una comunicación constante.
+    <p/>
+    <p>
       TF:
       <p/>
       Mauricio Rojas: Para este entregable y en general para todo el trabajo, pienso que he logrado plasmar y crear un ambiente en el cual los distintos miembros del equipo se pueden desenvolver y compartir sus opiniones. Aparte, he podido alinear los objetivos de cada miembro y enfocar nuestros esfuerzos hacia el cumplimiento del student outcomes y el logro del curso. 
@@ -642,12 +630,15 @@ Omar Morales: Participé activamente en todas las etapas del proyecto, desde la 
       <p/>
       Omar Morales: Colaboré con el equipo en plasmar un ambiente colaborativo, lo cual considero que es esencial a la hora de formar un equipo de trabajo, en lugar de solo un grupo de clase. También aporte con el cumplimiento de tareas y el seguimiento a los sprint backlogs. 
     </p>
-<td>
-TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.</p>
-TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.</p>
-TB2: En esta fase, reafirmamos nuestro compromiso con un entorno colaborativo e inclusivo. Establecimos metas claras desde el inicio, asignando tareas específicas en el tablero Kanban y manteniendo una comunicación constante entre los integrantes. Todos aportamos activamente en las distintas etapas del trabajo, compartiendo responsabilidades y asegurando el cumplimiento de los objetivos planteados dentro de los tiempos establecidos.
-TF: En este ultimo entregable, logramos completar cada uno de los entregables y objetivos planteados, de este modo, confirmando la eficacia de nuestra organización y del entorno colaborativo que hemos creado a lo largo del curso. Destacamos como nuestros puntos fuertes el colaborativo y ameno ambiente de trabajo, la importancia y seriedad con la que nos tomamos los entregables desde el principio y el establecimiento de sprint goals y metas al inicio de cada sprint. Creemos que todo ello fue la clave para el exito de nuestro grupo, nuestro aprendizaje como ingenieros de software y la calidad garantizada en cada una de nuestras soluciones. 
-</td>
+    <td>
+    TB1: En esta entrega, logramos establecer un entorno colaborativo e inclusivo, donde cada miembro del equipo pudo expresar sus ideas y contribuir al desarrollo del proyecto. La planificación de tareas y el cumplimiento de objetivos fueron fundamentales para avanzar en la redacción del informe y en la elaboración de los diagramas y documentos requeridos. La comunicación constante y el uso del tablero Kanban facilitaron la organización y el seguimiento de las tareas asignadas.
+    </p>
+    TP: En esta entrega, fortalecimos nuestro entorno de trabajo colaborativo e inclusivo, con una planificación precisa y objetivos bien definidos. La asignación de tareas a través del tablero Kanban permitió que cada integrante contribuyera de manera efectiva a la creación de wireframes, mockups, arquitectura y documentación técnica del sistema. La coordinación grupal fue clave para cumplir con los plazos y garantizar la calidad del entregable.
+    </p>
+    TB2: En esta fase, reafirmamos nuestro compromiso con un entorno colaborativo e inclusivo. Establecimos metas claras desde el inicio, asignando tareas específicas en el tablero Kanban y manteniendo una comunicación constante entre los integrantes. Todos aportamos activamente en las distintas etapas del trabajo, compartiendo responsabilidades y asegurando el cumplimiento de los objetivos planteados dentro de los tiempos establecidos.
+    </p>
+    TF: En este ultimo entregable, logramos completar cada uno de los entregables y objetivos planteados, de este modo, confirmando la eficacia de nuestra organización y del entorno colaborativo que hemos creado a lo largo del curso. Destacamos como nuestros puntos fuertes el colaborativo y ameno ambiente de trabajo, la importancia y seriedad con la que nos tomamos los entregables desde el principio y el establecimiento de sprint goals y metas al inicio de cada sprint. Creemos que todo ello fue la clave para el exito de nuestro grupo, nuestro aprendizaje como ingenieros de software y la calidad garantizada en cada una de nuestras soluciones. 
+  </td>
   </tr>
 </table>
 
@@ -9535,22 +9526,41 @@ https://shorturl.at/h5k4G
 
 - International Organization for Standardization. (2018). ISO 9241-210:2018 Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems. https://www.iso.org/standard/77520.html
 
-- 
+- Python 3.13 documentation. (s. f.). Python Documentation. https://docs.python.org/3/
 
-- 
+- Wokwi. (s. f.). wokwi-docs/docs/diagram-format.md at main · wokwi/wokwi-docs. GitHub. https://github.com/wokwi/wokwi-docs/blob/main/docs/diagram-format.md
 
-- 
+- Welcome to Wokwi! | Wokwi Docs. (s. f.-b). https://docs.wokwi.com/
 
-- 
+- Wokwi — Arduino ESP32 latest documentation. (s. f.). https://docs.espressif.com/projects/arduino-esp32/en/latest/third_party/wokwi.html
 
-- 
+- Getting Started with the Wokwi Arduino Simulator. (n.d.). DigiKey. https://www.digikey.com/en/maker/tutorials/2022/getting-started-with-the-wokwi-arduino-simulator
 
-- 
+- Wikipedia contributors. (2025, 5 mayo). Heuristic (computer science). Wikipedia. https://en.wikipedia.org/wiki/Heuristic_%28computer_science%29
 
-- 
+- Heuristics — PySCIPOpt  documentation. (s. f.). https://pyscipopt.readthedocs.io/en/latest/tutorials/heuristic.html
 
-- 
+- SEON. (2023, 30 junio). What are heuristic rules - how do they work? | SEON. https://seon.io/resources/dictionary/heuristic-rules/
 
+- Ddd-Crew. (s. f.). GitHub - ddd-crew/free-ddd-learning-resources: A collection of resources for learning DDD. All are free to access. GitHub. https://github.com/ddd-crew/free-ddd-learning-resources
+
+- Jamesmontemagno. (s. f.). Designing a DDD-oriented microservice - .NET. Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
+
+- Fernando, N., Shrestha, S., Loke, S. W., & Lee, K. (2025). On Edge-Fog-Cloud Collaboration and Reaping Its Benefits: A Heterogeneous Multi-Tier Edge Computing Architecture. Future Internet, 17(1), 22. https://doi.org/10.3390/fi17010022
+
+- Mann, Z. Á. (2020). Notions of architecture in fog computing. Computing, 103(1), 51-73. https://doi.org/10.1007/s00607-020-00848-z
+
+- Build your edge computing infrastructure now. (2025, 18 marzo). [Vídeo]. Cisco. https://www.cisco.com/site/us/en/learn/topics/computing/what-is-edge-computing.html
+
+- Edge Computing and Edge Networking: An Overview. (2025, 2 mayo). Kentik. https://www.kentik.com/kentipedia/edge-computing-and-edge-networking/
+
+- Jpreese. (s. f.). Best practices for writing unit tests - .NET. Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+
+- Schmitt, J. (2021, 3 diciembre). Unit testing vs integration testing. CircleCI. https://circleci.com/blog/unit-testing-vs-integration-testing/
+
+- Ghosh, A. (2022, 21 abril). Differences Between Functional, Unit and Integration Testing. https://www.headspin.io/blog/unit-integration-and-functional-testing-4-main-points-of-difference
+
+- Atlassian. (s. f.). GitFlow Workflow | Atlassian Git Tutorial. https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 # Anexos
 
