@@ -8097,6 +8097,18 @@ Scenario: Visualizar estado de dispositivos IoT
  When Consulta el estado de los dispositivos IoT
  Then Debe visualizar el estado actual de temperatura, sensores y dispositivos de acceso
 ```
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/oIyhxnH.png" alt="Unit tests for Operations and Monitoring acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/2nWBXzu.png" alt="Unit tests for Operations and Monitoring acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/dQnM4Dk.png" alt="Unit tests for Operations and Monitoring acording gherkin" width="80%" />
+</div><br>
 
 ## IAM (Identity and Access Management) Bounded Context
 
@@ -8124,6 +8136,19 @@ Scenario: Crear perfil de huésped
  Then El sistema debe crear un perfil global con sus preferencias guardadas
 ```
 
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/nwuNnXK.png" alt="Unit tests for IAM acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/mrRB7jh.png" alt="Unit tests for IAM acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/GEn8G6q.png" alt="Unit tests for IAM acording gherkin" width="80%" />
+</div><br>
+
 ## Communication Bounded Context
 
 ```gherkin
@@ -8139,7 +8164,18 @@ Scenario: Alerta sonora por detección de humo
  When Se activa el protocolo de emergencia
  Then Debe sonar una alerta audible en la habitación afectada
 ```
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/c2Yxw7e.png" alt="Unit tests for Communication acording gherkin" width="80%" />
+</div><br>
 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/CsqeGpk.png" alt="Unit tests for Communication acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/tVJAQrK.png" alt="Unit tests for Communication acording gherkin" width="80%" />
+</div><br>
 
 ## Organizational Management Bounded Context
 
@@ -8163,6 +8199,18 @@ Scenario: Filtrar habitaciones por estado
  Then Debe mostrarse solo las habitaciones que coincidan con el filtro seleccionado
 
 ```
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/LhH4vhP.png" alt="Unit tests for Organizational Management acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/Gr8IjpE.png" alt="Unit tests for Organizational Management acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/waduR3q.png" alt="Unit tests for Organizational Management acording gherkin" width="80%" />
+</div><br>
 
 
 ## Inventory Bounded Context
@@ -8185,7 +8233,18 @@ Scenario: Solicitar dispositivos IoT
  When Realiza una solicitud a través del sistema
  Then La solicitud debe registrarse y enviarse al departamento correspondiente
 ```
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/DQoKP7c.png" alt="Unit tests for Inventory acording gherkin" width="80%" />
+</div><br>
 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/cayosln.png" alt="Unit tests for Inventory acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/PxTtDGO.png" alt="Unit tests for Inventory acording gherkin" width="80%" />
+</div><br>
 ## Commerce Bounded Context
 
 ```gherkin
@@ -8211,7 +8270,18 @@ Scenario: Consultar historial de reservas
  When Solicita ver su historial de reservas anteriores
  Then Debe visualizar todas sus reservas pasadas con detalles completos
 ```
+### Unit tests 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/AGWwkdc.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
+</div><br>
 
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/TvXVtOR.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
+</div><br>
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/QBUkK8j.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
+</div><br>
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
 <div style="text-align: center;">
