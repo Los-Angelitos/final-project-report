@@ -23,14 +23,16 @@
 
 |               Member                |    Code    |
 | :---------------------------------: | :--------: |
-| Mauricio Abraham Rivo Rojas Sánchez | U202211572 |
-| Giacomo Zoppi Rodriguez | U202210029 |
-| Omar Andrew Morales Montalvo | U202212383 |
-| Ramón Alejandro Jorge Arévalo | U20221D126 |
-| Fabia Alejandra Herrera Aguirre | U202219422 |
-| Arian Martín Rodriguez Vargas | U202212096 |
+| Rojas Sánchez, Mauricio Abraham Rivo  | U202211572 |
+| Zoppi Rodriguez, Giacomo  | U202210029 |
+| Morales Montalvo, Omar Andrew  | U202212383 |
+| Jorge Arévalo, Ramón Alejandro  | U20221D126 |
+| Herrera Aguirre, Fabia Alejandra  | U202219422 |
+| Rodriguez Vargas, Arian Martín  | U202212096 |
 
 </div>
+
+<div style="page-break-after: always;"></div>
 
 # Registro de Versiones del Informe
 
