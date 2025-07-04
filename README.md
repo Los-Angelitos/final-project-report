@@ -2937,8 +2937,8 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
         <em>Then</em> el dispositivo continúa funcionando sin error, pero no se visualiza salida<br><br>
       </td>
       <td>EP08</td>
-      <tr>
-  <tr>
+    </tr>
+    <tr>
       <td>EP09</td>
       <td>Gestión de Reservas desde la aplicación móvil</td>
       <td>
@@ -2948,127 +2948,123 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       </td>
       <td>IOT</td>
     </tr>
-  <td>HU01</td>
-  <td>Registrar nueva reserva en el hotel</td>
-  <td>Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
-  <td>
-    <b>Escenario 1:</b> Reserva exitosa desde móvil<br>
-    <em>Given</em> el huésped ha iniciado sesión en la app móvil y accede a la sección de reservas<br>
-    <em>When</em> selecciona fechas y habitación disponibles<br>
-    <em>Then</em> el sistema confirma la reserva y muestra un mensaje de éxito con código de reserva<br><br>
-    <b>Escenario 2:</b> Reserva sin disponibilidad<br>
-    <em>Given</em> el huésped busca habitaciones en fechas específicas<br>
-    <em>When</em> no hay disponibilidad para ese rango<br>
-    <em>Then</em> el sistema muestra un mensaje de no disponibilidad y sugiere fechas alternativas<br><br>
-    <b>Escenario 3:</b> Error de pago<br>
-    <em>Given</em> el huésped ya ha seleccionado habitación y fechas<br>
-    <em>When</em> intenta pagar pero ocurre un error con el método de pago<br>
-    <em>Then</em> el sistema muestra un mensaje de error y permite reintentar con otro método
-  </td>
-  <td>EP09</td>
-</tr>
-
-<tr>
-  <td>HU02</td>
-  <td>Reservar una habitación personalizada</td>
-  <td>Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.</td>
-  <td>
-    <b>Escenario 1:</b> Personalización exitosa<br>
-    <em>Given</em> el huésped tiene preferencias guardadas en su perfil<br>
-    <em>When</em> busca una habitación<br>
-    <em>Then</em> el sistema prioriza las que coincidan con esas preferencias<br><br>
-    <b>Escenario 2:</b> Preferencias no disponibles<br>
-    <em>Given</em> que el usuaario no ha configurado preferencias<br>
-    <em>When</em> el huésped intenta añadir sus preferencias a la reserva<br>
-    <em>Then</em> el sistema le indica que no hay preferencias que añadir<br>
-  </td>
-  <td>EP09</td>
-</tr>
-
-<tr>
-  <td>HU03</td>
-  <td>Visualizar y gestionar reservas activas</td>
-  <td>Como Mobile Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.</td>
-  <td>
-    <b>Escenario 1:</b> Acceso a reservas activas<br>
-    <em>Given</em> el huésped está logueado en la app móvil<br>
-    <em>When</em> accede a "Mis Reservas"<br>
-    <em>Then</em> el sistema muestra la lista de reservas activas con fechas y ubicaciones<br><br>
-    <b>Escenario 2:</b> Gestión de reservas<br>
-    <em>Given</em> el huésped visualiza una reserva activa<br>
-    <em>When</em> elige modificarla o cancelarla<br>
-    <em>Then</em> el sistema permite editar o cancelar si está dentro del plazo permitido
-  </td>
-  <td>EP09</td>
-</tr>
-
-<tr>
-  <td>HU04</td>
-  <td>Cancelar reservas activas</td>
-  <td>Como Mobile Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
-  <td>
-    <b>Escenario 1:</b> Cancelación exitosa<br>
-    <em>Given</em> el huésped accede a una reserva activa desde la app<br>
-    <em>When</em> está dentro del plazo de cancelación<br>
-    <em>Then</em> el sistema cancela la reserva y muestra confirmación<br><br>
-    <b>Escenario 2:</b> Cancelación fuera de plazo<br>
-    <em>Given</em> la reserva ya está próxima a la fecha de inicio<br>
-    <em>When</em> el huésped intenta cancelarla<br>
-    <em>Then</em> el sistema informa que ya no es posible cancelar sin penalización
-  </td>
-  <td>EP09</td>
-</tr>
-<tr>
-  <td>HU05</td>
-  <td>Buscar y filtrar hoteles de Sweet Manager</td>
-  <td>Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
-  <td>
-    <b>Escenario 1:</b> Búsqueda por ubicación<br>
-    <em>Given</em> el huésped introduce una ciudad o región<br>
-    <em>When</em> realiza la búsqueda<br>
-    <em>Then</em> el sistema muestra hoteles disponibles en esa zona<br><br>
-
-    <b>Escenario 2:</b> Filtro por preferencias<br>
-    <em>Given</em> el huésped aplica filtros como tipo de habitación o servicios<br>
-    <em>When</em> se actualiza la búsqueda<br>
-    <em>Then</em> solo se muestran hoteles que cumplan con esos criterios
-  </td>
-  <td>EP09</td>
-</tr>
-
-<tr>
-  <td>HU06</td>
-  <td>Consultar historial de reservas anteriores</td>
-  <td>Como Mobile Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
-  <td>
-    <b>Escenario 1:</b> Visualización de historial<br>
-    <em>Given</em> el huésped está logueado y accede a su perfil<br>
-    <em>When</em> entra a la sección de historial<br>
-    <em>Then</em> el sistema muestra una lista cronológica de sus reservas pasadas<br><br>
-    <b>Escenario 2:</b> Filtro de historial<br>
-    <em>Given</em> el huésped quiere encontrar una reserva específica<br>
-    <em>When</em> utiliza filtros por fecha o ubicación<br>
-    <em>Then</em> el sistema muestra solo las reservas que coinciden con esos filtros
-  </td>
-  <td>EP09</td>
-</tr>
-<tr>
-  <td>HU07</td>
-  <td>Crear perfil y preferencias</td>
-  <td>Como Mobile Guest quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
-  <td>
-    <b>Escenario 1:</b> Creación del perfil<br>
-    <em>Given</em> el huésped ha completado el registro<br>
-    <em>When</em> accede a la opción "Mi perfil"<br>
-    <em>Then</em> el sistema le permite ingresar preferencias, foto y datos públicos<br><br>
-    <b>Escenario 2:</b> Uso del perfil en reservas<br>
-    <em>Given</em> que el huésped tiene su perfil configurado<br>
-    <em>When</em> realiza una nueva reserva<br>
-    <em>Then</em> el sistema sugiere opciones que coincidan con sus preferencias guardadas
-  </td>
-  <td>EP09</td>
-</tr>
-<tr>
+    <tr>
+      <td>HU01</td>
+      <td>Registrar nueva reserva en el hotel</td>
+      <td>Como Mobile Guest quiero reservar habitaciones para asegurarme tener un alojamiento durante mi estancia.</td>
+      <td>
+        <b>Escenario 1:</b> Reserva exitosa desde móvil<br>
+        <em>Given</em> el huésped ha iniciado sesión en la app móvil y accede a la sección de reservas<br>
+        <em>When</em> selecciona fechas y habitación disponibles<br>
+        <em>Then</em> el sistema confirma la reserva y muestra un mensaje de éxito con código de reserva<br><br>
+        <b>Escenario 2:</b> Reserva sin disponibilidad<br>
+        <em>Given</em> el huésped busca habitaciones en fechas específicas<br>
+        <em>When</em> no hay disponibilidad para ese rango<br>
+        <em>Then</em> el sistema muestra un mensaje de no disponibilidad y sugiere fechas alternativas<br><br>
+        <b>Escenario 3:</b> Error de pago<br>
+        <em>Given</em> el huésped ya ha seleccionado habitación y fechas<br>
+        <em>When</em> intenta pagar pero ocurre un error con el método de pago<br>
+        <em>Then</em> el sistema muestra un mensaje de error y permite reintentar con otro método
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Reservar una habitación personalizada</td>
+      <td>Como Mobile Guest quiero reservar habitaciones personalizadas según mis preferencias, para asegurarme de tener una estancia cómoda.</td>
+      <td>
+        <b>Escenario 1:</b> Personalización exitosa<br>
+        <em>Given</em> el huésped tiene preferencias guardadas en su perfil<br>
+        <em>When</em> busca una habitación<br>
+        <em>Then</em> el sistema prioriza las que coincidan con esas preferencias<br><br>
+        <b>Escenario 2:</b> Preferencias no disponibles<br>
+        <em>Given</em> que el usuaario no ha configurado preferencias<br>
+        <em>When</em> el huésped intenta añadir sus preferencias a la reserva<br>
+        <em>Then</em> el sistema le indica que no hay preferencias que añadir<br>
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Visualizar y gestionar reservas activas</td>
+      <td>Como Mobile Guest, quiero visualizar y gestionar mis reservas activas para saber cuándo y dónde me hospedaré.</td>
+      <td>
+        <b>Escenario 1:</b> Acceso a reservas activas<br>
+        <em>Given</em> el huésped está logueado en la app móvil<br>
+        <em>When</em> accede a "Mis Reservas"<br>
+        <em>Then</em> el sistema muestra la lista de reservas activas con fechas y ubicaciones<br><br>
+        <b>Escenario 2:</b> Gestión de reservas<br>
+        <em>Given</em> el huésped visualiza una reserva activa<br>
+        <em>When</em> elige modificarla o cancelarla<br>
+        <em>Then</em> el sistema permite editar o cancelar si está dentro del plazo permitido
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU04</td>
+      <td>Cancelar reservas activas</td>
+      <td>Como Mobile Guest, quiero cancelar una de mis reservas activas dentro del plazo permitido para evitar costos innecesarios si mis planes cambian.</td>
+      <td>
+        <b>Escenario 1:</b> Cancelación exitosa<br>
+        <em>Given</em> el huésped accede a una reserva activa desde la app<br>
+        <em>When</em> está dentro del plazo de cancelación<br>
+        <em>Then</em> el sistema cancela la reserva y muestra confirmación<br><br>
+        <b>Escenario 2:</b> Cancelación fuera de plazo<br>
+        <em>Given</em> la reserva ya está próxima a la fecha de inicio<br>
+        <em>When</em> el huésped intenta cancelarla<br>
+        <em>Then</em> el sistema informa que ya no es posible cancelar sin penalización
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU05</td>
+      <td>Buscar y filtrar hoteles de Sweet Manager</td>
+      <td>Como Mobile Guest quiero filtrar y buscar hoteles según mis preferencias para encontrar un hotel adecuado.</td>
+      <td>
+        <b>Escenario 1:</b> Búsqueda por ubicación<br>
+        <em>Given</em> el huésped introduce una ciudad o región<br>
+        <em>When</em> realiza la búsqueda<br>
+        <em>Then</em> el sistema muestra hoteles disponibles en esa zona<br><br>
+        <b>Escenario 2:</b> Filtro por preferencias<br>
+        <em>Given</em> el huésped aplica filtros como tipo de habitación o servicios<br>
+        <em>When</em> se actualiza la búsqueda<br>
+        <em>Then</em> solo se muestran hoteles que cumplan con esos criterios
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU06</td>
+      <td>Consultar historial de reservas anteriores</td>
+      <td>Como Mobile Guest, quiero acceder a mi historial de reservas para consultar mis viajes anteriores y tener un registro detallado de mis estadías.</td>
+      <td>
+        <b>Escenario 1:</b> Visualización de historial<br>
+        <em>Given</em> el huésped está logueado y accede a su perfil<br>
+        <em>When</em> entra a la sección de historial<br>
+        <em>Then</em> el sistema muestra una lista cronológica de sus reservas pasadas<br><br>
+        <b>Escenario 2:</b> Filtro de historial<br>
+        <em>Given</em> el huésped quiere encontrar una reserva específica<br>
+        <em>When</em> utiliza filtros por fecha o ubicación<br>
+        <em>Then</em> el sistema muestra solo las reservas que coinciden con esos filtros
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
+      <td>HU07</td>
+      <td>Crear perfil y preferencias</td>
+      <td>Como Mobile Guest quiero crear un perfil global para guardar mis preferencias y usarlas en futuras reservas.</td>
+      <td>
+        <b>Escenario 1:</b> Creación del perfil<br>
+        <em>Given</em> el huésped ha completado el registro<br>
+        <em>When</em> accede a la opción "Mi perfil"<br>
+        <em>Then</em> el sistema le permite ingresar preferencias, foto y datos públicos<br><br>
+        <b>Escenario 2:</b> Uso del perfil en reservas<br>
+        <em>Given</em> que el huésped tiene su perfil configurado<br>
+        <em>When</em> realiza una nueva reserva<br>
+        <em>Then</em> el sistema sugiere opciones que coincidan con sus preferencias guardadas
+      </td>
+      <td>EP09</td>
+    </tr>
+    <tr>
       <td>EP10</td>
       <td>Control operativo hotelero desde la aplicación móvil</td>
       <td>
@@ -3079,139 +3075,133 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td></td>
     </tr>
     <tr>
-  <td>HU01</td>
-  <td>Crear organización</td>
-  <td>Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
-  <td>
-    <b>Escenario 1:</b> Registro exitoso de organización<br>
-    <em>Given</em> el hotelero ha completado el formulario de registro desde su móvil<br>
-    <em>When</em> realiza el pago del plan seleccionado<br>
-    <em>Then</em> el sistema crea la organización y muestra el panel principal con un mensaje de bienvenida<br><br>
-    <b>Escenario 2:</b> Error en la creación de organización<br>
-    <em>Given</em> el hotelero ingresa la información y selecciona un plan<br>
-    <em>When</em> ocurre un error durante el pago<br>
-    <em>Then</em> el sistema muestra un mensaje de error y permite reintentar el proceso
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU02</td>
-  <td>Mejorar la subscripción de la organización</td>
-  <td>Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
-  <td>
-    <b>Escenario 1:</b> Cambio exitoso de suscripción<br>
-    <em>Given</em> el hotelero accede al panel de suscripción desde la app móvil<br>
-    <em>When</em> selecciona un nuevo plan y confirma el pago<br>
-    <em>Then</em> el sistema actualiza la suscripción y muestra un mensaje de confirmación<br><br>
-    <b>Escenario 2:</b> Comparación de planes<br>
-    <em>Given</em> el hotelero desea cambiar de plan<br>
-    <em>When</em> accede a la sección de planes<br>
-    <em>Then</em> el sistema muestra una comparación detallada de los planes disponibles y el actual
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU03</td>
-  <td>Revisar stock de recursos del hotel</td>
-  <td>Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
-  <td>
-    <b>Escenario 1:</b> Consulta de stock actual<br>
-    <em>Given</em> el hotelero accede al módulo de inventario desde su móvil<br>
-    <em>When</em> selecciona el área de recursos<br>
-    <em>Then</em> el sistema muestra una lista detallada del stock disponible con cantidades actualizadas<br><br>
-    <b>Escenario 2:</b> Identificación de stock bajo<br>
-    <em>Given</em> el hotelero revisa el inventario<br>
-    <em>When</em> detecta recursos con niveles por debajo del mínimo<br>
-    <em>Then</em> el sistema destaca dichos recursos
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU04</td>
-  <td>Agregar proveedores</td>
-  <td>Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada.</td>
-  <td>
-    <b>Escenario 1:</b> Registro de nuevo proveedor<br>
-    <em>Given</em> el hotelero accede a la sección de proveedores<br>
-    <em>When</em> completa los datos requeridos desde su móvil<br>
-    <em>Then</em> el sistema registra el proveedor y lo incluye en la lista de contactos<br><br>
-    <b>Escenario 2:</b> Duplicado de proveedor<br>
-    <em>Given</em> ya existe un proveedor registrado con los mismos datos<br>
-    <em>When</em> el hotelero intenta registrar otro similar<br>
-    <em>Then</em> el sistema muestra un mensaje de advertencia y evita la duplicación
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU05</td>
-  <td>Buscar y filtrar habitaciones por estado</td>
-  <td>Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
-  <td>
-    <b>Escenario 1:</b> Filtro por estado activo/inactivo<br>
-    <em>Given</em> el hotelero accede a la lista de habitaciones desde su móvil<br>
-    <em>When</em> aplica el filtro por estado<br>
-    <em>Then</em> el sistema muestra solo las habitaciones que coinciden con el filtro seleccionado<br><br>
-    <b>Escenario 2:</b> No hay habitaciones en el estado seleccionado<br>
-    <em>Given</em> el hotelero aplica un filtro<br>
-    <em>When</em> no existen habitaciones en ese estado<br>
-    <em>Then</em> el sistema muestra un mensaje indicando que no hay coincidencias
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU06</td>
-  <td>Consultar disponibilidad de habitaciones</td>
-  <td>Como Mobile Hotel Owner, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
-  <td>
-    <b>Escenario 1:</b> Consulta general de disponibilidad<br>
-    <em>Given</em> el hotelero accede al calendario de habitaciones<br>
-    <em>When</em> selecciona una fecha específica<br>
-    <em>Then</em> el sistema muestra qué habitaciones están disponibles y cuáles ocupadas<br><br>
-    <b>Escenario 2:</b> Filtro por tipo de habitación<br>
-    <em>Given</em> el hotelero desea buscar disponibilidad de un tipo específico<br>
-    <em>When</em> aplica el filtro correspondiente<br>
-    <em>Then</em> el sistema muestra solo la disponibilidad de ese tipo de habitación
-  </td>
-  <td>EP10</td>
-</tr>
-
-<tr>
-  <td>HU07</td>
-  <td>Crear cuenta</td>
-  <td>Como Mobile Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
-  <td>
-    <b>Escenario 1:</b> Registro exitoso<br>
-    <em>Given</em> el hotelero accede a la app móvil por primera vez<br>
-    <em>When</em> completa el formulario con datos válidos<br>
-    <em>Then</em> el sistema crea la cuenta y muestra el panel de inicio<br><br>
-    <b>Escenario 2:</b> Error en el registro<br>
-    <em>Given</em> el hotelero intenta registrarse<br>
-    <em>When</em> omite campos obligatorios o hay error de validación<br>
-    <em>Then</em> el sistema muestra mensajes de error específicos e impide avanzar
-  </td>
-  <td>EP10</td>
-</tr>
-<tr>
-  <td>HU08</td>
-  <td>Solicitar dispositivos</td>
-  <td>Como Mobile Hotel Owner, quiero poder solicitar más dispositivos IOT en mi hotel para que cada habitación disponga de personalización de temperatura, sensores de humo y/o escáneres RFID para el ingreso.</td>
-  <td>
-    <b>Escenario 1:</b> Solicitud de dispositivos aceptada<br>
-    <em>Given</em> el hotelero accede al módulo de dispositivos desde su app<br>
-    <em>When</em> selecciona el tipo y número de dispositivos deseados<br>
-    <em>Then</em> el sistema genera una solicitud con confirmación y estado de envío<br><br>
-    <b>Escenario 2:</b> Solicitud rechazada por exceder límite<br>
-    <em>Given</em> hay un límite establecido de dispositivos por suscripción<br>
-    <em>When</em> el hotelero solicita más de lo permitido<br>
-    <em>Then</em> el sistema rechaza la solicitud y muestra el límite disponible
-  </td>
-  <td>EP10</td>
-</tr>
+      <td>HU01</td>
+      <td>Crear organización</td>
+      <td>Como Mobile Hotel Owner quiero registrar una organización para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+      <td>
+        <b>Escenario 1:</b> Registro exitoso de organización<br>
+        <em>Given</em> el hotelero ha completado el formulario de registro desde su móvil<br>
+        <em>When</em> realiza el pago del plan seleccionado<br>
+        <em>Then</em> el sistema crea la organización y muestra el panel principal con un mensaje de bienvenida<br><br>
+        <b>Escenario 2:</b> Error en la creación de organización<br>
+        <em>Given</em> el hotelero ingresa la información y selecciona un plan<br>
+        <em>When</em> ocurre un error durante el pago<br>
+        <em>Then</em> el sistema muestra un mensaje de error y permite reintentar el proceso
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU02</td>
+      <td>Mejorar la subscripción de la organización</td>
+      <td>Como Mobile Hotel Owner quiero mejorar/cambiar la subscripción de la organización para ajustarla a nuestras necesidades actuales.</td>
+      <td>
+        <b>Escenario 1:</b> Cambio exitoso de suscripción<br>
+        <em>Given</em> el hotelero accede al panel de suscripción desde la app móvil<br>
+        <em>When</em> selecciona un nuevo plan y confirma el pago<br>
+        <em>Then</em> el sistema actualiza la suscripción y muestra un mensaje de confirmación<br><br>
+        <b>Escenario 2:</b> Comparación de planes<br>
+        <em>Given</em> el hotelero desea cambiar de plan<br>
+        <em>When</em> accede a la sección de planes<br>
+        <em>Then</em> el sistema muestra una comparación detallada de los planes disponibles y el actual
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU03</td>
+      <td>Revisar stock de recursos del hotel</td>
+      <td>Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
+      <td>
+        <b>Escenario 1:</b> Consulta de stock actual<br>
+        <em>Given</em> el hotelero accede al módulo de inventario desde su móvil<br>
+        <em>When</em> selecciona el área de recursos<br>
+        <em>Then</em> el sistema muestra una lista detallada del stock disponible con cantidades actualizadas<br><br>
+        <b>Escenario 2:</b> Identificación de stock bajo<br>
+        <em>Given</em> el hotelero revisa el inventario<br>
+        <em>When</em> detecta recursos con niveles por debajo del mínimo<br>
+        <em>Then</em> el sistema destaca dichos recursos
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU04</td>
+      <td>Agregar proveedores</td>
+      <td>Como Mobile Hotel Owner quiero agregar proveedor a mi organización para tener su información guardada.</td>
+      <td>
+        <b>Escenario 1:</b> Registro de nuevo proveedor<br>
+        <em>Given</em> el hotelero accede a la sección de proveedores<br>
+        <em>When</em> completa los datos requeridos desde su móvil<br>
+        <em>Then</em> el sistema registra el proveedor y lo incluye en la lista de contactos<br><br>
+        <b>Escenario 2:</b> Duplicado de proveedor<br>
+        <em>Given</em> ya existe un proveedor registrado con los mismos datos<br>
+        <em>When</em> el hotelero intenta registrar otro similar<br>
+        <em>Then</em> el sistema muestra un mensaje de advertencia y evita la duplicación
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU05</td>
+      <td>Buscar y filtrar habitaciones por estado</td>
+      <td>Como Mobile Hotel Owner quiero buscar y filtrar habitaciones por su estado (activo o inactivo) para gestionarlas de forma más eficiente.</td>
+      <td>
+        <b>Escenario 1:</b> Filtro por estado activo/inactivo<br>
+        <em>Given</em> el hotelero accede a la lista de habitaciones desde su móvil<br>
+        <em>When</em> aplica el filtro por estado<br>
+        <em>Then</em> el sistema muestra solo las habitaciones que coinciden con el filtro seleccionado<br><br>
+        <b>Escenario 2:</b> No hay habitaciones en el estado seleccionado<br>
+        <em>Given</em> el hotelero aplica un filtro<br>
+        <em>When</em> no existen habitaciones en ese estado<br>
+        <em>Then</em> el sistema muestra un mensaje indicando que no hay coincidencias
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU06</td>
+      <td>Consultar disponibilidad de habitaciones</td>
+      <td>Como Mobile Hotel Owner, quiero consultar la disponibilidad de habitaciones para asignar correctamente a los nuevos huéspedes.</td>
+      <td>
+        <b>Escenario 1:</b> Consulta general de disponibilidad<br>
+        <em>Given</em> el hotelero accede al calendario de habitaciones<br>
+        <em>When</em> selecciona una fecha específica<br>
+        <em>Then</em> el sistema muestra qué habitaciones están disponibles y cuáles ocupadas<br><br>
+        <b>Escenario 2:</b> Filtro por tipo de habitación<br>
+        <em>Given</em> el hotelero desea buscar disponibilidad de un tipo específico<br>
+        <em>When</em> aplica el filtro correspondiente<br>
+        <em>Then</em> el sistema muestra solo la disponibilidad de ese tipo de habitación
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU07</td>
+      <td>Crear cuenta</td>
+      <td>Como Mobile Hotel Owner quiero registrar una cuenta para poder gestionar las finanzas, abastecimientos e información relevante de mi hotel.</td>
+      <td>
+        <b>Escenario 1:</b> Registro exitoso<br>
+        <em>Given</em> el hotelero accede a la app móvil por primera vez<br>
+        <em>When</em> completa el formulario con datos válidos<br>
+        <em>Then</em> el sistema crea la cuenta y muestra el panel de inicio<br><br>
+        <b>Escenario 2:</b> Error en el registro<br>
+        <em>Given</em> el hotelero intenta registrarse<br>
+        <em>When</em> omite campos obligatorios o hay error de validación<br>
+        <em>Then</em> el sistema muestra mensajes de error específicos e impide avanzar
+      </td>
+      <td>EP10</td>
+    </tr>
+    <tr>
+      <td>HU08</td>
+      <td>Solicitar dispositivos</td>
+      <td>Como Mobile Hotel Owner, quiero poder solicitar más dispositivos IOT en mi hotel para que cada habitación disponga de personalización de temperatura, sensores de humo y/o escáneres RFID para el ingreso.</td>
+      <td>
+        <b>Escenario 1:</b> Solicitud de dispositivos aceptada<br>
+        <em>Given</em> el hotelero accede al módulo de dispositivos desde su app<br>
+        <em>When</em> selecciona el tipo y número de dispositivos deseados<br>
+        <em>Then</em> el sistema genera una solicitud con confirmación y estado de envío<br><br>
+        <b>Escenario 2:</b> Solicitud rechazada por exceder límite<br>
+        <em>Given</em> hay un límite establecido de dispositivos por suscripción<br>
+        <em>When</em> el hotelero solicita más de lo permitido<br>
+        <em>Then</em> el sistema rechaza la solicitud y muestra el límite disponible
+      </td>
+      <td>EP10</td>
+    </tr>
   </tbody>
 </table>
 
