@@ -9535,22 +9535,41 @@ https://shorturl.at/h5k4G
 
 - International Organization for Standardization. (2018). ISO 9241-210:2018 Ergonomics of human-system interaction — Part 210: Human-centred design for interactive systems. https://www.iso.org/standard/77520.html
 
-- 
+- Python 3.13 documentation. (s. f.). Python Documentation. https://docs.python.org/3/
 
-- 
+- Wokwi. (s. f.). wokwi-docs/docs/diagram-format.md at main · wokwi/wokwi-docs. GitHub. https://github.com/wokwi/wokwi-docs/blob/main/docs/diagram-format.md
 
-- 
+- Welcome to Wokwi! | Wokwi Docs. (s. f.-b). https://docs.wokwi.com/
 
-- 
+- Wokwi — Arduino ESP32 latest documentation. (s. f.). https://docs.espressif.com/projects/arduino-esp32/en/latest/third_party/wokwi.html
 
-- 
+- Getting Started with the Wokwi Arduino Simulator. (n.d.). DigiKey. https://www.digikey.com/en/maker/tutorials/2022/getting-started-with-the-wokwi-arduino-simulator
 
-- 
+- Wikipedia contributors. (2025, 5 mayo). Heuristic (computer science). Wikipedia. https://en.wikipedia.org/wiki/Heuristic_%28computer_science%29
 
-- 
+- Heuristics — PySCIPOpt  documentation. (s. f.). https://pyscipopt.readthedocs.io/en/latest/tutorials/heuristic.html
 
-- 
+- SEON. (2023, 30 junio). What are heuristic rules - how do they work? | SEON. https://seon.io/resources/dictionary/heuristic-rules/
 
+- Ddd-Crew. (s. f.). GitHub - ddd-crew/free-ddd-learning-resources: A collection of resources for learning DDD. All are free to access. GitHub. https://github.com/ddd-crew/free-ddd-learning-resources
+
+- Jamesmontemagno. (s. f.). Designing a DDD-oriented microservice - .NET. Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/architecture/microservices/microservice-ddd-cqrs-patterns/ddd-oriented-microservice
+
+- Fernando, N., Shrestha, S., Loke, S. W., & Lee, K. (2025). On Edge-Fog-Cloud Collaboration and Reaping Its Benefits: A Heterogeneous Multi-Tier Edge Computing Architecture. Future Internet, 17(1), 22. https://doi.org/10.3390/fi17010022
+
+- Mann, Z. Á. (2020). Notions of architecture in fog computing. Computing, 103(1), 51-73. https://doi.org/10.1007/s00607-020-00848-z
+
+- Build your edge computing infrastructure now. (2025, 18 marzo). [Vídeo]. Cisco. https://www.cisco.com/site/us/en/learn/topics/computing/what-is-edge-computing.html
+
+- Edge Computing and Edge Networking: An Overview. (2025, 2 mayo). Kentik. https://www.kentik.com/kentipedia/edge-computing-and-edge-networking/
+
+- Jpreese. (s. f.). Best practices for writing unit tests - .NET. Microsoft Learn. https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-best-practices
+
+- Schmitt, J. (2021, 3 diciembre). Unit testing vs integration testing. CircleCI. https://circleci.com/blog/unit-testing-vs-integration-testing/
+
+- Ghosh, A. (2022, 21 abril). Differences Between Functional, Unit and Integration Testing. https://www.headspin.io/blog/unit-integration-and-functional-testing-4-main-points-of-difference
+
+- Atlassian. (s. f.). GitFlow Workflow | Atlassian Git Tutorial. https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow
 
 # Anexos
 
