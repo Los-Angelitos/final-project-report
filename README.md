@@ -471,7 +471,7 @@ Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositor
       + [6.2.3. ](#623-sprint-3)
          - [6.2.3.1. Sprint Planning 3](#6231-sprint-planning-3)
          - [6.2.3.2. Aspect Leaders and Collaborators](#6232-aspect-leaders-and-collaborators)
-         - [6.2.3.3. Sprint Backlog 2](#6233-sprint-backlog-3)
+         - [6.2.3.3. Sprint Backlog 3](#6233-sprint-backlog-3)
          - [6.2.3.4. Development Evidence for Sprint Review](#6234-development-evidence-for-sprint-review)
          - [6.2.3.5. Testing Suite Evidence for Sprint Review](#6235-testing-suite-evidence-for-sprint-review)
          - [6.2.3.6. Execution Evidence for Sprint Review](#6236-execution-evidence-for-sprint-review)
@@ -8564,6 +8564,430 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 | HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Mostrar estado de dispositivos IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-002 | Sincronizar estado de dispositivos en la embedded application, edge, fog y cloud API | Como Device Maker quiero que el estado de los dispositivos se sincronice correctamente entre el propio dispositivo y los distintos servicios implementados| 3 | Giacomo Zoppi | Done |
+
+#### 6.2.3.4. Development Evidence for Sprint Review
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Repository</th>
+            <th>Branch</th>
+            <th>Commit Id</th>
+            <th>Commit Message</th>
+            <th>Commit Message Body</th>
+            <th>Committed on (Date)</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="11">sweetmanager-web-applications</td>
+            <td rowspan="11">develop</td>
+            <td class="commit-id">f805377</td>
+            <td class="commit-message update">update: minor changes</td>
+            <td></td>
+            <td>2025-06-30T18:55:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">fbd9def</td>
+            <td class="commit-message add">add(iot): added fog server ip locality saved</td>
+            <td></td>
+            <td>2025-06-30T18:00:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">c2de6c1</td>
+            <td class="commit-message refactor">refactor(iot): updated apiKey for rfid device</td>
+            <td></td>
+            <td>2025-06-30T17:55:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">27e5588</td>
+            <td class="commit-message feat">feat(iot): added section iot devices</td>
+            <td></td>
+            <td>2025-06-30T17:45:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">8a74d85</td>
+            <td class="commit-message update">update: minor changes</td>
+            <td></td>
+            <td>2025-06-18T18:55:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">d7d5c6a</td>
+            <td class="commit-message add">add: iot configuration connected with web services</td>
+            <td></td>
+            <td>2025-06-18T18:00:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">8f134a3</td>
+            <td class="commit-message update">update: fetching hotel data</td>
+            <td></td>
+            <td>2025-06-18T17:55:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">424d373</td>
+            <td class="commit-message refactor">refactor: major changes</td>
+            <td></td>
+            <td>2025-06-18T17:45:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">924996f</td>
+            <td class="commit-message fix">fix: admin menu icons updated</td>
+            <td></td>
+            <td>2025-06-18T17:00:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">3e5f2a6</td>
+            <td class="commit-message update">update: connecting admin with owner organization hotel</td>
+            <td></td>
+            <td>2025-06-18T15:00:00Z</td>
+        </tr>
+        <tr>
+            <td class="commit-id">456f21a</td>
+            <td class="commit-message fix">fix: double sending request</td>
+            <td></td>
+            <td>2025-06-18T08:00:00Z</td>
+        </tr>
+    </tbody>
+</table>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="10">sweetmanager-web-services</td>
+      <td rowspan="10">develop</td>
+      <td>abe72fe</td>
+      <td>Merge pull request #37 from Los-Angelitos/chore/booking</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>3623488</td>
+      <td>chore: added dependency injection.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>add1850</td>
+      <td>chore(thermostat): rename repository.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>88f9659</td>
+      <td>chore: added temperature resource.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>45e7609</td>
+      <td>chore: added thermostat's temperature refresh.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>ae3e59b</td>
+      <td>chore: updated guest preference nullables.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>021f805</td>
+      <td>refactor: updated iam context facade.</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>a5a6536</td>
+      <td>Merge pull request #36 from Los-Angelitos/chore/app</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>a22a835</td>
+      <td>chore: updated project file.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>5588bbb</td>
+      <td>feat(room-controller): added authorization.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Repository</th>
+      <th>Branch</th>
+      <th>Commit Id</th>
+      <th>Commit Message</th>
+      <th>Commit Message Body</th>
+      <th>Committed on (Date)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="40">sweetmanager-mobile-application</td>
+      <td rowspan="40">main</td>
+      <td>3faadd8</td>
+      <td>chore: updated routes.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>0a04254</td>
+      <td>fix: updated variables for dynamically.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>a52ae41</td>
+      <td>chore: updated room and type room</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>8dfc2b5</td>
+      <td>feat: added flow for bookings.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>155c643</td>
+      <td>chore(room): updated service.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>9cafe33</td>
+      <td>chore(hotel): updated service,</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>8d65ec1</td>
+      <td>chore: updated room type.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>156884f</td>
+      <td>feat: added payment and preferences services.</td>
+      <td></td>
+      <td>2025-06-19</td>
+    </tr>
+    <tr>
+      <td>452b6c9</td>
+      <td>Merge pull request #29 from Los-Angelitos/fix/card-corrections</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>97218ec</td>
+      <td>feat: user profile updated with smoker option</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>bc82e12</td>
+      <td>feat: user profile updated new slider for temperature and preloaded data for preferences</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>229fbd9</td>
+      <td>feat: guest reservation updated new card dimensions</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>f9bd1ba</td>
+      <td>feat: auth screen updated with loader</td>
+      <td></td>
+      <td>2025-07-02</td>
+    </tr>
+    <tr>
+      <td>e5a3985</td>
+      <td>Merge pull request #28 from Los-Angelitos/fix/rooms</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>2de862f</td>
+      <td>chore: updated gradle for google service config.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>5a2f944</td>
+      <td>feat: added google services json,</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>74b89b8</td>
+      <td>chore: deleted unused features.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>845cc6c</td>
+      <td>fix: fixed provider cards.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>ae8777c</td>
+      <td>feat: added terms and conditions page.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>c36ab3f</td>
+      <td>Merge pull request #27 from Los-Angelitos/fix/rooms</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>71c65c9</td>
+      <td>fix: fixed room update state.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>9d8e519</td>
+      <td>fix: fixed error when adding admin.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>673d2a4</td>
+      <td>chore: update route pointer for navigation.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>e80c8d6</td>
+      <td>fix(room): fixed service.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>3bc5182</td>
+      <td>Merge pull request #26 from Los-Angelitos/fix/bookings</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>c54267a</td>
+      <td>Merge branch 'main' into fix/bookings</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>fff4a22</td>
+      <td>Merge pull request #25 from Los-Angelitos/fix/hotel-details</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>f6a9db0</td>
+      <td>chore: deleted unused imports.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>a5fe3ae</td>
+      <td>fix: fixed room service.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>6541e42</td>
+      <td>fix: fixed booking service.</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>cad85aa</td>
+      <td>fix: room view with new states updated</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>c4d2cfe</td>
+      <td>fix: room service with new states updated</td>
+      <td></td>
+      <td>2025-07-01</td>
+    </tr>
+    <tr>
+      <td>dc67484</td>
+      <td>Merge pull request #24 from Los-Angelitos/chore/gradle</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>c0b2ca8</td>
+      <td>fix: fixed multimedia per hotel details.</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>e28d071</td>
+      <td>hotfix: deleted profile account view for owner role.</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>c5c449a</td>
+      <td>fix: fixed minimum room price per hotel.</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>fa18635</td>
+      <td>chore: added internet permission.</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>f58e985</td>
+      <td>Merge pull request #23 from Los-Angelitos/chore/gradle</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+    <tr>
+      <td>9da3f94</td>
+      <td>chore: updated gradle properties.</td>
+      <td></td>
+      <td>2025-06-30</td>
+    </tr>
+  </tbody>
+</table>
+
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </tr> </thead> <tbody> <tr> <td rowspan="10">sweetmanager-fog-api</td> <td rowspan="10">develop</td> <td>13e8619</td> <td>Merge pull request #14 from Los-Angelitos/feat/smoke-sensor-notification</td> <td></td> <td>2025-06-20T08:00:00Z</td> </tr> <tr> <td>4c5be82</td> <td>feat(monitoring): added send smoke sensor notification endpoint</td> <td></td> <td>2025-06-19T07:45:00Z</td> </tr> <tr> <td>9fff7dez</td> <td>feat(monitoring): added send smoke sensor notification method</td> <td></td> <td>2025-06-19T07:30:00Z</td> </tr> <tr> <td>8f564de</td> <td>Merge pull request #13 from Los-Angelitos/feat/rfid-validation</td> <td></td> <td>2025-06-19T07:15:00Z</td> </tr> <tr> <td>208f732</td> <td>feat: Circuit completed</td> <td></td> <td>2025-06-19T07:00:00Z</td> </tr> <tr> <td>5626b88</td> <td>feat(inventory): added rfid validation endpoint</td> <td></td> <td>2025-06-18T06:45:00Z</td> </tr> <tr> <td>a1b2c3d4</td> <td>Merge pull request #12 from Los-Angelitos/feat/acl-operations-monitoring</td> <td></td> <td>2025-06-16T06:30:00Z</td> </tr> <tr> <td>b2c3d4e5</td> <td>Merge pull request #11 from Los-Angelitos/fix/commerce</td> <td></td> <td>2025-06-16T06:15:00Z</td> </tr> <tr> <td>c3d4e5f6</td> <td>update(monitoring): added acl facade for get devices</td> <td></td> <td>2025-06-16T06:00:00Z</td> </tr> <tr> <td>d4e5f6g7</td> <td>fix(commerce): corrected post and put methods.</td> <td></td> <td>2025-06-16T05:45:00Z</td> </tr> </tbody> </table>
+
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </tr> </thead> <tbody> <tr> <td rowspan="12">sweetmanager-edge-api</td> <td rowspan="12">develop</td> <td>4c26779</td> <td>Merge pull request #8 from Los-Angelitos/feat/rfid</td> <td></td> <td>2025-06-19T08:00:00Z</td> </tr> <tr> <td>aaeddec</td> <td>feat: Circuit Completed</td> <td></td> <td>2025-06-19T07:45:00Z</td> </tr> <tr> <td>d2992a0</td> <td>fix: Fixed edge-fog communication</td> <td></td> <td>2025-06-18T07:30:00Z</td> </tr> <tr> <td>6884643</td> <td>fix: Fixed rfid reader repositories</td> <td></td> <td>2025-06-17T07:15:00Z</td> </tr> <tr> <td>d3c5806</td> <td>feat: created validate access endpoint for smoke sensor</td> <td></td> <td>2025-07-03T07:00:00Z</td> </tr> <tr> <td>6876457</td> <td>feat: created validate access method in application layer for smoke sensor</td> <td></td> <td>2025-07-03T06:45:00Z</td> </tr> <tr> <td>6899338</td> <td>feat: fog url fixed for smoke sensor</td> <td></td> <td>2025-07-04T06:30:00Z</td> </tr> <tr> <td>ccbsf0dd</td> <td>feat: api key added in swagger for smoke sensor validation</td> <td></td> <td>2025-07-04T06:15:00Z</td> </tr> <tr> <td>exa0aba</td> <td>feat: application services updated</td> <td></td> <td>2025-07-03T06:00:00Z</td> </tr> <tr> <td>9628674</td> <td>feat: exception fixed</td> <td></td> <td>2025-07-03T05:45:00Z</td> </tr> <tr> <td>3c93841</td> <td>feat: smoke sensor endpoint fixed</td> <td></td> <td>2025-07-03T05:30:00Z</td> </tr> <tr> <td>7926067</td> <td>feat: models fixed with api key column</td> <td></td> <td>2025-07-03T05:15:00Z</td> </tr> </tbody> </table>
+
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </tr> </thead> <tbody> <tr> <td rowspan="20">thermostat-embedded-application</td> <td rowspan="20">develop</td> <td>8537546</td> <td>update: latest version of thermostat device</td> <td></td> <td>2025-07-03T08:00:00Z</td> <!-- 3 days ago from July 6 --> </tr> <tr> <td>a1b5411</td> <td>update: sketch.ino</td> <td></td> <td>2025-06-16T07:45:00Z</td> </tr> <tr> <td>64h20f7</td> <td>update: added communication private gw wokwi</td> <td></td> <td>2025-06-16T07:30:00Z</td> </tr> <tr> <td>31c93bc</td> <td>fix: wokwi slow</td> <td></td> <td>2025-06-16T07:15:00Z</td> </tr> <tr> <td>(merge-hash)</td> <td>Merge branch 'main'</td> <td></td> <td>2025-06-15T07:00:00Z</td> </tr> <tr> <td>ab7ab77</td> <td>feat: implementation for actuator</td> <td></td> <td>2025-06-16T06:45:00Z</td> </tr> <tr> <td>e7af9d9</td> <td>feat: implementation of the displaydevice class</td> <td></td> <td>2025-06-16T06:30:00Z</td> </tr> <tr> <td>d1s7797</td> <td>feat: class for a device that can display info</td> <td></td> <td>2025-06-16T06:15:00Z</td> </tr> <tr> <td>9016444</td> <td>feat: added abstract class to handle events</td> <td></td> <td>2025-06-16T06:00:00Z</td> </tr> <tr> <td>a79ee8b</td> <td>feat: file with headers for the modest lot framework</td> <td></td> <td>2025-06-16T05:45:00Z</td> </tr> <tr> <td>2f715fa</td> <td>feat: thermostat device implementation</td> <td></td> <td>2025-06-16T05:30:00Z</td> </tr> <tr> <td>a859663</td> <td>add: json for hardware wokwi simulation</td> <td></td> <td>2025-06-16T05:15:00Z</td> </tr> <tr> <td>6715484</td> <td>add: updated libraries used for the project</td> <td></td> <td>2025-06-16T05:00:00Z</td> </tr> <tr> <td>øF04039</td> <td>update: mocked data without http</td> <td></td> <td>2025-06-16T04:45:00Z</td> </tr> <tr> <td>3148722</td> <td>docs: added README</td> <td></td> <td>2025-06-16T04:30:00Z</td> </tr> <tr> <td>e747453</td> <td>add: ThermostatDevice header for wokwi simulation</td> <td></td> <td>2025-06-16T04:15:00Z</td> </tr> <tr> <td>8468576</td> <td>add: sketch.ino like the main file for Arduino</td> <td></td> <td>2025-06-16T04:00:00Z</td> </tr> <tr> <td>(device-hash)</td> <td>feat: implemented Device header</td> <td></td> <td>2025-06-16T03:45:00Z</td> </tr> <tr> <td>(impl-hash)</td> <td>feat: added implementation for Device header</td> <td></td> <td>2025-06-16T03:30:00Z</td> </tr> <tr> <td>(cmd-hash)</td> <td>feat: added CommandHandler header for process commands</td> <td></td> <td>2025-06-16T03:15:00Z</td> </tr> </tbody> </table>
+
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </thead> <tbody> <tr> <td rowspan="3">rfid-embedded-application</td> <td rowspan="3">develop</td> <td>(not provided)</td> <td>fast/Added modestio files</td> <td></td> <td>2025-06-15T00:00:00Z</td> </tr> <tr> <td>(not provided)</td> <td>fast/Added Readme</td> <td></td> <td>2025-06-14T00:00:00Z</td> </td> </tr> <tr> <td>(not provided)</td> <td>Initial Commit</td> <td></td> <td>2025-06-14T00:00:00Z</td> </tr> </tbody> </table>
+
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Committed on (Date)</th> <th>Status</th> </tr> </thead> <tbody> <tr> <td rowspan="10">smoke-sensor-embedded-application</td> <td rowspan="10">develop</td> <td>ozbeoest</td> <td>feat: main updated with edge connection</td> <td>2025-07-04</td> <td>verified</td> </tr> <tr> <td>1b4476d</td> <td>feat: resistor added</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>2922915</td> <td>Add files via upload</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>8962643</td> <td>Delete wokwi-project.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>f230342</td> <td>Delete sketch.ino</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>ac54839</td> <td>Delete libraries.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>138c144</td> <td>Delete diagram.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>dc09469</td> <td>Delete chip-mq2.chip.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>7972672</td> <td>Delete chip-mq2.chip.c</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>g7988ac</td> <td>Delete README.md</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr>  </tr> </tbody> </table>
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
 
