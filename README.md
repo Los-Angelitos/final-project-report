@@ -9015,13 +9015,13 @@ Feature: Monitoreo de dispositivos IoT
   Scenario: Configurar alertas por temperatura
     Given El administrador accede a la configuración de alertas
     When Define umbrales mínimos y máximos de temperatura para las habitaciones
-    Then El sistema debe generar notificaciones automáticas cuando se excedan los límites
+    Then Se generan notificaciones automáticas cuando se excedan los límites
 
 Feature: Control de sensores de humo
   Scenario: Recibir alerta por detección de humo
     Given Un sensor de humo detecta concentraciones peligrosas
     When El nivel de humo supera el umbral configurado
-    Then El sistema debe activar alertas y notificar al personal de seguridad
+    Then Se activan alertas y notificaciones al personal de seguridad
     
   Scenario: Configurar umbrales de detección de humo
     Given El técnico accede a la configuración de sensores
@@ -9054,11 +9054,11 @@ Feature: Autenticación de dispositivos
   Scenario: Autenticar dispositivos IoT
     Given Un dispositivo IoT intenta conectarse al sistema
     When Presenta sus credenciales de autenticación
-    Then El sistema debe validar y autorizar el acceso sin errores de autenticación
+    Then Se debe validar y autorizar el acceso sin errores de autenticación
     
   Scenario: Renovar tokens de seguridad
     Given Un dispositivo tiene un token próximo a expirar
-    When El sistema detecta que el token necesita renovación
+    When Se detecta que el token necesita renovación
     Then Debe generar automáticamente un nuevo token válido sin interrumpir la conexión
 ```
 ---
@@ -9076,18 +9076,18 @@ Feature: Autenticación de dispositivos
 Feature: Notificaciones  
   Scenario: Enviar notificaciones de emergencia  
     Given Se detecta una emergencia en el hotel  
-    When El sistema identifica la situación crítica  
+    When se identifica la situación crítica  
     Then Debe enviar notificaciones push inmediatas a todos los usuarios pertinentes
 
 Feature: Mensajes de emergencia en habitaciones
   Scenario: Enviar alerta por acceso no autorizado  
     Given Se detecta un acceso no autorizado a una habitación  
-    When El sistema valida que el acceso es sospechoso  
+    When Se valida que el acceso es sospechoso  
     Then Debe enviarse un mensaje de emergencia al personal de seguridad y al administrador del hotel  
   
   Scenario: Enviar alerta por activación del sensor de humo  
     Given Un sensor de humo se activa en una habitación  
-    When El sistema recibe la señal del sensor  
+    When Se recibe la señal del sensor  
     Then Debe enviarse un mensaje de emergencia al personal de mantenimiento y evacuación
 ```
 ---
@@ -9135,7 +9135,7 @@ Feature: Control de inventario
   Scenario: Generar alertas de stock bajo
     Given Los productos tienen umbrales mínimos configurados
     When El stock alcanza el nivel mínimo
-    Then El sistema debe generar alertas automáticas para reabastecimiento
+    Then Se generaran alertas automáticas para reabastecimiento
 
 Feature: Gestión de activos
   Scenario: Registrar nuevos activos
@@ -9159,23 +9159,24 @@ Feature: Gestión de reservas
   Scenario: Procesar pago de reserva  
     Given Un huésped confirma su reserva  
     When Proporciona información de pago válida  
-    Then El sistema debe procesar el pago y confirmar la reserva automáticamente  
+    Then Se procesa el pago y confirmar la reserva automáticamente  
   
   Scenario: Ver disponibilidad de habitaciones  
     Given Un huésped selecciona fechas específicas de estadía  
     When Consulta la disponibilidad en el sistema  
-    Then El sistema debe mostrar las habitaciones disponibles para ese periodo
+    Then Se listarán mostrar las habitaciones disponibles para ese periodo
 
 Feature: Suscripción y renovación  
   Scenario: Generar factura de servicios  
     Given Un huésped consume servicios adicionales  
     When Solicita la factura de su estadía  
-    Then El sistema debe generar una factura detallada con todos los servicios consumidos  
+    Then Se genarará una factura detallada con todos los servicios consumidos  
   
-  Scenario: Renovar suscripción automáticamente  
-    Given La suscripción del usuario está próxima a vencer  
-    When Hay un método de pago válido registrado  
-    Then El sistema debe renovar la suscripción automáticamente y notificar al usuario
+Scenario: Mejorar suscripción  
+  Given El usuario tiene una suscripción activa  
+  When Solicita mejorar su plan de suscripción y cuenta con un método de pago válido  
+  Then Se actualizará la suscripción al nuevo plan y notificar al usuario
+
 
 ```
 <div style="text-align: center;">
