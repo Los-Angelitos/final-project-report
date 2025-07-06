@@ -9699,7 +9699,10 @@ Duración de la entrevista: 29:30 - 51:20 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños](assets/img/validation-interviews/owner3.1)
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="./assets/img/validation-interviews/owner3.png" alt="Administradora de hotel" width="90%" />
+</div>
+<br>
 
 <br>Luis expresó su agrado por el diseño y la información presentada en la Landing Page y comentó que ve todos los datos correctos, interesantes y que lo motivan a utilizar el servicio. Además, mencionó que le gustaba poder interactuar con los elementos del sitio y que tenga un enlace que lo redirija automáticamente a la aplicación web.
 En cuanto a la aplicación móvil, señaló que la experiencia fue bastante sencilla y cómoda, siendo capaz de registrarse e iniciar sesión, registrar su hotel, revisar la información de su hotel, añadir administradores y proveedores, etc. Valoró también la posibilidad de gestionar su organización desde cualquier lugar, pues no siempre tenía una laptop o PC a la mano. Por otro lado, mencionó que le gustaban los colores y las interfaces, pues eran amigables con el usuario y agradables a la vista.
@@ -10398,7 +10401,7 @@ Link acortado del video: https://shorturl.at/h5k4G
 | Vídeo de Exposición TB1      | Link del Vídeo: <https://acortar.link/R0Hppu>|  
 | VÍdeo de Exposición TP1      | Link del Vídeo: <https://acortar.link/oR8F2o>|
 | Vídeo de Exposición TB2    | Link del Vídeo: - <https://acortar.link/EQqztA>| 
-| Vídeo de Exposición TF1    | Link del Vídeo: - | 
+| Vídeo de Exposición TF1    | Link del Vídeo: - <https://acortar.link/P26u9Z>| 
 | Vídeo de Ejecución de Proyecto Final | Link del Vídeo: <https://acortar.link/KBvETV> |
 
 ## Kanban Board
