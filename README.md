@@ -8655,7 +8655,7 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 | **Id**     | **Title**  | **Id**           | **Title** | **Description** | **Estimation (Hours)** | **Assigned To** | **Status** |
 | HU02     | Control de temperatura en habitaciones | T-002 | Controlar temperatura mediante un potenciometro | Como Device User quiero presionar el boton de cambio de modo y girar el potenciometro para cambiar la tempertura manualmente | 3 | Arian Rodriguez | Done |
 | HU04     | Recibir alerta sonora ante humo | T-001 | Generar alerta sonora por humo | Como Device User quiero que el sensor de humo active un buzzer audible para reconocer que se ha excedido el threshold | 3 | Fabia Herrera | Done |
-| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo activado en la web | Como Web Hotel Admin quiero recibir una notificación inmediata al activarse un sensor de humo en la sección de notificaciones | 3 | Fabia Herrera | Done |
+| HU15     | Recibir notificación por humo | T-001 | Notificación por sensor de humo activado en la web | Como Web Hotel Admin quiero recibir una notificación inmediata al activarse un sensor de humo en la sección de notificaciones | 3 | Fabia Herrera | To do |
 | HU15     | Recibir notificación por humo | T-002 | Creación de notificación desde la edge api | Como Device Maker quiero que la Edge y FOG API interactuen con la Cloud API, de tal modo que se cree una notificación cuando el sensor de humo es activado. | 3 | Omar Morales | Done |
 | HU03     | Visualizar estado de dispositivos IoT| T-002 | Encender luces LED segun la temperatura | Como Device User quiero visualizar las luces LED encendidas segun la temperatura para comprender visualmente si la temperatura es fria o caliente. | 2 | Ramón Jorge | Done |
 | HU14     | Visualizar estado de dispositivos en la web | T-001 | Mostrar estado de dispositivos IoT en la web | Como Web Hotel Admin quiero visualizar el estado de los dispositivos IoT en mi hotel. | 3 | Mauricio Rojas | Done |
@@ -9288,10 +9288,12 @@ El fog y edge API son desplegados localmente y se comunican con los dispositivos
 URL del video: https://acortar.link/KBvETV
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
-  <br>
+<img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
+</div>
+<br>
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
 <img src="./assets/img/angelitos.jpg" alt="Sprint Review Video" width="90%" />
+</div>
 Después de varias reuniones en equipo, se logró unificar el circuito de trabajo de todos los componentes del sistema, incluyendo la aplicación web, la Fog API, la Edge API y los dispositivos embebidos. Este circuito permite una gestión eficiente de las reservas, el monitoreo de sensores y la interacción con los usuarios a través de la aplicación móvil.
 </div>
 
@@ -10318,8 +10320,9 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 
 # Video About-the-Team
 
-En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. 
-https://shorturl.at/h5k4G
+En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. Además de dar una pequeña reflexión personal sobre como el curso de Desarrollo de Soluciones IoT ha aportado a su desarrollo profesional como Ingeniero de Software. 
+
+Link acortado del video: https://shorturl.at/h5k4G
 
 
 # Bibliografía
