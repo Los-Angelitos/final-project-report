@@ -1,8 +1,8 @@
 # <center>Informe del Trabajo Final</center>
 
 <p align="center">
-    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <img src="https://upload.wikimedia.org/wikipedia/commons/f/fc/UPC_logo_transparente.png"></img><br>
+    <strong>Universidad Peruana de Ciencias Aplicadas</strong><br>
     <strong>Ingeniería de Software</strong><br>
     <strong>1ASI0572 - Desarrollo de Soluciones IoT - 2971</strong><br>
     <strong>Profesor: Angel Augusto Velasquez Nuñez </strong><br>
@@ -243,6 +243,68 @@
         <ul>
           <li>Mobile y Embedded Applications</li>
           <li>Web Services y Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    </tr>
+     <tr>
+      <td rowspan="6">V4</td>
+      <td>06/07/2025</td>
+      <td>Mauricio Abraham Rivo Rojas Sánchez</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>06/07/2025</td>
+      <td>Giacomo Zoppi Rodriguez</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>06/07/2024</td>
+      <td>Omar Andrew Morales Montalvo</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>06/07/2025</td>
+      <td>Ramón Alejandro Jorge Arévalo</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>06/07/2025</td>
+      <td>Fabia Alejandra Herrera Aguirre</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
+          <li>Correcciones del entregable anterior</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td>06/07/2025</td>
+      <td>Arian Martín Rodriguez Vargas</td>
+      <td>
+        <ul>
+          <li>Fog y Edge Api</li>
           <li>Correcciones del entregable anterior</li>
         </ul>
       </td>
@@ -3434,7 +3496,7 @@ Imagen con resultado del Event Storming en relación a Commerce Bounded Context:
 
 ![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
 
-<h3>Escenario: El dueño lista las habitacionesl</h3>
+<h3>Escenario: El dueño lista las habitaciones</h3>
 <p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Operations and Monitoring Bounded Context, para listar las habitaciones pertenecientes a dicho hotel. </p>
     
 ![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
@@ -8578,8 +8640,7 @@ Para este último Sprint, mantuvimos la organización de líderes y colaboradore
 
 #### 6.2.3.3.Sprint Backlog 3
 Para organizar las tareas de cada historia de usuario, hemos elaborado en la herramienta Trello un Kanban Board en el que dar seguimiento al proceso en el que se encuentra cada tarea (To do/Working On/Done). Esto nos permite tambien saber a que miembro del equipo se la adjudica cada tarea y si es que requiere de apoyo.  
-![image](https://github.com/user-attachments/assets/cfae168d-d469-4316-a3ea-c2d0fec7d2a5)
-
+![image](https://github.com/user-attachments/assets/8d4d164a-6e4b-4f8e-864d-e58abcb48e7a)
 
 
 Link del Kanban Board del Sprint 3: https://shorturl.at/5DRwi
