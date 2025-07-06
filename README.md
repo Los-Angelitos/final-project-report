@@ -8543,6 +8543,18 @@ Hemos planeado para este sprint, Hemos planeado para este sprint, la finalizaci�
 | **Sprint 3 Velocity** | |
 | **Sum of Story Points** | 14 story points |
 
+#### 6.2.3.2. Aspect Leaders and Collaborators.
+  
+Para este último Sprint, mantuvimos la organización de líderes y colaboradores en los aspectos, los cuales fueron definidos por cada Bounded Context que hemos definido para el proyecto. A continuación, se detalla la lista con todos los miembros del equipo:
+
+| Team Member (Last Name, First Name) | GitHub Username     | IAM Bounded Context | Communication Bounded Context | Operations and Monitoring Bounded Context | Organizational Management Bounded Context | Commerce Bounded Context | Inventory Bounded Context |
+|------------------------------------|----------------------|--------------------------------------|------------------------------------------------|-----------------------------------------------|--------------------------------------------------------------|---------------------------------------------|---------------------------------------------|
+| Zoppi, Giacomo                     | Giacomo202210029     | C                                    |                                               | L                                             |                                                             |                                            | C                                           | C             |
+| Herrera, Fabia                     | pelumsa              |                                     | L                                              | C                                             | C                                                            |                                            |                                            | C             |
+| Rojas, Mauricio                    | MayugiKentai11       | L                                    |                                               | C                                             | C                                                            |                      C                      |                                            | C             |
+| Morales, Omar                      | andrewmm16           |                                     |                                               | C                                             | C                                                            |                                            | L                                           | C             |
+| Rodriguez, Arian                   | arianrodriguez       |                                     | C                                              | C                                             | L                                                            |             C                               |                                            | L             |
+| Jorge, Ramón                       | salvlormonch         |                                     |                                               | C                                             |                                                             | L                                           | C                                           |
 
 #### 6.2.3.3.Sprint Backlog 3
 Para organizar las tareas de cada historia de usuario, hemos elaborado en la herramienta Trello un Kanban Board en el que dar seguimiento al proceso en el que se encuentra cada tarea (To do/Working On/Done). Esto nos permite tambien saber a que miembro del equipo se la adjudica cada tarea y si es que requiere de apoyo.  
@@ -9353,6 +9365,97 @@ URL Wokwi del RFID Embedded Application: https://wokwi.com/projects/433613195311
 
 URL Wokwi del Smoke Sensor Embedded Application: https://wokwi.com/projects/433948209896527873
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/smoke-wokwi.PNG" alt="" width="90%" /> </div> <br>
+
+#### 6.2.3.9. Team Collaboration Insights during Sprint.
+
+En este último Sprint, hemos desarrollado las últimas features y correcciones a los artefactos realizados en el previo sprint. Estos son: Web Application, Mobile Application, Web Services, Fog Api, Edge Api y las Embedded Applications
+A continuación se muestran las colaboraciones individuales por cada artefacto trabajado durante este sprint: 
+
+## Web Application:
+
+Gráficos de la sección insights en el repositorio de la Web Application desde el 14 de julio hasta el 6 de julio, mostrando evidencias de colaboración de los miembros del equipo designados para terminar las tareas referentes a dicho artefacto:
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/web-application-1.png" width="500">
+</div>
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/web-application-2.png" width="500">
+</div>
+
+---
+
+## Mobile Application:
+
+Gráficos de la sección insights en el repositorio de la Mobile Application desde el 14 de julio hasta el 6 de julio. Nuevamente, se muestra la colaboración de los miembros responsables de realizar las últimas tareas para este artefacto en este último sprint:
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/mobile-application-1.png" width="500">
+</div>
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/mobile-application-2.png" width="500">
+</div>
+
+---
+
+## Web Services:
+
+Gráficos de la sección insights en el repositorio del Web Service desde el 14 de julio hasta el 6 de julio. Se evidencia la colaboración de los miembros del equipo encargados de realizar las tareas referentes a este artefacto:
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/web-services.png" width="500">
+</div>
+
+---
+
+## Fog API:
+
+Gráficos de la sección insights en el repositorio del Fog API desde el 14 de julio hasta el 6 de julio. Se puede ver el aporte de todos los miembros que trabajaron en dicho artefacto para este sprint:
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/fog-api-1.png" width="500">
+</div>
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/fog-api-2.png" width="500">
+</div>
+
+---
+
+## Edge API:
+
+Gráficos de la sección insights en el repositorio del Edge API desde el 14 de julio hasta el 6 de julio. Se muestran las evidencias de colaboración de los miembros del equipo:
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/edge-api-1.png" width="500">
+</div>
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/edge-api-2.png" width="500">
+</div>
+
+---
+
+## EMBEDDED APPLICATIONS:
+
+Gráficos de la sección insights en el repositorio de la RFID EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/rfid-embedded-application.png" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la THERMOSTAT EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/thermostat-embedded-application.png" width="500">
+</div>
+
+Gráficos de la sección insights en el repositorio de la SMOKE SENSOR EMBEDDED APPLICATION.
+
+<div align="center">
+  <img src="./assets/img/team-collaboration-insights/smoke-sensor-embedded-application.png" width="500">
+</div>
 
 ## 6.3. Validation Interviews.
 
