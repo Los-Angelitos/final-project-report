@@ -8293,6 +8293,7 @@ Scenario: Consultar historial de reservas
 <div style="text-align: center;">
   <img src="https://i.imgur.com/QBUkK8j.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
 </div><br>
+
 #### 6.2.2.6. Execution Evidence for Sprint Review.
 
 <div style="text-align: center;">
@@ -9225,6 +9226,11 @@ URL del video: https://acortar.link/KBvETV
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
   <img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
+  <br>
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="./assets/img/angelitos.jpg" alt="Sprint Review Video" width="90%" />
+Después de varias reuniones en equipo, se logró unificar el circuito de trabajo de todos los componentes del sistema, incluyendo la aplicación web, la Fog API, la Edge API y los dispositivos embebidos. Este circuito permite una gestión eficiente de las reservas, el monitoreo de sensores y la interacción con los usuarios a través de la aplicación móvil.
+</div>
 
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
