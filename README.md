@@ -9089,7 +9089,7 @@ Feature: Mensajes de emergencia en habitaciones
     Given Un sensor de humo se activa en una habitación  
     When El sistema recibe la señal del sensor  
     Then Debe enviarse un mensaje de emergencia al personal de mantenimiento y evacuación
-
+```
 ---
 
 <div style="text-align: center;">
