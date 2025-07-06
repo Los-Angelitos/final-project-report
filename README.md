@@ -10281,19 +10281,16 @@ El color que emite la luz LED no sigue la línea visual ni la paleta de colores 
 Alinear el color predeterminado de la luz LED con la identidad visual de Sweet Manager, utilizando colores fríos o tonos de azul para mantener una estética coherente y reconocible.
 
 ## 6.4. Video About-the-Product.
-En esta sección el equipo redacta una introducción y resumen del contenido incluido
-en el Video About-the-Product, el cual tiene como público objetivo los visitantes al
-Landing Page, quienes desean conocer sobre el modelo de negocio y las
-características principales de los productos de software, al igual que los usuarios de
-las Aplicaciones, quienes desean realizar tareas relacionadas con los procesos
-soportados por la solución. El tono que utilice en la comunicación debe ser
-consistente con el tono adoptado para el producto y debe incluirse al menos un
-testimonio positivo de un usuario que haya participado en las entrevistas de
-validación. Debe incluirse también en esta sección un screenshot del Video, el URL
-de la versión publicada en Microsoft Stream (y además, el URL de la versión
-publicada en YouTube utilizada para incrustarse en el Landing Page), así como el
-timing (duración) del mismo. Ver otras indicaciones importantes en el Anexo C.
-Indicaciones para secciones que incluyen Videos
+El video about-the-product de SweetManager es un spot comercial breve y dinámico, diseñado para presentar de manera clara y entretenida los principales beneficios de nuestra solución. A través de un enfoque creativo y humorístico, mostramos cómo funciona la plataforma desde la perspectiva del huésped, el administrador y el propietario del hotel. El video incluye el testimonio de uno de los entrevistados y presenta capturas reales de nuestras aplicaciones web y móvil, destacando sus funcionalidades clave.
+
+**Enlace al video about-the-product:**
+https://goo.su/Dku3l
+
+<div style="text-align: center;">
+  <img src="./assets/img/img-about-the-product.jpeg" alt="About the product evidence" width="90%" />
+</div><br>
+
+
 
 # Conclusiones
 
