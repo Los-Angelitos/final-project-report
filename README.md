@@ -9206,6 +9206,27 @@ Scenario: Mejorar suscripción
   <img src="https://i.imgur.com/oDS0wCy.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
 </div><br>
 
+#### 6.2.3.6. Execution Evidence for Sprint Review
+
+A continuación, se demuestra mediante un video todo el flujo construido por SweetManager desde la aplicación web hasta el prototipo físico final.
+
+Durante este circuito, se evidencia la interacción entre los distintos componentes del sistema, incluyendo la aplicación web, la Fog API y la Edge API. El video muestra cómo se registran los dispositivos, se gestionan las reservas y se monitorean los sensores de humo en tiempo real.
+Como también, se puede observar la integración de los dispositivos embebidos, como el termostato y el sensor de humo, que interactúan con la Fog API para enviar datos y recibir comandos.
+
+Asimismo, se demuestra la funcionalidad de la aplicación web, donde los usuarios pueden gestionar reservas, consultar disponibilidad de habitaciones y recibir notificaciones en tiempo real sobre eventos críticos, como la detección de humo.
+
+La aplicación movil también se integra en este circuito, permitiendo a los usuarios acceder a sus reservas, recibir notificaciones y gestionar su perfil de usuario.
+
+Los web services desplegados en la Cloud, como la Cloud API, facilitan la comunicación entre la aplicación web y los servicios de backend, garantizando una experiencia fluida y eficiente para los usuarios.
+
+El fog y edge API son desplegados localmente y se comunican con los dispositivos embebidos, permitiendo la gestión y monitoreo de los mismos a través de la aplicación web.
+
+URL del video: https://acortar.link/KBvETV
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+  <img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
+
+
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
 
 En este entregable, se cumple con la documentación de los servicios desarrollados en este sprint, que son la Fog API y Edge API como también del Web Services desplegado en nuestra Cloud. A continuación se muestra la documentación Swagger de ambos servicios:
@@ -9359,6 +9380,8 @@ URL del Thermostat Embedded Application: https://wokwi.com/projects/434787349155
 <div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/Captura2.PNG" alt="" width="90%" /> </div> <br>
 
 En esta captura se evidencia el proceso de carga del sketch.ino en la placa ESP32 física.
+
+<div style="display:flex; justify-content:center; align-items:center; width: 100%"> <img src="./assets/img/software-deployment-evidence/embedded/thermostat.jpg" alt="" width="90%" /> </div> <br>
 
 Mientras que nuestros otros productos de RFID y Smoke Sensor Embedded Application fueron desplegados en Wokwi, una plataforma de simulación de hardware que permite probar y validar el funcionamiento de circuitos electrónicos y microcontroladores sin necesidad de hardware físico. A continuación se muestran las capturas de pantalla de los productos desplegados en Wokwi:
 
@@ -10304,7 +10327,7 @@ https://shorturl.at/h5k4G
 | VÍdeo de Exposición TP1      | Link del Vídeo: <https://acortar.link/oR8F2o>|
 | Vídeo de Exposición TB2    | Link del Vídeo: - <https://acortar.link/EQqztA>| 
 | Vídeo de Exposición TF1    | Link del Vídeo: - | 
-
+| Vídeo de Ejecución de Proyecto Final | Link del Vídeo: <https://acortar.link/KBvETV> |
 
 ## Kanban Board
 | Contenido | URL del Trello |
