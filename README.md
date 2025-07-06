@@ -9015,13 +9015,13 @@ Feature: Monitoreo de dispositivos IoT
   Scenario: Configurar alertas por temperatura
     Given El administrador accede a la configuración de alertas
     When Define umbrales mínimos y máximos de temperatura para las habitaciones
-    Then El sistema debe generar notificaciones automáticas cuando se excedan los límites
+    Then Se generan notificaciones automáticas cuando se excedan los límites
 
 Feature: Control de sensores de humo
   Scenario: Recibir alerta por detección de humo
     Given Un sensor de humo detecta concentraciones peligrosas
     When El nivel de humo supera el umbral configurado
-    Then El sistema debe activar alertas y notificar al personal de seguridad
+    Then Se activan alertas y notificaciones al personal de seguridad
     
   Scenario: Configurar umbrales de detección de humo
     Given El técnico accede a la configuración de sensores
@@ -9054,11 +9054,11 @@ Feature: Autenticación de dispositivos
   Scenario: Autenticar dispositivos IoT
     Given Un dispositivo IoT intenta conectarse al sistema
     When Presenta sus credenciales de autenticación
-    Then El sistema debe validar y autorizar el acceso sin errores de autenticación
+    Then Se debe validar y autorizar el acceso sin errores de autenticación
     
   Scenario: Renovar tokens de seguridad
     Given Un dispositivo tiene un token próximo a expirar
-    When El sistema detecta que el token necesita renovación
+    When Se detecta que el token necesita renovación
     Then Debe generar automáticamente un nuevo token válido sin interrumpir la conexión
 ```
 ---
@@ -9073,29 +9073,23 @@ Feature: Autenticación de dispositivos
 ## Communication Bounded Context
 
 ```gherkin
-Feature: Notificaciones push
-  Scenario: Enviar notificaciones de emergencia
-    Given Se detecta una emergencia en el hotel
-    When El sistema identifica la situación crítica
-    Then Debe enviar notificaciones push inmediatas a todos los usuarios relevantes
-    
-  Scenario: Configurar preferencias de notificación
-    Given El huésped accede a su perfil de usuario
-    When Modifica sus preferencias de notificaciones
-    Then El sistema debe respetar estas preferencias para futuras comunicaciones
+Feature: Notificaciones  
+  Scenario: Enviar notificaciones de emergencia  
+    Given Se detecta una emergencia en el hotel  
+    When se identifica la situación crítica  
+    Then Debe enviar notificaciones push inmediatas a todos los usuarios pertinentes
 
-Feature: Mensajería interna
-  Scenario: Enviar mensajes entre departamentos
-    Given Un empleado necesita comunicarse con otro departamento
-    When Redacta y envía un mensaje interno
-    Then El mensaje debe llegar correctamente al destinatario con confirmación de entrega
-    
-  Scenario: Crear canal de comunicación grupal
-    Given El administrador quiere establecer comunicación grupal
-    When Crea un canal para un grupo específico de empleados
-    Then Los miembros del grupo deben poder comunicarse en tiempo real
+Feature: Mensajes de emergencia en habitaciones
+  Scenario: Enviar alerta por acceso no autorizado  
+    Given Se detecta un acceso no autorizado a una habitación  
+    When Se valida que el acceso es sospechoso  
+    Then Debe enviarse un mensaje de emergencia al personal de seguridad y al administrador del hotel  
+  
+  Scenario: Enviar alerta por activación del sensor de humo  
+    Given Un sensor de humo se activa en una habitación  
+    When Se recibe la señal del sensor  
+    Then Debe enviarse un mensaje de emergencia al personal de mantenimiento y evacuación
 ```
-
 ---
 
 <div style="text-align: center;">
@@ -9108,27 +9102,17 @@ Feature: Mensajería interna
 ## Organizational Management Bounded Context
 
 ```gherkin
-Feature: Gestión de departamentos
-  Scenario: Crear nuevo departamento
+Feature: Gestión de hotel
+  Scenario: Crear nuevo hotel
     Given El administrador accede al módulo organizacional
-    When Completa la información del nuevo departamento
-    Then El departamento debe crearse y aparecer en la estructura organizacional
+    When Completa la información del nuevo hotel
+    Then El hotel debe crearse y aparecer en la estructura organizacional
     
-  Scenario: Asignar jefe de departamento
-    Given Existe un departamento sin jefe asignado
-    When El administrador selecciona un empleado para el cargo
-    Then El empleado debe obtener permisos de supervisión del departamento
+Scenario: Asignar owner a un hotel  
+  Given Existe un hotel sin un owner asignado  
+  When Se asigna un owner al hotel  
+  Then El owner debe obtener permisos de supervisión del departamento correspondiente
 
-Feature: Gestión de horarios
-  Scenario: Crear horario de trabajo
-    Given El supervisor accede al módulo de horarios
-    When Define turnos y asigna empleados a cada turno
-    Then Los horarios deben guardarse y notificarse a los empleados asignados
-    
-  Scenario: Solicitar cambio de turno
-    Given Un empleado necesita cambiar su turno
-    When Solicita el cambio a través del sistema
-    Then La solicitud debe enviarse al supervisor para aprobación
 ```
 ---
 
@@ -9151,7 +9135,7 @@ Feature: Control de inventario
   Scenario: Generar alertas de stock bajo
     Given Los productos tienen umbrales mínimos configurados
     When El stock alcanza el nivel mínimo
-    Then El sistema debe generar alertas automáticas para reabastecimiento
+    Then Se generaran alertas automáticas para reabastecimiento
 
 Feature: Gestión de activos
   Scenario: Registrar nuevos activos
@@ -9159,10 +9143,6 @@ Feature: Gestión de activos
     When El administrador registra los activos en el sistema
     Then Los activos deben quedar registrados con su información completa y código único
     
-  Scenario: Programar mantenimiento preventivo
-    Given Los activos requieren mantenimiento periódico
-    When Se programa el mantenimiento preventivo
-    Then El sistema debe generar recordatorios automáticos según la programación
 ```
 ---
 <div style="text-align: center;">
@@ -9175,27 +9155,29 @@ Feature: Gestión de activos
 ## Commerce Bounded Context
 
 ```gherkin
-Feature: Gestión de reservas
-  Scenario: Procesar pago de reserva
-    Given Un huésped confirma su reserva
-    When Proporciona información de pago válida
-    Then El sistema debe procesar el pago y confirmar la reserva automáticamente
-    
-  Scenario: Aplicar descuentos promocionales
-    Given Un huésped aplica un código promocional
-    When El código es válido y aplicable
-    Then El sistema debe aplicar el descuento correspondiente al total de la reserva
+Feature: Gestión de reservas  
+  Scenario: Procesar pago de reserva  
+    Given Un huésped confirma su reserva  
+    When Proporciona información de pago válida  
+    Then Se procesa el pago y confirmar la reserva automáticamente  
+  
+  Scenario: Ver disponibilidad de habitaciones  
+    Given Un huésped selecciona fechas específicas de estadía  
+    When Consulta la disponibilidad en el sistema  
+    Then Se listarán mostrar las habitaciones disponibles para ese periodo
 
-Feature: Facturación y pagos
-  Scenario: Generar factura de servicios
-    Given Un huésped consume servicios adicionales
-    When Solicita la factura de su estadía
-    Then El sistema debe generar una factura detallada con todos los servicios consumidos
-    
-  Scenario: Procesar reembolsos
-    Given Un huésped cancela su reserva dentro del plazo permitido
-    When Solicita el reembolso correspondiente
-    Then El sistema debe procesar el reembolso automáticamente según las políticas establecidas
+Feature: Suscripción y renovación  
+  Scenario: Generar factura de servicios  
+    Given Un huésped consume servicios adicionales  
+    When Solicita la factura de su estadía  
+    Then Se genarará una factura detallada con todos los servicios consumidos  
+  
+Scenario: Mejorar suscripción  
+  Given El usuario tiene una suscripción activa  
+  When Solicita mejorar su plan de suscripción y cuenta con un método de pago válido  
+  Then Se actualizará la suscripción al nuevo plan y notificar al usuario
+
+
 ```
 <div style="text-align: center;">
   <img src="https://i.imgur.com/Illa2J3.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
