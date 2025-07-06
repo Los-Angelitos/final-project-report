@@ -23,12 +23,12 @@
 
 |               Member                |    Code    |
 | :---------------------------------: | :--------: |
+| Herrera Aguirre, Fabia Alejandra  | U202219422 |
+| Jorge Arévalo, Ramón Alejandro  | U20221D126 |
+| Morales Montalvo, Omar Andrew  | U202212383 |
+| Rodriguez Vargas, Arian Martín  | U202212096 |
 | Rojas Sánchez, Mauricio Abraham Rivo  | U202211572 |
 | Zoppi Rodriguez, Giacomo  | U202210029 |
-| Morales Montalvo, Omar Andrew  | U202212383 |
-| Jorge Arévalo, Ramón Alejandro  | U20221D126 |
-| Herrera Aguirre, Fabia Alejandra  | U202219422 |
-| Rodriguez Vargas, Arian Martín  | U202212096 |
 
 </div>
 
@@ -310,8 +310,28 @@ Imagen 10: Gráfico detallado de los commits de cada miembro del equipo al repos
 
 Imagen 11: Gráficos de los commits de cada miembtos del equipo en los repositorios de las embedded application. 
 ![image](https://github.com/user-attachments/assets/de14afa2-f08c-4fc9-bc33-f3bc658e2644)
+
+Imagen 12: Gráficos de los commits de cada miembtos del equipo en los repositorios de las embedded application. 
 ![image](https://github.com/user-attachments/assets/5f550cf0-9d14-4ad0-84e4-b3a7918fdd62)
+
+Imagen 13: Gráficos de los commits de cada miembtos del equipo en los repositorios de las embedded application. 
 ![image](https://github.com/user-attachments/assets/e1951ac9-2a6e-4424-ac2d-e8c106393f42)
+
+TF: El entregable consisitó principalmente en la corrección y culminación de la EDGE API, FOG API y Embedded Application. De modo que, el sistema fisico funcione por completo. Estos fueron los aportes realizados por el equipo para el funcionamiento correcto del sistema: 
+
+Imagen 14: Gráficos de los commits de cada miembro del equipo en el repositorio de la Fog Api. 
+![image](https://github.com/user-attachments/assets/23577ae2-2406-4b27-8a8d-25a9458e0ad5)
+
+Imagen 15: Gráficos de los commits de cada miembros en el repositorio de la Edge Api. 
+![image](https://github.com/user-attachments/assets/61af3a6c-fe2e-45e7-9f9b-472e52f9013f)
+
+Imagen 16: Gráficos de los commits de cada miembro en el repositorio de la embedded application del Smoke Sensor
+![image](https://github.com/user-attachments/assets/87d74080-aa47-4253-af65-ea71c913ba67)
+
+Imagen 17: Gráficos de los commits de cada miembro en el repositorio de la embedded application del Thermostat
+![image](https://github.com/user-attachments/assets/0dd76baf-ceff-4504-b15b-2d3765c2dacc)
+
+
 
 # Contenido
 
