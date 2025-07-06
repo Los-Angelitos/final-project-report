@@ -1480,7 +1480,9 @@ Duración de la entrevista: 12:20 - 21:24 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños](assets/img/interview-analysis/owner3.png)
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="./assets/img/interview-analysis/owner3.png" alt="Entrevista° 3 - Dueños" width="90%" />
+</div>
 
 Luis es una persona extrovertida, carismática y siempre dispuesto a conversar. Su actitud alegre y sociable lo convierte en alguien muy accesible tanto para clientes como para su equipo. En su vida cotidiana, utiliza con frecuencia herramientas tecnológicas, siendo Google su motor de búsqueda predilecto y su iPhone 14 el dispositivo que más emplea para mantenerse conectado y organizar sus actividades.
 
@@ -3434,7 +3436,7 @@ Imagen con resultado del Event Storming en relación a Commerce Bounded Context:
 
 ![image](https://github.com/user-attachments/assets/6a2b3e89-ab12-4315-b543-ea22d6addf79)
 
-<h3>Escenario: El dueño lista las habitacionesl</h3>
+<h3>Escenario: El dueño lista las habitaciones</h3>
 <p>Para este escenario, se espera que el dueño desde su cuenta creada en SweetManager pueda consultar habitaciones de un hotel en especifico. Este proceso pasa primero por el Organizational Management Bounded Context para la consulta del hotel que busca seleccionar, y luego, envia una consulta al Operations and Monitoring Bounded Context, para listar las habitaciones pertenecientes a dicho hotel. </p>
     
 ![image](https://github.com/user-attachments/assets/f582601e-54f3-4eb3-a69f-8e128caf4c0e)
@@ -4484,7 +4486,7 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 ### 4.2.2. Bounded Context: Operations and Monitoring Bounded Context
 
 #### 4.2.2.1. Domain Layer
-### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web/Mobile Appliaction
+##### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web/Mobile Application
 
 En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
 
