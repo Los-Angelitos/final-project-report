@@ -621,7 +621,7 @@ colaboración e inclusivo, establecen objetivos, planifican tareas y cumplen obj
         <p/>
         Ramón Jorge: En esta entrega, aporté al diseño funcional y visual del sistema, desde wireframes hasta la implementación en distintas áreas como web, mobile, embedded y servicios. Mantuve siempre una comunicación constante con el equipo y participé activamente en entrevistas de validación y mejoras en la Fog API.
         <p/>
-        Arian Rodríguez: Durante esta entrega, colaboré en los distintos módulos del sistema como mobile, embedded, servicios y fog API. Fomenté el trabajo conjunto y la cohesión de ideas entre los compañeros, incluyendo validaciones con usuarios.
+        Arian Rodríguez: Durante esta entrega, colaboré en los distintos seccións del sistema como mobile, embedded, servicios y fog API. Fomenté el trabajo conjunto y la cohesión de ideas entre los compañeros, incluyendo validaciones con usuarios.
         <p/>
         Fabia Herrera: En esta fase, trabajé  en la integración de componentes en todas las áreas: aplicaciones web, mobile, servicios, embedded y fog API. Participé también en entrevistas de validación y coordiné la coherencia estética y funcional del proyecto.
         <p/>
@@ -1215,10 +1215,10 @@ Características demográficas: Rango de edad entre 20 y 50 años. Se trata de v
                 Xafiro es un software hotelero diseñado para la digitalización de la gestión de reservas, facturación electrónica y administración de hoteles. Cuenta con un motor de reservas directo para aumentar ingresos sin comisiones, gestión de habitaciones en tiempo real, reportes de ocupación y rendimiento, así como integración con la SUNAT para facturación electrónica.
             </td>
             <td>
-                Samin PMS ofrece un sistema de gestión hotelera completo que abarca reservas, check-in/check-out, tarifas, housekeeping y facturación electrónica con SUNAT. Además, cuenta con módulos adicionales como Restaurante Smart y Housekeeping Smart, permitiendo automatizar y optimizar diferentes áreas del hotel. Proporciona reportes y métricas para mejorar la toma de decisiones estratégicas.
+                Samin PMS ofrece un sistema de gestión hotelera completo que abarca reservas, check-in/check-out, tarifas, housekeeping y facturación electrónica con SUNAT. Además, cuenta con seccións adicionales como Restaurante Smart y Housekeeping Smart, permitiendo automatizar y optimizar diferentes áreas del hotel. Proporciona reportes y métricas para mejorar la toma de decisiones estratégicas.
             </td>
             <td>
-                Binz360 es una solución hotelera enfocada en la automatización de procesos administrativos y operativos. Incluye un dashboard centralizado con visualización de habitaciones, reportes financieros y de ventas, administración de tarifas y disponibilidad, módulos de caja y almacén, así como facturación electrónica integrada con la SUNAT. Su objetivo es eliminar tareas repetitivas y mejorar la eficiencia operativa del hotel.
+                Binz360 es una solución hotelera enfocada en la automatización de procesos administrativos y operativos. Incluye un dashboard centralizado con visualización de habitaciones, reportes financieros y de ventas, administración de tarifas y disponibilidad, seccións de caja y almacén, así como facturación electrónica integrada con la SUNAT. Su objetivo es eliminar tareas repetitivas y mejorar la eficiencia operativa del hotel.
             </td>
         </tr>
         <tr>
@@ -1230,7 +1230,7 @@ Características demográficas: Rango de edad entre 20 y 50 años. Se trata de v
                 Xafiro maneja planes mensuales según el número de habitaciones y funcionalidades requeridas. Ofrece paquetes básicos y avanzados, con integración opcional de facturación electrónica a un costo adicional.
             </td>
             <td>
-                Samin PMS cuenta con planes modulares según las necesidades del hotel. Su facturación electrónica y módulos adicionales pueden incluir costos extra dependiendo de la cantidad de habitaciones y usuarios.
+                Samin PMS cuenta con planes modulares según las necesidades del hotel. Su facturación electrónica y seccións adicionales pueden incluir costos extra dependiendo de la cantidad de habitaciones y usuarios.
             </td>
             <td>
                 Binz360 ofrece una suscripción mensual basada en el número de habitaciones y servicios contratados. Dispone de precios diferenciados para hoteles pequeños y grandes, con opciones de personalización y soporte técnico avanzado.
@@ -1245,7 +1245,7 @@ Características demográficas: Rango de edad entre 20 y 50 años. Se trata de v
                 Xafiro opera principalmente como una plataforma web accesible desde cualquier navegador, con compatibilidad limitada para dispositivos móviles. Cuenta con una versión responsiva, pero sin aplicación móvil dedicada.
             </td>
             <td>
-                Samin PMS ofrece una plataforma web con acceso adaptable a móviles. Algunos módulos cuentan con aplicaciones específicas para Android y iOS, enfocadas en la gestión operativa del hotel.
+                Samin PMS ofrece una plataforma web con acceso adaptable a móviles. Algunos seccións cuentan con aplicaciones específicas para Android y iOS, enfocadas en la gestión operativa del hotel.
             </td>
             <td>
                 Binz360 dispone de una plataforma web optimizada para distintos dispositivos. Su versión móvil permite acceder a funciones básicas de administración, pero la experiencia completa está diseñada para escritorio.
@@ -1308,7 +1308,7 @@ Características demográficas: Rango de edad entre 20 y 50 años. Se trata de v
             </td>
             <td>
                 Mejoras en su plataforma móvil para captar más usuarios. <br>
-                Creación de nuevos módulos especializados en hotelería de lujo. <br>
+                Creación de nuevos seccións especializados en hotelería de lujo. <br>
                 Expansión a mercados con menos competencia digital.
             </td>
             <td>
@@ -1542,7 +1542,9 @@ Duración de la entrevista: 12:20 - 21:24 <br>
 Personalidad: Extrovertido <br>
 <br>
 
-![Entrevista° 3 - Dueños](assets/img/interview-analysis/owner3.png)
+<div style="display:flex; justify-content:center; align-items:center; width: 100%">
+<img src="./assets/img/interview-analysis/owner3.png" alt="Entrevista° 3 - Dueños" width="90%" />
+</div>
 
 Luis es una persona extrovertida, carismática y siempre dispuesto a conversar. Su actitud alegre y sociable lo convierte en alguien muy accesible tanto para clientes como para su equipo. En su vida cotidiana, utiliza con frecuencia herramientas tecnológicas, siendo Google su motor de búsqueda predilecto y su iPhone 14 el dispositivo que más emplea para mantenerse conectado y organizar sus actividades.
 
@@ -1601,7 +1603,7 @@ Personalidad: Enfocado, orientado al servicio al cliente <br>
 ![Entrevista° 2 - Administradores](./assets/img/interview-analysis/admin-2.png)
 
 
-Fabricio señala que actualmente utiliza un software de gestión para el control de habitaciones (ocupadas, desocupadas, con o sin personal de housekeeping, etc.) y para el seguimiento de los alimentos servidos. Considera que sería útil incorporar a la aplicación de gestión de housekeeping un módulo que permita registrar y monitorear la cantidad de artículos de limpieza disponibles y utilizados, con el fin de optimizar la administración de estos recursos. Durante la conversación, menciona que una de las principales dificultades que ha enfrentado en la gestión de su negocio es que algunos usuarios encuentran el proceso de reserva confuso o demasiado extenso.
+Fabricio señala que actualmente utiliza un software de gestión para el control de habitaciones (ocupadas, desocupadas, con o sin personal de housekeeping, etc.) y para el seguimiento de los alimentos servidos. Considera que sería útil incorporar a la aplicación de gestión de housekeeping un sección que permita registrar y monitorear la cantidad de artículos de limpieza disponibles y utilizados, con el fin de optimizar la administración de estos recursos. Durante la conversación, menciona que una de las principales dificultades que ha enfrentado en la gestión de su negocio es que algunos usuarios encuentran el proceso de reserva confuso o demasiado extenso.
 
 Adicionalmente a ello, nos comenta que tiene una laptop Toshiba con sistema operativo Windows y dos telefonos, ambos Android, pero uno de ellos es personal, mientras el otro lo utiliza para el trabajo unicamente. 
 
@@ -3185,7 +3187,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Como Mobile Hotel Owner quiero revisar el stock actual de los recursos para tomar una decisión de abastecimiento.</td>
       <td>
         <b>Escenario 1:</b> Consulta de stock actual<br>
-        <em>Given</em> el hotelero accede al módulo de inventario desde su móvil<br>
+        <em>Given</em> el hotelero accede al sección de inventario desde su móvil<br>
         <em>When</em> selecciona el área de recursos<br>
         <em>Then</em> el sistema muestra una lista detallada del stock disponible con cantidades actualizadas<br><br>
         <b>Escenario 2:</b> Identificación de stock bajo<br>
@@ -3265,7 +3267,7 @@ Redactamos las historias de usuario para el sistema de gestión hotelera basánd
       <td>Como Mobile Hotel Owner, quiero poder solicitar más dispositivos IOT en mi hotel para que cada habitación disponga de personalización de temperatura, sensores de humo y/o escáneres RFID para el ingreso.</td>
       <td>
         <b>Escenario 1:</b> Solicitud de dispositivos aceptada<br>
-        <em>Given</em> el hotelero accede al módulo de dispositivos desde su app<br>
+        <em>Given</em> el hotelero accede al sección de dispositivos desde su app<br>
         <em>When</em> selecciona el tipo y número de dispositivos deseados<br>
         <em>Then</em> el sistema genera una solicitud con confirmación y estado de envío<br><br>
         <b>Escenario 2:</b> Solicitud rechazada por exceder límite<br>
@@ -3630,7 +3632,7 @@ Una vez autenticado, el gerente es redirigido al panel principal, donde puede ve
 <p>
 En este escenario, el huésped accede a la aplicación SweetManager para consultar o gestionar sus reservas, ver el historial de estancias o actualizar su información personal. 
 El flujo comienza cuando el huésped abre la aplicación e ingresa sus credenciales (correo electrónico y contraseña) en la pantalla de inicio de sesión.
-El sistema valida las credenciales ingresadas contra el módulo de gestión de identidad (IAM). Si son correctas, se autentica al huésped, se genera un token de sesión y se cargan los datos asociados a su perfil.
+El sistema valida las credenciales ingresadas contra el sección de gestión de identidad (IAM). Si son correctas, se autentica al huésped, se genera un token de sesión y se cargan los datos asociados a su perfil.
 Una vez autenticado, el huésped es redirigido a su panel principal, donde puede visualizar sus próximas reservas, realizar nuevas búsquedas de hoteles, acceder a promociones personalizadas y gestionar sus preferencias de usuario.
 </p>
 <div style="text-align: center;"> 
@@ -3816,7 +3818,7 @@ URL Structurizr para apreciar mejor los diagramas C4: <a href="https://structuri
 <br><br>
 
 #### 4.1.3.1. Software Architecture System Landscape Diagram
-El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes módulos y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes módulos: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Operations and Monitoring**.<br>
+El Landscape Diagram ilustra la arquitectura general del sistema de gestión hotelera, mostrando los diferentes seccións y componentes que lo componen. Este diagrama proporciona una visión general de cómo se organizan los distintos seccións y servicios en el sistema, así como las relaciones entre ellos. No se considera al huésped como un actor interno del sistema, sino como un actor externo que interactúa y se beneficia del sistema. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros. El diagrama incluye los siguientes seccións: **Identity and Access Management (IAM)**, **Organizational Management**, **Inventory**, **Communication**, **Commerce** y **Operations and Monitoring**.<br>
 <div style="text-align: center;">
   <img src="./assets/img/c4-model/landscape-diagram.png" alt="Landscape Diagram" width="90%" />
 </div><br><br>
@@ -3828,7 +3830,7 @@ El diagrama de contexto del sistema ilustra la interacción entre el sistema de 
 </div><br><br>
 
 #### 4.1.3.3. Software Architecture Container Level Diagrams
-A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios módulos, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
+A continuación, se presenta el diagrama de contenedores del sistema, que ilustra los diferentes componentes y su interacción dentro de la arquitectura del software. Este diagrama proporciona una visión general de cómo se organizan los distintos seccións y servicios en el sistema, así como las relaciones entre ellos. El sistema de SweetManager se basa en una arquitectura Monolita que se divide en varios seccións, cada uno de los cuales tiene su propia funcionalidad y responsabilidades.<br>
 Las personas podrán utilizar la página estática Landing Page para verificar los planes y lo que se ofrece en SweetManager.
 Una vez sean usuarios de SweetManager, tendrán acceso a una aplicación móvil y web, los cuales consumirán datos para ofrecer ante las necesidades del usuario directamente desde la API Web. Esta API mantendrá conexiones hacia la base de datos relacional desplegada en una Cloud, y otros sistemas externos como los servicios de Email y Pagos.<br>
 En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuario huésped, SweetManager no tendrá control sobre estos, sino que, es provisto por terceros y podría tener cambios o variabilidad en implementación. Sin embargo, los datos recolectados son procesados a través de una aplicación embebida que funcionará para enviarlo a un Edge y posteriormente a un Fog Node, para el procesamiento local con latencia mínima y escabilidad distruibuida.
@@ -3838,9 +3840,9 @@ En el contexto de IoT, existen dispositivos físicos que beneficiarán al usuari
 </div><br><br>
 
 #### 4.1.3.4. Software Architecture Deployment Diagrams
-En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes módulos y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos módulos y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
+En el diagrama de despliegue se ilustra la arquitectura de despliegue del sistema de gestión hotelera, mostrando cómo se distribuyen los diferentes seccións y componentes en el entorno de producción. Este diagrama proporciona una visión general de cómo se organizan los distintos seccións y servicios en el sistema, así como las relaciones entre ellos. En este caso, el sistema de SweetManager se despliega utilizando varios servicios externos que proveen sistema de despliegue en la nube, almacenamiento de datos, entre otros.
 
-El entorno de Producción de SweetManager se basa principalmente en la dependencia para la capa del cliente en el Browser (Edge/Chrome) para poder servir la aplicación web que se encuentra desplegada en el servicio de Vercel. La aplicación móvil se encuentra desplegada en la distribución de Firebase para que se pueda descargar a través de un módulo apk en cualquier dispositivo móvil. La API Web se encuentra desplegada en un Virtual Private Server (VPS) con el proveedor Monster, en este caso, se utiliza un servidor Ubuntu 22.04 con Docker para contenerizar la aplicación y la base de datos de esta manera poder desplegarla de manera eficiente, además se utilizan servicios externos para el envío de correos electrónicos y el /procesamiento de pagos, los cuales son consumidos por la API Web.
+El entorno de Producción de SweetManager se basa principalmente en la dependencia para la capa del cliente en el Browser (Edge/Chrome) para poder servir la aplicación web que se encuentra desplegada en el servicio de Vercel. La aplicación móvil se encuentra desplegada en la distribución de Firebase para que se pueda descargar a través de un sección apk en cualquier dispositivo móvil. La API Web se encuentra desplegada en un Virtual Private Server (VPS) con el proveedor Monster, en este caso, se utiliza un servidor Ubuntu 22.04 con Docker para contenerizar la aplicación y la base de datos de esta manera poder desplegarla de manera eficiente, además se utilizan servicios externos para el envío de correos electrónicos y el /procesamiento de pagos, los cuales son consumidos por la API Web.
 Por el lado de la arquitectura IoT, se utiliza un dispositivo embebido que recolecta datos de los sensores y los envía a un Edge Node montado en un Raspberry Pi 4, el cual procesa los datos localmente y los envía a un Fog Node para su almacenamiento y procesamiento distribuido montado en un servidor local con host kernel de Alpine Linux 3.22 LTS contenederizado junto con su base de datos.
 <br> 
 
@@ -4546,7 +4548,7 @@ Link: https://lucid.app/lucidchart/aa318714-457a-48c3-b363-9901c66f172c/edit?vie
 ### 4.2.2. Bounded Context: Operations and Monitoring Bounded Context
 
 #### 4.2.2.1. Domain Layer
-### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web/Mobile Appliaction
+##### Agregados y Entidades del Dominio `Operations and Monitoring` en nuestro Web/Mobile Application
 
 En nuestras aplicaciones móvil y web, tenemos definidas una carpeta modelo en cada Bounded Context que representa en DDD, una sección destinada al dominio, en la que creamos y exportamos nuestros agregados y entidades a modo de clases. Cada uno con un respectivo constructor, cuyos parametros son los atributos de la clase. 
 
@@ -7228,10 +7230,10 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 | HU01       | Gestionar las reservas de huéspedes              | T001    | Maquetar gestión de reservas | Crear vista de reservas, botones de acción y estructura general      | 5                   | Giacomo Zoppi      | Done   |
 | HU03       | Registrar nueva habitación en el hotel           | T001    | Diseñar formulario de habitaciones | Crear formulario para agregar habitaciones nuevas al sistema         | 5                   | Giacomo Zoppi      | Done   |
 | HU01       | Crear organización                               | T001    | Implementar creación de organización | Desarrollar formulario con validación para crear una nueva organización | 5                   | Arian Rodriguez      | Done   |
-| HU01       | Revisar ingresos y egresos de la organización    | T001    | Crear módulo de finanzas | Implementar interfaz para mostrar ingresos y egresos de forma visual | 3                   | Ramón Jorge      | Done   |
+| HU01       | Revisar ingresos y egresos de la organización    | T001    | Crear sección de finanzas | Implementar interfaz para mostrar ingresos y egresos de forma visual | 3                   | Ramón Jorge      | Done   |
 | HU02       | Revisar stock de recursos del hotel              | T001    | Mostrar tabla de stock | Crear componente que visualice el stock actual del inventario         | 3                   | Omar Morales      | Done   |
 | HU06       | Agregar proveedores a su lista de contactos      | T001    | Crear vista de proveedores | Diseñar formulario para añadir nuevos proveedores a la lista          | 3                   | Omar Morales      | Done   |
-| HU02       | Gestionar la comunicación en la organización     | T001    | Crear módulo de mensajes | Diseñar bandeja de entrada y chat interno entre usuarios del sistema  | 3                   | Fabia Herrera      | Done   |
+| HU02       | Gestionar la comunicación en la organización     | T001    | Crear sección de mensajes | Diseñar bandeja de entrada y chat interno entre usuarios del sistema  | 3                   | Fabia Herrera      | Done   |
 | HU03       | Reservar una habitación personalizada            | T001    | Configurar filtros de preferencia | Implementar filtros para personalizar la selección de habitaciones    | 3                   | Giacomo Zoppi      | Done   |
 | HU04       | Visualizar y gestionar reservas activas          | T001    | Crear panel de reservas activas | Implementar interfaz para mostrar y gestionar reservas actuales       | 3                   | Giacomo Zoppi      | Done   |
 | HU05       | Cancelar reservas activas                        | T001    | Agregar opción de cancelación | Añadir botón de cancelación con validaciones según condiciones        | 3                   | Giacomo Zoppi      | Done   |
@@ -7242,7 +7244,7 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 | HU11       | Listar administradores de la organización         | T001    | Mostrar lista de admins      | Crear vista para visualizar a todos los administradores registrados           | 2                   | Mauricio Rojas      | Done   |
 | HU12       | Ver huéspedes actuales en el hotel                | T001    | Implementar vista de huéspedes actuales | Mostrar lista con reservas activas y sus huéspedes asociados         | 2                   | Mauricio Rojas      | Done   |
 | HU13       | Desvincular administrador de la organización      | T001    | Agregar opción de desvincular | Permitir eliminar administradores desde el panel de organización              | 2                   | Mauricio Rojas      | To do   |
-| HU02       | Enviar mensajes al gerente                        | T001    | Crear módulo de mensajes al gerente | Implementar sección de mensajes privados entre admins y gerente         | 2                   | Fabia Herrera      | Done   |
+| HU02       | Enviar mensajes al gerente                        | T001    | Crear sección de mensajes al gerente | Implementar sección de mensajes privados entre admins y gerente         | 2                   | Fabia Herrera      | Done   |
 | HU03       | Ver detalles de la reserva del huésped            | T001    | Mostrar detalles de reserva  | Diseñar vista con datos completos de una reserva seleccionada                 | 2                   | Arian Rodriguez      | To do   |
 | HU04       | Consultar disponibilidad de habitaciones          | T001    | Vista de disponibilidad      | Implementar consulta de habitaciones libres por fechas seleccionadas          | 2                   | Arian Rodriguez      | Done   |
 | HU05       | Generar reporte de reservas del día               | T001    | Crear reporte diario         | Crear funcionalidad para generar resumen de entradas y salidas del día        | 2                   | Ramón Jorge      | To do    |
@@ -7359,7 +7361,7 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 Feature: Gestión de reservas de huéspedes
 
   Scenario: Crear una nueva reserva
-    Given El administrador accede al módulo de reservas
+    Given El administrador accede al sección de reservas
     When Completa el formulario de nueva reserva con los datos del huésped y habitación
     Then La reserva debe guardarse correctamente y mostrarse en la lista de reservas activas
 
@@ -7410,7 +7412,7 @@ Feature: Comunicación interna en el hotel
     Then El gerente debe recibir la notificación del mensaje en su bandeja de entrada
 
   Scenario: Ver historial de mensajes
-    Given El gerente accede al módulo de comunicación
+    Given El gerente accede al sección de comunicación
     When Visualiza la conversación con un administrador
     Then Debería ver todos los mensajes enviados y recibidos con orden cronológico
 ```
@@ -7441,7 +7443,7 @@ Feature: Gestión de la organización del hotel
 Feature: Gestión del inventario del hotel
 
   Scenario: Visualizar stock actual
-    Given El gerente accede al módulo de inventario
+    Given El gerente accede al sección de inventario
     When Visualiza la lista de recursos
     Then Debería ver nombre, cantidad y estado de cada recurso disponible
 
@@ -8146,7 +8148,7 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 Feature: Gestión de reservas de huéspedes
 
 Scenario: Crear una nueva reserva
- Given El administrador accede al módulo de reservas
+ Given El administrador accede al sección de reservas
  When Completa el formulario de nueva reserva con los datos del huésped y habitación
  Then La reserva debe guardarse correctamente y mostrarse en la lista de reservas activas
 
@@ -8292,12 +8294,12 @@ Scenario: Filtrar habitaciones por estado
 Feature: Gestión de inventario y recursos
 
 Scenario: Revisar stock de recursos del hotel
- Given El propietario del hotel accede al módulo de inventario
+ Given El propietario del hotel accede al sección de inventario
  When Consulta el stock actual de recursos
  Then Debe visualizar las cantidades disponibles y el estado de cada recurso
 
 Scenario: Registrar nuevo proveedor
- Given El administrador accede al módulo de proveedores
+ Given El administrador accede al sección de proveedores
  When Ingresa la información del proveedor (nombre, contacto, productos)
  Then El proveedor debe guardarse en el sistema para futuras referencias
 
@@ -9128,7 +9130,7 @@ Feature: Gestión de usuarios y roles
     Then La cuenta debe crearse con permisos de administrador y acceso completo al sistema
     
   Scenario: Asignar roles a usuarios del hotel
-    Given El administrador accede al módulo de gestión de usuarios
+    Given El administrador accede al sección de gestión de usuarios
     When Selecciona un usuario y asigna un rol específico (recepcionista, housekeeping, etc.)
     Then El usuario debe tener acceso solo a las funciones correspondientes a su rol
 
@@ -9186,7 +9188,7 @@ Feature: Mensajes de emergencia en habitaciones
 ```gherkin
 Feature: Gestión de hotel
   Scenario: Crear nuevo hotel
-    Given El administrador accede al módulo organizacional
+    Given El administrador accede al sección organizacional
     When Completa la información del nuevo hotel
     Then El hotel debe crearse y aparecer en la estructura organizacional
     
