@@ -8985,9 +8985,212 @@ A continuación el cuadro en el que exponemos cada una de estas tareas junto a s
 
 <table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </tr> </thead> <tbody> <tr> <td rowspan="20">thermostat-embedded-application</td> <td rowspan="20">develop</td> <td>8537546</td> <td>update: latest version of thermostat device</td> <td></td> <td>2025-07-03T08:00:00Z</td> <!-- 3 days ago from July 6 --> </tr> <tr> <td>a1b5411</td> <td>update: sketch.ino</td> <td></td> <td>2025-06-16T07:45:00Z</td> </tr> <tr> <td>64h20f7</td> <td>update: added communication private gw wokwi</td> <td></td> <td>2025-06-16T07:30:00Z</td> </tr> <tr> <td>31c93bc</td> <td>fix: wokwi slow</td> <td></td> <td>2025-06-16T07:15:00Z</td> </tr> <tr> <td>(merge-hash)</td> <td>Merge branch 'main'</td> <td></td> <td>2025-06-15T07:00:00Z</td> </tr> <tr> <td>ab7ab77</td> <td>feat: implementation for actuator</td> <td></td> <td>2025-06-16T06:45:00Z</td> </tr> <tr> <td>e7af9d9</td> <td>feat: implementation of the displaydevice class</td> <td></td> <td>2025-06-16T06:30:00Z</td> </tr> <tr> <td>d1s7797</td> <td>feat: class for a device that can display info</td> <td></td> <td>2025-06-16T06:15:00Z</td> </tr> <tr> <td>9016444</td> <td>feat: added abstract class to handle events</td> <td></td> <td>2025-06-16T06:00:00Z</td> </tr> <tr> <td>a79ee8b</td> <td>feat: file with headers for the modest lot framework</td> <td></td> <td>2025-06-16T05:45:00Z</td> </tr> <tr> <td>2f715fa</td> <td>feat: thermostat device implementation</td> <td></td> <td>2025-06-16T05:30:00Z</td> </tr> <tr> <td>a859663</td> <td>add: json for hardware wokwi simulation</td> <td></td> <td>2025-06-16T05:15:00Z</td> </tr> <tr> <td>6715484</td> <td>add: updated libraries used for the project</td> <td></td> <td>2025-06-16T05:00:00Z</td> </tr> <tr> <td>øF04039</td> <td>update: mocked data without http</td> <td></td> <td>2025-06-16T04:45:00Z</td> </tr> <tr> <td>3148722</td> <td>docs: added README</td> <td></td> <td>2025-06-16T04:30:00Z</td> </tr> <tr> <td>e747453</td> <td>add: ThermostatDevice header for wokwi simulation</td> <td></td> <td>2025-06-16T04:15:00Z</td> </tr> <tr> <td>8468576</td> <td>add: sketch.ino like the main file for Arduino</td> <td></td> <td>2025-06-16T04:00:00Z</td> </tr> <tr> <td>(device-hash)</td> <td>feat: implemented Device header</td> <td></td> <td>2025-06-16T03:45:00Z</td> </tr> <tr> <td>(impl-hash)</td> <td>feat: added implementation for Device header</td> <td></td> <td>2025-06-16T03:30:00Z</td> </tr> <tr> <td>(cmd-hash)</td> <td>feat: added CommandHandler header for process commands</td> <td></td> <td>2025-06-16T03:15:00Z</td> </tr> </tbody> </table>
 
-<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </thead> <tbody> <tr> <td rowspan="3">rfid-embedded-application</td> <td rowspan="3">develop</td> <td>(not provided)</td> <td>fast/Added modestio files</td> <td></td> <td>2025-06-15T00:00:00Z</td> </tr> <tr> <td>(not provided)</td> <td>fast/Added Readme</td> <td></td> <td>2025-06-14T00:00:00Z</td> </td> </tr> <tr> <td>(not provided)</td> <td>Initial Commit</td> <td></td> <td>2025-06-14T00:00:00Z</td> </tr> </tbody> </table>
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Commit Message Body</th> <th>Committed on (Date)</th> </thead> <tbody> <tr> <td rowspan="3">rfid-embedded-application</td> <td rowspan="3">develop</td> <td>8962643</td> <td>fast/Added modestio files</td> <td></td> <td>2025-06-15T00:00:00Z</td> </tr> <tr> <td>1b4476d</td> <td>fast/Added Readme</td> <td></td> <td>2025-06-14T00:00:00Z</td> </td> </tr> <tr> <td>8962643</td> <td>Initial Commit</td> <td></td> <td>2025-06-14T00:00:00Z</td> </tr> </tbody> </table>
 
-<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Committed on (Date)</th> <th>Status</th> </tr> </thead> <tbody> <tr> <td rowspan="10">smoke-sensor-embedded-application</td> <td rowspan="10">develop</td> <td>ozbeoest</td> <td>feat: main updated with edge connection</td> <td>2025-07-04</td> <td>verified</td> </tr> <tr> <td>1b4476d</td> <td>feat: resistor added</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>2922915</td> <td>Add files via upload</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>8962643</td> <td>Delete wokwi-project.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>f230342</td> <td>Delete sketch.ino</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>ac54839</td> <td>Delete libraries.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>138c144</td> <td>Delete diagram.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>dc09469</td> <td>Delete chip-mq2.chip.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>7972672</td> <td>Delete chip-mq2.chip.c</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>g7988ac</td> <td>Delete README.md</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr>  </tr> </tbody> </table>
+<table border="1"> <thead> <tr> <th>Repository</th> <th>Branch</th> <th>Commit Id</th> <th>Commit Message</th> <th>Committed on (Date)</th> <th>Status</th> </tr> </thead> <tbody> <tr> <td rowspan="10">smoke-sensor-embedded-application</td> <td rowspan="10">develop</td> <td>2922915</td> <td>feat: main updated with edge connection</td> <td>2025-07-04</td> <td>verified</td> </tr> <tr> <td>1b4476d</td> <td>feat: resistor added</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>2922915</td> <td>Add files via upload</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>8962643</td> <td>Delete wokwi-project.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>f230342</td> <td>Delete sketch.ino</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>ac54839</td> <td>Delete libraries.txt</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>138c144</td> <td>Delete diagram.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>dc09469</td> <td>Delete chip-mq2.chip.json</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>7972672</td> <td>Delete chip-mq2.chip.c</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr> <td>g7988ac</td> <td>Delete README.md</td> <td>2025-07-02</td> <td>verified</td> </tr> <tr>  </tr> </tbody> </table>
+
+#### 6.2.3.5. Testing Suite Evidence for Sprint Review
+
+## Operations and Monitoring Bounded Context
+
+```gherkin
+Feature: Monitoreo de dispositivos IoT
+  Scenario: Visualizar estado de dispositivos IoT en tiempo real
+    Given El administrador accede al dashboard de monitoreo
+    When Selecciona la vista de dispositivos IoT activos
+    Then Debe mostrarse el estado actual de todos los sensores y dispositivos conectados
+    
+  Scenario: Configurar alertas por temperatura
+    Given El administrador accede a la configuración de alertas
+    When Define umbrales mínimos y máximos de temperatura para las habitaciones
+    Then El sistema debe generar notificaciones automáticas cuando se excedan los límites
+
+Feature: Control de sensores de humo
+  Scenario: Recibir alerta por detección de humo
+    Given Un sensor de humo detecta concentraciones peligrosas
+    When El nivel de humo supera el umbral configurado
+    Then El sistema debe activar alertas y notificar al personal de seguridad
+    
+  Scenario: Configurar umbrales de detección de humo
+    Given El técnico accede a la configuración de sensores
+    When Ajusta los niveles de sensibilidad del sensor de humo
+    Then Los nuevos umbrales deben aplicarse y validarse mediante pruebas de integración
+```
+---
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/HvhDtLA.png" alt="Unit tests for Operations and Monitoring acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/Sars50E.png" alt="Unit tests for Operations and Monitoring acording gherkin" width="80%" />
+</div><br>
+
+## IAM (Identity and Access Management) Bounded Context
+
+```gherkin
+Feature: Gestión de usuarios y roles
+  Scenario: Crear cuenta de administrador
+    Given Un superadministrador accede al sistema de gestión de usuarios
+    When Completa el formulario de registro con credenciales de administrador
+    Then La cuenta debe crearse con permisos de administrador y acceso completo al sistema
+    
+  Scenario: Asignar roles a usuarios del hotel
+    Given El administrador accede al módulo de gestión de usuarios
+    When Selecciona un usuario y asigna un rol específico (recepcionista, housekeeping, etc.)
+    Then El usuario debe tener acceso solo a las funciones correspondientes a su rol
+
+Feature: Autenticación de dispositivos
+  Scenario: Autenticar dispositivos IoT
+    Given Un dispositivo IoT intenta conectarse al sistema
+    When Presenta sus credenciales de autenticación
+    Then El sistema debe validar y autorizar el acceso sin errores de autenticación
+    
+  Scenario: Renovar tokens de seguridad
+    Given Un dispositivo tiene un token próximo a expirar
+    When El sistema detecta que el token necesita renovación
+    Then Debe generar automáticamente un nuevo token válido sin interrumpir la conexión
+```
+---
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/55Cxzya.png" alt="Unit tests for IAM acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/JE6xa6G.png" alt="Unit tests for IAM acording gherkin" width="80%" />
+</div><br>
+
+## Communication Bounded Context
+
+```gherkin
+Feature: Notificaciones push
+  Scenario: Enviar notificaciones de emergencia
+    Given Se detecta una emergencia en el hotel
+    When El sistema identifica la situación crítica
+    Then Debe enviar notificaciones push inmediatas a todos los usuarios relevantes
+    
+  Scenario: Configurar preferencias de notificación
+    Given El huésped accede a su perfil de usuario
+    When Modifica sus preferencias de notificaciones
+    Then El sistema debe respetar estas preferencias para futuras comunicaciones
+
+Feature: Mensajería interna
+  Scenario: Enviar mensajes entre departamentos
+    Given Un empleado necesita comunicarse con otro departamento
+    When Redacta y envía un mensaje interno
+    Then El mensaje debe llegar correctamente al destinatario con confirmación de entrega
+    
+  Scenario: Crear canal de comunicación grupal
+    Given El administrador quiere establecer comunicación grupal
+    When Crea un canal para un grupo específico de empleados
+    Then Los miembros del grupo deben poder comunicarse en tiempo real
+```
+
+---
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/0sTEbFH.png" alt="Unit tests for Communication acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/p29dVhS.png" alt="Unit tests for Communication acording gherkin" width="80%" />
+</div><br>
+
+## Organizational Management Bounded Context
+
+```gherkin
+Feature: Gestión de departamentos
+  Scenario: Crear nuevo departamento
+    Given El administrador accede al módulo organizacional
+    When Completa la información del nuevo departamento
+    Then El departamento debe crearse y aparecer en la estructura organizacional
+    
+  Scenario: Asignar jefe de departamento
+    Given Existe un departamento sin jefe asignado
+    When El administrador selecciona un empleado para el cargo
+    Then El empleado debe obtener permisos de supervisión del departamento
+
+Feature: Gestión de horarios
+  Scenario: Crear horario de trabajo
+    Given El supervisor accede al módulo de horarios
+    When Define turnos y asigna empleados a cada turno
+    Then Los horarios deben guardarse y notificarse a los empleados asignados
+    
+  Scenario: Solicitar cambio de turno
+    Given Un empleado necesita cambiar su turno
+    When Solicita el cambio a través del sistema
+    Then La solicitud debe enviarse al supervisor para aprobación
+```
+---
+
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/peGBWoL.png" alt="Unit tests for Organizational Management acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/HWtIwYL.png" alt="Unit tests for Organizational Management acording gherkin" width="80%" />
+</div><br>
+
+## Inventory Bounded Context
+
+```gherkin
+Feature: Control de inventario
+  Scenario: Registrar entrada de productos
+    Given Un proveedor entrega productos al hotel
+    When El encargado registra la entrada en el sistema
+    Then El inventario debe actualizarse automáticamente con las nuevas cantidades
+    
+  Scenario: Generar alertas de stock bajo
+    Given Los productos tienen umbrales mínimos configurados
+    When El stock alcanza el nivel mínimo
+    Then El sistema debe generar alertas automáticas para reabastecimiento
+
+Feature: Gestión de activos
+  Scenario: Registrar nuevos activos
+    Given Se adquieren nuevos equipos para el hotel
+    When El administrador registra los activos en el sistema
+    Then Los activos deben quedar registrados con su información completa y código único
+    
+  Scenario: Programar mantenimiento preventivo
+    Given Los activos requieren mantenimiento periódico
+    When Se programa el mantenimiento preventivo
+    Then El sistema debe generar recordatorios automáticos según la programación
+```
+---
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/zFdtShB.png" alt="Unit tests for Inventory acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/qj6duEZ.png" alt="Unit tests for Inventory acording gherkin" width="80%" />
+</div><br>
+
+## Commerce Bounded Context
+
+```gherkin
+Feature: Gestión de reservas
+  Scenario: Procesar pago de reserva
+    Given Un huésped confirma su reserva
+    When Proporciona información de pago válida
+    Then El sistema debe procesar el pago y confirmar la reserva automáticamente
+    
+  Scenario: Aplicar descuentos promocionales
+    Given Un huésped aplica un código promocional
+    When El código es válido y aplicable
+    Then El sistema debe aplicar el descuento correspondiente al total de la reserva
+
+Feature: Facturación y pagos
+  Scenario: Generar factura de servicios
+    Given Un huésped consume servicios adicionales
+    When Solicita la factura de su estadía
+    Then El sistema debe generar una factura detallada con todos los servicios consumidos
+    
+  Scenario: Procesar reembolsos
+    Given Un huésped cancela su reserva dentro del plazo permitido
+    When Solicita el reembolso correspondiente
+    Then El sistema debe procesar el reembolso automáticamente según las políticas establecidas
+```
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/Illa2J3.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
+</div><br>
+<div style="text-align: center;">
+  <img src="https://i.imgur.com/oDS0wCy.png" alt="Unit tests for Commerce acording gherkin" width="80%" />
+</div><br>
 
 #### 6.2.3.7. Services Documentation Evidence for Sprint Review.
 
