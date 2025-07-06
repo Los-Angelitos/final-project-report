@@ -9288,10 +9288,12 @@ El fog y edge API son desplegados localmente y se comunican con los dispositivos
 URL del video: https://acortar.link/KBvETV
 
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
-  <img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
-  <br>
+<img src="./assets/img/software-deployment-evidence/videoflow.PNG" alt="Sprint Review Video" width="90%" />
+</div>
+<br>
 <div style="display:flex; justify-content:center; align-items:center; width: 100%">
 <img src="./assets/img/angelitos.jpg" alt="Sprint Review Video" width="90%" />
+</div>
 Después de varias reuniones en equipo, se logró unificar el circuito de trabajo de todos los componentes del sistema, incluyendo la aplicación web, la Fog API, la Edge API y los dispositivos embebidos. Este circuito permite una gestión eficiente de las reservas, el monitoreo de sensores y la interacción con los usuarios a través de la aplicación móvil.
 </div>
 
@@ -10318,8 +10320,9 @@ Establecer las User Stories y Bounded Context efectivamente, pues son la base de
 
 # Video About-the-Team
 
-En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. 
-https://shorturl.at/h5k4G
+En este video, cada miembro del equipo pudo dar su sustento y su experiencia en el curso en relación a los student outcome. Pudo explicar su desempeño y su aprendizaje continuo. Además de dar una pequeña reflexión personal sobre como el curso de Desarrollo de Soluciones IoT ha aportado a su desarrollo profesional como Ingeniero de Software. 
+
+Link acortado del video: https://shorturl.at/h5k4G
 
 
 # Bibliografía
